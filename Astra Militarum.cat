@@ -308,7 +308,7 @@
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="dd9a-d88c-abaf-138a" name="Faction: Astra Militarum" hidden="false" targetId="96ae-2ec0-4de4-b4d7" primary="false">
+        <categoryLink id="dd9a-d88c-abaf-138a" name="Faction: Astra Militarum" hidden="false" targetId="96ae-2ec0-4de4-b4d7" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -455,6 +455,22 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="3e8e-3309-9ea9-5c11" name="Voice of Command Orders" hidden="true" targetId="b091-39d9-f78c-b993" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -1129,7 +1145,29 @@
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12a9-78c5-64fe-d9b9" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="47aa-4b72-3a3d-f3b6" name="New CategoryLink" hidden="false" targetId="96ae-2ec0-4de4-b4d7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="fcbe-29bd-543e-a5d0" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="aa62-7385-5693-6369" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="a1fa-e423-5102-8019" name="Ranged Weapon" hidden="false" collective="false" defaultSelectionEntryId="8a70-4731-c41e-57e7">
@@ -1341,6 +1379,22 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="3785-8b48-44cf-5db1" name="Voice of Command Orders" hidden="true" targetId="b091-39d9-f78c-b993" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="5.0"/>
@@ -1398,59 +1452,12 @@
     </selectionEntry>
     <selectionEntry id="2187-9be9-99a0-4929" name="Voice of Command" hidden="false" collective="true" type="upgrade">
       <profiles>
-        <profile id="27c5-2015-02bd-c280" name="Take Aim!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
+        <profile id="6b95-d7c8-f482-c4ae" name="Voice of Command" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <characteristics>
-            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="Re-roll hit rolls of 1 for the ordered model until the end of this phase"/>
-          </characteristics>
-        </profile>
-        <profile id="1d08-775c-2b77-127d" name="Get Back in the Fight!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="The ordered model can shoot this phase even if it Fell Back in the Movement phase."/>
-          </characteristics>
-        </profile>
-        <profile id="40ff-0911-e70a-8c41" name="Bring it Down!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="Re-roll wound rolls of 1 for the ordered model until the end of the phase"/>
-          </characteristics>
-        </profile>
-        <profile id="fcdc-2e78-1801-439e" name="Fowards, for the Emperor!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="The ordered model can shoot even if it Advanced in the previous Movement phase"/>
-          </characteristics>
-        </profile>
-        <profile id="a9cd-c21e-2aba-783d" name="Move! Move! Move!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="Instead of shooting this phase, the ordered model immediately makes an Advance move as if it were the Movement phase"/>
-          </characteristics>
-        </profile>
-        <profile id="cef0-95ae-c265-702f" name="Fix Bayonets!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="This order can only be issued to a model within 1&quot; of an enemy model. The ordered model immediately fights as if it were the Fight phase"/>
-          </characteristics>
+          <characteristics/>
         </profile>
       </profiles>
       <rules/>
@@ -1579,10 +1586,95 @@
           </constraints>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="c146-41f4-a9be-9572" name="Voice of Command Orders" hidden="true" targetId="b091-39d9-f78c-b993" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="5.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="b091-39d9-f78c-b993" name="Display Voice of Command Orders" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="c6b8-7158-621c-b2b1" name="Bring it Down!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="Re-roll wound rolls of 1 for the ordered model until the end of the phase"/>
+          </characteristics>
+        </profile>
+        <profile id="52bf-1f16-6520-d90d" name="Fix Bayonets!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="This order can only be issued to a model within 1&quot; of an enemy model. The ordered model immediately fights as if it were the Fight phase"/>
+          </characteristics>
+        </profile>
+        <profile id="1908-f27a-3e4a-85ff" name="Fowards, for the Emperor!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="The ordered model can shoot even if it Advanced in the previous Movement phase"/>
+          </characteristics>
+        </profile>
+        <profile id="33ec-2851-2f95-2594" name="Get Back in the Fight!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="The ordered model can shoot this phase even if it Fell Back in the Movement phase."/>
+          </characteristics>
+        </profile>
+        <profile id="a3ff-6dbc-0310-58c6" name="Move! Move! Move!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="Instead of shooting this phase, the ordered model immediately makes an Advance move as if it were the Movement phase"/>
+          </characteristics>
+        </profile>
+        <profile id="ebd8-04ac-bb3c-7bcc" name="Take Aim!" hidden="false" profileTypeId="23ec-80ab-7550-fb7e" profileTypeName="Astra Militarum Orders">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="3ede-9197-302a-d853" value="Re-roll hit rolls of 1 for the ordered model until the end of this phase"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab3c-9f6f-11b6-74fe" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups/>
