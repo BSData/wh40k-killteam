@@ -59,7 +59,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="3266-6d1a-6e67-f306" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true">
@@ -75,15 +83,7 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <constraints/>
       <categoryLinks>
         <categoryLink id="97b5-7eb5-0741-9151" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true">
@@ -171,7 +171,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="12d4-29d8-ec12-4fec" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true">
@@ -219,7 +227,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="92fa-60cf-f275-e374" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true">
@@ -375,6 +391,30 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="e8c2-c8f4-45e7-4e10" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6675-4309-9d45-c910" name="Special Weapons Squad Fire Team" hidden="false" targetId="8180-84cd-518d-ca33" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="notInstanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="8fcc-911b-e069-8a5c" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2066,7 +2106,7 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="90ff-92bf-17b3-38fd" name="Guardsman Fire Team" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="90ff-92bf-17b3-38fd" name="Infantry Squad Fire Team" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2129,6 +2169,60 @@
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="8180-84cd-518d-ca33" name="Special Weapons Squad Fire Team" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6f35-c35d-4f8d-28c0" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f34d-f448-6bcf-9ec0" name="Units" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4b77-1778-465d-75a6" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5be9-e65e-9ab4-28c3" name="Special Weapons Guardsman" hidden="false" targetId="0e48-4b39-f955-7e20" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="9e5f-6352-9457-4d26" name="Special Weapons Gunner" hidden="false" targetId="d863-7299-321c-ccec" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3ee1-4bf9-3b65-7ef7" name="Fire Team Advances" hidden="false" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
