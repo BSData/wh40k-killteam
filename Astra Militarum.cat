@@ -337,7 +337,7 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="2df8-5166-0406-041b" name="Flamer" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2df8-5166-0406-041b" name="Flamer2" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="60c3-88ee-c11c-41aa" name="Flamer" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
           <profiles/>
@@ -920,7 +920,22 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1bf3-d672-3330-4d53" name="Power Fist" hidden="false" collective="false" type="upgrade">
-      <profiles/>
+      <profiles>
+        <profile id="8c91-8da1-8c8d-5c95" name="Power Fist" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="x2"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="When attacking with this weapon, you must subtract 1 from the hit roll"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -1999,7 +2014,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2027,7 +2044,38 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d60-329f-5244-bb1a" type="max"/>
       </constraints>
       <categoryLinks/>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="b050-3b9d-5be7-e848" name="Communication" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f520-cbcd-b611-d169" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks>
+            <categoryLink id="682d-966c-099f-0feb" name="Specialist: Comms" hidden="false" targetId="e637-e1ec-732c-1c35" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="f94c-1a35-f3fa-a4de" name="Leader" hidden="false" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
