@@ -2863,11 +2863,11 @@
           </constraints>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="7e72-3991-e1b7-066c" name="Heavy Handed" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7e72-3991-e1b7-066c" name="Heavily Muscled" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="0e68-b347-df08-23bf" name="Heavy Handed" hidden="false" targetId="afd0-5c77-ced6-a04b" type="profile">
+                <infoLink id="0e68-b347-df08-23bf" name="Heavily Muscled" hidden="false" targetId="afd0-5c77-ced6-a04b" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -2875,7 +2875,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 3: Heavy Handed">
+                <modifier type="set" field="name" value="Level 3: Heavily Muscled">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -3221,11 +3221,11 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0285-3f08-1963-3d39" name="Heavy Handed" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0285-3f08-1963-3d39" name="Heavily Muscled" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="75cf-b53a-018c-095e" name="Heavy Handed" hidden="false" targetId="afd0-5c77-ced6-a04b" type="profile">
+                <infoLink id="75cf-b53a-018c-095e" name="Heavily Muscled" hidden="false" targetId="afd0-5c77-ced6-a04b" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -3233,7 +3233,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 4: Heavy Handed">
+                <modifier type="set" field="name" value="Level 4: Heavily Muscled">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -6066,7 +6066,7 @@
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 1&quot; to this model&apos;s Move characteristic."/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6092,7 +6092,7 @@
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll save rolls of 1 for this model."/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6110,15 +6110,15 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8545-3578-bb99-eff8" name="3. C?" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8545-3578-bb99-eff8" name="3. Courageous" hidden="false" collective="false" type="upgrade">
               <profiles>
-                <profile id="5150-7aee-9636-418a" name="C?" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+                <profile id="5150-7aee-9636-418a" name="Courageous" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll failed Nerve tests for this model."/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6144,7 +6144,7 @@
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Choose one: You can re-roll failed hit rolls for this model when it makes shooting attacks. You can re-roll failed hit rolls for this model in the Fight phase."/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6170,7 +6170,7 @@
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Choose one: You can re-roll failed wound rolls for this model when it makes shooting attacks. You can re-roll failed wound rolls for this model in the Fight phase."/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6196,7 +6196,7 @@
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can subtract 1 from Injury rolls for this model."/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6288,7 +6288,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll one hit roll or wound roll for this model in each battle round."/>
       </characteristics>
     </profile>
     <profile id="0163-fd5a-f7f4-0a5e" name="Seen It All" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6297,7 +6297,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can subtract 1 from Nerve tests for models from your kill team within 3&quot; of this model, as long as it is not shaken."/>
       </characteristics>
     </profile>
     <profile id="c5c5-6f75-d59b-cbb0" name="Survivor" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6306,7 +6306,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can add 1 to saving throws for this model."/>
       </characteristics>
     </profile>
     <profile id="67f4-0e09-41c7-2bbc" name="One-man Army" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6315,7 +6315,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model generates 1 Command Point at the beginning of each battle round, unless it is shaken or out of action. This Command Point can only be used for Veteran Tactics."/>
       </characteristics>
     </profile>
     <profile id="1fa0-a8db-67cf-87b9" name="Battle Scarred" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6324,7 +6324,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Enemy models suffer -1 Leadership whilst they are within 6&quot; of this model, as long as it is not shaken."/>
       </characteristics>
     </profile>
     <profile id="cb62-cfb9-8840-d462" name="Nerves of Steel" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6333,7 +6333,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll failed hit rolls for this model when it fires Overwatch."/>
       </characteristics>
     </profile>
     <profile id="c0fe-c084-3f73-2cbf" name="Expert Fighter" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6342,7 +6342,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 1 to this model&apos;s Attacks characteristic."/>
       </characteristics>
     </profile>
     <profile id="ce9f-f66f-d963-bc61" name="Warrior Adept" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6351,7 +6351,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 1 to hit rolls for this model in the Fight phase."/>
       </characteristics>
     </profile>
     <profile id="6b18-4f6c-247e-6e95" name="Deadly Counter" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6360,7 +6360,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If any hit rolls of 1 or less are made for a model&apos;s attacks that target this model in the Fight phase, unless this model is shaken, roll a D6. On a 5+, the model that made the attack suffers 1 mortal wound after all of their attacks have been resolved."/>
       </characteristics>
     </profile>
     <profile id="dc64-57ca-e18a-0740" name="Deathblow" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6369,7 +6369,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Any wound rolls of 6 you make for this model in the Fight phase inflict 1 mortal wound on the target in addition to any other damage."/>
       </characteristics>
     </profile>
     <profile id="7000-5c73-cbd6-6220" name="Combat Master" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6378,7 +6378,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 1 to the Attacks characteristic of this model for each enemy model within 1&quot; of it at the start of the Fight phase, until the end of the phase."/>
       </characteristics>
     </profile>
     <profile id="4987-8a10-c9eb-3a66" name="Killer Instinct" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6387,7 +6387,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll any failed wound rolls you make for this model in the Fight phase."/>
       </characteristics>
     </profile>
     <profile id="521e-ce94-d4ea-b004" name="Bloodlust" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6396,7 +6396,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll any failed charge rolls you make for this model."/>
       </characteristics>
     </profile>
     <profile id="fc51-0351-b8c9-fe7e" name="Scanner" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6405,7 +6405,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Once per Shooting phase, when you pick a model from your kill team to shoot that is within 6&quot; of this model, if this model is not shaken, you can add 1 to hit rolls made for that model in this phase."/>
       </characteristics>
     </profile>
     <profile id="ecd0-d4c0-d216-2257" name="Expert" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6414,7 +6414,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Roll a D6 at the start of each battle round if this model is not shaken. On a 5+, you gain 1 additional Command Point. This additional Command Point is lost at the end of the battle round if not used."/>
       </characteristics>
     </profile>
     <profile id="6814-d29a-b077-b47f" name="Static Screech" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6423,7 +6423,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Once per battle at the start of the Fight phase, if this model is not shaken, subtract 1 from hit rolls for enemy models that make attacks while they are within 6&quot; of this model until the end of the phase."/>
       </characteristics>
     </profile>
     <profile id="da8e-2607-ae63-406f" name="Vox Ghost" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6432,7 +6432,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Subtract 1 from the Leadership characteristic of enemy models while this model is on the battlefield, as long as it is not shaken."/>
       </characteristics>
     </profile>
     <profile id="3160-0276-0927-c20c" name="Command Relay" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6441,7 +6441,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Roll a D6 each time you use a Tactic while this mode is on the battlefield and not shaken. On a 6 the Command Points spent on that Tactic are immediately refunded."/>
       </characteristics>
     </profile>
     <profile id="712a-e9e9-bd01-65d6" name="Triangulator" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6450,7 +6450,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Once per Shooting phase, when you pick a model from your kill team to shoot a Heavy weapon, if this model is not shaken, you can re-roll the dice when determining the number of attacks that model can make."/>
       </characteristics>
     </profile>
     <profile id="d33a-76fe-198f-3f73" name="Vox Hacker" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6459,7 +6459,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="After each battle in which this model is in your kill team, if this model is not in Convalescence or dead, roll a D6. On a 5+, you gain 1 Intelligence."/>
       </characteristics>
     </profile>
     <profile id="ffe1-1e6b-e52b-9cc7" name="Breacher" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6468,7 +6468,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can add 1 to this model&apos;s wound rolls against targets that are obscured."/>
       </characteristics>
     </profile>
     <profile id="f7b9-ec6e-9382-cbdb" name="Pyromaniac" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6477,7 +6477,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll wound rolls of 1 for this model when it is attacking with a weapon that hits automatically."/>
       </characteristics>
     </profile>
     <profile id="d062-b0f6-25f9-814b" name="Grenadier" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6486,7 +6486,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 3&quot; to the range of any Grenade weapons this model uses. You can re-roll hit rolls of 1 for Grenade weapons this model uses."/>
       </characteristics>
     </profile>
     <profile id="acd2-b05c-0b2b-246a" name="Saboteur" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6495,7 +6495,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If this model is in your kill team not out of action when you make your Casualty rolls, roll a D6. On a 5+ choose an opponent who played that mission to lose 1 Materiel."/>
       </characteristics>
     </profile>
     <profile id="eb40-0dad-c22f-926c" name="Sapper" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6504,7 +6504,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If this model is in your kill team and you choose the Plan Traps strategy , you can add 1 to the number of pieces of terrain you can booby trap."/>
       </characteristics>
     </profile>
     <profile id="f583-d15b-ba4f-0128" name="Siegemaster" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6513,7 +6513,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can add 1 to Injury rolls caused by this model&apos;s attacks in the Shooting phase if those injury rolls are made for models that are obscured."/>
       </characteristics>
     </profile>
     <profile id="4bba-8dab-a8c7-e8ff" name="Ammo Hound" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6522,7 +6522,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If this model is in your kill team and not out of action when you make your Casualty rolls, roll a D6. On a 5+ you gain 1 Materiel."/>
       </characteristics>
     </profile>
     <profile id="32fd-6f95-11d2-943d" name="Relentless" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6531,7 +6531,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model does not suffer the -1 penalty for shooting with a Heavy weapon after moving in the preceding Movement phase, or for shooting an Assault weapon after Advancing."/>
       </characteristics>
     </profile>
     <profile id="1688-376c-d85a-00e8" name="Suppressor" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6540,7 +6540,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Enemy models that are targeted by this model in the Shooting phase suffer a -1 penalty to the hit rolls until the end of the phase."/>
       </characteristics>
     </profile>
     <profile id="9c4a-bbc8-ddee-a90d" name="Extra Armour" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6549,7 +6549,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Ignore AP characteristic of -1 for attacks that target this model."/>
       </characteristics>
     </profile>
     <profile id="4b2d-9f77-76cb-0492" name="Devastator" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6558,7 +6558,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll the damage for this model&apos;s ranged weapons that have a random damage characteristic (e.g. D3)."/>
       </characteristics>
     </profile>
     <profile id="5eb5-1305-07a4-0533" name="Rigorous" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6567,7 +6567,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll hit rolls of 1 for this model in the Shooting phase."/>
       </characteristics>
     </profile>
     <profile id="1817-642e-e79c-c378" name="Indomitable" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6576,16 +6576,16 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Once per battle round, you can make your opponent re-roll the Injury dice for this model."/>
       </characteristics>
     </profile>
-    <profile id="afd0-5c77-ced6-a04b" name="Heavy Handed" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+    <profile id="afd0-5c77-ced6-a04b" name="Heavily Muscled" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll wound rolls of 1 for this model in the Fight phase."/>
       </characteristics>
     </profile>
     <profile id="79c1-35fe-0ad6-b222" name="Reassuring" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6594,7 +6594,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model is never treated as being shaken when taking Nerve tests for other models in your kill team."/>
       </characteristics>
     </profile>
     <profile id="29fe-b097-53cf-fe58" name="Field Medic" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6603,7 +6603,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Roll a D6 when a friendly model within 3&quot; of this model suffers a wound, as long as this model is not shaken, on a 6 that wound is not lost."/>
       </characteristics>
     </profile>
     <profile id="97b1-bd89-1fa8-a74d" name="Anatomist" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6612,7 +6612,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Re-roll wound rolls of 1 for this model in the Fight phase."/>
       </characteristics>
     </profile>
     <profile id="0126-5cdb-7e2b-f350" name="Trauma Specialist" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6621,7 +6621,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="When an Injury roll is made of a friendly model within 3&quot; of this model, as long as this mode is not shaken, roll an additional dice use the lowest result."/>
       </characteristics>
     </profile>
     <profile id="68a8-673f-12db-79d3" name="Triage Expert" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6630,7 +6630,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If this model is in your kill team and not out of action at the end of a battle, and you roll a Dead result when making a Casualty roll for a model from your kill team, you can roll a D6. On a 4+ apply the Convalescence result for that model instead."/>
       </characteristics>
     </profile>
     <profile id="4c4d-7d0e-f1a1-4530" name="Interrogator" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6639,7 +6639,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="At the end of any battle in which you were victorious, if this model was in your kill team and not out of action, roll a D6. On a 5+ you gain 1 Intelligence."/>
       </characteristics>
     </profile>
     <profile id="88fc-7ba9-da35-6cd7" name="Toxin Synthesiser" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6648,7 +6648,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Before deployment, you can pick up to D3 models form your kill team. Until the end of the battle, add 1 to wound rolls made for attacks made with melee weapons those models are armed with."/>
       </characteristics>
     </profile>
     <profile id="d575-ef01-10a7-b65d" name="Swift" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6657,7 +6657,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll Advance rolls for this model."/>
       </characteristics>
     </profile>
     <profile id="bec8-997e-939b-0919" name="Forward Scout" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6666,7 +6666,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model automatically passes dangerous terrain tests."/>
       </characteristics>
     </profile>
     <profile id="933b-3cd0-00ad-c1c9" name="Pathfinder" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6675,7 +6675,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If this model is not in Convalescence, you can add or subtract 1 from the result when you roll to determine a mission. If you do, this model must be included in your kill team."/>
       </characteristics>
     </profile>
     <profile id="a879-86a0-bb4e-54e5" name="Skirmisher" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6684,7 +6684,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Your opponent(s) must subtract 1 from hit rolls for shooting attacks that target this model if the firing model is more than 12&quot; away from this model and this model is not shaken or obscured."/>
       </characteristics>
     </profile>
     <profile id="989e-0b31-4964-e545" name="Vanguard" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6693,7 +6693,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll hit rolls of 1 in the Shooting phase for attacks made by models in your kill team against enemy models that are within 6&quot; of this model, as long as this model is not shaken."/>
       </characteristics>
     </profile>
     <profile id="aff8-6364-6457-c814" name="Observer" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6702,7 +6702,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If this model is in your kill team, you can roll a D6 at the start of the Scouting phase. On a 4+ you can pick an additional strategy."/>
       </characteristics>
     </profile>
     <profile id="2d07-744a-65a5-a126" name="Explorer" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6711,7 +6711,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="After each battle in which this model was in your kill team, if this model is not in Convalescence, you can roll a D6. On a 5+ you gain 1 Territory."/>
       </characteristics>
     </profile>
     <profile id="476c-6e3d-0038-5251" name="Marksman" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6720,7 +6720,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll hit rolls of 1 for this model when it makes a shooting attack."/>
       </characteristics>
     </profile>
     <profile id="b3cc-3e6a-ad9e-b3af" name="Assassin" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6729,7 +6729,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll wounds rolls of 1 for this model when it makes a shooting attack."/>
       </characteristics>
     </profile>
     <profile id="0315-d713-05ad-b2a6" name="Sharpshooter" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6738,7 +6738,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If this model is Readied, add 1 to hit rolls when it makes a shooting attack."/>
       </characteristics>
     </profile>
     <profile id="ad3f-c508-d4fe-a3b3" name="Deadeye" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6747,7 +6747,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="On an unmodified wound roll of 6 for this model&apos;s shooting attacks, increase the Damage characteristic of that attack by 1."/>
       </characteristics>
     </profile>
     <profile id="c800-1108-6be1-5851" name="Armour Piercing" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6756,7 +6756,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="On an unmodified wound roll of 6 for this model&apos;s attacks, improve the AP characteristic of that attack by 1 (e.g. AP0 becomes AP-1)."/>
       </characteristics>
     </profile>
     <profile id="2460-a30a-d483-a51a" name="Mobile" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6765,7 +6765,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model does not suffer the -1 penalty for shooting with a Heavy weapon after moving in the preceding Movement phase, or for shooting an Assault weapon after Advancing."/>
       </characteristics>
     </profile>
     <profile id="4ae6-92fe-0c72-6d3b" name="Eagle-eye" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6774,7 +6774,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Increase the Range characteristic of all Rapid Fire and Heavy weapons this model is armed with by 6&quot;."/>
       </characteristics>
     </profile>
     <profile id="f84b-7f78-4ca7-7c19" name="Frenzied" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6783,7 +6783,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can add 1 to this model&apos;s Attacks and Strength characteristics in a battle round in which they charged."/>
       </characteristics>
     </profile>
     <profile id="74e6-9fdf-0e31-19b7" name="Exultant" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6792,7 +6792,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Opponents must re-roll unmodified hit rolls of 6 for models from their kill team within 3&quot; of this model, as long as it is not shaken."/>
       </characteristics>
     </profile>
     <profile id="192f-a2ab-437c-4cac" name="Flagellant" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6801,7 +6801,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Roll a D6 each time this model loses a wound. On a 6 the wound is ignored."/>
       </characteristics>
     </profile>
     <profile id="2363-fe88-6f0e-f056" name="Puritan" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6810,7 +6810,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll hit rolls in the Fight phase for this model against enemy models that do not have a Faction keyword in common with it."/>
       </characteristics>
     </profile>
     <profile id="6ee6-ee60-825a-99cf" name="Rousing" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6819,7 +6819,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 1 to the Leadership characteristic of models from your kill team within 6&quot; of this model, as long as it is not shaken."/>
       </characteristics>
     </profile>
     <profile id="3593-5982-fb38-53c0" name="Fanatical" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6828,7 +6828,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model automatically passes Nerve tests."/>
       </characteristics>
     </profile>
     <profile id="cd24-9bc1-cc67-8b8b" name="Strength of Spirit" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6837,7 +6837,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Subtract 1 for Injury rolls made for this model."/>
       </characteristics>
     </profile>
     <profile id="57a0-c58a-4425-5d9d" name="Grizzled" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -6846,7 +6846,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="*TODO"/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model ignores penalties to its Leadership characteristic and Nerve tests."/>
       </characteristics>
     </profile>
     <profile id="b8d6-5870-939e-3cdf" name="Resourceful" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
