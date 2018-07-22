@@ -687,7 +687,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2e60-643e-b8a9-6209" name="Mentor" hidden="false" collective="false" type="upgrade">
@@ -721,7 +721,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d7b5-1fa4-138f-0e26" name="Tactician" hidden="false" collective="false" type="upgrade">
@@ -755,7 +755,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c45e-d242-1026-e460" name="Tyrant" hidden="false" collective="false" type="upgrade">
@@ -789,7 +789,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -851,7 +851,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0849-58c3-c73d-1140" name="Inspiring" hidden="false" collective="false" type="upgrade">
@@ -891,7 +891,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9e8d-048d-0008-18cf" name="Mentor" hidden="false" collective="false" type="upgrade">
@@ -931,7 +931,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="025f-e2c9-650d-8c55" name="Paragon" hidden="false" collective="false" type="upgrade">
@@ -971,7 +971,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1efc-fdcc-1799-a43c" name="Tactician" hidden="false" collective="false" type="upgrade">
@@ -1011,7 +1011,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8289-9157-f989-6575" name="Tyrant" hidden="false" collective="false" type="upgrade">
@@ -1046,7 +1046,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1235,7 +1235,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ddef-db65-7b8e-65f8" name="Deathblow" hidden="false" collective="false" type="upgrade">
@@ -1269,7 +1269,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1677-4d4b-20b5-f94f" name="Combat Master" hidden="false" collective="false" type="upgrade">
@@ -1303,7 +1303,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="efc5-e27f-3127-df6f" name="Killer Instinct" hidden="false" collective="false" type="upgrade">
@@ -1337,7 +1337,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1399,7 +1399,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c305-10ab-11b7-bb27" name="Killer Instinct" hidden="false" collective="false" type="upgrade">
@@ -1439,7 +1439,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5dc4-c3c4-2c28-2886" name="Warrior Adept" hidden="false" collective="false" type="upgrade">
@@ -1479,7 +1479,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2509-9032-e060-83e7" name="Deadly Counter" hidden="false" collective="false" type="upgrade">
@@ -1519,7 +1519,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e2dc-859b-71aa-0ddc" name="Deathblow" hidden="false" collective="false" type="upgrade">
@@ -1559,7 +1559,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="efe8-d395-30e5-6025" name="Bloodlust" hidden="false" collective="false" type="upgrade">
@@ -1599,7 +1599,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1788,7 +1788,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="73c2-5c46-2eaf-16f9" name="Vox Ghost" hidden="false" collective="false" type="upgrade">
@@ -1822,7 +1822,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0c34-966c-0b61-329c" name="Command Relay" hidden="false" collective="false" type="upgrade">
@@ -1856,7 +1856,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="cb46-6ec9-b09c-cbd6" name="Triangulator" hidden="false" collective="false" type="upgrade">
@@ -1890,7 +1890,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1952,7 +1952,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="94f5-060a-6e82-a0ac" name="Triangulator" hidden="false" collective="false" type="upgrade">
@@ -1992,7 +1992,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4c01-66aa-361a-5c8f" name="Expert" hidden="false" collective="false" type="upgrade">
@@ -2032,7 +2032,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="38bb-0279-807c-3b86" name="Static Screech" hidden="false" collective="false" type="upgrade">
@@ -2072,7 +2072,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6673-5551-0973-2277" name="Vox Ghost" hidden="false" collective="false" type="upgrade">
@@ -2112,7 +2112,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="33fc-b1a1-712c-a07e" name="Vox Hacker" hidden="false" collective="false" type="upgrade">
@@ -2152,7 +2152,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2341,7 +2341,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="bc34-9982-32a7-7bd1" name="Saboteur" hidden="false" collective="false" type="upgrade">
@@ -2375,7 +2375,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0f18-6481-e6b1-5614" name="Sapper" hidden="false" collective="false" type="upgrade">
@@ -2409,7 +2409,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7d9a-5c5d-c749-eaba" name="Siegemaster" hidden="false" collective="false" type="upgrade">
@@ -2443,7 +2443,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2505,7 +2505,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="745d-d88d-9b7a-75a0" name="Siegemaster" hidden="false" collective="false" type="upgrade">
@@ -2545,7 +2545,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="dee1-73c2-943f-21b2" name="Pyromaniac" hidden="false" collective="false" type="upgrade">
@@ -2585,7 +2585,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5178-51c5-a867-6c9e" name="Grenadier" hidden="false" collective="false" type="upgrade">
@@ -2625,7 +2625,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4468-c657-873c-c53c" name="Saboteur" hidden="false" collective="false" type="upgrade">
@@ -2665,7 +2665,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="90f8-fe7c-7dd0-0d1a" name="Ammo Hound" hidden="false" collective="false" type="upgrade">
@@ -2705,7 +2705,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2894,7 +2894,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6016-4125-3ab7-0481" name="Devastator" hidden="false" collective="false" type="upgrade">
@@ -2928,7 +2928,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="af7b-50cf-d99f-3fe6" name="Rigorous" hidden="false" collective="false" type="upgrade">
@@ -2962,7 +2962,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2d9f-2cb7-5470-b95c" name="Indomitable" hidden="false" collective="false" type="upgrade">
@@ -2996,7 +2996,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3058,7 +3058,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6511-f8e5-9b3c-989d" name="Indomitable" hidden="false" collective="false" type="upgrade">
@@ -3098,7 +3098,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ae6c-9c95-c5ad-2e84" name="Suppressor" hidden="false" collective="false" type="upgrade">
@@ -3138,7 +3138,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3ca1-1edd-6b0a-09db" name="Extra Armour" hidden="false" collective="false" type="upgrade">
@@ -3178,7 +3178,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="dda1-9cff-5cf5-1f3b" name="Devastator" hidden="false" collective="false" type="upgrade">
@@ -3218,7 +3218,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0285-3f08-1963-3d39" name="Heavily Muscled" hidden="false" collective="false" type="upgrade">
@@ -3258,7 +3258,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3447,7 +3447,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9d3d-0e03-eb28-d2df" name="Trauma Specialist" hidden="false" collective="false" type="upgrade">
@@ -3481,7 +3481,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6596-91db-9355-8af3" name="Triage Expert" hidden="false" collective="false" type="upgrade">
@@ -3515,7 +3515,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d136-14bc-af57-1684" name="Interrogator" hidden="false" collective="false" type="upgrade">
@@ -3549,7 +3549,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3611,7 +3611,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c3fe-49ef-b913-ba40" name="Interrogator" hidden="false" collective="false" type="upgrade">
@@ -3651,7 +3651,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1325-cff8-c5e3-ee84" name="Field Medic" hidden="false" collective="false" type="upgrade">
@@ -3691,7 +3691,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="af58-ebb9-08b8-0bd1" name="Anatomist" hidden="false" collective="false" type="upgrade">
@@ -3731,7 +3731,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1d09-6821-5860-6c1d" name="Trauma Specialist" hidden="false" collective="false" type="upgrade">
@@ -3771,7 +3771,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2ab5-5213-f23b-84bb" name="Toxin Synthesiser" hidden="false" collective="false" type="upgrade">
@@ -3811,7 +3811,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4000,7 +4000,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3ad8-e2b8-6d36-ffb1" name="Skirmisher" hidden="false" collective="false" type="upgrade">
@@ -4034,7 +4034,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d48d-843a-1a20-c1c7" name="Vanguard" hidden="false" collective="false" type="upgrade">
@@ -4068,7 +4068,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2335-2290-4f77-4090" name="Observer" hidden="false" collective="false" type="upgrade">
@@ -4102,7 +4102,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4164,7 +4164,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7f83-c92e-c274-9a01" name="Observer" hidden="false" collective="false" type="upgrade">
@@ -4204,7 +4204,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7253-cc87-e87f-a10c" name="Forward Scout" hidden="false" collective="false" type="upgrade">
@@ -4244,7 +4244,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="72f2-0f4f-b366-5b48" name="Pathfinder" hidden="false" collective="false" type="upgrade">
@@ -4284,7 +4284,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9871-f572-1e0c-010d" name="Skirmisher" hidden="false" collective="false" type="upgrade">
@@ -4324,7 +4324,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c39b-2c74-2a6e-50e2" name="Explorer" hidden="false" collective="false" type="upgrade">
@@ -4364,7 +4364,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4553,7 +4553,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7090-5a24-3d64-9456" name="Deadeye" hidden="false" collective="false" type="upgrade">
@@ -4587,7 +4587,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="14b9-6354-3d3b-c297" name="Armour Piercing" hidden="false" collective="false" type="upgrade">
@@ -4621,7 +4621,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c52d-1de6-1015-d514" name="Mobile" hidden="false" collective="false" type="upgrade">
@@ -4655,7 +4655,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4717,7 +4717,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="48fe-7131-2559-1025" name="Mobile" hidden="false" collective="false" type="upgrade">
@@ -4757,7 +4757,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e800-b79e-d25e-d3e2" name="Assassin" hidden="false" collective="false" type="upgrade">
@@ -4797,7 +4797,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="63b3-484f-38c9-759f" name="Sharpshooter" hidden="false" collective="false" type="upgrade">
@@ -4837,7 +4837,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0843-cf4c-e2b4-bc34" name="Deadeye" hidden="false" collective="false" type="upgrade">
@@ -4877,7 +4877,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fc26-d91d-06b3-ec28" name="Eagle-eye" hidden="false" collective="false" type="upgrade">
@@ -4917,7 +4917,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5106,7 +5106,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b128-02e4-4311-e4c1" name="Battle Scarred" hidden="false" collective="false" type="upgrade">
@@ -5140,7 +5140,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="62a4-f40b-c16b-8031" name="Nerves of Steel" hidden="false" collective="false" type="upgrade">
@@ -5174,7 +5174,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="bdc0-3a6c-3572-5b97" name="One-man Army" hidden="false" collective="false" type="upgrade">
@@ -5208,7 +5208,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5270,7 +5270,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6a2d-ff87-0a0d-65e6" name="Seen It All" hidden="false" collective="false" type="upgrade">
@@ -5310,7 +5310,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8de9-3d58-e5be-0c06" name="Battle Scarred" hidden="false" collective="false" type="upgrade">
@@ -5350,7 +5350,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a501-1fbd-32f8-fa3b" name="Nerves of Steel" hidden="false" collective="false" type="upgrade">
@@ -5390,7 +5390,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3e1d-5fed-ae47-45ba" name="One-man Army" hidden="false" collective="false" type="upgrade">
@@ -5430,7 +5430,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9102-ae6c-f9f5-f0be" name="Survivor" hidden="false" collective="false" type="upgrade">
@@ -5470,7 +5470,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5659,7 +5659,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c160-3a58-9d2e-ee0b" name="Puritan" hidden="false" collective="false" type="upgrade">
@@ -5693,7 +5693,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="263b-3f18-328f-ab66" name="Rousing" hidden="false" collective="false" type="upgrade">
@@ -5727,7 +5727,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="cde6-cfc1-b836-c70f" name="Fanatical" hidden="false" collective="false" type="upgrade">
@@ -5761,7 +5761,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5823,7 +5823,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="60a6-e2f9-fc79-39c1" name="Fanatical" hidden="false" collective="false" type="upgrade">
@@ -5863,7 +5863,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0fca-e5c0-b919-ae4f" name="Exultant" hidden="false" collective="false" type="upgrade">
@@ -5903,7 +5903,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="22c6-bbd9-db59-e048" name="Flagellant" hidden="false" collective="false" type="upgrade">
@@ -5943,7 +5943,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="16e7-30eb-cc06-91c9" name="Puritan" hidden="false" collective="false" type="upgrade">
@@ -5983,7 +5983,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e141-ca21-4d2c-fe2d" name="Strength of Spirit" hidden="false" collective="false" type="upgrade">
@@ -6023,7 +6023,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
