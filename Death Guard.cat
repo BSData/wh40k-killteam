@@ -247,10 +247,76 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="789e-5bbe-6452-0094" name="Plague Marine Fire Team" hidden="false" targetId="810e-ca6c-b437-89fc" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="notInstanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="92f3-f848-6cf0-dbba" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2ec7-1a0e-d993-f08b" name="Poxwalker Fire Team" hidden="false" targetId="36e2-282a-c55c-9080" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="notInstanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="cf6f-7243-16fa-4ddd" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="a65e-bbc9-67a2-46d5" name="Plague Marine" hidden="false" collective="false" type="upgrade">
-      <profiles/>
+      <profiles>
+        <profile id="3a75-64d1-2293-fcec" name="Plague Marine" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="5&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="5"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="912c-06fb-0ab7-aa81" name="Disgustingly Resilient" hidden="false" targetId="c02d-7f46-e975-f8dc" type="profile">
@@ -272,7 +338,15 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
+      <modifiers>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="9b1b-ccb5-4679-fc56" name="Faction: Death Guard" hidden="false" targetId="a8b0-c81f-0fea-65fd" primary="false">
@@ -318,10 +392,66 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="6119-d3ea-6e84-9b09" name="Icon of Despair" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="9b73-3243-3144-0e5b" name="Icon of Despair" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Subtract 1 from the leadership characteristic of enemy models within 6&quot; of any models equipped with an Icon of Despair."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d9d-0661-250c-168e" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d42c-b742-0d9f-ce0c" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="11f2-699b-ba03-ad8a" name="Specialism" hidden="false" targetId="47b3-d478-cd43-713a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="c2f5-5fd4-24fa-9369" name="Boltgun" hidden="false" targetId="c430-c05e-f8f3-b4de" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4e4-1280-cd79-97c0" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="3ca0-4e6d-69e0-8baf" name="Plague knife" hidden="false" targetId="f202-7401-0698-35c6" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6edf-8d98-542f-7934" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="7273-b311-3592-5adc" name="Blight and krak grenades" hidden="false" targetId="ba4a-baf6-7e04-ae2a" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -335,7 +465,25 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b751-39a0-8d76-ea16" name="Plague Marine Gunner" hidden="false" collective="false" type="upgrade">
-      <profiles/>
+      <profiles>
+        <profile id="2ab1-3f2b-0e6a-a726" name="Plague Marine Gunner" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="5&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="5"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="de2e-1e82-7e99-fdcc" name="Disgustingly Resilient" hidden="false" targetId="c02d-7f46-e975-f8dc" type="profile">
@@ -370,6 +518,13 @@
               <conditionGroups/>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions/>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -420,7 +575,199 @@
         </categoryLink>
       </categoryLinks>
       <selectionEntries/>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bed3-6d1d-7d25-406f" name="Weapon options" hidden="false" collective="false" defaultSelectionEntryId="d297-957b-70f1-51bf">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d20-ac19-ee22-ae2e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e331-5586-1778-50dd" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="bb1b-c414-9984-24a9" name="Meltagun" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="2d35-d9af-a01d-f001" name="Meltagun" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Assault 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-4"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D6"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="If the target is within half range of this weapon, roll two dice when inflicting damage with it and discard the lowest result."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7ea6-8596-dc7c-c70e" name="Plasma gun" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="9b50-e45f-7d5a-752b" name="Plasma gun - Standard" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="7"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+                <profile id="70ef-8a44-a242-4fea" name="Plasma gun - Supercharge" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="2"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="On an unmodified hit roll of 1, the bearer is slain once all of this weapon&apos;s shots have been resolved."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c058-7209-b5ff-214b" name="Plague spewer" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="5bda-75eb-4bee-2494" name="Plague spewer" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="9&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Heavy D6"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="5"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll wound rolls of 1 for this weapon. This weapon automatically hits its target."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="628e-fa7c-222a-ec06" name="Plague belcher" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="6a4d-2880-1c8c-4f43" name="Plague belcher" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="9&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Assault D6"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll wound rolls of 1 for this weapon. This weapon automatically hits its target."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9b34-1cea-67e9-4e0a" name="Blight launcher" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="0a1d-886a-ff54-43b0" name="Blight launcher" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Assault 2"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-2"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll wound rolls of 1 for this weapon."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="d297-957b-70f1-51bf" name="Boltgun" hidden="false" targetId="c430-c05e-f8f3-b4de" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="6ee1-1196-22e0-fa4d" name="Plasma gun" hidden="false" targetId="87b7-3bbf-5de1-f561" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="7a43-5203-91f4-b534" name="Specialism" hidden="false" targetId="47b3-d478-cd43-713a" type="selectionEntryGroup">
           <profiles/>
@@ -430,13 +777,49 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="0cc8-0a81-ff69-d51d" name="Blight and krak grenades" hidden="false" targetId="ba4a-baf6-7e04-ae2a" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="e349-54d7-8f17-1bcc" name="Plague knife" hidden="false" targetId="f202-7401-0698-35c6" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8c9-2549-f5fa-33f0" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8924-9a68-3d47-fc1c" name="Plague Marine Fighter" hidden="false" collective="false" type="upgrade">
-      <profiles/>
+      <profiles>
+        <profile id="ed18-c5b3-374b-2350" name="Plague Marine Fighter" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="5&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="5"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="be9f-e275-30ab-79d1" name="Disgustingly Resilient" hidden="false" targetId="c02d-7f46-e975-f8dc" type="profile">
@@ -471,6 +854,13 @@
               <conditionGroups/>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions/>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -521,7 +911,155 @@
         </categoryLink>
       </categoryLinks>
       <selectionEntries/>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0c4a-c30b-e0a0-0adf" name="Weapon options" hidden="false" collective="false" defaultSelectionEntryId="672a-b2cd-9033-61dc">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27e0-41ee-5b90-8f27" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7f4-d76b-b2dc-2a2e" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="7f84-efdc-c68c-96c2" name="Bubotic axe" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="0b80-c24b-f924-a5ed" name="Bubotic axe" hidden="false" targetId="424a-61bc-ad66-2418" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4a7d-b304-43d3-8e5d" name="Flail of Corruption" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="6ec2-a7da-9903-3a75" name="Flail of Corruption" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="+2"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-2"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="2"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll wound rolls of 1 for this weapon. Make D3 hit rolls each time you attack with this weapon."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="282b-2bb7-224b-b3c7" name="Great plague cleaver" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="cc7a-1438-c7d0-d76d" name="Great plague cleaver" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="x2"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D6"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll wound rolls of 1 for this weapon. When attacking with this weapon, you must subtract 1 from the hit roll."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="51fb-9751-41fb-c4d9" name="Mace of contagion and bubotic axe" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="03b1-631d-e4f6-4b06" name="Mace of contagion" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="+2"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="3"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll wound rolls of 1 for this weapon. When attacking with this weapon, you must subtract 1 from the hit roll."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks>
+                <infoLink id="20de-27ac-7b3a-7d22" name="Bubotic axe" hidden="false" targetId="424a-61bc-ad66-2418" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="672a-b2cd-9033-61dc" name="Boltgun" hidden="false" targetId="c430-c05e-f8f3-b4de" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="5a30-f43e-d162-8d50" name="Plague knife" hidden="false" targetId="f202-7401-0698-35c6" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="743d-85f5-e61d-03b4" name="Specialism" hidden="false" targetId="47b3-d478-cd43-713a" type="selectionEntryGroup">
           <profiles/>
@@ -531,13 +1069,49 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="2bbe-4625-55dc-5518" name="Blight and krak grenades" hidden="false" targetId="ba4a-baf6-7e04-ae2a" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="8941-4ed4-80e7-92f4" name="Plague knife" hidden="false" targetId="f202-7401-0698-35c6" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77d0-d327-438e-37fe" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f21-de32-6db6-39c9" name="Plague Champion" hidden="false" collective="false" type="upgrade">
-      <profiles/>
+      <profiles>
+        <profile id="7ebb-eb77-c678-eb1a" name="Plague Champion" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="5&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="5"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="8"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="d1a9-f335-f6b3-ff68" name="Disgustingly Resilient" hidden="false" targetId="c02d-7f46-e975-f8dc" type="profile">
@@ -559,7 +1133,15 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
+      <modifiers>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="d305-acfe-bd9e-a508" name="Faction: Death Guard" hidden="false" targetId="a8b0-c81f-0fea-65fd" primary="false">
@@ -605,10 +1187,208 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries/>
-      <selectionEntryGroups/>
+      <selectionEntries>
+        <selectionEntry id="c1b3-1097-05c2-eac7" name="Power fist" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="d6c3-6560-012d-da83" name="Power fist" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="x2"/>
+                <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="When attacking with this weapon, you must subtract 1 from the hit roll."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="048d-76ad-0a91-5fc5" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="99b5-e919-045d-ff18" name="Weapon options" hidden="false" collective="false" defaultSelectionEntryId="9a9d-c91f-0ad4-fdc2">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0571-a023-6771-2dcd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="180b-a9ad-5bb0-fb66" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="9025-2f3c-4a81-37c3" name="Bolt pistol" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="ee07-60bc-7b4f-b046" name="Bolt pistol" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fa92-6e19-66c4-67bd" name="Plasma pistol" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="51b4-b689-b651-c228" name="Plasma pistol - Standard" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="7"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+                <profile id="214d-924e-5757-b285" name="Plasma pistol - Supercharge" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="2"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="On an unmodified hit roll of 1, the bearer is slain once all of this weapon&apos;s shots have been resolved."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="9a9d-c91f-0ad4-fdc2" name="Boltgun" hidden="false" targetId="c430-c05e-f8f3-b4de" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="e5f5-aa42-5e2a-7c19" name="Plasma gun" hidden="false" targetId="87b7-3bbf-5de1-f561" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="af47-7a24-b3e9-85ca" name="Plague knife option" hidden="false" collective="false" defaultSelectionEntryId="facd-7d6f-021a-4eb9">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7598-2f92-4725-c9cb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c2f-2eb2-5d75-f158" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="b279-e653-1c4c-f3b6" name="Plaguesword" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="02c6-92e6-fa3b-ef9e" name="Plaguesword" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll failed wound rolls for this weapon."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="facd-7d6f-021a-4eb9" name="Plague knife" hidden="false" targetId="f202-7401-0698-35c6" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8d5e-86d1-705e-6c91" name="Specialism" hidden="false" targetId="47b3-d478-cd43-713a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="159b-5b84-c0f5-8806" name="Blight and krak grenades" hidden="false" targetId="ba4a-baf6-7e04-ae2a" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -650,7 +1430,15 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
+      <modifiers>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="66e2-e81d-cb98-29a3" name="Faction: Death Guard" hidden="false" targetId="a8b0-c81f-0fea-65fd" primary="false">
@@ -725,7 +1513,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -742,6 +1532,269 @@
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="c430-c05e-f8f3-b4de" name="Boltgun" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="2140-0ad9-eed8-163f" name="Boltgun" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5133-012f-c552-fdc4" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f202-7401-0698-35c6" name="Plague knife" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="183f-a5fd-1fd8-7017" name="Plague knife" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll wound rolls of 1 for this weapon."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6da3-bdd4-83e6-b238" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ba4a-baf6-7e04-ae2a" name="Blight and krak grenades" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="732a-a77f-a0df-08de" name="Blight grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade D6"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll wound rolls of 1 for this weapon."/>
+          </characteristics>
+        </profile>
+        <profile id="2f7b-f679-9c88-629c" name="Krak grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade 1"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="888a-170f-a032-f946" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e80-e004-069a-7e37" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="87b7-3bbf-5de1-f561" name="Plasma gun" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="8485-e4b4-762f-79da" name="Plasma gun - Standard" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="7"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+          </characteristics>
+        </profile>
+        <profile id="55de-68f0-47ad-9597" name="Plasma gun - Supercharge" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="8"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="2"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="On an unmodified hit roll of 1, the bearer is slain once all of this weapon&apos;s shots have been resolved."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="810e-ca6c-b437-89fc" name="Plague Marine Fire Team" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="06a2-6b0f-1cf3-8043" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="740f-baac-59d4-513d" name="Models" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="1756-ed10-ba69-845c" name="Plague Champion" hidden="false" targetId="2f21-de32-6db6-39c9" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="226b-91bb-b360-5e8c" name="Plague Marine" hidden="false" targetId="a65e-bbc9-67a2-46d5" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="7be0-b068-aec4-cb7d" name="Plague Marine Fighter" hidden="false" targetId="8924-9a68-3d47-fc1c" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="0cdc-3db6-327b-37a2" name="Plague Marine Gunner" hidden="false" targetId="b751-39a0-8d76-ea16" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="f3e0-0d93-5ab8-1798" name="Fire Team Advances" hidden="false" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="36e2-282a-c55c-9080" name="Poxwalker Fire Team" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e379-a408-ddbd-d671" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="be9b-d5bd-b2e4-0a1b" name="Models" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5c1b-e6b0-a38d-cec4" name="Poxwalker" hidden="false" targetId="fb97-e62c-260c-d2e2" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8950-d7c6-0c5f-b82d" name="Fire Team Advances" hidden="false" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -904,7 +1957,21 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Ignore the penalty to this model&apos;s hot rolls from one flesh wound it has suffered."/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Ignore the penalty to this model&apos;s hit rolls from one flesh wound it has suffered."/>
+      </characteristics>
+    </profile>
+    <profile id="424a-61bc-ad66-2418" name="Bubotic axe" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+        <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+        <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="+1"/>
+        <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-2"/>
+        <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll wound rolls of 1 for this weapon."/>
       </characteristics>
     </profile>
   </sharedProfiles>
