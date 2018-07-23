@@ -5870,7 +5870,7 @@
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="c5f0-3774-78fb-5596" name="Warrior Adept" hidden="false" targetId="ce9f-f66f-d963-bc61" type="profile">
+                <infoLink id="c5f0-3774-78fb-5596" name="Exultant" hidden="false" targetId="74e6-9fdf-0e31-19b7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
