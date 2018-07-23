@@ -866,7 +866,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 4: Bold">
+                <modifier type="set" field="name" value="Level 4: Inspiring">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -5870,7 +5870,7 @@
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="c5f0-3774-78fb-5596" name="Warrior Adept" hidden="false" targetId="ce9f-f66f-d963-bc61" type="profile">
+                <infoLink id="c5f0-3774-78fb-5596" name="Exultant" hidden="false" targetId="74e6-9fdf-0e31-19b7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -6219,6 +6219,33 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bb99-4086-e731-058e" name="Psybolt" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="5462-27da-2b27-6a95" name="Psybolt" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Psybolt has a warp charge value of 5. If manifested, the closest enemy model within 18&quot; of and visible to the psyker suffers 1 mortal wound (pg 33). If the result of the Psychic test was 11+, the target suffers D3 mortal wounds instead."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52de-c6ae-ac69-baa4" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f53-8c91-942d-fa75" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
