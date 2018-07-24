@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c51-0669-1f79-d8aa" name="Astra Militarum" revision="3" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4c51-0669-1f79-d8aa" name="Astra Militarum" revision="4" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -768,10 +768,10 @@
           <modifiers/>
           <characteristics>
             <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
-            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Assault 1"/>
-            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
-            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
-            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Assault D6"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
             <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
           </characteristics>
         </profile>
@@ -781,12 +781,12 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6"/>
-            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9"/>
-            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca"/>
-            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-2"/>
-            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251"/>
-            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2"/>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Assault 1"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -884,6 +884,17 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="08fa-0ca6-71ec-79d4" name="Krak grenade" hidden="false" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="017b-5a5b-2b5a-f16d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdd4-3b17-9572-a36a" type="max"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -1032,9 +1043,7 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="1.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
     <selectionEntry id="fc67-291e-8fe8-c2db" name="Plasma Pistol" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -1630,8 +1639,23 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c01f-945c-7d58-34fd" name="Krak grenade" hidden="false" collective="false" type="upgrade">
-      <profiles/>
+    <selectionEntry id="c01f-945c-7d58-34fd" name="Krak Grenades" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="4109-9b28-0099-1da4" name="Krak grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade 1"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -2059,6 +2083,28 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="8b8d-4feb-a096-3e6f" name="Krak grenade" hidden="false" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74b8-b899-0ce0-22c3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d41-53c4-f428-3136" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="313a-8b7c-25fb-cdf3" name="Frag Grenades" hidden="false" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96bc-8d7b-93ff-5159" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e138-1b41-d197-f8a7" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -2187,6 +2233,28 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="6b74-0cb1-8b4e-d1c2" name="Krak grenade" hidden="false" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="833a-6d88-27ff-ea6a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bd2-d8d1-b7fe-04e3" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="cd11-d799-fc83-bdde" name="Frag Grenades" hidden="false" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3afb-2b75-3e42-ce3c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="118d-39a3-ae48-f944" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -2200,7 +2268,7 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
             <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
             <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
             <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-2"/>
