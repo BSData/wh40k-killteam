@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a8de-fa3a-9163-0c20" name="Tyranids" revision="1" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a8de-fa3a-9163-0c20" name="Tyranids" revision="1" battleScribeVersion="2.01" authorName="GenWilhelm" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -931,7 +931,7 @@
             <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
             <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
             <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
-            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
             <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
             <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll hit rolls of 1 for this weapon. If the bearer has more than one pair of scything talons, it can made 1 additional attack with them each time it fights."/>
           </characteristics>
@@ -1509,7 +1509,42 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="32d1-0f7b-9596-f404" name="Bio-morph" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34d6-fb27-6329-6275" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="fcef-4dd9-f98e-0f4a" name="Acid Maw" hidden="false" targetId="592f-d710-e27d-1715" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1ebb-c1b0-70fb-f41f" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="93c0-3798-26ca-fe3d" name="Flesh Hooks" hidden="false" targetId="301d-3fbf-9314-5ab0" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e540-bd79-8c74-1967" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="066c-0206-89d9-c0b4" name="Toxin Sacs" hidden="false" targetId="664f-0750-337d-2461" type="selectionEntry">
           <profiles/>
@@ -2121,11 +2156,11 @@
               <repeats/>
               <conditions/>
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6947-41ad-2ab4-512d" type="notInstanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="17ab-6279-0136-93e4" type="notInstanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da53-00a4-1b5e-0b6e" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf37-0d24-cf30-6e28" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="73d9-f8ce-61fb-28e6" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4922-ebd4-7ad4-1cd2" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -2142,10 +2177,19 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="17ab-6279-0136-93e4" type="notInstanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da53-00a4-1b5e-0b6e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6947-41ad-2ab4-512d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf37-0d24-cf30-6e28" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="73d9-f8ce-61fb-28e6" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4922-ebd4-7ad4-1cd2" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints/>
