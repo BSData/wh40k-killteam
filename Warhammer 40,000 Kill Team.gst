@@ -364,16 +364,10 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="beaf-798d-961f-353d" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f81f-45d9-e33e-add6" type="greaterThan"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -416,6 +410,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="c0f7-c442-b695-bf07" name="List: Battle-Forged Kill Team" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
@@ -440,29 +441,17 @@
           <modifiers>
             <modifier type="set" field="4d02-f2ef-451d-d936" value="1">
               <repeats/>
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="beaf-798d-961f-353d" type="atLeast"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f81f-45d9-e33e-add6" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
             </modifier>
             <modifier type="set" field="5fb4-4918-172f-e221" value="1">
               <repeats/>
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="beaf-798d-961f-353d" type="atLeast"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f81f-45d9-e33e-add6" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
             </modifier>
           </modifiers>
           <constraints>
@@ -477,16 +466,10 @@
           <modifiers>
             <modifier type="set" field="525d-4bde-68f0-bf69" value="3">
               <repeats/>
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="beaf-798d-961f-353d" type="atLeast"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f81f-45d9-e33e-add6" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
             </modifier>
             <modifier type="set" field="name" value="Specialists">
               <repeats/>
@@ -6318,6 +6301,13 @@
                   <modifiers/>
                   <constraints/>
                 </categoryLink>
+                <categoryLink id="5f59-f023-e937-0bbd" name="List: Battle-Forged Kill Team" hidden="false" targetId="c0f7-c442-b695-bf07" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
               </categoryLinks>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -6420,6 +6410,13 @@
                   <constraints/>
                 </categoryLink>
                 <categoryLink id="2926-6d86-3aaa-2f40" name="Style: Campaign" hidden="false" targetId="7c0b-7da1-facd-d326" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+                <categoryLink id="b1b3-d209-71e9-b552" name="List: Battle-Forged Kill Team" hidden="false" targetId="c0f7-c442-b695-bf07" primary="false">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
