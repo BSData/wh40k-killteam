@@ -357,25 +357,12 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
-    <categoryEntry id="50dd-a755-e02d-1c30" name="Model" hidden="false">
+    <categoryEntry id="50dd-a755-e02d-1c30" name="Model" hidden="true">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="526b-ce9b-2acd-a91f" value="3">
-          <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3620-0e49-2443-f84c" type="atLeast"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c121-389a-4aa9-c9ef" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="4b27-4221-00e5-c79e" value="20">
+        <modifier type="set" field="hidden" value="false">
           <repeats/>
           <conditions/>
           <conditionGroups>
@@ -390,8 +377,8 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4b27-4221-00e5-c79e" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="526b-ce9b-2acd-a91f" type="min"/>
+        <constraint field="selections" scope="force" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4b27-4221-00e5-c79e" type="max"/>
+        <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="526b-ce9b-2acd-a91f" type="min"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
