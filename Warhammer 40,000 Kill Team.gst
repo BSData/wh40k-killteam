@@ -357,14 +357,12 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
-  </categoryEntries>
-  <forceEntries>
-    <forceEntry id="cf61-9e5a-51cd-b4d2" name="New ForceEntry" hidden="false">
+    <categoryEntry id="50dd-a755-e02d-1c30" name="Model" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="increment" field="145c-3c0c-cd54-da88" value="3">
+        <modifier type="set" field="526b-ce9b-2acd-a91f" value="3">
           <repeats/>
           <conditions/>
           <conditionGroups>
@@ -377,38 +375,8 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" field="aeca-a38d-da39-7958" value="21">
+        <modifier type="set" field="4b27-4221-00e5-c79e" value="20">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3620-0e49-2443-f84c" type="atLeast"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c121-389a-4aa9-c9ef" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="increment" field="aeca-a38d-da39-7958" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" childId="f868-bdfd-567c-3eac" repeats="1" roundUp="false"/>
-          </repeats>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3620-0e49-2443-f84c" type="atLeast"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c121-389a-4aa9-c9ef" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="increment" field="145c-3c0c-cd54-da88" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" childId="f868-bdfd-567c-3eac" repeats="1" roundUp="false"/>
-          </repeats>
           <conditions/>
           <conditionGroups>
             <conditionGroup type="and">
@@ -422,9 +390,18 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="cf61-9e5a-51cd-b4d2" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="145c-3c0c-cd54-da88" type="min"/>
-        <constraint field="selections" scope="cf61-9e5a-51cd-b4d2" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeca-a38d-da39-7958" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4b27-4221-00e5-c79e" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="526b-ce9b-2acd-a91f" type="min"/>
       </constraints>
+    </categoryEntry>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="cf61-9e5a-51cd-b4d2" name="New ForceEntry" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
       <forceEntries/>
       <categoryLinks>
         <categoryLink id="ea41-fbff-2a87-03d1" name="Configuration" hidden="false" targetId="f868-bdfd-567c-3eac" primary="false">
@@ -6324,7 +6301,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="fe43-60aa-1723-2ebb" name="Campaign" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -6336,7 +6315,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c121-389a-4aa9-c9ef" name="Open Play" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -6348,7 +6329,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -6356,7 +6339,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5635-dbb6-369f-79a1" name="Force Type" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -6391,7 +6376,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8dad-156f-fab6-0e6c" name="Command Roster" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -6403,7 +6390,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -6411,7 +6400,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups/>
