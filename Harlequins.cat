@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8f3b-d6fd-0ad8-06f2" name="Harlequins" revision="2" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8f3b-d6fd-0ad8-06f2" name="Harlequins" revision="3" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -25,7 +25,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -81,7 +81,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -141,7 +141,7 @@
             <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
             <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
             <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
-            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="_"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -170,7 +170,7 @@
             <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="+1"/>
             <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
             <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
-            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="_"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -199,7 +199,7 @@
             <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="+1"/>
             <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
             <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
-            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="_"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -228,7 +228,7 @@
             <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="+2"/>
             <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-2"/>
             <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
-            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="_"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -257,7 +257,7 @@
             <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
             <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
             <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
-            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="_"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -315,7 +315,7 @@
             <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
             <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
             <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
-            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="_"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -405,6 +405,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="65c6-6ec8-340a-1782" name="Player" hidden="false" targetId="cb52-a195-44b4-d87b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ff9d-2150-ebde-76df" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -526,7 +533,7 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="910d-8df8-5d4a-30a3" name="Player Fire Team" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="910d-8df8-5d4a-30a3" name="Player Fire Team" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -536,30 +543,7 @@
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="7bd2-591f-4653-2054" name="Units" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b2a-e466-3bbd-1373" type="min"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="9181-5a73-fed9-1df3" name="Player" hidden="false" targetId="853e-b6de-ea60-b17e" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="6540-189f-519f-40f6" name="Fire Team Advances" hidden="false" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry">
           <profiles/>
@@ -569,8 +553,28 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="6407-cfd3-ae1c-e34c" name="Player" hidden="false" targetId="853e-b6de-ea60-b17e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="398a-d345-9bd1-d9fc" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -617,27 +621,6 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="ea8d-728b-c823-46aa" name="Sniper" hidden="false" targetId="ead5-ea32-5412-c857" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <repeats/>
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="853e-b6de-ea60-b17e" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
         <entryLink id="a8fd-9aa2-b0f5-b0b2" name="Scout" hidden="false" targetId="1d42-7d93-e0a4-330b" type="selectionEntry">
           <profiles/>
           <rules/>
@@ -662,69 +645,6 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="c0e7-70eb-00e0-7506" name="Heavy" hidden="false" targetId="8c9b-a772-02e7-d673" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <repeats/>
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="853e-b6de-ea60-b17e" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="3e5d-3d79-b51c-d0a1" name="Demolitions" hidden="false" targetId="1933-2ec9-f5b1-5666" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <repeats/>
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="853e-b6de-ea60-b17e" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="9a0d-4746-a78a-b388" name="Comms" hidden="false" targetId="02a0-4107-4818-7c99" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <repeats/>
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="853e-b6de-ea60-b17e" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
         <entryLink id="b6bb-f6fb-3dd6-c9f8" name="Combat" hidden="false" targetId="cc58-f869-82d1-b353" type="selectionEntry">
           <profiles/>
           <rules/>
@@ -742,7 +662,7 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>This model can move across othe models and terrain as if they were not there. In addition, it never suffers falling damage, and never falls on another model. If it would, instead place this model as close as possible to the point where it would have landed. This can bring it within 1&quot; of an enemy model.</description>
+      <description>This model can move across other models and terrain as if they were not there. In addition, it never suffers falling damage, and never falls on another model. If it would, instead place this model as close as possible to the point where it would have landed. This can bring it within 1&quot; of an enemy model.</description>
     </rule>
     <rule id="0a0f-1f33-0e31-eca2" name="Holo-suit" hidden="false">
       <profiles/>

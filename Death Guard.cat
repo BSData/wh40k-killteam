@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="369f-8d9a-1b69-00dc" name="Death Guard" revision="1" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="369f-8d9a-1b69-00dc" name="Death Guard" revision="3" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -55,7 +55,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -111,7 +111,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -135,7 +135,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -159,7 +159,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -183,7 +183,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -255,7 +255,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -279,7 +279,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -297,7 +297,7 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="a65e-bbc9-67a2-46d5" name="Plague Marine" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="a65e-bbc9-67a2-46d5" name="Plague Marine" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="3a75-64d1-2293-fcec" name="Plague Marine" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
           <profiles/>
@@ -314,6 +314,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -391,17 +392,24 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="b777-e4ce-7e3a-7252" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6119-d3ea-6e84-9b09" name="Icon of Despair" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="9b73-3243-3144-0e5b" name="Icon of Despair" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+            <profile id="9b73-3243-3144-0e5b" name="Icon of Despair" hidden="false" profileTypeId="0883-432d-b2ca-f11a" profileTypeName="Wargear">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Subtract 1 from the leadership characteristic of enemy models within 6&quot; of any models equipped with an Icon of Despair."/>
+                <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="Subtract 1 from the leadership characteristic of enemy models within 6&quot; of any models equipped with an Icon of Despair."/>
               </characteristics>
             </profile>
           </profiles>
@@ -464,7 +472,7 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="14.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b751-39a0-8d76-ea16" name="Plague Marine Gunner" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b751-39a0-8d76-ea16" name="Plague Marine Gunner" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="2ab1-3f2b-0e6a-a726" name="Plague Marine Gunner" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
           <profiles/>
@@ -481,6 +489,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="2"/>
           </characteristics>
         </profile>
       </profiles>
@@ -508,16 +517,10 @@
       <modifiers>
         <modifier type="set" field="4052-8cc0-c6ae-1e3e" value="2">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac29-0dee-157a-17e9" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa4e-0d80-457c-5b71" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
           <repeats>
@@ -567,6 +570,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="27ca-78a5-8973-4d7f" name="Plague Marine" hidden="false" targetId="0d05-3565-7b60-3c0f" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3b37-c84a-964a-1ab2" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -800,7 +810,7 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8924-9a68-3d47-fc1c" name="Plague Marine Fighter" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="8924-9a68-3d47-fc1c" name="Plague Marine Fighter" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="ed18-c5b3-374b-2350" name="Plague Marine Fighter" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
           <profiles/>
@@ -817,6 +827,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="2"/>
           </characteristics>
         </profile>
       </profiles>
@@ -844,16 +855,10 @@
       <modifiers>
         <modifier type="set" field="ef1e-4c3f-d31d-9e2b" value="2">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac29-0dee-157a-17e9" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa4e-0d80-457c-5b71" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
           <repeats>
@@ -903,6 +908,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="438a-7eb6-3528-1b67" name="Plague Marine" hidden="false" targetId="0d05-3565-7b60-3c0f" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e409-dc81-4b30-fac6" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1092,7 +1104,7 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f21-de32-6db6-39c9" name="Plague Champion" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2f21-de32-6db6-39c9" name="Plague Champion" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="7ebb-eb77-c678-eb1a" name="Plague Champion" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
           <profiles/>
@@ -1109,6 +1121,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="8"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1141,8 +1154,17 @@
           <conditions/>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="9b17-33d2-5ba1-d761" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b17-33d2-5ba1-d761" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="d305-acfe-bd9e-a508" name="Faction: Death Guard" hidden="false" targetId="a8b0-c81f-0fea-65fd" primary="false">
           <profiles/>
@@ -1180,6 +1202,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="9553-55a3-a4da-76bb" name="Plague Marine" hidden="false" targetId="0d05-3565-7b60-3c0f" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="08d6-f016-ceab-82f6" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1401,7 +1430,7 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fb97-e62c-260c-d2e2" name="Poxwalker" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="fb97-e62c-260c-d2e2" name="Poxwalker" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="be87-1c81-ff24-edac" name="Poxwalker" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
           <profiles/>
@@ -1418,6 +1447,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="4"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="7+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1477,6 +1507,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="72ec-075b-3fb2-a5e2" name="Poxwalker" hidden="false" targetId="1bc8-a924-22a9-e69a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ccab-bf7e-0c92-9abd" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1750,7 +1787,9 @@
           <categoryLinks/>
         </entryLink>
       </entryLinks>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="36e2-282a-c55c-9080" name="Poxwalker Fire Team" hidden="false" collective="false" type="unit">
       <profiles/>
@@ -1794,7 +1833,9 @@
           <categoryLinks/>
         </entryLink>
       </entryLinks>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
