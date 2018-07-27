@@ -142,7 +142,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -166,7 +166,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -190,7 +190,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -214,7 +214,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -238,7 +238,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -262,7 +262,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -286,7 +286,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4d5-5711-a9f4-df8a" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -402,6 +402,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="6982-067a-c2ec-b2cf" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -460,15 +467,28 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="a8ad-53cd-c639-802f" name="Rubric Marine Gunner" hidden="false" collective="false" type="model">
-      <profiles/>
-      <rules/>
-      <infoLinks>
-        <infoLink id="a39a-7964-bcb8-894c" name="Rubric Marine" hidden="false" targetId="9308-00c2-cb27-a403" type="profile">
+      <profiles>
+        <profile id="27e8-8995-f400-6739" name="Rubric Marine Gunner" book="Kill Team" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </infoLink>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="5&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="4"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
         <infoLink id="413d-5ab9-b0f8-dd84" name="Death to the False Emperor" hidden="false" targetId="16c2-6dc4-84cf-81cc" type="profile">
           <profiles/>
           <rules/>
@@ -491,16 +511,10 @@
       <modifiers>
         <modifier type="set" field="c813-b02b-3708-bfa1" value="1">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa4e-0d80-457c-5b71" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac29-0dee-157a-17e9" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
           <repeats>
@@ -550,6 +564,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="e1da-bc2a-4154-ac82" name="Rubric Marine" hidden="false" targetId="0110-fd3d-1c15-4846" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f8b6-16a8-e40f-75f2" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -777,16 +798,10 @@
       <modifiers>
         <modifier type="set" field="3e41-dfe7-5837-049d" value="1">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac29-0dee-157a-17e9" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa4e-0d80-457c-5b71" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -818,6 +833,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="8"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
         <profile id="750d-67fd-9a5d-1b74" name="Transhuman Physiology" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -855,16 +871,10 @@
         </modifier>
         <modifier type="set" field="bed5-190a-4269-f79c" value="1">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac29-0dee-157a-17e9" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa4e-0d80-457c-5b71" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -914,6 +924,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="cf94-e8b1-6b34-31ba" name="Rubric Marine" hidden="false" targetId="0110-fd3d-1c15-4846" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="36d1-eb4f-6c57-cdfa" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1058,6 +1075,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
         <profile id="3d64-5b3b-7e45-fb71" name="Aura of Dark Glory" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -1119,6 +1137,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="4322-68a1-d011-5a89" name="Tzaangor" hidden="false" targetId="1eaf-47ca-d17e-14b9" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6671-c4cf-b20a-8d06" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1219,6 +1244,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
         <profile id="c269-2ce7-52e0-a496" name="Aura of Dark Glory" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -1243,16 +1269,10 @@
         </modifier>
         <modifier type="set" field="76fc-4c63-5430-7b48" value="1">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac29-0dee-157a-17e9" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa4e-0d80-457c-5b71" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -1295,6 +1315,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="81bc-d843-b95d-f0a7" name="Tzaangor" hidden="false" targetId="1eaf-47ca-d17e-14b9" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="5148-f90c-2b9b-396a" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1387,16 +1414,10 @@
       <modifiers>
         <modifier type="set" field="ce20-0822-9c1c-d43a" value="1">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac29-0dee-157a-17e9" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa4e-0d80-457c-5b71" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -1419,7 +1440,7 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d63c-d18d-ce19-32b9" name="Rubric Marine Fire Team" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="d63c-d18d-ce19-32b9" name="Rubric Marine Fire Team" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1483,7 +1504,7 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8545-f3b5-5fba-f75c" name="Tzaangor Fire Team" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="8545-f3b5-5fba-f75c" name="Tzaangor Fire Team" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1775,6 +1796,7 @@
         <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
         <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
         <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+        <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
       </characteristics>
     </profile>
     <profile id="09fc-cd63-a88a-46ee" name="Aura of Dark Glory" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
