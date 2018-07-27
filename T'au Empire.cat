@@ -703,6 +703,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="4+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -804,7 +805,7 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="39e0-639f-c99b-5473" name="DS8 Tactical Support Turret" hidden="false" targetId="c326-255b-59ee-42b8" type="selectionEntry">
+        <entryLink id="4957-63c0-3ed7-0b99" name="Specialism" hidden="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -812,12 +813,22 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="4957-63c0-3ed7-0b99" name="Specialism" hidden="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup">
+        <entryLink id="28be-2636-e9ad-6658" name="DS8 Tactical Support Turret" hidden="false" targetId="c326-255b-59ee-42b8" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
-          <constraints/>
+          <modifiers>
+            <modifier type="set" field="f746-e3c2-5345-f429" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f746-e3c2-5345-f429" type="max"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -842,6 +853,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="4+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
       </profiles>
@@ -860,8 +872,18 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
-      <constraints/>
+      <modifiers>
+        <modifier type="set" field="e067-7f1f-d375-8b55" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e067-7f1f-d375-8b55" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="c293-68cd-23ff-06d6" name="Faction: T&apos;au Empire" hidden="false" targetId="7b37-ac1c-f776-37a2" primary="false">
           <profiles/>
@@ -989,6 +1011,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="0"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="4"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="4+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1063,6 +1086,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1164,6 +1188,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="3"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1182,8 +1207,18 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
-      <constraints/>
+      <modifiers>
+        <modifier type="set" field="6ca4-b281-fcb2-8634" value="3">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6ca4-b281-fcb2-8634" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="f164-bcd7-3f70-ac81" name="Faction: T&apos;au Empire" hidden="false" targetId="7b37-ac1c-f776-37a2" primary="false">
           <profiles/>
@@ -1295,6 +1330,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1313,8 +1349,18 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
-      <constraints/>
+      <modifiers>
+        <modifier type="set" field="717b-8b89-0842-7708" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="717b-8b89-0842-7708" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="fccb-d72f-8581-8779" name="Faction: T&apos;au Empire" hidden="false" targetId="7b37-ac1c-f776-37a2" primary="false">
           <profiles/>
@@ -1404,6 +1450,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="4+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1487,8 +1534,18 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
-          <constraints/>
+          <modifiers>
+            <modifier type="set" field="babd-aeae-552a-388c" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="babd-aeae-552a-388c" type="max"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
         <entryLink id="d1ce-cf6b-814b-39f0" name="Specialism" hidden="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup">
@@ -1521,6 +1578,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="4+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1539,8 +1597,18 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
-      <constraints/>
+      <modifiers>
+        <modifier type="set" field="108e-d846-d297-d667" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="108e-d846-d297-d667" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="3adf-4fb0-7c1a-dca6" name="Faction: T&apos;au Empire" hidden="false" targetId="7b37-ac1c-f776-37a2" primary="false">
           <profiles/>
@@ -1660,6 +1728,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1796,6 +1865,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="3"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="8"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1814,8 +1884,18 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
-      <constraints/>
+      <modifiers>
+        <modifier type="set" field="0404-bed3-2d08-3157" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0404-bed3-2d08-3157" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="ccd1-9a96-34a1-3ee5" name="Battlesuit" hidden="false" targetId="fd6f-ea1b-53af-11ab" primary="false">
           <profiles/>
@@ -1940,6 +2020,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2039,6 +2120,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2151,6 +2233,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2242,6 +2325,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
         <profile id="3d51-5401-6b9a-1792" name="Guardian Fields" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -2275,8 +2359,38 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
-      <constraints/>
+      <modifiers>
+        <modifier type="set" field="9e05-1722-0482-1c46" value="0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="9e05-1722-0482-1c46" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6abe-382b-3cd5-c6d4" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cf63-3236-04d7-9a6d" type="atLeast"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e05-1722-0482-1c46" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="c6cc-5090-bd73-6861" name="Drone" hidden="false" targetId="580b-8df1-70dc-452b" primary="false">
           <profiles/>
@@ -2338,6 +2452,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
         <profile id="a05c-2e26-c483-f367" name="Gravity Wave Projector" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -2371,8 +2486,31 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
-      <constraints/>
+      <modifiers>
+        <modifier type="set" field="f0b5-207f-4cf8-c375" value="0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="f0b5-207f-4cf8-c375" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="68ce-4791-39e0-d5e2" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0b5-207f-4cf8-c375" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="0d74-a4de-081d-9769" name="Drone" hidden="false" targetId="580b-8df1-70dc-452b" primary="false">
           <profiles/>
@@ -2434,6 +2572,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
         <profile id="120f-07b4-032d-c345" name="Pulse Accelerator" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -2467,8 +2606,31 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
-      <constraints/>
+      <modifiers>
+        <modifier type="set" field="fde3-43b3-dab2-96c5" value="0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="fde3-43b3-dab2-96c5" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="68ce-4791-39e0-d5e2" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fde3-43b3-dab2-96c5" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="fb45-3660-7388-4a34" name="Drone" hidden="false" targetId="580b-8df1-70dc-452b" primary="false">
           <profiles/>
@@ -2524,12 +2686,13 @@
             <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="8&quot;"/>
             <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="5+"/>
             <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="5+"/>
-            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
             <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="4"/>
-            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="2"/>
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
         <profile id="8831-4842-beaf-4712" name="Recon Suite" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -2563,8 +2726,31 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
-      <constraints/>
+      <modifiers>
+        <modifier type="set" field="de94-dbcc-764d-0371" value="0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="de94-dbcc-764d-0371" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="68ce-4791-39e0-d5e2" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de94-dbcc-764d-0371" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="bc55-24f1-600d-919f" name="Faction: T&apos;au Empire" hidden="false" targetId="7b37-ac1c-f776-37a2" primary="false">
           <profiles/>
@@ -2852,9 +3038,18 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="fb33-0421-7aec-0950" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2d2-6364-5cd1-baca" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb33-0421-7aec-0950" type="max"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
