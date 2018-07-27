@@ -3108,7 +3108,14 @@
     <selectionEntry id="5f3d-caea-0e44-9c2a" name="Target lock" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="27ff-326b-46ad-ad35" name="Target lock" hidden="false" targetId="2d10-c4cb-6ffa-9157" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00ab-2531-4a3a-7191" type="max"/>
@@ -3167,6 +3174,12 @@
           <modifiers/>
         </infoLink>
         <infoLink id="af3c-f09b-d5e1-ddf3" name="Markerlight" hidden="false" targetId="405a-1189-7953-f9af" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f386-80dc-e623-1f2d" name="Target lock" hidden="false" targetId="2d10-c4cb-6ffa-9157" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3667,7 +3680,12 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>TODO</description>
+      <description>If a model fires a markerlight, it cannot fire any other weapons this phase. When a model is hit by a markerlight, place a counter next to it for the remainder of the phase. The table below describes the benefits models from your kill team receive when shooting at a model that has markerlight counters. All benefits are cumulative.
+
+* 1 - You can re-roll hit rolls of 1 for attacks that target this model.
+* 2 - Add 1 to hit rolls for attacks that target this model if it is obscured.
+* 3 - Models shooting this model do not suffer the penalty for moving and firing Heavy weapons or Advancing and firing Assault weapons.
+* 4+ - Add 1 to hit roll for attacks that target this model.</description>
     </rule>
     <rule id="7084-9ac7-95d2-a29f" name="For the Greater Good" hidden="false">
       <profiles/>
@@ -3776,11 +3794,11 @@
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
-        <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="TODO"/>
+        <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Greanade D6"/>
         <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="-"/>
         <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-"/>
         <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="-"/>
-        <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="TODO"/>
+        <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="This weapon does not inflict any damage. Your opponent must subtract 1 from hit rolls made for INFANTRY models that have suffered any hits from photon grenades until the end of the battle round."/>
       </characteristics>
     </profile>
     <profile id="2712-5a7b-37e7-3c6a" name="Missile pod" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
@@ -3804,11 +3822,11 @@
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="30&quot;"/>
-        <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="TODO"/>
+        <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Heavy D3"/>
         <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="8"/>
         <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
-        <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="TODO"/>
-        <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="TODO"/>
+        <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="2"/>
+        <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="If you make one or more unmodified hit rolls of 1, the bearer suffers a mortal wound after all of this weapon&apos;s shots have been resolved."/>
       </characteristics>
     </profile>
     <profile id="3815-6cc3-d18c-addb" name="Markerlight" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
@@ -3835,7 +3853,7 @@
         <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
         <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="7"/>
         <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
-        <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="TODO"/>
+        <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
         <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
       </characteristics>
     </profile>
@@ -3864,7 +3882,7 @@
         <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="8"/>
         <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-4"/>
         <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D6"/>
-        <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="If the target is within half TODO"/>
+        <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="If the target is within half range of this weapon, roll two dice when inflicting damage with it and discard the lowest result."/>
       </characteristics>
     </profile>
     <profile id="893c-9ecd-f3c0-34bd" name="Rail rifle" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
@@ -3943,6 +3961,15 @@
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can subtract 1 from Nerve tests for Breacher Shas&apos;las or Breacher Shas&apos;uis from your kill team within 3&quot; of any friendly models with this ability that are not shaken."/>
+      </characteristics>
+    </profile>
+    <profile id="2d10-c4cb-6ffa-9157" name="Target lock" hidden="false" profileTypeId="0883-432d-b2ca-f11a" profileTypeName="Wargear">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="A model with a target lock does not suffer the penalty to their hit rolls for Advancing and firing Assault weapons."/>
       </characteristics>
     </profile>
   </sharedProfiles>
