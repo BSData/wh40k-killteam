@@ -18,6 +18,7 @@
         <characteristicType id="d63d-20cc-db25-5dd5" name="A"/>
         <characteristicType id="411b-5228-afed-8334" name="Ld"/>
         <characteristicType id="c319-1a2d-3648-2294" name="Sv"/>
+        <characteristicType id="44ec-172b-6381-4908" name="Max"/>
       </characteristicTypes>
     </profileType>
     <profileType id="c067-7929-f4dc-7825" name="Weapon">
@@ -450,6 +451,13 @@
               <repeats/>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="name" value="Leaders">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d6e9-5af3-c17c-77a0" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
