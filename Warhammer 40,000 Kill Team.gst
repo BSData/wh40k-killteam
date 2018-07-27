@@ -6312,7 +6312,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="57bf-6123-c537-58ac" name="Matched Play: Command Roster" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -6339,7 +6341,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="01b9-249b-0eb4-6437" name="Open Play: Kill Team" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -6366,7 +6370,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f0cd-e1da-e4f1-6a32" name="Campaign: Command Roster" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -6393,7 +6399,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="1d42-9d57-38c5-9a02" name="Campaign: Kill Team" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -6427,7 +6435,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -6435,7 +6445,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups/>
