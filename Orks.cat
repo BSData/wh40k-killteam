@@ -827,6 +827,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1274,6 +1275,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="3"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1419,6 +1421,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="4"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1492,7 +1495,26 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="613e-9476-9f7f-8225" name="Ork Boy" hidden="false" collective="false" type="model">
-      <profiles/>
+      <profiles>
+        <profile id="55c4-47aa-45ec-91be" name="Ork Boy" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="5&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="5+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="4"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="5778-a7ed-c33f-9eba" name="&apos;Ere We Go!" hidden="false" targetId="8565-4830-7494-eee7" type="rule">
@@ -1543,30 +1565,87 @@
         </categoryLink>
       </categoryLinks>
       <selectionEntries/>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7ffb-12d3-7e07-b9db" name="Weapon" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77af-cedd-1bac-1e7a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f7e-5e95-669b-b465" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="43ff-ac8f-c484-c19e" name="Slugga and Choppa" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="942b-2461-0723-cc64" name="Slugga" hidden="false" targetId="940a-b9fd-1bc8-85ba" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4df9-a11a-c983-292b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74c1-4254-def8-c397" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="9b4b-ad44-e8ea-6aa0" name="Choppa" hidden="false" targetId="e6ad-7425-f9d8-2373" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af87-0000-4269-32cc" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a3e-c36c-1e1e-9c5d" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b9d3-4e17-cf5e-8393" name="Shoota" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="18bf-a03c-ff36-77ea" name="Shoota" hidden="false" targetId="e300-4083-c2af-e564" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f711-c949-e550-c1dd" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe16-598b-4877-068b" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="18c8-7803-c237-0ead" name="Choppa" hidden="false" targetId="e6ad-7425-f9d8-2373" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a03-d1ad-d2e8-394b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23ac-8453-3560-f621" type="max"/>
-          </constraints>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="80ed-3b63-0219-d63a" name="Slugga" hidden="false" targetId="940a-b9fd-1bc8-85ba" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80e3-71e8-2434-0d9f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1c5-a1d9-4d0a-0051" type="max"/>
-          </constraints>
-          <categoryLinks/>
-        </entryLink>
         <entryLink id="9e90-f9e5-9c5a-1b1a" name="Specialism" hidden="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup">
           <profiles/>
           <rules/>
@@ -1592,7 +1671,26 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b607-ad76-1669-9052" name="Ork Boy Gunner" hidden="false" collective="false" type="model">
-      <profiles/>
+      <profiles>
+        <profile id="4026-5fd4-b0eb-c0c5" name="Ork Boy Gunner" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="5&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="5+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="4"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="2"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="12e3-064c-9d06-9dd7" name="&apos;Ere We Go!" hidden="false" targetId="8565-4830-7494-eee7" type="rule">
@@ -1701,35 +1799,26 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="57ab-3b7e-f344-5028" name="Shoota" hidden="false" collective="false" type="upgrade">
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="cea4-6a40-f550-5a7d" name="Rokkit Launcha" hidden="false" targetId="5ee8-9c61-7312-76b6" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks>
-                <entryLink id="2d13-df29-08f4-43a3" name="Shoota" hidden="false" targetId="e300-4083-c2af-e564" type="selectionEntry">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c9a-7fd3-9e24-0561" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d6f-42e7-52ba-67be" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+            </entryLink>
+            <entryLink id="01b5-0213-d276-829f" name="Big Shoota" hidden="false" targetId="3cbf-8f19-2f43-b9fb" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1774,6 +1863,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="3"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1958,6 +2048,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2082,6 +2173,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="3"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2236,6 +2328,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2328,7 +2421,7 @@
     </selectionEntry>
     <selectionEntry id="ed83-4b83-7f92-099b" name="Loota Spanner" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="6186-2317-2f14-2032" name="Loota" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+        <profile id="6186-2317-2f14-2032" name="Loota Spanner" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2343,6 +2436,7 @@
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
             <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
             <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="3"/>
           </characteristics>
         </profile>
       </profiles>
