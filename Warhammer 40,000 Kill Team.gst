@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="2" battleScribeVersion="2.01" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="3" battleScribeVersion="2.01" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -526,6 +526,22 @@
       <modifiers/>
       <constraints/>
       <categoryLinks/>
+    </entryLink>
+    <entryLink id="e434-af92-70de-fd2f" name="Resources" hidden="false" targetId="64a1-f2d5-7917-1155" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="04b3-0e07-77a4-7d22" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -6468,6 +6484,117 @@
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="64a1-f2d5-7917-1155" name="Resources" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9171-c9ec-8e80-960f" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="583d-37ae-8d18-795b" name="Intelligence" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="name" value="1x Intelligence">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="64a1-f2d5-7917-1155" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="583d-37ae-8d18-795b" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb80-4b47-1d66-7bcd" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="a945-c8b1-dde2-12e5" name="Materiel" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="name" value="1x Materiel">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="64a1-f2d5-7917-1155" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a945-c8b1-dde2-12e5" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc87-0572-e1cc-a79a" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="c4a8-a2e9-9895-270d" name="Morale" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="name" value="1x Morale">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="64a1-f2d5-7917-1155" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4a8-a2e9-9895-270d" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e91-5c4a-febf-c7dd" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="4228-8ef6-a0d7-24fd" name="Territory" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="name" value="1x Territory">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="64a1-f2d5-7917-1155" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4228-8ef6-a0d7-24fd" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3028-ebf6-cf0e-2a0c" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups/>
