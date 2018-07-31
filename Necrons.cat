@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d1bc-0b71-2f3d-71eb" name="Necrons" revision="1" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d1bc-0b71-2f3d-71eb" name="Necrons" book="Warhammer 40,000: Kill Team" revision="3" battleScribeVersion="2.01" authorName="BSData Team" authorContact="https://gitter.im/BSData/wh40k-killteam" authorUrl="https://github.com/BSData/wh40k-killteam/" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -308,7 +308,7 @@
                 <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
                 <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
                 <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
-                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="This weapon may target a CHARACTER even if it is not the closest enemy unit.  Each time you roll a wound roll of 6+ for this weapon, the target suffers a mortal wound in addition to any other damage."/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="A model firing a synaptic disintegrator does not suffer the penalty to hit rolls for the target being at long range. Each time you roll a wound roll of 6+ for this weapon, the target suffers a mortal wound in addition to any other damage."/>
               </characteristics>
             </profile>
           </profiles>
@@ -429,7 +429,7 @@
                 <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
                 <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
                 <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
-                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can re-roll failed wound rolls for this weapon."/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Re-roll failed wound rolls for this weapon."/>
               </characteristics>
             </profile>
           </profiles>
@@ -562,7 +562,7 @@
                     <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="5"/>
                     <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
                     <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
-                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Each hit roll of 6+ with this weapon causes 3 hits instead of 1."/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Each hit roll of 6+ with this weapon causes 3 hits."/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -770,10 +770,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29e7-d60f-5acd-4d99" type="notInstanceOf"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79c6-76fc-47ee-c005" type="instanceOf"/>
+                <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -843,10 +849,17 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1096-6337-5521-2b3a" type="notInstanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0153-186d-0217-311c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e299-24fe-f16d-dd4c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="040a-73a0-6c8d-2733" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -861,10 +874,17 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e299-24fe-f16d-dd4c" type="notInstanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0153-186d-0217-311c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1096-6337-5521-2b3a" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="040a-73a0-6c8d-2733" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -879,10 +899,17 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e299-24fe-f16d-dd4c" type="notInstanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0153-186d-0217-311c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1096-6337-5521-2b3a" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="040a-73a0-6c8d-2733" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>

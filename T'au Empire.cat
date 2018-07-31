@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ac4-f90b-e0a6-ae72" name="T&apos;au Empire" revision="1" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ac4-f90b-e0a6-ae72" name="T&apos;au Empire" revision="3" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -827,7 +827,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f746-e3c2-5345-f429" type="max"/>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f746-e3c2-5345-f429" type="max"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -1509,7 +1509,9 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a55-d707-7751-3a12" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
         <entryLink id="679d-7bdc-01c5-f9e4" name="Photon grenade" hidden="false" targetId="1f76-6a16-1e9d-e519" type="selectionEntry">
@@ -1525,9 +1527,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4eb-193b-f20d-de4f" type="min"/>
-          </constraints>
+          <constraints/>
           <categoryLinks/>
         </entryLink>
         <entryLink id="072b-f42c-9a8e-449d" name="DS8 Tactical Support Turret" hidden="false" targetId="c326-255b-59ee-42b8" type="selectionEntry">
@@ -1544,7 +1544,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="babd-aeae-552a-388c" type="max"/>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="babd-aeae-552a-388c" type="max"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -2091,10 +2091,15 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="7408-672a-00fa-851f" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc0-ce9c-183b-90d6" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf60-8019-8c1f-60ae" type="max"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -2790,7 +2795,18 @@
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="66b7-b5a5-db6d-ab73" name="Burst cannon" hidden="false" targetId="9bcd-9e2a-ef93-4293" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bc0-491e-a256-347e" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="7.0"/>
       </costs>
@@ -3573,10 +3589,10 @@
               <repeats/>
               <conditions/>
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9121-9617-86d0-8997" type="notInstanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7fa5-5063-e682-a11a" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9121-9617-86d0-8997" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7fa5-5063-e682-a11a" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
