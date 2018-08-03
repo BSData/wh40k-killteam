@@ -40,4 +40,4 @@ Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][
 
 [BattleScribe homepage]: http://www.battlescribe.net/
 [BattleScribe Data on Appspot]: http://battlescribedata.appspot.com/#/repos
-[Getting Started wiki]: https://github.com/BSData/bsdata/wiki/Home#getting-started
+[Getting Started wiki]: https://github.com/BSData/catalogue-development/wiki/Getting-Started
