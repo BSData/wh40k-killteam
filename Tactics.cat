@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0387-9900-9deb-8a98" name="Tactics" revision="1" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0387-9900-9deb-8a98" name="Tactics" revision="2" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1606,6 +1606,84 @@
           <characteristics>
             <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
             <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model from your kill team to attack with a stikkbomb. Until the end of the phase, change the weapon’s type to Grenade D3 and add 1 to its Strength and Damage characteristics."/>
+          </characteristics>
+        </profile>
+        <profile id="9d25-7c6e-d931-d51c" name="Pyromaniac" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose for a model to shoot with a burna. The burna makes D6 attacks instead of D3 this phase."/>
+          </characteristics>
+        </profile>
+        <profile id="4a96-0a63-4a50-9a4b" name="Dead &apos;Ard" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team suffers a mortal wound. Roll a D6 for that mortal wound, and each other mortal wound suffered by that model for the rest of the phase; on a 5+ the mortal wound is ignored and has no effect."/>
+          </characteristics>
+        </profile>
+        <profile id="7d61-ad66-1ca3-8961" name="Itchin&apos; for a Fight" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to fight in the Fight phase. You can make one additional attack with that model for each enemy model within 1&quot; of it."/>
+          </characteristics>
+        </profile>
+        <profile id="a203-4aa8-99d7-df85" name="Indiscriminate Dakka" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after firing Overwatch with one of your models. You can immediately fire Overwatch again."/>
+          </characteristics>
+        </profile>
+        <profile id="e5ca-c7af-ce35-bb86" name="Waaagh!" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when it is your turn to move in the Movement phase and your Leader is on the battlefield and not shaken. For the duration of that phase, add 1&quot; to the Move characteristic of all models in your kill team, and add 1 to their Advance and charge rolls."/>
+          </characteristics>
+        </profile>
+        <profile id="669e-ede6-7a22-8af9" name="&apos;Ere We Go, &apos;Ere We Go!" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after making a charge roll for one of your models. Re-roll one of the dice."/>
+          </characteristics>
+        </profile>
+        <profile id="bbf1-44bc-369f-601c" name="Joyride" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="647e-2e40-f90b-9e0a" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model from your kill team to make a normal move in the Movement phase, and that model is witihn 1&quot; of a Galvanic Servohauler. When you move that model in this phase, simultaneously move the Galvanic Servohauler as if it were a friendly model. Both models are considered to have a Move characteristic of 2D6&quot; in this phase (roll once for both models), cannot Advance, cannot move vertically and must end their moves within 1&quot; of each other."/>
           </characteristics>
         </profile>
       </profiles>
