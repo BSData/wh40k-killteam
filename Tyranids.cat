@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a8de-fa3a-9163-0c20" name="Tyranids" revision="5" battleScribeVersion="2.01" authorName="GenWilhelm" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a8de-fa3a-9163-0c20" name="Tyranids" revision="6" battleScribeVersion="2.01" authorName="GenWilhelm" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -666,24 +666,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="301d-3fbf-9314-5ab0" name="Flesh Hooks" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="b7c7-6c99-9789-922c" name="Flesh Hooks" book="Core Manual" page="180" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="af5a-007f-fdcb-8e08" name="Flesh Hooks" hidden="false" targetId="cd8c-6877-53f3-1dc7" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <characteristics>
-            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
-            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Assault 2"/>
-            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
-            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
-            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
-            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="The weapon can be fired within 1&quot; of an enemy model, and can target enemy models within 1&quot; of friendly models."/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules/>
-      <infoLinks/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33dc-4ec0-8c9c-4195" type="max"/>
@@ -1559,7 +1551,39 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34d6-fb27-6329-6275" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries/>
+          <selectionEntries>
+            <selectionEntry id="0c16-3c9d-9673-61fa" name="Flesh Hooks" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="eb27-3e81-14b9-95c7" name="Flesh Hooks" hidden="false" targetId="cd8c-6877-53f3-1dc7" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="602c-d04b-2081-6a21" value="1">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="602c-d04b-2081-6a21" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks>
             <entryLink id="fcef-4dd9-f98e-0f4a" name="Acid Maw" hidden="false" targetId="592f-d710-e27d-1715" type="selectionEntry">
@@ -1576,25 +1600,7 @@
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="1ebb-c1b0-70fb-f41f" type="max"/>
-              </constraints>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="93c0-3798-26ca-fe3d" name="Flesh Hooks" hidden="false" targetId="301d-3fbf-9314-5ab0" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="e540-bd79-8c74-1967" value="1">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="e540-bd79-8c74-1967" type="max"/>
+                <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1ebb-c1b0-70fb-f41f" type="max"/>
               </constraints>
               <categoryLinks/>
             </entryLink>
@@ -2316,6 +2322,20 @@
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Subract 1 from any psychic tests made for enemy PSKYERS within 18&quot; of a model with this ability. TYRANIDS PSYKERS are not affected."/>
+      </characteristics>
+    </profile>
+    <profile id="cd8c-6877-53f3-1dc7" name="Flesh Hooks" book="Core Manual" page="180" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+        <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Assault 2"/>
+        <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
+        <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+        <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="The weapon can be fired within 1&quot; of an enemy model, and can target enemy models within 1&quot; of friendly models."/>
       </characteristics>
     </profile>
   </sharedProfiles>
