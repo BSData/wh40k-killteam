@@ -46,25 +46,25 @@
         <characteristicType id="8ec8-e2f2-e3da-3854" name="Result"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="dae8-7ad6-c833-ae42" name="Level 1 Tactics">
+    <profileType id="dae8-7ad6-c833-ae42" name="Tactics - Level 1">
       <characteristicTypes>
         <characteristicType id="8676-a93b-4bd2-980c" name="CP"/>
         <characteristicType id="0ddc-e579-29cb-1050" name="Description"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="6b9d-52f9-6b59-baed" name="Level 2 Tactics">
+    <profileType id="6b9d-52f9-6b59-baed" name="Tactics - Level 2">
       <characteristicTypes>
         <characteristicType id="7406-3190-e315-97b4" name="CP"/>
         <characteristicType id="87f2-d85a-6f94-2213" name="Description"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="4889-1e30-7137-5126" name="Level 3 Tactics">
+    <profileType id="4889-1e30-7137-5126" name="Tactics - Level 3">
       <characteristicTypes>
         <characteristicType id="7b01-2583-abb0-6b77" name="CP"/>
         <characteristicType id="a6d7-33e3-9e68-c111" name="Description"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="7f60-0255-d11e-0718" name="Shared Tactic">
+    <profileType id="7f60-0255-d11e-0718" name="Tactics - General">
       <characteristicTypes>
         <characteristicType id="9f7b-18bb-3fea-2a63" name="CP"/>
         <characteristicType id="9c0d-fb62-000d-3237" name="Description"/>
@@ -587,6 +587,22 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="89c2-07a3-1c2d-f789" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2aec-4c6e-8654-ad80" name="Show Tactics" hidden="false" targetId="e56b-5bd2-eb3c-1dca" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="1f6e-b7ba-b21a-d2ee" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6871,326 +6887,7 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5fe2-8a08-a830-a7d6" name="Tactics" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="1395-b13f-dcde-fa6f" name="Decisive Move" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Movement phase. Pick a model from your kill team and make a move with it before any other models (including an Advance move, Fall Back move or charge attempt if you wish). If another player uses this Tactic, roll off: the winner goes first."/>
-              </characteristics>
-            </profile>
-            <profile id="95a2-a9ed-62e7-a1d7" name="Decisive Shot" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Shooting phase. Pick a model from your kill team that is eligible to shoot and shoot with it before any other models. If another player uses this Tactic, roll off: the winner goes first."/>
-              </characteristics>
-            </profile>
-            <profile id="7e18-4b49-8ee6-da8a" name="Gritted Teeth" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model with one or more flesh wounds to shoot in the Shooting phase or fight in the Fight phase. Until the end of the phase, this model’s attacks do not suffer any penalty to their hit rolls from this model’s flesh wound(s)."/>
-              </characteristics>
-            </profile>
-            <profile id="1140-0475-e16d-c520" name="Decisive Strike" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Fight phase. Pick a model from your kill team that is eligible to fight and fight with it before any other models. If another player uses this Tactic, roll off: the winner goes first."/>
-              </characteristics>
-            </profile>
-            <profile id="a37a-376b-b8a9-9056" name="Insane Bravery" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic before taking any Nerve tests in the Morale phase. You can automatically pass a single Nerve test for a model from your kill team."/>
-              </characteristics>
-            </profile>
-            <profile id="805b-de21-4300-ee03" name="Tactical Re-roll" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Re-roll a single Advance roll, charge roll, Psychic test, Deny the Witch test, hit roll, wound roll, saving throw, Injury roll or Nerve test."/>
-              </characteristics>
-            </profile>
-            <profile id="a3bc-c4b2-13a5-7c83" name="Adaptive Strategy" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic as soon as your kill team is broken. You immediately generate D3 Command Points."/>
-              </characteristics>
-            </profile>
-            <profile id="5481-9619-b4c6-41cd" name="Alchomite Detonation" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ce6-7fab-c5aa-1fad" type="equalTo"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                      </conditions>
-                      <conditionGroups/>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the end of the Movement phase. Choose an Alchomite Stack that is within 1&quot; of at least one model from your kill team that is not shaken. At the end of the following Movement phase, roll a dice for each model within 3&quot; of that Alchomite Stack. On a 4+, that model suffers 1 mortal wound. Then remove the Alchomite Stack. Any models that were standing on that terrain are placed on the battlefield directly below where they were standing."/>
-              </characteristics>
-            </profile>
-            <profile id="9a6a-0976-13e0-f15f" name="Angel of Death" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after choosing a model that charged in this battle round to fight with. Add 1 to that model&apos;s Attacks characteristic for this phase."/>
-              </characteristics>
-            </profile>
-            <profile id="680a-1797-d5c1-2c63" name="Auspex Scan" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a Readied model to shoot with. Ignore all negative hit modifiers this phase."/>
-              </characteristics>
-            </profile>
-            <profile id="aca5-d2c6-2440-0db8" name="Battle Brothers" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after failing a saving throw for a model that is within 3&quot; of another friendly model that is not shaken. No damage is inflicted upon the target model, but one friendly model of your choice that is within 3&quot; of the target model and not shaken suffers a number of mortal wounds equal to the Damage characteristic of the weapon used in the attack."/>
-              </characteristics>
-            </profile>
-            <profile id="005f-3bfb-ef39-e0d1" name="Death Denied" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when one of your model&apos;s is taken out of action. That model suffers a flesh wound instead."/>
-              </characteristics>
-            </profile>
-            <profile id="4c14-e091-7f40-05a9" name="Psychological Warfare" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Morale phase. Choose a REIVER from your kill team that took an enemy model out of action in the preceding Fight phase and is not shaken. Add 1 to any Nerve tests made this phase for enemy models within 6&quot; of the model you chose."/>
-              </characteristics>
-            </profile>
-            <profile id="f934-2c1f-18df-6354" name="Armour of Contempt" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team suffers a mortal wound. Roll a D6 for that mortal wound, and each other mortal wound suffered by that model for the rest of the phase; on a 5+ the mortal wound is ignored and has no effect."/>
-              </characteristics>
-            </profile>
-            <profile id="8f5c-47e5-b052-19ee" name="Death to the Traitors" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model from your kill team to fight in the Fight phase. Until the end of that phase, each time you make a hit roll of 6+ for that model and the target is a HERETIC ASTARTES model, you can immediately make an extra attack against the same model using the same weapon. These attacks cannot themselves generate any further attacks."/>
-              </characteristics>
-            </profile>
-            <profile id="d048-1c19-0657-a636" name="Hellfire Shells" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to shoot with a heavy bolter. You can only make a single hit roll for the weapon this phase, however, if it hits, the target suffers D3 mortal wounds instead of the normal damage."/>
-              </characteristics>
-            </profile>
-            <profile id="7362-af02-c47b-ae46" name="Honour the Chapter" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the end of the Fight phase. Pick a model from your kill team. That model can immediately fight an additional time."/>
-              </characteristics>
-            </profile>
-            <profile id="b0cd-84bf-c4c0-5cd5" name="Masterful Marksmanship" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Shooting phase when you choose an INTERCESSOR from your kill team to shoot with a stalker bolt rifle. Until the end of that phase, you can add 1 to hit and wound rolls for that model."/>
-              </characteristics>
-            </profile>
-            <profile id="34be-90d2-f3f9-c060" name="Shock and Awe" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
-                <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you declare a REIVER from your kill team will attempt to charge. Before any Overwatch attacks are made, you can make a single shooting attack using this model’s shock grenades against a target of the charge. If the attack is successful, that target may not fire Overwatch this phase in addition to the normal effects of the grenade."/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="801f-4346-a387-1209" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d6b-897b-f744-68d6" type="min"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="a763-c901-e2be-22eb" name="List type" hidden="false" collective="false" defaultSelectionEntryId="46a8-9e97-401a-03f7">
           <profiles/>
@@ -7500,18 +7197,18 @@
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0f22-ea11-93c9-222c" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eb2-9a10-0da6-d9ec" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2669-c1ba-5b5f-75b0" name="Killzone" hidden="false" collective="false">
+        <selectionEntryGroup id="2669-c1ba-5b5f-75b0" name="Killzone" hidden="false" collective="false" defaultSelectionEntryId="4ce6-7fab-c5aa-1fad">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b556-bf1c-c59b-0a6e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d663-f589-146e-b153" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries>
@@ -7568,7 +7265,7 @@
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Result" characteristicTypeId="8ec8-e2f2-e3da-3854" value="In a campaign game, the player who winds the mission gains 1 Materiel. Otherwise, there is no additional rule."/>
+                    <characteristic name="Result" characteristicTypeId="8ec8-e2f2-e3da-3854" value="In a campaign game, the player who wins the mission gains 1 Materiel. Otherwise, there is no additional rule."/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7909,6 +7606,2046 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e56b-5bd2-eb3c-1dca" name="Show Tactics" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="950b-4a21-b5d0-fa37" name="Decisive Move" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Movement phase. Pick a model from your kill team and make a move with it before any other models (including an Advance move, Fall Back move or charge attempt if you wish). If another player uses this Tactic, roll off: the winner goes first."/>
+          </characteristics>
+        </profile>
+        <profile id="3265-d783-4364-49c3" name="Decisive Shot" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Shooting phase. Pick a model from your kill team that is eligible to shoot and shoot with it before any other models. If another player uses this Tactic, roll off: the winner goes first."/>
+          </characteristics>
+        </profile>
+        <profile id="fef7-fd49-1e9b-b9b1" name="Gritted Teeth" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model with one or more flesh wounds to shoot in the Shooting phase or fight in the Fight phase. Until the end of the phase, this model’s attacks do not suffer any penalty to their hit rolls from this model’s flesh wound(s)."/>
+          </characteristics>
+        </profile>
+        <profile id="d6fe-3d34-43d6-f274" name="Decisive Strike" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Fight phase. Pick a model from your kill team that is eligible to fight and fight with it before any other models. If another player uses this Tactic, roll off: the winner goes first."/>
+          </characteristics>
+        </profile>
+        <profile id="449e-1312-4094-cc8c" name="Insane Bravery" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic before taking any Nerve tests in the Morale phase. You can automatically pass a single Nerve test for a model from your kill team."/>
+          </characteristics>
+        </profile>
+        <profile id="c43c-b056-b86f-a6c6" name="Tactical Re-roll" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Re-roll a single Advance roll, charge roll, Psychic test, Deny the Witch test, hit roll, wound roll, saving throw, Injury roll or Nerve test."/>
+          </characteristics>
+        </profile>
+        <profile id="5957-4cfe-f625-b5d3" name="Adaptive Strategy" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic as soon as your kill team is broken. You immediately generate D3 Command Points."/>
+          </characteristics>
+        </profile>
+        <profile id="f06c-2e1e-ffb9-bee9" name="Alchomite Detonation" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ce6-7fab-c5aa-1fad" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the end of the Movement phase. Choose an Alchomite Stack that is within 1&quot; of at least one model from your kill team that is not shaken. At the end of the following Movement phase, roll a dice for each model within 3&quot; of that Alchomite Stack. On a 4+, that model suffers 1 mortal wound. Then remove the Alchomite Stack. Any models that were standing on that terrain are placed on the battlefield directly below where they were standing."/>
+          </characteristics>
+        </profile>
+        <profile id="bb3a-b0bb-9120-cea8" name="Angel of Death" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after choosing a model that charged in this battle round to fight with. Add 1 to that model&apos;s Attacks characteristic for this phase."/>
+          </characteristics>
+        </profile>
+        <profile id="0b2a-b52c-a5df-49f5" name="Auspex Scan" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a Readied model to shoot with. Ignore all negative hit modifiers this phase."/>
+          </characteristics>
+        </profile>
+        <profile id="5fc1-4c78-9728-8b2d" name="Battle Brothers" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after failing a saving throw for a model that is within 3&quot; of another friendly model that is not shaken. No damage is inflicted upon the target model, but one friendly model of your choice that is within 3&quot; of the target model and not shaken suffers a number of mortal wounds equal to the Damage characteristic of the weapon used in the attack."/>
+          </characteristics>
+        </profile>
+        <profile id="c796-73f4-ce39-ea20" name="Death Denied" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when one of your model&apos;s is taken out of action. That model suffers a flesh wound instead."/>
+          </characteristics>
+        </profile>
+        <profile id="0efc-7cbe-29c6-1437" name="Psychological Warfare" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Morale phase. Choose a REIVER from your kill team that took an enemy model out of action in the preceding Fight phase and is not shaken. Add 1 to any Nerve tests made this phase for enemy models within 6&quot; of the model you chose."/>
+          </characteristics>
+        </profile>
+        <profile id="eb00-c9bd-4598-72c9" name="Armour of Contempt" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team suffers a mortal wound. Roll a D6 for that mortal wound, and each other mortal wound suffered by that model for the rest of the phase; on a 5+ the mortal wound is ignored and has no effect."/>
+          </characteristics>
+        </profile>
+        <profile id="9fc8-412c-256e-b3bb" name="Death to the Traitors" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model from your kill team to fight in the Fight phase. Until the end of that phase, each time you make a hit roll of 6+ for that model and the target is a HERETIC ASTARTES model, you can immediately make an extra attack against the same model using the same weapon. These attacks cannot themselves generate any further attacks."/>
+          </characteristics>
+        </profile>
+        <profile id="f8bc-e31c-6bca-7aee" name="Hellfire Shells" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to shoot with a heavy bolter. You can only make a single hit roll for the weapon this phase, however, if it hits, the target suffers D3 mortal wounds instead of the normal damage."/>
+          </characteristics>
+        </profile>
+        <profile id="95d6-bea4-5b0c-a519" name="Honour the Chapter" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1e8-be31-acc8-9eca" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the end of the Fight phase. Pick a model from your kill team. That model can immediately fight an additional time."/>
+          </characteristics>
+        </profile>
+        <profile id="05f8-2035-bf09-1dce" name="Masterful Marksmanship" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Shooting phase when you choose an INTERCESSOR from your kill team to shoot with a stalker bolt rifle. Until the end of that phase, you can add 1 to hit and wound rolls for that model."/>
+          </characteristics>
+        </profile>
+        <profile id="387b-86d7-67ee-15b6" name="Shock and Awe" book="Core Manual" page="82" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0ef-d104-7cde-57ed" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you declare a REIVER from your kill team will attempt to charge. Before any Overwatch attacks are made, you can make a single shooting attack using this model’s shock grenades against a target of the charge. If the attack is successful, that target may not fire Overwatch this phase in addition to the normal effects of the grenade."/>
+          </characteristics>
+        </profile>
+        <profile id="fac3-402c-b83d-d2c1" name="Asurmen&apos;s Blessing" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6125-42d9-d2d0-697c" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a DIRE AVENGER from your kill team to shoot in the Shooting phase. You can re-roll failed hit rolls for that model until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="579b-9e35-9813-858c" name="Feigned Retreat" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6125-42d9-d2d0-697c" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after a model from your kill team Falls Back. That model can still shoot this battle round."/>
+          </characteristics>
+        </profile>
+        <profile id="478f-828f-d34f-9c9a" name="Fire and Fade" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6125-42d9-d2d0-697c" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75d9-31c7-fbd8-dc06" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2ad-ef6f-1b5f-2d50" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after a model from your kill team shoots in the Shooting phase. The model can immediately make a normal move of up to 7&quot; as if it were the Movement phase."/>
+          </characteristics>
+        </profile>
+        <profile id="9a1b-82a7-ef39-429b" name="Matchless Agility" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6125-42d9-d2d0-697c" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Movement phase when a model from your kill team Advances. Add 6&quot; to the model&apos;s Move characteristic for that Movement phase instead of rolling a dice."/>
+          </characteristics>
+        </profile>
+        <profile id="e0ed-8cab-12fd-d010" name="Phantasm" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6125-42d9-d2d0-697c" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the beginning of the first battle round. Pick a model from your kill team and set it up again, anywhere in your deployment zone."/>
+          </characteristics>
+        </profile>
+        <profile id="5fb2-a6ac-ed3d-6d5b" name="Rune of Ynnead" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6125-42d9-d2d0-697c" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team is taken out of action. Roll a D6. On a 4+ that model suffers a flesh wound instead."/>
+          </characteristics>
+        </profile>
+        <profile id="afbf-f3c3-ad0f-0cf2" name="Conqueror Doctrina Imperative" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d67-ac66-1e97-ffb3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to fight in the Fight phase. Add 1 to hit rolls for the model until the end of the phase. If the model is within 6&quot; of a friendly model equipped with an enhanced data-tether, you can add 2 to the hit rolls instead."/>
+          </characteristics>
+        </profile>
+        <profile id="0457-1081-8ab5-32bf" name="Dunestrider" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d67-ac66-1e97-ffb3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Movement phase when a model from your kill team Advances. Roll two dice and pick which result to use when making the Advance roll."/>
+          </characteristics>
+        </profile>
+        <profile id="5205-8160-cf9d-2f5f" name="Gloria Mechanicus" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d67-ac66-1e97-ffb3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after determining which Canticle of the Omnissiah is in effect this battle round. Randomly determine a Canticle of the Omnissiah – that Canticle is in effect instead."/>
+          </characteristics>
+        </profile>
+        <profile id="0346-806d-2a19-3827" name="Protector Doctrina Imperative" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d67-ac66-1e97-ffb3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to shoot in the Shooting phase. Add 1 to hit rolls for the model until the end of the phase. If the model is within 6&quot; of a friendly model equipped with an enhanced data-tether, you can add 2 to the hit rolls instead."/>
+          </characteristics>
+        </profile>
+        <profile id="6013-e388-02f5-9f82" name="Adrenal Shot" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-2ec0-4de4-b4d7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team suffers a mortal wound. Roll a D6 for that mortal wound, and any other mortal wounds suffered by that model for the rest of the phase; on a 5+ the mortal wound is ignored and has no effect."/>
+          </characteristics>
+        </profile>
+        <profile id="948e-d4a7-6b03-0c0c" name="Cunning Strategy" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-2ec0-4de4-b4d7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after your Leader has issued an order. Your Leader may immediately issue an additional order."/>
+          </characteristics>
+        </profile>
+        <profile id="132f-e79a-3388-a076" name="Defensive Stand" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-2ec0-4de4-b4d7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a charge is declared against a model from your kill team. When that model fires Overwatch this phase, they successfully hit on a roll of 5 or 6."/>
+          </characteristics>
+        </profile>
+        <profile id="ae0c-f9f9-c713-a8eb" name="Fight to the Death" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-2ec0-4de4-b4d7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic before an Injury roll is made for a model from your kill team. Apply a -1 modifier to the Injury roll."/>
+          </characteristics>
+        </profile>
+        <profile id="3b70-6cfb-f982-c47a" name="Get Down!" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-2ec0-4de4-b4d7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in your opponent’s turn in the Shooting phase when they choose a model from your kill team as a target, and your model is obscured. Attacks that target that model in this phase suffer an additional -1 penalty to their hit rolls."/>
+          </characteristics>
+        </profile>
+        <profile id="3ff5-fc6e-92e5-5d77" name="Grenadiers" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-2ec0-4de4-b4d7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model from your kill team to shoot in the Shooting phase. You can use a Grenade weapon that model is equipped with, even if another model from your kill team has already used a Grenade weapon this phase. You can use this Tactic multiple times in the same phase."/>
+          </characteristics>
+        </profile>
+        <profile id="196a-eae3-4a2c-4da1" name="Mission Critical Supplies" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ce6-7fab-c5aa-1fad" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-2ec0-4de4-b4d7" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the beginning of the first battle round. Choose a Munitorum Armoured Container. Subtract 1 from Nerve tests you take for models from your kill team that are within 1&quot; of this container for the rest of the battle."/>
+          </characteristics>
+        </profile>
+        <profile id="54cc-7734-f59a-69f8" name="Reconnaissance Protocols" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-2ec0-4de4-b4d7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the first battle round. Choose a MILITARUM TEMPESTUS model from your kill team that is on the battlefield; that model can immediately make a normal move as if it where the Movement phase, but instead of moving up to their Move characteristic, they move up to 2D6&quot; instead."/>
+          </characteristics>
+        </profile>
+        <profile id="ec57-ab36-28fc-4142" name="Reserves of Courage" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-2ec0-4de4-b4d7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of your turn in the Morale phase. Pick a model from your kill team that is required to take a Nerve test. Roll a D3 for that model rather than a D6 when taking the test."/>
+          </characteristics>
+        </profile>
+        <profile id="fb9c-fcd6-5016-e6dc" name="Sir, Yes Sir!" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-2ec0-4de4-b4d7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after picking a model from your kill team to be affected by an order. All models from your kill team (other than your kill team&apos;s Leader) within 3&quot; of that model are also affected by the same order. You cannot use this Tactic in the same battle round as the Cunning Strategy Tactic."/>
+          </characteristics>
+        </profile>
+        <profile id="44db-f286-9764-34dc" name="Vengeance for Cadia" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96ae-2ec0-4de4-b4d7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model from your kill team to shoot or fire Overwatch and the target is a HERETIC ASTARTES model. You can re-roll failed hit and wound rolls for your model against that HERETIC ASTARTES model."/>
+          </characteristics>
+        </profile>
+        <profile id="144a-ff8e-cfbf-4d82" name="Cloud of Flies" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8b0-c81f-0fea-65fd" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the end of the Movement phase. Pick a model from your kill team. Until the end of the battle round, enemy models can only shoot that model if it is the closest target visible to them."/>
+          </characteristics>
+        </profile>
+        <profile id="f3e0-95c9-c7d3-4491" name="Grandfather&apos;s Blessing" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8b0-c81f-0fea-65fd" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the first battle round. Pick a model from your kill team and roll a D6. On a 1 that model is found unworthy and suffers D3 mortal wounds. On a 2+ add 1 to hit and wound rolls for the model until the end of the battle. You can only use this Tactic once per battle."/>
+          </characteristics>
+        </profile>
+        <profile id="a5af-0680-05eb-1125" name="Nurgle&apos;s Gift" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8b0-c81f-0fea-65fd" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after a POXWALKER from your kill team takes an enemy model out of action in the Fight phase. Roll a D6. On a 4+ you may set up a new Poxwalker within 1&quot; of the Poxwalker that made the attack. The new Poxwalker is treated as a member of your kill team, but is not part of a fire team and is not added to your command roster."/>
+          </characteristics>
+        </profile>
+        <profile id="dade-bc04-43ef-c95c" name="Nurgling Infestation" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8b0-c81f-0fea-65fd" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the end of the Movement phase. Pick an enemy model within 1&quot; of your Leader and roll a D6. On a 4+ that enemy model suffers 1 mortal wound."/>
+          </characteristics>
+        </profile>
+        <profile id="09e5-0cc4-60d0-6080" name="Putrid Splatter" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8b0-c81f-0fea-65fd" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team loses a wound in the Fight phase. Roll a D6 for each enemy model within 1&quot; of that model. On a 6 that enemy model suffers 1 mortal wound after all of its attacks have been resolved."/>
+          </characteristics>
+        </profile>
+        <profile id="ce37-40eb-d36a-e764" name="Veterans of the Long War" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8b0-c81f-0fea-65fd" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a PLAGUE MARINE model from your kill team is chosen to attack in the Shooting or Fight phase. You can add 1 to wound rolls for the model’s attacks that target IMPERIUM models until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="eb4f-8012-c38b-451f" name="Decapitation Doctrine" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5714-620f-5af3-6b91" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team is chosen to attack in the Shooting or Fight phase. Until the end of the phase, re-roll failed wound rolls for that model that target an enemy Leader."/>
+          </characteristics>
+        </profile>
+        <profile id="d7ea-d712-ee19-1c16" name="Hellfire Shell" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5714-620f-5af3-6b91" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to shoot with a heavy bolter or the heavy bolter profile of an infernus heavy bolter. You can only make a single hit roll with the weapon this phase (subtracting 1 as normal if also firing an infernus heavy bolter’s heavy flamer), however, if it hits, the target suffers D3 mortal wounds instead of the normal damage."/>
+          </characteristics>
+        </profile>
+        <profile id="6047-8888-4464-6cc7" name="Only In Death Does Duty End" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5714-620f-5af3-6b91" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team is taken out of action; that model summons the strength for one final attack, and can immediately either shoot as if it were your turn in the Shooting phase, or fight as if it were your turn in the Fight phase."/>
+          </characteristics>
+        </profile>
+        <profile id="f7d3-52f1-0a30-66fe" name="Rival Chapters" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5714-620f-5af3-6b91" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team is chosen to attack in the Shooting or Fight phase whilst there is another model from your kill team within 2&quot; of it. Until the end of the phase, re-roll hit rolls of 1 for both models."/>
+          </characteristics>
+        </profile>
+        <profile id="cdc8-8a5b-0d62-a278" name="Cruel Deception" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75d9-31c7-fbd8-dc06" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after a model from your kill team Falls Back. That model can still shoot this battle round."/>
+          </characteristics>
+        </profile>
+        <profile id="8670-10c3-951f-f5e9" name="Pray They Don&apos;t Take You Alive" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75d9-31c7-fbd8-dc06" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic if a model from your kill team takes an enemy Leader out of action in the Fight phase. For the remainder of the battle, models in that enemy Leader&apos;s kill team must subtract 1 from their Leadership characteristic."/>
+          </characteristics>
+        </profile>
+        <profile id="dc51-914f-2453-cac2" name="Torment Grenade" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75d9-31c7-fbd8-dc06" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to shoot with a phantasm grenade launcher. If an enemy model is hit by any attacks made with that weapon this phase, then, in addition to the normal effects, roll 3D6. If the result is higher than the target&apos;s Leadership characteristic, it suffers 1 mortal wound."/>
+          </characteristics>
+        </profile>
+        <profile id="ea28-cbea-9009-72d3" name="Density Analysis Lenses" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to shoot in the Shooting phase. Add 1 to hit rolls for that model against targets which are obscured."/>
+          </characteristics>
+        </profile>
+        <profile id="f179-7719-7cac-da2f" name="Frenzied Hammering" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when an ABERRANT from your kill team armed with a power hammer attacks in the Fight phase. Increase that model’s Attacks characteristic by D3 until the end of the phase, but subtract 1 from hit rolls for that model’s attacks until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="3524-08c6-0e99-6892" name="Industrial Brutality" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after making attacks with a model armed with a heavy rock drill, heavy rock saw or heavy rock cutter in the Fight phase. Roll a D6. On a 4+ that model may immediately fight again."/>
+          </characteristics>
+        </profile>
+        <profile id="0414-0e5e-ae70-177f" name="Inhuman Reflexes" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team fails a Falling test. It doesn’t suffer falling damage, and won’t fall on another model. If it would, instead place this model as close as possible to the point where it would have landed. This can bring it within 1&quot; of an enemy model."/>
+          </characteristics>
+        </profile>
+        <profile id="9f1f-2f24-990f-09dc" name="Strength of Faith" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team suffers a mortal wound in the Psychic phase. Roll a D6 for that mortal wound, and each other mortal wound suffered by that model until the end of the phase. On a roll of 5+ that wound is ignored and has no effect."/>
+          </characteristics>
+        </profile>
+        <profile id="faec-a7e4-fb55-72fc" name="Unnatural Senses" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team is declared as a target of a charge. That model may fire Overwatch at the charging model, even if the charging model is not visible to it. The target is treated as obscured."/>
+          </characteristics>
+        </profile>
+        <profile id="e5e3-5f64-bdca-9bb1" name="Heed the Prognosticars" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1e8-be31-acc8-9eca" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the battle round. Pick a model from your kill team and add 1 to its saving throws until the end of the battle round."/>
+          </characteristics>
+        </profile>
+        <profile id="a402-dfa9-6b30-150c" name="Psybolt Ammunition" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1e8-be31-acc8-9eca" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to shoot with a storm bolter. The weapon’s Strength characteristic is 5 and its Armour Penetration characteristic is -1 until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="e092-3e88-734b-81ac" name="Psychic Channelling" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1e8-be31-acc8-9eca" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when taking a Psychic test for a model from your kill team. Roll three dice rather than two and use the two highest rolls."/>
+          </characteristics>
+        </profile>
+        <profile id="434c-5cae-e377-355e" name="Cegorach&apos;s Jest" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2ad-ef6f-1b5f-2d50" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after an enemy model has Fallen Back from a model from your kill team. Provided no other enemy models are within 1&quot; of your model, it can shoot at the model that Fell Back as if it were the Shooting phase."/>
+          </characteristics>
+        </profile>
+        <profile id="d8e5-4110-831b-fee0" name="Mirthless Hatred" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2ad-ef6f-1b5f-2d50" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team is chosen to fight. Re-roll failed hit rolls and failed wound rolls for this model&apos;s attacks that target SLAANESH models until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="4d09-6712-b1aa-9d67" name="Prismatic Blur" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2ad-ef6f-1b5f-2d50" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Movement phase when a model from your kill team Advances. That model has a 3+ invulnerable save until the start of the next battle round."/>
+          </characteristics>
+        </profile>
+        <profile id="9c61-929c-f43b-a509" name="War Dancers" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2ad-ef6f-1b5f-2d50" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the end of the Fight phase. Pick a model from your kill team that has already fought this phase. That model can immediately fight an additional time."/>
+          </characteristics>
+        </profile>
+        <profile id="b3e2-8432-91a8-4867" name="Warrior Acrobats" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2ad-ef6f-1b5f-2d50" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Movement phase when a model from your kill team Advances. Add 6&quot; to the model&apos;s Move characteristic for that Movement phase instead of rolling a dice."/>
+          </characteristics>
+        </profile>
+        <profile id="bf72-01bb-9bb6-c49c" name="Beseech the Gods" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57de-32ed-68ae-23bf" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the first battle round. Pick a model from your kill team and roll a D6. On a 1 that model is found unworthy and suffers D3 mortal wounds. On a 2+ add 1 to hit and wound rolls for the model until the end of the battle. You can only use this Tactic once per battle."/>
+          </characteristics>
+        </profile>
+        <profile id="c609-cdaa-1188-c706" name="Daemon Spirit" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57de-32ed-68ae-23bf" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="This Tactic is used at the end of the Movement phase. Pick an enemy model within 1&quot; of your Leader and roll a D6. On a 4+ that enemy model suffers 1 mortal wound."/>
+          </characteristics>
+        </profile>
+        <profile id="5474-6a57-54f7-d655" name="Fury of Khorne" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57de-32ed-68ae-23bf" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the end of the Fight phase. Pickva KHORNE model from your kill team that is within 1&quot; of an enemy model – your model can immediately fight again."/>
+          </characteristics>
+        </profile>
+        <profile id="6036-d8df-cd1e-bfa0" name="Veterans of the Long War" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57de-32ed-68ae-23bf" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a CHAOS SPACE MARINE model from your kill team is chosen to attack in the Shooting or Fight phase. You can add 1 to wound rolls for the model’s attacks that target IMPERIUM models until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="d9f4-57e3-2ee7-bf87" name="Disruption Fields" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3195-75bf-43ec-d189" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to fight in the Fight phase. Increase the Strength characteristic of that model by 1 until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="0c4d-a4a8-dd87-5d60" name="Flensing Fury" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3195-75bf-43ec-d189" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a FLAYED ONE in your kill team to fight in the Fight phase. Until the end of the phase, each time you make a wound of 6+ for that model’s flayer claws, add 1 to the Damage characteristic of the weapon for that attack."/>
+          </characteristics>
+        </profile>
+        <profile id="3778-a0f2-0816-aecf" name="Mindshackle Scarabs" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3195-75bf-43ec-d189" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Shooting phase. Pick an enemy model within 6&quot; of a model from your kill team and roll 2D6. If the result is higher than the enemy model’s Leadership characteristic, you can immediately make a shooting attack with one of that model’s ranged weapons as if it were a model from your kill team."/>
+          </characteristics>
+        </profile>
+        <profile id="5573-0f6d-3bd0-6bd9" name="Overcharged Disintegration" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3195-75bf-43ec-d189" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Shooting phase when you choose a model in your kill team to shoot with a gauss flayer or gauss blaster. Improve the Armour Penetration characteristic of that weapon by 1 until the end of the phase (e.g. AP-1 becomes AP-2, AP-2 becomes AP-3)."/>
+          </characteristics>
+        </profile>
+        <profile id="7497-786f-bb93-0200" name="Prime Reanimation Protocols" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3195-75bf-43ec-d189" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when an Injury roll is made for a model from your kill team. Roll an additional dice and apply the lowest result."/>
+          </characteristics>
+        </profile>
+        <profile id="20e7-2e76-f9ec-c759" name="Targeting Routines" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3195-75bf-43ec-d189" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to shoot in the Shooting phase. Add 1 to hit rolls for that model against targets which are obscured."/>
+          </characteristics>
+        </profile>
+        <profile id="4de2-dee5-82b8-d827" name="&apos;Ere We Go, &apos;Ere We Go!" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after making a charge roll for one of your models. Re-roll one of the dice."/>
+          </characteristics>
+        </profile>
+        <profile id="a54e-7c69-a968-c991" name="Dakka Dakka Dakka" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after a model from your kill team shoots in the Shooting phase. You can immediately shoot an additional time with that model."/>
+          </characteristics>
+        </profile>
+        <profile id="f95f-8f63-a88d-a5e2" name="Dead &apos;Ard" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team suffers a mortal wound. Roll a D6 for that mortal wound, and each other mortal wound suffered by that model for the rest of the phase; on a 5+ the mortal wound is ignored and has no effect."/>
+          </characteristics>
+        </profile>
+        <profile id="6c43-da32-0386-0150" name="Gnasher Squig" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Fight phase. Pick an enemy model that is within 1&quot; of any of your models and roll a D6. On a 4+, that enemy model suffers 1 mortal wound."/>
+          </characteristics>
+        </profile>
+        <profile id="a45e-cac4-eac9-d35c" name="Grot Shield" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Shooting phase. Pick a model from your kill team that is within 2&quot; of a GRETCHIN model. Until the end of the phase, while that Gretchin model is on the battlefield, any attacks which target the chosen model are resolved against that Gretchin model instead."/>
+          </characteristics>
+        </profile>
+        <profile id="64ba-f62b-f2bf-bee0" name="Indiscriminate Dakka" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after firing Overwatch with one of your models. You can immediately fire Overwatch again."/>
+          </characteristics>
+        </profile>
+        <profile id="ec0c-277a-2a0b-99bd" name="Itchin&apos; for a Fight" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to fight in the Fight phase. You can make one additional attack with that model for each enemy model within 1&quot; of it."/>
+          </characteristics>
+        </profile>
+        <profile id="4e70-efd7-0be5-1126" name="Joyride" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ce6-7fab-c5aa-1fad" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model from your kill team to make a normal move in the Movement phase, and that model is witihn 1&quot; of a Galvanic Servohauler. When you move that model in this phase, simultaneously move the Galvanic Servohauler as if it were a friendly model. Both models are considered to have a Move characteristic of 2D6&quot; in this phase (roll once for both models), cannot Advance, cannot move vertically and must end their moves within 1&quot; of each other."/>
+          </characteristics>
+        </profile>
+        <profile id="a7d3-c807-e997-75f7" name="Just a Flesh Wound" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team is taken out of action. Roll a D6. On a 4+ that model suffers a flesh wound instead."/>
+          </characteristics>
+        </profile>
+        <profile id="e8f8-3e3b-af08-5204" name="Krump &apos;Em!" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to fight in the Fight phase. Increase the Strength characteristic of that model by 1 until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="a52e-b66a-29dd-c735" name="Mek&apos;s Special Stikkbomb" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model from your kill team to attack with a stikkbomb. Until the end of the phase, change the weapon’s type to Grenade D3 and add 1 to its Strength and Damage characteristics."/>
+          </characteristics>
+        </profile>
+        <profile id="e392-d30d-e0c0-7b19" name="Pyromaniac" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose for a model to shoot with a burna. The burna makes D6 attacks instead of D3 this phase."/>
+          </characteristics>
+        </profile>
+        <profile id="24f4-1a30-2ccc-11ec" name="Waaagh!" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3630-39cf-f986-6209" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when it is your turn to move in the Movement phase and your Leader is on the battlefield and not shaken. For the duration of that phase, add 1&quot; to the Move characteristic of all models in your kill team, and add 1 to their Advance and charge rolls."/>
+          </characteristics>
+        </profile>
+        <profile id="f57b-67a1-324d-d87a" name="Breach and Clear" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b37-ac1c-f776-37a2" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in your turn in the Shooting phase, when a FIRE WARRIOR BREACHER from your kill team targets an enemy model that is obscured. Re-roll failed wound rolls made for the FIRE WARRIOR BREACHER against that enemy model until the end of this phase."/>
+          </characteristics>
+        </profile>
+        <profile id="d681-2493-83db-06b5" name="Recon Sweep" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b37-ac1c-f776-37a2" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Shooting phase when you pick a PATHFINDER from your kill team to shoot. Instead of shooting, that model can immediately make a normal move as if it were the Movement phase, but instead of moving up to their Move characteristic they move up to 2D6&quot;."/>
+          </characteristics>
+        </profile>
+        <profile id="49ba-ba59-130d-ffef" name="Stimulant Injector" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b37-ac1c-f776-37a2" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team (other than a DRONE) loses a wound. Roll a D6 for that wound, and each other wound lost by that model for the rest of the phase; on a 5+ that wound is not lost."/>
+          </characteristics>
+        </profile>
+        <profile id="c507-bb37-f63a-7509" name="Uplinked Markerlight" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b37-ac1c-f776-37a2" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after an enemy model has been hit by a markerlight fired by a model from your kill team. Place D3+1 markerlight counters next to that model instead of only 1."/>
+          </characteristics>
+        </profile>
+        <profile id="3652-d50e-34de-509f" name="Cycle of Slaughter" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f21-9dc3-e109-c3c3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the end of the Fight phase. Pick a TZAANGOR from your kill team – that model can immediately fight an additional time."/>
+          </characteristics>
+        </profile>
+        <profile id="9282-eab9-6727-59a4" name="Hungering Warpflame" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f21-9dc3-e109-c3c3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Shooting phase when you choose a model in your kill team to shoot with a warpflamer or warpflame pistol. Until the end of the phase, you can roll two dice when determining the number of attacks made by that weapon and pick the highest result."/>
+          </characteristics>
+        </profile>
+        <profile id="8c84-1700-84b6-cc55" name="Immovable Automaton" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f21-9dc3-e109-c3c3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a Rubric Marine or Rubric Marine Gunner from your kill team is taken out of action. Roll a D6. On a 4+ that model suffers a flesh wound instead."/>
+          </characteristics>
+        </profile>
+        <profile id="3fb8-e0f5-cb3c-cfc1" name="Malicious Familiar" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f21-9dc3-e109-c3c3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the end of the Movement phase. Pick an enemy model within 1&quot; of your Leader and roll a D6. On a 4+ that enemy model suffers 1 mortal wound."/>
+          </characteristics>
+        </profile>
+        <profile id="3601-6231-7b68-9e8d" name="Sorcerous Focus" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f21-9dc3-e109-c3c3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of your turn in the Psychic phase. Pick a PSYKER model from your kill team that is within 2&quot; of at least two other models from your kill team. Add 6&quot; to the range of this model’s Psybolt psychic power until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="8395-750d-1a21-9ee9" name="Veterans of the Long War" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f21-9dc3-e109-c3c3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a RUBRIC MARINE model from your kill team is chosen to attack in the Shooting or Fight phase. You can add 1 to wound rolls for the model’s attacks that target IMPERIUM models until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="a391-7120-80f9-1fb8" name="Adrenaline Surge" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the end of the Fight phase. Pick a model from your kill team. That model can immediately fight an additional time."/>
+          </characteristics>
+        </profile>
+        <profile id="9ec4-57cb-ec19-528c" name="Caustic Blood" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team loses a wound in the Fight phase. Roll a D6 for each enemy model within 1&quot; of that model. On a 6 that enemy model suffers 1 mortal wound after all of its attacks have been resolved."/>
+          </characteristics>
+        </profile>
+        <profile id="c42c-3f28-393d-aa9b" name="Feeder Tendrils" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a GENESTEALER or LICTOR from your kill team takes an enemy Leader out of action in the Fight phase. Gain D3 Command Points."/>
+          </characteristics>
+        </profile>
+        <profile id="ae67-0038-1349-83c1" name="Hunting Roar" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a TYRANID WARRIOR from your kill team finishes a charge move within 1&quot; of any enemy models. You can re-roll failed hit rolls for models from your kill team within 6&quot; of that Tyranid Warrior in the Fight phase in this battle round."/>
+          </characteristics>
+        </profile>
+        <profile id="7592-baf3-f4b5-c8ba" name="Implant Attack" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic before an Injury roll is made for an enemy model that was reduced to 0 wounds by a model from your Kill Team in the Fight phase. Apply a +2 modifier to the Injury roll."/>
+          </characteristics>
+        </profile>
+        <profile id="1f4c-497c-e8d1-e0d7" name="Legacy of Ymgarl" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a GENESTEALER in your kill team to fight in the Fight phase. Re-roll failed wound rolls for that model until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="a1d4-afc0-2cce-1234" name="Lurk" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Movement phase. Pick a model from your kill team that has not yet moved. That model may not move this phase, but for the rest of the battle round, if this model is obscured, shooting attacks that target this model suffer an additional -1 modifier to their hit rolls."/>
+          </characteristics>
+        </profile>
+        <profile id="090d-8068-35fd-89b3" name="Metabolic Overdrive" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Movement phase, after moving a model from your kill team. You can make a second move with that model, but if you do, the model cannot shoot this battle round. In addition, roll a D6; on a 1 the model suffers 1 mortal wound."/>
+          </characteristics>
+        </profile>
+        <profile id="875f-ef74-e70a-9c7d" name="Predatory Leap" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic before making a charge roll for a model from your kill team. Treat that model as if it could FLY when making its charge move."/>
+          </characteristics>
+        </profile>
+        <profile id="e6e6-5041-9a25-8b06" name="Rapid Regeneration" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a model from your kill team is taken out of action. Roll a D6. On a 4+ that model is treated as if it had suffered a flesh wound instead."/>
+          </characteristics>
+        </profile>
+        <profile id="fb7e-4cb9-16af-fadd" name="Scorch Bugs" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when a Termagant with a fleshborer from your kill team is chosen to shoot in the Shooting phase. Add 1 to wound rolls for that model until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="5a46-97a7-0e0d-9de9" name="Single-minded Annihilation" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1-2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after a model from your kill team shoots in the Shooting phase. You can immediately shoot an additional time with that model. This Tactic costs 1 Command Point to use, or 2 Command Points if used on a TYRANID WARRIOR."/>
+          </characteristics>
+        </profile>
+        <profile id="d166-e192-98ff-a2a6" name="Dragged Into The Darkness" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Shared Tactic">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01f-4e2b-0d04-efec" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ce6-7fab-c5aa-1fad" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model from your kill team to shoot in the Shooting phase. If their target is within 1&quot; of any Munitorum Crates or Munitorum Barrels, any wound rolls of 6+ cause a mortal wound in addition to any other damage."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="254c-e603-0bd3-57fc" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
@@ -8555,10 +10292,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563b-76dd-1c3f-551c" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563b-76dd-1c3f-551c" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -8570,7 +10313,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="8676-a93b-4bd2-980c" value="1"/>
         <characteristic name="Description" characteristicTypeId="0ddc-e579-29cb-1050" value="Use this Tactic in the Fight phase, after attacking with a model from your kill team. Pick a Combat specialist from your kill team that has not yet attacked this phase: you can immediately fight with them."/>
@@ -8580,7 +10331,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7406-3190-e315-97b4" value="1"/>
         <characteristic name="Description" characteristicTypeId="87f2-d85a-6f94-2213" value="Use this Tactic at the start of the Fight phase. Pick a Combat specialist of Level 2 or higher from your kill team. Until the end of the phase, you must subtract 2 from that model’s Attacks characteristic (to a minimum of 1), but your opponent(s) must re-roll successful hit rolls made against that model."/>
@@ -8590,7 +10349,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7b01-2583-abb0-6b77" value="1"/>
         <characteristic name="Description" characteristicTypeId="a6d7-33e3-9e68-c111" value="Use this Tactic when a Combat specialist of Level 3 or higher from your kill team finishes a charge move within 1&quot; of an enemy model. Roll a D6; on a 5+ that enemy model suffers 1 mortal wound."/>
@@ -8600,7 +10367,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="8676-a93b-4bd2-980c" value="1"/>
         <characteristic name="Description" characteristicTypeId="0ddc-e579-29cb-1050" value="Use this Tactic in the Morale phase before taking any Nerve tests. Until the end of the phase you can subtract 1 from Nerve tests for models from your kill team as though the Comms specialist was within 2&quot; of them."/>
@@ -8613,10 +10388,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563b-76dd-1c3f-551c" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563b-76dd-1c3f-551c" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -8631,10 +10412,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563b-76dd-1c3f-551c" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563b-76dd-1c3f-551c" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -8649,10 +10436,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63c5-1db2-3d75-a74e" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63c5-1db2-3d75-a74e" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -8664,7 +10457,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7b01-2583-abb0-6b77" value="1"/>
         <characteristic name="Description" characteristicTypeId="a6d7-33e3-9e68-c111" value="Use this Tactic at the end of the Movement phase. Pick a model from your kill team within 12&quot; of a friendly Comms specialist of Level 3 or higher. Ready that model."/>
@@ -8674,7 +10475,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7406-3190-e315-97b4" value="2"/>
         <characteristic name="Description" characteristicTypeId="87f2-d85a-6f94-2213" value="Use this Tactic when you pick a model from your kill team that is within 6&quot; of a friendly Comms specialist of Level 2 or higher to shoot in the Shooting phase. That model can target an enemy model that is not visible to them. If they do so, a 6 is required for a successful hit roll irrespective of the model’s Ballistic Skill or any other modifiers, even if that weapon would normally hit automatically. The target is treated as obscured."/>
@@ -8684,7 +10493,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="8676-a93b-4bd2-980c" value="1"/>
         <characteristic name="Description" characteristicTypeId="0ddc-e579-29cb-1050" value="Use this Tactic when you pick a Demolitions specialist from your kill team to shoot in the Shooting phase. You can add 1 to wound rolls for that model’s ranged weapons in this phase."/>
@@ -8702,6 +10519,13 @@
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="8676-a93b-4bd2-980c" value="1"/>
@@ -8715,10 +10539,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563b-76dd-1c3f-551c" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563b-76dd-1c3f-551c" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -8730,7 +10560,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7406-3190-e315-97b4" value="1"/>
         <characteristic name="Description" characteristicTypeId="87f2-d85a-6f94-2213" value="Use this Tactic at the start of the Shooting phase. Pick a Demolitions specialist of Level 2 or higher from your kill team. Roll a D6 each time that model loses a wound in this phase; on a 5+ that wound is not lost."/>
@@ -8743,10 +10581,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563b-76dd-1c3f-551c" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563b-76dd-1c3f-551c" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -8758,7 +10602,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7b01-2583-abb0-6b77" value="1"/>
         <characteristic name="Description" characteristicTypeId="a6d7-33e3-9e68-c111" value="Use this Tactic when you pick a Demolitions specialist of Level 3 or higher from your kill team to shoot in the Shooting phase. In this Shooting phase, they can only shoot a single weapon, and that weapon can only fire 1 shot (even if it would normally fire more). However, that weapon’s Damage characteristic is increased by 2. You cannot use this Tactic in the same battle round as the Custom Ammo Tactic."/>
@@ -8768,7 +10620,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="8676-a93b-4bd2-980c" value="1"/>
         <characteristic name="Description" characteristicTypeId="0ddc-e579-29cb-1050" value="Use this Tactic when you pick a Heavy specialist from your kill team to shoot in the Shooting phase. You can add 1 to the number of shots fired by that model’s ranged weapons, with the exception of weapons that would otherwise fire 1 shot (e.g. an Assault 2 weapon would fire 3 shots, but a Rapid Fire 1 weapon at long range would fire 1 shot) in this Shooting phase."/>
@@ -8781,10 +10641,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63c5-1db2-3d75-a74e" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63c5-1db2-3d75-a74e" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -8796,7 +10662,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7406-3190-e315-97b4" value="2"/>
         <characteristic name="Description" characteristicTypeId="87f2-d85a-6f94-2213" value="Use this Tactic when you pick a Heavy specialist of Level 2 or higher from your kill team to shoot in the Shooting phase. That model can shoot twice in this Shooting phase; after they have shot a first time, immediately shoot with them again. You cannot use this Tactic in the same battle round as the More Bullets Tactic."/>
@@ -8809,10 +10683,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63c5-1db2-3d75-a74e" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63c5-1db2-3d75-a74e" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -8824,7 +10704,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7b01-2583-abb0-6b77" value="1"/>
         <characteristic name="Description" characteristicTypeId="a6d7-33e3-9e68-c111" value="Use this Tactic at the start of your turn in the Morale phase. Pick a Heavy specialist of Level 3 or higher from your kill team that has one or more flesh wounds. Remove one of that model’s flesh wounds."/>
@@ -8834,7 +10722,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="8676-a93b-4bd2-980c" value="1"/>
         <characteristic name="Description" characteristicTypeId="0ddc-e579-29cb-1050" value="Use this Tactic when you pick a Leader from your kill team to fight in the Fight phase. Choose another friendly model within 3&quot; of them that is eligible to fight. You can fight with each of these models, in an order of your choice, before the next player’s turn."/>
@@ -8844,7 +10740,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7406-3190-e315-97b4" value="1"/>
         <characteristic name="Description" characteristicTypeId="87f2-d85a-6f94-2213" value="Use this Tactic when you pick a Leader of Level 2 or higher from your kill team to shoot in the Shooting phase. Choose another friendly model within 3&quot; of them that is eligible to shoot. You can make a shooting attack with each of these models, in an order of your choice, before the next player’s turn."/>
@@ -8854,7 +10758,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7b01-2583-abb0-6b77" value="1"/>
         <characteristic name="Description" characteristicTypeId="a6d7-33e3-9e68-c111" value="Use this Tactic at the start of the battle round, if a Leader of Level 3 or higher from your kill team is on the battlefield and not shaken. In this battle round, your kill team does not suffer the penalty for being broken."/>
@@ -8867,10 +10779,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63c5-1db2-3d75-a74e" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63c5-1db2-3d75-a74e" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -8882,7 +10800,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="8676-a93b-4bd2-980c" value="1"/>
         <characteristic name="Description" characteristicTypeId="0ddc-e579-29cb-1050" value="Use this Tactic at the start of the Movement phase. Pick a model from your kill team within 2&quot; of a friendly Medic specialist that is not shaken. You can add 1 to Advance rolls and charge rolls for that model, and add 1 to that model’s Attacks characteristic until the end of the battle round."/>
@@ -8892,7 +10818,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7406-3190-e315-97b4" value="2"/>
         <characteristic name="Description" characteristicTypeId="87f2-d85a-6f94-2213" value="Use this Tactic at the end of the Movement phase. Pick a model from your kill team within 2&quot; of a friendly Medic specialist of Level 2 or higher that is not shaken. Add 2 to that model’s Toughness characteristic until the end of the battle round."/>
@@ -8905,10 +10839,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63c5-1db2-3d75-a74e" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63c5-1db2-3d75-a74e" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -8920,7 +10860,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7b01-2583-abb0-6b77" value="2"/>
         <characteristic name="Description" characteristicTypeId="a6d7-33e3-9e68-c111" value="Use this Tactic when a Medic specialist of Level 3 or higher from your kill team that is not shaken is within 2&quot; of another model from your kill team that suffers an Out of Action Injury roll result. That model suffers a Flesh Wound result instead."/>
@@ -8930,7 +10878,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="8676-a93b-4bd2-980c" value="1"/>
         <characteristic name="Description" characteristicTypeId="0ddc-e579-29cb-1050" value="Use this Tactic when you pick a Scout specialist from your kill team to move in the Movement phase. You can either increase the model’s Move characteristic by 2&quot; this phase or you can re-roll the dice when this model Advances in this phase."/>
@@ -8940,7 +10896,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7406-3190-e315-97b4" value="2"/>
         <characteristic name="Description" characteristicTypeId="87f2-d85a-6f94-2213" value="Use this Tactic at the start of the Shooting phase. Pick an enemy model within 6&quot; of a Scout specialist of Level 2 or higher from your kill team that is not shaken. You can re-roll hit rolls of 1 for shooting attacks made by models in your kill team that target that enemy model until the end of the phase."/>
@@ -8950,7 +10914,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7b01-2583-abb0-6b77" value="2"/>
         <characteristic name="Description" characteristicTypeId="a6d7-33e3-9e68-c111" value="Use this Tactic at the start of your turn in the Movement phase. Pick a Scout specialist of Level 3 or higher from your kill team that is not shaken. Remove that model from the battlefield and set it up again anywhere within 18&quot; of its previous position and more than 3&quot; from any enemy models. It is considered to have Advanced."/>
@@ -8960,7 +10932,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="8676-a93b-4bd2-980c" value="1"/>
         <characteristic name="Description" characteristicTypeId="0ddc-e579-29cb-1050" value="Use this Tactic when you choose a Sniper specialist from your kill team to shoot in the Shooting phase. You can add 1 to hit rolls for that model until the end of the phase."/>
@@ -8970,7 +10950,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7406-3190-e315-97b4" value="1"/>
         <characteristic name="Description" characteristicTypeId="87f2-d85a-6f94-2213" value="Use this Tactic when you pick a Sniper specialist of Level 2 or higher from your kill team to shoot in the Shooting phase. Until the end of the phase, when that model shoots at obscured targets they are considered not to be obscured."/>
@@ -8980,7 +10968,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7b01-2583-abb0-6b77" value="1"/>
         <characteristic name="Description" characteristicTypeId="a6d7-33e3-9e68-c111" value="Use this Tactic when you pick a Sniper specialist of Level 3 or higher from your kill team to shoot in the Shooting phase. In this Shooting phase, double the number of shots fired by that model’s ranged weapons (e.g. an Assault 2 weapon would fire 4 shots), but subtract 1 from hit rolls for that model. You cannot use this Tactic in the same battle round as the Headshot Tactic."/>
@@ -8990,7 +10986,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="8676-a93b-4bd2-980c" value="1"/>
         <characteristic name="Description" characteristicTypeId="0ddc-e579-29cb-1050" value="Use this Tactic at the start of the first battle round, but before the Initiative phase. Pick a Veteran specialist from your kill team. They can make a normal move or Advance. You can only use this Tactic once per battle."/>
@@ -9000,7 +11004,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7406-3190-e315-97b4" value="2"/>
         <characteristic name="Description" characteristicTypeId="87f2-d85a-6f94-2213" value="Use this Tactic at the start of your turn in the Shooting phase. Pick a Veteran specialist of Level 2 or higher from your kill team. Ready them unless they are within 1&quot; of an enemy. They can shoot in that phase as if they had not moved in the Movement phase."/>
@@ -9010,7 +11022,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7b01-2583-abb0-6b77" value="1"/>
         <characteristic name="Description" characteristicTypeId="a6d7-33e3-9e68-c111" value="Use this Tactic during your opponent’s turn in the Shooting phase. Pick a Veteran specialist of Level 3 or higher from your kill team that has been Injured, before your opponent makes the Injury roll. Your opponent can only roll a single dice for that Injury roll."/>
@@ -9020,7 +11040,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="8676-a93b-4bd2-980c" value="1"/>
         <characteristic name="Description" characteristicTypeId="0ddc-e579-29cb-1050" value="Use this Tactic when you pick a Zealot specialist from your kill team to fight in the Fight phase. Until the end of the phase, each time you make a hit roll of 6+ for that model you can make an additional attack with the same weapon against the same target. These attacks cannot themselves generate any further attacks."/>
@@ -9030,7 +11058,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7406-3190-e315-97b4" value="2"/>
         <characteristic name="Description" characteristicTypeId="87f2-d85a-6f94-2213" value="Use this Tactic when a Zealot specialist of Level 2 or higher from your kill team loses their last wound, before any player rolls on the Injury table. You may immediately shoot with one of its weapons as if it were the Shooting phase, or pile in and make one attack as if it were the Fight phase."/>
@@ -9040,7 +11076,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56b-5bd2-eb3c-1dca" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="CP" characteristicTypeId="7b01-2583-abb0-6b77" value="2"/>
         <characteristic name="Description" characteristicTypeId="a6d7-33e3-9e68-c111" value="Use this Tactic at the start of the Morale phase. Pick a Zealot specialist of Level 3 or higher from your kill team that took an enemy model out of action in the preceding Fight phase. Each enemy model within 6&quot; of the Zealot must take a Nerve test. If the test is failed the model is shaken."/>
