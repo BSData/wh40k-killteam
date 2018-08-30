@@ -9636,6 +9636,240 @@
             <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model from your kill team to shoot in the Shooting phase. If their target is within 1&quot; of any Munitorum Crates or Munitorum Barrels, any wound rolls of 6+ cause a mortal wound in addition to any other damage."/>
           </characteristics>
         </profile>
+        <profile id="9a09-b58b-80cf-cf81" name="Transonic Attunement" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d67-ac66-1e97-ffb3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Fight phase when a model from your kill team armed with transonic blades, a transonic razor or a chordclaw is chosen to attack. Until the end of the phase, add 1 to wound rolls for attacks made by that model with any of these weapons."/>
+          </characteristics>
+        </profile>
+        <profile id="3137-49d1-595a-9313" name="Hyper-penetrative shot" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d67-ac66-1e97-ffb3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you pick a model from your kill team armed with a transonic arquebus to shoot. Until the end of the phase, attacks made by this model with this weapon do not suffer the penalties to hit rolls or Injury rolls for the target being obscured."/>
+          </characteristics>
+        </profile>
+        <profile id="a8bd-e608-3345-13a0" name="Optimal Conditions" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d67-ac66-1e97-ffb3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Movement phase. Add 1 to charge rolls made for models in your kill team until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="1c16-fcd0-72fd-269e" name="Scryer-skull" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d67-ac66-1e97-ffb3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Movement phase if an opponent picked the Plant Traps strategy in the Scouting phase. Pick a piece of terrain within 6&quot; of your Leader. Your opponent must reveal to you whether or not they have booby-trapped that pice of terrain."/>
+          </characteristics>
+        </profile>
+        <profile id="de04-6bf3-9783-805e" name="Stabilisation Actuators" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d67-ac66-1e97-ffb3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic before you take a Falling test for a model from your kill team. You can re-roll the dice when taking this test, and when taking any further Falling tests for that model in this battle round."/>
+          </characteristics>
+        </profile>
+        <profile id="81ad-b3ae-204f-62dc" name="Auto-Tracking Software" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d67-ac66-1e97-ffb3" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic in the Movement phase when an opponent declares a charge against a model from your kill team. When that model fires Overwatch this phase, they successfully hit on a roll of 5 or 6."/>
+          </characteristics>
+        </profile>
+        <profile id="b5ce-ff0d-15d5-6f09" name="Seismic Blast" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="2"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you choose a model in your kill team to shoot with the short-wave profile of a seismic cannon. If an attack for the weapon hits, roll a dice for each other model within 2&quot; of the target model. On a 5+ that model is shaken."/>
+          </characteristics>
+        </profile>
+        <profile id="78a8-4012-88cc-046d" name="Mesmerising Gaze" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the beginning of the Fight phase. Pick an enemy model within 1&quot; of a model from your kill team and roll a dice. On a 4+ subtract 1 from that model&apos;s Attacks characteristic (to a minimum of 1) until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="7274-e4e7-3342-c512" name="Acidic Spit" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the beginning of the Shooting phase. Pick an enemy model within 1&quot; of a model from your kill team and roll a dice. On a 5+ that enemy model suffers 1 mortal wound."/>
+          </characteristics>
+        </profile>
+        <profile id="abcb-9064-6e58-7412" name="Raise the Icon" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Fight phase. Pick a model from your kill team equipped with a cult icon. Increase the range of that model&apos;s Cult Icon ability to 12&quot; until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="7f89-dd2a-7492-b3c6" name="I Like To Keep This Handy..." hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic at the start of the Shooting phase. Pick a model from your kill team armed with a shotgun. Change the shotgun&apos;s Type to Pistol 2 until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="9ae2-b079-7b5e-9040" name="Toxin Gland" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic when you pick a HYBRID METAMORPH from your kill team to fight in the Fight phase. Add 1 to wound rolls for that model&apos;s rending claw or metamorph talon until the end of the phase."/>
+          </characteristics>
+        </profile>
+        <profile id="447f-7e3f-62c4-22e6" name="Industrial Brutality" hidden="false" profileTypeId="7f60-0255-d11e-0718" profileTypeName="Tactics - General">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-4a0d-7bd4-55da" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="CP" characteristicTypeId="9f7b-18bb-3fea-2a63" value="1"/>
+            <characteristic name="Description" characteristicTypeId="9c0d-fb62-000d-3237" value="Use this Tactic after making attacks with a model armed with a heavy rock drill, heavy rock saw or heavy rock cutter in the Fight phase. Roll a D6. On a 4+ that model may immediately fight again."/>
+          </characteristics>
+        </profile>
       </profiles>
       <rules/>
       <infoLinks/>
