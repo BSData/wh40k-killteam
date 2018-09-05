@@ -739,7 +739,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 2: Bold">
+                <modifier type="set" field="name" value="Level 2: Inspiring">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
