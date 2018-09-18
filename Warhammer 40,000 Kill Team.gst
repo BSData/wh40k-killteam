@@ -431,6 +431,20 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="27ae-417c-a4b6-919c" name="Elucia Vhane" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="5d31-bdf1-1016-290b" name="Beast" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
@@ -1134,7 +1148,24 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="75bc-18c2-0a57-80c3" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2f6c-b074-6cfa-0059" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
@@ -1168,7 +1199,7 @@
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="5488-2be6-de32-f99e" name="Expert Fighter" hidden="false" targetId="c0fe-c084-3f73-2cbf" type="profile">
+            <infoLink id="61e0-eab1-2c31-17ec" name="Expert Fighter" hidden="false" targetId="c0fe-c084-3f73-2cbf" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -1177,8 +1208,8 @@
           </infoLinks>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d74-7dcd-865c-98be" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4256-5363-65e4-9b73" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ef-4a92-48f8-ca49" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d58f-56fe-e7e4-404e" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -1687,7 +1718,24 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="3525-1f15-7209-c84b" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="3651-278b-c213-420c" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
@@ -2240,7 +2288,24 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="ba0f-4a32-6118-3ad9" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1e83-05c7-2b5c-972b" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
@@ -2793,7 +2858,24 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="d410-239a-6e2d-3945" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2098-3d48-e2b9-0e9c" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
@@ -3346,7 +3428,24 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="2c1e-91b0-4f15-3bf4" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="f593-745c-3fe6-d6d5" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
@@ -3899,7 +3998,24 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="59c4-5dc3-0fad-204f" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="82bc-bb67-3ee6-625a" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
@@ -4452,7 +4568,24 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="938e-cc55-dba8-e04c" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="bded-e68e-72fe-92be" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
@@ -5005,7 +5138,24 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="bdd8-51ca-2f52-c57a" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="d514-723f-ccdf-f52b" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
@@ -5558,7 +5708,24 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="8acf-e73e-7297-173f" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="c3db-34ae-b1b5-0e89" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
@@ -6111,7 +6278,24 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="d8fc-de8f-8da5-875b" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1f33-0f73-9549-f2f8" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
@@ -7323,7 +7507,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f4f-040e-e641-ca71" type="max"/>
       </constraints>
@@ -7352,7 +7544,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5784-7b41-4e5f-f3e4" name="Stoic Hero" book="" page="" hidden="false" collective="false" type="upgrade">
@@ -7378,7 +7570,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d91b-04a3-7434-542c" name="Generalist" hidden="false" collective="false" type="upgrade">
@@ -7404,7 +7596,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2c29-4579-e21a-ae3c" name="Destined By Fate" book="" page="" hidden="false" collective="false" type="upgrade">
@@ -7471,6 +7663,369 @@
           <categoryLinks/>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3134-09b9-9b39-7c96" name="Generalist Abilities" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d91b-04a3-7434-542c" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c48-fe42-0d09-5ed1" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb1c-2eba-0b09-56f3" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="7f09-e3ab-43c5-201f" name="Combat: Expert Fighter" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="aca3-8a51-b117-9329" name="Expert Fighter" hidden="false" targetId="c0fe-c084-3f73-2cbf" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="name" value="Expert Fighter">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cc58-f869-82d1-b353" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ad5f-e9ce-b545-1a98" name="Comms: Scanner" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="aab4-92f9-0b14-78d0" name="Scanner" hidden="false" targetId="fc51-0351-b8c9-fe7e" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="name" value="Scanner">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="02a0-4107-4818-7c99" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e644-c8b1-5dd4-502a" name="Demolitions: Breacher" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="5274-c1bf-e0e9-946b" name="Breacher" hidden="false" targetId="ffe1-1e6b-e52b-9cc7" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="name" value="Breacher">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1933-2ec9-f5b1-5666" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e004-b612-d9ae-035c" name="Heavy: Relentless" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="7921-6ef1-6d52-f983" name="Relentless" hidden="false" targetId="32fd-6f95-11d2-943d" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8c9b-a772-02e7-d673" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="name" value="Relentless">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="624e-c490-d5ac-dd8d" name="Leader: Resourceful" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="8315-a8f3-55f3-eff4" name="Resourceful" hidden="false" targetId="b8d6-5870-939e-3cdf" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2abd-70f4-e7e8-4d18" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="name" value="Resourceful">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cc98-df40-03c6-8ce6" name="Medic: Reassuring" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="30e3-0df6-9ab5-e4d3" name="Reassuring" hidden="false" targetId="79c1-35fe-0ad6-b222" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="name" value="Reassuring">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="01ab-630a-cf81-38c9" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c20e-1230-f070-d6c6" name="Scout: Swift" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="4c54-1e5c-38a4-73bb" name="Swift" hidden="false" targetId="d575-ef01-10a7-b65d" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d42-7d93-e0a4-330b" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="name" value="Swift">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c7e9-8e14-75bc-4c3f" name="Sniper: Marksman" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="4c3b-be7d-084d-55b8" name="Marksman" hidden="false" targetId="476c-6e3d-0038-5251" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ead5-ea32-5412-c857" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="name" value="Marksman">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c7a3-7184-447c-eebb" name="Veteran: Grizzled" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="2b62-787f-0dc0-c155" name="Grizzled" hidden="false" targetId="57a0-c58a-4425-5d9d" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="name" value="Grizzled">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c89e-5e73-276f-cc16" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5ff8-4386-d5e3-6e84" name="Zealot: Frenzied" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="bf7e-eed4-baf6-bc98" name="Frenzied" hidden="false" targetId="f84b-7f78-4ca7-7c19" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="name" value="Frenzied">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2c4-34ca-f2cf-d2b2" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules/>
