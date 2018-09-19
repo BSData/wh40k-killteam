@@ -452,6 +452,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="788c-04ff-76ac-4b4c" name="Faction: Gellerpox Infected" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
@@ -9318,7 +9325,7 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -10209,6 +10216,74 @@
             <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="20.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="3243-2d22-60d0-b1ea" name="Twisted Brilliance" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="2ba4-2476-9620-b100" name="Twisted Brilliance" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If your kill team is Battle-forged, you start the battle with 1 additional Command Point (this can only be spent to use a Gellerpox Infected Tactic)."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="788c-04ff-76ac-4b4c" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ca-d488-6db1-8670" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ab6b-67cf-3423-dd48" name="Master of Vermin" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="4e86-b28b-6ad0-6346" name="Master of Vermin" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="As long as this model is not shaken, you can re-roll failed hit rolls for friendly MUTOID VERMIN models whilst they are within 6&quot; of it."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="788c-04ff-76ac-4b4c" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36d2-c032-b949-5eee" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
@@ -10260,7 +10335,7 @@
             </infoLink>
           </infoLinks>
           <modifiers>
-            <modifier type="set" field="name" value="Expert Fighter">
+            <modifier type="set" field="name" value="Level 4: Expert Fighter">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10279,7 +10354,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ad5f-e9ce-b545-1a98" name="Comms: Scanner" hidden="false" collective="false" type="upgrade">
@@ -10294,7 +10369,7 @@
             </infoLink>
           </infoLinks>
           <modifiers>
-            <modifier type="set" field="name" value="Scanner">
+            <modifier type="set" field="name" value="Level 4: Scanner">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10313,7 +10388,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e644-c8b1-5dd4-502a" name="Demolitions: Breacher" hidden="false" collective="false" type="upgrade">
@@ -10328,7 +10403,7 @@
             </infoLink>
           </infoLinks>
           <modifiers>
-            <modifier type="set" field="name" value="Breacher">
+            <modifier type="set" field="name" value="Level 4: Breacher">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10347,7 +10422,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e004-b612-d9ae-035c" name="Heavy: Relentless" hidden="false" collective="false" type="upgrade">
@@ -10369,7 +10444,7 @@
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="name" value="Relentless">
+            <modifier type="set" field="name" value="Level 4: Relentless">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10381,7 +10456,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="624e-c490-d5ac-dd8d" name="Leader: Resourceful" hidden="false" collective="false" type="upgrade">
@@ -10403,7 +10478,7 @@
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="name" value="Resourceful">
+            <modifier type="set" field="name" value="Level 4: Resourceful">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10415,7 +10490,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cc98-df40-03c6-8ce6" name="Medic: Reassuring" hidden="false" collective="false" type="upgrade">
@@ -10430,7 +10505,7 @@
             </infoLink>
           </infoLinks>
           <modifiers>
-            <modifier type="set" field="name" value="Reassuring">
+            <modifier type="set" field="name" value="Level 4: Reassuring">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10449,7 +10524,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c20e-1230-f070-d6c6" name="Scout: Swift" hidden="false" collective="false" type="upgrade">
@@ -10471,7 +10546,7 @@
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="name" value="Swift">
+            <modifier type="set" field="name" value="Level 4: Swift">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10483,7 +10558,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c7e9-8e14-75bc-4c3f" name="Sniper: Marksman" hidden="false" collective="false" type="upgrade">
@@ -10505,7 +10580,7 @@
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="name" value="Marksman">
+            <modifier type="set" field="name" value="Level 4: Marksman">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10517,7 +10592,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c7a3-7184-447c-eebb" name="Veteran: Grizzled" hidden="false" collective="false" type="upgrade">
@@ -10532,7 +10607,7 @@
             </infoLink>
           </infoLinks>
           <modifiers>
-            <modifier type="set" field="name" value="Grizzled">
+            <modifier type="set" field="name" value="Level 4: Grizzled">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10551,7 +10626,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5ff8-4386-d5e3-6e84" name="Zealot: Frenzied" hidden="false" collective="false" type="upgrade">
@@ -10566,7 +10641,7 @@
             </infoLink>
           </infoLinks>
           <modifiers>
-            <modifier type="set" field="name" value="Frenzied">
+            <modifier type="set" field="name" value="Level 4: Frenzied">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10585,7 +10660,7 @@
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
