@@ -10353,9 +10353,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
-          </costs>
+          <costs/>
         </selectionEntry>
         <selectionEntry id="ad5f-e9ce-b545-1a98" name="Comms: Scanner" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10387,9 +10385,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
-          </costs>
+          <costs/>
         </selectionEntry>
         <selectionEntry id="e644-c8b1-5dd4-502a" name="Demolitions: Breacher" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10421,9 +10417,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
-          </costs>
+          <costs/>
         </selectionEntry>
         <selectionEntry id="e004-b612-d9ae-035c" name="Heavy: Relentless" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10455,9 +10449,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
-          </costs>
+          <costs/>
         </selectionEntry>
         <selectionEntry id="624e-c490-d5ac-dd8d" name="Leader: Resourceful" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10489,9 +10481,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
-          </costs>
+          <costs/>
         </selectionEntry>
         <selectionEntry id="cc98-df40-03c6-8ce6" name="Medic: Reassuring" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10523,9 +10513,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
-          </costs>
+          <costs/>
         </selectionEntry>
         <selectionEntry id="c20e-1230-f070-d6c6" name="Scout: Swift" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10557,9 +10545,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
-          </costs>
+          <costs/>
         </selectionEntry>
         <selectionEntry id="c7e9-8e14-75bc-4c3f" name="Sniper: Marksman" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10591,9 +10577,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
-          </costs>
+          <costs/>
         </selectionEntry>
         <selectionEntry id="c7a3-7184-447c-eebb" name="Veteran: Grizzled" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10625,9 +10609,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
-          </costs>
+          <costs/>
         </selectionEntry>
         <selectionEntry id="5ff8-4386-d5e3-6e84" name="Zealot: Frenzied" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10659,9 +10641,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
-          </costs>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
