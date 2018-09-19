@@ -8872,7 +8872,6 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c48-fe42-0d09-5ed1" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb1c-2eba-0b09-56f3" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="1a67-794e-c5de-9391" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false">
