@@ -10157,7 +10157,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Instead of choosing the Level 4 ability from their specialism&apos;s ability tree, you can choose a Level 1 ability for this model from a different specialism ability tree. Their specialism does not change."/>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Instead of choosing the Level 4 ability from their specialism&apos;s ability tree, you can choose a Level 1 ability for this model from a different specialism listed on their datacard. Their specialism does not change."/>
               </characteristics>
             </profile>
           </profiles>
@@ -10303,6 +10303,70 @@
             <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="31c1-bcf0-0cab-bf3c" name="Explorator Fleetmaster" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="e865-0ce8-1770-7173" name="Explorator Fleetmaster" book="Rogue Trader" page="35" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If your kill team is Battle-forged, you start the battle with 1 additional Command Point (this can only be spent to use an Elucidian Starstriders Tactic)."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9eb0-b34b-5d00-af20" name="Trader Militant" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="2bbd-fffc-6123-f32a" name="Trader Militant" book="Rogue Trader" page="35" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 1 to this model&apos;s Attacks characteristic."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
@@ -10366,6 +10430,13 @@
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints/>
           <categoryLinks/>
@@ -10398,6 +10469,11 @@
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="02a0-4107-4818-7c99" type="instanceOf"/>
               </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -10434,6 +10510,11 @@
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints/>
           <categoryLinks/>
@@ -10464,6 +10545,11 @@
               <conditionGroups/>
             </modifier>
             <modifier type="set" field="name" value="Level 4: Relentless">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10502,6 +10588,11 @@
               <conditions/>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints/>
           <categoryLinks/>
@@ -10534,6 +10625,11 @@
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="01ab-630a-cf81-38c9" type="instanceOf"/>
               </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -10570,6 +10666,13 @@
               <conditions/>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints/>
           <categoryLinks/>
@@ -10600,6 +10703,11 @@
               <conditionGroups/>
             </modifier>
             <modifier type="set" field="name" value="Level 4: Marksman">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -10638,6 +10746,13 @@
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints/>
           <categoryLinks/>
@@ -10672,9 +10787,123 @@
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints/>
           <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1fe1-2ad4-f94a-6583" name="Strength: Muscular" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="28fc-7157-adf6-01f9" name="Muscular" hidden="false" targetId="12b4-a12a-6563-7d96" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4550-6c27-1911-68ae" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="name" value="Level 4: Muscular">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks>
+            <categoryLink id="1f1c-89a8-c854-5efa" name="Level 1" hidden="false" targetId="6e29-5d9a-98f5-ad2a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4ec2-94f5-15c5-7612" name="Strategist: Resourceful" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="db92-04f9-2467-c526" name="Resourceful" hidden="false" targetId="b8d6-5870-939e-3cdf" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="book" value="Rogue Trader">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="page" value="37">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8301-dd25-06aa-2d15" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="name" value="Level 4: Resourceful">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks>
+            <categoryLink id="6c18-48ae-38db-0271" name="Level 1" hidden="false" targetId="6e29-5d9a-98f5-ad2a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -11406,7 +11635,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="As long as this model is on the battlefield and not shaken, roll a D6 each time an opponent uses a tactic. On a 5+ you gain 1 Command Point."/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="As long as this model is on the battlefield and not shaken, roll a D6 each time an opponent uses a Tactic. On a 5+ you gain 1 Command Point."/>
       </characteristics>
     </profile>
     <profile id="12cb-44fd-df22-9441" name="Master Tactician" book="Rogue Trader" page="37" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -11424,7 +11653,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="As long as this model is on the battlefield and not shaken, uoi gain an additional Command Point at the start of each battle round. This can only be spent on an Aura Tactic for this model in this battle round."/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If this model is on the battlefield and not shaken, gain one additional Command Point at the start of the battle round. This can only be spent on an Aura Tactic for this model in this battle round."/>
       </characteristics>
     </profile>
     <profile id="7a5f-3b8d-4b58-f808" name="Mission-critical Mastermind" book="Rogue Trader" page="37" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
