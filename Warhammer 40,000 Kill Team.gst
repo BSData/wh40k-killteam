@@ -445,7 +445,7 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
-    <categoryEntry id="181f-e47f-6ec3-2e9b" name="Additional Specialist" hidden="false">
+    <categoryEntry id="181f-e47f-6ec3-2e9b" name="Specialist Retainer" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -561,12 +561,12 @@
             <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="525d-4bde-68f0-bf69" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="3502-7967-2dcb-a0a0" name="Additional Specialist" hidden="false" targetId="181f-e47f-6ec3-2e9b" primary="false">
+        <categoryLink id="3502-7967-2dcb-a0a0" name="Specialist Retainer" hidden="false" targetId="181f-e47f-6ec3-2e9b" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="name" value="Additional Specialists">
+            <modifier type="set" field="name" value="Specialist Retainers">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -8552,7 +8552,7 @@
     </selectionEntry>
     <selectionEntry id="b11f-9539-8ab0-2c1a" name="Master Specialist" book="" page="" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="b465-c050-687e-de1e" name="Master Specialist" book="Kill Team: Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+        <profile id="b465-c050-687e-de1e" name="Master Specialist" book="Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8609,15 +8609,26 @@
       </constraints>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="c9d4-b2dd-6ffa-e495" name="Level 1: " hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c9d4-b2dd-6ffa-e495" name="Level 1: Resourceful" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="dbc1-9387-edad-6714" name="Relentless" hidden="false" targetId="32fd-6f95-11d2-943d" type="profile">
+            <infoLink id="dbc1-9387-edad-6714" name="Resourceful" hidden="false" targetId="b8d6-5870-939e-3cdf" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="book" value="Rogue Trader">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="page" value="37">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </infoLink>
           </infoLinks>
           <modifiers/>
@@ -8667,11 +8678,11 @@
           </constraints>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="52c4-018b-54f7-e36f" name="Suppressor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="52c4-018b-54f7-e36f" name="Feigned Retreat" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="8ae5-d01c-4eaf-e83a" name="Suppressor" hidden="false" targetId="1688-376c-d85a-00e8" type="profile">
+                <infoLink id="8ae5-d01c-4eaf-e83a" name="Feigned Retreat" hidden="false" targetId="17de-efa4-be18-871f" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -8679,7 +8690,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 2: Suppressor">
+                <modifier type="set" field="name" value="Level 2: Feigned Retreat">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -8701,11 +8712,11 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="10d1-ed57-e7ca-e054" name="Extra Armour" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="10d1-ed57-e7ca-e054" name="Advisor" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="9b5a-2306-96e0-8764" name="Extra Armour" hidden="false" targetId="9c4a-bbc8-ddee-a90d" type="profile">
+                <infoLink id="9b5a-2306-96e0-8764" name="Advisor" hidden="false" targetId="bc19-7f0b-15ed-8bca" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -8713,7 +8724,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 2: Extra Armour">
+                <modifier type="set" field="name" value="Level 2: Advisor">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -8771,11 +8782,11 @@
             </categoryLink>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="edf7-4cb3-86e6-9772" name="Heavily Muscled" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="edf7-4cb3-86e6-9772" name="Master Tactician" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="2d33-e73e-a26f-cb50" name="Heavily Muscled" hidden="false" targetId="afd0-5c77-ced6-a04b" type="profile">
+                <infoLink id="2d33-e73e-a26f-cb50" name="Master Tactician" hidden="false" targetId="12cb-44fd-df22-9441" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -8783,7 +8794,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 3: Heavily Muscled">
+                <modifier type="set" field="name" value="Level 3: Master Tactician">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -8798,7 +8809,7 @@
                 <modifier type="set" field="hidden" value="true">
                   <repeats/>
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cec6-e7b8-ccd5-ef7e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10d1-ed57-e7ca-e054" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -8812,11 +8823,11 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1608-022a-4539-bcf4" name="Devastator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1608-022a-4539-bcf4" name="Counter-strategist" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="5239-ccfd-19d4-47a5" name="Devastator" hidden="false" targetId="4b2d-9f77-76cb-0492" type="profile">
+                <infoLink id="5239-ccfd-19d4-47a5" name="Counter-strategist" hidden="false" targetId="9a89-d396-5cd7-9296" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -8824,7 +8835,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 3: Devastator">
+                <modifier type="set" field="name" value="Level 3: Counter-strategist">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -8839,7 +8850,7 @@
                 <modifier type="set" field="hidden" value="true">
                   <repeats/>
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f2d-65aa-24b3-044a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10d1-ed57-e7ca-e054" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -8853,11 +8864,11 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6cf7-538e-ad97-a2e9" name="Rigorous" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6cf7-538e-ad97-a2e9" name="Mission-critical Mastermind" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="17e6-35c0-682f-cd1f" name="Rigorous" hidden="false" targetId="5eb5-1305-07a4-0533" type="profile">
+                <infoLink id="17e6-35c0-682f-cd1f" name="Mission-critical Mastermind" hidden="false" targetId="7a5f-3b8d-4b58-f808" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -8865,7 +8876,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 3: Rigorous">
+                <modifier type="set" field="name" value="Level 3: Mission-critical Mastermind">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -8880,7 +8891,7 @@
                 <modifier type="set" field="hidden" value="true">
                   <repeats/>
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f2d-65aa-24b3-044a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="52c4-018b-54f7-e36f" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -8894,11 +8905,11 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="aa15-f193-8f68-2423" name="Indomitable" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="aa15-f193-8f68-2423" name="Famed Commander" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="443b-8abc-46c1-88c1" name="Indomitable" hidden="false" targetId="1817-642e-e79c-c378" type="profile">
+                <infoLink id="443b-8abc-46c1-88c1" name="Famed Commander" hidden="false" targetId="36cf-3011-b15e-e7ef" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -8906,7 +8917,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 3: Indomitable">
+                <modifier type="set" field="name" value="Level 3: Famed Commander">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -8921,7 +8932,7 @@
                 <modifier type="set" field="hidden" value="true">
                   <repeats/>
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cec6-e7b8-ccd5-ef7e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="52c4-018b-54f7-e36f" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -8996,11 +9007,11 @@
             </categoryLink>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="5c4e-b60d-3b15-fdb8" name="Rigorous" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5c4e-b60d-3b15-fdb8" name="Master Tactician" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="3ed8-2073-7e79-6238" name="Rigorous" hidden="false" targetId="5eb5-1305-07a4-0533" type="profile">
+                <infoLink id="3ed8-2073-7e79-6238" name="Master Tactician" hidden="false" targetId="12cb-44fd-df22-9441" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -9008,7 +9019,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 4: Rigorous">
+                <modifier type="set" field="name" value="Level 4: Master Tactician">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -9027,7 +9038,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c8-d2f7-c305-1785" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="af7b-50cf-d99f-3fe6" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edf7-4cb3-86e6-9772" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -9045,11 +9056,11 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6c3c-00cc-53e0-a4e4" name="Indomitable" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6c3c-00cc-53e0-a4e4" name="Famed Commander" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="9b90-6cde-fd7d-3c79" name="Indomitable" hidden="false" targetId="1817-642e-e79c-c378" type="profile">
+                <infoLink id="9b90-6cde-fd7d-3c79" name="Famed Commander" hidden="false" targetId="36cf-3011-b15e-e7ef" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -9057,7 +9068,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 4: Indomitable">
+                <modifier type="set" field="name" value="Level 4: Famed Commander">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -9076,7 +9087,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c8-d2f7-c305-1785" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d9f-2cb7-5470-b95c" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa15-f193-8f68-2423" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -9094,11 +9105,11 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="430c-ca7e-6cd5-cac9" name="Suppressor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="430c-ca7e-6cd5-cac9" name="Mission-critical Mastermind" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="0510-55f7-6815-403c" name="Suppressor" hidden="false" targetId="1688-376c-d85a-00e8" type="profile">
+                <infoLink id="0510-55f7-6815-403c" name="Mission-critical Mastermind" hidden="false" targetId="7a5f-3b8d-4b58-f808" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -9106,7 +9117,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 4: Suppressor">
+                <modifier type="set" field="name" value="Level 4: Mission-critical Mastermind">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -9125,7 +9136,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c8-d2f7-c305-1785" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f2d-65aa-24b3-044a" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6cf7-538e-ad97-a2e9" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -9143,11 +9154,11 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e2c3-9f90-b618-0c84" name="Extra Armour" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e2c3-9f90-b618-0c84" name="Feigned Retreat" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="ef23-4a4c-2c0d-0b6a" name="Extra Armour" hidden="false" targetId="9c4a-bbc8-ddee-a90d" type="profile">
+                <infoLink id="ef23-4a4c-2c0d-0b6a" name="Feigned Retreat" hidden="false" targetId="17de-efa4-be18-871f" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -9155,7 +9166,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 4: Extra Armour">
+                <modifier type="set" field="name" value="Level 4: Feigned Retreat">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -9174,7 +9185,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c8-d2f7-c305-1785" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cec6-e7b8-ccd5-ef7e" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="52c4-018b-54f7-e36f" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -9192,11 +9203,11 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="13a8-7e51-6e9a-a747" name="Devastator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="13a8-7e51-6e9a-a747" name="Advisor" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="37b8-139c-8434-7277" name="Devastator" hidden="false" targetId="4b2d-9f77-76cb-0492" type="profile">
+                <infoLink id="37b8-139c-8434-7277" name="Advisor" hidden="false" targetId="bc19-7f0b-15ed-8bca" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -9204,7 +9215,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 4: Devastator">
+                <modifier type="set" field="name" value="Level 4: Advisor">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -9223,7 +9234,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c8-d2f7-c305-1785" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6016-4125-3ab7-0481" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10d1-ed57-e7ca-e054" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -9241,11 +9252,11 @@
                 <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9560-a12b-e15a-7b16" name="Heavily Muscled" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9560-a12b-e15a-7b16" name="Counter-strategist" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="ccf2-f8c8-afc3-aa07" name="Heavily Muscled" hidden="false" targetId="afd0-5c77-ced6-a04b" type="profile">
+                <infoLink id="ccf2-f8c8-afc3-aa07" name="Counter-strategist" hidden="false" targetId="9a89-d396-5cd7-9296" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -9253,7 +9264,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 4: Heavily Muscled">
+                <modifier type="set" field="name" value="Level 4: Counter-strategist">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -9272,7 +9283,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c8-d2f7-c305-1785" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e72-3991-e1b7-066c" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1608-022a-4539-bcf4" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -10080,7 +10091,7 @@
       <selectionEntries>
         <selectionEntry id="31ea-4847-1ffa-3b56" name="Iron Will" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="7c03-31eb-f4d0-4ca7" name="Iron Will" book="Kill Team: Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+            <profile id="7c03-31eb-f4d0-4ca7" name="Iron Will" book="Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10106,7 +10117,7 @@
         </selectionEntry>
         <selectionEntry id="5784-7b41-4e5f-f3e4" name="Stoic Hero" book="" page="" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="ad4b-eb36-aff1-dfda" name="Stoic Hero" book="Kill Team: Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+            <profile id="ad4b-eb36-aff1-dfda" name="Stoic Hero" book="Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10132,7 +10143,7 @@
         </selectionEntry>
         <selectionEntry id="d91b-04a3-7434-542c" name="Generalist" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="47c1-8e43-6230-de52" name="Generalist" book="Kill Team: Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+            <profile id="47c1-8e43-6230-de52" name="Generalist" book="Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10166,7 +10177,7 @@
         </selectionEntry>
         <selectionEntry id="2c29-4579-e21a-ae3c" name="Destined By Fate" book="" page="" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="2845-9e2a-dcd5-e6f6" name="Destined By Fate" book="Kill Team: Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+            <profile id="2845-9e2a-dcd5-e6f6" name="Destined By Fate" book="Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10192,7 +10203,7 @@
         </selectionEntry>
         <selectionEntry id="b598-a14f-757a-0052" name="Tactical Planner" book="" page="" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="e485-d976-3dde-79f7" name="Tactical Planner" book="Kill Team: Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+            <profile id="e485-d976-3dde-79f7" name="Tactical Planner" book="Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10353,7 +10364,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="ad5f-e9ce-b545-1a98" name="Comms: Scanner" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10385,7 +10398,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e644-c8b1-5dd4-502a" name="Demolitions: Breacher" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10417,7 +10432,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e004-b612-d9ae-035c" name="Heavy: Relentless" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10449,7 +10466,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="624e-c490-d5ac-dd8d" name="Leader: Resourceful" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10481,7 +10500,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="cc98-df40-03c6-8ce6" name="Medic: Reassuring" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10513,7 +10534,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="c20e-1230-f070-d6c6" name="Scout: Swift" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10545,7 +10568,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="c7e9-8e14-75bc-4c3f" name="Sniper: Marksman" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10577,7 +10602,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="c7a3-7184-447c-eebb" name="Veteran: Grizzled" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10609,7 +10636,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="5ff8-4386-d5e3-6e84" name="Zealot: Frenzied" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10641,7 +10670,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -11341,6 +11372,60 @@
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 1 to this model&apos;s Attacks characteristic in a battle round in which it ended a charge move within 1&quot; of an enemy model."/>
+      </characteristics>
+    </profile>
+    <profile id="bc19-7f0b-15ed-8bca" name="Advisor" book="Rogue Trader" page="37" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Whilst this model is within 3&quot; of other friendly specialists, those other specialists are treated as being one level higher than they actually are (to a maximum of Level 4) for the purposes of determining what Tactics you can use."/>
+      </characteristics>
+    </profile>
+    <profile id="17de-efa4-be18-871f" name="Feigned Retreat" book="Rogue Trader" page="37" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model can shoot or React even if it Fell Back or Retreated earlier in the battle round."/>
+      </characteristics>
+    </profile>
+    <profile id="9a89-d396-5cd7-9296" name="Counter-strategist" book="Rogue Trader" page="37" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="As long as this model is on the battlefield and not shaken, roll a D6 each time an opponent uses a tactic. On a 5+ you gain 1 Command Point."/>
+      </characteristics>
+    </profile>
+    <profile id="12cb-44fd-df22-9441" name="Master Tactician" book="Rogue Trader" page="37" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="As long as this model is on the battlefield and not shaken, subtract 1 from the Command Point costs of all Tactics you use (to a minimum of 1)."/>
+      </characteristics>
+    </profile>
+    <profile id="36cf-3011-b15e-e7ef" name="Famed Commander" book="Rogue Trader" page="37" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="As long as this model is on the battlefield and not shaken, uoi gain an additional Command Point at the start of each battle round. This can only be spent on an Aura Tactic for this model in this battle round."/>
+      </characteristics>
+    </profile>
+    <profile id="7a5f-3b8d-4b58-f808" name="Mission-critical Mastermind" book="Rogue Trader" page="37" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Your kill team cannot be broken while this model is on the battlefield."/>
       </characteristics>
     </profile>
   </sharedProfiles>
