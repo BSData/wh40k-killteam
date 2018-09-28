@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="6" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="7" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -10948,7 +10948,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Friendly models within 3&quot; of this model - as long as it is not shaken - automatically pass Nerve tests."/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Other friendly models within 3&quot; of this model - as long as this model is not shaken - automatically pass Nerve tests."/>
       </characteristics>
     </profile>
     <profile id="c5c6-a64a-5c4a-e2f2" name="Mentor" book="Core Manual" page="68" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -11110,7 +11110,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Once per Shooting phase, when you pick a model from your kill team to shoot that is within 6&quot; of this model, if this model is not shaken, you can add 1 to hit rolls made for that model in this phase."/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Once per Shooting phase, if this model is not shaken, when you pick another model from your kill team within 6&quot; of this model to shoot, you can add 1 to hit rolls for that model in this phase."/>
       </characteristics>
     </profile>
     <profile id="ecd0-d4c0-d216-2257" name="Expert" book="Core Manual" page="70" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
