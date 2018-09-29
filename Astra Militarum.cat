@@ -851,7 +851,45 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="ed6c-5055-d169-3bee" name="Vox Caster + Hot-shot laspistol" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d97c-5f91-cc95-a036" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="87c5-6d67-f340-400d" name="Vox Caster" hidden="false" targetId="f520-cbcd-b611-d169" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0a4-f46c-96c5-1e3a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23ae-aeb6-17b3-d289" type="min"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="c2c4-f3a9-064d-1d2e" name="Hot-shot laspistol" hidden="false" targetId="e154-8aab-36af-e719" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7d4-26b4-f182-ed88" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b60-6c40-21cb-c2ce" type="min"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="32af-114b-c4fc-df46" name="Frag Grenades" hidden="false" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry">
@@ -865,21 +903,19 @@
           </constraints>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="b269-8935-6785-944b" name="Vox Caster" hidden="false" targetId="f520-cbcd-b611-d169" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1506-3a4b-9b3e-9454" type="max"/>
-          </constraints>
-          <categoryLinks/>
-        </entryLink>
         <entryLink id="8332-6a1c-9403-83b0" name="Hot-shot lasgun" hidden="false" targetId="a039-d1c0-a6cf-1eeb" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="f0e4-d72a-2798-d4c7" value="0.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f520-cbcd-b611-d169" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0e4-d72a-2798-d4c7" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1cb-e6e5-e4d8-71fa" type="max"/>
@@ -2200,6 +2236,14 @@
               <categoryLinks/>
             </entryLink>
             <entryLink id="3a82-06e4-81df-aa65" name="Hot-shot volley gun" hidden="false" targetId="44fc-d939-c092-6d18" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="9487-a6a4-744f-105f" name="Grenade launcher" hidden="false" targetId="aee3-c869-bfe7-2ec8" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
