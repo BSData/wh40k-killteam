@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7548-75cf-ab24-7e9c" name="Deathwatch" book="Warhammer 40,000 - Kill Team - Core Manual" page="" revision="7" battleScribeVersion="2.01" authorName="@MadSpy" authorUrl="https://github.com/BSData/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7548-75cf-ab24-7e9c" name="Deathwatch" book="Warhammer 40,000 - Kill Team - Core Manual" page="" revision="8" battleScribeVersion="2.01" authorName="@MadSpy" authorUrl="https://github.com/BSData/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1328,6 +1328,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="72bb-a86e-81cd-844f" name="Auspex" hidden="false" targetId="0591-71c0-964e-7617" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
@@ -1441,7 +1449,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="If a model is armed with an auxiliary grenade launcher, increase the range of any Grenade weapons they have to 30&quot;."/>
+                <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="If a model is armed with an auxiliary grenade launcher, increase the range of any Grenade weapons they have to 30&quot;. This model&apos;s Grenade weapons are affected by the Long Range rule."/>
               </characteristics>
             </profile>
           </profiles>
@@ -1487,6 +1495,14 @@
           <categoryLinks/>
         </entryLink>
         <entryLink id="8c3c-1974-6e64-ac05" name="Bolt pistol" hidden="false" targetId="cfb4-7791-2e49-9f10" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="a8da-9fd1-5975-0c88" name="Auspex" hidden="false" targetId="0591-71c0-964e-7617" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1626,6 +1642,14 @@
           <categoryLinks/>
         </entryLink>
         <entryLink id="f4f4-d82b-cf7e-5f25" name="Bolt pistol" hidden="false" targetId="cfb4-7791-2e49-9f10" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="ba6b-a5dd-68ac-392d" name="Auspex" hidden="false" targetId="0591-71c0-964e-7617" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2437,6 +2461,33 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="2.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0591-71c0-964e-7617" name="Auspex" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="ea09-8043-a658-6c7e" name="Auspex" hidden="false" profileTypeId="0883-432d-b2ca-f11a" profileTypeName="Wargear">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="At the start of the Shooting phase, you can choose another DEATHWATCH model within 3&quot; of a friendly model equipped with an auspex that is not shaken. That model does not suffer penalties to their hit or Injury rolls due to their target being obscured."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="146e-fcb4-47a8-ef58" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fb7a-6b0e-1590-9cd7" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="31da-cb72-0cd0-4450" name="Deathwatch Weapons" hidden="false" collective="false" defaultSelectionEntryId="566a-1fb4-02bc-4505">
@@ -2463,6 +2514,8 @@
                   <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f40a-44e2-965f-aa57" type="equalTo"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dcb3-c830-19bc-ed4d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b4f-71a7-f7ae-7d19" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4c7-b87a-40d2-8599" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -3259,6 +3312,31 @@
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f9cc-54d5-6a6b-55d7" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4fba-7c76-7dc8-8a49" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="0dcc-d35f-3192-6177" name="Medic" hidden="false" targetId="01ab-630a-cf81-38c9" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdd0-e085-dacc-1f66" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7bf0-9686-9554-6193" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3a43-b32d-507b-c8d3" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="faaf-ba3e-797f-0c06" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fe35-3207-26cd-c3ce" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
