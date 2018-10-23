@@ -46,6 +46,13 @@
         <characteristicType id="0722-c3c3-3039-c061" name="Psychic Power"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="201a-159a-7751-b85b" name="Psyker">
+      <characteristicTypes>
+        <characteristicType id="998f-87b1-cc06-fb7e" name="Manifest"/>
+        <characteristicType id="cb14-ded3-0978-88b8" name="Deny"/>
+        <characteristicType id="67ce-9d6c-052c-d1eb" name="Powers known"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="29e7-d60f-5acd-4d99" name="Specialist" hidden="false">
@@ -472,6 +479,13 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="72ab-b686-b5c5-fa0e" name="Exalted Sorcerer" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="4802-1101-b23e-92fe" name="Shaman" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17366,9 +17380,16 @@
               <modifiers/>
             </infoLink>
           </infoLinks>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="722b-8854-778a-00f9" value="0.0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="87d6-c99f-551a-601a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="722b-8854-778a-00f9" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
