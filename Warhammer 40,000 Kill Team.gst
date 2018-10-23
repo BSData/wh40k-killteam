@@ -41,6 +41,11 @@
         <characteristicType id="8b56-49a8-40e5-242a" name="Ability"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="7a97-314b-42a0-d52e" name="Psychic Power">
+      <characteristicTypes>
+        <characteristicType id="0722-c3c3-3039-c061" name="Psychic Power"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="29e7-d60f-5acd-4d99" name="Specialist" hidden="false">
@@ -460,6 +465,13 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="cb5f-9b41-a3c7-f463" name="Vulgrar Thrice-Cursed" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="72ab-b686-b5c5-fa0e" name="Exalted Sorcerer" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -8210,19 +8222,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bb99-4086-e731-058e" name="Psybolt" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="5462-27da-2b27-6a95" name="Psybolt" book="Core Manual" page="26" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="2cbf-5a86-d6f9-4824" name="Psybolt" hidden="false" targetId="ac13-38c6-87ab-38fb" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Psybolt has a warp charge value of 5. If manifested, the closest enemy model within 18&quot; of and visible to the psyker suffers 1 mortal wound (pg 33). If the result of the Psychic test was 11+, the target suffers D3 mortal wounds instead."/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules/>
-      <infoLinks/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52de-c6ae-ac69-baa4" type="max"/>
@@ -10534,7 +10543,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d26b-c55e-2ad9-f8db" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3860-bc67-f9ea-a555" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -10583,7 +10592,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d26b-c55e-2ad9-f8db" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c783-0949-5f63-0446" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -10632,7 +10641,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d26b-c55e-2ad9-f8db" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f667-9679-9eb1-bb6e" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -10681,7 +10690,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d26b-c55e-2ad9-f8db" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e791-fba5-f6c7-e994" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -10730,7 +10739,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d26b-c55e-2ad9-f8db" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77ba-ac5e-050f-ca05" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -10779,7 +10788,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d26b-c55e-2ad9-f8db" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3860-bc67-f9ea-a555" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -11275,7 +11284,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a7c-7da3-f455-0058" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="041e-b667-a638-eb55" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -11324,7 +11333,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a7c-7da3-f455-0058" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45d8-6114-1809-0cde" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -11373,7 +11382,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a7c-7da3-f455-0058" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1dd6-733e-4b81-8ff5" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -11422,7 +11431,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a7c-7da3-f455-0058" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75f9-b21b-2e1d-1e8d" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -11471,7 +11480,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a7c-7da3-f455-0058" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e723-4847-4102-ded3" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -11520,7 +11529,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a7c-7da3-f455-0058" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="40a5-175f-1964-7ca6" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -11998,7 +12007,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers>
-                <modifier type="set" field="name" value="Level 4: Combat Master">
+                <modifier type="set" field="name" value="Level 4: Ignore Pain">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -12016,7 +12025,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-1cbd-d582-b88b" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9d8-daf8-3b71-c730" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -12065,7 +12074,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-1cbd-d582-b88b" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb63-1e1e-3681-a849" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -12114,7 +12123,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-1cbd-d582-b88b" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="940b-226e-e48d-5d59" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -12137,7 +12146,7 @@
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="ae22-ec6a-4c25-a8f8" name="Battle Scarred" hidden="false" targetId="1fa0-a8db-67cf-87b9" type="profile">
+                <infoLink id="ae22-ec6a-4c25-a8f8" name="Berserker" hidden="false" targetId="6572-59bf-c92c-6816" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -12163,7 +12172,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-1cbd-d582-b88b" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f875-6e76-5d43-f382" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -12212,7 +12221,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-1cbd-d582-b88b" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d387-02bd-a25b-beaa" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -12261,7 +12270,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f90b-c37c-5a8d-940e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e2-1cbd-d582-b88b" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1b18-8f86-ae23-a19f" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
@@ -12295,6 +12304,3711 @@
           <categoryLinks/>
         </entryLink>
         <entryLink id="5ec0-0400-7169-7428" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="88d4-1fdb-1672-18cc" name="Fortitude" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="ac19-57fc-c4fa-765d" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ac19-57fc-c4fa-765d" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="20b7-0fa3-3e1a-caaf" name="Level 1: Hardy Constitution" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="4589-fada-63bd-f6f5" name="Hardy Constitution" hidden="false" targetId="d8f2-be06-5ce1-17c6" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa45-a29f-4839-cdee" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b0a-76ae-2c3f-1a66" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="92b8-fe2a-0fff-63de" name="Level 1" hidden="false" targetId="6e29-5d9a-98f5-ad2a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5aab-e4c8-9593-c2fc" name="Level 2" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0e0-cb78-6f75-088f" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="f061-e39e-d730-e36b" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="90b5-5f7f-a600-f9df" name="Hard to Kill" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="68e5-197b-ed84-9d1c" name="Hard to Kill" hidden="false" targetId="2c55-62da-00f7-1f84" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 2: Hard to Kill">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e6c1-b271-19ea-c5e9" name="Indomitable" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="2cef-067f-2b89-fc98" name="Indomitable" hidden="false" targetId="1817-642e-e79c-c378" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 2: Indomitable">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="dec2-b252-dbc2-20c7" name="Level 3" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1ac-7abc-22d1-5213" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="05e1-80c4-a19e-7fee" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="bc8e-0d88-aeb4-0697" name="True Grit" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="6645-7815-e78a-bfa1" name="True Grit" hidden="false" targetId="7023-c86c-3381-d145" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: True Grit">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="90b5-5f7f-a600-f9df" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="81c1-c353-1a80-b857" name="Unyielding Will" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="16ff-6822-81aa-6546" name="Unyielding Will" hidden="false" targetId="c14b-943d-b270-b73d" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Unyielding Will">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6c1-b271-19ea-c5e9" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="35f7-a79a-addd-5b1e" name="Feel No Pain" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="a883-57a6-33d7-e795" name="Feel No Pain" hidden="false" targetId="08ff-8db9-da14-f94a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Feel No Pain">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6c1-b271-19ea-c5e9" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c54d-80b9-65cd-13f4" name="Iron Constitution" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="f324-3afe-d1cc-c3eb" name="Iron Constitution" hidden="false" targetId="044f-c4ef-b9ab-4b78" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Iron Constitution">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="90b5-5f7f-a600-f9df" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="826f-ebbf-43ef-895b" name="Level 4" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d91b-04a3-7434-542c" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b11f-9539-8ab0-2c1a" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="4256-7d7f-0221-0e3b" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b11f-9539-8ab0-2c1a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d91b-04a3-7434-542c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4256-7d7f-0221-0e3b" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="ea5b-1e8e-68fb-6bcc" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="b4b0-eedf-fda4-976a" name="True Grit" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="8a49-46da-228a-0c49" name="True Grit" hidden="false" targetId="7023-c86c-3381-d145" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: True Grit">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dec2-b252-dbc2-20c7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bc8e-0d88-aeb4-0697" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edde-a261-8bd9-bc0d" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7ea7-fcd5-2fae-f13c" name="Iron Constitution" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="e509-91ad-0cab-6bcd" name="Iron Constitution" hidden="false" targetId="044f-c4ef-b9ab-4b78" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Iron Constitution">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dec2-b252-dbc2-20c7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c54d-80b9-65cd-13f4" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4338-88a7-c2ed-7be8" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="af5f-6191-9695-ffff" name="Unyielding Will" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="b5b3-c9f2-33a3-db29" name="Unyielding Will" hidden="false" targetId="c14b-943d-b270-b73d" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Unyielding Will">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dec2-b252-dbc2-20c7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="81c1-c353-1a80-b857" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3d2-7b12-0fd7-0620" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3d7b-68fe-e3d3-ba54" name="Hard to Kill" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="1a1e-c78e-b070-3940" name="Hard to Kill" hidden="false" targetId="2c55-62da-00f7-1f84" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Hard to Kill">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dec2-b252-dbc2-20c7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="90b5-5f7f-a600-f9df" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0445-996a-9af2-5564" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="54bd-c2ce-89fc-83a3" name="Feel No Pain" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="0cd7-1e54-7942-ddc9" name="Feel No Pain" hidden="false" targetId="08ff-8db9-da14-f94a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Feel No Pain">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dec2-b252-dbc2-20c7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35f7-a79a-addd-5b1e" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da5d-424d-89a6-0812" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="be24-706f-b2b1-6587" name="Indomitable" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="a0ee-4518-e7da-e09b" name="Indomitable" hidden="false" targetId="1817-642e-e79c-c378" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Indomitable">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dec2-b252-dbc2-20c7" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6c1-b271-19ea-c5e9" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a6c-de83-7357-d882" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="f16c-5bff-2059-76d3" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="f33a-4127-ab18-e61e" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cd3d-2c23-094b-93b8" name="Leadership" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="2b9d-b0da-1127-a959" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2b9d-b0da-1127-a959" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="952a-65a4-2870-1d3d" name="Level 1: Symbol of Courage" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="4388-ec4f-1c97-4746" name="Symbol of Courage" hidden="false" targetId="211e-5bda-3e71-0cf7" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff26-e3cf-949c-0106" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa3f-aeeb-4179-f9c3" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="63a2-6e1d-1ded-ed5b" name="Level 1" hidden="false" targetId="6e29-5d9a-98f5-ad2a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5614-657c-08bd-5f08" name="Level 2" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bc0-ddee-5e0b-8282" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="94aa-93d9-b58f-0bcd" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="fd9a-7dc0-175b-1258" name="Aura of Command" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="cf03-ee76-4685-5591" name="Aura of Command" hidden="false" targetId="fb2a-e787-4b3b-c6de" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 2: Aura of Command">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="faa4-2196-dc24-695c" name="Inspiring" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="803f-3165-f46a-6ef3" name="Inspiring (Leadership)" hidden="false" targetId="9f4b-f307-7d2b-b05c" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 2: Inspiring">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="76c5-6425-f6d4-73f6" name="Level 3" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="356b-0788-507a-b518" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="c80e-94a4-c7d6-4d2b" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="39bc-38d5-d319-2b63" name="Grim Determination" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="3011-c937-3099-061b" name="Grim Determination" hidden="false" targetId="895e-10ff-8025-76f8" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Grim Determination">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="faa4-2196-dc24-695c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c800-82ee-0347-c8fc" name="Tenacious" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="a949-3a65-2eba-3fe3" name="Tenacious" hidden="false" targetId="bebf-df92-3f67-33d7" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Tenacious">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="faa4-2196-dc24-695c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3740-f372-5e69-69f1" name="Master of War" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="941d-8419-7d77-83d7" name="Master of War" hidden="false" targetId="4424-363c-3e4c-0c29" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Master of War">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd9a-7dc0-175b-1258" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9dbe-57bc-cf21-ebe7" name="Heroic" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="f863-a8fe-eed5-2026" name="Heroic" hidden="false" targetId="e11c-c6c1-f907-6e0b" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Heroic">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd9a-7dc0-175b-1258" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d2e2-5a0e-d14b-3cac" name="Level 4" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d91b-04a3-7434-542c" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b11f-9539-8ab0-2c1a" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="1178-bd59-3123-314d" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b11f-9539-8ab0-2c1a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d91b-04a3-7434-542c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1178-bd59-3123-314d" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="8daf-3042-5867-e718" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="c443-ee9c-e0c9-6b02" name="Master of War" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="9ade-548d-2ced-f918" name="Master of War" hidden="false" targetId="4424-363c-3e4c-0c29" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Master of War">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76c5-6425-f6d4-73f6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3740-f372-5e69-69f1" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc3-355c-1985-2577" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cabd-9cf3-bc72-f3cd" name="Heroic" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="4205-5f66-3582-2e0b" name="Heroic" hidden="false" targetId="e11c-c6c1-f907-6e0b" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Heroic">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76c5-6425-f6d4-73f6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dbe-57bc-cf21-ebe7" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4455-2a6b-4782-d50e" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dc93-4815-0bfa-dcdd" name="Tenacious" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="609d-14d7-ef9d-2fd2" name="Tenacious" hidden="false" targetId="bebf-df92-3f67-33d7" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Tenacious">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76c5-6425-f6d4-73f6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c800-82ee-0347-c8fc" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cb7-0533-cc47-fada" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0d9e-6d52-66c6-b739" name="Inspiring" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="4d3a-86fa-858a-1623" name="Inspiring (Leadership)" hidden="false" targetId="9f4b-f307-7d2b-b05c" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Inspiring">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76c5-6425-f6d4-73f6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="faa4-2196-dc24-695c" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fed0-2c79-e97f-963b" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6060-aa05-8656-fcf8" name="Aura of Command" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="9d30-e6a8-bb32-6c43" name="Aura of Command" hidden="false" targetId="fb2a-e787-4b3b-c6de" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Aura of Command">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76c5-6425-f6d4-73f6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd9a-7dc0-175b-1258" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1258-0245-030f-3982" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="beb1-ac5c-9459-cd34" name="Grim Determination" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="fd5f-b64a-dcdb-9322" name="Grim Determination" hidden="false" targetId="895e-10ff-8025-76f8" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Grim Determination">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76c5-6425-f6d4-73f6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39bc-38d5-d319-2b63" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa1f-512a-50e5-b19a" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ba44-9a73-f655-cc23" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="d19a-6ffa-b4b8-5a04" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="436b-cc7d-caf2-b09c" name="Logistics" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="f544-4cc8-b543-575b" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f544-4cc8-b543-575b" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="d351-b506-c829-c9c9" name="Level 1: Extra Armour" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="b5da-6406-18dd-2c96" name="Extra Armour (Logistics)" hidden="false" targetId="441d-35ac-d7dd-5a53" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="917b-3d11-28f1-5e3b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e9b-d4c4-c855-7823" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="ade9-feed-9819-cf8c" name="Level 1" hidden="false" targetId="6e29-5d9a-98f5-ad2a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="017c-a13d-7454-a5de" name="Level 2" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15bd-ea4c-3570-ec56" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="1747-eea9-e13a-2723" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="1fc2-9a8e-b984-36cd" name="Quartermaster" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="ddb1-46d5-7c60-de09" name="Quartermaster" hidden="false" targetId="5fe0-31d3-5945-1fa0" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 2: Quartermaster">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b685-bf13-7818-645c" name="Armed to the Teeth" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="28e4-5561-d67d-0537" name="Armed to the Teeth" hidden="false" targetId="5e6a-0021-d740-5b66" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 2: Armed to the Teeth">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="141b-b2f7-36d2-9e0d" name="Level 3" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="621b-6345-8739-9635" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="e8af-ddeb-34f2-7faf" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="c62d-d363-9965-ca60" name="Scavenger" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="f265-3c25-d01a-d20c" name="Scavenger" hidden="false" targetId="8d23-1fa9-55f5-d387" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Scavenger">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1fc2-9a8e-b984-36cd" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b81b-ab3b-6287-f4de" name="Rangefinder Scope" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="a24f-778f-e971-82a1" name="Rangefinder Scope" hidden="false" targetId="1125-591e-4894-2d2a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Rangefinder Scope">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b685-bf13-7818-645c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="84fc-c317-9395-9e31" name="Master Artisan" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="6759-50b4-8daa-69ad" name="Master Artisan" hidden="false" targetId="9ea9-5189-e454-ac62" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Master Artisan">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b685-bf13-7818-645c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="87e5-913c-641b-7c58" name="Master of Sabotage" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="9d7b-b20b-69ba-0588" name="Master of Sabotage" hidden="false" targetId="6a96-daa1-fa23-b370" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Master of Sabotage">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1fc2-9a8e-b984-36cd" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="159f-a3f5-f426-9c93" name="Level 4" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d91b-04a3-7434-542c" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b11f-9539-8ab0-2c1a" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="eca8-aca2-4545-708a" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b11f-9539-8ab0-2c1a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d91b-04a3-7434-542c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eca8-aca2-4545-708a" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="f955-c689-64a6-d62f" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="1821-c956-1314-7d07" name="Rangefinder Scope" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="947c-7d6c-b133-6800" name="Rangefinder Scope" hidden="false" targetId="1125-591e-4894-2d2a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Rangefinder Scope">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="141b-b2f7-36d2-9e0d" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b81b-ab3b-6287-f4de" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc45-8e06-2710-1121" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e5a5-fe45-0958-7468" name="Master Artisan" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="7df7-d278-c898-926b" name="Master Artisan" hidden="false" targetId="9ea9-5189-e454-ac62" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Master Artisan">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="141b-b2f7-36d2-9e0d" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84fc-c317-9395-9e31" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d30b-088d-42d6-ea10" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1c35-84dc-a739-6fad" name="Scavenger" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="16ef-0be6-017f-49ab" name="Scavenger" hidden="false" targetId="8d23-1fa9-55f5-d387" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Scavenger">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="141b-b2f7-36d2-9e0d" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c62d-d363-9965-ca60" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a97a-ca2d-af0c-9d37" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1529-d97a-5c9e-a376" name="Master of Sabotage" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="afff-fac8-594f-269f" name="Master of Sabotage" hidden="false" targetId="6a96-daa1-fa23-b370" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Master of Sabotage">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="141b-b2f7-36d2-9e0d" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87e5-913c-641b-7c58" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b285-b5e4-1d0f-194a" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a907-d80e-dcf6-cece" name="Armed to the Teeth" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="ffb7-0197-2a72-2c5f" name="Armed to the Teeth" hidden="false" targetId="5e6a-0021-d740-5b66" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Armed to the Teeth">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="141b-b2f7-36d2-9e0d" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b685-bf13-7818-645c" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcae-7be1-924c-15bc" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2b20-d5ab-6127-2034" name="Quartermaster" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="3504-ef43-73e2-e144" name="Quartermaster" hidden="false" targetId="5fe0-31d3-5945-1fa0" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Quartermaster">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="141b-b2f7-36d2-9e0d" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1fc2-9a8e-b984-36cd" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b593-e384-d5f3-c62c" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="cc5e-0983-e659-74e1" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="57e1-9dd5-7f87-17c8" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d429-68d8-5a9f-fab6" name="Melee" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="f1b1-4622-ec03-f80a" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f1b1-4622-ec03-f80a" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="9ed1-9961-598f-30ee" name="Level 1: Expert Fighter" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="f22a-51a6-8e8f-9e40" name="Expert Fighter" hidden="false" targetId="c0fe-c084-3f73-2cbf" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e93-d285-1a68-9ed8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d428-c99c-2ef2-aaeb" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="d259-26d3-a70d-63e4" name="Level 1" hidden="false" targetId="6e29-5d9a-98f5-ad2a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c242-bf91-2c9f-3e42" name="Level 2" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92b7-5a89-2e33-b013" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="0cb9-3b26-76d6-03b7" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="87fe-41db-0133-c5bd" name="Swift Parry" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="39d7-9d44-98b1-bc48" name="Swift Parry" hidden="false" targetId="c07e-2442-f183-93cf" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 2: Swift Parry">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4dc0-2004-4c14-9078" name="Warrior Born" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="e3cd-2448-d388-d599" name="Warrior Born" hidden="false" targetId="da4a-03f4-8445-7f9a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 2: Warrior Born">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="df25-888b-43c1-0fe6" name="Level 3" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b06-9598-9820-547e" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="38a9-5c2d-5987-472b" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="2927-6d46-7681-b00d" name="Lightning Reflexes" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="d51f-5b5e-fe5e-dc3e" name="Lightning Reflexes" hidden="false" targetId="f8fa-cfcf-7183-b52a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Lightning Reflexes">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87fe-41db-0133-c5bd" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1e39-98c9-0b6a-1868" name="Impenetrable Defence" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="cd0c-7061-a38a-1475" name="Impenetrable Defence" hidden="false" targetId="a938-e2c7-d675-2588" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Impenetrable Defence">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87fe-41db-0133-c5bd" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="86b2-ade9-89c5-0ad0" name="Duellist" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="68c0-434b-f192-65f0" name="Duellist" hidden="false" targetId="005b-a2b0-c163-4e65" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Duellist">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4dc0-2004-4c14-9078" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="065f-c361-3d8b-02be" name="Precision Strike" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="e6bd-e285-a1b4-67b7" name="Precision Strike" hidden="false" targetId="33d4-d36c-94e4-4cbd" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Precision Strike">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4dc0-2004-4c14-9078" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="595e-8cd8-ccfa-8df7" name="Level 4" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d91b-04a3-7434-542c" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b11f-9539-8ab0-2c1a" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="1148-4aa3-0134-84c2" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b11f-9539-8ab0-2c1a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d91b-04a3-7434-542c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1148-4aa3-0134-84c2" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="69b2-2031-0c13-07f7" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="ff45-609b-e942-783e" name="Lightning Reflexes" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="bd13-d665-edb9-c71f" name="Lightning Reflexes" hidden="false" targetId="f8fa-cfcf-7183-b52a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Lightning Reflexes">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df25-888b-43c1-0fe6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2927-6d46-7681-b00d" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05a6-81af-e14f-43b5" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fc13-0e44-7cef-9470" name="Warrior Born" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="7026-24a4-350e-0201" name="Warrior Born" hidden="false" targetId="da4a-03f4-8445-7f9a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Warrior Born">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df25-888b-43c1-0fe6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4dc0-2004-4c14-9078" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8b3-33ee-d00c-dcd5" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1106-280f-0277-b41b" name="Precision Strike" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="67fa-53db-96e3-293c" name="Precision Strike" hidden="false" targetId="33d4-d36c-94e4-4cbd" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Precision Strike">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df25-888b-43c1-0fe6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="065f-c361-3d8b-02be" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18fe-51c9-a786-e740" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b738-acb5-3c2b-110a" name="Duellist" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="f1b9-33e7-8298-ddfe" name="Duellist" hidden="false" targetId="005b-a2b0-c163-4e65" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Duellist">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df25-888b-43c1-0fe6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="86b2-ade9-89c5-0ad0" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f9-276f-91bd-0895" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="066f-23bd-ab90-b807" name="Swift Parry" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="badf-5947-a65f-23c1" name="Swift Parry" hidden="false" targetId="c07e-2442-f183-93cf" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Swift Parry">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df25-888b-43c1-0fe6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87fe-41db-0133-c5bd" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f74-2fc3-2732-eefe" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ead6-b7b3-b338-22f0" name="Impenetrable Defence" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="f6eb-096e-195e-6091" name="Impenetrable Defence" hidden="false" targetId="a938-e2c7-d675-2588" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Impenetrable Defence">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df25-888b-43c1-0fe6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1e39-98c9-0b6a-1868" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f76c-f25b-0626-e6cf" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="15d8-a84a-a60e-0885" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="d834-fb9c-6d94-b5bc" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b6a-c3c2-c00b-170e" name="Shooting" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="3174-3634-9fb5-fd82" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3174-3634-9fb5-fd82" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="7088-a1ce-44f9-b351" name="Level 1: Shootist" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="6747-98a8-eda7-5cf2" name="Shootist" hidden="false" targetId="2dc6-312c-338c-e3a7" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4304-d3ae-2a75-c0c5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3e5-1120-bc07-2166" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="dc26-a9f5-866f-5712" name="Level 1" hidden="false" targetId="6e29-5d9a-98f5-ad2a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8b48-d21d-72ef-d64c" name="Level 2" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6004-56c7-ab7b-4244" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="7187-f300-3749-19a1" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="56cc-da5f-ea41-d216" name="Trick-shooter" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="83a5-4373-4de0-4d4f" name="Trick-shooter" hidden="false" targetId="449e-f37a-ebbf-a2ae" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 2: Trick-shooter">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0ab3-ac48-9881-5620" name="Pistoleer" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="8421-7325-92c8-c9f5" name="Pistoleer" hidden="false" targetId="4d28-372c-65ed-7d94" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 2: Pistoleer">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9728-988b-09fa-1e80" name="Level 3" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9b6-061d-ec0b-20ba" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="8361-3c30-a6c6-86b6" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="9fdb-8641-d1be-4c13" name="Long Bomb" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="4768-c8dc-71dd-c6b1" name="Long Bomb" hidden="false" targetId="14a6-a66c-6d97-011f" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Long Bomb">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ab3-ac48-9881-5620" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="01d9-22db-60e2-0992" name="Hip Shooter" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="0822-3b64-21ea-0460" name="Hip Shooter" hidden="false" targetId="6d02-0557-4c59-b6b4" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Hip Shooter">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ab3-ac48-9881-5620" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9aa0-7734-f1d2-f92b" name="Targeting Weak Spots" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="2c21-fd9f-65a0-662f" name="Targeting Weak Spots" hidden="false" targetId="9cae-cd3c-7784-e05f" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Targeting Weak Spots">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="56cc-da5f-ea41-d216" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3ca2-818d-d608-8885" name="Precision Strike" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="2816-ffd8-0c25-b550" name="Precision Strike" hidden="false" targetId="33d4-d36c-94e4-4cbd" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 3: Precision Strike">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="56cc-da5f-ea41-d216" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d65a-ec1d-b483-234f" name="Level 4" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d91b-04a3-7434-542c" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b11f-9539-8ab0-2c1a" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="0742-b296-9162-74b5" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b11f-9539-8ab0-2c1a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d91b-04a3-7434-542c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0742-b296-9162-74b5" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="e15c-a9c4-f71d-9b9e" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="c147-edb7-fd32-3011" name="Hip Shooter" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="eafa-90ae-de8b-3fca" name="Hip Shooter" hidden="false" targetId="6d02-0557-4c59-b6b4" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Hip Shooter">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9728-988b-09fa-1e80" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="01d9-22db-60e2-0992" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="641c-be00-1bcf-2c5d" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="aee5-0d15-1df3-9d6c" name="Targeting Weak Spots" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="7622-469a-d4f2-91a0" name="Targeting Weak Spots" hidden="false" targetId="9cae-cd3c-7784-e05f" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Targeting Weak Spots">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9728-988b-09fa-1e80" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9aa0-7734-f1d2-f92b" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d5e-3ec6-5231-834d" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b986-6034-ce7d-9bfa" name="Precision Strike" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="ffd3-d43a-4445-6e84" name="Precision Strike" hidden="false" targetId="33d4-d36c-94e4-4cbd" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Precision Strike">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9728-988b-09fa-1e80" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ca2-818d-d608-8885" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a77c-63b4-96bd-603e" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f001-be4c-a993-3108" name="Pistoleer" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="8f05-9aad-4977-368e" name="Pistoleer" hidden="false" targetId="4d28-372c-65ed-7d94" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Pistoleer">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9728-988b-09fa-1e80" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ab3-ac48-9881-5620" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ef6-67eb-ffd3-4a6c" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="402f-240d-026d-ebcf" name="Long Bomb" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="9a88-754f-35e7-1da4" name="Long Bomb" hidden="false" targetId="14a6-a66c-6d97-011f" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Long Bomb">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9728-988b-09fa-1e80" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fdb-8641-d1be-4c13" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="921d-b7ab-7701-70e2" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="392a-2e85-0dfe-e8e7" name="Trick-shooter" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="df46-97bd-c01b-dcf0" name="Trick-shooter" hidden="false" targetId="449e-f37a-ebbf-a2ae" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Level 4: Trick-shooter">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9728-988b-09fa-1e80" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="56cc-da5f-ea41-d216" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f51d-a16d-88a8-2726" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c8a1-2b4b-b48f-3e4d" name="Commander Traits" hidden="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="097d-376d-33d1-cca7" name="Generalist Abilities" hidden="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -13186,7 +16900,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="ebe4-dd97-9b55-2143" name="Psyker: Student of the Arcane" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -13225,7 +16941,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9bb5-ae64-c43a-169f" name="Ferocity: Counter-attack" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -13264,7 +16982,401 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="428b-f994-e7a0-a6f1" name="Fortitude: Hardy Constitution" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="8a8c-e411-e7c3-d494" name="Hardy Constitution" hidden="false" targetId="d8f2-be06-5ce1-17c6" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="name" value="Level 4: Hardy Constitution">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="88d4-1fdb-1672-18cc" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb5f-9b41-a3c7-f463" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3728-b654-ea59-65d5" name="Leadership: Symbol of Courage" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="46ab-5159-9943-b718" name="Symbol of Courage" hidden="false" targetId="211e-5bda-3e71-0cf7" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="name" value="Level 4: Symbol of Courage">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd3d-2c23-094b-93b8" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb5f-9b41-a3c7-f463" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6b3d-bdee-9a22-5940" name="Logistics: Extra Armour" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="132d-3dcc-da54-3c5c" name="Extra Armour (Logistics)" hidden="false" targetId="441d-35ac-d7dd-5a53" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="name" value="Level 4: Extra Armour">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="436b-cc7d-caf2-b09c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb5f-9b41-a3c7-f463" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9a38-bd0a-798b-d842" name="Melee: Expert Fighter" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="3a7b-a8a1-eeca-6aa9" name="Expert Fighter" hidden="false" targetId="c0fe-c084-3f73-2cbf" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="name" value="Level 4: Expert Fighter">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d429-68d8-5a9f-fab6" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0a68-8b22-6084-5ddf" name="Shooting: Shootist" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="3414-a8f1-7e1d-5a72" name="Shootist" hidden="false" targetId="2dc6-312c-338c-e3a7" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="name" value="Level 4: Shootist">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3b6a-c3c2-c00b-170e" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f1f5-3b33-9be9-6aec" name="Psychic Powers" hidden="false" collective="false" defaultSelectionEntryId="247b-342f-21f4-b2af">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="ca8a-f323-85b3-ba30" name="1. Iron Arm" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="0027-2737-70e9-b4cf" name="Iron Arm" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Iron Arm has a warp charge value of 7. If manifested, then until the start of the next Psychic phase, add 2 to the psyker&apos;s Strength and Toughness characteristics."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="09b8-bc2f-a6f7-7abd" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="162d-56b6-14cc-8281" name="2. Forewarning" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="531d-3a3e-856e-609c" name="Forewarning" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Forewarning has a warp charge value of 6. If manifested, then until the start of the next Psychic phase, the Psyker has a 4+ invulnerable save."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c1fc-07fb-3e2f-c6b9" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1af7-5ec9-54da-f116" name="3. Fire Shield" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="e2a6-cb7b-0358-2caa" name="Fire Shield" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Fire Shield has a warp charge value of 6. If manifested, pick a friendly model within 8&quot; of the psyker. Until the start of the next Psychic phase, that model counts as being obscured, even if they are completely visible to the firing model."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0723-4367-cd0a-df53" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c050-e256-fa8a-6078" name="4. Psychic Shriek" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="d9c5-be7d-9f56-66cd" name="Psychic Shriek" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Psychic Shriek has a warp charge value of 5. If manifested, select an enemy model within 12&quot; of and visible to the psyker. That model must immediately take a Nerve test as if it were the Morale phase."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c8f0-69d2-e749-f0f2" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2aca-2ac2-a91f-9e58" name="5. Enfeeble" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="8a85-8a84-f98e-ed6a" name="Enfeeble" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Enfeeble has a warp charge value of 7. If manifested, select an enemy model within 12&quot; of and visible to the psyker. Until the start of the next Psychic phase, your opponent must subtract 1 from hit and wound rolls for the target model&apos;s close combat attacks."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df10-304c-fe87-8d70" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fc55-aa31-dc8c-0eed" name="6. Misfortune" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="5c1e-4bfc-80c6-c231" name="Misfortune" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Misfortune has a warp charge value of 7. If manifested, select an enemy model within 12&quot; of and visible to the psyker. Until the start of the next Psychic phase, improve the AP characteristic of any weapon that targets that model by 1 (for example, and AP0 weapon becomes AP-1)."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4a55-c08b-ac1c-ac31" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="247b-342f-21f4-b2af" name="0. Psybolt" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="187f-d661-8943-f990" name="Psybolt" hidden="false" targetId="ac13-38c6-87ab-38fb" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="87d6-c99f-551a-601a" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -13282,11 +17394,17 @@
         <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model automatically passes Nerve tests."/>
       </characteristics>
     </profile>
-    <profile id="368b-a852-46f8-bc48" name="Inspiring" book="Core Manual" page="68" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+    <profile id="368b-a852-46f8-bc48" name="Inspiring (Leader)" book="Core Manual" page="68" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="name" value="Inspiring">
+          <repeats/>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Other friendly models within 3&quot; of this model - as long as this model is not shaken - automatically pass Nerve tests."/>
       </characteristics>
@@ -13594,13 +17712,19 @@
         <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Enemy models that are targeted by this model in the Shooting phase suffer a -1 penalty to the hit rolls until the end of the phase."/>
       </characteristics>
     </profile>
-    <profile id="9c4a-bbc8-ddee-a90d" name="Extra Armour" book="Core Manual" page="72" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+    <profile id="9c4a-bbc8-ddee-a90d" name="Extra Armour (Heavy)" book="Core Manual" page="72" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="name" value="Extra Armour">
+          <repeats/>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Ignore AP characteristic of -1 for attacks that target this model."/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Ignore AP characteristics of -1 for attacks that target this model."/>
       </characteristics>
     </profile>
     <profile id="4b2d-9f77-76cb-0492" name="Devastator" book="Core Manual" page="72" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -14219,6 +18343,324 @@
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Subtract 1 from hit rolls for attacks that target this model in Fight phase during a battle round in which it charged."/>
+      </characteristics>
+    </profile>
+    <profile id="d8f2-be06-5ce1-17c6" name="Hardy Constitution" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Roll a D6 each time this model loses a wound. On a 6+ that wound is not lost. If a model already has an ability with a similar effect (such as Disgustingly Resilient), you can choose which effect applies and re-roll 1s when making these rolls."/>
+      </characteristics>
+    </profile>
+    <profile id="2c55-62da-00f7-1f84" name="Hard to Kill" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Halve the Damage characteristic of each weapon used to attack this model (rounding up) for the duration of the attack."/>
+      </characteristics>
+    </profile>
+    <profile id="50c6-e952-b391-ac26" name="Indomitable" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Once per battle round, you can make your opponent re-roll an Injury roll for this model."/>
+      </characteristics>
+    </profile>
+    <profile id="08ff-8db9-da14-f94a" name="Feel No Pain" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Opponent(s) must subtract 1 from Injury rolls made for this model."/>
+      </characteristics>
+    </profile>
+    <profile id="044f-c4ef-b9ab-4b78" name="Iron Constitution" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 1 to this model&apos;s Wounds characteristic."/>
+      </characteristics>
+    </profile>
+    <profile id="7023-c86c-3381-d145" name="True Grit" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 1 to this model&apos;s Toughness characteristic."/>
+      </characteristics>
+    </profile>
+    <profile id="c14b-943d-b270-b73d" name="Unyielding Will" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model can attempt to deny one psychic power in each Psychic phase. If it can already do so, it can make one additional attempt to deny a power in each Psychic phase."/>
+      </characteristics>
+    </profile>
+    <profile id="211e-5bda-3e71-0cf7" name="Symbol of Courage" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="As long as this model is on the battlefield and not shaken, subtract 1 from Nerve tests for friendly models."/>
+      </characteristics>
+    </profile>
+    <profile id="fb2a-e787-4b3b-c6de" name="Aura of Command" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Increase the range of all Aura Tactics used by this model by 3&quot;."/>
+      </characteristics>
+    </profile>
+    <profile id="9f4b-f307-7d2b-b05c" name="Inspiring (Leadership)" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="name" value="Inspiring">
+          <repeats/>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Friendly models within 3&quot; of this model - as long as it is not shaken - automatically pass Nerve tests."/>
+      </characteristics>
+    </profile>
+    <profile id="4424-363c-3e4c-0c29" name="Master of War" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Each time this model uses an Aura Tactic, roll a D6. On a 3+ you regain 1 Command Point."/>
+      </characteristics>
+    </profile>
+    <profile id="e11c-c6c1-f907-6e0b" name="Heroic" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="As long as this model is on the battlefield and not shaken, you gain 1 additional Command Point at the start of each battle round. This Command Point can only be used for Commander Tactics."/>
+      </characteristics>
+    </profile>
+    <profile id="895e-10ff-8025-76f8" name="Grim Determination" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Friendly models within 3&quot; of this model - as long as it is not shaken - do not suffer penalties to their hit rolls for one flesh wound they have."/>
+      </characteristics>
+    </profile>
+    <profile id="bebf-df92-3f67-33d7" name="Tenacious" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model always controls an objective marker if it is within 2&quot; of it, even if there are more enemy models within 2&quot; of that objective marker. If an enemy model with a similar ability is also within 2&quot; of that objective marker, neither ability has an effect for either model."/>
+      </characteristics>
+    </profile>
+    <profile id="441d-35ac-d7dd-5a53" name="Extra Armour (Logistics)" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="name" value="Extra Armour">
+          <repeats/>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Ignore AP characteristics of -1 for attacks that target this model."/>
+      </characteristics>
+    </profile>
+    <profile id="5fe0-31d3-5945-1fa0" name="Quartermaster" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If this model is in your kill team and not out of action after all Casualty rolls have been made after a mission in which you lose any Materiel, roll a D6 for each point you lose. On a 2+, that point of Materiel is not lost."/>
+      </characteristics>
+    </profile>
+    <profile id="5e6a-0021-d740-5b66" name="Armed to the Teeth" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="In each Shooting phase, instead of only a single model from your kill team being able to fire a Grenade weapon, this model and one other model in your kill team may each fire a Grenade weapon they are armed with instead of firing any other weapons."/>
+      </characteristics>
+    </profile>
+    <profile id="8d23-1fa9-55f5-d387" name="Scavenger" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If this model is in your kill team and not out of action after all Casualty rolls have been made after a mission, roll a D6 and add the number of enemy models that were out of action at the end of the mission (before any Casualty rolls). On a 7+, you gain 1 Materiel."/>
+      </characteristics>
+    </profile>
+    <profile id="6a96-daa1-fa23-b370" name="Master of Sabotage" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If this model is in your kill team and not out of action after all Casualty rolls are made after a mission, roll a D6 for each opponent that played that mission. On a 5+, the player being rolled for loses 1 Materiel."/>
+      </characteristics>
+    </profile>
+    <profile id="9ea9-5189-e454-ac62" name="Master Artisan" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Pick one of this model&apos;s weapons. Add 1 to that weapon&apos;s Damage characteristic."/>
+      </characteristics>
+    </profile>
+    <profile id="1125-591e-4894-2d2a" name="Rangefinder Scope" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Pick one of this model&apos;s Assault, Rapid Fire, Heavy or Pistol weapons. Increase the range characteristic of that weapon by 6&quot;, and re-roll hit rolls of 1 when this model makes a shooting attack with that weapon."/>
+      </characteristics>
+    </profile>
+    <profile id="da4a-03f4-8445-7f9a" name="Warrior Born" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Re-roll hit and wound rolls of 1 for this model in the Fight phase."/>
+      </characteristics>
+    </profile>
+    <profile id="c07e-2442-f183-93cf" name="Swift Parry" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Opponents must re-roll hit rolls of 6 for attacks that target this model in the Fight phase."/>
+      </characteristics>
+    </profile>
+    <profile id="005b-a2b0-c163-4e65" name="Duellist" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Roll a D6 each time you use the Duel of Honour Commander Tactic on this model. On a 2+, you regain a Command Point."/>
+      </characteristics>
+    </profile>
+    <profile id="33d4-d36c-94e4-4cbd" name="Precision Strike" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Each time you make a wound roll of 6+ for this model&apos;s attack in the Fight phase, inflict a number of mortal wounds on the target equal to the weapon&apos;s Damage characteristic - the attack sequence then ends."/>
+      </characteristics>
+    </profile>
+    <profile id="a938-e2c7-d675-2588" name="Impenetrable Defence" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Subtract 1 from the Attacks characteristic (to a minimum of 1) of all enemy models within 1&quot; of this model when they fight in the Fight phase, until the end of the phase."/>
+      </characteristics>
+    </profile>
+    <profile id="f8fa-cfcf-7183-b52a" name="Lightning Reflexes" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Roll a D6 each time this model suffers a wound in the Fight phase. On a 5+ that wound is not lost. If a model already has an ability with a similar effect (e.g. Disgustingly Resilient) you can choose which effect applies, and re-roll 1s when making these rolls."/>
+      </characteristics>
+    </profile>
+    <profile id="2dc6-312c-338c-e3a7" name="Shootist" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Re-roll hot rolls of 1 for this model when it makes a shooting attack."/>
+      </characteristics>
+    </profile>
+    <profile id="449e-f37a-ebbf-a2ae" name="Trick-shooter" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model does not suffer penalties to their hit roll due to their target being obscured."/>
+      </characteristics>
+    </profile>
+    <profile id="4d28-372c-65ed-7d94" name="Pistoleer" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model can shoot twice with one Pistol weapon they are armed with in the Shooting phase; after they have shot their Pistol a first time, immediately shoot with it again."/>
+      </characteristics>
+    </profile>
+    <profile id="9cae-cd3c-7784-e05f" name="Targeting Weak Spots" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 1 to wound rolls for this model&apos;s attacks when it makes a shooting attack."/>
+      </characteristics>
+    </profile>
+    <profile id="6d02-0557-4c59-b6b4" name="Hip Shooter" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model can shoot an Assault, Rapid Fire, Heavy or Pistol weapon in the Shooting phase (or React to fire Overwatch) even if it Advanced earlier that battle round. If it does so, you must subtract 1 from hit rolls made when firing that weapon unless it is an Assault weapon."/>
+      </characteristics>
+    </profile>
+    <profile id="14a6-a66c-6d97-011f" name="Long Bomb" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Double the Range characteristic of any Grenade weapon this model uses. In addition, this model can target an enemy model that is not visible to them with a Grenade weapon, though if they do so, the enemy model counts as obscured."/>
+      </characteristics>
+    </profile>
+    <profile id="ac13-38c6-87ab-38fb" name="Psybolt" book="Core Manual" page="26" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Psybolt has a warp charge value of 5. If manifested, the closest enemy model within 18&quot; of and visible to the psyker suffers 1 mortal wound (pg 33). If the result of the Psychic test was 11+, the target suffers D3 mortal wounds instead."/>
       </characteristics>
     </profile>
   </sharedProfiles>
