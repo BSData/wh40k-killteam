@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="8" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="9" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -570,6 +570,69 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="334f-a140-4bbb-aa96" name="Foul Blightspawn" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="3aa4-1d3d-c6b8-6ef0" name="Autarch" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="ac65-ae76-97a2-a3e0" name="Warlock" book="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="82c0-9bc2-58fb-a5e2" name="Farseer" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="0401-e784-9d03-afda" name="Archon" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="8d24-2cad-5741-9ba8" name="Succubus" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="3d50-5395-7c2d-1a2b" name="Haemonculus" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="84f1-4be2-e1c7-0203" name="Troupe Master" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="1cea-84d8-4f34-c43d" name="Shadowseer" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="e7f2-ba07-2cfb-003b" name="Death Jester" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
