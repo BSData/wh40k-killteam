@@ -537,6 +537,22 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="0f7b-4666-24a4-5131" name="Farseer" hidden="false" targetId="8efb-7d87-0864-d3b6" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="5912-8c28-5b1b-ba70" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="74a1-6b5c-0980-9c59" name="Guardian Defender" hidden="false" collective="false" type="model">
@@ -2585,6 +2601,17 @@
             <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
+        <profile id="fd6b-dd94-d852-6d05" name="Warlock" hidden="false" profileTypeId="201a-159a-7751-b85b" profileTypeName="Psyker">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Manifest" characteristicTypeId="998f-87b1-cc06-fb7e" value="1"/>
+            <characteristic name="Deny" characteristicTypeId="cb14-ded3-0978-88b8" value="1"/>
+            <characteristic name="Powers known" characteristicTypeId="67ce-9d6c-052c-d1eb" value="Psybolt and 1 power from the Runes of Battle Discipline."/>
+          </characteristics>
+        </profile>
       </profiles>
       <rules/>
       <infoLinks>
@@ -2720,7 +2747,13 @@
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78b7-8c9f-3fcf-ff00" type="max"/>
               </constraints>
@@ -2739,6 +2772,22 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9da6-040f-de18-d3d4" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a51c-c946-4fd2-d08e" type="max"/>
           </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="763b-7530-f15b-2195" name="Warlock Specialism" hidden="false" targetId="4348-be49-4993-8a49" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="f4fc-bd57-3547-35ea" name="Warlock Powers" hidden="false" targetId="29ec-6a9a-3f69-7ef3" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -2788,11 +2837,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
-    <selectionEntry id="186f-de1a-cf63-6a8f" name="Conceal/Reveal" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="186f-de1a-cf63-6a8f" name="1. Conceal/Reveal" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="cef8-fa57-58c4-6db0" name="Conceal/Reveal" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
           <profiles/>
@@ -2815,7 +2862,7 @@ If manifested, choose a model within 12&quot; of the psyker. If you chose a frie
       <entryLinks/>
       <costs/>
     </selectionEntry>
-    <selectionEntry id="1278-8cde-f4a4-d76b" name="Protect/Jinx" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1278-8cde-f4a4-d76b" name="2. Protect/Jinx" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="aa02-92c8-c777-1553" name="Protect/Jinx" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
           <profiles/>
@@ -2838,7 +2885,7 @@ If manifested, choose a mdoel within 12&quot; of the psyker. If you chose a frie
       <entryLinks/>
       <costs/>
     </selectionEntry>
-    <selectionEntry id="3031-8e55-768a-a135" name="Empower/Enervate" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="3031-8e55-768a-a135" name="3. Empower/Enervate" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="2a71-3bd6-f6af-7b0e" name="Empower/Enervate" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
           <profiles/>
@@ -2848,6 +2895,306 @@ If manifested, choose a mdoel within 12&quot; of the psyker. If you chose a frie
           <characteristics>
             <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Empower/Enervate has a warp charge value of 5.
 If manifested, choose a model within 12&quot;. If you chose a friendly model, add 1 to wound rolls in the Fight phase for that model&apos;s attacks until the next Psychic phase. If you chose an enemy model, that model&apos;s controlling player must subtract 1 from wound rolls made for that model&apos;s attacks in the Fight phase until the next Psychic phase."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="8efb-7d87-0864-d3b6" name="Farseer" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="5375-8226-9da3-37b3" name="Farseer" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="7&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="2+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="2+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="5"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="9"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
+          </characteristics>
+        </profile>
+        <profile id="78d2-7d49-8bb0-ca3c" name="Farseer" hidden="false" profileTypeId="201a-159a-7751-b85b" profileTypeName="Psyker">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Manifest" characteristicTypeId="998f-87b1-cc06-fb7e" value="2"/>
+            <characteristic name="Deny" characteristicTypeId="cb14-ded3-0978-88b8" value="2"/>
+            <characteristic name="Powers known" characteristicTypeId="67ce-9d6c-052c-d1eb" value="Psybolt and 2 from the Runes of Fate Discipline."/>
+          </characteristics>
+        </profile>
+        <profile id="0e61-7cbd-8484-cd58" name="Ghosthelm" hidden="false" profileTypeId="0883-432d-b2ca-f11a" profileTypeName="Wargear">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="Roll a D6 whenever this model suffers a mortal wound, adding 3 to the roll if the mortal wound was inflicted as the result of the psyker suffering Perils of the Warp. On a 5+ that wound is not lost."/>
+          </characteristics>
+        </profile>
+        <profile id="6fd4-9637-cd24-5f67" name="Runes of the Farseer" hidden="false" profileTypeId="0883-432d-b2ca-f11a" profileTypeName="Wargear">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="Once in each Psychic phase, you can attempt to re-roll any number of dice used for this model&apos;s attempt to manifest or deny a psychic power."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="439b-c0b3-1bdf-f5ab" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="2f9a-7c8f-48bd-16bb" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b855-d9d7-7fff-ec4d" name="Rune Armour" hidden="false" targetId="f9ed-2c13-4384-c234" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="4bd2-391a-f4fe-dfa6" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="8efb-7d87-0864-d3b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="8efb-7d87-0864-d3b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="25">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="8efb-7d87-0864-d3b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4bd2-391a-f4fe-dfa6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a8c8-5d60-705d-fef7" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d4c8-6e1e-7b76-6b26" name="Faction: Asuryani" hidden="false" targetId="6125-42d9-d2d0-697c" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6089-0290-dca4-bc5e" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="2015-3b48-da6e-2aa9" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d484-537c-f57c-7f00" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="4ab4-9cd7-b971-92d1" name="Warhost" hidden="false" targetId="efd1-273e-3910-f3e8" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="77ef-fc10-be95-0ec2" name="Farseer" hidden="false" targetId="82c0-9bc2-58fb-a5e2" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="60a9-af15-1407-d3ca" name="Witch Weapon" hidden="false" collective="false" defaultSelectionEntryId="dd4f-b2bb-8a32-2524">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86b8-dfcf-517c-8a43" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e94f-6f4a-1150-6b2b" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="dd4f-b2bb-8a32-2524" name="Witchblade" hidden="false" targetId="b018-e874-17d6-6d28" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="329d-23b1-3db8-d266" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="23c7-2f66-9bd3-480d" name="Singing Spear" hidden="false" targetId="f79c-78ff-ea49-2e05" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3566-00ae-aff9-561d" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2be6-4824-c0af-e741" name="Shuriken Pistol" hidden="false" targetId="755b-977f-2a38-6ce5" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb76-2dc3-a1c4-6a2c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fde-1f12-cea1-743c" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="6e07-fb66-f851-f1c2" name="Farseer Powers" hidden="false" targetId="87e8-0898-9a2f-3000" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94ae-2537-1c67-6969" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="4142-0dce-c0e0-7039" name="Farseer Specialism" hidden="false" targetId="d5d4-325c-bf49-1a4b" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e8fa-cf9c-7f13-15c7" name="1. Guide" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="81b9-8efa-1799-56bc" name="Guide" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Guide has a warp charge value of 6. If manifested, choose a friendly model within 12&quot; of the psyker. You can re-roll failed hit rolls for that model&apos;s ranged weapons until the next Psychic phase."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="f87d-d259-5bda-2ea6" name="2. Fortune" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="46a7-2b71-eec7-4c4c" name="Fortune" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Fortune has a warp charge value of 6. If manifested, choose a friendly model within 12&quot; of the psyker. Until the next Psychic phase, roll a D6 each time that model loses a wound. On a 5+ that wound is not lost. If that model already has an ability with a similar effect, you can choose which effect applies, and re-roll 1&apos;s when making these rolls."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="13ef-9cd1-8473-6f7f" name="3. Will of Asuryan" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="b9f7-5bfb-8574-ecb5" name="Will of Asuryan" hidden="false" profileTypeId="7a97-314b-42a0-d52e" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Will of Asuryan has a warp charge value of 5. If manifested, friendly models automatically pass Nerve tests while they are within 6&quot; of the psyker until the next Psychic phase. In addition, you can add 1 to Deny the Witch tests that you make for the psyker until the next Psychic phase."/>
           </characteristics>
         </profile>
       </profiles>
@@ -3357,7 +3704,183 @@ If manifested, choose a model within 12&quot;. If you chose a friendly model, ad
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="1d47-4521-2590-5162" name="Empower/Enervate" hidden="false" targetId="3031-8e55-768a-a135" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b803-a685-75e1-c173" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="7cc5-cbbf-6a15-856b" name="Conceal/Reveal" hidden="false" targetId="186f-de1a-cf63-6a8f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9e8-e418-1d72-a1ab" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="983e-3470-ced0-1ede" name="Protect/Jinx" hidden="false" targetId="1278-8cde-f4a4-d76b" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1688-659b-eb20-5e28" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4fe7-ec57-9f55-4a74" name="Runes of Fate" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="bbe5-bf5d-e6d0-3201" name="1. Guide" hidden="false" targetId="e8fa-cf9c-7f13-15c7" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62e3-da14-8ef8-d772" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="bac3-247a-a4bb-6d8b" name="2. Fortune" hidden="false" targetId="f87d-d259-5bda-2ea6" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6da-650d-d40c-83ad" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="5bac-83d9-8c75-2f3e" name="3. Will of Asuryan" hidden="false" targetId="13ef-9cd1-8473-6f7f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1293-751d-2932-dd04" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="29ec-6a9a-3f69-7ef3" name="Warlock Powers" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="0af9-5f57-09a2-1ef8" name="Runes of Battle" hidden="false" targetId="3a82-e9b5-60ef-3219" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="84a0-eadb-08f0-8a2e" name="Commander Psychic Powers" hidden="false" targetId="f1f5-3b33-9be9-6aec" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="87e8-0898-9a2f-3000" name="Farseer Powers" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="3569-94b9-6e80-fd36" name="Commander Psychic Powers" hidden="false" targetId="f1f5-3b33-9be9-6aec" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="893c-20da-883f-ecf6" name="Runes of Fate" hidden="false" targetId="4fe7-ec57-9f55-4a74" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d5d4-325c-bf49-1a4b" name="Farseer Specialism" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b10b-e29a-8097-3e43" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7256-7a2d-8d3f-a1d9" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="21f2-6dfd-f27b-bbc5" name="Leadership" hidden="false" targetId="cd3d-2c23-094b-93b8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="652c-2fc0-857c-a5ea" name="Logistics" hidden="false" targetId="436b-cc7d-caf2-b09c" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="b8c0-c6a8-c02c-cbb6" name="Psyker" hidden="false" targetId="fa4c-5101-4760-038f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="6dc7-2556-44ba-7a01" name="Strategist" hidden="false" targetId="8301-dd25-06aa-2d15" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules/>
