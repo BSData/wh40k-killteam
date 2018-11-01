@@ -15856,7 +15856,7 @@
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="2816-ffd8-0c25-b550" name="Precision Strike" hidden="false" targetId="33d4-d36c-94e4-4cbd" type="profile">
+                <infoLink id="2816-ffd8-0c25-b550" name="Precision Strike (Shooting)" hidden="false" targetId="dee2-a5c9-dfd6-61da" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -16056,7 +16056,7 @@
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="ffd3-d43a-4445-6e84" name="Precision Strike" hidden="false" targetId="33d4-d36c-94e4-4cbd" type="profile">
+                <infoLink id="ffd3-d43a-4445-6e84" name="Precision Strike (Shooting)" hidden="false" targetId="dee2-a5c9-dfd6-61da" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -17490,7 +17490,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Misfortune has a warp charge value of 7. If manifested, select an enemy model within 12&quot; of and visible to the psyker. Until the start of the next Psychic phase, improve the AP characteristic of any weapon that targets that model by 1 (for example, and AP0 weapon becomes AP-1)."/>
+                <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Misfortune has a warp charge value of 7. If manifested, select an enemy model within 12&quot; of and visible to the psyker. Until the start of the next Psychic phase, improve the AP characteristic of any weapon that targets that model by 1 (for example, an AP0 weapon becomes AP-1)."/>
               </characteristics>
             </profile>
           </profiles>
@@ -18733,11 +18733,17 @@
         <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Roll a D6 each time you use the Duel of Honour Commander Tactic on this model. On a 2+, you regain a Command Point."/>
       </characteristics>
     </profile>
-    <profile id="33d4-d36c-94e4-4cbd" name="Precision Strike" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+    <profile id="33d4-d36c-94e4-4cbd" name="Precision Strike (Melee)" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="name" value="Precision Strike">
+          <repeats/>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Each time you make a wound roll of 6+ for this model&apos;s attack in the Fight phase, inflict a number of mortal wounds on the target equal to the weapon&apos;s Damage characteristic - the attack sequence then ends."/>
       </characteristics>
@@ -18766,7 +18772,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Re-roll hot rolls of 1 for this model when it makes a shooting attack."/>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Re-roll hit rolls of 1 for this model when it makes a shooting attack."/>
       </characteristics>
     </profile>
     <profile id="449e-f37a-ebbf-a2ae" name="Trick-shooter" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
@@ -18821,6 +18827,21 @@
       <modifiers/>
       <characteristics>
         <characteristic name="Psychic Power" characteristicTypeId="0722-c3c3-3039-c061" value="Psybolt has a warp charge value of 5. If manifested, the closest enemy model within 18&quot; of and visible to the psyker suffers 1 mortal wound (pg 33). If the result of the Psychic test was 11+, the target suffers D3 mortal wounds instead."/>
+      </characteristics>
+    </profile>
+    <profile id="dee2-a5c9-dfd6-61da" name="Precision Strike (Shooting)" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="name" value="Precision Strike">
+          <repeats/>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Each time you make a wound roll of 6+ for this model&apos;s attack in the Shooting phase, inflict a number of mortal wounds on the target equal to the weapon&apos;s Damage characteristic - the attack sequence then ends."/>
       </characteristics>
     </profile>
   </sharedProfiles>
