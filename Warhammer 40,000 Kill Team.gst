@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="10" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="11" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -16859,6 +16859,8 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84f1-4be2-e1c7-0203" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cea-84d8-4f34-c43d" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f2-ba07-2cfb-003b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d24-2cad-5741-9ba8" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0401-e784-9d03-afda" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -16928,6 +16930,8 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac65-ae76-97a2-a3e0" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cea-84d8-4f34-c43d" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f2-ba07-2cfb-003b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d50-5395-7c2d-1a2b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d24-2cad-5741-9ba8" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -17088,6 +17092,9 @@
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="851f-48ad-9f4d-4618" type="notInstanceOf"/>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85ea-ba1e-4209-a59b" type="notInstanceOf"/>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3aa4-1d3d-c6b8-6ef0" type="notInstanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d50-5395-7c2d-1a2b" type="notInstanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0401-e784-9d03-afda" type="notInstanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d24-2cad-5741-9ba8" type="notInstanceOf"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -17140,6 +17147,8 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cea-84d8-4f34-c43d" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f2-ba07-2cfb-003b" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84f1-4be2-e1c7-0203" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d24-2cad-5741-9ba8" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0401-e784-9d03-afda" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -17189,6 +17198,8 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac65-ae76-97a2-a3e0" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cea-84d8-4f34-c43d" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f2-ba07-2cfb-003b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d50-5395-7c2d-1a2b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d24-2cad-5741-9ba8" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -17240,6 +17251,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cea-84d8-4f34-c43d" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84f1-4be2-e1c7-0203" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f2-ba07-2cfb-003b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d24-2cad-5741-9ba8" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -17338,6 +17350,8 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85ea-ba1e-4209-a59b" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="851f-48ad-9f4d-4618" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c0-9bc2-58fb-a5e2" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d50-5395-7c2d-1a2b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d24-2cad-5741-9ba8" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
