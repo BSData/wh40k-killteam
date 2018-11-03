@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3591-2aa0-250c-ddeb" name="Drukhari" book="Kill Team Core Manual" page="138" revision="7" battleScribeVersion="2.01" authorName="Farseer Veraenthis" authorContact="@FarseerVeraenthis on Gitter" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3591-2aa0-250c-ddeb" name="Drukhari" book="Kill Team Core Manual" page="138" revision="8" battleScribeVersion="2.01" authorName="Farseer Veraenthis" authorContact="@FarseerVeraenthis on Gitter" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -536,7 +536,7 @@
             <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="*"/>
             <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-2"/>
             <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
-            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="This weapon wounds on a 4+."/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="This weapon always wounds on a 4+."/>
           </characteristics>
         </profile>
       </profiles>
@@ -2054,7 +2054,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e502-1cf5-4c96-8d98" name="Venom Blade" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2081,7 +2083,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="401b-a8d1-aaaf-d933" name="Archon" hidden="false" collective="false" type="model">
       <profiles>
@@ -2235,9 +2239,19 @@
               </constraints>
               <categoryLinks/>
             </entryLink>
+            <entryLink id="debe-5d2d-842b-961d" name="Agonizer" hidden="false" targetId="c08e-6dfe-4f06-ef76" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f96-3aa7-8f9e-1582" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="14a3-e591-46ff-4c06" name="Pistol Choice" hidden="false" collective="false">
+        <selectionEntryGroup id="14a3-e591-46ff-4c06" name="Pistol Choice" hidden="false" collective="false" defaultSelectionEntryId="705f-b09a-85d9-5527">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2314,7 +2328,22 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules/>
+      <rules>
+        <rule id="3bd1-e042-3fae-a435" name="Lightning Dodge" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>This model has a 4+ invulnerable save.</description>
+        </rule>
+        <rule id="6e2a-156e-be1b-1f69" name="No Escape" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Roll off if an INFANTRY model within 1&quot; of any enemy models with this ability would Fall Back. The model that would Fall Back can only do so if the player controlling it wins the roll-off.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="9799-c911-3131-153a" name="Combat Drugs" hidden="false" targetId="6ec6-dfbe-eb26-60b4" type="rule">
           <profiles/>
@@ -2327,24 +2356,6 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </infoLink>
-        <infoLink id="2eb6-81df-0d56-4376" name="No Escape" hidden="false" targetId="d2df-4ffb-2132-deb7" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="094c-08f5-c5d3-e9fd" name="Dodge" hidden="false" targetId="6fc9-8a1f-16f4-8880" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="name" value="Lightning Dodge">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
         </infoLink>
       </infoLinks>
       <modifiers>
@@ -2455,7 +2466,9 @@
           <categoryLinks/>
         </entryLink>
       </entryLinks>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="48.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="aa86-d72f-749c-9855" name="Archite Glaive" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2482,7 +2495,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="acef-f35c-c102-d3fe" name="Haemonculus" hidden="false" collective="false" type="model">
       <profiles>
@@ -2534,14 +2549,14 @@
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="acef-f35c-c102-d3fe" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="equalTo"/>
+            <condition field="selections" scope="acef-f35c-c102-d3fe" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="acef-f35c-c102-d3fe" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+            <condition field="selections" scope="acef-f35c-c102-d3fe" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -2651,7 +2666,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9fe7-a11e-a153-c870" name="Stinger Pistol" hidden="false" collective="false" type="upgrade">
           <profiles>
@@ -2681,11 +2698,22 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="5efe-d3cc-c6c3-f0a6" name="Haemonculus Specialism" hidden="false" targetId="1791-a68e-a1e8-f406" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="30.0"/>
       </costs>
@@ -3212,7 +3240,7 @@
 2 - Eager to Flay: You can re-roll the dice when determining how far this model moves when it Advances or charges.
 3 - Flensing Fury: Add 1 to hit rolls for this model in the Fight phase.
 4 - Emboldened by Bloodshed: Re-roll failed Nerve tests for this model.
-5+ - Mantle of Agony: Subtract 1 from the Leadership characteristic of enemey models that are within 6&quot; of any models from your kill team with this bonus.</description>
+5+ - Mantle of Agony: Subtract 1 from the Leadership characteristic of enemy models that are within 6&quot; of any models from your kill team with this bonus.</description>
     </rule>
     <rule id="6ec6-dfbe-eb26-60b4" name="Combat Drugs" hidden="false">
       <profiles/>
