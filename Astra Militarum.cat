@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c51-0669-1f79-d8aa" name="Astra Militarum" revision="8" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4c51-0669-1f79-d8aa" name="Astra Militarum" revision="9" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -480,6 +480,30 @@
       <categoryLinks/>
     </entryLink>
     <entryLink id="7c14-11ca-e23c-1fad" name="Lord Commissar" hidden="false" targetId="7206-4819-ffd3-1f3f" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="23be-3b7c-e2d4-7694" name="Platoon Commander" hidden="false" targetId="5dc9-5992-cb96-1a85" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="8614-d2c6-2a8a-7810" name="Company Commander" hidden="false" targetId="234d-fd85-b46d-5257" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="0d4d-57a0-2887-31dc" name="Tempestor Prime" hidden="false" targetId="a939-0338-9f05-86ec" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1013,7 +1037,10 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d69a-e7eb-a418-48c2" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7f8-8157-d42b-e949" type="max"/>
+      </constraints>
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -1719,7 +1746,10 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67dd-5da5-8435-393a" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fee1-3775-2ae0-50e9" type="max"/>
+      </constraints>
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -2612,6 +2642,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="933f-56be-81ed-138e" name="Commissar" hidden="false" targetId="c2e6-6085-fa59-9264" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -2708,30 +2745,35 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df1e-22b2-89b1-4420" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ae9-3901-598a-de21" type="min"/>
+      </constraints>
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7206-4819-ffd3-1f3f" name="Lord Commissar" hidden="false" collective="false" type="unit">
       <profiles>
-        <profile id="0ada-cd97-2a97-8447" name="Commissar" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+        <profile id="0ada-cd97-2a97-8447" name="Lord Commissar" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
             <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
-            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
-            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="2+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="2+"/>
             <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
             <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
-            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="3"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="4"/>
             <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="3"/>
-            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="8"/>
-            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="9"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="4+"/>
             <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
           </characteristics>
         </profile>
@@ -2806,6 +2848,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="4d42-4735-ea13-9b3b" name="Lord Commissar" hidden="false" targetId="0fe9-ec11-cd44-e8e0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -2874,7 +2923,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="cba2-8918-006d-a86d" name="Specialism (C)" hidden="false" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup">
+        <entryLink id="cba2-8918-006d-a86d" name="Commander Specialisim" hidden="false" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2893,6 +2942,750 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5dc9-5992-cb96-1a85" name="Platoon Commander" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="d37c-03bf-62cf-094a" name="Platoon Commander" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="3"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="3"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="7ab0-1e98-d70f-0cc4" name="Voice of Command" hidden="false" targetId="187d-ae71-be5a-3f34" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="162e-8f50-d09f-e0bc" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="5">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="5dc9-5992-cb96-1a85" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="5dc9-5992-cb96-1a85" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="5dc9-5992-cb96-1a85" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="162e-8f50-d09f-e0bc" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7532-67d1-efcf-de9d" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a563-1da9-2cb7-ab25" name="Faction: Astra Militarum" hidden="false" targetId="96ae-2ec0-4de4-b4d7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="4ea4-d189-a42d-119b" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f2b2-bd6b-72b2-e98b" name="Platoon Commander" hidden="false" targetId="6345-a08b-1bf1-1862" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="1790-c840-f6d8-214f" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="162f-1daa-ec33-cd2b" name="Pistol" hidden="false" collective="false" defaultSelectionEntryId="5af3-d50a-e903-48fc">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2d6-424e-956e-1fb5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37fc-09c8-72a7-bdf0" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5af3-d50a-e903-48fc" name="Laspistol" hidden="false" targetId="afe5-6341-ec59-0444" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="daed-e9c5-bf6c-3432" name="Bolt Pistol" hidden="false" targetId="88b5-f187-242f-12fd" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="d345-f312-e1af-7aba" name="Plasma Pistol" hidden="false" targetId="fc67-291e-8fe8-c2db" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="f61e-ceca-f4d8-785b" name="Boltgun" hidden="false" targetId="47a3-e8da-fa5e-8196" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f7e1-6057-d43c-65b6" name="Melee Weapon" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c89-661c-9052-4363" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89b1-b82b-9bef-174e" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="c09e-4c75-4716-9365" name="Chainsword" hidden="false" targetId="b4d3-1d1f-0ebd-19ab" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="169c-e47f-cf22-5495" name="Power Fist" hidden="false" targetId="1bf3-d672-3330-4d53" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="6e31-1f55-4a36-86f5" name="Power Sword" hidden="false" targetId="7598-2c68-319a-4264" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="cae7-b12a-bbb8-2582" name="Refractor Field" hidden="false" targetId="eb61-fa41-5d1f-a052" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="8794-aab8-b73e-b5fb" name="Display Voice of Command Orders" hidden="false" targetId="b091-39d9-f78c-b993" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1f7d-2de3-d432-73d6" name="Commander Specialisim" hidden="false" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47a3-e8da-fa5e-8196" name="Boltgun" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="dea1-ea7f-a7af-d39d" name="Boltgun" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="234d-fd85-b46d-5257" name="Company Commander" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="e8bb-a6b9-d8a1-1560" name="Company Commander" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="4"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="3"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="8"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="5+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4781-4b03-b6d5-f018" name="Senior Officer" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A Company Commander may use the Voice of Command ability twice each battle round. Resolve the effects of the first order before issuing the second order</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="5fe9-74c7-a4ad-43e5" name="Voice of Command" hidden="false" targetId="187d-ae71-be5a-3f34" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="7362-bc20-1ccd-7bc9" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="5">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="234d-fd85-b46d-5257" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="234d-fd85-b46d-5257" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="234d-fd85-b46d-5257" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7362-bc20-1ccd-7bc9" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a4bb-dcbc-2add-cbc0" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="175e-2e77-90ec-5ebe" name="Faction: Astra Militarum" hidden="false" targetId="96ae-2ec0-4de4-b4d7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a24a-3265-ff11-f247" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="0607-2680-5005-9673" name="Company Commander" hidden="false" targetId="6ed7-ef98-f94f-bd6b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="baf3-c517-4aa6-f323" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b088-855a-e322-0ce8" name="Pistol" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b5-4118-34ee-609d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac80-5b5c-9c84-4aaa" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="7a65-1f35-54db-ff5c" name="Laspistol" hidden="false" targetId="afe5-6341-ec59-0444" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="c897-0263-0558-9c2f" name="Bolt Pistol" hidden="false" targetId="88b5-f187-242f-12fd" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="6dad-fde1-67e1-87ea" name="Plasma Pistol" hidden="false" targetId="fc67-291e-8fe8-c2db" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="69c3-6f4d-d92e-c64c" name="Boltgun" hidden="false" targetId="47a3-e8da-fa5e-8196" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0f80-d004-2bbd-cf66" name="Melee Weapon" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1017-af52-8c8d-1044" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d66c-57c3-f8ac-b0e2" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="b0b5-5aa7-6d49-5ab7" name="Chainsword" hidden="false" targetId="b4d3-1d1f-0ebd-19ab" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="ea2d-8aa2-364e-8fd4" name="Power Fist" hidden="false" targetId="1bf3-d672-3330-4d53" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="de61-3ca4-330d-3c92" name="Power Sword" hidden="false" targetId="7598-2c68-319a-4264" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="28cb-a057-9257-e1d2" name="Refractor Field" hidden="false" targetId="eb61-fa41-5d1f-a052" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="bd54-b45b-f8a8-5b9f" name="Display Voice of Command Orders" hidden="false" targetId="b091-39d9-f78c-b993" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="036b-7930-a157-7c41" name="Specialism (C)" hidden="false" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a939-0338-9f05-86ec" name="Tempestor Prime" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="4a08-37fa-c3dc-bdde" name="Tempestor Prime" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="4"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="3"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="8"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="4+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="ae91-7f7a-a80b-1ab1" name="Voice of Command" hidden="false" targetId="187d-ae71-be5a-3f34" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="9a1b-4771-78c8-60c1" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="5">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="a939-0338-9f05-86ec" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="a939-0338-9f05-86ec" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9a1b-4771-78c8-60c1" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4463-4378-663d-40a4" name="Company Commander" hidden="false" targetId="6ed7-ef98-f94f-bd6b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="517c-40a6-baf2-1412" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="93c5-a9e4-4d95-c68c" name="Faction: Astra Militarum" hidden="false" targetId="96ae-2ec0-4de4-b4d7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3180-c74c-d195-51a1" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7291-8991-2db8-95fc" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9e88-69d3-657b-e386" name="Melee Weapon" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b87c-ae7f-629a-8a2c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342c-98ab-2a1a-cfca" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="f05f-618f-5427-e839" name="Chainsword" hidden="false" targetId="b4d3-1d1f-0ebd-19ab" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="1bdc-9f4e-d875-347f" name="Power Fist" hidden="false" targetId="1bf3-d672-3330-4d53" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="43d8-21ec-96ec-cab4" name="Power Sword" hidden="false" targetId="7598-2c68-319a-4264" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="652b-830c-11bb-6fcb" name="Pistol" hidden="false" collective="false" defaultSelectionEntryId="a8f3-3ec0-5ca0-8787">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4380-4336-19c3-d241" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd56-36e4-2c9d-b608" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="a8f3-3ec0-5ca0-8787" name="Hot-shot laspistol" hidden="false" targetId="e154-8aab-36af-e719" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="e48a-c777-2855-f59f" name="Bolt Pistol" hidden="false" targetId="88b5-f187-242f-12fd" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="c654-70ab-556a-057a" name="Plasma Pistol" hidden="false" targetId="fc67-291e-8fe8-c2db" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="b017-012e-2b27-6cc6" name="Tempestus Command Rod" hidden="false" targetId="2f10-7d2a-3950-8fa4" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4522-6e8e-a37a-8c26" name="Commander Specialisim" hidden="false" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="45af-b421-6e40-8ea2" name="Frag Grenades" hidden="false" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="0da3-9186-0a67-e95d" name="Krak Grenades" hidden="false" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="eb26-dc6a-9160-a25b" name="Display Voice of Command Orders" hidden="false" targetId="b091-39d9-f78c-b993" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f10-7d2a-3950-8fa4" name="Tempestus Command Rod" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="35c9-fca2-4196-78cb" name="Tempestus Command Rod" hidden="false" profileTypeId="0883-432d-b2ca-f11a" profileTypeName="Wargear">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="A model with a Tempestus command rod may use the Voice of Command ability twice in each battle round. Resolve the effect of the first order before issuing the second order."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="2.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -3110,7 +3903,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="4025-e686-fa2b-8a8a" name="Specialism (C)" hidden="false" collective="false">
+    <selectionEntryGroup id="4025-e686-fa2b-8a8a" name="Commander Specialisim" hidden="false" collective="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3127,7 +3920,22 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="23be-3b7c-e2d4-7694" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d4d-57a0-2887-31dc" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8614-d2c6-2a8a-7810" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -3167,7 +3975,44 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="23be-3b7c-e2d4-7694" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d4d-57a0-2887-31dc" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8614-d2c6-2a8a-7810" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2635-d5ee-e7af-fcd9" name="Stealth" hidden="false" targetId="37cb-84d5-5250-ef16" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c14-11ca-e23c-1fad" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d1f-4465-a3b8-a1ac" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
