@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="11" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="12" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -747,6 +747,41 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="c85b-5771-30b4-5329" name="Painboy" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="8646-8755-99e7-083d" name="Commissar" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="6ba4-0136-d018-f5fa" name="Lord Commissar" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="34ae-f354-467b-f6da" name="Platoon Commander" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="d8c1-e129-4f67-7704" name="Company Commander" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="0b71-2728-da83-660a" name="Tempestor Prime" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
