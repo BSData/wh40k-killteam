@@ -2768,9 +2768,17 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="8b56-49a8-40e5-242a" value="A Lord Commissar has a 5+ invulnerable save.">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c14-11ca-e23c-1fad" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <characteristics>
-            <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="A Lord Commisar has a 5+ invulnerable save."/>
+            <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="This model has a 5+ invulnerable save."/>
           </characteristics>
         </profile>
       </profiles>
@@ -3196,6 +3204,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="62b9-ca3d-2a32-4a63" name="Frag Grenades" hidden="false" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -3451,6 +3467,14 @@
           <categoryLinks/>
         </entryLink>
         <entryLink id="036b-7930-a157-7c41" name="Specialism (C)" hidden="false" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1d44-5b9d-04f9-d494" name="Frag Grenades" hidden="false" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4059,17 +4083,23 @@
   </sharedSelectionEntryGroups>
   <sharedRules/>
   <sharedProfiles>
-    <profile id="187d-ae71-be5a-3f34" name="Voice of Command" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+    <profile id="187d-ae71-be5a-3f34" name="Voice of Command" hidden="true" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="notInstanceOf"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
