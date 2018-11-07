@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ff2c-d2cf-bc85-3c79" name="Adeptus Mechanicus" book="Kill Team - Core manual" page="104" revision="9" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ff2c-d2cf-bc85-3c79" name="Adeptus Mechanicus" book="Kill Team - Core Manual, Kill Team - Commanders" page="" revision="10" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -35,6 +35,20 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="c946-d2b5-8a95-2f61" name="Sicarian Ruststalker" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="1955-96ab-adea-3e21" name="Tech-priest" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="05de-77a8-d7f8-354a" name="Cult Mechanicus" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -611,6 +625,22 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="9b31-39ea-acfc-234a" name="Tech-priest Enginseer" hidden="false" targetId="2052-7940-ce18-4464" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="d7a8-9e44-3bd5-05fd" name="Tech-priest Dominus" hidden="false" targetId="689e-19dd-6bc2-81ab" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -3225,6 +3255,549 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2052-7940-ce18-4464" name="Tech-priest Enginseer" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="71fe-7df2-f1d0-bf8e" name="Tech-priest Enginseer" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="4+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="4+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="4"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="4"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="8"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="dcc8-0a97-39d0-0dcb" name="Canticles of the Omnissiah" hidden="false" targetId="da55-b94a-f55a-6538" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="2789-8a89-74bb-41aa" name="Bionics" hidden="false" targetId="9c95-9a2f-6da8-d5f6" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="c2c8-ab2a-4c19-5648" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="5">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="2052-7940-ce18-4464" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="2052-7940-ce18-4464" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="2052-7940-ce18-4464" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c2c8-ab2a-4c19-5648" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a74f-62a1-f7be-918f" name="Faction: Adeptus Mechanicus" hidden="false" targetId="5d67-ac66-1e97-ffb3" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="86f7-dbf5-e69d-4b01" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7a59-bc42-e469-2478" name="Cult Mechanicus" hidden="false" targetId="05de-77a8-d7f8-354a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="8914-9070-c073-4b9e" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="bb17-035e-767e-89d5" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6af8-c9b9-f6aa-ad9d" name="Tech-priest" hidden="false" targetId="1955-96ab-adea-3e21" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="aff2-052d-a7d5-5993" name="Enginseer" hidden="false" targetId="3377-8f2f-c2ed-d2bb" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="be9a-6a98-a00b-adc6" name="Laspistol" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="d193-0367-ffea-3920" name="Laspistol" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af9c-14aa-1a92-4e9e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ab2-1bde-85e1-4c57" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="661f-c992-2611-3ff5" name="Servo-arm" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="3c19-135a-2d63-af7a" name="Servo-arm" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="x2"/>
+                <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-2"/>
+                <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="3"/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Each servo-arm can only be used to make one attack each time this model fights. When a model attacks with this weapon, you must subtract 1 from the hit roll."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="faf6-3908-6768-098c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="340e-488a-870b-6833" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="074f-e431-e1ba-abf1" name="Specialism" hidden="false" targetId="6675-98bf-621c-8069" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1b18-fa7b-5ff6-dc24" name="Omnissian axe" hidden="false" targetId="81be-b281-b168-8490" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="28.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="81be-b281-b168-8490" name="Omnissian axe" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="94ea-c490-35e0-f63c" name="Omnissian axe" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+            <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+            <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="+1"/>
+            <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-2"/>
+            <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="2"/>
+            <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9369-ee7f-3ee0-2600" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2bc-b5e2-43ec-b2c2" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="689e-19dd-6bc2-81ab" name="Tech-priest Dominus" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="6854-6758-9664-3773" name="Tech-priest Dominus" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="2+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="4"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="5"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="3"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="8"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="2+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="7991-3e7d-0cb5-5414" name="Masterwork Bionics" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>At the beginning of each battle round, this model regains D3 lost wounds.</description>
+        </rule>
+        <rule id="ff00-36d5-ab81-7372" name="Refractor Field" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>This model has a 5+ invulnerable save.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="f12a-7b33-1287-c6d3" name="Canticles of the Omnissiah" hidden="false" targetId="da55-b94a-f55a-6538" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="b4fe-91ed-8b0b-a54a" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="689e-19dd-6bc2-81ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="689e-19dd-6bc2-81ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="25">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="689e-19dd-6bc2-81ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4fe-91ed-8b0b-a54a" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4c8d-e764-8331-1e85" name="Faction: Adeptus Mechanicus" hidden="false" targetId="5d67-ac66-1e97-ffb3" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d76f-a3fd-db2d-e1be" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ccaf-c319-a048-2ce3" name="Cult Mechanicus" hidden="false" targetId="05de-77a8-d7f8-354a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ef4f-d05e-8a85-04c0" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="8cc2-2b40-d478-5615" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="5637-c908-db54-655c" name="Tech-priest" hidden="false" targetId="1955-96ab-adea-3e21" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a89d-c842-12ae-5e73" name="Dominus" hidden="false" targetId="b434-3cfc-f7a4-7538" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b088-e6a8-4d71-0ee5" name="Weapon 1" hidden="false" collective="false" defaultSelectionEntryId="7b64-e7dc-037a-5c2f">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bf4-34b6-a4b8-61ea" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78be-ec1f-80c4-a251" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="7b64-e7dc-037a-5c2f" name="Volkite blaster" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="c4c8-3ca9-a8dd-d88a" name="Volkite blaster" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Heavy 3"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Each time you make a wound roll of 6+ for this weapon, the target suffers a mortal wound in addition to any other damage."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="3af7-6629-b469-effb" name="Eradication ray" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="274e-c59c-b72f-bc53" name="Eradication ray" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Heavy D3"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-2"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Attacks from this weapon that target enemies at 8&quot; or less are resolved with an AP of -4 and a Damage of D3."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="14.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="02a7-0e5e-ef53-493b" name="Weapon 2" hidden="false" collective="false" defaultSelectionEntryId="c6e6-cc2a-56ce-0d82">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64b1-9268-3e0a-4e0f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a0-ff16-649e-0212" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="c64b-30f8-18da-6f9b" name="Phosphor serpenta" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="ea47-b292-c214-eb31" name="Phosphor serpenta" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="18&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Assault 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="5"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Attacks made with this weapon do not suffer the penalty to hit rolls for the target being obscured."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c6e6-cc2a-56ce-0d82" name="Macrostubber" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="816f-0002-aac9-bf84" name="Macrostubber" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 5"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2028-88ef-9383-d95e" name="Omnissian axe" hidden="false" targetId="81be-b281-b168-8490" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="669e-0639-2456-2be9" name="Specialism" hidden="false" targetId="6675-98bf-621c-8069" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="130.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="5ae8-c885-6dc3-74b0" name="Specialism" hidden="false" collective="false">
@@ -3527,6 +4100,69 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="6675-98bf-621c-8069" name="Specialism" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cc9-e24c-0675-72f2" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3572-efe2-aef3-df57" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="6913-e32f-f63c-386e" name="Fortitude" hidden="false" targetId="88d4-1fdb-1672-18cc" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="d06a-28a7-bf88-7e4d" name="Leadership" hidden="false" targetId="cd3d-2c23-094b-93b8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1d5a-6d85-0e67-5967" name="Logistics" hidden="false" targetId="436b-cc7d-caf2-b09c" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="6d20-739d-a2f3-27f8" name="Shooting" hidden="false" targetId="3b6a-c3c2-c00b-170e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="d696-32d0-e505-ddcb" name="Strategist" hidden="false" targetId="8301-dd25-06aa-2d15" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="a6a9-e388-e848-a483" name="Strength" hidden="false" targetId="4550-6c27-1911-68ae" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="9c95-9a2f-6da8-d5f6" name="Bionics" hidden="false">
@@ -3534,14 +4170,14 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>This model as a 6+ invulnerable save.</description>
+      <description>This model has a 6+ invulnerable save.</description>
     </rule>
     <rule id="da55-b94a-f55a-6538" name="Canticles of the Omnissiah" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>See page 107</description>
+      <description>See page 107 of the Kill Team Core Manual.</description>
     </rule>
     <rule id="e3e8-efe8-a075-64f4" name="Neurostatic Aura" hidden="false">
       <profiles/>
@@ -3555,7 +4191,7 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Reduce the Thoughness characteristic of enemy models by 1 whilst they are within 1&quot; of one or more models with this ability.</description>
+      <description>Reduce the Toughness characteristic of enemy models by 1 whilst they are within 1&quot; of one or more models with this ability.</description>
     </rule>
   </sharedRules>
   <sharedProfiles/>
