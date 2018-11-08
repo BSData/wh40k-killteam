@@ -16426,7 +16426,21 @@
           </profiles>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb5f-9b41-a3c7-f463" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5e1-1823-275f-3947" type="max"/>
           </constraints>
@@ -16672,6 +16686,46 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c796-180e-66a6-05c3" name="Stoic Hero" book="" page="" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="1ccb-449e-ee65-c9ce" name="Stoic Hero" book="Rogue Trader" page="29" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Ignore the penalty to this model&apos;s hit rolls from flesh wounds it has suffered."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27ae-417c-a4b6-919c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb5f-9b41-a3c7-f463" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e3a-fb58-3b4d-f6ee" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
