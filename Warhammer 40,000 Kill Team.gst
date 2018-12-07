@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="15" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="16" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -824,6 +824,34 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="1b9f-9b22-cbdc-f0f5" name="Faction: Servants of the Abyss" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="8f95-542c-1485-582e" name="Obsidius Mallex" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="b499-f764-fb99-c4e9" name="Astra Cartographica" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="aa62-e352-d145-8e72" name="Rogue Trader" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="e7f5-09f4-86d3-cfb0" name="Janus Draik" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -16373,6 +16401,273 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="51ae-59d9-809a-f5dc" name="Janus Draik" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="0faf-7c30-882a-44ac" name="Janus Draik" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="4"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="3"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="9"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="4+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
+          </characteristics>
+        </profile>
+        <profile id="f0e8-27c8-36a7-0a89" name="Rogue Trader" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model cannot be affected by any Tactics or abilities that affect models with a particular Faction keyword."/>
+          </characteristics>
+        </profile>
+        <profile id="f932-8f66-ad4c-7782" name="Disruption Field Generator" hidden="false" profileTypeId="0883-432d-b2ca-f11a" profileTypeName="Wargear">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="This model has a 4+ invulnerable save."/>
+          </characteristics>
+        </profile>
+        <profile id="dcff-01c2-5889-2036" name="Multi-spectral Auspicator" hidden="false" profileTypeId="0883-432d-b2ca-f11a" profileTypeName="Wargear">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="Re-roll hit rolls of 1 for attacks made by this model."/>
+          </characteristics>
+        </profile>
+        <profile id="aba5-eaeb-9a40-c493" name="Concealed Archeotech Weapon" hidden="false" profileTypeId="0883-432d-b2ca-f11a" profileTypeName="Wargear">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="Once per battle, at the start of the Fight phase, pick one enemy model within 1&quot; of this model and roll a dice; on a 4+ the target model suffers D3 mortal wounds."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="2716-8c50-55db-8113" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="25">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2716-8c50-55db-8113" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4ef4-aa2d-d8e4-066e" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d84c-e483-281a-1406" name="Faction: Astra Militarum" hidden="false" targetId="96ae-2ec0-4de4-b4d7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="5f9a-8cdd-f73f-0ff4" name="Faction: Adeptus Mechanicus" hidden="false" targetId="5d67-ac66-1e97-ffb3" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="66df-fcaf-6393-39cb" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="0290-e0c7-3f4a-c1d6" name="Astra Cartographica" hidden="false" targetId="b499-f764-fb99-c4e9" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="5455-3ec9-5243-c894" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a234-99dd-2f36-2b50" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3cb9-f8da-4382-da26" name="Rogue Trader" hidden="false" targetId="aa62-e352-d145-8e72" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="53e7-ad3b-e96f-d555" name="Janus Draik" hidden="false" targetId="e7f5-09f4-86d3-cfb0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1530-3060-9514-bc5c" name="Monomolecular rapier" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="d451-e83c-ed57-fa52" name="Monomolecular rapier" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
+                <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-4"/>
+                <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03eb-597c-6ca0-a271" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8193-82a0-40c2-3856" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="48bf-37d6-3fae-6f6b" name="Heirloom pistol" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="9a20-9bb4-2669-8681" name="Heirloom pistol" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+                <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-2"/>
+                <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="2"/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="066c-7222-1e5c-3d70" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3deb-4c04-c711-1bcf" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="93bf-3945-9cb1-c426" name="Archeotech grenade" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="a218-7714-97a1-b750" name="Archeotech grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+                <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade D3"/>
+                <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
+                <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+                <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="You can only use this weapon once per battle."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="792d-0956-d7d2-618f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5c3-9354-2776-3992" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="494d-7e89-9e83-962b" name="Leadership" hidden="false" targetId="cd3d-2c23-094b-93b8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b78-4b06-3eba-5587" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42fe-bdb6-bdf3-7059" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="50.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="eff3-f5cf-03ea-a563" name="Commander Traits" hidden="false" collective="false">
@@ -17032,6 +17327,8 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="34ae-f354-467b-f6da" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8c1-e129-4f67-7704" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b71-2728-da83-660a" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f95-542c-1485-582e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -17107,6 +17404,8 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d1d-d7b6-14cc-8142" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d778-e774-3b07-1b67" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cfe3-aa39-7886-891c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f95-542c-1485-582e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -17180,6 +17479,8 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cfe3-aa39-7886-891c" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d778-e774-3b07-1b67" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f4e6-5904-782d-8390" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f95-542c-1485-582e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -17335,6 +17636,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="34ae-f354-467b-f6da" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8c1-e129-4f67-7704" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b71-2728-da83-660a" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -17389,6 +17691,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d1d-d7b6-14cc-8142" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c85b-5771-30b4-5329" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d778-e774-3b07-1b67" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f95-542c-1485-582e" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -17444,6 +17747,8 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d66-dc73-817b-ccd4" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cfe3-aa39-7886-891c" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d778-e774-3b07-1b67" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f95-542c-1485-582e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -17494,6 +17799,8 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="34ae-f354-467b-f6da" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8c1-e129-4f67-7704" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b71-2728-da83-660a" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f95-542c-1485-582e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -17550,6 +17857,8 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d1d-d7b6-14cc-8142" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c85b-5771-30b4-5329" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d66-dc73-817b-ccd4" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f95-542c-1485-582e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
