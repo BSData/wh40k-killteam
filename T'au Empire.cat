@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ac4-f90b-e0a6-ae72" name="T&apos;au Empire" revision="8" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ac4-f90b-e0a6-ae72" name="T&apos;au Empire" revision="9" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -49,6 +49,13 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="138d-868c-de29-1351" name="DS8 Tactical Support Turret" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="2f0c-f1c6-5431-08dd" name="Faction: Kroot" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -700,6 +707,14 @@
       <categoryLinks/>
     </entryLink>
     <entryLink id="eb55-2e96-55c5-6afe" name="Ethereal" hidden="false" targetId="d728-4ad3-598e-7f4b" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="7e2f-aad8-0add-ebde" name="Dahyak Grekh" hidden="false" targetId="d4e8-9748-e8a2-b829" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3872,7 +3887,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e1e0-20b8-7280-40b1" name="Equalizers" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -3920,6 +3937,233 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="18.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d4e8-9748-e8a2-b829" name="Dahyak Grekh" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="d61e-f492-5563-acb0" name="Dahyak Grekh" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="7&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="3"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="3"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
+          </characteristics>
+        </profile>
+        <profile id="710d-0393-cf77-2d22" name="Quarry Can&apos;t Hide" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model does not suffer the penalty to hit rolls for the target being obscured."/>
+          </characteristics>
+        </profile>
+        <profile id="9244-25eb-28ba-9975" name="Concealed Booby Traps" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If you select the Plant Traps strategy during the Scouting phase, you can boobytrap up to D3+1 pieces of terrain instead of up to D3."/>
+          </characteristics>
+        </profile>
+        <profile id="c973-3703-4f21-ac01" name="Fieldcraft" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="When an opponent makes a hit roll for a shooting attack that targets this model, and this model is obscured, that hit roll suffers an additional -1 modifier."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="a284-6146-6ad3-9600" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="5">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="10">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="10">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a284-6146-6ad3-9600" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="23cb-5534-5f26-58c7" name="Faction: T&apos;au Empire" hidden="false" targetId="7b37-ac1c-f776-37a2" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="739a-8828-c1d2-5ec1" name="Faction: Kroot" hidden="false" targetId="2f0c-f1c6-5431-08dd" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="76ec-6170-a381-c91f" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="42b5-49d0-e468-700e" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="5877-b46e-734d-c697" name="Dahyak Grekh" hidden="false" targetId="3ee4-447b-66db-ef7b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="2f9b-548b-6c23-ef15" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1a3c-73ce-3d81-e4fc" name="Kroot rifle" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="afef-8c04-ef9b-4bb8" name="Kroot rifle - melee" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="+1"/>
+                <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+              </characteristics>
+            </profile>
+            <profile id="9441-2648-93bd-62d4" name="Kroot rifle - shooting" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+                <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+                <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c6e-6807-3632-4f42" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8009-adcf-8f91-7c7a" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="486f-37b9-f571-550b" name="Kroot pistol" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="3819-8d8b-a8f9-696b" name="Kroot pistol" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+                <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27e4-8d1f-9018-b856" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b2f-4004-4b0a-d668" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="2476-a650-1cdd-bbf6" name="Stealth" hidden="false" targetId="37cb-84d5-5250-ef16" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="accf-7841-ef7f-c7d6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c20b-a1dd-785b-cd6b" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="25.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
