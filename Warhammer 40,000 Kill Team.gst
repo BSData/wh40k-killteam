@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="16" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="18" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -880,6 +880,34 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="452e-867b-23cb-68c0" name="Taddeus the Purifier" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="00b3-11bb-cc4f-ec1a" name="Faction: Kroot" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="3598-c49c-3964-6884" name="Cavalry" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="9dc5-dc94-9b20-bd57" name="Kroot Carnivore" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="8687-67fb-2f6d-fae7" name="T&apos;au Empire" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -10952,7 +10980,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d26b-c55e-2ad9-f8db" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3860-bc67-f9ea-a555" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1096-4f95-e2b9-fbea" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -16702,6 +16730,220 @@
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="50.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7279-c5fe-a464-94c4" name="Kroot Rifle" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="94ee-38cd-57a8-0ff0" name="Kroot rifle (melee)" hidden="false" targetId="a811-8667-f649-253d" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="951f-7f97-310b-ba1c" name="Kroot rifle (shooting)" hidden="false" targetId="e7b3-c621-161f-f5c3" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="36c9-84e1-2296-8655" name="Kroot Carnivore" hidden="false" collective="false" type="model">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="1991-87c5-8b32-6098" name="Kroot Carnivore" hidden="false" targetId="4e58-8631-e807-c595" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="d146-bc1c-5a93-2a0a" name="Kroot Carnivore" hidden="false" targetId="9dc5-dc94-9b20-bd57" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="415a-39d1-15df-c00e" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9dd8-d519-46e7-85f0" name="T&apos;au Empire" hidden="false" targetId="8687-67fb-2f6d-fae7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="353e-c059-6c4e-4930" name="Specialism" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="notInstanceOf"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29e7-d60f-5acd-4d99" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ca-afa4-f358-21bc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a20-a522-7722-8aad" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="29be-9194-00c9-01b4" name="Leader" hidden="false" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="28f1-02a2-ba7b-18c4" name="Scout" hidden="false" targetId="1d42-7d93-e0a4-330b" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dc5-dc94-9b20-bd57" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="c311-377d-4aaa-f9a6" name="Sniper" hidden="false" targetId="ead5-ea32-5412-c857" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dc5-dc94-9b20-bd57" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="5a92-37aa-10e8-92cf" name="Veteran" hidden="false" targetId="c89e-5e73-276f-cc16" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dc5-dc94-9b20-bd57" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="24a8-4bdb-01e1-2d0a" name="Zealot" hidden="false" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dc5-dc94-9b20-bd57" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="1d98-a9ce-6685-276c" name="Combat" hidden="false" targetId="cc58-f869-82d1-b353" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ee4-447b-66db-ef7b" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b6a4-b0d8-b61d-25de" name="Kroot Rifle" hidden="false" targetId="7279-c5fe-a464-94c4" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3c6-ade8-e0c4-b90c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="030e-2bb3-d96e-a8ab" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="6.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="eff3-f5cf-03ea-a563" name="Commander Traits" hidden="false" collective="false">
@@ -19448,6 +19690,52 @@
       </modifiers>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Each time you make a wound roll of 6+ for this model&apos;s attack in the Shooting phase, inflict a number of mortal wounds on the target equal to the weapon&apos;s Damage characteristic - the attack sequence then ends."/>
+      </characteristics>
+    </profile>
+    <profile id="a811-8667-f649-253d" name="Kroot rifle (melee)" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+        <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+        <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="+1"/>
+        <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+        <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="e7b3-c621-161f-f5c3" name="Kroot rifle (shooting)" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+        <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+        <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+        <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="4e58-8631-e807-c595" name="Kroot Carnivore" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="7&quot;"/>
+        <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+        <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="4+"/>
+        <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+        <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+        <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+        <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+        <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="6"/>
+        <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+        <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
       </characteristics>
     </profile>
   </sharedProfiles>
