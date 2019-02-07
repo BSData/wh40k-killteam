@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="20" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="21" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -8577,7 +8577,7 @@
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Choose one: You can re-roll failed hit rolls for this model when it makes shooting attacks. You can re-roll failed hit rolls for this model in the Fight phase."/>
+                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Choose one: You can re-roll hit rolls of 1 for this model when it makes shooting attacks OR You can re-roll hit rolls of 1 for this model in the Fight phase."/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8603,7 +8603,7 @@
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Choose one: You can re-roll failed wound rolls for this model when it makes shooting attacks. You can re-roll failed wound rolls for this model in the Fight phase."/>
+                    <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Choose one: You can re-roll wound rolls of 1 for this model when it makes shooting attacks OR You can re-roll wound rolls of 1 for this model in the Fight phase."/>
                   </characteristics>
                 </profile>
               </profiles>
