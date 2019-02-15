@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ff2c-d2cf-bc85-3c79" name="Adeptus Mechanicus" book="Kill Team - Core Manual, Kill Team - Commanders" page="" revision="11" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ff2c-d2cf-bc85-3c79" name="Adeptus Mechanicus" book="Kill Team - Core Manual, Kill Team - Commanders" page="" revision="12" battleScribeVersion="2.01" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -672,6 +672,14 @@
       <categoryLinks/>
     </entryLink>
     <entryLink id="e4da-79c0-6cd9-f403" name="UR-025" hidden="false" targetId="55a0-9cb5-c14a-ea47" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="90e3-7712-b050-0886" name="Tech-priest Manipulus" hidden="false" targetId="0de9-a626-0ac5-1a4a" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3985,7 +3993,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="244a-4e42-757b-b823" name="Power claw" hidden="false" collective="false" type="upgrade">
           <profiles>
@@ -4015,7 +4025,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -4034,6 +4046,296 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0de9-a626-0ac5-1a4a" name="Tech-priest Manipulus" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="4b16-9ddf-74fc-86f6" name="Tech-priest Manipulus" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+            <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+            <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+            <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="4"/>
+            <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="4"/>
+            <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="3"/>
+            <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="8"/>
+            <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="2+"/>
+            <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2ca3-5cdd-d205-698d" name="Blessed Bionics" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>This model has a 5+ invulnerable save. In addition, at the beginning of each battle round, this model regains D3 lost wounds.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="8180-45fb-ba20-e6a9" name="Canticles of the Omnissiah" hidden="false" targetId="da55-b94a-f55a-6538" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="d5f6-a81e-f711-0bbf" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="0de9-a626-0ac5-1a4a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="0de9-a626-0ac5-1a4a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="25">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="0de9-a626-0ac5-1a4a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d5f6-a81e-f711-0bbf" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="98f9-bb1d-e8cd-0dda" name="Faction: Adeptus Mechanicus" hidden="false" targetId="5d67-ac66-1e97-ffb3" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="21cf-015b-b6de-4ba6" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="0c97-5b1c-3fea-3b4f" name="Cult Mechanicus" hidden="false" targetId="05de-77a8-d7f8-354a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="2e68-bbc1-00ee-f177" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="10f7-658e-0537-8f0f" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e78d-3570-c3e4-dc86" name="Tech-priest" hidden="false" targetId="1955-96ab-adea-3e21" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ecc8-41ab-6736-1496" name="Manipulus" hidden="false" targetId="0d8c-7e68-5150-3cb9" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="872a-5ed2-289e-35ba" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9564-f63f-8c1e-b021" name="Omnissian staff" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="6b2b-7cba-1ff2-985b" name="Omnissian staff" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="+2"/>
+                <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+                <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="2"/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="271f-5391-517e-f157" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c81c-4e54-91e8-67f5" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="41ca-1db3-8ab0-9b82" name="Mechadendrites" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="0522-9ac4-f987-5195" name="Mechadendrites" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
+                <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Each time the bearer fights, they may make D6 additional attacks with this weapon."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8583-f599-d5ab-03d2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c12-94eb-544d-62bb" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2883-85de-5681-e0c2" name="Ranged weapon" hidden="false" collective="false" defaultSelectionEntryId="41a8-9562-6acc-7cfc">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4001-515a-7427-a737" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7916-b461-f04c-4e5c" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="41a8-9562-6acc-7cfc" name="Magnarail lance" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="3ece-3751-f044-a8e6" name="Magnarail lance" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="18&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Heavy 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="7"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="When the bearer makes a shooting attack with this weapon in the Shooting phase, increase that attack&apos;s Damage characteristic to 3 if they remained stationary iduring the previous Movement phase."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3769-2a85-d194-368c" name="Transonic cannon" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="ca09-ffc7-62b2-0a86" name="Transonic cannon" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="8&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Assault D6"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="2"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="This weapon automatically hits its target."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2cb0-ca02-17f3-77fd" name="Specialism" hidden="false" targetId="6675-98bf-621c-8069" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="102.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
