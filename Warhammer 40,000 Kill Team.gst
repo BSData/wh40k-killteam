@@ -218,6 +218,7 @@
     <categoryEntry id="1ec0-dd6e-9680-2288" name="Terminator" publicationId="701a-4a21-90a2-7618" hidden="false"/>
     <categoryEntry id="546b-63e4-4e33-88a3" name="Master of Possession" publicationId="701a-4a21-90a2-7618" hidden="false"/>
     <categoryEntry id="22f7-3786-ff9d-ca18" name="Chaos Lord" hidden="false"/>
+    <categoryEntry id="836f-fb27-0862-3fcc" name="Lord of Contagion" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
