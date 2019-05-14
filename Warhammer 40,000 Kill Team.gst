@@ -219,6 +219,7 @@
     <categoryEntry id="546b-63e4-4e33-88a3" name="Master of Possession" publicationId="701a-4a21-90a2-7618" hidden="false"/>
     <categoryEntry id="22f7-3786-ff9d-ca18" name="Chaos Lord" hidden="false"/>
     <categoryEntry id="836f-fb27-0862-3fcc" name="Lord of Contagion" hidden="false"/>
+    <categoryEntry id="4676-b1b4-203e-ac26" name="Boss Snikrot" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
@@ -9226,6 +9227,85 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1625-23f9-5e9b-d3ac" name="Legendary Hunter" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29b9-0103-f190-15de" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f588-e298-7897-96ee" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="4f99-ab07-cbdf-e0fa" name="Level 1: Hard Case" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdb3-9fdb-3a8f-1f87" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c76-2e06-3e15-e3e9" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="95b5-a8ee-8aa8-7ed8" name="Hard Case" hidden="false" targetId="f4e4-6550-bb95-a211" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="04b5-6a7a-6a3f-956e" name="Level 2: Sudden Ambush" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d14-d381-4416-76de" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aff-c079-e413-66c1" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e7c5-d567-efa3-1f0d" name="Sudden Ambush" hidden="false" targetId="fc6e-0784-3305-af34" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b366-d237-fcdd-5bdf" name="Level 3: Stealthy Hunter" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7517-6ab4-2cc8-b08d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2f7-fb45-ff69-d693" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="fb6d-63d5-c8c6-3a49" name="Stealthy Hunter" hidden="false" targetId="782d-bf5f-8137-9f6b" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="201a-61d9-3b70-7365" name="Level 4: Like Fighting a Shadow" hidden="false" collective="false" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4676-b1b4-203e-ac26" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="9a7b-aa37-60fa-925b" value="1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4676-b1b4-203e-ac26" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89ad-06d0-9874-ce36" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a7b-aa37-60fa-925b" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7caf-68e4-2027-6088" name="Like Fighting a Shadow" hidden="false" targetId="33ae-4224-52bd-6bc1" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="eff3-f5cf-03ea-a563" name="Commander Traits" hidden="false" collective="false">
@@ -10903,6 +10983,26 @@
         <characteristic name="Ld" typeId="411b-5228-afed-8334">6</characteristic>
         <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
         <characteristic name="Max" typeId="44ec-172b-6381-4908">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f4e4-6550-bb95-a211" name="Hard Case" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">Ignore the penalty to this model&apos;s hit rolls from flesh wounds it has suffered.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fc6e-0784-3305-af34" name="Sudden Ambush" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">When you set up this model from Reserve, set them up anywhere on the battlefield that is more than 5&quot; away from any enemy models.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="782d-bf5f-8137-9f6b" name="Stealthy Hunter" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">When an opponent makes a hit roll or Injury roll for a shooting attack which targets this model, and this model is obscured, that hit roll or Injury roll suffers an additional -1 modifier.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="33ae-4224-52bd-6bc1" name="Like Fighting a Shadow" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">Once per battle, at the start of any Movement phase, if there are no enemy models within 6&quot; of this model (other than shaken models) and this model is not shaken, you may remove this model from the battlefield and place them in Reserve.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
