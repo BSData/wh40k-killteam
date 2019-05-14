@@ -215,6 +215,9 @@
     <categoryEntry id="fc8e-6a69-7571-9322" name="Greater Possessed" hidden="false"/>
     <categoryEntry id="5a42-af8a-ff23-c778" name="Master of Executions" hidden="false"/>
     <categoryEntry id="809b-91b9-1b75-6376" name="Dark Apostle" hidden="false"/>
+    <categoryEntry id="1ec0-dd6e-9680-2288" name="Terminator" publicationId="701a-4a21-90a2-7618" hidden="false"/>
+    <categoryEntry id="546b-63e4-4e33-88a3" name="Master of Possession" publicationId="701a-4a21-90a2-7618" hidden="false"/>
+    <categoryEntry id="22f7-3786-ff9d-ca18" name="Chaos Lord" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
@@ -9685,6 +9688,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc8e-6a69-7571-9322" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a42-af8a-ff23-c778" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="809b-91b9-1b75-6376" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="546b-63e4-4e33-88a3" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -9935,6 +9939,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc8e-6a69-7571-9322" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a42-af8a-ff23-c778" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="809b-91b9-1b75-6376" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="546b-63e4-4e33-88a3" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10020,6 +10025,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc8e-6a69-7571-9322" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a42-af8a-ff23-c778" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="809b-91b9-1b75-6376" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="546b-63e4-4e33-88a3" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
