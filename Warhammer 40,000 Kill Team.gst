@@ -224,6 +224,7 @@
     <categoryEntry id="37d8-f20c-a4fe-2db1" name="Faction: Adeptus Custodes" hidden="false"/>
     <categoryEntry id="d62a-0498-8cf6-c058" name="Shield-Captain" hidden="false"/>
     <categoryEntry id="57d0-d5a8-fcae-214a" name="Brother-Captain" hidden="false"/>
+    <categoryEntry id="f1ba-4709-e2cd-4c36" name="Sly Marbo" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
