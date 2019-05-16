@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="25" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="26" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="a467-5f42-pubN89361" name="Core Manual"/>
     <publication id="a467-5f42-pubN90767" name="Rogue Trader"/>
@@ -9232,81 +9232,56 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1625-23f9-5e9b-d3ac" name="Legendary Hunter" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1625-23f9-5e9b-d3ac" name="Legendary Hunter - Level 4" hidden="false" collective="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29b9-0103-f190-15de" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f588-e298-7897-96ee" type="max"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry id="4f99-ab07-cbdf-e0fa" name="Level 1: Hard Case" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdb3-9fdb-3a8f-1f87" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c76-2e06-3e15-e3e9" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="95b5-a8ee-8aa8-7ed8" name="Hard Case" hidden="false" targetId="f4e4-6550-bb95-a211" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="04b5-6a7a-6a3f-956e" name="Level 2: Sudden Ambush" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d14-d381-4416-76de" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aff-c079-e413-66c1" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="e7c5-d567-efa3-1f0d" name="Sudden Ambush" hidden="false" targetId="fc6e-0784-3305-af34" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b366-d237-fcdd-5bdf" name="Level 3: Stealthy Hunter" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7517-6ab4-2cc8-b08d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2f7-fb45-ff69-d693" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="fb6d-63d5-c8c6-3a49" name="Stealthy Hunter" hidden="false" targetId="782d-bf5f-8137-9f6b" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="201a-61d9-3b70-7365" name="Level 4: Like Fighting a Shadow" hidden="false" collective="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4676-b1b4-203e-ac26" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" field="9a7b-aa37-60fa-925b" value="1">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4676-b1b4-203e-ac26" type="notInstanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89ad-06d0-9874-ce36" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a7b-aa37-60fa-925b" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="7caf-68e4-2027-6088" name="Like Fighting a Shadow" hidden="false" targetId="33ae-4224-52bd-6bc1" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <infoLinks>
+        <infoLink id="fb60-de22-94f8-e0fd" name="Sudden Ambush" hidden="false" targetId="fc6e-0784-3305-af34" type="profile"/>
+        <infoLink id="b76b-cbd8-1212-8d2b" name="Hard Case" hidden="false" targetId="f4e4-6550-bb95-a211" type="profile"/>
+        <infoLink id="b87d-41cb-0ea3-0460" name="Stealthy Hunter" hidden="false" targetId="782d-bf5f-8137-9f6b" type="profile"/>
+        <infoLink id="ecda-5ccd-ed8a-27bc" name="Like Fighting a Shadow" hidden="false" targetId="33ae-4224-52bd-6bc1" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7da4-b687-c93e-28d0" name="Legendary Hunter - Level 3" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eefd-1465-1451-430a" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebb8-7d9b-7a70-dd7a" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="a54a-0cd8-53dd-6dad" name="Sudden Ambush" hidden="false" targetId="fc6e-0784-3305-af34" type="profile"/>
+        <infoLink id="8c6a-84b5-bb6a-8689" name="Hard Case" hidden="false" targetId="f4e4-6550-bb95-a211" type="profile"/>
+        <infoLink id="2976-4023-fa67-506b" name="Stealthy Hunter" hidden="false" targetId="782d-bf5f-8137-9f6b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f39-9bac-6c2f-f48b" name="Legendary Hunter - Level 2" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6328-66f5-3d69-a6a8" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb5d-7326-87c9-4925" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="f2e3-363c-2bf4-9fb8" name="Hard Case" hidden="false" targetId="f4e4-6550-bb95-a211" type="profile"/>
+        <infoLink id="39dc-7f0a-1774-8b3c" name="Sudden Ambush" hidden="false" targetId="fc6e-0784-3305-af34" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="76e6-74f4-a19a-f455" name="Legendary Hunter - Level 1" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4abf-2242-0af3-74a6" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a45-8f37-feb7-cd51" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="9040-534c-f5ad-25b7" name="Hard Case" hidden="false" targetId="f4e4-6550-bb95-a211" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
