@@ -221,6 +221,7 @@
     <categoryEntry id="836f-fb27-0862-3fcc" name="Lord of Contagion" hidden="false"/>
     <categoryEntry id="4676-b1b4-203e-ac26" name="Boss Snikrot" hidden="false"/>
     <categoryEntry id="9c92-7f60-82bf-33ba" name="Phobos" hidden="false"/>
+    <categoryEntry id="57d0-d5a8-fcae-214a" name="Brother-captain" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
