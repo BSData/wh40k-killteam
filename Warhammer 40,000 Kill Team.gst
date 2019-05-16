@@ -221,7 +221,8 @@
     <categoryEntry id="836f-fb27-0862-3fcc" name="Lord of Contagion" hidden="false"/>
     <categoryEntry id="4676-b1b4-203e-ac26" name="Boss Snikrot" hidden="false"/>
     <categoryEntry id="9c92-7f60-82bf-33ba" name="Phobos" hidden="false"/>
-    <categoryEntry id="57d0-d5a8-fcae-214a" name="Brother-captain" hidden="false"/>
+    <categoryEntry id="37d8-f20c-a4fe-2db1" name="Faction: Adeptus Custodes" hidden="false"/>
+    <categoryEntry id="d62a-0498-8cf6-c058" name="Shield-Captain" hidden="false"/>
     <categoryEntry id="57d0-d5a8-fcae-214a" name="Brother-Captain" hidden="false"/>
   </categoryEntries>
   <forceEntries>
