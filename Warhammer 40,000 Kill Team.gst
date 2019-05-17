@@ -115,6 +115,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" field="526b-ce9b-2acd-a91f" value="1">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="419c-04e4-1bb5-3f36" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4b27-4221-00e5-c79e" type="max"/>
