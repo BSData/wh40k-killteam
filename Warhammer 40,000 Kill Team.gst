@@ -236,6 +236,7 @@
     <categoryEntry id="e0ed-76ee-5755-4786" name="Clamavus" hidden="false"/>
     <categoryEntry id="5b52-dcbe-fbd9-5ac1" name="Sanctus" hidden="false"/>
     <categoryEntry id="0842-5a84-95ce-3ac4" name="Kelermorph" hidden="false"/>
+    <categoryEntry id="e9cf-4c22-c034-f592" name="Spiritseer" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
