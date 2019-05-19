@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="1" battleScribeVersion="2.02" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="2" battleScribeVersion="2.02" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="6c15-6156-5ba7-10f3" name="Special Issue Ammunition">
       <characteristicTypes>
@@ -1000,13 +1000,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="04f8-a3f8-7769-09fa" name="Power axe" hidden="false" collective="false" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="4d6a-33d9-cb34-87f4" name="Power axe" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
@@ -1041,13 +1034,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6edf-c2d4-de82-80f6" name="Power maul" hidden="false" collective="false" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="a6cb-c18f-0a8e-339e" name="Power maul" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
@@ -1065,18 +1051,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="ecb3-8447-db60-da63" name="Power sword" hidden="false" collective="false" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cac-4ecd-8a86-6833" type="notInstanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="35b7-dea3-2c9d-fd14" name="Power sword" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
@@ -1562,14 +1536,39 @@
     </selectionEntry>
     <selectionEntry id="84d0-c18d-004f-a75c" name="Bolt sniper rifle" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="1e70-8f30-ecc4-9120" name="Bolt sniper rifle" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+        <profile id="1e70-8f30-ecc4-9120" name="Bolt sniper rifle - Executioner round" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6"/>
-            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9"/>
-            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca"/>
-            <characteristic name="AP" typeId="fc0e-2874-184d-9f64"/>
-            <characteristic name="D" typeId="cc1f-e463-c014-2251"/>
-            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2"/>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">36&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Heavy 1</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-2</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">If you make a wound roll of 6+ for this weapon, it inflicts a mortal wound in addition to its normal damage.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9233-d053-7666-9bf0" name="Bolt sniper rifle" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
+          <characteristics>
+            <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">A model firing a bolt sniper rifle does not suffer the penalty to hit rolls for the target being at long range. In addition, when attacking with this weapon, choose one of the profiles below.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="14c1-cd3c-c5c5-5d29" name="Bolt sniper rifle - Mortis round" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">36&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Heavy 1</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">Add 2 to hit rolls made for this weapon. In addition, this weapon can target models that are not visible to the bearer. If the target is not visible to the bearer, a 6 is required for a successful hit roll, irrespective of the firing model’s Ballistic Skill or any modifiers.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc56-69a3-52ea-850d" name="Bolt sniper rifle - Hyperfrag round" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">36&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Heavy D3</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2451,6 +2450,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0467-5ae9-2740-2d7a" name="Grav-pistol" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="4130-0e65-6cd7-cd27" name="Grav-pistol" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
@@ -4007,6 +4013,11 @@
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cac-4ecd-8a86-6833" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac8c-e216-f6a5-309f" type="max"/>
@@ -4146,11 +4157,25 @@
               </constraints>
             </entryLink>
             <entryLink id="324b-5d7f-73ff-6386" name="Power maul" hidden="false" collective="false" targetId="6edf-c2d4-de82-80f6" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="169e-63e6-cdb3-a2c9" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="3348-fc6d-72e9-1199" name="Power sword" hidden="false" collective="false" targetId="ecb3-8447-db60-da63" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="222a-2bd7-ce95-6c86" type="max"/>
               </constraints>
@@ -4288,13 +4313,24 @@
           </constraints>
         </entryLink>
         <entryLink id="6a20-9148-3d5f-7f6a" name="Thunder hammer" hidden="false" collective="false" targetId="0528-7cff-65ac-73f7" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c793-9ff1-e5c0-c6d0" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb93-13fc-f834-3645" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="6927-3769-77d4-c6fa" name="Relic blade" hidden="false" collective="false" targetId="76eb-8d89-723e-fa60" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true"/>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d6ce-1709-dc19-0736" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
             <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3"/>
           </modifiers>
           <constraints>
@@ -4302,6 +4338,13 @@
           </constraints>
         </entryLink>
         <entryLink id="e9ef-0d62-d751-b938" name="Storm shield" hidden="false" collective="false" targetId="dcd7-2c59-d232-9579" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c793-9ff1-e5c0-c6d0" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa77-f0cc-170f-4745" type="max"/>
           </constraints>
