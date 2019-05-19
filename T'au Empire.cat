@@ -362,6 +362,7 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="52f9-c98a-e3ce-c039" name="Darkstrider" hidden="false" collective="false" targetId="e8e4-13b9-f87f-33b1" type="selectionEntry"/>
+    <entryLink id="db87-8905-3c21-61c9" name="Sept Tenet" hidden="false" collective="false" targetId="8d18-a2bc-34c6-408c" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="e5a8-5953-c927-081d" name="Fire Warrior Shas&apos;la" hidden="false" collective="false" type="model">
@@ -2371,6 +2372,18 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="39.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8d18-a2bc-34c6-408c" name="Sept Tenet" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0b7f-2600-a082-0398" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0269-db51-27a1-dc1e" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="eed0-808b-cba1-d624" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4a92-c8ef-b234-59d8" name="Sept Tenets" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a33d-4f89-1be1-c88b" name="Specialism" hidden="false" collective="false">
@@ -2847,13 +2860,59 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b174-5a4a-deb1-047f" name="Sept Tenets" hidden="false" collective="false" defaultSelectionEntryId="0ac0-ccb7-5170-d235">
+    <selectionEntryGroup id="b174-5a4a-deb1-047f" name="Sept Tenet" hidden="false" collective="false" defaultSelectionEntryId="0ac0-ccb7-5170-d235">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e6a-863c-9c69-af0f" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ac6-7f82-c44b-9f8c" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="0ac0-ccb7-5170-d235" name="*No Tenet*" hidden="false" collective="false" type="upgrade"/>
+        <selectionEntry id="0ac0-ccb7-5170-d235" name="*No Tenet*" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e84c-9fed-66bc-9668" name="T&apos;au Sept" hidden="false" collective="false" type="upgrade">
+          <rules>
+            <rule id="d22d-dc28-4520-1c5d" name="Coordinated Fire Arcs" hidden="false">
+              <description>When a model in your kill team uses their For the Greater Good ability, or when they fire Overwatch whilst they are within 6&quot; of a friendly model, they successfully hit on a roll of 5 or 6.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="5508-bc7b-236a-1e3a" name="Vior&apos;la Sept" hidden="false" collective="false" type="upgrade">
+          <rules>
+            <rule id="7081-26cf-463a-7f32" name="Strike Fast" hidden="false">
+              <description>Models in your kill team can shoot Rapid Fire weapons as if they were Assault weapons in the Shooting phase of a battle round in which they Advanced (e.g. a Rapid Fire 1 weapon would be used as if it were an Assault 1 weapon). In addition, these models do not suffer the penalty to their hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="ea5c-4ebe-4b62-502f" name="Bork&apos;an Sept" hidden="false" collective="false" type="upgrade">
+          <rules>
+            <rule id="6d38-401a-5a86-12ba" name="Superior Craftsmanship" hidden="false">
+              <description>Models in your kill team do not suffer the penalty to hit rolls for their attacks that target enemy models at long range.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="f1dc-acba-cd3d-bae7" name="Dal&apos;yth Sept" hidden="false" collective="false" type="upgrade">
+          <rules>
+            <rule id="b956-ef90-9f27-dc82" name="Adaptive Camouflage" hidden="false">
+              <description>If a model in your kill team does not move in the Movement phase, for the remainder of the battle round it is considered to be obscured to enemy models that target it.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="4632-f834-c51a-e265" name="Sa&apos;cea Sept" hidden="false" collective="false" type="upgrade">
+          <rules>
+            <rule id="f0c6-868c-04d5-103e" name="Calm Discipline" hidden="false">
+              <description>Add 1 to the Leadership characteristic of models in your kill team. In addition, you can re-roll hit rolls of 1 for shooting attacks made by models in your kill team.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="ef73-364e-5834-e9a8" name="Farsight Enclaves" hidden="false" collective="false" type="upgrade">
+          <rules>
+            <rule id="54e6-89b7-0f16-5b99" name="Devastating Counter-strike" hidden="false">
+              <description>Re-roll hit and wound rolls of 1 for shooting attacks made by models in your kill team that target an enemy model that is within 6&quot; of the firing model.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
