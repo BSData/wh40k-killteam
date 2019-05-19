@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ac4-f90b-e0a6-ae72" name="T&apos;au Empire" revision="13" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ac4-f90b-e0a6-ae72" name="T&apos;au Empire" revision="14" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="580b-8df1-70dc-452b" name="Drone" hidden="false"/>
     <categoryEntry id="fd6f-ea1b-53af-11ab" name="Battlesuit" hidden="false"/>
@@ -1409,17 +1409,6 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5f3d-caea-0e44-9c2a" name="Target lock" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00ab-2531-4a3a-7191" type="max"/>
-      </constraints>
-      <infoLinks>
-        <infoLink id="27ff-326b-46ad-ad35" name="Target lock (Support System)" hidden="false" targetId="e217-1f6f-4ddf-f6c4" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="94a0-f018-fb53-c85a" name="Pulse carbine w/ Markerlight" hidden="false" collective="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd29-d21f-a79d-994a" type="max"/>
@@ -2050,18 +2039,18 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f19-09bd-840d-06b4" name="Target Lock" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2f19-09bd-840d-06b4" name="Target lock" hidden="false" collective="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6359-ae50-4421-23ad" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="d40f-988c-f0f7-0291" name="Target lock" hidden="false" targetId="e217-1f6f-4ddf-f6c4" type="profile"/>
+        <infoLink id="d40f-988c-f0f7-0291" name="Target Lock - Support System" hidden="false" targetId="e217-1f6f-4ddf-f6c4" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6c4b-573d-298b-558a" name="Velocity Tracker" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6c4b-573d-298b-558a" name="Velocity tracker" hidden="false" collective="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44df-4c74-35ff-ea3f" type="max"/>
       </constraints>
@@ -2762,7 +2751,11 @@
       <entryLinks>
         <entryLink id="2fba-2863-2d89-529a" name="Advanced Targeting System" hidden="false" collective="false" targetId="29ea-2a23-e3b3-ad75" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2106-4e1e-ccfe-132e" type="max"/>
@@ -2770,7 +2763,11 @@
         </entryLink>
         <entryLink id="2a43-8e28-8c94-3d4f" name="Counterfire Defence System" hidden="false" collective="false" targetId="ef09-29d8-8c33-923d" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5d5d-d50b-750a-3596" type="max"/>
@@ -2778,7 +2775,11 @@
         </entryLink>
         <entryLink id="271f-1db6-d957-27ed" name="Drone Controller" hidden="false" collective="false" targetId="3d18-2a4e-58f8-d9ea" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c1a4-8f15-659f-ed96" type="max"/>
@@ -2786,7 +2787,11 @@
         </entryLink>
         <entryLink id="8523-a23a-bc1a-0c1c" name="Early Warning Override" hidden="false" collective="false" targetId="dfe6-b475-66d1-d949" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="10"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="10">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dec2-1e48-03ef-d921" type="max"/>
@@ -2794,7 +2799,11 @@
         </entryLink>
         <entryLink id="b2cd-96f7-327a-edab" name="Multi-tracker" hidden="false" collective="false" targetId="b943-1b53-46c2-fbfb" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c113-d1df-978a-bf69" type="max"/>
@@ -2802,7 +2811,11 @@
         </entryLink>
         <entryLink id="e360-7999-4f42-9db8" name="Shield Generator" hidden="false" collective="false" targetId="e143-5432-a9f2-6b25" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="20"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="20">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e130-4cf7-6469-44fe" type="max"/>
@@ -2810,21 +2823,38 @@
         </entryLink>
         <entryLink id="1d74-3fc7-4ae6-73bb" name="Target Lock" hidden="false" collective="false" targetId="2f19-09bd-840d-06b4" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="10"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="10">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ad46-0a62-c73e-43b3" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="dd7a-71ef-a4af-bcb5" name="Velocity Tracker" hidden="false" collective="false" targetId="6c4b-573d-298b-558a" type="selectionEntry">
+        <entryLink id="dd7a-71ef-a4af-bcb5" name="Velocity tracker" hidden="false" collective="false" targetId="6c4b-573d-298b-558a" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d312-2ccc-caad-08a4" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b174-5a4a-deb1-047f" name="Sept Tenets" hidden="false" collective="false" defaultSelectionEntryId="0ac0-ccb7-5170-d235">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e6a-863c-9c69-af0f" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ac6-7f82-c44b-9f8c" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="0ac0-ccb7-5170-d235" name="*No Tenet*" hidden="false" collective="false" type="upgrade"/>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -3060,7 +3090,7 @@
         <characteristic name="Description" typeId="b373-019d-503a-1124">This model has a 4+ invulnerable save.</characteristic>
       </characteristics>
     </profile>
-    <profile id="e217-1f6f-4ddf-f6c4" name="Target Lock - Support System" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
+    <profile id="e217-1f6f-4ddf-f6c4" name="Target lock" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
       <characteristics>
         <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">This model does not suffer the penalty for moving and firing Heavy weapons, or for Advancing and firing Assault weapons. The model can also Advance and fire Rapid Fire weapons, but you must subtract 1 from hit rolls when it does so.</characteristic>
       </characteristics>
