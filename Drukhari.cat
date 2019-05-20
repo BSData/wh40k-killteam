@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3591-2aa0-250c-ddeb" name="Drukhari" revision="10" battleScribeVersion="2.02" authorName="Farseer Veraenthis" authorContact="@FarseerVeraenthis on Gitter" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3591-2aa0-250c-ddeb" name="Drukhari" revision="11" battleScribeVersion="2.02" authorName="Farseer Veraenthis" authorContact="@FarseerVeraenthis on Gitter" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="3591-2aa0-pubN65537" name="Kill Team Core Manual"/>
   </publications>
@@ -339,6 +339,15 @@
       </modifiers>
     </entryLink>
     <entryLink id="984a-d289-f72f-34f8" name="Drukhari Obsession" hidden="false" collective="false" targetId="cb88-ce33-97c0-f56d" type="selectionEntry"/>
+    <entryLink id="ffeb-868f-9b26-b70c" name="Incubi Fire Team" hidden="false" collective="false" targetId="337e-6000-7e3d-5206" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7c6a-ce45-bee2-c316" name="Shardnet and Impaler" hidden="false" collective="false" type="upgrade">
@@ -1779,7 +1788,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2530,6 +2539,56 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="337e-6000-7e3d-5206" name="Incubus Fire Team" hidden="false" collective="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="117f-4eea-b06b-432a" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d236-02f8-3252-519f" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="080a-5ec5-27ef-c227" name="Incubi" hidden="false" collective="false">
+          <entryLinks>
+            <entryLink id="749d-5247-43e9-beb7" name="Incubus" hidden="false" collective="false" targetId="c32b-d5e7-c344-a1ea" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="fdfd-3eb5-42ce-145f" name="Klaivex" hidden="false" collective="false" targetId="fa2e-8cb8-6cc0-c30c" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d540-01f6-8237-f53c" name="Fire Team Advances" hidden="false" collective="false" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7b50-5670-410c-ecbd" name="Wych Specialism" hidden="false" collective="false">
@@ -2738,6 +2797,9 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d58-bcbf-06dd-8127" type="max"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
