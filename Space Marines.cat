@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="2" battleScribeVersion="2.02" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="3" battleScribeVersion="2.02" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="6c15-6156-5ba7-10f3" name="Special Issue Ammunition">
       <characteristicTypes>
@@ -992,6 +992,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="fa76-651f-322a-dee3" name="Lightning claw" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="1.5">
+          <conditions>
+            <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa76-651f-322a-dee3" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="8ec4-bc5e-499b-2e78" name="Lightning claw" hidden="false" targetId="1f59-3e87-1ff3-f9a1" type="profile"/>
       </infoLinks>
@@ -2055,18 +2062,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3b90-f949-81c3-e0ae" name="Plasma cannon" hidden="false" collective="false" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-c261-fa08-eb51" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77cd-3383-52b2-a4e3" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="fcd9-ace3-3f32-d254" name="Plasma cannon - standard" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
@@ -2193,12 +2188,7 @@
     </selectionEntry>
     <selectionEntry id="7a22-4e8b-6f21-a7d6" name="Space Wolf Terminator Sergeant" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
-          <conditions>
-            <condition field="selections" scope="7a22-4e8b-6f21-a7d6" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa76-651f-322a-dee3" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="0f3c-3743-3790-fc62" value="1">
+        <modifier type="set" field="0f3c-3743-3790-fc62" value="1.0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -2936,15 +2926,10 @@
     </selectionEntry>
     <selectionEntry id="a7e2-4c13-d51c-1551" name="Vanguard Veteran" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1.0">
           <repeats>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
           </repeats>
-        </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
-          <conditions>
-            <condition field="selections" scope="a7e2-4c13-d51c-1551" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa76-651f-322a-dee3" type="equalTo"/>
-          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -3034,7 +3019,7 @@
     </selectionEntry>
     <selectionEntry id="d6ce-1709-dc19-0736" name="Vanguard Sergeant" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1.0">
           <repeats>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
           </repeats>
@@ -3047,11 +3032,6 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
-          <conditions>
-            <condition field="selections" scope="d6ce-1709-dc19-0736" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa76-651f-322a-dee3" type="equalTo"/>
-          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -3309,15 +3289,10 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1.0">
           <repeats>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
           </repeats>
-        </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
-          <conditions>
-            <condition field="selections" scope="e868-203a-914d-e11d" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa76-651f-322a-dee3" type="equalTo"/>
-          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -4215,7 +4190,20 @@
       <entryLinks>
         <entryLink id="d9a1-17c9-642a-52b7" name="Heavy flamer" hidden="false" collective="false" targetId="cced-7b5b-2ab8-5ef5" type="selectionEntry"/>
         <entryLink id="aa3c-98eb-6767-1c06" name="Assault cannon" hidden="false" collective="false" targetId="057b-28e0-2d61-a272" type="selectionEntry"/>
-        <entryLink id="0f6d-05fd-7274-37b6" name="Plasma cannon" hidden="false" collective="false" targetId="3b90-f949-81c3-e0ae" type="selectionEntry"/>
+        <entryLink id="0f6d-05fd-7274-37b6" name="Plasma cannon" hidden="false" collective="false" targetId="3b90-f949-81c3-e0ae" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-c261-fa08-eb51" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77cd-3383-52b2-a4e3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="03e3-689a-1443-24b0" name="Combi-weapons" hidden="false" collective="false">
