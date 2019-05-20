@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a34e-d16c-80ff-06bf" name="Orks" revision="19" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a34e-d16c-80ff-06bf" name="Orks" revision="20" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2a73-3eb4-3c77-db12" name="Ork Boy" hidden="false"/>
     <categoryEntry id="d9e4-66e2-9d74-a149" name="Burna Boy" hidden="false"/>
@@ -709,6 +709,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4e96-6242-1ba5-cd58" name="Kombi-weapon with Skorcha" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7a03-5282-0796-f8b9" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="c99d-c121-5d7f-cad9" name="Kombi-weapon with Skorcha (Shoota)" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
@@ -739,6 +746,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="307e-6966-5e6b-64c7" name="Power Klaw" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7a03-5282-0796-f8b9" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2a54-976d-214a-96cd" name="Power Klaw" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
@@ -1919,9 +1933,6 @@
       <entryLinks>
         <entryLink id="f50c-3526-45db-6f49" name="Clan Kulturs" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="b5a8-c094-9144-6849" name="Nob" hidden="false" collective="false" type="model">
       <modifiers>
@@ -1981,10 +1992,17 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cf8d-83cc-3e72-8832" name="Killsaw" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.5">
+          <conditions>
+            <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf8d-83cc-3e72-8832" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="9819-18df-2ff6-aa9a" name="Killsaw" hidden="false" targetId="ff18-6428-6933-82e7" type="profile"/>
       </infoLinks>
@@ -2144,90 +2162,10 @@
         <categoryLink id="5710-36be-f411-9902" name="Meganob" hidden="false" targetId="cf94-17f4-b543-4b08" primary="false"/>
         <categoryLink id="8ec3-3cba-e1ad-0fd6" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="675d-a250-15cc-5f39" name="Weapons" hidden="false" collective="false">
-          <modifiers>
-            <modifier type="set" field="1ee6-288d-a262-18fa" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30f9-b1a0-c61c-0098" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="81f6-0d24-9491-70e3" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30f9-b1a0-c61c-0098" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ee6-288d-a262-18fa" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81f6-0d24-9491-70e3" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="30f9-b1a0-c61c-0098" name="Two killsaws" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40fe-9d6d-9adf-9e17" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="78f6-4e21-71b6-d239" name="Killsaw" hidden="false" targetId="ff18-6428-6933-82e7" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="2719-dd81-177a-52e9" name="Melee weapon" hidden="false" collective="false" defaultSelectionEntryId="b657-c3c8-7cb5-6242">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae2d-ced7-dfab-231a" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="41dd-fff0-0afb-7551" name="Killsaw" hidden="false" collective="false" targetId="cf8d-83cc-3e72-8832" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9303-e37b-1ffb-586d" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="b657-c3c8-7cb5-6242" name="Power Klaw" hidden="false" collective="false" targetId="307e-6966-5e6b-64c7" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="125b-0c83-acbf-ca44" value="0.0"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125b-0c83-acbf-ca44" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8443-632b-ca27-216f" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="74c8-ddbe-42c0-5dcb" name="Ranged weapon" hidden="false" collective="false" defaultSelectionEntryId="266d-2b5f-5e6e-c2be">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="708f-d5df-76d5-3ba5" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="818f-a28b-ebd8-0a83" name="Kombi-weapon with Rokkit Launcha" hidden="false" collective="false" targetId="a2f7-b7aa-039d-55f4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb66-b46c-ee49-3a48" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="1235-a3bb-da31-96bf" name="Kombi-weapon with Skorcha" hidden="false" collective="false" targetId="4e96-6242-1ba5-cd58" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c038-f753-393d-ea9b" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="266d-2b5f-5e6e-c2be" name="Kustom Shoota" hidden="false" collective="false" targetId="000d-f451-1e50-4345" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="de15-feec-400a-e046" value="0.0"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de15-feec-400a-e046" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48c6-d104-1564-3003" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c779-8098-2052-b4f5" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="4389-4ac2-4b31-bd99" name="Stikkbombs" hidden="false" collective="false" targetId="8fad-e5b9-1b41-ba1e" type="selectionEntry"/>
+        <entryLink id="0ae0-cd7d-65fa-9fe2" name="Meganob Weapons" hidden="false" collective="false" targetId="f641-5067-0391-08d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="37.0"/>
@@ -2277,90 +2215,9 @@
         <categoryLink id="f988-eb8c-7483-3dcb" name="Meganob" hidden="false" targetId="cf94-17f4-b543-4b08" primary="false"/>
         <categoryLink id="28f1-fb55-0056-8ad6" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1b17-8007-f8cf-de3d" name="Weapons" hidden="false" collective="false">
-          <modifiers>
-            <modifier type="set" field="d30d-d53b-d281-a704" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30f9-b1a0-c61c-0098" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="73a2-4b23-6ffa-1cc3" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30f9-b1a0-c61c-0098" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d30d-d53b-d281-a704" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73a2-4b23-6ffa-1cc3" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="1f6c-b8fa-a70e-bff7" name="Two killsaws" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="008b-7163-27fa-9c53" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="0ff0-7f12-2685-b986" name="Killsaw" hidden="false" targetId="ff18-6428-6933-82e7" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="d6e3-97bf-c964-31b3" name="Melee weapon" hidden="false" collective="false">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="657e-b773-cb19-efdf" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="e3f1-9311-b499-8c18" name="Killsaw" hidden="false" collective="false" targetId="cf8d-83cc-3e72-8832" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5847-87b2-fe2a-bc96" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="b08e-3e12-292d-dc73" name="Power Klaw" hidden="false" collective="false" targetId="307e-6966-5e6b-64c7" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="667a-894e-fd4b-f8bd" value="0.0"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="667a-894e-fd4b-f8bd" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b2-bf90-9ff5-2d0a" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="099e-d5bc-557e-4044" name="Ranged weapon" hidden="false" collective="false">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a7c-5515-aac0-f2fa" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="789c-07be-4c4c-3875" name="Kombi-weapon with Rokkit Launcha" hidden="false" collective="false" targetId="a2f7-b7aa-039d-55f4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed6e-2ea8-5fd7-358a" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="a1b0-b596-356a-d188" name="Kombi-weapon with Skorcha" hidden="false" collective="false" targetId="4e96-6242-1ba5-cd58" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f391-2866-32ab-816c" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="f4bb-ec2f-0300-b984" name="Kustom Shoota" hidden="false" collective="false" targetId="000d-f451-1e50-4345" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="3dbe-3715-1e69-c04c" value="0.0"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dbe-3715-1e69-c04c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bab-7f4e-55dc-fd0d" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="7e34-fde3-3cf5-04cd" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="cf1b-c247-63e2-8e9a" name="Meganob Weapons" hidden="false" collective="false" targetId="f641-5067-0391-08d5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="41.0"/>
@@ -3013,7 +2870,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="88dc-91f7-17b2-6c9f" name="Weapons" hidden="false" collective="false">
+    <selectionEntryGroup id="88dc-91f7-17b2-6c9f" name="Nob weapons" hidden="false" collective="false">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cabe-ee54-2b68-373c" type="min"/>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0928-a770-5105-d118" type="max"/>
@@ -3021,7 +2878,7 @@
       <selectionEntries>
         <selectionEntry id="4987-f5ed-6606-0dd7" name="Power stabba" hidden="false" collective="false" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb0b-16fe-cfff-5137" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb0b-16fe-cfff-5137" type="max"/>
           </constraints>
           <profiles>
             <profile id="4e87-734a-fe74-aacf" name="Power stabba" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
@@ -3046,12 +2903,12 @@
             <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d76-23db-31bb-a35b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d76-23db-31bb-a35b" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="8f29-2448-276b-1a34" name="Killsaw" hidden="false" collective="false" targetId="cf8d-83cc-3e72-8832" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fba-b378-bad7-917f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fba-b378-bad7-917f" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="51c0-6599-3f4c-2d39" name="Choppa" hidden="false" collective="false" targetId="e6ad-7425-f9d8-2373" type="selectionEntry">
@@ -3060,16 +2917,13 @@
             <modifier type="set" field="5291-dc2c-cfa5-a77f" value="1"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d43e-eda3-49c5-042b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d43e-eda3-49c5-042b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7f6-8dea-68cf-4b23" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="579e-13a9-a5c3-3d25" name="Power Klaw" hidden="false" collective="false" targetId="307e-6966-5e6b-64c7" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3"/>
-          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80ba-1dc8-ab83-91ab" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80ba-1dc8-ab83-91ab" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="e228-99ef-4901-8e15" name="Slugga" hidden="false" collective="false" targetId="940a-b9fd-1bc8-85ba" type="selectionEntry">
@@ -3077,8 +2931,78 @@
             <modifier type="set" field="c41a-f877-9a4e-3bed" value="0.0"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae82-5cd9-37cb-e065" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae82-5cd9-37cb-e065" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c41a-f877-9a4e-3bed" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f641-5067-0391-08d5" name="Meganob weapons" hidden="false" collective="false">
+      <modifiers>
+        <modifier type="set" field="ef80-450b-13ef-201a" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0e57-b098-6a7b-3e61" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5bf0-28d2-255e-9afa" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0e57-b098-6a7b-3e61" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bf0-28d2-255e-9afa" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef80-450b-13ef-201a" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="0e57-b098-6a7b-3e61" name="Two killsaws" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e846-5623-3596-6ac2" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="882a-0791-4d73-2601" name="Killsaw" hidden="false" targetId="ff18-6428-6933-82e7" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6ae8-9c9d-0475-951c" name="Ranged weapon" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87e2-0c3a-e866-7712" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5027-679b-1ed5-b718" name="Kombi-weapon with Rokkit Launcha" hidden="false" collective="false" targetId="a2f7-b7aa-039d-55f4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76eb-3b38-aee0-7ab9" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="983f-302d-c841-0e2d" name="Kombi-weapon with Skorcha" hidden="false" collective="false" targetId="4e96-6242-1ba5-cd58" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b896-87d1-c0e5-a9aa" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="732d-b99f-5443-dff6" name="Kustom Shoota" hidden="false" collective="false" targetId="000d-f451-1e50-4345" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="b49f-b218-69c8-f42c" value="0.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b49f-b218-69c8-f42c" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c57-dce1-cefb-29ae" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7171-c6d2-6de5-e138" name="Power Klaw" hidden="false" collective="false" targetId="307e-6966-5e6b-64c7" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="4ff5-12ad-65b6-77b9" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ff5-12ad-65b6-77b9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18be-1e88-5a94-0a7f" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
