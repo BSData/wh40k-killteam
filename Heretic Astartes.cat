@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecac-e836-08ce-c0aa" name="Heretic Astartes" revision="8" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecac-e836-08ce-c0aa" name="Heretic Astartes" revision="9" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6597-19ae-d64e-0fad" name="Khorne" hidden="false"/>
     <categoryEntry id="8057-475c-beeb-89a1" name="Tzeentch" hidden="false"/>
@@ -11,6 +11,7 @@
     <categoryEntry id="dcef-a825-ce87-0933" name="Daemon" hidden="false"/>
     <categoryEntry id="7f4e-8a05-4e12-f790" name="Khorne Berserker" hidden="false"/>
     <categoryEntry id="a71b-a6ef-d7ee-ba50" name="Possessed" publicationId="701a-4a21-90a2-7618" hidden="false"/>
+    <categoryEntry id="5a8a-7dbc-0960-2068" name="Dark Disciple" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fe39-04a9-3456-5f56" name="Aspiring Champion" hidden="false" collective="false" targetId="9254-c2fe-8376-2bfd" type="selectionEntry">
@@ -328,6 +329,7 @@
         <categoryLink id="c2ed-9933-a25a-bb3d" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="8ef0-bef5-85ba-2263" name="Dark Disciple" hidden="false" collective="false" targetId="4017-9fd8-8b45-cb52" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="4826-eb64-91a4-d148" name="Chaos Cultists" hidden="false">
@@ -1521,11 +1523,6 @@
             <characteristic name="Ld" typeId="411b-5228-afed-8334">9</characteristic>
             <characteristic name="Sv" typeId="c319-1a2d-3648-2294">3+</characteristic>
             <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3f64-5e10-4e38-2744" name="Relic of Corruption" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-          <characteristics>
-            <characteristic name="Description" typeId="b373-019d-503a-1124">Add 1&quot; to the range of a Dark Apostle&apos;s Aura Tactics for each friendly Dark Disciple that is within 1&quot; of that Dark Apostle.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2867,6 +2864,68 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4017-9fd8-8b45-cb52" name="Dark Disciple" hidden="false" collective="false" type="model">
+      <modifiers>
+        <modifier type="set" field="3e4c-9835-a7c6-eed2" value="2">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e787-b559-6782-8a96" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="3e4c-9835-a7c6-eed2" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e787-b559-6782-8a96" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3e4c-9835-a7c6-eed2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="66db-0c42-2695-19f6" name="Dark Disciple" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">6&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">4+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">5+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">1</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">1</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">6</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">5+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="de11-3be7-6fbd-4c36" name="Followers" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Models do not suffer any penalty to their Nerve tests for a friendly Dark Disciple being out of action. Dark Disciples cannot be specialists, are not part of a fire team and cannot gain experience.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="91b1-0d2b-69c5-f2d6" name="Relic of Corruption" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Add 1&quot; to the range of a Dark Apostle&apos;s Aura Tactics for each friendly Dark Disciple that is within 1&quot; of that Dark Apostle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cfb2-f407-6c86-e351" name="Faction: Heretic Astartes" hidden="false" targetId="57de-32ed-68ae-23bf" primary="false"/>
+        <categoryLink id="a2ed-ddf9-a5df-fa62" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="cbcc-4943-da6b-9664" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="d791-f4b0-ad93-6102" name="Dark Disciple" hidden="false" targetId="5a8a-7dbc-0960-2068" primary="false"/>
+        <categoryLink id="48b2-8504-a549-4cea" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="b402-288b-77f4-84a7" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3de2-aa11-da1f-937c" name="Mark of Chaos" hidden="false" collective="false" targetId="5e91-64ba-5229-d2a9" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
