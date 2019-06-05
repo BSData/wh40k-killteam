@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="7" battleScribeVersion="2.02" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="8" battleScribeVersion="2.02" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="6c15-6156-5ba7-10f3" name="Special Issue Ammunition">
       <characteristicTypes>
@@ -534,7 +534,11 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca2c-a2da-8b59-9c64" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9128-4e9a-8e5e-7c61" name="Storm bolter" hidden="false" collective="false" targetId="fa76-84bc-7536-6c24" type="selectionEntry"/>
+            <entryLink id="9128-4e9a-8e5e-7c61" name="Storm bolter" hidden="false" collective="false" targetId="fa76-84bc-7536-6c24" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </modifiers>
+            </entryLink>
             <entryLink id="ad79-3232-8250-d00d" name="Combi-flamer" hidden="false" collective="false" targetId="87cb-ba2f-b55c-b525" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="6"/>
@@ -616,10 +620,17 @@
         <infoLink id="1430-7a7d-ee3b-2b81" name="Combi" hidden="false" targetId="bbac-ebf1-7aad-2858" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4d41-aae8-4073-fcaf" name="Combi-grav" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="2.0">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32c8-19a1-be1b-d1bd" type="max"/>
       </constraints>
@@ -629,12 +640,12 @@
         <infoLink id="d66c-26b8-02db-03ce" name="Combi" hidden="false" targetId="bbac-ebf1-7aad-2858" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9458-28fc-1037-5630" name="Combi-melta" hidden="false" collective="false" type="upgrade">
       <modifiers>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="2">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="2.0">
           <conditions>
             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="instanceOf"/>
           </conditions>
@@ -649,7 +660,7 @@
         <infoLink id="a18b-2740-fe27-2b2e" name="Combi" hidden="false" targetId="bbac-ebf1-7aad-2858" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e86f-4313-7f7b-ca18" name="Combi-plasma" hidden="false" collective="false" type="upgrade">
@@ -670,19 +681,14 @@
         <infoLink id="b62f-2d71-a341-f8ea" name="Combi" hidden="false" targetId="bbac-ebf1-7aad-2858" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fa76-84bc-7536-6c24" name="Storm bolter" hidden="false" collective="false" type="upgrade">
       <modifiers>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="4">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="4.0">
           <conditions>
             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="2">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -797,10 +803,26 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec43-19c8-6e97-e6ea" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="020a-3ee9-7beb-7754" name="Storm bolter" hidden="false" collective="false" targetId="fa76-84bc-7536-6c24" type="selectionEntry"/>
-            <entryLink id="971d-0e0f-e3a4-303b" name="Combi-flamer" hidden="false" collective="false" targetId="87cb-ba2f-b55c-b525" type="selectionEntry"/>
-            <entryLink id="4b6f-229e-8065-6c81" name="Combi-melta" hidden="false" collective="false" targetId="9458-28fc-1037-5630" type="selectionEntry"/>
-            <entryLink id="2052-e6f0-a677-6d53" name="Combi-plasma" hidden="false" collective="false" targetId="e86f-4313-7f7b-ca18" type="selectionEntry"/>
+            <entryLink id="020a-3ee9-7beb-7754" name="Storm bolter" hidden="false" collective="false" targetId="fa76-84bc-7536-6c24" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="971d-0e0f-e3a4-303b" name="Combi-flamer" hidden="false" collective="false" targetId="87cb-ba2f-b55c-b525" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="2.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="4b6f-229e-8065-6c81" name="Combi-melta" hidden="false" collective="false" targetId="9458-28fc-1037-5630" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="8.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="2052-e6f0-a677-6d53" name="Combi-plasma" hidden="false" collective="false" targetId="e86f-4313-7f7b-ca18" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5.0"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -928,9 +950,21 @@
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="2c83-c555-ad3c-321e" name="Combi-flamer" hidden="false" collective="false" targetId="87cb-ba2f-b55c-b525" type="selectionEntry"/>
-            <entryLink id="801d-742e-8715-adfb" name="Combi-melta" hidden="false" collective="false" targetId="9458-28fc-1037-5630" type="selectionEntry"/>
-            <entryLink id="601e-a345-fbc9-13e7" name="Combi-plasma" hidden="false" collective="false" targetId="e86f-4313-7f7b-ca18" type="selectionEntry"/>
+            <entryLink id="2c83-c555-ad3c-321e" name="Combi-flamer" hidden="false" collective="false" targetId="87cb-ba2f-b55c-b525" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="2.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="801d-742e-8715-adfb" name="Combi-melta" hidden="false" collective="false" targetId="9458-28fc-1037-5630" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="8.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="601e-a345-fbc9-13e7" name="Combi-plasma" hidden="false" collective="false" targetId="e86f-4313-7f7b-ca18" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5.0"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4081,25 +4115,16 @@
           </constraints>
           <entryLinks>
             <entryLink id="42fb-35f9-760a-3525" name="Combi-flamer" hidden="false" collective="false" targetId="87cb-ba2f-b55c-b525" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5"/>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f86-e661-f281-39c6" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="562a-2720-bbd7-4f22" name="Combi-melta" hidden="false" collective="false" targetId="9458-28fc-1037-5630" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="9"/>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd3e-a0f9-eb76-0cad" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="36f3-d3f0-4aeb-952d" name="Combi-plasma" hidden="false" collective="false" targetId="e86f-4313-7f7b-ca18" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7"/>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f15-3e38-8870-fa20" type="max"/>
               </constraints>
