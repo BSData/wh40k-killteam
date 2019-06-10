@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecac-e836-08ce-c0aa" name="Heretic Astartes" revision="9" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecac-e836-08ce-c0aa" name="Heretic Astartes" revision="10" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6597-19ae-d64e-0fad" name="Khorne" hidden="false"/>
     <categoryEntry id="8057-475c-beeb-89a1" name="Tzeentch" hidden="false"/>
@@ -12,6 +12,14 @@
     <categoryEntry id="7f4e-8a05-4e12-f790" name="Khorne Berserker" hidden="false"/>
     <categoryEntry id="a71b-a6ef-d7ee-ba50" name="Possessed" publicationId="701a-4a21-90a2-7618" hidden="false"/>
     <categoryEntry id="5a8a-7dbc-0960-2068" name="Dark Disciple" hidden="false"/>
+    <categoryEntry id="2c0a-3b4d-314f-f31c" name="Alpha Legion" hidden="false"/>
+    <categoryEntry id="8b65-b614-a1bb-9883" name="Black Legion" hidden="false"/>
+    <categoryEntry id="fd3e-131d-7a3d-04ea" name="Emperor&apos;s Children" hidden="false"/>
+    <categoryEntry id="8e34-4910-3d06-cbd9" name="Iron Warriors" hidden="false"/>
+    <categoryEntry id="6aea-5e77-49c4-1a15" name="Night Lords" hidden="false"/>
+    <categoryEntry id="fede-d266-926c-1b42" name="Word Bearers" hidden="false"/>
+    <categoryEntry id="d560-27fc-855b-6e4f" name="World Eaters" hidden="false"/>
+    <categoryEntry id="0129-3ae9-62c0-0b7d" name="Renegade Chapter" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fe39-04a9-3456-5f56" name="Aspiring Champion" hidden="false" collective="false" targetId="9254-c2fe-8376-2bfd" type="selectionEntry">
@@ -152,7 +160,6 @@
     </entryLink>
     <entryLink id="3486-23d6-4036-e910" name="Exalted Champion" hidden="false" collective="false" targetId="84a8-bc92-4068-06ac" type="selectionEntry"/>
     <entryLink id="1833-6975-00bc-d434" name="Sorcerer" hidden="false" collective="false" targetId="e14f-c786-8a3c-56eb" type="selectionEntry"/>
-    <entryLink id="0024-589d-cafa-5c1a" name="Legion Trait" hidden="false" collective="false" targetId="ad60-33e8-2e4d-385e" type="selectionEntry"/>
     <entryLink id="f9e4-0f60-d1f2-d4e7" name="Greater Possessed" hidden="false" collective="false" targetId="bba2-068a-6667-9a3f" type="selectionEntry"/>
     <entryLink id="0385-a8ff-ef20-9ba2" name="Master of Executions" hidden="false" collective="false" targetId="11ed-36fe-5b38-662f" type="selectionEntry"/>
     <entryLink id="adb0-2d93-ce68-14b8" name="Dark Apostle" hidden="false" collective="false" targetId="e787-b559-6782-8a96" type="selectionEntry"/>
@@ -342,6 +349,174 @@
       </modifiers>
       <description>Models with the CHAOS CULTIST keyword cannot be drawn from a Legion. However, their presence in your kill team does not prevent you using a Legion Trait, as long as the model in the kill team that can be drawn from a Legion are all drawn from the same Legion. Note, however, that models with the CHAOS CULTIST keyword can never themselves benefit from a Legion Trait.</description>
     </rule>
+    <rule id="02cf-37fd-75d9-acf4" name="Hidden in Plain Sight" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b65-b614-a1bb-9883" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd3e-131d-7a3d-04ea" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aea-5e77-49c4-1a15" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e34-4910-3d06-cbd9" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fede-d266-926c-1b42" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d560-27fc-855b-6e4f" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0129-3ae9-62c0-0b7d" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e722-2731-e0e2-212f" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team are considered to be obscured to enemy models that target them if they are more than 12&quot; away from those models.</description>
+    </rule>
+    <rule id="a945-298d-a795-b92e" name="Black Crusaders" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c0a-3b4d-314f-f31c" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd3e-131d-7a3d-04ea" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aea-5e77-49c4-1a15" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e34-4910-3d06-cbd9" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fede-d266-926c-1b42" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d560-27fc-855b-6e4f" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0129-3ae9-62c0-0b7d" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e722-2731-e0e2-212f" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Leadership characteristic of models in your kill team. In addition, models in your kill team can shoot Rapid Fire weapons as if they were Assault weapons in the Shooting phase of a battle round in which they Advanced (e.g. a Rapid Fire 1 weapon would be used as if it were Assault 1).</description>
+    </rule>
+    <rule id="17bd-234f-55bc-2727" name="Flawless Perfection" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c0a-3b4d-314f-f31c" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b65-b614-a1bb-9883" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aea-5e77-49c4-1a15" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e34-4910-3d06-cbd9" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fede-d266-926c-1b42" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d560-27fc-855b-6e4f" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0129-3ae9-62c0-0b7d" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e722-2731-e0e2-212f" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Only models with the SLAANESH keyword can be drawn from this Legion. If a model in your kill team is wiithn 1&quot; of an enemy model at the beginning of the Fight phase, the model in your kill team is considered to have charged.</description>
+    </rule>
+    <rule id="bd9f-d085-372a-a852" name="Siege Lords" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b65-b614-a1bb-9883" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd3e-131d-7a3d-04ea" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aea-5e77-49c4-1a15" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c0a-3b4d-314f-f31c" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fede-d266-926c-1b42" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d560-27fc-855b-6e4f" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0129-3ae9-62c0-0b7d" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e722-2731-e0e2-212f" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team do not suffer the penalty to Injury rolls for the target of their attacks being obscured and within 1&quot; of a model or piece of terrain that is between the two models.</description>
+    </rule>
+    <rule id="1f89-a82d-a3c5-d949" name="Terror Tactics" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b65-b614-a1bb-9883" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd3e-131d-7a3d-04ea" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c0a-3b4d-314f-f31c" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e34-4910-3d06-cbd9" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fede-d266-926c-1b42" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d560-27fc-855b-6e4f" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0129-3ae9-62c0-0b7d" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e722-2731-e0e2-212f" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>When an opponent takes a Nerve test for a model from their kill team, they must add 1 to the test for each of our models (other than shaken models) that is within 3&quot; of that model.</description>
+    </rule>
+    <rule id="ca99-37fc-a5f0-a407" name="Dark Raiders" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b65-b614-a1bb-9883" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd3e-131d-7a3d-04ea" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aea-5e77-49c4-1a15" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e34-4910-3d06-cbd9" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fede-d266-926c-1b42" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d560-27fc-855b-6e4f" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c0a-3b4d-314f-f31c" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e722-2731-e0e2-212f" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can re-roll charge rolls for models in your kill team.</description>
+    </rule>
+    <rule id="1c6d-f089-654e-924e" name="Profane Zeal" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b65-b614-a1bb-9883" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd3e-131d-7a3d-04ea" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aea-5e77-49c4-1a15" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e34-4910-3d06-cbd9" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c0a-3b4d-314f-f31c" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d560-27fc-855b-6e4f" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0129-3ae9-62c0-0b7d" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e722-2731-e0e2-212f" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can re-roll failed Nerve tests for models in your kill team.</description>
+    </rule>
+    <rule id="1994-5837-7c40-6e2c" name="Butcher&apos;s Nails" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b65-b614-a1bb-9883" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd3e-131d-7a3d-04ea" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aea-5e77-49c4-1a15" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e34-4910-3d06-cbd9" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fede-d266-926c-1b42" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c0a-3b4d-314f-f31c" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0129-3ae9-62c0-0b7d" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e722-2731-e0e2-212f" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Only models with the KHORNE keyword can be drawn from this Legion. You can make one additional attack in the Fight phase with a model in your kill team if it charged, was charged or made a pile-in move granted by the Heroic Intervention Commander Tactic in that battle round.</description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="4075-809f-9ee0-32ad" name="Chaos Space Marine" hidden="false" collective="false" type="model">
@@ -407,6 +582,7 @@
           </constraints>
         </entryLink>
         <entryLink id="eae2-0473-e99c-7efe" name="Chaos Icon" hidden="false" collective="false" targetId="bd83-a5d0-a1fe-98d2" type="selectionEntryGroup"/>
+        <entryLink id="2a26-d93b-16da-7609" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
@@ -535,6 +711,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f55-112c-fc04-d3cd" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="6d54-ed16-a3c2-bc08" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
@@ -611,6 +788,7 @@
         <entryLink id="781d-fe32-a46a-0f8d" name="Mark of Chaos" hidden="false" collective="false" targetId="5e91-64ba-5229-d2a9" type="selectionEntryGroup"/>
         <entryLink id="1e5f-15b2-fb1b-9547" name="Specialism" hidden="false" collective="false" targetId="2582-24f9-c06f-b44d" type="selectionEntryGroup"/>
         <entryLink id="fea1-6819-c625-30ca" name="Frag and Krak grenades" hidden="false" collective="false" targetId="d688-708b-a896-c8ed" type="selectionEntry"/>
+        <entryLink id="c277-a9dc-6d0d-4d01" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
@@ -1145,6 +1323,7 @@
         <entryLink id="3aec-2add-0e8a-e484" name="Mark of Chaos" hidden="false" collective="false" targetId="5e91-64ba-5229-d2a9" type="selectionEntryGroup"/>
         <entryLink id="0bf1-b961-1975-d9ae" name="Frag and krak grenades" hidden="false" collective="false" targetId="d688-708b-a896-c8ed" type="selectionEntry"/>
         <entryLink id="0f9b-d929-cae1-074c" name="Specialism" hidden="false" collective="false" targetId="2582-24f9-c06f-b44d" type="selectionEntryGroup"/>
+        <entryLink id="bcd3-bd0c-aeef-c067" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="30.0"/>
@@ -1271,6 +1450,7 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f6e-488b-8aa9-9192" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="9366-a788-142b-581f" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="65.0"/>
@@ -1377,6 +1557,7 @@
       <entryLinks>
         <entryLink id="5ea0-15d0-7f61-a1d4" name="Specialism" hidden="false" collective="false" targetId="2582-24f9-c06f-b44d" type="selectionEntryGroup"/>
         <entryLink id="64c5-4c98-7e2f-69f1" name="Mark of Chaos" hidden="false" collective="false" targetId="5e91-64ba-5229-d2a9" type="selectionEntryGroup"/>
+        <entryLink id="d5ea-c239-aa6b-1bd5" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="80.0"/>
@@ -1479,6 +1660,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1c9-23b3-031a-afc7" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="1fde-2480-5d79-770d" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="71.0"/>
@@ -1569,6 +1751,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b340-2d5d-fdc7-baa8" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="839a-aab0-6102-411c" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="49.0"/>
@@ -1762,6 +1945,7 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b2e-d83b-63b1-9776" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="6517-78df-7776-8af0" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="68.0"/>
@@ -1928,6 +2112,7 @@
         <entryLink id="c321-6b1a-0a3d-b4eb" name="Psychic Powers" hidden="false" collective="false" targetId="f033-f7e2-12b2-addd" type="selectionEntryGroup"/>
         <entryLink id="8fd5-696f-a003-2feb" name="Specialism" hidden="false" collective="false" targetId="2582-24f9-c06f-b44d" type="selectionEntryGroup"/>
         <entryLink id="335e-9847-0328-f243" name="Mark of Chaos" hidden="false" collective="false" targetId="5e91-64ba-5229-d2a9" type="selectionEntryGroup"/>
+        <entryLink id="6bbd-d9f6-7a16-51ca" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="88.0"/>
@@ -2160,6 +2345,7 @@
       <entryLinks>
         <entryLink id="6115-8ab4-ad63-ec7a" name="Mark of Chaos" hidden="false" collective="false" targetId="5e91-64ba-5229-d2a9" type="selectionEntryGroup"/>
         <entryLink id="d4fc-5b20-fdc0-e363" name="Specialism" hidden="false" collective="false" targetId="2582-24f9-c06f-b44d" type="selectionEntryGroup"/>
+        <entryLink id="6b1f-3094-e7da-22ce" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="80.0"/>
@@ -2259,6 +2445,7 @@
       <entryLinks>
         <entryLink id="f092-829c-91e1-f2c8" name="Specialism" hidden="false" collective="false" targetId="2582-24f9-c06f-b44d" type="selectionEntryGroup"/>
         <entryLink id="cdac-4f58-0400-6f3c" name="Frag and krak grenades" hidden="false" collective="false" targetId="d688-708b-a896-c8ed" type="selectionEntry"/>
+        <entryLink id="fd07-1a0e-15b7-8c98" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
@@ -2402,6 +2589,7 @@
       <entryLinks>
         <entryLink id="8219-9608-8abc-cc97" name="Specialism" hidden="false" collective="false" targetId="2582-24f9-c06f-b44d" type="selectionEntryGroup"/>
         <entryLink id="adb5-1b3d-a2c9-6305" name="Frag and krak grenades" hidden="false" collective="false" targetId="d688-708b-a896-c8ed" type="selectionEntry"/>
+        <entryLink id="e583-9a01-a3bc-b88a" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="17.0"/>
@@ -2589,6 +2777,7 @@
       <entryLinks>
         <entryLink id="0432-2a02-0ac7-5801" name="Specialism" hidden="false" collective="false" targetId="2582-24f9-c06f-b44d" type="selectionEntryGroup"/>
         <entryLink id="30d3-abe7-afc2-36da" name="Frag and krak grenades" hidden="false" collective="false" targetId="d688-708b-a896-c8ed" type="selectionEntry"/>
+        <entryLink id="ab6c-00d4-61f3-ce2c" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="17.0"/>
@@ -2661,6 +2850,7 @@
       <entryLinks>
         <entryLink id="65f0-3492-a72c-d717" name="Mark of Chaos" hidden="false" collective="false" targetId="5e91-64ba-5229-d2a9" type="selectionEntryGroup"/>
         <entryLink id="662a-5209-e3bf-21fe" name="Specialism" hidden="false" collective="false" targetId="2582-24f9-c06f-b44d" type="selectionEntryGroup"/>
+        <entryLink id="a903-c362-211e-169b" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
@@ -2729,6 +2919,7 @@
         <entryLink id="3838-729c-69c4-7644" name="Chaos Icon" hidden="false" collective="false" targetId="bd83-a5d0-a1fe-98d2" type="selectionEntryGroup"/>
         <entryLink id="07d9-5114-afa6-99f2" name="Ranged weapons" hidden="false" collective="false" targetId="e5f9-e9ec-a67e-d251" type="selectionEntryGroup"/>
         <entryLink id="0022-c5ec-f88a-5d81" name="Melee weapon" hidden="false" collective="false" targetId="4c29-0c9c-8b69-7127" type="selectionEntryGroup"/>
+        <entryLink id="a6c7-10d9-eb65-e392" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="25.0"/>
@@ -2783,6 +2974,7 @@
         <entryLink id="ec7a-0fd7-8631-e458" name="Specialism" hidden="false" collective="false" targetId="2582-24f9-c06f-b44d" type="selectionEntryGroup"/>
         <entryLink id="3412-f24d-65bb-fba9" name="Ranged weapons" hidden="false" collective="false" targetId="e5f9-e9ec-a67e-d251" type="selectionEntryGroup"/>
         <entryLink id="a28b-a350-c4b9-1bde" name="Melee weapon" hidden="false" collective="false" targetId="4c29-0c9c-8b69-7127" type="selectionEntryGroup"/>
+        <entryLink id="7604-fde6-2f81-11a0" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="26.0"/>
@@ -2838,6 +3030,7 @@
         <entryLink id="cb9e-9f6c-671c-34a9" name="Chaos Icon" hidden="false" collective="false" targetId="bd83-a5d0-a1fe-98d2" type="selectionEntryGroup"/>
         <entryLink id="c9b3-b4a4-5008-61cb" name="Ranged weapons" hidden="false" collective="false" targetId="e5f9-e9ec-a67e-d251" type="selectionEntryGroup"/>
         <entryLink id="3d94-2537-e503-43f0" name="Melee weapon" hidden="false" collective="false" targetId="4c29-0c9c-8b69-7127" type="selectionEntryGroup"/>
+        <entryLink id="87fc-6a61-8507-9f08" name="Legion" hidden="false" collective="false" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="27.0"/>
@@ -2946,11 +3139,11 @@
         </selectionEntry>
         <selectionEntry id="cda4-a3cb-ae7f-13e1" name="Khorne" hidden="false" collective="false" type="upgrade">
           <modifiers>
-            <modifier type="set" field="f0df-1ce3-df4c-c82c" value="1">
+            <modifier type="set" field="f0df-1ce3-df4c-c82c" value="1.0">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91d8-38e5-8884-0cd9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d560-27fc-855b-6e4f" type="equalTo"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f5f1-3c88-54ba-b808" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -2989,7 +3182,7 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef63-3ac7-7e5a-5258" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd3e-131d-7a3d-04ea" type="equalTo"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f5f1-3c88-54ba-b808" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -3322,93 +3515,77 @@
         <entryLink id="5f56-76ac-e85f-3332" name="Malefic Discipline" hidden="false" collective="false" targetId="6b21-4de9-8a1e-abf1" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a273-63fe-5a78-fb5c" name="Legion Trait" publicationId="701a-4a21-90a2-7618" page="21" hidden="false" collective="false" defaultSelectionEntryId="e722-2731-e0e2-212f">
+    <selectionEntryGroup id="a273-63fe-5a78-fb5c" name="Legion" publicationId="701a-4a21-90a2-7618" page="21" hidden="false" collective="false" defaultSelectionEntryId="e722-2731-e0e2-212f">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4436-232a-c338-7638" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be00-543c-a45c-5946" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="e722-2731-e0e2-212f" name="*No Trait*" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e722-2731-e0e2-212f" name="*No Legion*" hidden="false" collective="false" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ef63-3ac7-7e5a-5258" name="Emperor&apos;s Children" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="6c64-9ed3-32e1-f9e5" name="Flawless Perfection" hidden="false">
-              <description>Only models with the SLAANESH keyword can be drawn from this Legion. If a model in your kill tema is wiithn 1&quot; of an enemy model at the beginning of the Fight phase, the model in your kill team is considered to have charged.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="4900-d6ba-1c04-7afa" name="Emperor&apos;s Children" hidden="false" targetId="fd3e-131d-7a3d-04ea" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3514-0027-ec3b-ab28" name="Iron Warriors" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="c1be-4f25-1099-c4a2" name="Siege Lords" hidden="false">
-              <description>Models in your kill team do not suffer the penalty to Injury rolls for the target of their attacks being obscured and within 1&quot; of a model or piece of terrain that is between the two models.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="c6f9-8cc8-423b-a106" name="Iron Warriors" hidden="false" targetId="8e34-4910-3d06-cbd9" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b9da-30c3-fef1-9d2d" name="Night Lords" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="6456-dfd9-7d1a-2257" name="Terror Tactics" hidden="false">
-              <description>When an opponent takes a Nerve test for a model from their kill team, they must add 1 to the test for each of our models (other than shaken models) that is within 3&quot; of that model.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="30c8-afd7-3c58-aeca" name="Night Lords" hidden="false" targetId="6aea-5e77-49c4-1a15" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="91d8-38e5-8884-0cd9" name="World Eaters" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="f13d-bede-6ba2-4a84" name="Butcher&apos;s Nails" hidden="false">
-              <description>Only models with the KHORNE keyword can be drawn from this Legion. You can make one additional attack in the Fight phase with a model in your kill team if it charged, was charged or made a pile-in move granted by the Heroic Intervention Commander Tactic in that battle round.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="0a18-4eb3-1f6f-6171" name="World Eaters" hidden="false" targetId="d560-27fc-855b-6e4f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b07c-5d97-1f51-8e17" name="Black Legion" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="94b3-b068-4a06-da9b" name="Black Crusaders" hidden="false">
-              <description>Add 1 to the Leadership characteristic of models in your kill team. In addition, models in your kill team can shoot Rapid Fire weapons as if they were Assault weapons in the Shooting phase of a battle round in which they Advanced (e.g. a Rapid Fire 1 weapon would be used as if it were Assault 1).</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="5059-9a12-ce6d-501b" name="Black Legion" hidden="false" targetId="8b65-b614-a1bb-9883" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0650-d6dd-c8c5-647a" name="Word Bearers" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="fd73-6648-7197-6241" name="Profane Zeal" hidden="false">
-              <description>You can re-roll failed Nerve tests for models in your kill team.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="2c0e-d89a-35c5-08fe" name="Word Bearers" hidden="false" targetId="fede-d266-926c-1b42" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6970-3fb5-2412-dfcb" name="Alpha Legion" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="802d-0ffa-3bd3-6184" name="Hidden in Plain Sight" hidden="false">
-              <description>Models in your kill team are considered to be obscured to enemy models that target them if they are more than 12&quot; away from those models.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="e068-0629-52a9-588f" name="Alpha Legion" hidden="false" targetId="2c0a-3b4d-314f-f31c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="22be-0a2e-b0fb-37a9" name="Renegade Chapters" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="fcce-c9f7-1995-ca42" name="Dark Raiders" hidden="false">
-              <description>You can re-roll charge rolls for models in your kill team.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="2136-0926-a26b-0ecf" name="Renegade Chapter" hidden="false" targetId="0129-3ae9-62c0-0b7d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
