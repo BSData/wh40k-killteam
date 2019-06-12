@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ff2c-d2cf-bc85-3c79" name="Adeptus Mechanicus" revision="14" battleScribeVersion="2.02" authorContact="https://discord.gg/UrrPB3T" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ff2c-d2cf-bc85-3c79" name="Adeptus Mechanicus" revision="15" battleScribeVersion="2.02" authorContact="https://discord.gg/UrrPB3T" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="ff2c-d2cf-pubN65537" name="Kill Team - Core Manual, Kill Team - Commanders"/>
     <publication id="ff2c-d2cf-pubN79124" name="Kill Team - Core manual"/>
@@ -18,6 +18,13 @@
     <categoryEntry id="0d62-5055-94aa-9df2" name="Electro-priest" hidden="false"/>
     <categoryEntry id="ec06-753a-abd7-38a4" name="Corpuscarii" hidden="false"/>
     <categoryEntry id="4e06-5dd8-a9ec-34eb" name="Fulgurite" hidden="false"/>
+    <categoryEntry id="2bdc-872a-a6d0-763b" name="Agripinaa" hidden="false"/>
+    <categoryEntry id="9564-8417-448a-6a3b" name="Graia" hidden="false"/>
+    <categoryEntry id="a9a2-26c7-acda-25e3" name="Lucius" hidden="false"/>
+    <categoryEntry id="4ab2-46e1-6e04-ba29" name="Mars" hidden="false"/>
+    <categoryEntry id="9e2f-9f27-4293-8bba" name="Metalica" hidden="false"/>
+    <categoryEntry id="407a-ddf9-b34f-dc4d" name="Ryza" hidden="false"/>
+    <categoryEntry id="c74a-1f68-016d-8959" name="Stygies VIII" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="873e-f307-8825-033a" name="Skitarii Ranger Alpha" hidden="false" collective="false" targetId="8fe6-d415-13e1-9274" type="selectionEntry">
@@ -264,7 +271,6 @@
     <entryLink id="836c-5b7a-c1f2-d1e3" name="Janus Draik" hidden="false" collective="false" targetId="51ae-59d9-809a-f5dc" type="selectionEntry"/>
     <entryLink id="e4da-79c0-6cd9-f403" name="UR-025" hidden="false" collective="false" targetId="55a0-9cb5-c14a-ea47" type="selectionEntry"/>
     <entryLink id="90e3-7712-b050-0886" name="Tech-priest Manipulus" hidden="false" collective="false" targetId="0de9-a626-0ac5-1a4a" type="selectionEntry"/>
-    <entryLink id="2bb2-4423-196d-93d1" name="Forge World Dogma" hidden="false" collective="false" targetId="d3db-9ebb-0e4b-3f8c" type="selectionEntry"/>
     <entryLink id="b478-e536-a3da-4cf6" name="Corpuscarii Electro-priest" hidden="false" collective="false" targetId="9975-5212-69da-5fa2" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7efe-ca47-8584-2981" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
@@ -334,6 +340,148 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule id="6ee8-4d5e-8a77-66b9" name="Staunch Defenders" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9564-8417-448a-6a3b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9a2-26c7-acda-25e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ab2-46e1-6e04-ba29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e2f-9f27-4293-8bba" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="407a-ddf9-b34f-dc4d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c74a-1f68-016d-8959" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e68c-2cc6-94d1-402c" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>When a model in your kill team fires Overwatch, they successfully hit on a roll of 5 or 6.</description>
+    </rule>
+    <rule id="e173-4c59-d342-59fc" name="Refusal to Yield" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bdc-872a-a6d0-763b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9a2-26c7-acda-25e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ab2-46e1-6e04-ba29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e2f-9f27-4293-8bba" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="407a-ddf9-b34f-dc4d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c74a-1f68-016d-8959" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e68c-2cc6-94d1-402c" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a dice each time a model in your kill team is reduced to 0 wounds. On a roll of 6 they are restored to 1 wound remaining. In addition, models in your kill team pass Nerve tests on an unmodified roll of 6 (as well as an unmodified roll of 1). However, models in your kill team cannot Retreat or Fall Back unless there is a COMMANDER from your kill team on the battlefield.</description>
+    </rule>
+    <rule id="d07b-07e2-bec9-76cc" name="The Solar Blessing" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bdc-872a-a6d0-763b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9564-8417-448a-6a3b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ab2-46e1-6e04-ba29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e2f-9f27-4293-8bba" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="407a-ddf9-b34f-dc4d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c74a-1f68-016d-8959" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e68c-2cc6-94d1-402c" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>When making saving throws for models in your kill team, treat enemy attacks with an Armour Penetration characteristic of -1 as haing an Armour Penetration characteristic of 0.</description>
+    </rule>
+    <rule id="edd5-11b9-4ec3-740d" name="Glory to the Omnissiah" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bdc-872a-a6d0-763b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9a2-26c7-acda-25e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9564-8417-448a-6a3b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e2f-9f27-4293-8bba" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="407a-ddf9-b34f-dc4d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c74a-1f68-016d-8959" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e68c-2cc6-94d1-402c" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Each time you randomly determine which Canticle of the Omnissiah is being chanted, roll two dice instead of one. Models in your kill team receive the benefit of both results, instead of just the result of the first dice (if a duplicate is rolled, no additional Canticle is chanted this turn).</description>
+    </rule>
+    <rule id="c7c2-df0d-8e87-81fa" name="Relentless March" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bdc-872a-a6d0-763b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9a2-26c7-acda-25e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ab2-46e1-6e04-ba29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9564-8417-448a-6a3b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="407a-ddf9-b34f-dc4d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c74a-1f68-016d-8959" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e68c-2cc6-94d1-402c" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team can shoot ranged weapons as if they were Assault weapons in the Shooting phase of a battle round in which they Advanced (e.g. a Rapid Fire 1 weapon would be used as if it were an Assault 1 weapon). In addition, models in your kill team do not suffer the penalty to their hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
+    </rule>
+    <rule id="27f8-5434-7c64-1c97" name="Red in Cog and Claw" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bdc-872a-a6d0-763b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9a2-26c7-acda-25e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ab2-46e1-6e04-ba29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e2f-9f27-4293-8bba" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9564-8417-448a-6a3b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c74a-1f68-016d-8959" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e68c-2cc6-94d1-402c" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can re-roll wound rolls of 1 in the Fight phase for attacks made by models in your kill team.</description>
+    </rule>
+    <rule id="cced-cd82-6658-1fee" name="Shroud Protocols" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bdc-872a-a6d0-763b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9a2-26c7-acda-25e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ab2-46e1-6e04-ba29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e2f-9f27-4293-8bba" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="407a-ddf9-b34f-dc4d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9564-8417-448a-6a3b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e68c-2cc6-94d1-402c" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team are considered to be obscured to enemy models that target them if they are more than 12&quot; away from those models.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="8ed1-8ae4-4628-3b72" name="Arc Pistol" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -662,6 +810,7 @@
           </constraints>
         </entryLink>
         <entryLink id="fa8b-ff10-0b01-e2aa" name="Skitarii Ranger Wargear" hidden="false" collective="false" targetId="4f8d-87c9-cb0f-d88e" type="selectionEntryGroup"/>
+        <entryLink id="d4cb-7f30-fab1-6662" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
@@ -793,6 +942,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="297e-73e6-7af9-ce61" name="Specialism" hidden="false" collective="false" targetId="5ae8-c885-6dc3-74b0" type="selectionEntryGroup"/>
+        <entryLink id="69f2-2a89-5ea4-42ab" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -858,6 +1008,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="9318-60a4-a995-0575" name="Specialism" hidden="false" collective="false" targetId="5ae8-c885-6dc3-74b0" type="selectionEntryGroup"/>
+        <entryLink id="4923-bd04-0cfe-4458" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -966,6 +1117,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ca70-6e9a-710c-3c34" name="Specialism" hidden="false" collective="false" targetId="5ae8-c885-6dc3-74b0" type="selectionEntryGroup"/>
+        <entryLink id="5a86-fce0-5aa0-7453" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -1017,6 +1169,7 @@
         </entryLink>
         <entryLink id="0a63-819f-cc66-744e" name="Specialism" hidden="false" collective="false" targetId="5ae8-c885-6dc3-74b0" type="selectionEntryGroup"/>
         <entryLink id="8e37-cc6d-5bfd-6ef4" name="Skitarii Vanguard Wargear" hidden="false" collective="false" targetId="631d-4178-29d4-d8a8" type="selectionEntryGroup"/>
+        <entryLink id="3b62-26e3-e26d-cf54" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
@@ -1083,6 +1236,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="19ec-9c86-9fca-cf36" name="Specialism" hidden="false" collective="false" targetId="5ae8-c885-6dc3-74b0" type="selectionEntryGroup"/>
+        <entryLink id="d669-7b4b-2b85-898d" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -1181,6 +1335,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="64c8-1caf-6427-20ac" name="Specialism" hidden="false" collective="false" targetId="5ae8-c885-6dc3-74b0" type="selectionEntryGroup"/>
+        <entryLink id="5706-095a-daf8-ceb5" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
@@ -1287,6 +1442,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c612-a878-3538-5bea" name="Specialism" hidden="false" collective="false" targetId="5ae8-c885-6dc3-74b0" type="selectionEntryGroup"/>
+        <entryLink id="545b-30ec-8e80-f2b0" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
@@ -1369,6 +1525,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ccdd-f68c-5a2a-d501" name="Specialism" hidden="false" collective="false" targetId="5ae8-c885-6dc3-74b0" type="selectionEntryGroup"/>
+        <entryLink id="c536-0d25-e133-0449" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
@@ -1438,6 +1595,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b20-87e1-0275-427f" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="0ecc-98ba-f84a-0b7f" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
@@ -1640,6 +1798,7 @@
       <entryLinks>
         <entryLink id="074f-e431-e1ba-abf1" name="Specialism" hidden="false" collective="false" targetId="6675-98bf-621c-8069" type="selectionEntryGroup"/>
         <entryLink id="1b18-fa7b-5ff6-dc24" name="Omnissian axe" hidden="false" collective="false" targetId="81be-b281-b168-8490" type="selectionEntry"/>
+        <entryLink id="41c6-07b6-23f8-d58c" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="28.0"/>
@@ -1824,6 +1983,7 @@
       <entryLinks>
         <entryLink id="2028-88ef-9383-d95e" name="Omnissian axe" hidden="false" collective="false" targetId="81be-b281-b168-8490" type="selectionEntry"/>
         <entryLink id="669e-0639-2456-2be9" name="Specialism" hidden="false" collective="false" targetId="6675-98bf-621c-8069" type="selectionEntryGroup"/>
+        <entryLink id="f048-e6e6-7ded-3e1d" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="130.0"/>
@@ -2087,24 +2247,10 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2cb0-ca02-17f3-77fd" name="Specialism" hidden="false" collective="false" targetId="6675-98bf-621c-8069" type="selectionEntryGroup"/>
+        <entryLink id="121d-aaa4-7673-875b" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="102.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d3db-9ebb-0e4b-3f8c" name="Forge World Dogma" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7f0c-ea57-e3f8-cdc7" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af52-7faa-ad39-833f" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="3988-0a86-6626-6063" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="8902-a693-b825-7744" name="Forge World Dogma" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9975-5212-69da-5fa2" name="Corpuscarii Electro-priest" hidden="false" collective="false" type="model">
@@ -2190,6 +2336,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="83af-f44c-790a-a90d" name="Specialism" hidden="false" collective="false" targetId="5ae8-c885-6dc3-74b0" type="selectionEntryGroup"/>
+        <entryLink id="0ab7-738d-0cc8-6428" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
@@ -2284,6 +2431,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="3cda-7d30-22d8-9f31" name="Specialism" hidden="false" collective="false" targetId="5ae8-c885-6dc3-74b0" type="selectionEntryGroup"/>
+        <entryLink id="bcbb-a734-7001-46ab" name="Forge World" hidden="false" collective="false" targetId="3cd7-fd53-f027-c343" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
@@ -2526,83 +2674,69 @@
         <entryLink id="a6a9-e388-e848-a483" name="Strength" hidden="false" collective="false" targetId="4550-6c27-1911-68ae" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3cd7-fd53-f027-c343" name="Forge World Dogma" hidden="false" collective="false" defaultSelectionEntryId="e68c-2cc6-94d1-402c">
+    <selectionEntryGroup id="3cd7-fd53-f027-c343" name="Forge World" hidden="false" collective="false" defaultSelectionEntryId="e68c-2cc6-94d1-402c">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e54-48b2-a664-2412" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6108-5230-937d-a1ba" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="e68c-2cc6-94d1-402c" name="*No Dogma*" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e68c-2cc6-94d1-402c" name="*No Forgeworld*" hidden="false" collective="false" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ced3-092b-9664-5bc3" name="Mars" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="6df7-91bd-5487-cf6d" name="Glory to the Omnissiah" hidden="false">
-              <description>Each time you randomly determine which Canticle of the Omnissiah is being chanted, roll two dice instead of one. Models in your kill team receive the benefit of both results, instead of just the result of the first dice (if a duplicate is rolled, no additional Canticle is chanted this turn).</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="2dc7-e7fc-bf29-730a" name="Mars" hidden="false" targetId="4ab2-46e1-6e04-ba29" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4219-56bc-2656-b283" name="Graia" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="3ee2-8644-a13a-46b5" name="Refusal to Yield" hidden="false">
-              <description>Roll a dice each time a model in your kill team is reduced to 0 wounds. On a roll of 6 they are restored to 1 wound remaining. In addition, models in your kill team pass Nerve tests on an unmodified roll of 6 (as well as an unmodified roll of 1). However, models in your kill team cannot Retreat or Fall Back unless there is a COMMANDER from your kill team on the battlefield.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="4418-ae3f-c153-fa4c" name="Graia" hidden="false" targetId="9564-8417-448a-6a3b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3fb2-e102-4e52-cdb8" name="Metalica" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="c73a-bbb0-23eb-5877" name="Relentless March" hidden="false">
-              <description>Models in your kill team can shoot ranged weapons as if they were Assault weapons in the Shooting phase of a battle round in which they Advanced (e.g. a Rapid Fire 1 weapon would be used as if it were an Assault 1 weapon). In addition, models in your kill team do not suffer the penalty to their hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="e004-cf3b-6e9a-3c57" name="Metalica" hidden="false" targetId="9e2f-9f27-4293-8bba" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="414b-a6f1-c780-faca" name="Lucius" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="3453-a089-d471-ddaf" name="The Solar Blessing" hidden="false">
-              <description>When making saving throws for models in your kill team, treat enemy attacks with an Armour Penetration characteristic of -1 as haing an Armour Penetration characteristic of 0.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="7ed5-62da-1c9a-ff7f" name="Lucius" hidden="false" targetId="a9a2-26c7-acda-25e3" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b99d-2363-109a-5a2a" name="Agripinaa" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="d820-04af-ef06-f7cf" name="Staunch Defenders" hidden="false">
-              <description>When a model in your kill team fires Overwatch, they successfully hit on a roll of 5 or 6.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="a92b-03d9-767f-6e2f" name="Agripinaa" hidden="false" targetId="2bdc-872a-a6d0-763b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0bc2-5cb8-59ae-ee1e" name="Stygies VIII" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="0cc4-274c-1292-a76b" name="Shroud Protocols" hidden="false">
-              <description>Models in your kill team are considered to be obscured to enemy models that target them if they are more than 12&quot; away from those models.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="6789-b817-4b19-f0c1" name="Stygies VIII" hidden="false" targetId="c74a-1f68-016d-8959" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="66a5-4ada-3206-f96d" name="Ryza" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="5598-1c0b-4095-02a9" name="Red in Cog and Claw" hidden="false">
-              <description>You can re-roll wound rolls of 1 in the Fight phase for attacks made by models in your kill team.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="1660-67cf-289e-f845" name="Ryza" hidden="false" targetId="407a-ddf9-b34f-dc4d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>

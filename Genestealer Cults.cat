@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5479-cc66-3156-2e54" name="Genestealer Cults" revision="11" battleScribeVersion="2.02" authorName="GenWilhelm" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5479-cc66-3156-2e54" name="Genestealer Cults" revision="12" battleScribeVersion="2.02" authorName="GenWilhelm" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="5479-cc66-pubN67382" name="Core Manual"/>
     <publication id="5479-cc66-pubN77125" name="Commanders"/>
   </publications>
   <categoryEntries>
     <categoryEntry id="7a42-ce12-ab98-203e" name="Familiar" hidden="false"/>
+    <categoryEntry id="175d-1bf1-1384-265b" name="Cult of the Four-Armed Emperor" hidden="false"/>
+    <categoryEntry id="03ec-e376-3eb2-cefa" name="The Bladed Cog" hidden="false"/>
+    <categoryEntry id="4d86-5edc-504a-dda3" name="The Hivecult" hidden="false"/>
+    <categoryEntry id="11aa-fb85-9d81-e59e" name="The Pauper Princes" hidden="false"/>
+    <categoryEntry id="1f6b-a20b-0820-b949" name="The Rusted Claw" hidden="false"/>
+    <categoryEntry id="b72f-ebb6-9ad2-b1e5" name="The Twisted Helix" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="1f47-5b15-ef03-990e" name="Genestealer" hidden="false" collective="false" targetId="0370-09e0-183b-da4d" type="selectionEntry">
@@ -288,7 +294,6 @@
         <categoryLink id="4b3a-c2e2-5702-aed8" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="c3fd-d632-b520-bb6c" name="Cult Creed" hidden="false" collective="false" targetId="6f64-b7cf-0b57-3c27" type="selectionEntry"/>
     <entryLink id="3b2e-9d2f-563e-0f46" name="Sanctus" hidden="false" collective="false" targetId="2320-9c19-ef87-c46a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="314f-0c1d-f1e3-0c19" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
@@ -316,6 +321,128 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule id="e982-88bb-b99a-d646" name="Subterranean Ambushers" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03ec-e376-3eb2-cefa" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d86-5edc-504a-dda3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11aa-fb85-9d81-e59e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6b-a20b-0820-b949" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b72f-ebb6-9ad2-b1e5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="175d-1bf1-1384-265b" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63a3-d226-0983-dc50" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to Cult Ambush rolls made for models in your kill team.</description>
+    </rule>
+    <rule id="e90b-aee6-2377-78b8" name="Cyborgised Hybrids" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="175d-1bf1-1384-265b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d86-5edc-504a-dda3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11aa-fb85-9d81-e59e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6b-a20b-0820-b949" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b72f-ebb6-9ad2-b1e5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03ec-e376-3eb2-cefa" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63a3-d226-0983-dc50" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team have a 6+ invulnerable save. Models in your kill team that already have an invulnerable save instead improve their invulnerable save by 1 (to a maximum of 3+). In addition, models in your kill team do not suffer the penalty to their hit rolls for moving and shooting Heavy weapons.</description>
+    </rule>
+    <rule id="7c74-04f8-cad6-7044" name="Disciplined Militants" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="175d-1bf1-1384-265b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03ec-e376-3eb2-cefa" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11aa-fb85-9d81-e59e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6b-a20b-0820-b949" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b72f-ebb6-9ad2-b1e5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d86-5edc-504a-dda3" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63a3-d226-0983-dc50" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>When you take a Nerve test for a model in your kill team, roll a D3 (instead of a D6). In addition, models in your kill team can shoot in a battle round in which they Retreated or Fell Back, but if they do a 6 is always required for a successful hit roll, irrespective of the firing model&apos;s Ballistic Skill or any modifiers.</description>
+    </rule>
+    <rule id="18cb-0d87-00b3-d6af" name="Devoted Zealots" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="175d-1bf1-1384-265b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03ec-e376-3eb2-cefa" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d86-5edc-504a-dda3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6b-a20b-0820-b949" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b72f-ebb6-9ad2-b1e5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11aa-fb85-9d81-e59e" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63a3-d226-0983-dc50" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can re-roll failed hit rolls in the Fight phase for attacks made by a model in your kill team if it charged, was charged, or made a pile-in movede granted by the Heroic Interventtion Commander Tactic in that battle round.</description>
+    </rule>
+    <rule id="3c23-9e62-22c8-456f" name="Nomadic Survivalists" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="175d-1bf1-1384-265b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03ec-e376-3eb2-cefa" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d86-5edc-504a-dda3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11aa-fb85-9d81-e59e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b72f-ebb6-9ad2-b1e5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6b-a20b-0820-b949" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63a3-d226-0983-dc50" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>When making saving throws for models in your kill team, treat enemy attacks with an Armour Penetration characteristic of -1 as having an Armour Penetration characteristic of 0.</description>
+    </rule>
+    <rule id="65b6-d495-f749-b983" name="Experimental Subjects" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="175d-1bf1-1384-265b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03ec-e376-3eb2-cefa" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d86-5edc-504a-dda3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11aa-fb85-9d81-e59e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6b-a20b-0820-b949" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b72f-ebb6-9ad2-b1e5" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63a3-d226-0983-dc50" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Strength characteristic of models in your kill team. In addition, when a model in your kill team Advances add an additional 2&quot; to the distance it can move.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="aaff-03b4-3284-61d6" name="Toxin Sacs" hidden="false" collective="false" type="upgrade">
       <constraints>
@@ -1023,6 +1150,7 @@
           </constraints>
         </entryLink>
         <entryLink id="e41c-3cbd-8bf0-b002" name="Specialism" hidden="false" collective="false" targetId="94ea-94d4-b309-099b" type="selectionEntryGroup"/>
+        <entryLink id="dfa8-599b-1b39-5c0e" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
@@ -1136,6 +1264,7 @@
           </constraints>
         </entryLink>
         <entryLink id="c6a4-7033-1c81-4d24" name="Specialism" hidden="false" collective="false" targetId="94ea-94d4-b309-099b" type="selectionEntryGroup"/>
+        <entryLink id="5e84-3390-1d9d-39c8" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
@@ -1252,6 +1381,7 @@
           </constraints>
         </entryLink>
         <entryLink id="002f-6aec-b26c-3f31" name="Specialism" hidden="false" collective="false" targetId="94ea-94d4-b309-099b" type="selectionEntryGroup"/>
+        <entryLink id="8d7b-a63b-b3c4-624b" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
@@ -1371,6 +1501,7 @@
           </constraints>
         </entryLink>
         <entryLink id="1876-ad9e-a59d-e700" name="Specialism" hidden="false" collective="false" targetId="94ea-94d4-b309-099b" type="selectionEntryGroup"/>
+        <entryLink id="f521-0196-3f0e-afd4" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
@@ -1543,6 +1674,7 @@
           </constraints>
         </entryLink>
         <entryLink id="3cd7-6b01-71e6-44aa" name="Specialism" hidden="false" collective="false" targetId="94ea-94d4-b309-099b" type="selectionEntryGroup"/>
+        <entryLink id="8c98-3044-d8e4-cad5" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
@@ -1619,6 +1751,7 @@
             <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="45b9-086c-a424-d7cd" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="2131-a493-5aa4-cc86" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
@@ -1706,6 +1839,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="593b-6d0f-cdd9-3b58" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="a37d-c235-c975-33b1" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
@@ -1796,6 +1930,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="666a-e321-1f92-e2d3" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="4dcf-9daf-6ce3-d508" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
@@ -1852,6 +1987,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aff-f352-7894-0c37" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="df56-3639-beb9-425c" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
@@ -2115,6 +2251,7 @@
           </constraints>
         </entryLink>
         <entryLink id="02fc-bb31-6eaa-5392" name="Commander Specialism" hidden="false" collective="false" targetId="deaa-edc3-296c-764e" type="selectionEntryGroup"/>
+        <entryLink id="a939-04c6-b838-1c84" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="30.0"/>
@@ -2240,6 +2377,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3f7-7921-06d1-1045" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="beea-6374-e7c9-1716" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="28.0"/>
@@ -2378,6 +2516,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c277-a28f-f0cf-2099" name="Commander Specialism" hidden="false" collective="false" targetId="deaa-edc3-296c-764e" type="selectionEntryGroup"/>
+        <entryLink id="3cd7-434a-60ad-4b84" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="131.0"/>
@@ -2467,6 +2606,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aca-ab2e-73b5-b4be" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="8d69-8bf9-db45-10d0" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="18.0"/>
@@ -2586,24 +2726,10 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="dd09-82ab-1c85-2dfb" name="Commander Specialism" hidden="false" collective="false" targetId="deaa-edc3-296c-764e" type="selectionEntryGroup"/>
+        <entryLink id="02cf-d3d3-2898-79ac" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="25.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6f64-b7cf-0b57-3c27" name="Cult Creed" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e9c-49e7-d3b0-1b4c" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffa1-d75f-45a3-d6bb" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="ef8b-7f0b-23c5-0958" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="140f-1371-f0ee-40eb" name="Cult Creed" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2320-9c19-ef87-c46a" name="Sanctus" hidden="false" collective="false" type="model">
@@ -2691,6 +2817,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -2713,6 +2842,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e3b2-ea9e-2829-d7b5" name="Sanctus bio-dagger" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2736,6 +2868,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="cbe6-ac4e-e204-231b" name="Commander Specialism" hidden="false" collective="false" targetId="deaa-edc3-296c-764e" type="selectionEntryGroup"/>
+        <entryLink id="45c1-c930-b008-caec" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="33.0"/>
@@ -2812,6 +2945,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adec-0759-f16f-4dbb" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="4405-3bbf-d68a-6414" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="32.0"/>
@@ -2893,6 +3027,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2903,6 +3040,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da94-115b-f7ae-a241" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="5c34-b223-97c5-be2b" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="29.0"/>
@@ -3003,6 +3141,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="f8a1-1431-1a8e-e1e7" name="Hypermorph tail" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -3021,10 +3162,14 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="f7c7-4b3b-a3b5-a38b" name="Commander Specialism" hidden="false" collective="false" targetId="deaa-edc3-296c-764e" type="selectionEntryGroup"/>
+        <entryLink id="fb32-a547-82a6-ac40" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="66.0"/>
@@ -3079,6 +3224,10 @@
         <categoryLink id="5a84-1520-92a2-8ef1" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
         <categoryLink id="e0e9-ade8-d823-3c8e" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="d1a7-d07f-642c-e7a0" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
+        <entryLink id="14f2-b36b-411e-0161" name="Specialism" hidden="false" collective="false" targetId="94ea-94d4-b309-099b" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
       </costs>
@@ -3154,6 +3303,7 @@
           </constraints>
         </entryLink>
         <entryLink id="6cff-9e10-fb36-3f75" name="Commander Specialism" hidden="false" collective="false" targetId="deaa-edc3-296c-764e" type="selectionEntryGroup"/>
+        <entryLink id="299e-902f-5ab8-ab00" name="Cult" hidden="false" collective="false" targetId="a5c9-044c-643d-e80b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="26.0"/>
@@ -3553,73 +3703,61 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a5c9-044c-643d-e80b" name="Cult Creed" hidden="false" collective="false" defaultSelectionEntryId="63a3-d226-0983-dc50">
+    <selectionEntryGroup id="a5c9-044c-643d-e80b" name="Cult" hidden="false" collective="false" defaultSelectionEntryId="63a3-d226-0983-dc50">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43c4-95c3-ab2b-00db" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03d3-f9cf-522d-b03b" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="63a3-d226-0983-dc50" name="*No Creed*" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="63a3-d226-0983-dc50" name="*No Cult*" hidden="false" collective="false" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6b3d-89c5-78b1-f679" name="Cult of the Four-Armed Emperor" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="5a4d-6d6e-440e-94c0" name="Subterranean Ambushers" hidden="false">
-              <description>Add 1 to Cult Ambush rolls made for models in your kill team.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="f8da-47bb-fd2f-bb7f" name="Cult of the Four-Armed Emperor" hidden="false" targetId="175d-1bf1-1384-265b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="aa13-c73d-3870-7b56" name="The Twisted Helix" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="39e8-a2ce-5ad8-b9a9" name="Experimental Subjects" hidden="false">
-              <description>Add 1 to the Strength characteristic of models in your kill team. In addition, when a model in your kill team Advances add an additional 2&quot; to the distance it can move.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="3e27-acd8-38cc-ca22" name="The Twisted Helix" hidden="false" targetId="b72f-ebb6-9ad2-b1e5" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4eed-a1ec-3e30-41d4" name="The Rusted Claw" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="b653-b5b2-cf9d-38c1" name="Nomadic Survivalists" hidden="false">
-              <description>When making saving throws for models in your kill team, treat enemy attacks with an Armour Penetration characteristic of -1 as having an Armour Penetration characteristic of 0.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="551f-375b-d23f-fb0f" name="The Rusted Claw" hidden="false" targetId="1f6b-a20b-0820-b949" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bd29-7565-ed47-1483" name="The Hivecult" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="0edd-bf62-336e-c2b0" name="Disciplined Militants" hidden="false">
-              <description>When you take a Nerve test for a model in your kill team, roll a D3 (instead of a D6). In addition, models in your kill team can shoot in a battle round in which they Retreated or Fell Back, but if they do a 6 is always required for a successful hit roll, irrespective of the firing model&apos;s Ballistic Skill or any modifiers.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="8207-bbc4-7b39-cc13" name="The Hivecult" hidden="false" targetId="4d86-5edc-504a-dda3" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b515-e9b8-cb4f-7480" name="The Bladed Cog" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="0e21-e36a-f5e8-287f" name="Cyborgised Hybrids" hidden="false">
-              <description>Models in your kill team have a 6+ invulnerable save. Models in your kill team that already have an invulnerable save instead improve their invulnerable save by 1 (to a maximum of 3+). In addition, models in your kill team do not suffer the penalty to their hit rolls for moving and shooting Heavy weapons.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="6f80-3c12-6dfc-c2b0" name="The Bladed Cog" hidden="false" targetId="03ec-e376-3eb2-cefa" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="53b4-a541-057e-937b" name="The Pauper Princes" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="4771-55c5-6aff-02ef" name="Devoted Zealots" hidden="false">
-              <description>You can re-roll failed hit rolls in the Fight phase for attacks made by a model in your kill team if it charged, was charged, or made a pile-in movede granted by the Heroic Interventtion Commander Tactic in that battle round.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="fa4f-ce70-36c8-6545" name="The Pauper Princes" hidden="false" targetId="11aa-fb85-9d81-e59e" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>

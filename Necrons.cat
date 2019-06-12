@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d1bc-0b71-2f3d-71eb" name="Necrons" revision="9" battleScribeVersion="2.02" authorName="BSData Team" authorContact="https://discord.gg/UrrPB3T" authorUrl="https://github.com/BSData/wh40k-killteam/" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d1bc-0b71-2f3d-71eb" name="Necrons" revision="10" battleScribeVersion="2.02" authorName="BSData Team" authorContact="https://discord.gg/UrrPB3T" authorUrl="https://github.com/BSData/wh40k-killteam/" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="d1bc-0b71-pubN65537" name="Warhammer 40,000: Kill Team"/>
     <publication id="d1bc-0b71-pubN66483" name="Codex: Necrons"/>
@@ -9,6 +9,11 @@
   <categoryEntries>
     <categoryEntry id="7527-a514-7ada-0c2e" name="Triarch Praetorian" hidden="false"/>
     <categoryEntry id="7758-9ca8-4d2f-34a2" name="Lychguard" hidden="false"/>
+    <categoryEntry id="e70c-eb11-9d9a-f7f8" name="Mephrit" hidden="false"/>
+    <categoryEntry id="d884-4ca1-6d48-fa85" name="Nephrekh" hidden="false"/>
+    <categoryEntry id="e2f0-db23-ba88-e7de" name="Nihilakh" hidden="false"/>
+    <categoryEntry id="ef07-76a9-5bd5-28c2" name="Novokh" hidden="false"/>
+    <categoryEntry id="1e24-87d6-ef0b-6517" name="Sautekh" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="02d4-09c1-3506-61fe" name="Immortal" hidden="false" collective="false" targetId="040a-73a0-6c8d-2733" type="selectionEntry">
@@ -157,11 +162,6 @@
         <categoryLink id="ae9f-1d46-cd56-5ce7" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e0d1-8419-63a1-e0b4" name="Dynastic Code" hidden="false" collective="false" targetId="8b47-91d9-c6d1-4b47" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="fefe-264f-0c4b-b31d" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="005c-c10c-1a4d-d677" name="Triarch Praetorian" hidden="false" collective="false" targetId="5166-8ff9-c66d-b073" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="bf38-6e42-9cb8-d9f4" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
@@ -231,6 +231,103 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule id="e73b-2e7d-c0fa-65f1" name="Solar Fury" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e70c-eb11-9d9a-f7f8" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d884-4ca1-6d48-fa85" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2f0-db23-ba88-e7de" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef07-76a9-5bd5-28c2" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e24-87d6-ef0b-6517" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0aa-7bd4-d887-94b9" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>If a model in your kill team targets an enemy model that is within range and not at long range when making a Shooting attack, improve the Armour Penetration characteristic of the weapon&apos;s attack by 1 (i.e. an Armour Penetration characteristic of &apos;0&apos; becomes &apos;-1&apos;; an Armour Penetration characteristic of &apos;-1&apos; becomes &apos;-2&apos;, etc.).</description>
+    </rule>
+    <rule id="795b-9787-680e-6ac7" name="Translocation Beams" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d884-4ca1-6d48-fa85" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e70c-eb11-9d9a-f7f8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2f0-db23-ba88-e7de" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef07-76a9-5bd5-28c2" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e24-87d6-ef0b-6517" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0aa-7bd4-d887-94b9" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>If a model in your kill team Advances, you can re-roll the D6 to determine the increase to that model&apos;s Move characteristic. In addition, if a model in your kill team Advances, it can move across models and terrain as if they were not there.</description>
+    </rule>
+    <rule id="afa7-3fad-8d68-58f3" name="Aggressively Territorial" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2f0-db23-ba88-e7de" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e70c-eb11-9d9a-f7f8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d884-4ca1-6d48-fa85" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef07-76a9-5bd5-28c2" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e24-87d6-ef0b-6517" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0aa-7bd4-d887-94b9" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Re-roll unmodified hit rolls of 1 in the Shooting phase for models in your kill team if they have not moved in this battle round.</description>
+    </rule>
+    <rule id="8987-4dd6-f243-8e6c" name="Awakened by Murder" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef07-76a9-5bd5-28c2" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e70c-eb11-9d9a-f7f8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d884-4ca1-6d48-fa85" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2f0-db23-ba88-e7de" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e24-87d6-ef0b-6517" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0aa-7bd4-d887-94b9" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can re-roll failed hit rolls in the Fight phase for attacks made by a model in your kill team if it charged, was charged, or made a pile-in move granted by the Heroic Intervention Commander Tactic in that battle round.</description>
+    </rule>
+    <rule id="4333-5527-ca30-0c93" name="Relentless Advance" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e24-87d6-ef0b-6517" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e70c-eb11-9d9a-f7f8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d884-4ca1-6d48-fa85" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2f0-db23-ba88-e7de" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef07-76a9-5bd5-28c2" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0aa-7bd4-d887-94b9" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team can shoot ranged weapons as if they were Assault weapons in the Shooting phase of a battle round in which they Advanced (e.g. a Rapid Fire 1 weapon would be used as if it were an Assault 1 weapon).</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="e299-24fe-f16d-dd4c" name="Deathmark" hidden="false" collective="false" type="model">
       <modifiers>
@@ -290,6 +387,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="979e-5055-32ce-9227" name="Specialist Type" hidden="false" collective="false" targetId="9654-238a-3415-2111" type="selectionEntryGroup"/>
+        <entryLink id="a1c6-72bf-f9ed-e0f6" name="Dynasty" hidden="false" collective="false" targetId="644a-2bc2-69ca-b770" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
@@ -353,6 +451,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="7709-3b79-e30b-ba75" name="Specialist Type" hidden="false" collective="false" targetId="9654-238a-3415-2111" type="selectionEntryGroup"/>
+        <entryLink id="0163-14fb-8ce0-c065" name="Dynasty" hidden="false" collective="false" targetId="644a-2bc2-69ca-b770" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -443,6 +542,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="5d94-2180-8a30-0a40" name="Specialist Type" hidden="false" collective="false" targetId="9654-238a-3415-2111" type="selectionEntryGroup"/>
+        <entryLink id="5edc-7637-4ed1-4d05" name="Dynasty" hidden="false" collective="false" targetId="644a-2bc2-69ca-b770" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
@@ -506,6 +606,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="af71-6616-1275-1de0" name="Specialist Type" hidden="false" collective="false" targetId="9654-238a-3415-2111" type="selectionEntryGroup"/>
+        <entryLink id="b500-d2eb-f262-09d4" name="Dynasty" hidden="false" collective="false" targetId="644a-2bc2-69ca-b770" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
@@ -729,6 +830,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="9230-6961-9342-1d2d" name="Specialism" hidden="false" collective="false" targetId="9654-238a-3415-2111" type="selectionEntryGroup"/>
+        <entryLink id="26ba-09d8-6b34-8cc1" name="Dynasty" hidden="false" collective="false" targetId="644a-2bc2-69ca-b770" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="86.0"/>
@@ -820,21 +922,10 @@
           </constraints>
         </entryLink>
         <entryLink id="978b-6e9d-936b-60b9" name="Specialism" hidden="false" collective="false" targetId="9654-238a-3415-2111" type="selectionEntryGroup"/>
+        <entryLink id="618e-7962-c9dd-9b55" name="Dynasty" hidden="false" collective="false" targetId="644a-2bc2-69ca-b770" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="44.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="8b47-91d9-c6d1-4b47" name="Dynastic Code" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5672-2615-e1e9-7897" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b6d-39a5-aa5a-bc09" type="min"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="1b56-febe-f283-ca5d" name="Dynastic Codes" hidden="false" collective="false" targetId="644a-2bc2-69ca-b770" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5166-8ff9-c66d-b073" name="Triarch Praetorian" hidden="false" collective="false" type="model">
@@ -1058,6 +1149,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="f6e1-caf6-0070-9861" name="Specialism" hidden="false" collective="false" targetId="9654-238a-3415-2111" type="selectionEntryGroup"/>
+        <entryLink id="25c4-01e6-8731-3e52" name="Dynasty" hidden="false" collective="false" targetId="644a-2bc2-69ca-b770" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
@@ -1305,63 +1397,53 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="644a-2bc2-69ca-b770" name="Dynastic Codes" hidden="false" collective="false" defaultSelectionEntryId="a0aa-7bd4-d887-94b9">
+    <selectionEntryGroup id="644a-2bc2-69ca-b770" name="Dynasty" hidden="false" collective="false" defaultSelectionEntryId="a0aa-7bd4-d887-94b9">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a8c-e5a8-86f5-9bf2" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="661d-b1a3-e27e-e315" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="6d3a-6849-026a-a557" name="Sautekh" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="07c3-af81-1064-c454" name="Relentless Advance" hidden="false">
-              <description>Models in your kill team can shoot ranged weapons as if they were Assault weapons in the Shooting phase of a battle round in which they Advanced (e.g. a Rapid Fire 1 weapon would be used as if it were an Assault 1 weapon).</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="8b75-47d5-1d1b-cc5d" name="Sautekh" hidden="false" targetId="1e24-87d6-ef0b-6517" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="eada-714e-dfa1-f159" name="Mephrit" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="15fb-4e7d-2254-714b" name="Solar Fury" hidden="false">
-              <description>If a model in your kill team targets an enemy model that is within range and not at long range when making a Shooting attack, improve the Armour Penetration characteristic of the weapon&apos;s attack by 1 (i.e. an Armour Penetration characteristic of &apos;0&apos; becomes &apos;-1&apos;; an Armour Penetration characteristic of &apos;-1&apos; becomes &apos;-2&apos;, etc.).</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="694d-c947-1766-994d" name="Mephrit" hidden="false" targetId="e70c-eb11-9d9a-f7f8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5517-78e5-8921-62cc" name="Novokh" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="d3bb-01ba-8f27-bd7f" name="Awakened by Murder" hidden="false">
-              <description>You can re-roll failed hit rolls in the Fight phase for attacks made by a model in your kill team if it charged, was charged, or made a pile-in move granted by the Heroic Intervention Commander Tactic in that battle round.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="8caf-a81b-fb36-7df3" name="Novokh" hidden="false" targetId="ef07-76a9-5bd5-28c2" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="996d-11a2-d8ca-24dc" name="Nihilakh" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="a338-786a-2f4d-4428" name="Aggressively Territorial" hidden="false">
-              <description>Re-roll unmodified hit rolls of 1 in the Shooting phase for models in your kill team if they have not moved in this battle round.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="3985-1a7b-0b8a-61c0" name="Nihilakh" hidden="false" targetId="e2f0-db23-ba88-e7de" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a0aa-7bd4-d887-94b9" name="*No Code*" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a0aa-7bd4-d887-94b9" name="*No Dynasty*" hidden="false" collective="false" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="69a1-3328-0f7b-65a4" name="Nephrekh" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="2edd-d9a8-05ab-042e" name="Translocation Beams" hidden="false">
-              <description>If a model in your kill team Advances, you can re-roll the D6 to determine the increase to that model&apos;s Move characteristic. In addition, if a model in your kill team Advances, it can move across models and terrain as if they were not there.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="39ec-59be-5218-ad6d" name="Nephrekh" hidden="false" targetId="d884-4ca1-6d48-fa85" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>

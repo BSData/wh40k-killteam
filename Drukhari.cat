@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3591-2aa0-250c-ddeb" name="Drukhari" revision="13" battleScribeVersion="2.02" authorName="Farseer Veraenthis" authorContact="@FarseerVeraenthis on Gitter" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3591-2aa0-250c-ddeb" name="Drukhari" revision="14" battleScribeVersion="2.02" authorName="Farseer Veraenthis" authorContact="@FarseerVeraenthis on Gitter" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="3591-2aa0-pubN65537" name="Kill Team Core Manual"/>
   </publications>
@@ -13,6 +13,16 @@
     <categoryEntry id="00e9-ae22-0c43-4e26" name="Mandrake" hidden="false"/>
     <categoryEntry id="b519-33b8-6d25-334e" name="Kabal" hidden="false"/>
     <categoryEntry id="544e-9879-8f40-472b" name="Wych Cult" hidden="false"/>
+    <categoryEntry id="7d23-49a9-045e-2781" name="Cult of Strife" hidden="false"/>
+    <categoryEntry id="0865-b796-9a79-52cf" name="Cult of the Red Grief" hidden="false"/>
+    <categoryEntry id="d77f-ce4e-f7bd-48b7" name="Cult of the Cursed Blade" hidden="false"/>
+    <categoryEntry id="44b9-a081-d709-d5d1" name="The Prophets of Flesh" hidden="false"/>
+    <categoryEntry id="5f8c-e74a-45bb-dff5" name="Coven of Twelve" hidden="false"/>
+    <categoryEntry id="1dab-097e-b6d5-4d81" name="The Dark Creed" hidden="false"/>
+    <categoryEntry id="f05d-f958-10dd-569d" name="Kabal of the Black Heart" hidden="false"/>
+    <categoryEntry id="1f18-16ca-eee8-014a" name="Kabal of the Obsidian Rose" hidden="false"/>
+    <categoryEntry id="1045-c03e-b5bf-8c88" name="Kabal of the Flayed Skull" hidden="false"/>
+    <categoryEntry id="6079-15c0-f7a3-18ed" name="Kabal of the Poisoned Tongue" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="0b86-0f56-a395-319c" name="Hekatrix" hidden="false" collective="false" targetId="7f12-9d40-1248-f67a" type="selectionEntry">
@@ -338,7 +348,6 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="984a-d289-f72f-34f8" name="Drukhari Obsession" hidden="false" collective="false" targetId="cb88-ce33-97c0-f56d" type="selectionEntry"/>
     <entryLink id="ffeb-868f-9b26-b70c" name="Incubi Fire Team" hidden="false" collective="false" targetId="337e-6000-7e3d-5206" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -349,6 +358,202 @@
       </modifiers>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule id="a3b6-78e3-7e1d-de68" name="Butchers of Flesh" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b519-33b8-6d25-334e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="544e-9879-8f40-472b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1693-4fdf-74ba-15eb" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="deb5-6740-7ac5-c399" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c9-bee4-3e78-50b6" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12de-4f33-f58f-5089" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Improve the Armour Penetration characteristic of all melee weapons used by your kill team by 1. For example, an Armour Penetration characteristic of 0 becomes -1; an Armour Penetration characteristic of -1 becomes -2, and so on.</description>
+    </rule>
+    <rule id="ecb0-cbb2-b4de-26e0" name="Distillers of Fear" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b519-33b8-6d25-334e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="544e-9879-8f40-472b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="deb5-6740-7ac5-c399" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12de-4f33-f58f-5089" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c9-bee4-3e78-50b6" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1693-4fdf-74ba-15eb" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>When an opponent takes a Nerve test for a model from their kill team, they must add 1 to the roll for each of your models (rather than shaken models) that is within 3&quot; of that model.</description>
+    </rule>
+    <rule id="bf1d-8842-a818-c546" name="Connoisseurs of Pain" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b519-33b8-6d25-334e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="544e-9879-8f40-472b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1693-4fdf-74ba-15eb" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12de-4f33-f58f-5089" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c9-bee4-3e78-50b6" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="deb5-6740-7ac5-c399" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team with the Insensible to Pain ability have an invulnerable save of 4+ (instead of 5+).</description>
+    </rule>
+    <rule id="8acd-d5dc-be53-1d24" name="Thirst for Power" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5129-e78c-6736-a55b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="544e-9879-8f40-472b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1604-dae3-1497-969f" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d537-60a9-61dd-ff89" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60e0-ecee-3a78-5aa6" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2753-dda2-a2a9-3e6a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b878-a3be-ad4c-4a7a" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team count the current battle round as being 1 higher than it actually is when determining what bonuses they get from their Power from Pain ability. Models in your kill team that do not have the Power from Pain ability instead gain the Inured to Suffering bonus.</description>
+    </rule>
+    <rule id="7e7b-c9a7-0f46-778f" name="Inescapable Slayers" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5129-e78c-6736-a55b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="544e-9879-8f40-472b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1604-dae3-1497-969f" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2753-dda2-a2a9-3e6a" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60e0-ecee-3a78-5aa6" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d537-60a9-61dd-ff89" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b878-a3be-ad4c-4a7a" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team do not suffer the penalty to hit rolls for the target of their attacks being obcured or because of intervening terrain.</description>
+    </rule>
+    <rule id="c743-2882-3b40-2024" name="Flawless Workmanship" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5129-e78c-6736-a55b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="544e-9879-8f40-472b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1604-dae3-1497-969f" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2753-dda2-a2a9-3e6a" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60e0-ecee-3a78-5aa6" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b878-a3be-ad4c-4a7a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d537-60a9-61dd-ff89" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team do not suffer the penalty to hit rolls for their attacks that target enemy models at long range.</description>
+    </rule>
+    <rule id="5883-cd3f-ab9a-e726" name="The Serpent&apos;s Kiss" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5129-e78c-6736-a55b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="544e-9879-8f40-472b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d537-60a9-61dd-ff89" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2753-dda2-a2a9-3e6a" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60e0-ecee-3a78-5aa6" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1604-dae3-1497-969f" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b878-a3be-ad4c-4a7a" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Re-roll wound rolls of 1 made for melee weapons and poisoned weapons used by models in your kill team. For the purposes of this Obsession, a poisoned weapon is any weapon that wounds on a particular roll (e.g. on a 4+).</description>
+    </rule>
+    <rule id="1361-8bf7-74b8-f4b2" name="The Spectacle of Murder" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5129-e78c-6736-a55b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b519-33b8-6d25-334e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ab2-ee8c-4c9c-509c" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c337-e8b8-4634-f2d7" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3da-7748-6a4a-8435" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0840-9308-2a87-5c01" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can make one additional attack in the Fight phase with a model in your kill team if it charged, was charged or made a pile-in move granted by the Heroic Intervention Commander Tactic in that battle round.</description>
+    </rule>
+    <rule id="3080-cc36-ab00-bf85" name="Only the Strong Will Thrive" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5129-e78c-6736-a55b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b519-33b8-6d25-334e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ab2-ee8c-4c9c-509c" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c337-e8b8-4634-f2d7" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0840-9308-2a87-5c01" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3da-7748-6a4a-8435" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Increase the Strength characteristic of models from your kill team by 1. In addition, when you take a Nerve test for a model in your kill team, subtract 1 from the result.</description>
+    </rule>
+    <rule id="2ce8-9f02-9852-859b" name="Speed of the Kill" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5129-e78c-6736-a55b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b519-33b8-6d25-334e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0840-9308-2a87-5c01" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c337-e8b8-4634-f2d7" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ab2-ee8c-4c9c-509c" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3da-7748-6a4a-8435" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can re-roll charge rolls for models in your kill team.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="7c6a-ce45-bee2-c316" name="Shardnet and Impaler" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -619,20 +824,10 @@
     </selectionEntry>
     <selectionEntry id="7f12-9d40-1248-f67a" name="Hekatrix" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="81f2-e4f8-d4e1-dc47" value="1">
+        <modifier type="set" field="81f2-e4f8-d4e1-dc47" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
           </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -692,7 +887,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="f454-10da-2dc7-e8a0" name="Plasma Grenade" hidden="false" collective="false" targetId="133b-b340-201b-8879" type="selectionEntry">
+        <entryLink id="f454-10da-2dc7-e8a0" name="Plasma grenades" hidden="false" collective="false" targetId="133b-b340-201b-8879" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c6f-2837-5780-c0f2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e2f5-3e45-b46c-3768" type="max"/>
@@ -704,6 +899,7 @@
           </constraints>
         </entryLink>
         <entryLink id="479e-d799-2b55-1fde" name="Wych Specialism" hidden="false" collective="false" targetId="7b50-5670-410c-ecbd" type="selectionEntryGroup"/>
+        <entryLink id="561d-0d58-cdc0-ff14" name="Wych Cult" hidden="false" collective="false" targetId="1499-de6a-1a82-ab1a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
@@ -711,20 +907,10 @@
     </selectionEntry>
     <selectionEntry id="11e5-2ca6-c87b-fbff" name="Wych Fighter" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="cd37-1639-0fc0-06d9" value="3">
+        <modifier type="set" field="cd37-1639-0fc0-06d9" value="3.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
           </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -814,24 +1000,13 @@
           </constraints>
         </entryLink>
         <entryLink id="af09-f7f3-0f6b-9f96" name="Wych Specialism" hidden="false" collective="false" targetId="7b50-5670-410c-ecbd" type="selectionEntryGroup"/>
+        <entryLink id="c902-79e3-e211-30b5" name="Wych Cult" hidden="false" collective="false" targetId="1499-de6a-1a82-ab1a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8da1-5ea3-046c-2bd5" name="Wych" hidden="false" collective="false" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="c30f-b92f-6542-95b0" name="Wych" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
           <characteristics>
@@ -882,6 +1057,7 @@
           </constraints>
         </entryLink>
         <entryLink id="cbed-940c-457e-7a3a" name="Wych Specialism" hidden="false" collective="false" targetId="7b50-5670-410c-ecbd" type="selectionEntryGroup"/>
+        <entryLink id="50ce-8976-11ae-f8c8" name="Wych Cult" hidden="false" collective="false" targetId="1499-de6a-1a82-ab1a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
@@ -889,20 +1065,10 @@
     </selectionEntry>
     <selectionEntry id="35a3-8c8a-3e0a-3570" name="Sybarite" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="697b-5baa-d077-19bf" value="1">
+        <modifier type="set" field="697b-5baa-d077-19bf" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
           </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -964,6 +1130,7 @@
           </constraints>
         </entryLink>
         <entryLink id="8282-5dd0-08dc-68f4" name="Kabalite Warrior Specialism" hidden="false" collective="false" targetId="724c-ece1-8107-8e34" type="selectionEntryGroup"/>
+        <entryLink id="bf18-7dd0-c9d8-e72f" name="Kabal" hidden="false" collective="false" targetId="86fc-0394-f66d-3f3a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
@@ -971,20 +1138,10 @@
     </selectionEntry>
     <selectionEntry id="e855-16d1-d6be-38e2" name="Kabalite Gunner" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="140d-e671-abaa-c936" value="2">
+        <modifier type="set" field="140d-e671-abaa-c936" value="2.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
           </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -1070,24 +1227,13 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4d6a-92c5-8183-9ba7" name="Kabalite Warrior Specialism" hidden="false" collective="false" targetId="724c-ece1-8107-8e34" type="selectionEntryGroup"/>
+        <entryLink id="4f82-7e8d-9fb4-aab7" name="Kabal" hidden="false" collective="false" targetId="86fc-0394-f66d-3f3a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eada-f83b-0853-5544" name="Kabalite Warrior" hidden="false" collective="false" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="b366-a951-3b9a-7a18" name="Kabalite Warrior" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
           <characteristics>
@@ -1123,24 +1269,13 @@
           </constraints>
         </entryLink>
         <entryLink id="9cca-9179-3ebd-294e" name="Kabalite Warrior Specialism" hidden="false" collective="false" targetId="724c-ece1-8107-8e34" type="selectionEntryGroup"/>
+        <entryLink id="20c8-4e9f-f631-121a" name="Kabal" hidden="false" collective="false" targetId="86fc-0394-f66d-3f3a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="53c5-45d2-c3b2-9748" name="Kabalite Warrior Fire Team" hidden="false" collective="false" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c42-20d7-9124-8198" type="max"/>
       </constraints>
@@ -1188,18 +1323,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7169-992d-3b64-7b89" name="Wych Fire Team" hidden="false" collective="false" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e46f-decb-9dd6-1148" type="max"/>
       </constraints>
@@ -1282,7 +1405,7 @@
     </selectionEntry>
     <selectionEntry id="401b-a8d1-aaaf-d933" name="Archon" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15.0">
           <conditions>
             <condition field="selections" scope="401b-a8d1-aaaf-d933" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="equalTo"/>
           </conditions>
@@ -1303,16 +1426,6 @@
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1399,6 +1512,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="10bc-a7b8-864a-f2d9" name="Archon Specialism" hidden="false" collective="false" targetId="5d93-5837-5b99-bb56" type="selectionEntryGroup"/>
+        <entryLink id="a4d4-430f-acc5-295c" name="Kabal" hidden="false" collective="false" targetId="86fc-0394-f66d-3f3a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="56.0"/>
@@ -1421,22 +1535,12 @@
             <condition field="selections" scope="44c9-3d92-61bd-314a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="2f89-0c04-b67c-2743" value="1">
+        <modifier type="set" field="2f89-0c04-b67c-2743" value="1.0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1535,7 +1639,7 @@
             <condition field="selections" scope="acef-f35c-c102-d3fe" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20.0">
           <conditions>
             <condition field="selections" scope="acef-f35c-c102-d3fe" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
           </conditions>
@@ -1546,26 +1650,6 @@
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1643,24 +1727,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efa0-2ea0-a7a7-a5ca" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="b04f-b656-213b-8726" name="Haemonculus Coven" hidden="false" collective="false" targetId="962a-1b04-e2d9-2c2a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="30.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5d2c-0220-4311-cd7b" name="Wrack" hidden="false" collective="false" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="d6a0-905c-75dd-a114" name="Wrack" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
           <characteristics>
@@ -1697,6 +1770,7 @@
           </constraints>
         </entryLink>
         <entryLink id="3655-49ec-1513-67d0" name="Wrack Specialism" hidden="false" collective="false" targetId="35bd-216d-599f-0a40" type="selectionEntryGroup"/>
+        <entryLink id="6f00-b008-a1c1-cd36" name="Haemonculus Coven" hidden="false" collective="false" targetId="962a-1b04-e2d9-2c2a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
@@ -1721,20 +1795,10 @@
     </selectionEntry>
     <selectionEntry id="8d67-a6d2-81ff-fe91" name="Wrack Gunner" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="32c3-b500-0726-93e9" value="2">
+        <modifier type="set" field="32c3-b500-0726-93e9" value="2.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
           </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -1805,6 +1869,7 @@
           </constraints>
         </entryLink>
         <entryLink id="8820-e83e-875a-802c" name="Wrack Specialism" hidden="false" collective="false" targetId="35bd-216d-599f-0a40" type="selectionEntryGroup"/>
+        <entryLink id="5ce6-58ce-b362-64a2" name="Haemonculus Coven" hidden="false" collective="false" targetId="962a-1b04-e2d9-2c2a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
@@ -1812,20 +1877,10 @@
     </selectionEntry>
     <selectionEntry id="8734-4930-1897-0087" name="Acothyst" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="bf37-bb1a-d0f8-1701" value="1">
+        <modifier type="set" field="bf37-bb1a-d0f8-1701" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
           </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -1968,6 +2023,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c2f3-e224-c7c0-6271" name="Wrack Specialism" hidden="false" collective="false" targetId="35bd-216d-599f-0a40" type="selectionEntryGroup"/>
+        <entryLink id="3030-5395-9126-e21e" name="Haemonculus Coven" hidden="false" collective="false" targetId="962a-1b04-e2d9-2c2a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
@@ -2070,18 +2126,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e556-6a87-b82b-6b1e" name="Wrack Fire Team" hidden="false" collective="false" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2d7-2529-253f-0c25" type="max"/>
       </constraints>
@@ -2175,18 +2219,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f4a6-5f17-705e-5606" name="Grotesque" hidden="false" collective="false" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="f96b-b685-b275-9f3f" name="Grotesque" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
           <characteristics>
@@ -2253,6 +2285,7 @@
           </constraints>
         </entryLink>
         <entryLink id="2857-6c7a-0990-09cf" name="Grotesque Specialism" hidden="false" collective="false" targetId="28f8-a68f-8479-6db9" type="selectionEntryGroup"/>
+        <entryLink id="d7fd-663a-e48c-6f28" name="Haemonculus Coven" hidden="false" collective="false" targetId="962a-1b04-e2d9-2c2a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="38.0"/>
@@ -2276,18 +2309,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d5a9-fe89-67d6-b572" name="Grotesque Fire Team" hidden="false" collective="false" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2c-70bc-a429-5818" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e60f-4e6e-7fd8-5c5f" type="max"/>
       </constraints>
@@ -2524,34 +2545,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cb88-ce33-97c0-f56d" name="Drukhari Obsession" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a67f-ba6c-bf59-ee4c" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46de-b2bb-3538-a160" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="3432-99e7-1be7-5513" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="e535-52f9-b02c-be91" name="Drukhari Obsession" hidden="false" collective="false" targetId="7057-8183-1ddc-8282" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="337e-6000-7e3d-5206" name="Incubus Fire Team" hidden="false" collective="false" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e9-c673-78db-b7b8" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66a2-f0e0-9acb-c91f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="117f-4eea-b06b-432a" type="max"/>
       </constraints>
@@ -2796,144 +2790,112 @@
         <entryLink id="10ac-e3ed-d7c1-2c14" name="Leader" hidden="false" collective="false" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7057-8183-1ddc-8282" name="Drukhari Obsession" hidden="false" collective="false" defaultSelectionEntryId="5501-5964-e15b-c922">
+    <selectionEntryGroup id="962a-1b04-e2d9-2c2a" name="Haemonculus Coven" hidden="false" collective="false" defaultSelectionEntryId="c1c9-bee4-3e78-50b6">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a0-21a8-2ae4-52d5" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d05c-37fe-a764-e7ec" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20db-3977-17b3-745d" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d80e-994e-f9ef-a4fd" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="5501-5964-e15b-c922" name="*No Obsession*" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d58-bcbf-06dd-8127" type="max"/>
-          </constraints>
+        <selectionEntry id="deb5-6740-7ac5-c399" name="The Prophets of Flesh" hidden="false" collective="false" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="c559-f8f8-7838-7100" name="The Prophets of Flesh" hidden="false" targetId="44b9-a081-d709-d5d1" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="1693-4fdf-74ba-15eb" name="The Dark Creed" hidden="false" collective="false" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="0018-e737-95e2-5218" name="The Dark Creed" hidden="false" targetId="1dab-097e-b6d5-4d81" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="12de-4f33-f58f-5089" name="Coven of Twelve" hidden="false" collective="false" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="db27-95be-f85b-941c" name="Coven of Twelve" hidden="false" targetId="5f8c-e74a-45bb-dff5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c1c9-bee4-3e78-50b6" name="*No Coven*" hidden="false" collective="false" type="upgrade"/>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="66a2-f0e0-9acb-c91f" name="Kabal" hidden="false" collective="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f60-d7f1-e914-f52d" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="1210-bad2-f262-8d76" name="Kabal of the Black Heart" hidden="false" collective="false" type="upgrade">
-              <rules>
-                <rule id="f63d-6a90-10e5-2256" name="Thirst for Power" hidden="false">
-                  <description>Models in your kill team count the current battle round as being 1 higher than it actually is when determining what bonuses they get from their Power from Pain ability. Models in your kill team that do not have the Power from Pain ability instead gain the Inured to Suffering bonus.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c658-47aa-0aba-7db0" name="Kabal of the Flayed Skull" hidden="false" collective="false" type="upgrade">
-              <rules>
-                <rule id="ec98-b58d-15aa-18ba" name="Inescapable Slayers" hidden="false">
-                  <description>Models in your kill team do not suffer the penalty to hit rolls for the target of their attacks being obcured or because of intervening terrain.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9616-7b43-1211-3c94" name="Kabal of the Poisoned Tongue" hidden="false" collective="false" type="upgrade">
-              <rules>
-                <rule id="4397-7e26-6a9f-2159" name="The Serpent&apos;s Kiss" hidden="false">
-                  <description>Re-roll wound rolls of 1 made for melee weapons and poisoned weapons used by models in your kill team. For the purposes of this Obsession, a poisoned weapon is any weapon that wounds on a particular roll (e.g. on a 4+).</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="83e2-7ad6-fcca-f7a9" name="Kabal of the Obsidian Rose" hidden="false" collective="false" type="upgrade">
-              <rules>
-                <rule id="5f37-e824-082a-153a" name="Flawless Workmanship" hidden="false">
-                  <description>Models in your kill team do not suffer the penalty to hit rolls for their attacks that target enemy models at long range.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="cb2c-70bc-a429-5818" name="Wych Cult" hidden="false" collective="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae98-37f3-1d06-ec77" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="1232-33d2-8496-38f0" name="Cult of Strife" hidden="false" collective="false" type="upgrade">
-              <rules>
-                <rule id="2918-d6d0-2d07-5aec" name="The Spectacle of Murder" hidden="false">
-                  <description>You can make one additional attack in the Fight phase with a model in your kill team if it charged, was charged or made a pile-in move granted by the Heroic Intervention Commander Tactic in that battle round.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2646-90f1-d628-aee7" name="Cult of the Cursed Blade" hidden="false" collective="false" type="upgrade">
-              <rules>
-                <rule id="e4f4-97d8-b6d7-a12f" name="Only the Strong Will Thrive" hidden="false">
-                  <description>Increase the Strength characteristic of models from your kill team by 1. In addition, when you take a Nerve test for a model in your kill team, subtract 1 from the result.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7bc6-d27d-1b09-74f8" name="Cult of the Red Grief" hidden="false" collective="false" type="upgrade">
-              <rules>
-                <rule id="2385-53c6-4c0b-ef89" name="Speed of the Kill" hidden="false">
-                  <description>You can re-roll charge rolls for models in your kill team.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="f7e9-c673-78db-b7b8" name="Haemonculus Coven" hidden="false" collective="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc1c-d62a-8e5d-35c4" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="d583-25c1-a3c0-cc5d" name="The Prophets of Flesh" hidden="false" collective="false" type="upgrade">
-              <rules>
-                <rule id="b25d-e0d2-c864-d441" name="Connoisseurs of Pain" hidden="false">
-                  <description>Models in yor kill team with the Insensible to Pain ability have an invulnerable save of 4+ (instead of 5+).</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="be59-1b26-37dd-bd53" name="The Dark Creed" hidden="false" collective="false" type="upgrade">
-              <rules>
-                <rule id="30b8-729a-532d-79a6" name="Distillers of Fear" hidden="false">
-                  <description>When an opponent takes a Nerve test for a model from their kill team, they must add 1 to the roll for each of your models (rather than shaken models) that is within 3&quot; of that model.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="88cf-0509-ab95-2213" name="Coven of Twelve" hidden="false" collective="false" type="upgrade">
-              <rules>
-                <rule id="8920-114f-8b20-2041" name="Butchers of Flesh" hidden="false">
-                  <description>Improve the Armour Penetration characteristic of all melee weapons used by your kill team by 1. For example, an Armour Penetration characteristic of 0 becomes -1; an Armour Penetration characteristic of -1 becomes -2, and so on.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="86fc-0394-f66d-3f3a" name="Kabal" hidden="false" collective="false" defaultSelectionEntryId="60e0-ecee-3a78-5aa6">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d36-e086-1de8-4913" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3431-bb08-a085-2cbe" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="2753-dda2-a2a9-3e6a" name="Kabal of the Black Heart" hidden="false" collective="false" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="7068-53b6-0fc8-6f75" name="Kabal of the Black Heart" hidden="false" targetId="f05d-f958-10dd-569d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d537-60a9-61dd-ff89" name="Kabal of the Flayed Skull" hidden="false" collective="false" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="df89-fee0-f8e8-c8f0" name="Kabal of the Flayed Skull" hidden="false" targetId="1045-c03e-b5bf-8c88" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1604-dae3-1497-969f" name="Kabal of the Poisoned Tongue" hidden="false" collective="false" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="cc10-378a-5c8b-10b5" name="Kabal of the Poisoned Tongue" hidden="false" targetId="6079-15c0-f7a3-18ed" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b878-a3be-ad4c-4a7a" name="Kabal of the Obsidian Rose" hidden="false" collective="false" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="4652-5348-7409-72dd" name="Kabal of the Obsidian Rose" hidden="false" targetId="1f18-16ca-eee8-014a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="60e0-ecee-3a78-5aa6" name="*No Kabal*" hidden="false" collective="false" type="upgrade"/>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1499-de6a-1a82-ab1a" name="Wych Cult" hidden="false" collective="false" defaultSelectionEntryId="c337-e8b8-4634-f2d7">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d439-411a-de34-45da" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f501-fa10-46fe-7475" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="c3da-7748-6a4a-8435" name="Cult of Strife" hidden="false" collective="false" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="4d02-3809-fc6e-48ee" name="Cult of Strife" hidden="false" targetId="7d23-49a9-045e-2781" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0840-9308-2a87-5c01" name="Cult of the Cursed Blade" hidden="false" collective="false" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="42ec-f727-cbf1-d935" name="Cult of the Cursed Blade" hidden="false" targetId="d77f-ce4e-f7bd-48b7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5ab2-ee8c-4c9c-509c" name="Cult of the Red Grief" hidden="false" collective="false" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="1b34-26f4-8ef3-aee1" name="Cult of the Red Grief" hidden="false" targetId="0865-b796-9a79-52cf" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c337-e8b8-4634-f2d7" name="*No Cult*" hidden="false" collective="false" type="upgrade"/>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

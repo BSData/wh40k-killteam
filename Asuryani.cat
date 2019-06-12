@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a796-a947-905e-205c" name="Asuryani" revision="16" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a796-a947-905e-205c" name="Asuryani" revision="17" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="efd1-273e-3910-f3e8" name="Warhost" hidden="false"/>
     <categoryEntry id="5bef-7545-be74-0e33" name="Guardian" hidden="false"/>
@@ -18,6 +18,10 @@
     <categoryEntry id="bd11-0f22-8ebc-9118" name="Wraith Construct" hidden="false"/>
     <categoryEntry id="3168-ad8a-945a-1bc4" name="Striking Scorpion" hidden="false"/>
     <categoryEntry id="d2aa-fbd7-e051-b22f" name="Howling Banshee" hidden="false"/>
+    <categoryEntry id="2dfa-684d-3925-7a8e" name="Biel-tan" hidden="false"/>
+    <categoryEntry id="9576-58c7-9a57-e053" name="Saim-Hann" hidden="false"/>
+    <categoryEntry id="8f8f-eeb8-3204-9813" name="Iyanden" hidden="false"/>
+    <categoryEntry id="0ef9-45d0-7d15-5fb1" name="Ulthwe" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="38fe-f863-513a-9012" name="Guardian Defender" hidden="false" collective="false" targetId="74a1-6b5c-0980-9c59" type="selectionEntry">
@@ -217,7 +221,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="8970-69d4-d897-d152" name="Amallyn Shadowguide" hidden="false" collective="false" targetId="a3c5-153b-497a-d4b9" type="selectionEntry"/>
-    <entryLink id="519b-d66a-1949-2511" name="Craftworld Attribute" hidden="false" collective="false" targetId="7615-f67e-1956-ffcd" type="selectionEntry"/>
     <entryLink id="ef25-3974-586b-c50d" name="Spiritseer" hidden="false" collective="false" targetId="1b76-0440-e937-7545" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="0710-4c4c-ea02-52ac" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
@@ -385,6 +388,103 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule id="ee87-1d98-f1ab-6064" name="Fieldcraft" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34bb-10c3-3129-3290" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dfa-684d-3925-7a8e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9576-58c7-9a57-e053" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f8f-eeb8-3204-9813" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ef9-45d0-7d15-5fb1" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="154a-1ea4-ac7b-f8b1" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team are considered to be obscured to enemy models that target them if they are more than 12&quot; away from those models.</description>
+    </rule>
+    <rule id="01f8-3a72-d932-4e19" name="Swordwind" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dfa-684d-3925-7a8e" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34bb-10c3-3129-3290" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9576-58c7-9a57-e053" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f8f-eeb8-3204-9813" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ef9-45d0-7d15-5fb1" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="154a-1ea4-ac7b-f8b1" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Leadership characteristic of models in your kill team. In addition, you can re-roll hit rolls of 1 for shuriken weapons used by models in your kill team. A shuriken weapon is any weapon profile whose name includes the word &apos;shuriken&apos; (e.g. shuriken pistol, Avenger shuriken catapult, etc.). The ranged profile of a scorpion&apos;s claw is also a shuriken weapon.</description>
+    </rule>
+    <rule id="3468-2c05-833e-da02" name="Stoic Endurance" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f8f-eeb8-3204-9813" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dfa-684d-3925-7a8e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9576-58c7-9a57-e053" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34bb-10c3-3129-3290" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ef9-45d0-7d15-5fb1" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="154a-1ea4-ac7b-f8b1" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>When you take a Nerve test for models in your kill team, roll a D3 (instead of a D6).</description>
+    </rule>
+    <rule id="bc22-6818-355f-0c2e" name="Wild Host" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9576-58c7-9a57-e053" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dfa-684d-3925-7a8e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f8f-eeb8-3204-9813" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34bb-10c3-3129-3290" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ef9-45d0-7d15-5fb1" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="154a-1ea4-ac7b-f8b1" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can re-roll charge rolls for models in your kill team.</description>
+    </rule>
+    <rule id="9cc7-a7a3-7253-d620" name="Foresight of the Damned" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ef9-45d0-7d15-5fb1" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dfa-684d-3925-7a8e" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9576-58c7-9a57-e053" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34bb-10c3-3129-3290" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f8f-eeb8-3204-9813" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="154a-1ea4-ac7b-f8b1" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a dice each time a model in your kill team loses a wound. On a 6, the damage is ignored and the model does not lose a wound. If a model already has a similar ability, choose which effect applies, and re-roll 1s when making these rolls.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="74a1-6b5c-0980-9c59" name="Guardian Defender" hidden="false" collective="false" type="model">
       <profiles>
@@ -425,6 +525,7 @@
           </constraints>
         </entryLink>
         <entryLink id="2c75-f9e9-d113-40d2" name="Plasma Grenades" hidden="false" collective="false" targetId="e020-7406-fcae-4d17" type="selectionEntry"/>
+        <entryLink id="eb9e-592a-ac02-fec9" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
@@ -558,6 +659,7 @@
       <entryLinks>
         <entryLink id="f49d-791e-d5e0-2385" name="Specialism" hidden="false" collective="false" targetId="9a9b-8261-3296-9a12" type="selectionEntryGroup"/>
         <entryLink id="5c7e-5e95-4edf-b320" name="Plasma Grenades" hidden="false" collective="false" targetId="e020-7406-fcae-4d17" type="selectionEntry"/>
+        <entryLink id="afa4-d544-2a99-dce3" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
@@ -822,6 +924,7 @@
           </constraints>
         </entryLink>
         <entryLink id="db1d-5fb8-65a2-c450" name="Plasma Grenades" hidden="false" collective="false" targetId="e020-7406-fcae-4d17" type="selectionEntry"/>
+        <entryLink id="b2ce-8ae2-4a8a-e0d3" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
@@ -866,6 +969,7 @@
           </constraints>
         </entryLink>
         <entryLink id="0df1-23d5-4824-27f7" name="Plasma Grenades" hidden="false" collective="false" targetId="e020-7406-fcae-4d17" type="selectionEntry"/>
+        <entryLink id="9e41-1d8d-31b1-2f51" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -993,6 +1097,7 @@
       <entryLinks>
         <entryLink id="4db2-59b3-972a-623b" name="Dire Avenger Specialism" hidden="false" collective="false" targetId="9a9b-8261-3296-9a12" type="selectionEntryGroup"/>
         <entryLink id="8c09-a303-1a60-8032" name="Plasma Grenades" hidden="false" collective="false" targetId="e020-7406-fcae-4d17" type="selectionEntry"/>
+        <entryLink id="bf1c-a303-7642-dc3b" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
@@ -1042,6 +1147,7 @@
           </constraints>
         </entryLink>
         <entryLink id="8e99-2a9f-9c40-662e" name="Specialism" hidden="false" collective="false" targetId="9a9b-8261-3296-9a12" type="selectionEntryGroup"/>
+        <entryLink id="562a-f26f-64e1-c945" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
@@ -1267,6 +1373,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2041-9140-13ba-7e0e" name="Autarch Specialism" hidden="false" collective="false" targetId="764f-3b3e-f597-454a" type="selectionEntryGroup"/>
+        <entryLink id="b6e4-73b6-211c-f710" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="55.0"/>
@@ -1395,6 +1502,7 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b89-b5fd-abd8-ecc5" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="d3a6-7727-e737-ac4a" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
@@ -1563,6 +1671,7 @@
           </constraints>
         </entryLink>
         <entryLink id="4142-0dce-c0e0-7039" name="Autarch Specialism" hidden="false" collective="false" targetId="764f-3b3e-f597-454a" type="selectionEntryGroup"/>
+        <entryLink id="8414-ca69-937f-f1a3" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="55.0"/>
@@ -1708,21 +1817,6 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7615-f67e-1956-ffcd" name="Craftworld Attribute" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7d0b-80a0-5113-ae49" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="771a-735c-2785-854b" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="16aa-727f-7188-2b09" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="62c9-4711-782d-5e4f" name="Craftworld Attribute" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="1b76-0440-e937-7545" name="Spiritseer" hidden="false" collective="false" type="model">
       <modifiers>
         <modifier type="set" field="5291-dc2c-cfa5-a77f" value="76">
@@ -1823,6 +1917,7 @@
           </constraints>
         </entryLink>
         <entryLink id="c2f0-1385-e37b-cd67" name="Specialism" hidden="false" collective="false" targetId="764f-3b3e-f597-454a" type="selectionEntryGroup"/>
+        <entryLink id="790c-aacc-520c-f669" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="61.0"/>
@@ -2068,6 +2163,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5662-1d51-d93f-d4be" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="41.0"/>
       </costs>
@@ -2195,6 +2293,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a42d-731b-9f8f-2382" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="36.0"/>
       </costs>
@@ -2303,6 +2404,7 @@
           </constraints>
         </entryLink>
         <entryLink id="7d4c-cfbe-aa6e-a53e" name="Specialism" hidden="false" collective="false" targetId="9a9b-8261-3296-9a12" type="selectionEntryGroup"/>
+        <entryLink id="75bd-ae10-bc91-4fa1" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
@@ -2447,6 +2549,7 @@
       <entryLinks>
         <entryLink id="996b-2e17-8733-acf1" name="Plasma grenades" hidden="false" collective="false" targetId="e020-7406-fcae-4d17" type="selectionEntry"/>
         <entryLink id="bf9b-8ed9-1197-ae90" name="Specialism" hidden="false" collective="false" targetId="9a9b-8261-3296-9a12" type="selectionEntryGroup"/>
+        <entryLink id="23f9-3482-b666-fef0" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
@@ -2543,6 +2646,7 @@
           </constraints>
         </entryLink>
         <entryLink id="d012-1a54-f27d-d825" name="Specialism" hidden="false" collective="false" targetId="9a9b-8261-3296-9a12" type="selectionEntryGroup"/>
+        <entryLink id="923f-7d57-32b8-cade" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
@@ -2704,6 +2808,7 @@
           </constraints>
         </entryLink>
         <entryLink id="4ec6-d1a2-9c10-872b" name="Specialism" hidden="false" collective="false" targetId="9a9b-8261-3296-9a12" type="selectionEntryGroup"/>
+        <entryLink id="2c24-8ed7-4458-4fac" name="Craftworld" hidden="false" collective="false" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
@@ -3000,63 +3105,53 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3bba-3f69-bb8f-48f2" name="Craftworld Attribute" hidden="false" collective="false" defaultSelectionEntryId="154a-1ea4-ac7b-f8b1">
+    <selectionEntryGroup id="3bba-3f69-bb8f-48f2" name="Craftworld" hidden="false" collective="false" defaultSelectionEntryId="154a-1ea4-ac7b-f8b1">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aba-fe94-bc38-cf16" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d08-ba48-d81e-e53e" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="154a-1ea4-ac7b-f8b1" name="*No Attribute*" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="154a-1ea4-ac7b-f8b1" name="*No Craftworld*" hidden="false" collective="false" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4727-d8f0-7dc8-82ef" name="Ulthwe" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="286f-65ba-145e-4dcb" name="Foresight of the Damned" hidden="false">
-              <description>Roll a dice each time a model in your kill team loses a wound. On a 6, the damage is ignored and the model does not lose a wound. If a model already has a similar ability, choose which effect applies, and re-roll 1s when making these rolls.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="5970-4898-b58e-6a05" name="Ulthw" hidden="false" targetId="0ef9-45d0-7d15-5fb1" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cd3d-bdb9-58e5-37b3" name="Saim-Hann" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="111d-3109-0123-219b" name="Wild Host" hidden="false">
-              <description>You can re-roll charge rolls for models in your kill team.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="a0e5-9d21-1f2c-5107" name="Saim-Hann" hidden="false" targetId="9576-58c7-9a57-e053" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="35f3-78f8-00fa-914c" name="Alaitoc" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="132d-ee93-66ba-5feb" name="Fieldcraft" hidden="false">
-              <description>Models in your kill team are considered to be obscured to enemy models that target them if they are more than 12&quot; away from those models.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="e997-92b7-c68d-4c97" name="Alaitoc" hidden="false" targetId="34bb-10c3-3129-3290" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ac26-153c-fefe-fd6b" name="Biel-tan" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="4e91-179d-9810-231f" name="Swordwind" hidden="false">
-              <description>Add 1 to the Leadership characteristic of models in your kill team. In addition, you can re-roll hit rolls of 1 for shuriken weapons used by models in your kill team. A shuriken weapon is any weapon profile whose name includes the word &apos;shuriken&apos; (e.g. shuriken pistol, Avenger shuriken catapult, etc.). The ranged profile of a scorpion&apos;s claw is also a shuriken weapon.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="1345-1e12-c51c-ed32" name="Biel-tan" hidden="false" targetId="2dfa-684d-3925-7a8e" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="78d1-27e8-18bf-8140" name="Iyanden" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="9743-c565-47dc-09f0" name="Stoic Endurance" hidden="false">
-              <description>When you take a Nerve test for models in your kill team, roll a D3 (instead of a D6).</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="bb0b-6d9e-14c7-15b6" name="Iyanden" hidden="false" targetId="8f8f-eeb8-3204-9813" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>

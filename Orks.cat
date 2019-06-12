@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a34e-d16c-80ff-06bf" name="Orks" revision="21" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a34e-d16c-80ff-06bf" name="Orks" revision="22" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2a73-3eb4-3c77-db12" name="Ork Boy" hidden="false"/>
     <categoryEntry id="d9e4-66e2-9d74-a149" name="Burna Boy" hidden="false"/>
@@ -11,6 +11,13 @@
     <categoryEntry id="a506-95a9-f463-8b35" name="Mega Armour" hidden="false"/>
     <categoryEntry id="6acc-147c-e2fa-e19c" name="Freebootaz" hidden="false"/>
     <categoryEntry id="4185-c106-c40f-d41c" name="Flash Git" hidden="false"/>
+    <categoryEntry id="d799-b522-8c0e-a310" name="Bad Moons" hidden="false"/>
+    <categoryEntry id="49c9-c9af-e1ad-6f2b" name="Blood Axes" hidden="false"/>
+    <categoryEntry id="cfdd-a5d1-2225-b8ef" name="Deathskulls" hidden="false"/>
+    <categoryEntry id="3e63-d2ff-7faa-478a" name="Evil Sunz" hidden="false"/>
+    <categoryEntry id="300e-b879-4e40-9c9d" name="Freebooterz" hidden="false"/>
+    <categoryEntry id="80b1-ca7a-5d59-05cd" name="Goffs" hidden="false"/>
+    <categoryEntry id="0914-2a26-a686-8798" name="Snakebites" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="7150-a0ae-d338-10a2" name="Burna Boy" hidden="false" collective="false" targetId="6f0a-a880-0cbc-22f2" type="selectionEntry">
@@ -293,7 +300,6 @@
         <categoryLink id="7a7a-ce51-3a04-c3ff" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ddd5-940d-38b9-8dde" name="Clan Kulturs" hidden="false" collective="false" targetId="771a-b31c-265d-ec0f" type="selectionEntry"/>
     <entryLink id="a4b3-6c55-7eb3-b2ab" name="Nob" hidden="false" collective="false" targetId="b5a8-c094-9144-6849" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ad9a-c548-1ef0-01c2" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
@@ -461,6 +467,149 @@
     </entryLink>
     <entryLink id="2966-d841-f505-eebb" name="Boss Snikrot" hidden="false" collective="false" targetId="177b-0582-4ebb-4a42" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="bd38-825a-60cc-bf99" name="Armed to Da Teef" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d799-b522-8c0e-a310" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49c9-c9af-e1ad-6f2b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80b1-ca7a-5d59-05cd" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e63-d2ff-7faa-478a" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfdd-a5d1-2225-b8ef" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0914-2a26-a686-8798" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ece-d436-23c2-ba85" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Re-roll hit rolls of 1 for attacks made by models in your kill team in the Shooting phase.</description>
+    </rule>
+    <rule id="14db-96fd-77d6-a0b6" name="Taktiks" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49c9-c9af-e1ad-6f2b" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d799-b522-8c0e-a310" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80b1-ca7a-5d59-05cd" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e63-d2ff-7faa-478a" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfdd-a5d1-2225-b8ef" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0914-2a26-a686-8798" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ece-d436-23c2-ba85" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team are considered to be obscured to enemy models that target them if they are more than 12&quot; away from those models. In addition, models in your kill team can shoot even if they Fell Back in the same battle round.</description>
+    </rule>
+    <rule id="77e0-7b4b-04cc-f190" name="Lucky Blue Gitz" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfdd-a5d1-2225-b8ef" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d799-b522-8c0e-a310" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80b1-ca7a-5d59-05cd" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e63-d2ff-7faa-478a" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49c9-c9af-e1ad-6f2b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0914-2a26-a686-8798" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ece-d436-23c2-ba85" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team have a 6+ invulnerable save, unless they already have an invulnerable save. In addition, you can re-roll a single failed hit roll and a single failed wound roll in each phase, as long as the attack was made by a model in your kill team.</description>
+    </rule>
+    <rule id="3753-ad8e-8f85-8b90" name="Red Ones Go Fasta" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e63-d2ff-7faa-478a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d799-b522-8c0e-a310" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80b1-ca7a-5d59-05cd" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfdd-a5d1-2225-b8ef" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49c9-c9af-e1ad-6f2b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0914-2a26-a686-8798" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ece-d436-23c2-ba85" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Move characteristic of models in your kill team and add 1 to Advance and charge rolls made for them. In addition, these models do not suffer the penalty to their hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
+    </rule>
+    <rule id="f429-ea12-eb49-8135" name="Competitive Streak" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="300e-b879-4e40-9c9d" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d799-b522-8c0e-a310" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80b1-ca7a-5d59-05cd" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfdd-a5d1-2225-b8ef" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e63-d2ff-7faa-478a" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49c9-c9af-e1ad-6f2b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0914-2a26-a686-8798" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ece-d436-23c2-ba85" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to hit rolls for attacks made by models in your kill team for each other model in your kill team that has taken an enemy model out of action with an attack in this phase.</description>
+    </rule>
+    <rule id="0248-8b6f-a538-1a88" name="No Muckin&apos; About" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80b1-ca7a-5d59-05cd" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d799-b522-8c0e-a310" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfdd-a5d1-2225-b8ef" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e63-d2ff-7faa-478a" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49c9-c9af-e1ad-6f2b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0914-2a26-a686-8798" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ece-d436-23c2-ba85" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Each time you make an unmodified hit roll of 6 for an attack with a melee weapon made by a model in your kill team, immediately make an additional hit roll against the same target with the same weapon. These additional hit rolls cannot themselves generate any further hit rolls.</description>
+    </rule>
+    <rule id="1ea3-6922-0701-0ebb" name="Da Old Ways" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0914-2a26-a686-8798" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d799-b522-8c0e-a310" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfdd-a5d1-2225-b8ef" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e63-d2ff-7faa-478a" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49c9-c9af-e1ad-6f2b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80b1-ca7a-5d59-05cd" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ece-d436-23c2-ba85" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a dice each time a model in your kill team loses a wound. On a 6 the would is not lost. If a model already has a similar ability, choose which effect applies, and re-roll 1s when making these rolls.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="a2f7-b7aa-039d-55f4" name="Kombi-weapon with Rokkit Launcha" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -589,6 +738,7 @@
           </constraints>
         </entryLink>
         <entryLink id="d170-ff8c-a928-cc76" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="e35b-92ae-2360-f319" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
@@ -856,6 +1006,7 @@
           </constraints>
         </entryLink>
         <entryLink id="6bc0-e77e-f835-21b2" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="fb71-5eb0-e7f7-052b" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -992,6 +1143,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63cb-9cbb-0be5-bbf8" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="a7bd-0e3e-8251-be17" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
@@ -1079,6 +1231,7 @@
           </constraints>
         </entryLink>
         <entryLink id="a74a-fe40-19eb-8225" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="cb2c-b900-ef21-6b37" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
@@ -1157,6 +1310,7 @@
           </constraints>
         </entryLink>
         <entryLink id="2405-b6c0-9c72-0414" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="1f96-2ce0-994c-95e8" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -1216,6 +1370,7 @@
           </constraints>
         </entryLink>
         <entryLink id="41aa-c595-4807-14eb" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="b667-1cc5-3a2d-b528" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
@@ -1289,6 +1444,7 @@
           </constraints>
         </entryLink>
         <entryLink id="4f07-91d5-a5c4-1045" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="7db2-198e-01c3-2e02" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
@@ -1341,6 +1497,7 @@
           </constraints>
         </entryLink>
         <entryLink id="c84e-ac59-5834-1351" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="25a4-61e7-d444-d869" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
@@ -1408,6 +1565,7 @@
           </constraints>
         </entryLink>
         <entryLink id="1e97-094c-2a68-e2fb" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="deb2-42c9-66a3-ea8c" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -1632,6 +1790,7 @@
           </constraints>
         </entryLink>
         <entryLink id="795d-d117-0efe-b9d5" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="bffc-f47e-0019-4d32" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="62.0"/>
@@ -1787,6 +1946,7 @@
           </constraints>
         </entryLink>
         <entryLink id="e960-81d0-b1cd-9821" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
+        <entryLink id="be49-83a7-ac6d-4315" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
@@ -1900,6 +2060,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca62-9c53-5bff-0740" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="20a5-a03a-8060-c186" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
@@ -1918,21 +2079,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="771a-b31c-265d-ec0f" name="Clan Kulturs" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be02-e07f-b38e-441a" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff44-fd6d-1489-0f6a" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="0aed-79a4-2dd2-5289" name="Configuration" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="f50c-3526-45db-6f49" name="Clan Kulturs" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
@@ -1977,6 +2123,7 @@
         <entryLink id="61f2-c312-2154-65b9" name="Kombi-weapons" hidden="false" collective="false" targetId="5dec-dbd4-b12d-1141" type="selectionEntryGroup"/>
         <entryLink id="aa55-65cd-c090-941c" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
         <entryLink id="af3a-8edf-0e97-3717" name="Stikkbombs" hidden="false" collective="false" targetId="8fad-e5b9-1b41-ba1e" type="selectionEntry"/>
+        <entryLink id="2ce2-4ff0-ce4d-5d09" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
@@ -2061,6 +2208,7 @@
         <entryLink id="b881-5535-8b26-bbe4" name="Kombi-weapons" hidden="false" collective="false" targetId="5dec-dbd4-b12d-1141" type="selectionEntryGroup"/>
         <entryLink id="ae46-5d80-5dc2-7526" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
         <entryLink id="5bd4-084d-e178-40d0" name="Stikkbombs" hidden="false" collective="false" targetId="8fad-e5b9-1b41-ba1e" type="selectionEntry"/>
+        <entryLink id="2fcd-dfe4-01b2-208e" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
@@ -2121,6 +2269,12 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="11cb-c320-de71-9ad3" name="Faction: Orks" hidden="false" targetId="3630-39cf-f986-6209" primary="false"/>
+        <categoryLink id="eced-4acc-c8d1-3849" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="6e7b-9464-f2f7-b43a" name="Gretchin" hidden="false" targetId="9154-0e71-6fa2-2234" primary="false"/>
+        <categoryLink id="5afb-38d5-3222-6f3a" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="b0dc-d2f5-b5f5-9078" name="Stikkbombs" hidden="false" collective="false" targetId="8fad-e5b9-1b41-ba1e" type="selectionEntry"/>
       </entryLinks>
@@ -2169,6 +2323,7 @@
         <entryLink id="c779-8098-2052-b4f5" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
         <entryLink id="4389-4ac2-4b31-bd99" name="Stikkbombs" hidden="false" collective="false" targetId="8fad-e5b9-1b41-ba1e" type="selectionEntry"/>
         <entryLink id="0ae0-cd7d-65fa-9fe2" name="Meganob Weapons" hidden="false" collective="false" targetId="f641-5067-0391-08d5" type="selectionEntryGroup"/>
+        <entryLink id="6da8-8436-c8ca-999f" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="37.0"/>
@@ -2221,6 +2376,7 @@
       <entryLinks>
         <entryLink id="7e34-fde3-3cf5-04cd" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
         <entryLink id="cf1b-c247-63e2-8e9a" name="Meganob Weapons" hidden="false" collective="false" targetId="f641-5067-0391-08d5" type="selectionEntryGroup"/>
+        <entryLink id="efc9-27f4-d3a3-ef28" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="41.0"/>
@@ -2256,10 +2412,10 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7bfc-974b-f21b-20ba" name="Faction: Orks" hidden="false" targetId="3630-39cf-f986-6209" primary="false"/>
-        <categoryLink id="1aab-be8a-ff09-5550" name="Freebootaz" hidden="false" targetId="6acc-147c-e2fa-e19c" primary="false"/>
         <categoryLink id="aac5-4a9b-c8c8-658c" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
         <categoryLink id="8e65-16e3-0216-c4ac" name="Flash Git" hidden="false" targetId="4185-c106-c40f-d41c" primary="false"/>
         <categoryLink id="9d61-5ed4-81cd-3bea" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="b9c6-9f8b-5447-be20" name="Freebooterz" hidden="false" targetId="300e-b879-4e40-9c9d" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="755c-160b-3b1a-986a" name="Specialism" hidden="false" collective="false" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
@@ -2323,6 +2479,7 @@
         <entryLink id="23b3-3dad-dee4-5938" name="Gitfinda Squig" hidden="false" collective="false" targetId="5555-14bf-47cd-f0f2" type="selectionEntry"/>
         <entryLink id="902e-6bbf-aeea-3393" name="Choppa" hidden="false" collective="false" targetId="bff6-ef1d-1635-a0dc" type="selectionEntry"/>
         <entryLink id="5921-1a88-8500-11f8" name="Slugga" hidden="false" collective="false" targetId="03d5-f89c-c9ad-e706" type="selectionEntry"/>
+        <entryLink id="f494-619b-c826-0911" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="24.0"/>
@@ -2537,6 +2694,7 @@
       <entryLinks>
         <entryLink id="6f89-b7d2-039c-8655" name="Stikkbombs" hidden="false" collective="false" targetId="8fad-e5b9-1b41-ba1e" type="selectionEntry"/>
         <entryLink id="0f28-1a69-808a-4aea" name="Legendary Hunter - Level 3" hidden="false" collective="false" targetId="7da4-b687-c93e-28d0" type="selectionEntry"/>
+        <entryLink id="7615-041f-025e-0db1" name="Clan" hidden="false" collective="false" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="82.0"/>
@@ -2770,83 +2928,69 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="842a-673e-f031-5ad9" name="Clan Kulturs" hidden="false" collective="false" defaultSelectionEntryId="5ece-d436-23c2-ba85">
+    <selectionEntryGroup id="842a-673e-f031-5ad9" name="Clan" hidden="false" collective="false" defaultSelectionEntryId="5ece-d436-23c2-ba85">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf82-c1f3-736c-5e14" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad5f-48c5-7460-50d2" type="min"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="6b20-7a02-1b19-1807" name="Goffs" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="af56-55d2-42db-c811" name="No Muckin&apos; About" hidden="false">
-              <description>Each time you make an unmodified hit roll of 6 for an attack with a melee weapon made by a model in your kill team, immediately make an additional hit roll against the same target with the same weapon. These additional hit rolls cannot themselves generate any further hit rolls.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="1541-c792-8991-7347" name="Goffs" hidden="false" targetId="80b1-ca7a-5d59-05cd" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c942-7b53-5ff0-3be8" name="Bad Moons" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="54b8-1657-6f5c-3357" name="Armed to Da Teef" hidden="false">
-              <description>Re-roll hit rolls of 1 for attacks made by models in your kill team in the Shooting phase.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="9b8c-4405-6074-31d6" name="Bad Moons" hidden="false" targetId="d799-b522-8c0e-a310" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a92a-194b-65fe-74a9" name="Evil Sunz" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="78aa-3718-dbd0-1db3" name="Red Ones Go Fasta" hidden="false">
-              <description>Add 1 to the Move characteristic of models in your kill team and add 1 to Advance and charge rolls made for them. In addition, these models do not suffer the penalty to their hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="4fa2-e3ce-6896-6899" name="Evil Sunz" hidden="false" targetId="3e63-d2ff-7faa-478a" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0cca-07f3-c92c-4b1b" name="Deathskulls" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="db97-fb51-4b26-d9b8" name="Lucky Blue Gitz" hidden="false">
-              <description>Models in your kill team have a 6+ invulnerable save, unless they already have an invulnerable save. In addition, you can re-roll a single failed hit roll and a single failed wound roll in each phase, as long as the attack was made by a model in your kill team.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="13bf-d64c-48f4-f2b4" name="Deathskulls" hidden="false" targetId="cfdd-a5d1-2225-b8ef" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0c5d-28b0-4abc-1798" name="Snakebites" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="304d-08c3-e5eb-d73d" name="Da Old Ways" hidden="false">
-              <description>Roll a dice each time a model in your kill team loses a wound. On a 6 the would is not lost. If a model already has a similar ability, choose which effect applies, and re-roll 1s when making these rolls.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="7b23-a0b4-c7a7-b8db" name="Snakebites" hidden="false" targetId="0914-2a26-a686-8798" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8769-60bf-f58a-db36" name="Blood Axes" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="93fb-b6ba-cdbd-b7f6" name="Taktiks" hidden="false">
-              <description>Models in your kill team are considered to be obscured to enemy models that target them if they are more than 12&quot; away from those models. In addition, models in your kill team can shoot even if they Fell Back in the same battle round.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="89db-c7ad-6c5c-1b40" name="Blood Axes" hidden="false" targetId="49c9-c9af-e1ad-6f2b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ff08-0821-e4e0-783e" name="Freebooterz" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="3c79-fe8a-dc55-cbd0" name="Competitive Streak" hidden="false">
-              <description>Add 1 to hit rolls for attacks made by models in your kill team for each other model in your kill team that has taken an enemy model out of action with an attack in this phase.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="4d95-e749-db6b-eb21" name="Freebooterz" hidden="false" targetId="300e-b879-4e40-9c9d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5ece-d436-23c2-ba85" name="*No Kultur*" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="5ece-d436-23c2-ba85" name="*No Clan*" hidden="false" collective="false" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>

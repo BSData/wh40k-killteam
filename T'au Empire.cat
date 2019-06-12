@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ac4-f90b-e0a6-ae72" name="T&apos;au Empire" revision="15" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ac4-f90b-e0a6-ae72" name="T&apos;au Empire" revision="16" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="580b-8df1-70dc-452b" name="Drone" hidden="false"/>
     <categoryEntry id="fd6f-ea1b-53af-11ab" name="Battlesuit" hidden="false"/>
@@ -10,6 +10,12 @@
     <categoryEntry id="138d-868c-de29-1351" name="DS8 Tactical Support Turret" hidden="false"/>
     <categoryEntry id="66f2-ed47-c749-e425" name="XV8 Crisis Battlesuit" hidden="false"/>
     <categoryEntry id="053c-2b80-e82e-db20" name="Darkstrider" hidden="false"/>
+    <categoryEntry id="c830-fd11-7cc5-b88b" name="Bork&apos;an Sept" hidden="false"/>
+    <categoryEntry id="00f6-59fc-8b40-ca1c" name="Dal&apos;yth Sept" hidden="false"/>
+    <categoryEntry id="739b-2a62-fe3c-f12f" name="Farsight Enclaves" hidden="false"/>
+    <categoryEntry id="68d1-4795-69e2-2300" name="Sa&apos;cea Sept" hidden="false"/>
+    <categoryEntry id="f4ce-9f2e-40d5-46bb" name="T&apos;au Sept" hidden="false"/>
+    <categoryEntry id="d2b1-0562-1a1a-fb68" name="Vior&apos;la Sept" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="4340-dab1-7330-f462" name="XV25 Stealth Battlesuit Shas&apos;ui" hidden="false" collective="false" targetId="7fa5-5063-e682-a11a" type="selectionEntry">
@@ -362,8 +368,129 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="52f9-c98a-e3ce-c039" name="Darkstrider" hidden="false" collective="false" targetId="e8e4-13b9-f87f-33b1" type="selectionEntry"/>
-    <entryLink id="db87-8905-3c21-61c9" name="Sept Tenet" hidden="false" collective="false" targetId="8d18-a2bc-34c6-408c" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="38b4-5a35-39d0-dfc3" name="Superior Craftsmanship" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c830-fd11-7cc5-b88b" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00f6-59fc-8b40-ca1c" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="739b-2a62-fe3c-f12f" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="68d1-4795-69e2-2300" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4ce-9f2e-40d5-46bb" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2b1-0562-1a1a-fb68" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ac0-ccb7-5170-d235" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team do not suffer the penalty to hit rolls for their attacks that target enemy models at long range.</description>
+    </rule>
+    <rule id="3570-5c27-79c1-8e1f" name="Adaptive Camouflage" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00f6-59fc-8b40-ca1c" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c830-fd11-7cc5-b88b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="739b-2a62-fe3c-f12f" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="68d1-4795-69e2-2300" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4ce-9f2e-40d5-46bb" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2b1-0562-1a1a-fb68" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ac0-ccb7-5170-d235" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>If a model in your kill team does not move in the Movement phase, for the remainder of the battle round it is considered to be obscured to enemy models that target it.</description>
+    </rule>
+    <rule id="0446-c032-e2a4-2655" name="Devastating Counter-strike" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="739b-2a62-fe3c-f12f" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c830-fd11-7cc5-b88b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00f6-59fc-8b40-ca1c" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="68d1-4795-69e2-2300" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4ce-9f2e-40d5-46bb" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2b1-0562-1a1a-fb68" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ac0-ccb7-5170-d235" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Re-roll hit and wound rolls of 1 for shooting attacks made by models in your kill team that target an enemy model that is within 6&quot; of the firing model.</description>
+    </rule>
+    <rule id="5543-2652-4943-3dc0" name="Calm Discipline" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="68d1-4795-69e2-2300" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c830-fd11-7cc5-b88b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00f6-59fc-8b40-ca1c" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="739b-2a62-fe3c-f12f" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4ce-9f2e-40d5-46bb" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2b1-0562-1a1a-fb68" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ac0-ccb7-5170-d235" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Leadership characteristic of models in your kill team. In addition, you can re-roll hit rolls of 1 for shooting attacks made by models in your kill team.</description>
+    </rule>
+    <rule id="7d82-a3ba-8fc3-5b46" name="Coordinated Fire Arcs" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4ce-9f2e-40d5-46bb" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c830-fd11-7cc5-b88b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00f6-59fc-8b40-ca1c" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="739b-2a62-fe3c-f12f" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="68d1-4795-69e2-2300" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2b1-0562-1a1a-fb68" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ac0-ccb7-5170-d235" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>When a model in your kill team uses their For the Greater Good ability, or when they fire Overwatch whilst they are within 6&quot; of a friendly model, they successfully hit on a roll of 5 or 6.</description>
+    </rule>
+    <rule id="f4dc-04ab-b156-21d7" name="Strike Fast" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2b1-0562-1a1a-fb68" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c830-fd11-7cc5-b88b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00f6-59fc-8b40-ca1c" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="739b-2a62-fe3c-f12f" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="68d1-4795-69e2-2300" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4ce-9f2e-40d5-46bb" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ac0-ccb7-5170-d235" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team can shoot Rapid Fire weapons as if they were Assault weapons in the Shooting phase of a battle round in which they Advanced (e.g. a Rapid Fire 1 weapon would be used as if it were an Assault 1 weapon). In addition, these models do not suffer the penalty to their hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="e5a8-5953-c927-081d" name="Fire Warrior Shas&apos;la" hidden="false" collective="false" type="model">
       <profiles>
@@ -420,6 +547,7 @@
             <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f746-e3c2-5345-f429" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="fc67-38bd-8595-0bcd" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
@@ -486,6 +614,7 @@
         <entryLink id="cb6a-761d-26ac-0517" name="Photon grenade" hidden="false" collective="false" targetId="1f76-6a16-1e9d-e519" type="selectionEntry"/>
         <entryLink id="3258-9c93-e977-241c" name="Markerlight" hidden="false" collective="false" targetId="6038-3ed8-159d-da29" type="selectionEntry"/>
         <entryLink id="050b-928e-8985-ca1b" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
+        <entryLink id="d404-5f6f-f67c-fff0" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
@@ -576,6 +705,7 @@
           </constraints>
         </entryLink>
         <entryLink id="6fcf-1827-82cb-807d" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
+        <entryLink id="276f-ab4c-15c0-e8e6" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
@@ -634,6 +764,7 @@
       <entryLinks>
         <entryLink id="a827-c22d-42e3-2e0a" name="Photon grenade" hidden="false" collective="false" targetId="1f76-6a16-1e9d-e519" type="selectionEntry"/>
         <entryLink id="ef62-4b7f-c511-707f" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
+        <entryLink id="54ec-4cbb-d113-fc7f" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
@@ -685,6 +816,7 @@
           </constraints>
         </entryLink>
         <entryLink id="bc8b-0f49-f8d2-ec2e" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
+        <entryLink id="877b-bbda-648b-64f2" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
@@ -738,6 +870,7 @@
           </constraints>
         </entryLink>
         <entryLink id="d1ce-cf6b-814b-39f0" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
+        <entryLink id="595f-c96e-bc11-32c0" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
@@ -803,6 +936,7 @@
         <entryLink id="baa6-e751-57ec-c6ff" name="Photon grenade" hidden="false" collective="false" targetId="1f76-6a16-1e9d-e519" type="selectionEntry"/>
         <entryLink id="93fb-8347-2bc9-9b80" name="Markerlight" hidden="false" collective="false" targetId="6038-3ed8-159d-da29" type="selectionEntry"/>
         <entryLink id="8b79-acbf-261a-29e8" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
+        <entryLink id="ff52-dfbd-48b0-0b5e" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
@@ -842,6 +976,7 @@
       <entryLinks>
         <entryLink id="c50f-46b4-2145-0467" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
         <entryLink id="6569-8b18-ada1-cf36" name="XV25 Weapon" hidden="false" collective="false" targetId="95ea-1a6d-a402-7f86" type="selectionEntryGroup"/>
+        <entryLink id="cba0-609c-0b1a-a657" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
@@ -892,6 +1027,7 @@
         <entryLink id="9da7-39af-7eee-3b48" name="Markerlight &amp; Target lock" hidden="false" collective="false" targetId="e93a-f5dc-7257-da20" type="selectionEntry"/>
         <entryLink id="42b6-e00f-897d-5af5" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
         <entryLink id="eb5e-9d50-6c26-7a49" name="XV25 Weapon" hidden="false" collective="false" targetId="95ea-1a6d-a402-7f86" type="selectionEntryGroup"/>
+        <entryLink id="5ac5-5fd0-4577-892a" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
@@ -935,6 +1071,7 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc0-ce9c-183b-90d6" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="5788-68a0-05cf-c198" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
@@ -987,6 +1124,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="d7dd-ce67-9ea5-a6ba" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
       </costs>
@@ -1030,6 +1170,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6c7-00b0-4f63-42a9" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="8dc7-5592-9d5b-10c5" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
@@ -1042,7 +1183,7 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="9e05-1722-0482-1c46" value="1">
+        <modifier type="increment" field="9e05-1722-0482-1c46" value="1.0">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -1096,6 +1237,9 @@
         <categoryLink id="15a7-9594-a32d-c193" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
         <categoryLink id="1909-70da-39d8-f96a" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="ae0b-a853-9b59-e783" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
       </costs>
@@ -1154,6 +1298,9 @@
         <categoryLink id="20dc-2a7c-f17f-bb3c" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
         <categoryLink id="4cb0-c901-f491-2c51" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="84be-ef35-a05f-13a2" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
       </costs>
@@ -1212,6 +1359,9 @@
         <categoryLink id="e297-1ac7-7000-5428" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
         <categoryLink id="a4e1-c1ee-52ab-7b7d" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="9ff1-fc2c-72d7-2c8c" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
       </costs>
@@ -1277,6 +1427,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7891-023e-ceea-6b89" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="c93d-bf13-3cc8-c242" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
@@ -1667,6 +1818,7 @@
         </entryLink>
         <entryLink id="9699-1de5-de75-953b" name="Photon grenade" hidden="false" collective="false" targetId="1f76-6a16-1e9d-e519" type="selectionEntry"/>
         <entryLink id="e546-61c3-6b89-9168" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
+        <entryLink id="0e31-bf67-21b4-f8ec" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="23.0"/>
@@ -1805,6 +1957,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6473-c162-bbdb-423b" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
+        <entryLink id="ca49-25c3-ac79-e411" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="18.0"/>
@@ -2124,6 +2277,7 @@
         <entryLink id="8f73-e562-a0d2-7c12" name="XV8 Wargear" hidden="false" collective="false" targetId="5ea6-4b62-937b-652a" type="selectionEntryGroup"/>
         <entryLink id="9d0f-c8cb-b5ca-7d02" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
         <entryLink id="6848-789b-b6ae-f7e3" name="XV8-02 Crisis Iridium Battlesuit" hidden="false" collective="false" targetId="adc9-e68c-54a2-bff8" type="selectionEntry"/>
+        <entryLink id="7b64-f54c-d1dc-235b" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="33.0"/>
@@ -2202,6 +2356,7 @@
         <entryLink id="d327-b224-3eff-3633" name="XV8 Wargear" hidden="false" collective="false" targetId="5ea6-4b62-937b-652a" type="selectionEntryGroup"/>
         <entryLink id="ef61-bba4-bb1b-a20a" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
         <entryLink id="63f1-237e-3042-af60" name="XV8-02 Crisis Iridium Battlesuit" hidden="false" collective="false" targetId="adc9-e68c-54a2-bff8" type="selectionEntry"/>
+        <entryLink id="f4c6-c9f9-c96d-2f54" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="32.0"/>
@@ -2269,6 +2424,7 @@
       <entryLinks>
         <entryLink id="0b99-c92b-22cd-8938" name="Specialism" hidden="false" collective="false" targetId="a33d-4f89-1be1-c88b" type="selectionEntryGroup"/>
         <entryLink id="8ea9-c317-1c12-d567" name="XV85 Wargear" hidden="false" collective="false" targetId="6ab7-73ce-a8d5-d4fa" type="selectionEntryGroup"/>
+        <entryLink id="edce-44ef-e092-4679" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="62.0"/>
@@ -2367,24 +2523,10 @@
           </constraints>
         </entryLink>
         <entryLink id="a7ee-69ca-1136-56a5" name="Photon grenade" hidden="false" collective="false" targetId="1f76-6a16-1e9d-e519" type="selectionEntry"/>
+        <entryLink id="eed7-da98-b76b-32e4" name="Sept" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="39.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="8d18-a2bc-34c6-408c" name="Sept Tenet" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0b7f-2600-a082-0398" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0269-db51-27a1-dc1e" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="eed0-808b-cba1-d624" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="4a92-c8ef-b234-59d8" name="Sept Tenets" hidden="false" collective="false" targetId="b174-5a4a-deb1-047f" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2873,73 +3015,61 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b174-5a4a-deb1-047f" name="Sept Tenet" hidden="false" collective="false" defaultSelectionEntryId="0ac0-ccb7-5170-d235">
+    <selectionEntryGroup id="b174-5a4a-deb1-047f" name="Sept" hidden="false" collective="false" defaultSelectionEntryId="0ac0-ccb7-5170-d235">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e6a-863c-9c69-af0f" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ac6-7f82-c44b-9f8c" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="0ac0-ccb7-5170-d235" name="*No Tenet*" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0ac0-ccb7-5170-d235" name="*No Sept*" hidden="false" collective="false" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e84c-9fed-66bc-9668" name="T&apos;au Sept" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="d22d-dc28-4520-1c5d" name="Coordinated Fire Arcs" hidden="false">
-              <description>When a model in your kill team uses their For the Greater Good ability, or when they fire Overwatch whilst they are within 6&quot; of a friendly model, they successfully hit on a roll of 5 or 6.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="629d-afa9-07b7-30a4" name="T&apos;au Sept" hidden="false" targetId="f4ce-9f2e-40d5-46bb" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5508-bc7b-236a-1e3a" name="Vior&apos;la Sept" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="7081-26cf-463a-7f32" name="Strike Fast" hidden="false">
-              <description>Models in your kill team can shoot Rapid Fire weapons as if they were Assault weapons in the Shooting phase of a battle round in which they Advanced (e.g. a Rapid Fire 1 weapon would be used as if it were an Assault 1 weapon). In addition, these models do not suffer the penalty to their hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="e277-1520-452c-5124" name="Vior&apos;la Sept" hidden="false" targetId="d2b1-0562-1a1a-fb68" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ea5c-4ebe-4b62-502f" name="Bork&apos;an Sept" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="6d38-401a-5a86-12ba" name="Superior Craftsmanship" hidden="false">
-              <description>Models in your kill team do not suffer the penalty to hit rolls for their attacks that target enemy models at long range.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="eac9-1f0f-3187-54e0" name="Bork&apos;an Sept" hidden="false" targetId="c830-fd11-7cc5-b88b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f1dc-acba-cd3d-bae7" name="Dal&apos;yth Sept" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="b956-ef90-9f27-dc82" name="Adaptive Camouflage" hidden="false">
-              <description>If a model in your kill team does not move in the Movement phase, for the remainder of the battle round it is considered to be obscured to enemy models that target it.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="912e-16ed-72ef-de53" name="Dal&apos;yth Sept" hidden="false" targetId="00f6-59fc-8b40-ca1c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4632-f834-c51a-e265" name="Sa&apos;cea Sept" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="f0c6-868c-04d5-103e" name="Calm Discipline" hidden="false">
-              <description>Add 1 to the Leadership characteristic of models in your kill team. In addition, you can re-roll hit rolls of 1 for shooting attacks made by models in your kill team.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="41a7-7db3-7380-9378" name="Sa&apos;cea Sept" hidden="false" targetId="68d1-4795-69e2-2300" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ef73-364e-5834-e9a8" name="Farsight Enclaves" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="54e6-89b7-0f16-5b99" name="Devastating Counter-strike" hidden="false">
-              <description>Re-roll hit and wound rolls of 1 for shooting attacks made by models in your kill team that target an enemy model that is within 6&quot; of the firing model.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="d4f4-41be-524e-6f55" name="Farsight Enclaves" hidden="false" targetId="739b-2a62-fe3c-f12f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
