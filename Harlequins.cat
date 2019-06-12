@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8f3b-d6fd-0ad8-06f2" name="Harlequins" revision="7" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8f3b-d6fd-0ad8-06f2" name="Harlequins" revision="8" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="cb52-a195-44b4-d87b" name="Player" hidden="false"/>
+    <categoryEntry id="7c3b-dea4-d6e2-f559" name="Dreaming Shadow" hidden="false"/>
+    <categoryEntry id="155f-1e62-fbee-e25b" name="Frozen Stars" hidden="false"/>
+    <categoryEntry id="261b-dc11-00ed-4c22" name="Midnight Sorrow" hidden="false"/>
+    <categoryEntry id="3c6d-b9af-f9e6-6056" name="Silent Shroud" hidden="false"/>
+    <categoryEntry id="60f8-e0e7-a39f-a358" name="Soaring Spite" hidden="false"/>
+    <categoryEntry id="8faf-e4ce-375d-9a4b" name="Veiled Path" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="2221-a20a-7aa7-9796" name="Player" hidden="false" collective="false" targetId="853e-b6de-ea60-b17e" type="selectionEntry">
@@ -41,8 +47,129 @@
     <entryLink id="7270-9d1e-9fcb-0b61" name="Troupe Master" hidden="false" collective="false" targetId="ab2e-c78c-e6ed-fe1c" type="selectionEntry"/>
     <entryLink id="7129-3117-2f37-35c2" name="Shadowseer" hidden="false" collective="false" targetId="0f8e-40b9-3ed7-2fca" type="selectionEntry"/>
     <entryLink id="ccb7-cf51-1a6d-f4f3" name="Death Jester" hidden="false" collective="false" targetId="789a-12e6-be02-1dc1" type="selectionEntry"/>
-    <entryLink id="70d9-e8d6-aa24-dd58" name="Masque Form" hidden="false" collective="false" targetId="d5fa-5b7c-7a68-42d0" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="e947-b0b9-fa26-5a9f" name="Sombre Sentinels" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c3b-dea4-d6e2-f559" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="155f-1e62-fbee-e25b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="261b-dc11-00ed-4c22" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c6d-b9af-f9e6-6056" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60f8-e0e7-a39f-a358" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8faf-e4ce-375d-9a4b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3a9-f0d0-b8a7-3e86" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>When you make a Nerve test for a model in your kill team, subtract 1 from the result. In addition, when a model in your kill team is taken out of action, roll a D6 before removing that model; on a 4+, that model can make a shooting attack with one weapon as if it were the Shooting phase, or make a single attack as if it were the Fight phase.</description>
+    </rule>
+    <rule id="2fab-1dc0-c300-f491" name="Hysterical Fury" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="155f-1e62-fbee-e25b" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c3b-dea4-d6e2-f559" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="261b-dc11-00ed-4c22" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c6d-b9af-f9e6-6056" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60f8-e0e7-a39f-a358" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8faf-e4ce-375d-9a4b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3a9-f0d0-b8a7-3e86" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can make one additional attack in the Fight phase with a model in your kill team if it charged, was charged or performed a pile-in move granted by the Heroic Intervention Commander Tactic in this battle round.</description>
+    </rule>
+    <rule id="91d4-c38d-9324-169f" name="The Art of Death" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="261b-dc11-00ed-4c22" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c3b-dea4-d6e2-f559" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="155f-1e62-fbee-e25b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c6d-b9af-f9e6-6056" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60f8-e0e7-a39f-a358" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8faf-e4ce-375d-9a4b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3a9-f0d0-b8a7-3e86" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team can move an additional D6&quot; when they Fall Back. In addition, they can consolidate up to 6&quot;.</description>
+    </rule>
+    <rule id="6a7c-829e-8233-1d0c" name="Dance of Nightmares Made Flesh" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c6d-b9af-f9e6-6056" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c3b-dea4-d6e2-f559" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="155f-1e62-fbee-e25b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="261b-dc11-00ed-4c22" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60f8-e0e7-a39f-a358" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8faf-e4ce-375d-9a4b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3a9-f0d0-b8a7-3e86" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Subtract 1 from the Leadership characteristic of enemy models while they are within 3&quot; of any models in your kill team. In addition, whenever an opponent takes a Nerve test for a model that is within 3&quot; of any models in your kill team, they must roll two dice and discard the lowest result.</description>
+    </rule>
+    <rule id="0481-8340-6431-3f42" name="Serpent&apos;s Brood" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60f8-e0e7-a39f-a358" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c3b-dea4-d6e2-f559" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="155f-1e62-fbee-e25b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="261b-dc11-00ed-4c22" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c6d-b9af-f9e6-6056" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8faf-e4ce-375d-9a4b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3a9-f0d0-b8a7-3e86" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team treat all Pistol weapons they are equipped with as Assault 1 weapons during a battle round in which they Advanced. In addition, these models do not suffer the penalty to their hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
+    </rule>
+    <rule id="06ad-f64a-42ac-60bb" name="Riddle-smiths" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8faf-e4ce-375d-9a4b" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c3b-dea4-d6e2-f559" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="155f-1e62-fbee-e25b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="261b-dc11-00ed-4c22" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c6d-b9af-f9e6-6056" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60f8-e0e7-a39f-a358" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3a9-f0d0-b8a7-3e86" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>At the start of each Fight phase roll 2 dice and discard the highest result. Until the end of the phase, each time an opponent targets a model in your kill team and makes a hit roll that, before modifiers, exactly matches your dice result, that hit roll fails.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="69ca-e2bd-a3a1-aae3" name="Fusion pistol" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -242,6 +369,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8459-d6b9-46c7-c254" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="c5b1-f09a-b767-a565" name="Masque" hidden="false" collective="false" targetId="dcd9-b536-3878-81db" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
@@ -402,6 +530,7 @@
           </constraints>
         </entryLink>
         <entryLink id="b7d1-3803-4a58-930b" name="Specialism" hidden="false" collective="false" targetId="94e9-4e9d-7489-e707" type="selectionEntryGroup"/>
+        <entryLink id="cec4-5f18-c30a-13d8" name="Masque" hidden="false" collective="false" targetId="dcd9-b536-3878-81db" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="50.0"/>
@@ -538,6 +667,7 @@
       <entryLinks>
         <entryLink id="d7df-6a9d-362a-90a8" name="Specialism" hidden="false" collective="false" targetId="94e9-4e9d-7489-e707" type="selectionEntryGroup"/>
         <entryLink id="ee29-24c4-14c4-51eb" name="Psychic Powers" hidden="false" collective="false" targetId="5efb-01f2-e017-4e35" type="selectionEntryGroup"/>
+        <entryLink id="4cdf-7adb-798d-c2ee" name="Masque" hidden="false" collective="false" targetId="dcd9-b536-3878-81db" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="65.0"/>
@@ -651,22 +781,11 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="fd70-342b-fadd-f07d" name="Specialism" hidden="false" collective="false" targetId="94e9-4e9d-7489-e707" type="selectionEntryGroup"/>
+        <entryLink id="4ee0-5b79-90c0-460d" name="Masque" hidden="false" collective="false" targetId="dcd9-b536-3878-81db" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="45.0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry id="d5fa-5b7c-7a68-42d0" name="Masque Form" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b4b-3d79-50af-a5f5" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cd2-f483-4ffe-8c48" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="9bb8-f516-78d2-c49c" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="31a8-e4f0-6566-c6db" name="Masque Form" hidden="false" collective="false" targetId="dcd9-b536-3878-81db" type="selectionEntryGroup"/>
-      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -808,55 +927,65 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="dcd9-b536-3878-81db" name="Masque Form" hidden="false" collective="false" defaultSelectionEntryId="f3a9-f0d0-b8a7-3e86">
+    <selectionEntryGroup id="dcd9-b536-3878-81db" name="Masque" hidden="false" collective="false" defaultSelectionEntryId="f3a9-f0d0-b8a7-3e86">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41dc-58c6-0413-ffd9" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a49-6822-1e78-6615" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="0160-0e8a-29ad-3492" name="Midnight Sorrow" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="37d4-2c39-4b2f-d35f" name="The Art of Death" hidden="false">
-              <description>Models in your kill team can move an additional D6&quot; when they Fall Back. In addition, they can consolidate up to 6&quot;.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="f93b-f5a1-784c-a29d" name="Midnight Sorrow" hidden="false" targetId="261b-dc11-00ed-4c22" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4329-d624-7ad3-5782" name="Veiled Path" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="56ce-2b37-b3bd-8e56" name="Riddle-smiths" hidden="false">
-              <description>At the start of each Fight phase roll 2 dice and discard the highest result. Until the end of the phase, each time an opponent targets a model in your kill team and makes a hit roll that, before modifiers, exactly matches your dice result, that hit roll fails.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="2ccc-3078-8960-7bf1" name="Veiled Path" hidden="false" targetId="8faf-e4ce-375d-9a4b" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="fb99-e980-3a05-a275" name="Frozen Stars" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="1dc0-5417-5d58-6334" name="Hysterical Fury" hidden="false">
-              <description>You can make one additional attack in the Fight phase with a model in your kill team if it charged, was charged or performed a pile-in move granted by the Heroic Intervention Commander Tactic in this battle round.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="3690-5388-c36d-5c98" name="Frozen Stars" hidden="false" targetId="155f-1e62-fbee-e25b" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="2d37-e7a1-ab6d-b653" name="Soaring Spite" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="70f7-34dc-692d-fb0e" name="Serpent&apos;s Brood" hidden="false">
-              <description>Models in your kill team treat all Pistol weapons they are equipped with as Assault 1 weapons during a battle round in which they Advanced. In addition, these models do not suffer the penalty to their hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="c74c-40c1-42a9-40b4" name="Soaring Spite" hidden="false" targetId="60f8-e0e7-a39f-a358" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4b0e-c163-7b08-1093" name="Dreaming Shadow" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="d331-11a1-bafb-76e1" name="Sombre Sentinels" hidden="false">
-              <description>When you make a Nerve test for a model in your kill team, subtract 1 from the result. In addition, when a model in your kill team is taken out of action, roll a D6 before removing that model; on a 4+, that model can make a shooting attack with one weapon as if it were the Shooting phase, or make a single attack as if it were the Fight phase.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="22b9-db89-97cc-ab20" name="Dreaming Shadow" hidden="false" targetId="7c3b-dea4-d6e2-f559" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="514a-670a-6a5d-aa14" name="Silent Shroud" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="5a01-64a5-426f-02f9" name="Dance of Nightmares Made Flesh" hidden="false">
-              <description>Subtract 1 from the Leadership characteristic of enemy models while they are within 3&quot; of any models in your kill team. In addition, whenever an opponent takes a Nerve test for a model that is within 3&quot; of any models in your kill team, they must roll two dice and discard the lowest result.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="a044-c644-3b51-6edc" name="Silent Shroud" hidden="false" targetId="3c6d-b9af-f9e6-6056" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
-        <selectionEntry id="f3a9-f0d0-b8a7-3e86" name="* No Form*" hidden="false" collective="false" type="upgrade"/>
+        <selectionEntry id="f3a9-f0d0-b8a7-3e86" name="* No Masque*" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
