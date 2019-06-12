@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c51-0669-1f79-d8aa" name="Astra Militarum" revision="16" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4c51-0669-1f79-d8aa" name="Astra Militarum" revision="17" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="23ec-80ab-7550-fb7e" name="Astra Militarum Orders">
       <characteristicTypes>
@@ -31,6 +31,13 @@
     <categoryEntry id="f88b-df65-6f55-8586" name="Severina Raine" hidden="false"/>
     <categoryEntry id="3244-7b29-a389-49ed" name="Ogryn" hidden="false"/>
     <categoryEntry id="26d3-2724-2fef-2315" name="Bullgryn" hidden="false"/>
+    <categoryEntry id="104b-8483-d793-6650" name="Armageddon" hidden="false"/>
+    <categoryEntry id="a901-d251-4a19-f093" name="Cadia" hidden="false"/>
+    <categoryEntry id="0b10-2e90-052d-8f3d" name="Catachan" hidden="false"/>
+    <categoryEntry id="ce52-01a9-272b-0a1b" name="Mordian" hidden="false"/>
+    <categoryEntry id="1d6f-ab14-4f1f-bcc4" name="Tallarn" hidden="false"/>
+    <categoryEntry id="745d-eb46-1636-13a8" name="Valhallan" hidden="false"/>
+    <categoryEntry id="9d69-b25f-975b-83e3" name="Vostroyan" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="9122-f79e-d261-933e" name="Guardsman" hidden="false" collective="false" targetId="d5bc-71b5-c24f-4e96" type="selectionEntry">
@@ -233,7 +240,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="986c-5d9c-6459-1a66" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -348,8 +355,183 @@
         <categoryLink id="343c-f379-7186-04e6" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="be4c-4b27-4bdf-bebd" name="Regimental Doctrine" hidden="false" collective="false" targetId="749e-4d7d-da17-23f0" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="47cc-eead-913a-df29" name="Industrial Efficiency" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39d2-4f09-6952-19c5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a901-d251-4a19-f093" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b10-2e90-052d-8f3d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce52-01a9-272b-0a1b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d6f-ab14-4f1f-bcc4" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745d-eb46-1636-13a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d69-b25f-975b-83e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="104b-8483-d793-6650" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team firing Rapid Fire weapons double the number of attacks they make if all of their targets are within 18&quot; (instead of half the weapon&apos;s Range characteristic).</description>
+    </rule>
+    <rule id="66e7-b363-05c8-ba2b" name="Born Soldiers" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39d2-4f09-6952-19c5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="104b-8483-d793-6650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b10-2e90-052d-8f3d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce52-01a9-272b-0a1b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d6f-ab14-4f1f-bcc4" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745d-eb46-1636-13a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d69-b25f-975b-83e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a901-d251-4a19-f093" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Re-roll unmodified hit rolls of 1 in the Shooting phase for models in your kill team if they have not moved in this battle round. If a model in your kill team is issued the &apos;Take Aim&apos; order and it has not moved in this battle round, re-roll all failed hit rolls for that model until the end of the phase instead.</description>
+    </rule>
+    <rule id="95a9-9457-0fea-083e" name="Brutal Strength" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39d2-4f09-6952-19c5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a901-d251-4a19-f093" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="104b-8483-d793-6650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce52-01a9-272b-0a1b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d6f-ab14-4f1f-bcc4" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745d-eb46-1636-13a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d69-b25f-975b-83e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b10-2e90-052d-8f3d" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Add 1 to the Strength characteristic of models in your kill team. In addition, add 1 to the Leadership characteristic of models in your kill team if they are within 6&quot; of a friendly CATACHAN OFFICER.</description>
+    </rule>
+    <rule id="44d0-c655-b55e-768b" name="Storm Troopers" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39d2-4f09-6952-19c5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a901-d251-4a19-f093" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b10-2e90-052d-8f3d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce52-01a9-272b-0a1b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d6f-ab14-4f1f-bcc4" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745d-eb46-1636-13a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d69-b25f-975b-83e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="104b-8483-d793-6650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="986c-5d9c-6459-1a66" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2af4-29b9-2a03-0804" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="452e-867b-23cb-68c0" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43ac-4f8b-b486-da4e" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>If a model from your kill team targets an enemy model that is within range and not at long range when making a shooting attack, it can make an extra shot with the same weapon, at the same target, for each unmodified hit roll of 6.</description>
+    </rule>
+    <rule id="fff5-a9e7-4d52-3a7a" name="Parade Drill" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39d2-4f09-6952-19c5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a901-d251-4a19-f093" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b10-2e90-052d-8f3d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="104b-8483-d793-6650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d6f-ab14-4f1f-bcc4" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745d-eb46-1636-13a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d69-b25f-975b-83e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce52-01a9-272b-0a1b" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>If the base of a model in your kill team is touching the base of at least two other friendly MORDIAN models, add 1 to that model&apos;s Leadership characteristic, and when that model fires Overwatch they successfully hit on a roll of 5 or 6.</description>
+    </rule>
+    <rule id="03fe-f9ad-4fa4-8947" name="Swift as the Wind" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39d2-4f09-6952-19c5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a901-d251-4a19-f093" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b10-2e90-052d-8f3d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce52-01a9-272b-0a1b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="104b-8483-d793-6650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745d-eb46-1636-13a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d69-b25f-975b-83e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="104b-8483-d793-6650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d6f-ab14-4f1f-bcc4" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team can shoot in the Shooting phase even if they Advanced in the same battle round (with the exception of Heavy weapons). In addition, these models do not suffer the penalty to hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
+    </rule>
+    <rule id="bb82-2071-496a-3212" name="Grim Demeanour" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39d2-4f09-6952-19c5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a901-d251-4a19-f093" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b10-2e90-052d-8f3d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce52-01a9-272b-0a1b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d6f-ab14-4f1f-bcc4" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="104b-8483-d793-6650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d69-b25f-975b-83e3" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745d-eb46-1636-13a8" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>When you take a Nerve test for a model in your kill team, roll a D3 (instead of a D6).</description>
+    </rule>
+    <rule id="ba4d-74a1-9c06-25ff" name="Heirloom Weapons" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39d2-4f09-6952-19c5" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a901-d251-4a19-f093" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b10-2e90-052d-8f3d" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745d-eb46-1636-13a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d6f-ab14-4f1f-bcc4" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce52-01a9-272b-0a1b" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="104b-8483-d793-6650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d69-b25f-975b-83e3" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team do not suffer the penalty to hit rolls for their attacks that target enemy models at long range.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="2df8-5166-0406-041b" name="Flamer" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -387,15 +569,10 @@
     </selectionEntry>
     <selectionEntry id="d5bc-71b5-c24f-4e96" name="Guardsman" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1.0">
           <repeats>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
           </repeats>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
-          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -440,6 +617,7 @@
           </constraints>
         </entryLink>
         <entryLink id="c467-4e3b-8d17-1008" name="Specialism" hidden="false" collective="false" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
+        <entryLink id="5946-6819-2046-8faa" name="Regiment" hidden="false" collective="false" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
@@ -447,15 +625,10 @@
     </selectionEntry>
     <selectionEntry id="0e48-4b39-f955-7e20" name="Special Weapons Guardsman" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1.0">
           <repeats>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
           </repeats>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
-          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -507,6 +680,7 @@
           </modifiers>
         </entryLink>
         <entryLink id="4bc5-8b36-0e5e-654d" name="Specialism" hidden="false" collective="false" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
+        <entryLink id="66a5-26e0-6e3d-0c12" name="Regiment" hidden="false" collective="false" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
@@ -866,7 +1040,7 @@
     </selectionEntry>
     <selectionEntry id="5685-5d66-9c9b-faf4" name="Guardsman Gunner" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="5b26-9ad1-1375-5209" value="1">
+        <modifier type="set" field="5b26-9ad1-1375-5209" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
           </conditions>
@@ -875,11 +1049,6 @@
           <repeats>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
           </repeats>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
-          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -932,6 +1101,7 @@
           </constraints>
         </entryLink>
         <entryLink id="dce0-e701-6657-d716" name="Specialism" hidden="false" collective="false" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
+        <entryLink id="d9bf-2b6c-30e6-9da5" name="Regiment" hidden="false" collective="false" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
@@ -939,7 +1109,7 @@
     </selectionEntry>
     <selectionEntry id="8d63-9ed2-1596-d8e6" name="Sergeant" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="45d0-6aab-7cd4-263f" value="1">
+        <modifier type="set" field="45d0-6aab-7cd4-263f" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
           </conditions>
@@ -948,11 +1118,6 @@
           <repeats>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
           </repeats>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
-          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -1023,6 +1188,7 @@
           </modifiers>
         </entryLink>
         <entryLink id="8dac-62a8-8f0d-1bb0" name="Specialism" hidden="false" collective="false" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
+        <entryLink id="455c-3a18-bbc8-9ab7" name="Regiment" hidden="false" collective="false" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
@@ -1085,15 +1251,10 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1.0">
           <repeats>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
           </repeats>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
-          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -1157,6 +1318,7 @@
           </modifiers>
         </entryLink>
         <entryLink id="9607-ac3b-768b-bba8" name="Specialism" hidden="false" collective="false" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
+        <entryLink id="4cb6-5cdb-df90-186e" name="Regiment" hidden="false" collective="false" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
@@ -1389,13 +1551,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="90ff-92bf-17b3-38fd" name="Infantry Squad Fire Team" hidden="false" collective="false" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6f1c-da82-7f1c-908f" type="max"/>
       </constraints>
@@ -1419,13 +1574,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8180-84cd-518d-ca33" name="Special Weapons Squad Fire Team" hidden="false" collective="false" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6f35-c35d-4f8d-28c0" type="max"/>
       </constraints>
@@ -1674,7 +1822,7 @@
     </selectionEntry>
     <selectionEntry id="5dc9-5992-cb96-1a85" name="Platoon Commander" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="162e-8f50-d09f-e0bc" value="1">
+        <modifier type="set" field="162e-8f50-d09f-e0bc" value="1.0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1697,11 +1845,6 @@
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
           <conditions>
             <condition field="selections" scope="5dc9-5992-cb96-1a85" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1766,6 +1909,7 @@
         <entryLink id="8794-aab8-b73e-b5fb" name="Display Voice of Command Orders" hidden="false" collective="false" targetId="b091-39d9-f78c-b993" type="selectionEntry"/>
         <entryLink id="1f7d-2de3-d432-73d6" name="Commander Specialisim" hidden="false" collective="false" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup"/>
         <entryLink id="62b9-ca3d-2a32-4a63" name="Frag Grenades" hidden="false" collective="false" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry"/>
+        <entryLink id="4b2e-0eaa-f748-241c" name="Regiment" hidden="false" collective="false" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -1800,7 +1944,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="5">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="5.0">
           <conditions>
             <condition field="selections" scope="234d-fd85-b46d-5257" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
           </conditions>
@@ -1813,11 +1957,6 @@
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="20">
           <conditions>
             <condition field="selections" scope="234d-fd85-b46d-5257" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1887,6 +2026,7 @@
         <entryLink id="bd54-b45b-f8a8-5b9f" name="Display Voice of Command Orders" hidden="false" collective="false" targetId="b091-39d9-f78c-b993" type="selectionEntry"/>
         <entryLink id="036b-7930-a157-7c41" name="Specialism (C)" hidden="false" collective="false" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup"/>
         <entryLink id="1d44-5b9d-04f9-d494" name="Frag Grenades" hidden="false" collective="false" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry"/>
+        <entryLink id="1dcc-c0af-6e88-4eab" name="Regiment" hidden="false" collective="false" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
@@ -2005,7 +2145,7 @@
     </selectionEntry>
     <selectionEntry id="5493-48f5-1ef7-6ff9" name="Taddeus the Purifier" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="1a20-4935-fb2f-8cd3" value="1">
+        <modifier type="set" field="1a20-4935-fb2f-8cd3" value="1.0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -2028,11 +2168,6 @@
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2142,14 +2277,9 @@
     </selectionEntry>
     <selectionEntry id="4612-9983-ee71-687f" name="Pious Vorne" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="dddc-b58d-aa3a-1243" value="1">
+        <modifier type="set" field="dddc-b58d-aa3a-1243" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2436,7 +2566,7 @@
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="10">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="10.0">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
           </conditions>
@@ -2450,11 +2580,6 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
-          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -2645,7 +2770,7 @@
     </selectionEntry>
     <selectionEntry id="53ad-9fd8-5262-f513" name="Sly Marbo" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="6df5-c66f-ee17-662b" value="1">
+        <modifier type="set" field="6df5-c66f-ee17-662b" value="1.0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -2654,11 +2779,6 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28e6-24f6-8076-c42d" type="equalTo"/>
-          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -2759,6 +2879,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="2c47-2ab9-31c3-b0c8" name="Legendary Hunter - Level 4" hidden="false" collective="false" targetId="1625-23f9-5e9b-d3ac" type="selectionEntry"/>
+        <entryLink id="4029-2867-f582-c815" name="Regiment" hidden="false" collective="false" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="55.0"/>
@@ -3168,21 +3289,6 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="38.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="749e-4d7d-da17-23f0" name="Regimental Doctrine" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3052-039c-5fc8-75a2" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d9d1-6251-3585-ab6b" type="min"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="8bd8-f827-a7f7-5899" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="4dc6-2c73-0d5f-05ac" name="Regimental Doctrine" hidden="false" collective="false" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="d441-da84-8194-ea3e" name="Specialism" hidden="false" collective="false">
@@ -3394,93 +3500,69 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0698-0499-9840-7475" name="Regimental Doctrine" hidden="false" collective="false" defaultSelectionEntryId="39d2-4f09-6952-19c5">
+    <selectionEntryGroup id="0698-0499-9840-7475" name="Regiment" hidden="false" collective="false" defaultSelectionEntryId="39d2-4f09-6952-19c5">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a90-8700-9c50-c014" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9ca-745e-ccdb-fdf3" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="39d2-4f09-6952-19c5" name="*No Doctrine*" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="39d2-4f09-6952-19c5" name="*No Regiment*" hidden="false" collective="false" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0b4d-3353-d8d0-b6aa" name="Cadian" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="414b-d8e9-776e-bd16" name="Born Soldiers" hidden="false">
-              <description>Re-roll unmodified hit rolls of 1 in the Shooting phase for models in your kill team if they have not moved in this battle round. If a model in your kill team is issued the &apos;Take Aim&apos; order and it has not moved in this battle round, re-roll all failed hit rolls for that model until the end of the phase instead.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="a77d-f530-da90-3526" name="Cadia" hidden="false" targetId="a901-d251-4a19-f093" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="86b7-9c59-197a-d155" name="Catachan" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="048d-5d89-6a94-56fc" name="Brutal Strength" hidden="false">
-              <description>Add 1 to the Strength characteristic of models in your kill team. In addition, add 1 to the Leadership characteristic of models in your kill team if they are within 6&quot; of a friendly CATACHAN OFFICER.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="a7b8-8d0e-47e0-4f86" name="Catachan" hidden="false" targetId="0b10-2e90-052d-8f3d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="04ad-e70b-cb6e-4a7f" name="Valhallan" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="4f48-5ed9-1cf1-e8f0" name="Grim Demeanour" hidden="false">
-              <description>When you take a Nerve test for a model in your kill team, roll a D3 (instead of a D6).</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="c447-8b4a-44a1-ff6b" name="Valhallan" hidden="false" targetId="745d-eb46-1636-13a8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b12a-91cf-50eb-a8d0" name="Vostroyan" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="ff33-1407-9152-1218" name="Heirloom Weapons" hidden="false">
-              <description>Models in your kill team do not suffer the penalty to hit rolls for their attacks that target enemy models at long range.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="56b4-412a-4667-89fc" name="Vostroyan" hidden="false" targetId="9d69-b25f-975b-83e3" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="23d9-77a7-2e45-4951" name="Armageddon" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="ae67-bd9a-41bd-ae4e" name="Industrial Efficiency" hidden="false">
-              <description>Models in your kill team firing Rapid Fire weapons double the number of attacks they make if all of their targets are within 18&quot; (instead of half the weapon&apos;s Range characteristic).</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="3790-2092-8db1-456d" name="Armageddon" hidden="false" targetId="104b-8483-d793-6650" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1d62-8ee3-757a-64ba" name="Tallarn" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="de4f-6527-95c3-6faf" name="Swift as the Wind" hidden="false">
-              <description>Models in your kill team can shoot in the Shooting phase even if they Advanced in the same battle round (with the exception of Heavy weapons). In addition, these models do not suffer the penalty to hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="28e6-24f6-8076-c42d" name="Militarum Tempestus" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="636d-9784-9612-34be" name="Storm Troopers" hidden="false">
-              <description>If a model from your kill team targets an enemy model that is within range and not at long range when making a shooting attack, it can make an extra shot with the same weapon, at the same target, for each unmodified hit roll of 6.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="f8a9-a318-bd0f-4850" name="Tallarn" hidden="false" targetId="1d6f-ab14-4f1f-bcc4" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5516-eaf1-87d6-cced" name="Mordian" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="ca92-dba9-453c-624d" name="Parade Drill" hidden="false">
-              <description>If the base of a model in your kill team is touching the base of at least two other friendly MORDIAN models, add 1 to that model&apos;s Leadership characteristic, and when that model fires Overwatch they successfully hit on a roll of 5 or 6.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="7d6e-648d-1bfc-78ca" name="Mordian" hidden="false" targetId="ce52-01a9-272b-0a1b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
