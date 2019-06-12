@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a8de-fa3a-9163-0c20" name="Tyranids" revision="9" battleScribeVersion="2.02" authorName="GenWilhelm" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a8de-fa3a-9163-0c20" name="Tyranids" revision="10" battleScribeVersion="2.02" authorName="GenWilhelm" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="a8de-fa3a-pubN66768" name="Core Manual"/>
     <publication id="a8de-fa3a-pubN71688" name="Commanders"/>
@@ -15,6 +15,13 @@
     <categoryEntry id="c707-511f-6e84-ecd1" name="Tyrant Guard" hidden="false"/>
     <categoryEntry id="139e-01f2-210e-b274" name="Hive Guard" hidden="false"/>
     <categoryEntry id="d87d-fb2f-78f8-8447" name="Ravener" hidden="false"/>
+    <categoryEntry id="bca2-6c3a-92b2-8ccf" name="Behemoth" hidden="false"/>
+    <categoryEntry id="c85d-39c3-27f6-f9df" name="Gorgon" hidden="false"/>
+    <categoryEntry id="bbf6-926b-e887-1650" name="Hydra" hidden="false"/>
+    <categoryEntry id="6b1f-79a4-c2d4-d507" name="Jormungandr" hidden="false"/>
+    <categoryEntry id="9b63-9b67-13f1-07a8" name="Kraken" hidden="false"/>
+    <categoryEntry id="e154-46b6-c5d3-c972" name="Kronos" hidden="false"/>
+    <categoryEntry id="3c51-799a-5820-1b29" name="Leviathan" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="f581-051a-81e1-f3c4" name="Termagant" hidden="false" collective="false" targetId="cf37-0d24-cf30-6e28" type="selectionEntry">
@@ -301,8 +308,156 @@
         <categoryLink id="e7f2-5834-05da-d3dc" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a804-7bce-4d6a-1de6" name="Hive Fleet Adaptation" hidden="false" collective="false" targetId="84b2-566b-2160-2f01" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="a26c-dc4c-48f0-e5f3" name="Hyper-aggression" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bca2-6c3a-92b2-8ccf" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c85d-39c3-27f6-f9df" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbf6-926b-e887-1650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b1f-79a4-c2d4-d507" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b63-9b67-13f1-07a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e154-46b6-c5d3-c972" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c51-799a-5820-1b29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b0e2-0a55-9394-7dce" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can re-roll charge rolls for models in your kill team.</description>
+    </rule>
+    <rule id="5c06-9bf5-340e-fcea" name="Adaptive Toxins" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c85d-39c3-27f6-f9df" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bca2-6c3a-92b2-8ccf" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbf6-926b-e887-1650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b1f-79a4-c2d4-d507" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b63-9b67-13f1-07a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e154-46b6-c5d3-c972" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c51-799a-5820-1b29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b0e2-0a55-9394-7dce" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can re-roll wound rolls for 1 in the Fight phase for attacks made by models in your kill team.</description>
+    </rule>
+    <rule id="0448-d3fe-ba1b-bd1e" name="Swarming Instincts" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbf6-926b-e887-1650" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bca2-6c3a-92b2-8ccf" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c85d-39c3-27f6-f9df" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b1f-79a4-c2d4-d507" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b63-9b67-13f1-07a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e154-46b6-c5d3-c972" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c51-799a-5820-1b29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b0e2-0a55-9394-7dce" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>You can re-roll hit rolls in the Fight phase for attacks made by models in your kill team that target an enemy that is within 1&quot; of another model from your kill team.</description>
+    </rule>
+    <rule id="1776-351f-ef40-8e35" name="Tunnel Networks" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b1f-79a4-c2d4-d507" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bca2-6c3a-92b2-8ccf" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c85d-39c3-27f6-f9df" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbf6-926b-e887-1650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b63-9b67-13f1-07a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e154-46b6-c5d3-c972" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c51-799a-5820-1b29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b0e2-0a55-9394-7dce" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Models in your kill team (other than models that can FLY) are considered to be obscured to enemy models that target them. If the model Advances or charges, however, it loses this benefit until the end of the battle round.</description>
+    </rule>
+    <rule id="9c02-2cc0-ef0e-c2e6" name="Questing Tendrils" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b63-9b67-13f1-07a8" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bca2-6c3a-92b2-8ccf" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c85d-39c3-27f6-f9df" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbf6-926b-e887-1650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b1f-79a4-c2d4-d507" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e154-46b6-c5d3-c972" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c51-799a-5820-1b29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b0e2-0a55-9394-7dce" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>When a model from your kill team Advances, roll three D6 instead of one and pick the highest roll to add to the Move characteristic of that model for that Movement phase. In addition, if a model from your kill team started the Movement phase within 1&quot; of an enemy model, but when you pick it to move there are no enemy models within 1&quot;, that model can make a charge attempt instead of Falling Back or remaining stationary.</description>
+    </rule>
+    <rule id="0294-2de4-8ad3-89b5" name="Bio-barrage" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e154-46b6-c5d3-c972" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bca2-6c3a-92b2-8ccf" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c85d-39c3-27f6-f9df" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbf6-926b-e887-1650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b1f-79a4-c2d4-d507" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b63-9b67-13f1-07a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c51-799a-5820-1b29" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b0e2-0a55-9394-7dce" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Re-roll unmodified hit rolls of 1 in the Shooting phase for models in your kill team if they have not moved in this battle round.</description>
+    </rule>
+    <rule id="da94-cbb1-5537-2c1f" name="Synaptic Imperative" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c51-799a-5820-1b29" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bca2-6c3a-92b2-8ccf" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c85d-39c3-27f6-f9df" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbf6-926b-e887-1650" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b1f-79a4-c2d4-d507" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b63-9b67-13f1-07a8" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e154-46b6-c5d3-c972" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b0e2-0a55-9394-7dce" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Roll a D6 each time a model in your kill team loses a wound whilst it is within 6&quot; of a friendly SYNAPSE model. On a 6, the damage is ignored and the model does not lose a wound. In addition, models in your kill team that are within 6&quot; of a friendly SYNAPSE model do not suffer the penalty to their hit rolls from one flesh wound they have suffered.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="1648-632a-e780-49a5" name="Barbed strangler" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -364,6 +519,7 @@
         <entryLink id="92e0-aa07-ff59-166b" name="Adrenal Glands" hidden="false" collective="false" targetId="e0c1-3064-250d-2497" type="selectionEntry"/>
         <entryLink id="51ee-7baa-dc5b-1d29" name="Toxin Sacs" hidden="false" collective="false" targetId="664f-0750-337d-2461" type="selectionEntry"/>
         <entryLink id="3444-5cfd-1af9-cc7d" name="Specialism" hidden="false" collective="false" targetId="69a0-bab5-203e-78c2" type="selectionEntryGroup"/>
+        <entryLink id="f44b-7b75-c618-d7d7" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
@@ -637,6 +793,7 @@
           </constraints>
         </entryLink>
         <entryLink id="6b2f-d5fe-75e1-e75c" name="Specialism" hidden="false" collective="false" targetId="69a0-bab5-203e-78c2" type="selectionEntryGroup"/>
+        <entryLink id="e4a7-0b32-3f00-dfd8" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
@@ -690,6 +847,7 @@
           </constraints>
         </entryLink>
         <entryLink id="6b6d-2899-b19a-6747" name="Specialism" hidden="false" collective="false" targetId="69a0-bab5-203e-78c2" type="selectionEntryGroup"/>
+        <entryLink id="1d71-18bb-e5f9-babf" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="25.0"/>
@@ -779,6 +937,7 @@
         <entryLink id="41b9-7961-d6ba-727d" name="Toxin Sacs" hidden="false" collective="false" targetId="664f-0750-337d-2461" type="selectionEntry"/>
         <entryLink id="49b8-0204-59ab-2686" name="Flesh Hooks" hidden="false" collective="false" targetId="301d-3fbf-9314-5ab0" type="selectionEntry"/>
         <entryLink id="3dc3-84f1-fcb0-ec89" name="Specialism" hidden="false" collective="false" targetId="69a0-bab5-203e-78c2" type="selectionEntryGroup"/>
+        <entryLink id="da29-a4c8-144c-ab83" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
@@ -903,6 +1062,7 @@
           </constraints>
         </entryLink>
         <entryLink id="a5bf-480e-356c-792c" name="Specialism" hidden="false" collective="false" targetId="69a0-bab5-203e-78c2" type="selectionEntryGroup"/>
+        <entryLink id="a349-565d-6be9-a998" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
@@ -1004,6 +1164,7 @@
         <entryLink id="4523-cb89-22ae-9dd7" name="Toxin Sacs" hidden="false" collective="false" targetId="664f-0750-337d-2461" type="selectionEntry"/>
         <entryLink id="d196-e55e-bc1f-9d28" name="Flesh Hooks" hidden="false" collective="false" targetId="301d-3fbf-9314-5ab0" type="selectionEntry"/>
         <entryLink id="4f6d-4046-34ef-3910" name="Specialism" hidden="false" collective="false" targetId="69a0-bab5-203e-78c2" type="selectionEntryGroup"/>
+        <entryLink id="82d2-da00-9947-2574" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
@@ -1272,6 +1433,7 @@
           </modifiers>
         </entryLink>
         <entryLink id="b12e-8623-a9bf-c00d" name="Commander Specialism" hidden="false" collective="false" targetId="f8fe-1d50-4f98-0d6e" type="selectionEntryGroup"/>
+        <entryLink id="5241-c95f-51b3-ffe2" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="50.0"/>
@@ -1367,6 +1529,7 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b75a-e7f7-1136-5cf2" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="b4c2-4301-4154-bb03" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="131.0"/>
@@ -1454,6 +1617,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aeb-7d9e-bedd-5841" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="1cb5-4993-2402-d465" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="70.0"/>
@@ -1547,6 +1711,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="690e-6dea-fe3c-c946" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="7aa0-9cd7-1d12-8572" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="32.0"/>
@@ -1657,6 +1822,7 @@
           </constraints>
         </entryLink>
         <entryLink id="26f2-a6b7-fcd2-a2c1" name="Specialism" hidden="false" collective="false" targetId="69a0-bab5-203e-78c2" type="selectionEntryGroup"/>
+        <entryLink id="8ba6-d3e4-fff6-8b8a" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="35.0"/>
@@ -1755,6 +1921,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fca9-4f3e-ee38-df96" name="Specialism" hidden="false" collective="false" targetId="69a0-bab5-203e-78c2" type="selectionEntryGroup"/>
+        <entryLink id="780a-ebf7-2f65-51c1" name="Hive Fleet" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
@@ -1778,21 +1945,6 @@
           </constraints>
         </entryLink>
         <entryLink id="4677-9d93-b434-715c" name="Fire Team Advances" hidden="false" collective="false" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="84b2-566b-2160-2f01" name="Hive Fleet Adaptation" hidden="false" collective="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c88-8a06-c01e-9018" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0ac7-cae3-3461-47ff" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="64be-cbe5-5f57-de8e" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="b47f-aeb9-bde9-5391" name="Hive Fleet Adaptation" hidden="false" collective="false" targetId="402f-e863-cba2-206b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
@@ -1997,83 +2149,69 @@
         <entryLink id="4f90-122e-3524-6635" name="Commander Psychic Powers" hidden="false" collective="false" targetId="f1f5-3b33-9be9-6aec" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="402f-e863-cba2-206b" name="Hive Fleet Adaptation" hidden="false" collective="false" defaultSelectionEntryId="b0e2-0a55-9394-7dce">
+    <selectionEntryGroup id="402f-e863-cba2-206b" name="Hive Fleet" hidden="false" collective="false" defaultSelectionEntryId="b0e2-0a55-9394-7dce">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2aad-0d33-6b41-f976" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bfc-afee-6abe-b280" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="b0e2-0a55-9394-7dce" name="*No Adaptation*" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b0e2-0a55-9394-7dce" name="*No Hive Fleet*" hidden="false" collective="false" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9ec0-724a-a6fb-24f3" name="Behemoth" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="12fc-2076-ea68-325f" name="Hyper-aggression" hidden="false">
-              <description>You can re-roll charge rolls for models in your kill team.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="8c1d-a79f-c863-91bc" name="Behemoth" hidden="false" targetId="bca2-6c3a-92b2-8ccf" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1229-562f-beca-6928" name="Kraken" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="43dd-c2f1-fe53-b43c" name="Questing Tendrils" hidden="false">
-              <description>When a model from your kill team Advances, roll three D6 instead of one and pick the highest roll to add to the Move characteristic of that model for that Movement phase. In addition, if a model from your kill team started the Movement phase within 1&quot; of an enemy model, but when you pick it to move there are no enemy models within 1&quot;, that model can make a charge attempt instead of Falling Back or remaining stationary.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="f5a8-ba6c-4a8c-580d" name="Kraken" hidden="false" targetId="9b63-9b67-13f1-07a8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="48ab-2ada-5822-05c6" name="Leviathan" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="7dfc-d911-3e54-c0ac" name="Synaptic Imperative" hidden="false">
-              <description>Roll a D6 each time a model in your kill team loses a wound whilst it is within 6&quot; of a friendly SYNAPSE model. On a 6, the damage is ignored and the model does not lose a wound. In addition, models in your kill team that are within 6&quot; of a friendly SYNAPSE model do not suffer the penalty to their hit rolls from one flesh wound they have suffered.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="bf7f-195d-4263-ac43" name="Leviathan" hidden="false" targetId="3c51-799a-5820-1b29" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bbea-8cb0-6390-d802" name="Gorgon" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="a8b4-52ab-e1aa-d0d4" name="Adaptive Toxins" hidden="false">
-              <description>You can re-roll wound rolls for 1 in the Fight phase for attacks made by models in your kill team.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="dc0c-9ab8-4030-87f0" name="Gorgon" hidden="false" targetId="c85d-39c3-27f6-f9df" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a0dd-8fec-125d-d63c" name="Jormungandr" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="b57f-0223-50a8-3336" name="Tunnel Networks" hidden="false">
-              <description>Models in your kill team (other than models that can FLY) are considered to be obscured to enemy models that target them. If the model Advances or charges, however, it loses this benefit until the end of the battle round.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="47d8-b682-23ff-c2f7" name="Jormungandr" hidden="false" targetId="6b1f-79a4-c2d4-d507" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6d34-a33e-7dae-2577" name="Hydra" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="5006-056d-2d62-fe4e" name="Swarming Instincts" hidden="false">
-              <description>You can re-roll hit rolls in the Fight phase for attacks made by models in your kill team that target an enemy that is within 1&quot; of another model from your kill team.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="cc53-8209-7da0-8bf8" name="Hydra" hidden="false" targetId="bbf6-926b-e887-1650" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="796a-bcd3-5743-f0cf" name="Kronos" hidden="false" collective="false" type="upgrade">
-          <rules>
-            <rule id="c142-68dd-14fb-26fc" name="Bio-barrage" hidden="false">
-              <description>Re-roll unmodified hit rolls of 1 in the Shooting phase for models in your kill team if they have not moved in this battle round.</description>
-            </rule>
-          </rules>
+          <categoryLinks>
+            <categoryLink id="055e-8bc9-6d32-4944" name="Kronos" hidden="false" targetId="e154-46b6-c5d3-c972" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
