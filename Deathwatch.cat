@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7548-75cf-ab24-7e9c" name="Deathwatch" revision="12" battleScribeVersion="2.02" authorName="@MadSpy" authorUrl="https://github.com/BSData/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7548-75cf-ab24-7e9c" name="Deathwatch" revision="13" battleScribeVersion="2.02" authorName="@MadSpy" authorUrl="https://github.com/BSData/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7548-75cf-pubN65537" name="Warhammer 40,000 - Kill Team - Core Manual"/>
   </publications>
@@ -90,7 +90,7 @@
         <categoryLink id="c40c-989c-7f4a-bcc9" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="bec6-692a-a642-9812" name="Deathwatch Fire Team" hidden="false" collective="false" targetId="4713-0bf7-a9f9-4523" type="selectionEntry">
+    <entryLink id="bec6-692a-a642-9812" name="Deathwatch Veteran Fire Team" hidden="false" collective="false" targetId="4713-0bf7-a9f9-4523" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -346,6 +346,15 @@
         <categoryLink id="0fef-0da2-765b-a2a1" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
         <categoryLink id="af29-a35e-6d41-2266" name="Faction: Deathwatch" hidden="false" targetId="5714-620f-5af3-6b91" primary="false"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="63d1-f433-8ad4-32b5" name="Veteran Fire Team" hidden="false" collective="false" targetId="c4b2-a796-c564-64de" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <rules>
@@ -624,11 +633,6 @@
             <entryLink id="d144-3f10-16a7-ca17" name="Watch Sergeant" hidden="false" collective="false" targetId="3a43-b32d-507b-c8d3" type="selectionEntry"/>
             <entryLink id="85c5-7808-0186-7893" name="Veteran Gunner" hidden="false" collective="false" targetId="fe35-3207-26cd-c3ce" type="selectionEntry"/>
             <entryLink id="9816-c310-0e4c-359a" name="Veteran" hidden="false" collective="false" targetId="bdd0-e085-dacc-1f66" type="selectionEntry"/>
-            <entryLink id="bfb0-c21b-6c65-6ae7" name="Vanguard Veteran" hidden="false" collective="false" targetId="a7e2-4c13-d51c-1551" type="selectionEntry">
-              <categoryLinks>
-                <categoryLink id="9095-f9db-f5e0-3b99" name="Faction: Deathwatch" hidden="false" targetId="5714-620f-5af3-6b91" primary="false"/>
-              </categoryLinks>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1697,6 +1701,32 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e259-3bd0-0ec0-7e96" name="Fire Team Advances" hidden="false" collective="false" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c4b2-a796-c564-64de" name="Veteran Fire Team" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e2ae-d090-0c59-5967" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4347-619a-577a-cef8" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e3d6-b464-c7e4-da61" name="Models" hidden="false" collective="false">
+          <entryLinks>
+            <entryLink id="35e8-427a-6832-cafe" name="Vanguard Sergeant" hidden="false" collective="false" targetId="d6ce-1709-dc19-0736" type="selectionEntry"/>
+            <entryLink id="285f-41e2-ab0a-90a7" name="Vanguard Veteran" hidden="false" collective="false" targetId="a7e2-4c13-d51c-1551" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="e382-288b-12b0-6559" name="Faction: Deathwatch" hidden="false" targetId="5714-620f-5af3-6b91" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="db72-a32d-baa1-b70e" name="Fire Team Advances" hidden="false" collective="false" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
