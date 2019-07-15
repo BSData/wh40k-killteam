@@ -238,6 +238,7 @@
     <categoryEntry id="0842-5a84-95ce-3ac4" name="Kelermorph" hidden="false"/>
     <categoryEntry id="e9cf-4c22-c034-f592" name="Spiritseer" hidden="false"/>
     <categoryEntry id="6e64-92d5-4bb2-0d6a" name="XV85 Enforcer" hidden="false"/>
+    <categoryEntry id="1ac8-a49e-16ce-e047" name="Faction: Chaos Daemons" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
