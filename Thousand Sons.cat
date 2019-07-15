@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e0e-5010-f3b4-dc1d" name="Thousand Sons" revision="8" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e0e-5010-f3b4-dc1d" name="Thousand Sons" revision="9" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7e0e-5010-pubN66856" name="Kill Team"/>
   </publications>
@@ -886,6 +886,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6028-66fd-3f73-4859" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="defd-9357-bf87-149e" name="Frag and krak grenades" hidden="false" collective="false" targetId="e119-c749-a7be-72ff" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="81.0"/>
@@ -1067,6 +1068,7 @@
         </entryLink>
         <entryLink id="d39e-bee3-8982-c800" name="Force stave" hidden="false" collective="false" targetId="08da-47ce-4a28-97fa" type="selectionEntry"/>
         <entryLink id="dd94-5727-33b1-a9e3" name="Specialism" hidden="false" collective="false" targetId="76bf-0ae8-e6b4-65a4" type="selectionEntryGroup"/>
+        <entryLink id="74f4-6a1f-bf67-cd8f" name="Frag and krak grenades" hidden="false" collective="false" targetId="e119-c749-a7be-72ff" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="81.0"/>
@@ -1515,6 +1517,34 @@
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="38.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="e119-c749-a7be-72ff" name="Frag and krak grenades" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26ac-9a56-f786-bea2" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c706-5104-79ba-51d3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="caa6-4b4a-09c1-7407" name="Frag grenade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">6&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Grenade D6</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">3</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="43d1-a7ca-0f5e-1cd3" name="Krak grenade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">6&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Grenade 1</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">6</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
