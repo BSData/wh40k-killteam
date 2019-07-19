@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="28" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="29" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="a467-5f42-pubN89361" name="Core Manual"/>
     <publication id="a467-5f42-pubN90767" name="Rogue Trader"/>
@@ -239,6 +239,9 @@
     <categoryEntry id="e9cf-4c22-c034-f592" name="Spiritseer" hidden="false"/>
     <categoryEntry id="6e64-92d5-4bb2-0d6a" name="XV85 Enforcer" hidden="false"/>
     <categoryEntry id="1ac8-a49e-16ce-e047" name="Faction: Chaos Daemons" hidden="false"/>
+    <categoryEntry id="3f67-ccdb-e4ab-814e" name="Ordo Xenos" hidden="false"/>
+    <categoryEntry id="60d0-29b7-2d57-1164" name="Inquisitor" hidden="false"/>
+    <categoryEntry id="6a9e-5c9e-2cb8-612c" name="Eisenhorn" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
@@ -9300,6 +9303,181 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0fd3-65bd-a18e-1a30" name="Inquisitor Eisenhorn" hidden="false" collective="false" type="model">
+      <modifiers>
+        <modifier type="set" field="c8a4-1000-2f7a-f292" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="80.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="90.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="105.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c8a4-1000-2f7a-f292" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5365-347a-3253-8b94" name="Inquisitor Eisenhorn" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">6&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">5</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">4</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">10</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">4+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4901-d298-ae9e-1d39" name="Quarry" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll hit rolls and wound rolls for this model for attacks that target enemy models with the AELDARI, NECRONS, ORK, T&apos;AU EMPIRE or TYRANIDS keyword or faction keyword.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="339c-e4e5-93d0-7e46" name="Unquestionable Wisdom" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Friendly ADEPTUS ASTARTES, ASTRA MILITARUM or ADEPTUS MECHANICUM models within 6&quot; of this model can use this model&apos;s Leadership characteristic instead of their own.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dc12-d1b7-92ca-7315" name="No Stranger to Pain" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Roll a D6 each time this model loses a wound; on a 6, that wound is not lost.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5176-fc4a-acca-58a1" name="Inquisitor Eisenhorn" hidden="false" typeId="201a-159a-7751-b85b" typeName="Psyker">
+          <characteristics>
+            <characteristic name="Manifest" typeId="998f-87b1-cc06-fb7e">1</characteristic>
+            <characteristic name="Deny" typeId="cb14-ded3-0978-88b8">1</characteristic>
+            <characteristic name="Powers known" typeId="67ce-9d6c-052c-d1eb">Psybolt and Enforce Will</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e4b9-b12b-6e67-cdc1" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
+        <categoryLink id="da9b-267e-3e38-6545" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
+        <categoryLink id="e2dc-7470-1aa9-9b6d" name="Faction: Astra Militarum" hidden="false" targetId="96ae-2ec0-4de4-b4d7" primary="false"/>
+        <categoryLink id="34aa-f429-79e2-be74" name="Faction: Adeptus Mechanicus" hidden="false" targetId="5d67-ac66-1e97-ffb3" primary="false"/>
+        <categoryLink id="77c1-220d-7073-1b89" name="Faction: Deathwatch" hidden="false" targetId="5714-620f-5af3-6b91" primary="false"/>
+        <categoryLink id="73a9-e695-078b-d793" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false"/>
+        <categoryLink id="0c4a-a03b-4354-5029" name="Ordo Xenos" hidden="false" targetId="3f67-ccdb-e4ab-814e" primary="false"/>
+        <categoryLink id="f9d6-5ee4-efb7-8fbb" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="d340-1c93-bb48-13af" name="Inquisitor" hidden="false" targetId="60d0-29b7-2d57-1164" primary="false"/>
+        <categoryLink id="3683-d71e-cd6b-71ee" name="Eisenhorn" hidden="false" targetId="6a9e-5c9e-2cb8-612c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1f7d-b8e2-dd53-d96c" name="Enforce Will" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5931-55a6-c2c6-2d5c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6edf-5fc8-f601-8563" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a7f4-e58a-be98-99f8" name="Enforce Will" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">Enforce Will has a warp charge value of 8. If manifested, pick an enemy model that is within 12&quot; of this model and visible to him. You can immediately shoot with that model as if it was the Shooting phase and that model was in your kill team, or fight with that model as if it was the Fight phase and that model was in your kill team.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8e4a-a78b-4737-5597" name="Artificer bolt pistol" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2af-650e-15d9-07b7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="472b-1598-4d80-454e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="502c-00d5-084a-c5d7" name="Artificer bolt pistol" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">12&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Pistol 1</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">2</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="934b-87bc-deb6-2997" name="Barbarisater" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0216-6764-cdd8-b73b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2358-bace-1bc0-16f3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0ff1-3643-8f8c-7989" name="Barbarisater" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-3</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">Add 1 to hit rolls for attacks made with this weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="61d0-f28a-ce24-8c45" name="Runestaff" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="154f-5d07-9c6e-b482" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f302-c7f0-07ae-111c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="aa83-d050-fef8-155d" name="Runestaff" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">+3</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="34b7-8a8f-1a7e-6a62" name="Psybolt" hidden="false" collective="false" targetId="bb99-4086-e731-058e" type="selectionEntry"/>
+        <entryLink id="0ee9-0e1a-28c7-a985" name="Strategist" hidden="false" collective="false" targetId="8301-dd25-06aa-2d15" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e55d-fad9-298d-b7c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5de2-92fc-1074-b124" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="70.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="eff3-f5cf-03ea-a563" name="Commander Traits" hidden="false" collective="false">
@@ -9719,6 +9897,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6439-c44e-cb97-a2bb" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-4c22-c034-f592" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b52-dcbe-fbd9-5ac1" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a9e-5c9e-2cb8-612c" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -9953,6 +10132,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6439-c44e-cb97-a2bb" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b52-dcbe-fbd9-5ac1" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-4c22-c034-f592" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a9e-5c9e-2cb8-612c" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10000,6 +10180,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="67af-c62e-6a4f-d3db" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6439-c44e-cb97-a2bb" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b52-dcbe-fbd9-5ac1" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a9e-5c9e-2cb8-612c" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10051,6 +10232,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="67af-c62e-6a4f-d3db" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b52-dcbe-fbd9-5ac1" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-4c22-c034-f592" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a9e-5c9e-2cb8-612c" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10093,6 +10275,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0ed-76ee-5755-4786" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fcd-6b5f-4801-9b95" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6439-c44e-cb97-a2bb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a9e-5c9e-2cb8-612c" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10145,6 +10328,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="67af-c62e-6a4f-d3db" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6439-c44e-cb97-a2bb" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9cf-4c22-c034-f592" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6a9e-5c9e-2cb8-612c" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="and">
