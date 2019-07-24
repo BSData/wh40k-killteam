@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="29" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="30" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="a467-5f42-pubN89361" name="Core Manual"/>
     <publication id="a467-5f42-pubN90767" name="Rogue Trader"/>
@@ -9383,6 +9383,7 @@
         <categoryLink id="f9d6-5ee4-efb7-8fbb" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
         <categoryLink id="d340-1c93-bb48-13af" name="Inquisitor" hidden="false" targetId="60d0-29b7-2d57-1164" primary="false"/>
         <categoryLink id="3683-d71e-cd6b-71ee" name="Eisenhorn" hidden="false" targetId="6a9e-5c9e-2cb8-612c" primary="false"/>
+        <categoryLink id="b48d-5ad8-3447-99e8" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1f7d-b8e2-dd53-d96c" name="Enforce Will" hidden="false" collective="false" type="upgrade">
