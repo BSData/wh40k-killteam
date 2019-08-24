@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="30" battleScribeVersion="2.02" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="31" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="a467-5f42-pubN89361" name="Core Manual"/>
     <publication id="a467-5f42-pubN90767" name="Rogue Trader"/>
@@ -320,15 +320,15 @@
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink id="5c5e-a332-5578-705f" name="List Configuration" hidden="false" collective="false" targetId="24de-9906-6401-a20e" type="selectionEntry"/>
-    <entryLink id="e434-af92-70de-fd2f" name="Resources" hidden="false" collective="false" targetId="64a1-f2d5-7917-1155" type="selectionEntry">
+    <entryLink id="5c5e-a332-5578-705f" name="List Configuration" hidden="false" collective="false" import="true" targetId="24de-9906-6401-a20e" type="selectionEntry"/>
+    <entryLink id="e434-af92-70de-fd2f" name="Resources" hidden="false" collective="false" import="true" targetId="64a1-f2d5-7917-1155" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="04b3-0e07-77a4-7d22" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="2abd-70f4-e7e8-4d18" name="Leader" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2abd-70f4-e7e8-4d18" name="Leader" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -356,7 +356,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3483-b0a7-800f-6bdf" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="49c6-1aa8-c120-1cf1" name="Level 1: Resourceful" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="49c6-1aa8-c120-1cf1" name="Level 1: Resourceful" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b67-a29d-6d39-bde1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d6e-b516-29a7-5530" type="max"/>
@@ -373,7 +373,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="88f1-39cf-24b8-5301" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="88f1-39cf-24b8-5301" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -393,7 +393,7 @@
             <categoryLink id="0251-3bbe-145c-7775" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="a4b5-1a0a-ee5f-bd37" name="Bold" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a4b5-1a0a-ee5f-bd37" name="Bold" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Bold"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -409,7 +409,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5af2-5397-8d71-5299" name="Inspiring" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5af2-5397-8d71-5299" name="Inspiring" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Inspiring"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -427,7 +427,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7b96-3664-138e-ca94" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="7b96-3664-138e-ca94" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -447,7 +447,7 @@
             <categoryLink id="8b36-72c4-354e-227a" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="1529-206b-4bd3-5f52" name="Paragon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1529-206b-4bd3-5f52" name="Paragon" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Paragon"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -468,7 +468,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2e60-643e-b8a9-6209" name="Mentor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2e60-643e-b8a9-6209" name="Mentor" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Mentor"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -489,7 +489,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d7b5-1fa4-138f-0e26" name="Tactician" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d7b5-1fa4-138f-0e26" name="Tactician" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Tactician"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -510,7 +510,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c45e-d242-1026-e460" name="Tyrant" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c45e-d242-1026-e460" name="Tyrant" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Tyrant"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -533,7 +533,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="db19-f7ad-c968-ae3a" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="db19-f7ad-c968-ae3a" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -573,7 +573,7 @@
             <categoryLink id="dc86-f66a-f0b8-9e21" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="c897-542f-20f4-8607" name="Bold" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c897-542f-20f4-8607" name="Bold" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Bold"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -602,7 +602,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0849-58c3-c73d-1140" name="Inspiring" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0849-58c3-c73d-1140" name="Inspiring" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Inspiring"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -631,7 +631,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9e8d-048d-0008-18cf" name="Mentor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9e8d-048d-0008-18cf" name="Mentor" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Mentor"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -660,7 +660,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="025f-e2c9-650d-8c55" name="Paragon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="025f-e2c9-650d-8c55" name="Paragon" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Paragon"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -689,7 +689,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1efc-fdcc-1799-a43c" name="Tactician" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1efc-fdcc-1799-a43c" name="Tactician" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Tactician"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -718,7 +718,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8289-9157-f989-6575" name="Tyrant" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8289-9157-f989-6575" name="Tyrant" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -751,14 +751,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="75bc-18c2-0a57-80c3" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="2f6c-b074-6cfa-0059" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="75bc-18c2-0a57-80c3" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="2f6c-b074-6cfa-0059" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cc58-f869-82d1-b353" name="Combat" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="cc58-f869-82d1-b353" name="Combat" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -775,7 +775,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b05f-c8a5-19d9-fdf4" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="16da-492c-b6a7-fb5c" name="Level 1: Expert Fighter" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="16da-492c-b6a7-fb5c" name="Level 1: Expert Fighter" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ef-4a92-48f8-ca49" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d58f-56fe-e7e4-404e" type="max"/>
@@ -792,7 +792,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e4fd-71e8-8474-bcc9" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="e4fd-71e8-8474-bcc9" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -812,7 +812,7 @@
             <categoryLink id="6953-0d48-d6cd-4554" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="6576-710a-db74-b56c" name="Warrior Adept" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6576-710a-db74-b56c" name="Warrior Adept" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Warrior Adept"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -828,7 +828,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3492-414c-09de-7364" name="Deadly Counter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3492-414c-09de-7364" name="Deadly Counter" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Deadly Counter"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -846,7 +846,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f90b-c37c-5a8d-940e" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="f90b-c37c-5a8d-940e" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -866,7 +866,7 @@
             <categoryLink id="545f-83b2-0e26-5e98" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="0587-668d-e48a-2aa0" name="Bloodlust" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0587-668d-e48a-2aa0" name="Bloodlust" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Bloodlust"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -887,7 +887,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ddef-db65-7b8e-65f8" name="Deathblow" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ddef-db65-7b8e-65f8" name="Deathblow" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Deathblow"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -908,7 +908,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1677-4d4b-20b5-f94f" name="Combat Master" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1677-4d4b-20b5-f94f" name="Combat Master" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Combat Master"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -929,7 +929,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="efc5-e27f-3127-df6f" name="Killer Instinct" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="efc5-e27f-3127-df6f" name="Killer Instinct" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Killer Instinct"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -952,7 +952,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="4fe4-6fd4-c6b9-a93f" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="4fe4-6fd4-c6b9-a93f" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -992,7 +992,7 @@
             <categoryLink id="343a-1d16-d574-ca93" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="3bff-193d-7cc4-09cf" name="Combat Master" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3bff-193d-7cc4-09cf" name="Combat Master" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Combat Master"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1021,7 +1021,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c305-10ab-11b7-bb27" name="Killer Instinct" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c305-10ab-11b7-bb27" name="Killer Instinct" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Killer Instinct"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1050,7 +1050,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5dc4-c3c4-2c28-2886" name="Warrior Adept" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5dc4-c3c4-2c28-2886" name="Warrior Adept" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Warrior Adept"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1079,7 +1079,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2509-9032-e060-83e7" name="Deadly Counter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2509-9032-e060-83e7" name="Deadly Counter" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Deadly Counter"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1108,7 +1108,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e2dc-859b-71aa-0ddc" name="Deathblow" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e2dc-859b-71aa-0ddc" name="Deathblow" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Deathblow"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1137,7 +1137,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="efe8-d395-30e5-6025" name="Bloodlust" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="efe8-d395-30e5-6025" name="Bloodlust" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Bloodlust"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1170,14 +1170,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3525-1f15-7209-c84b" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="3651-278b-c213-420c" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="3525-1f15-7209-c84b" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="3651-278b-c213-420c" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="02a0-4107-4818-7c99" name="Comms" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="02a0-4107-4818-7c99" name="Comms" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1194,7 +1194,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="71a3-7444-85bc-e92c" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="91b5-71e4-b90e-3b34" name="Level 1: Scanner" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="91b5-71e4-b90e-3b34" name="Level 1: Scanner" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fec-cf22-d33d-7375" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8e6-bc79-2dd2-0b48" type="max"/>
@@ -1211,7 +1211,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="536f-9c5f-eb72-e651" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="536f-9c5f-eb72-e651" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -1231,7 +1231,7 @@
             <categoryLink id="1ce0-9b73-74c0-0151" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="4f17-259f-2e0d-7f65" name="Expert" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4f17-259f-2e0d-7f65" name="Expert" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Expert"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1247,7 +1247,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e060-f6fc-face-fd39" name="Static Screech" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e060-f6fc-face-fd39" name="Static Screech" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Static Screech"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1265,7 +1265,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="98f2-bf4e-576e-71b4" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="98f2-bf4e-576e-71b4" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -1285,7 +1285,7 @@
             <categoryLink id="28e2-b283-03f4-0f2e" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="96fa-d61a-ac8c-5511" name="Vox Hacker" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="96fa-d61a-ac8c-5511" name="Vox Hacker" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Vox Hacker"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1306,7 +1306,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="73c2-5c46-2eaf-16f9" name="Vox Ghost" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="73c2-5c46-2eaf-16f9" name="Vox Ghost" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Vox Ghost"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1327,7 +1327,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0c34-966c-0b61-329c" name="Command Relay" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0c34-966c-0b61-329c" name="Command Relay" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Command Relay"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1348,7 +1348,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cb46-6ec9-b09c-cbd6" name="Triangulator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cb46-6ec9-b09c-cbd6" name="Triangulator" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Triangulator"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1371,7 +1371,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6a73-0418-4b19-c4ce" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="6a73-0418-4b19-c4ce" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -1411,7 +1411,7 @@
             <categoryLink id="c90e-c2da-c712-86b8" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="b0c0-c9e1-e637-0c94" name="Command Relay" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b0c0-c9e1-e637-0c94" name="Command Relay" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Command Relay"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1440,7 +1440,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="94f5-060a-6e82-a0ac" name="Triangulator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="94f5-060a-6e82-a0ac" name="Triangulator" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Triangulator"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1469,7 +1469,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4c01-66aa-361a-5c8f" name="Expert" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4c01-66aa-361a-5c8f" name="Expert" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Expert"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1498,7 +1498,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="38bb-0279-807c-3b86" name="Static Screech" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="38bb-0279-807c-3b86" name="Static Screech" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Static Screech"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1527,7 +1527,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6673-5551-0973-2277" name="Vox Ghost" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6673-5551-0973-2277" name="Vox Ghost" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Vox Ghost"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1556,7 +1556,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="33fc-b1a1-712c-a07e" name="Vox Hacker" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="33fc-b1a1-712c-a07e" name="Vox Hacker" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Vox Hacker"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1589,14 +1589,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ba0f-4a32-6118-3ad9" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="1e83-05c7-2b5c-972b" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="ba0f-4a32-6118-3ad9" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="1e83-05c7-2b5c-972b" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1933-2ec9-f5b1-5666" name="Demolitions" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1933-2ec9-f5b1-5666" name="Demolitions" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1613,7 +1613,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="64c0-e5e2-6e74-cb28" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="fd1c-53b4-e856-de6a" name="Level 1: Breacher" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="fd1c-53b4-e856-de6a" name="Level 1: Breacher" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6726-9c35-dbc8-1ec7" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d55b-453e-cbcb-4608" type="max"/>
@@ -1630,7 +1630,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f224-7ef8-9dd7-eb06" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="f224-7ef8-9dd7-eb06" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -1650,7 +1650,7 @@
             <categoryLink id="75a3-ac04-f815-cb79" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="cc13-c902-ae23-b913" name="Pyromaniac" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cc13-c902-ae23-b913" name="Pyromaniac" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Pyromaniac"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1666,7 +1666,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b9bf-fb20-0947-f879" name="Grenadier" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b9bf-fb20-0947-f879" name="Grenadier" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Grenadier"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1684,7 +1684,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="09c8-d4b9-ce32-4b62" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="09c8-d4b9-ce32-4b62" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -1704,7 +1704,7 @@
             <categoryLink id="2dcc-5976-3cd2-98a2" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="1ebd-5ed9-79bb-7a31" name="Ammo Hound" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1ebd-5ed9-79bb-7a31" name="Ammo Hound" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Ammo Hound"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1725,7 +1725,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bc34-9982-32a7-7bd1" name="Saboteur" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="bc34-9982-32a7-7bd1" name="Saboteur" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Saboteur"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1746,7 +1746,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0f18-6481-e6b1-5614" name="Sapper" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0f18-6481-e6b1-5614" name="Sapper" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Sapper"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1767,7 +1767,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7d9a-5c5d-c749-eaba" name="Siegemaster" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7d9a-5c5d-c749-eaba" name="Siegemaster" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Siegemaster"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1790,7 +1790,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="a77e-2b21-0b16-feff" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="a77e-2b21-0b16-feff" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -1830,7 +1830,7 @@
             <categoryLink id="bda4-c75e-17ac-9ab1" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="a3b2-3c0f-b774-ecc1" name="Sapper" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a3b2-3c0f-b774-ecc1" name="Sapper" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Sapper"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1859,7 +1859,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="745d-d88d-9b7a-75a0" name="Siegemaster" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="745d-d88d-9b7a-75a0" name="Siegemaster" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Siegemaster"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1888,7 +1888,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dee1-73c2-943f-21b2" name="Pyromaniac" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="dee1-73c2-943f-21b2" name="Pyromaniac" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Pyromaniac"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1917,7 +1917,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5178-51c5-a867-6c9e" name="Grenadier" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5178-51c5-a867-6c9e" name="Grenadier" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Grenadier"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1946,7 +1946,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4468-c657-873c-c53c" name="Saboteur" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4468-c657-873c-c53c" name="Saboteur" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Saboteur"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -1975,7 +1975,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="90f8-fe7c-7dd0-0d1a" name="Ammo Hound" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="90f8-fe7c-7dd0-0d1a" name="Ammo Hound" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Ammo Hound"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2008,14 +2008,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d410-239a-6e2d-3945" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="2098-3d48-e2b9-0e9c" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="d410-239a-6e2d-3945" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="2098-3d48-e2b9-0e9c" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8c9b-a772-02e7-d673" name="Heavy" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="8c9b-a772-02e7-d673" name="Heavy" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -2032,7 +2032,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="921f-a4b6-c780-7a01" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="5308-cce0-90b6-1881" name="Level 1: Relentless" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="5308-cce0-90b6-1881" name="Level 1: Relentless" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e21-f734-a1b0-7333" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67f3-4c6c-8f5f-0ca4" type="max"/>
@@ -2049,7 +2049,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="36f3-ea8c-4be5-64b3" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="36f3-ea8c-4be5-64b3" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2069,7 +2069,7 @@
             <categoryLink id="3754-be03-afdf-866b" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="3f2d-65aa-24b3-044a" name="Suppressor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3f2d-65aa-24b3-044a" name="Suppressor" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Suppressor"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2085,7 +2085,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cec6-e7b8-ccd5-ef7e" name="Extra Armour" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cec6-e7b8-ccd5-ef7e" name="Extra Armour" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Extra Armour"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2103,7 +2103,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c5c8-d2f7-c305-1785" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="c5c8-d2f7-c305-1785" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2123,7 +2123,7 @@
             <categoryLink id="388f-62ad-c639-c9d4" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="7e72-3991-e1b7-066c" name="Heavily Muscled" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7e72-3991-e1b7-066c" name="Heavily Muscled" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Heavily Muscled"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2144,7 +2144,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6016-4125-3ab7-0481" name="Devastator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6016-4125-3ab7-0481" name="Devastator" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Devastator"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2165,7 +2165,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="af7b-50cf-d99f-3fe6" name="Rigorous" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="af7b-50cf-d99f-3fe6" name="Rigorous" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Rigorous"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2186,7 +2186,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2d9f-2cb7-5470-b95c" name="Indomitable" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2d9f-2cb7-5470-b95c" name="Indomitable" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Indomitable"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2209,7 +2209,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="8220-b97a-f7d1-42ab" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="8220-b97a-f7d1-42ab" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2249,7 +2249,7 @@
             <categoryLink id="0e54-34a2-b96c-04da" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="22a4-60e6-caae-4c36" name="Rigorous" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="22a4-60e6-caae-4c36" name="Rigorous" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Rigorous"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2278,7 +2278,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6511-f8e5-9b3c-989d" name="Indomitable" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6511-f8e5-9b3c-989d" name="Indomitable" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Indomitable"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2307,7 +2307,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ae6c-9c95-c5ad-2e84" name="Suppressor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ae6c-9c95-c5ad-2e84" name="Suppressor" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Suppressor"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2336,7 +2336,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3ca1-1edd-6b0a-09db" name="Extra Armour" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3ca1-1edd-6b0a-09db" name="Extra Armour" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Extra Armour"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2365,7 +2365,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dda1-9cff-5cf5-1f3b" name="Devastator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="dda1-9cff-5cf5-1f3b" name="Devastator" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Devastator"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2394,7 +2394,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0285-3f08-1963-3d39" name="Heavily Muscled" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0285-3f08-1963-3d39" name="Heavily Muscled" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Heavily Muscled"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2427,14 +2427,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="2c1e-91b0-4f15-3bf4" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="f593-745c-3fe6-d6d5" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="2c1e-91b0-4f15-3bf4" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="f593-745c-3fe6-d6d5" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="01ab-630a-cf81-38c9" name="Medic" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="01ab-630a-cf81-38c9" name="Medic" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -2451,7 +2451,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b3fd-1676-cf76-0d32" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="0708-4781-8d49-9b02" name="Level 1: Reassuring" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0708-4781-8d49-9b02" name="Level 1: Reassuring" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="260c-c860-6395-b7ea" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbb1-1be1-8851-1b2d" type="max"/>
@@ -2468,7 +2468,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3cd9-e99c-849e-af17" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="3cd9-e99c-849e-af17" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2488,7 +2488,7 @@
             <categoryLink id="86f0-7152-0f1c-e8f1" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="dcc5-b92e-1f37-584b" name="Field Medic" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="dcc5-b92e-1f37-584b" name="Field Medic" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Field Medic"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2504,7 +2504,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3845-89e8-ff49-875b" name="Anatomist" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3845-89e8-ff49-875b" name="Anatomist" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Anatomist"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2522,7 +2522,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="2ac1-a79e-ca41-6403" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="2ac1-a79e-ca41-6403" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2542,7 +2542,7 @@
             <categoryLink id="94d5-33c2-d234-ec11" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="cb07-6c63-0486-cb78" name="Toxin Synthesiser" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cb07-6c63-0486-cb78" name="Toxin Synthesiser" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Toxin Synthesiser"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2563,7 +2563,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9d3d-0e03-eb28-d2df" name="Trauma Specialist" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9d3d-0e03-eb28-d2df" name="Trauma Specialist" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Trauma Specialist"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2584,7 +2584,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6596-91db-9355-8af3" name="Triage Expert" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6596-91db-9355-8af3" name="Triage Expert" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Triage Expert"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2605,7 +2605,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d136-14bc-af57-1684" name="Interrogator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d136-14bc-af57-1684" name="Interrogator" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Interrogator"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2628,7 +2628,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="a6f2-fb8c-cf0d-fe9a" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="a6f2-fb8c-cf0d-fe9a" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2668,7 +2668,7 @@
             <categoryLink id="c194-f0e7-67e9-83fb" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="f5e3-b0c2-f039-7063" name="Triage Expert" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f5e3-b0c2-f039-7063" name="Triage Expert" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Triage Expert"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2697,7 +2697,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c3fe-49ef-b913-ba40" name="Interrogator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c3fe-49ef-b913-ba40" name="Interrogator" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Interrogator"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2726,7 +2726,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1325-cff8-c5e3-ee84" name="Field Medic" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1325-cff8-c5e3-ee84" name="Field Medic" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Field Medic"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2755,7 +2755,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="af58-ebb9-08b8-0bd1" name="Anatomist" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="af58-ebb9-08b8-0bd1" name="Anatomist" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Anatomist"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2784,7 +2784,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1d09-6821-5860-6c1d" name="Trauma Specialist" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1d09-6821-5860-6c1d" name="Trauma Specialist" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Trauma Specialist"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2813,7 +2813,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2ab5-5213-f23b-84bb" name="Toxin Synthesiser" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2ab5-5213-f23b-84bb" name="Toxin Synthesiser" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Toxin Synthesiser"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2846,14 +2846,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="59c4-5dc3-0fad-204f" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="82bc-bb67-3ee6-625a" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="59c4-5dc3-0fad-204f" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="82bc-bb67-3ee6-625a" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1d42-7d93-e0a4-330b" name="Scout" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1d42-7d93-e0a4-330b" name="Scout" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -2870,7 +2870,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ca81-0581-b417-da23" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="2ac4-df07-ede9-eaa4" name="Level 1: Swift" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2ac4-df07-ede9-eaa4" name="Level 1: Swift" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbb0-769d-0a23-1b11" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae5a-9edf-9b30-a595" type="max"/>
@@ -2887,7 +2887,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3696-831a-d065-0c7e" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="3696-831a-d065-0c7e" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2907,7 +2907,7 @@
             <categoryLink id="1458-15d2-453e-0494" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="aeea-509c-2609-43f1" name="Forward Scout" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="aeea-509c-2609-43f1" name="Forward Scout" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Forward Scout"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2923,7 +2923,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ab82-3f1f-c519-38e4" name="Pathfinder" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ab82-3f1f-c519-38e4" name="Pathfinder" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Pathfinder"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2941,7 +2941,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ddc1-8bc8-e11b-c75c" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="ddc1-8bc8-e11b-c75c" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2961,7 +2961,7 @@
             <categoryLink id="7e41-b970-7511-2603" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="0e97-ff42-fbc0-52d8" name="Explorer" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0e97-ff42-fbc0-52d8" name="Explorer" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Explorer"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -2982,7 +2982,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3ad8-e2b8-6d36-ffb1" name="Skirmisher" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3ad8-e2b8-6d36-ffb1" name="Skirmisher" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Skirmisher"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3003,7 +3003,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d48d-843a-1a20-c1c7" name="Vanguard" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d48d-843a-1a20-c1c7" name="Vanguard" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Vanguard"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3024,7 +3024,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2335-2290-4f77-4090" name="Observer" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2335-2290-4f77-4090" name="Observer" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Observer"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3047,7 +3047,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="4937-4fc1-c2dc-b9eb" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="4937-4fc1-c2dc-b9eb" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -3087,7 +3087,7 @@
             <categoryLink id="d079-1181-2a86-3aba" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="48d7-b8ee-4406-1e48" name="Vanguard" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="48d7-b8ee-4406-1e48" name="Vanguard" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Vanguard"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3116,7 +3116,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7f83-c92e-c274-9a01" name="Observer" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7f83-c92e-c274-9a01" name="Observer" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Observer"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3145,7 +3145,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7253-cc87-e87f-a10c" name="Forward Scout" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7253-cc87-e87f-a10c" name="Forward Scout" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Forward Scout"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3174,7 +3174,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="72f2-0f4f-b366-5b48" name="Pathfinder" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="72f2-0f4f-b366-5b48" name="Pathfinder" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Pathfinder"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3203,7 +3203,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9871-f572-1e0c-010d" name="Skirmisher" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9871-f572-1e0c-010d" name="Skirmisher" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Skirmisher"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3232,7 +3232,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c39b-2c74-2a6e-50e2" name="Explorer" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c39b-2c74-2a6e-50e2" name="Explorer" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Explorer"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3265,14 +3265,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="938e-cc55-dba8-e04c" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="bded-e68e-72fe-92be" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="938e-cc55-dba8-e04c" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="bded-e68e-72fe-92be" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ead5-ea32-5412-c857" name="Sniper" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="ead5-ea32-5412-c857" name="Sniper" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -3289,7 +3289,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e6d8-2bc9-ef07-668e" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="b5b2-a1ad-bbf0-b381" name="Level 1: Marksman" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b5b2-a1ad-bbf0-b381" name="Level 1: Marksman" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84a3-b66b-2c95-778e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5875-b20e-bf94-e74a" type="max"/>
@@ -3306,7 +3306,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5d8f-7e39-6b87-b66a" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="5d8f-7e39-6b87-b66a" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -3326,7 +3326,7 @@
             <categoryLink id="24f9-903e-b217-dc6d" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="da28-5050-2b2c-0a79" name="Assassin" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="da28-5050-2b2c-0a79" name="Assassin" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Assassin"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3342,7 +3342,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2140-7832-56ae-22cc" name="Sharpshooter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2140-7832-56ae-22cc" name="Sharpshooter" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Sharpshooter"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3360,7 +3360,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="288f-a1c1-5faa-f965" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="288f-a1c1-5faa-f965" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -3380,7 +3380,7 @@
             <categoryLink id="fbb4-a5d0-c9cb-f670" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="f895-bb61-ab9e-b669" name="Eagle-eye" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f895-bb61-ab9e-b669" name="Eagle-eye" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Eagle-eye"/>
                 <modifier type="set" field="hidden" value="true">
@@ -3396,7 +3396,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7090-5a24-3d64-9456" name="Deadeye" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7090-5a24-3d64-9456" name="Deadeye" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Deadeye"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3417,7 +3417,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="14b9-6354-3d3b-c297" name="Armour Piercing" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="14b9-6354-3d3b-c297" name="Armour Piercing" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Armour Piercing"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3438,7 +3438,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c52d-1de6-1015-d514" name="Mobile" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c52d-1de6-1015-d514" name="Mobile" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Mobile"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3461,7 +3461,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d84c-d597-453a-c893" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="d84c-d597-453a-c893" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -3501,7 +3501,7 @@
             <categoryLink id="0164-8d5b-8f86-3879" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="f767-e8bf-bf74-0506" name="Armour Piercing" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f767-e8bf-bf74-0506" name="Armour Piercing" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Armour Piercing"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3530,7 +3530,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="48fe-7131-2559-1025" name="Mobile" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="48fe-7131-2559-1025" name="Mobile" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Mobile"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3559,7 +3559,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e800-b79e-d25e-d3e2" name="Assassin" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e800-b79e-d25e-d3e2" name="Assassin" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Assassin"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3588,7 +3588,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="63b3-484f-38c9-759f" name="Sharpshooter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="63b3-484f-38c9-759f" name="Sharpshooter" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Sharpshooter"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3617,7 +3617,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0843-cf4c-e2b4-bc34" name="Deadeye" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0843-cf4c-e2b4-bc34" name="Deadeye" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Deadeye"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3646,7 +3646,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fc26-d91d-06b3-ec28" name="Eagle-eye" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="fc26-d91d-06b3-ec28" name="Eagle-eye" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Eagle-eye"/>
                 <modifier type="set" field="hidden" value="true">
@@ -3674,14 +3674,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="bdd8-51ca-2f52-c57a" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="d514-723f-ccdf-f52b" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="bdd8-51ca-2f52-c57a" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="d514-723f-ccdf-f52b" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c89e-5e73-276f-cc16" name="Veteran" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="c89e-5e73-276f-cc16" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -3698,7 +3698,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2b41-63b1-947c-209a" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="2b7e-30df-e559-be77" name="Level 1: Grizzled" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2b7e-30df-e559-be77" name="Level 1: Grizzled" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="649b-9112-3b92-d04d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1b7-06e1-16ac-b9d9" type="max"/>
@@ -3715,7 +3715,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9bc5-b767-e07b-b29b" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="9bc5-b767-e07b-b29b" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -3735,7 +3735,7 @@
             <categoryLink id="af4f-ce68-b227-887c" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="840a-f550-6c25-36d4" name="Practised" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="840a-f550-6c25-36d4" name="Practised" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Practised"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3751,7 +3751,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5e1b-c539-79b3-e36a" name="Seen It All" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5e1b-c539-79b3-e36a" name="Seen It All" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Seen It All"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3769,7 +3769,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b0cb-e77d-8d9d-041b" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="b0cb-e77d-8d9d-041b" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -3789,7 +3789,7 @@
             <categoryLink id="6229-320d-8fb6-ed73" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="6993-55b7-8a98-02c3" name="Survivor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6993-55b7-8a98-02c3" name="Survivor" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Survivor"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3810,7 +3810,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b128-02e4-4311-e4c1" name="Battle Scarred" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b128-02e4-4311-e4c1" name="Battle Scarred" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Battle Scarred"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3831,7 +3831,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="62a4-f40b-c16b-8031" name="Nerves of Steel" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="62a4-f40b-c16b-8031" name="Nerves of Steel" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Nerves of Steel"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3852,7 +3852,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bdc0-3a6c-3572-5b97" name="One-man Army" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="bdc0-3a6c-3572-5b97" name="One-man Army" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: One-man Army"/>
                 <modifier type="set" field="hidden" value="true">
@@ -3870,7 +3870,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9f24-bd6c-11b6-31aa" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="9f24-bd6c-11b6-31aa" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -3910,7 +3910,7 @@
             <categoryLink id="6ba5-5848-6db0-f455" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="0db1-f11e-2fb4-446e" name="Practised" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0db1-f11e-2fb4-446e" name="Practised" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Practised"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3939,7 +3939,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6a2d-ff87-0a0d-65e6" name="Seen It All" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6a2d-ff87-0a0d-65e6" name="Seen It All" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Seen It All"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3968,7 +3968,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8de9-3d58-e5be-0c06" name="Battle Scarred" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8de9-3d58-e5be-0c06" name="Battle Scarred" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Battle Scarred"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -3997,7 +3997,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a501-1fbd-32f8-fa3b" name="Nerves of Steel" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a501-1fbd-32f8-fa3b" name="Nerves of Steel" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Nerves of Steel"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4026,7 +4026,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3e1d-5fed-ae47-45ba" name="One-man Army" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3e1d-5fed-ae47-45ba" name="One-man Army" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: One-man Army"/>
                 <modifier type="set" field="hidden" value="true">
@@ -4050,7 +4050,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9102-ae6c-f9f5-f0be" name="Survivor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9102-ae6c-f9f5-f0be" name="Survivor" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Survivor"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4083,14 +4083,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8acf-e73e-7297-173f" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="c3db-34ae-b1b5-0e89" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="8acf-e73e-7297-173f" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="c3db-34ae-b1b5-0e89" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d2c4-34ca-f2cf-d2b2" name="Zealot" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="d2c4-34ca-f2cf-d2b2" name="Zealot" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -4107,7 +4107,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3e55-ff6d-542e-55b2" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="1115-fada-66e5-715f" name="Level 1: Frenzied" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1115-fada-66e5-715f" name="Level 1: Frenzied" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4531-2c57-55a1-5d71" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="064b-8a22-a100-0a9a" type="max"/>
@@ -4124,7 +4124,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="bdef-7424-69a2-6f57" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="bdef-7424-69a2-6f57" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -4144,7 +4144,7 @@
             <categoryLink id="10a7-418e-262e-3117" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="a421-d434-1a78-cfdd" name="Exultant" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a421-d434-1a78-cfdd" name="Exultant" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Exultant"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4160,7 +4160,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3302-ef69-1395-c9da" name="Flagellant" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3302-ef69-1395-c9da" name="Flagellant" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Flagellant"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4178,7 +4178,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="11e4-3019-2d5f-0893" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="11e4-3019-2d5f-0893" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -4198,7 +4198,7 @@
             <categoryLink id="3f76-b49b-6f47-892a" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="5d34-429d-3eec-140f" name="Strength of Spirit" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5d34-429d-3eec-140f" name="Strength of Spirit" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Strength of Spirit"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4219,7 +4219,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c160-3a58-9d2e-ee0b" name="Puritan" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c160-3a58-9d2e-ee0b" name="Puritan" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Puritan"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4240,7 +4240,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="263b-3f18-328f-ab66" name="Rousing" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="263b-3f18-328f-ab66" name="Rousing" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Rousing"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4261,7 +4261,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cde6-cfc1-b836-c70f" name="Fanatical" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cde6-cfc1-b836-c70f" name="Fanatical" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Fanatical"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4284,7 +4284,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="765a-7eae-c086-b4e5" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="765a-7eae-c086-b4e5" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -4324,7 +4324,7 @@
             <categoryLink id="a2d4-743a-8cf1-b210" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="0119-8b2c-f090-ec12" name="Rousing" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0119-8b2c-f090-ec12" name="Rousing" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Rousing"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4353,7 +4353,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="60a6-e2f9-fc79-39c1" name="Fanatical" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="60a6-e2f9-fc79-39c1" name="Fanatical" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Fanatical"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4382,7 +4382,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0fca-e5c0-b919-ae4f" name="Exultant" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0fca-e5c0-b919-ae4f" name="Exultant" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Exultant"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4411,7 +4411,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="22c6-bbd9-db59-e048" name="Flagellant" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="22c6-bbd9-db59-e048" name="Flagellant" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Flagellant"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4440,7 +4440,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="16e7-30eb-cc06-91c9" name="Puritan" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="16e7-30eb-cc06-91c9" name="Puritan" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Puritan"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4469,7 +4469,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e141-ca21-4d2c-fe2d" name="Strength of Spirit" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e141-ca21-4d2c-fe2d" name="Strength of Spirit" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Strength of Spirit"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4502,25 +4502,25 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d8fc-de8f-8da5-875b" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="1f33-0f73-9549-f2f8" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="d8fc-de8f-8da5-875b" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="1f33-0f73-9549-f2f8" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ed6d-4175-51ed-c1d3" name="Fire Team Advances" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="ed6d-4175-51ed-c1d3" name="Fire Team Advances" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e60-1101-37d2-24b6" type="max"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="31f8-563e-ab5d-8e63" name="Fire Team Advances" hidden="false" collective="false">
+        <selectionEntryGroup id="31f8-563e-ab5d-8e63" name="Fire Team Advances" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c80-6d1f-e339-c04f" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e213-c04c-1534-75d0" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c8fd-1e1d-a1cb-2bbc" name="1. Fleet" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c8fd-1e1d-a1cb-2bbc" name="1. Fleet" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3437-c7b3-1d0f-5cb5" type="max"/>
               </constraints>
@@ -4535,7 +4535,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6291-26d4-3d39-b66b" name="2. Lucky" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6291-26d4-3d39-b66b" name="2. Lucky" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b94-f3a3-e9b2-4fe5" type="max"/>
               </constraints>
@@ -4550,7 +4550,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8545-3578-bb99-eff8" name="3. Courageous" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8545-3578-bb99-eff8" name="3. Courageous" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b10d-3bd3-8ff2-7bd8" type="max"/>
               </constraints>
@@ -4565,7 +4565,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3644-4316-4c5c-8503" name="4. Skilled" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3644-4316-4c5c-8503" name="4. Skilled" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd40-4329-299f-1750" type="max"/>
               </constraints>
@@ -4580,7 +4580,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8c13-c2d3-1ae1-a9e3" name="5. Lethal" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8c13-c2d3-1ae1-a9e3" name="5. Lethal" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2806-c1b6-3178-4caf" type="max"/>
               </constraints>
@@ -4595,7 +4595,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="05b4-763e-e8ad-0b7a" name="6. Die-hard" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="05b4-763e-e8ad-0b7a" name="6. Die-hard" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cc23-0f9a-8192-9ff1" type="max"/>
               </constraints>
@@ -4617,7 +4617,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bb99-4086-e731-058e" name="Psybolt" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bb99-4086-e731-058e" name="Psybolt" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52de-c6ae-ac69-baa4" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f53-8c91-942d-fa75" type="min"/>
@@ -4629,7 +4629,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="24de-9906-6401-a20e" name="List Configuration" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="24de-9906-6401-a20e" name="List Configuration" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3390-f434-cef0-6724" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffa5-ce6c-702c-892b" type="max"/>
@@ -4638,13 +4638,13 @@
         <categoryLink id="e524-6f24-047d-43a6" name="Configuration" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a763-c901-e2be-22eb" name="List type" hidden="false" collective="false" defaultSelectionEntryId="46a8-9e97-401a-03f7">
+        <selectionEntryGroup id="a763-c901-e2be-22eb" name="List type" hidden="false" collective="false" import="true" defaultSelectionEntryId="46a8-9e97-401a-03f7">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27bb-e326-e790-fbd8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a64-7810-b1c5-b526" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="46a8-9e97-401a-03f7" name="Matched Play: Kill Team" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="46a8-9e97-401a-03f7" name="Matched Play: Kill Team" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="e565-1c87-f29e-f95e" name="Style: Matched" hidden="false" targetId="c502-39de-965b-6780" primary="false"/>
                 <categoryLink id="c47b-098f-8688-9632" name="List: Kill Team" hidden="false" targetId="beaf-798d-961f-353d" primary="false"/>
@@ -4654,7 +4654,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="57bf-6123-c537-58ac" name="Matched Play: Command Roster" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="57bf-6123-c537-58ac" name="Matched Play: Command Roster" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="7876-989e-5dfb-9f1a" name="List: Command Roster" hidden="false" targetId="d6e9-5af3-c17c-77a0" primary="false"/>
                 <categoryLink id="648a-1b0f-b346-d480" name="Style: Matched" hidden="false" targetId="c502-39de-965b-6780" primary="false"/>
@@ -4663,7 +4663,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="01b9-249b-0eb4-6437" name="Open Play: Kill Team" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="01b9-249b-0eb4-6437" name="Open Play: Kill Team" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="365c-f9f3-90a0-8e58" name="Style: Open" hidden="false" targetId="f81f-45d9-e33e-add6" primary="false"/>
                 <categoryLink id="ad79-7ffc-86d0-b18f" name="List: Kill Team" hidden="false" targetId="beaf-798d-961f-353d" primary="false"/>
@@ -4672,7 +4672,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f0cd-e1da-e4f1-6a32" name="Campaign: Command Roster" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f0cd-e1da-e4f1-6a32" name="Campaign: Command Roster" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="3742-f20b-fe89-0c70" name="List: Command Roster" hidden="false" targetId="d6e9-5af3-c17c-77a0" primary="false"/>
                 <categoryLink id="993e-8df1-dade-1dfb" name="Style: Campaign" hidden="false" targetId="7c0b-7da1-facd-d326" primary="false"/>
@@ -4681,7 +4681,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1d42-9d57-38c5-9a02" name="Campaign: Kill Team" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1d42-9d57-38c5-9a02" name="Campaign: Kill Team" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="caba-8b57-b633-365a" name="List: Kill Team" hidden="false" targetId="beaf-798d-961f-353d" primary="false"/>
                 <categoryLink id="2926-6d86-3aaa-2f40" name="Style: Campaign" hidden="false" targetId="7c0b-7da1-facd-d326" primary="false"/>
@@ -4698,7 +4698,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="64a1-f2d5-7917-1155" name="Resources" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="64a1-f2d5-7917-1155" name="Resources" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -4710,7 +4710,7 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9171-c9ec-8e80-960f" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="583d-37ae-8d18-795b" name="Intelligence" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="583d-37ae-8d18-795b" name="Intelligence" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="1x Intelligence">
               <conditions>
@@ -4725,7 +4725,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a945-c8b1-dde2-12e5" name="Materiel" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a945-c8b1-dde2-12e5" name="Materiel" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="1x Materiel">
               <conditions>
@@ -4740,7 +4740,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c4a8-a2e9-9895-270d" name="Morale" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c4a8-a2e9-9895-270d" name="Morale" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="1x Morale">
               <conditions>
@@ -4755,7 +4755,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4228-8ef6-a0d7-24fd" name="Territory" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4228-8ef6-a0d7-24fd" name="Territory" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="1x Territory">
               <conditions>
@@ -4775,7 +4775,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b11f-9539-8ab0-2c1a" name="Master Specialist" page="" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b11f-9539-8ab0-2c1a" name="Master Specialist" page="" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -4797,7 +4797,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8301-dd25-06aa-2d15" name="Strategist" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="8301-dd25-06aa-2d15" name="Strategist" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -4814,7 +4814,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="acce-cf86-d632-e529" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="c9d4-b2dd-6ffa-e495" name="Level 1: Resourceful" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c9d4-b2dd-6ffa-e495" name="Level 1: Resourceful" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb77-a5f6-f85a-1084" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0a6-f75e-1b7f-10bf" type="max"/>
@@ -4831,7 +4831,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d214-2c87-2051-ee92" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="d214-2c87-2051-ee92" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -4851,7 +4851,7 @@
             <categoryLink id="4108-de3f-8d1e-bf25" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="52c4-018b-54f7-e36f" name="Feigned Retreat" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="52c4-018b-54f7-e36f" name="Feigned Retreat" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Feigned Retreat"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4867,7 +4867,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="10d1-ed57-e7ca-e054" name="Advisor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="10d1-ed57-e7ca-e054" name="Advisor" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Advisor"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4885,7 +4885,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="fd09-78c8-0f5b-f762" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="fd09-78c8-0f5b-f762" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -4905,7 +4905,7 @@
             <categoryLink id="10cd-e4ce-1b35-51b2" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="edf7-4cb3-86e6-9772" name="Master Tactician" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="edf7-4cb3-86e6-9772" name="Master Tactician" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Master Tactician"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4926,7 +4926,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1608-022a-4539-bcf4" name="Counter-strategist" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1608-022a-4539-bcf4" name="Counter-strategist" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Counter-strategist"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4947,7 +4947,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6cf7-538e-ad97-a2e9" name="Mission-critical Mastermind" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6cf7-538e-ad97-a2e9" name="Mission-critical Mastermind" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Mission-critical Mastermind"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4968,7 +4968,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="aa15-f193-8f68-2423" name="Famed Commander" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="aa15-f193-8f68-2423" name="Famed Commander" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Famed Commander"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -4991,7 +4991,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="cd34-ba97-43e3-0a5b" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="cd34-ba97-43e3-0a5b" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -5031,7 +5031,7 @@
             <categoryLink id="2194-2372-51ee-9cbd" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="5c4e-b60d-3b15-fdb8" name="Master Tactician" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5c4e-b60d-3b15-fdb8" name="Master Tactician" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Master Tactician"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5060,7 +5060,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6c3c-00cc-53e0-a4e4" name="Famed Commander" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6c3c-00cc-53e0-a4e4" name="Famed Commander" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Famed Commander"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5089,7 +5089,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="430c-ca7e-6cd5-cac9" name="Mission-critical Mastermind" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="430c-ca7e-6cd5-cac9" name="Mission-critical Mastermind" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Mission-critical Mastermind"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5118,7 +5118,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e2c3-9f90-b618-0c84" name="Feigned Retreat" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e2c3-9f90-b618-0c84" name="Feigned Retreat" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Feigned Retreat"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5147,7 +5147,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="13a8-7e51-6e9a-a747" name="Advisor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="13a8-7e51-6e9a-a747" name="Advisor" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Advisor"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5176,7 +5176,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9560-a12b-e15a-7b16" name="Counter-strategist" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9560-a12b-e15a-7b16" name="Counter-strategist" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Counter-strategist"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5209,14 +5209,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="f674-7b16-a990-3ca9" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="5ef4-6250-cf74-9144" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="f674-7b16-a990-3ca9" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="5ef4-6250-cf74-9144" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4550-6c27-1911-68ae" name="Strength" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="4550-6c27-1911-68ae" name="Strength" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -5233,7 +5233,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a62c-7716-6fbe-c869" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="158c-7536-11e1-e7e0" name="Level 1: Muscular" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="158c-7536-11e1-e7e0" name="Level 1: Muscular" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="735b-c7cb-e2e5-0340" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc5a-8634-d939-9fea" type="max"/>
@@ -5250,7 +5250,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1140-b801-19e3-b245" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="1140-b801-19e3-b245" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -5270,7 +5270,7 @@
             <categoryLink id="28e4-bc65-7efe-b856" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="f573-32f6-a267-5c1d" name="Brutal Strikes" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f573-32f6-a267-5c1d" name="Brutal Strikes" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Brutal Strikes"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5286,7 +5286,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a866-5588-c97d-b60d" name="Juggernaught" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a866-5588-c97d-b60d" name="Juggernaught" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Juggernaught"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5304,7 +5304,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ff26-a2b1-740e-cb03" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="ff26-a2b1-740e-cb03" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -5324,7 +5324,7 @@
             <categoryLink id="14e5-5f1f-2b96-b9cc" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="01f4-f61e-aa95-44ee" name="Sunderer" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="01f4-f61e-aa95-44ee" name="Sunderer" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Sunderer"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5345,7 +5345,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4be2-96c6-7332-c9b9" name="Bull Charge" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4be2-96c6-7332-c9b9" name="Bull Charge" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Bull Charge"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5366,7 +5366,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6456-bc83-5163-df05" name="Crusher" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6456-bc83-5163-df05" name="Crusher" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Crusher"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5387,7 +5387,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ffa2-7306-a8da-50fe" name="Devastating Power" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ffa2-7306-a8da-50fe" name="Devastating Power" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Devastating Power"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5410,7 +5410,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c83b-03a2-af39-89d8" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="c83b-03a2-af39-89d8" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -5450,7 +5450,7 @@
             <categoryLink id="ea5d-7f65-0348-ef86" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="4e1d-f6c2-8eb4-a0dd" name="Devastating Power" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4e1d-f6c2-8eb4-a0dd" name="Devastating Power" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Devastating Power"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5479,7 +5479,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fe6c-4d0a-d9e1-2925" name="Crusher" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="fe6c-4d0a-d9e1-2925" name="Crusher" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Crusher"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5508,7 +5508,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="917a-c77a-772a-f142" name="Sunderer" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="917a-c77a-772a-f142" name="Sunderer" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Sunderer"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5537,7 +5537,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="319e-f511-b8b0-f692" name="Juggernaught" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="319e-f511-b8b0-f692" name="Juggernaught" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Juggernaught"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5566,7 +5566,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b992-43c0-6b9e-c7f6" name="Brutal Strikes" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b992-43c0-6b9e-c7f6" name="Brutal Strikes" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Brutal Strikes"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5595,7 +5595,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cd53-81b5-482c-7525" name="Bull Charge" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cd53-81b5-482c-7525" name="Bull Charge" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Bull Charge"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5628,14 +5628,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3ca3-134c-51ce-f0dc" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="1911-c2ec-b2a2-01bd" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="3ca3-134c-51ce-f0dc" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="1911-c2ec-b2a2-01bd" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="37cb-84d5-5250-ef16" name="Stealth" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="37cb-84d5-5250-ef16" name="Stealth" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -5652,7 +5652,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c57f-91da-6b96-6c81" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="f10a-0627-d35a-8b10" name="Level 1: Steady Aim" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f10a-0627-d35a-8b10" name="Level 1: Steady Aim" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d4f-9f22-60af-473b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dde-9f5a-1037-9aa9" type="max"/>
@@ -5669,7 +5669,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="34b3-d220-aaa7-476e" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="34b3-d220-aaa7-476e" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -5689,7 +5689,7 @@
             <categoryLink id="daba-06b1-8ce2-6e71" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="3860-bc67-f9ea-a555" name="Climber" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3860-bc67-f9ea-a555" name="Climber" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Climber"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5705,7 +5705,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1096-4f95-e2b9-fbea" name="Skulker" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1096-4f95-e2b9-fbea" name="Skulker" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Skulker"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5723,7 +5723,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d26b-c55e-2ad9-f8db" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="d26b-c55e-2ad9-f8db" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -5743,7 +5743,7 @@
             <categoryLink id="f3d4-cb32-077e-bb98" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="77ba-ac5e-050f-ca05" name="One with the Shadows" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="77ba-ac5e-050f-ca05" name="One with the Shadows" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: One with the Shadows"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5764,7 +5764,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c783-0949-5f63-0446" name="Prowler" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c783-0949-5f63-0446" name="Prowler" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Prowler"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5785,7 +5785,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e791-fba5-f6c7-e994" name="Lurker" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e791-fba5-f6c7-e994" name="Lurker" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Lurker"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5806,7 +5806,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f667-9679-9eb1-bb6e" name="Sure-footed" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f667-9679-9eb1-bb6e" name="Sure-footed" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Sure-footed"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5829,7 +5829,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="2f71-1b90-93d2-e1f7" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="2f71-1b90-93d2-e1f7" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -5869,7 +5869,7 @@
             <categoryLink id="74e4-3ed8-2e28-3c58" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="3f95-05f4-3f33-ec20" name="Skulker" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3f95-05f4-3f33-ec20" name="Skulker" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Skulker"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5898,7 +5898,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4800-5cc1-7808-d740" name="Prowler" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4800-5cc1-7808-d740" name="Prowler" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Prowler"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5927,7 +5927,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1771-1ff5-2fd6-a4de" name="Sure-footed" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1771-1ff5-2fd6-a4de" name="Sure-footed" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Sure-footed"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5956,7 +5956,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fa26-1070-4f2d-3816" name="Lurker" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="fa26-1070-4f2d-3816" name="Lurker" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Lurker"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -5985,7 +5985,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ae0a-f4cd-63e1-14db" name="One with the Shadows" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ae0a-f4cd-63e1-14db" name="One with the Shadows" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: One with the Shadows"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6014,7 +6014,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8605-b008-25a2-c25a" name="Climber" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8605-b008-25a2-c25a" name="Climber" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Climber"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6047,14 +6047,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="54c2-8071-0a17-3cca" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="ccd9-9b28-72f0-f6ac" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="54c2-8071-0a17-3cca" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="ccd9-9b28-72f0-f6ac" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fa4c-5101-4760-038f" name="Psyker" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="fa4c-5101-4760-038f" name="Psyker" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -6071,7 +6071,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9c1a-2f64-1b4f-e96f" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="2ffc-43e0-8985-b321" name="Level 1: Student of the Arcane" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2ffc-43e0-8985-b321" name="Level 1: Student of the Arcane" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1919-6fde-4340-1dc8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a58-9533-6d07-b348" type="max"/>
@@ -6088,7 +6088,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="346f-e353-bdf8-6c3c" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="346f-e353-bdf8-6c3c" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6108,7 +6108,7 @@
             <categoryLink id="631f-d4e3-55b9-a9c6" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="40a5-175f-1964-7ca6" name="Psychic Onslaught" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="40a5-175f-1964-7ca6" name="Psychic Onslaught" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Psychic Onslaught"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6124,7 +6124,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="75f9-b21b-2e1d-1e8d" name="Warp Drain" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="75f9-b21b-2e1d-1e8d" name="Warp Drain" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Warp Drain"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6142,7 +6142,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="8a7c-7da3-f455-0058" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="8a7c-7da3-f455-0058" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6162,7 +6162,7 @@
             <categoryLink id="817e-6c8d-906f-710c" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="e723-4847-4102-ded3" name="Omniscience" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e723-4847-4102-ded3" name="Omniscience" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Omniscience"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6183,7 +6183,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="45d8-6114-1809-0cde" name="Protective Wards" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="45d8-6114-1809-0cde" name="Protective Wards" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Protective Wards"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6204,7 +6204,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="041e-b667-a638-eb55" name="Psionic Potency" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="041e-b667-a638-eb55" name="Psionic Potency" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Psionic Potency"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6225,7 +6225,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1dd6-733e-4b81-8ff5" name="Witchbane" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1dd6-733e-4b81-8ff5" name="Witchbane" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Witchbane"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6248,7 +6248,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="a523-a7b0-de8f-ae0b" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="a523-a7b0-de8f-ae0b" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6288,7 +6288,7 @@
             <categoryLink id="3798-1c63-a49e-45dd" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="8a38-7d1d-99f0-fc49" name="Psionic Potency" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8a38-7d1d-99f0-fc49" name="Psionic Potency" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Psionic Potency"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6317,7 +6317,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f175-3923-8d82-488c" name="Protective Wards" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f175-3923-8d82-488c" name="Protective Wards" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Protective Wards"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6346,7 +6346,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b9f2-eed4-b3ba-22da" name="Witchbane" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b9f2-eed4-b3ba-22da" name="Witchbane" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Witchbane"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6375,7 +6375,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="acf1-8f92-7f73-690e" name="Warp Drain" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="acf1-8f92-7f73-690e" name="Warp Drain" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Warp Drain"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6404,7 +6404,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="da89-fc4e-060b-82ed" name="Omniscience" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="da89-fc4e-060b-82ed" name="Omniscience" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Omniscience"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6433,7 +6433,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3793-0683-a694-3d23" name="Psychic Onslaught" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3793-0683-a694-3d23" name="Psychic Onslaught" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Psychic Onslaught"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6466,14 +6466,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="f22b-895e-0a85-6bce" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="3050-3e44-c472-ff43" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="f22b-895e-0a85-6bce" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="3050-3e44-c472-ff43" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="275f-0c8c-74e6-899f" name="Ferocity" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="275f-0c8c-74e6-899f" name="Ferocity" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -6490,7 +6490,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b7bb-7bcd-d618-3cb2" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="e435-d61e-1d49-8f72" name="Level 1: Counter-attack" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e435-d61e-1d49-8f72" name="Level 1: Counter-attack" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f27-b521-77e0-12db" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aef-023b-8cbb-bc7c" type="max"/>
@@ -6507,7 +6507,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f772-6f64-62c8-32ee" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="f772-6f64-62c8-32ee" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6527,7 +6527,7 @@
             <categoryLink id="81d1-1bb9-25de-60c3" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="e9d8-daf8-3b71-c730" name="Ignore Pain" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e9d8-daf8-3b71-c730" name="Ignore Pain" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Ignore Pain"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6543,7 +6543,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1b18-8f86-ae23-a19f" name="Bloodlust" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1b18-8f86-ae23-a19f" name="Bloodlust" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Bloodlust"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6561,7 +6561,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="46e2-1cbd-d582-b88b" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="46e2-1cbd-d582-b88b" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6581,7 +6581,7 @@
             <categoryLink id="4fef-afc7-b88a-5a47" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="eb63-1e1e-3681-a849" name="Fearsome War Cry" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="eb63-1e1e-3681-a849" name="Fearsome War Cry" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Fearsome War Cry"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6602,7 +6602,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d387-02bd-a25b-beaa" name="Death Frenzy" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d387-02bd-a25b-beaa" name="Death Frenzy" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Death Frenzy"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6623,7 +6623,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f875-6e76-5d43-f382" name="Berserker" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f875-6e76-5d43-f382" name="Berserker" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Berserker"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6644,7 +6644,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="940b-226e-e48d-5d59" name="Indignant Rampage" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="940b-226e-e48d-5d59" name="Indignant Rampage" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Indignant Rampage"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6667,7 +6667,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7dbe-b5a4-8558-b867" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="7dbe-b5a4-8558-b867" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6707,7 +6707,7 @@
             <categoryLink id="4e45-b6ac-3ae2-4878" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="5263-b7d0-2b1c-0b03" name="Ignore Pain" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5263-b7d0-2b1c-0b03" name="Ignore Pain" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Ignore Pain"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6736,7 +6736,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4937-102a-4b4d-0424" name="Fearsome War Cry" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4937-102a-4b4d-0424" name="Fearsome War Cry" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Fearsome War Cry"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6765,7 +6765,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1f34-e319-1c5a-faf4" name="Indignant Rampage" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1f34-e319-1c5a-faf4" name="Indignant Rampage" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Indignant Rampage"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6794,7 +6794,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e04f-0b16-977d-1068" name="Berserker" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e04f-0b16-977d-1068" name="Berserker" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Berserker"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6823,7 +6823,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="28af-66f2-0331-859d" name="Death Frenzy" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="28af-66f2-0331-859d" name="Death Frenzy" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Death Frenzy"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6852,7 +6852,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0f62-952d-c054-8405" name="Bloodlust" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0f62-952d-c054-8405" name="Bloodlust" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Bloodlust"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6885,14 +6885,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c00f-89b8-f05e-a454" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="5ec0-0400-7169-7428" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="c00f-89b8-f05e-a454" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="5ec0-0400-7169-7428" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="88d4-1fdb-1672-18cc" name="Fortitude" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="88d4-1fdb-1672-18cc" name="Fortitude" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -6909,7 +6909,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ac19-57fc-c4fa-765d" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="20b7-0fa3-3e1a-caaf" name="Level 1: Hardy Constitution" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="20b7-0fa3-3e1a-caaf" name="Level 1: Hardy Constitution" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa45-a29f-4839-cdee" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b0a-76ae-2c3f-1a66" type="max"/>
@@ -6926,7 +6926,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5aab-e4c8-9593-c2fc" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="5aab-e4c8-9593-c2fc" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6946,7 +6946,7 @@
             <categoryLink id="f061-e39e-d730-e36b" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="90b5-5f7f-a600-f9df" name="Hard to Kill" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="90b5-5f7f-a600-f9df" name="Hard to Kill" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Hard to Kill"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6962,7 +6962,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e6c1-b271-19ea-c5e9" name="Indomitable" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e6c1-b271-19ea-c5e9" name="Indomitable" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Indomitable"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -6980,7 +6980,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="dec2-b252-dbc2-20c7" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="dec2-b252-dbc2-20c7" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -7000,7 +7000,7 @@
             <categoryLink id="05e1-80c4-a19e-7fee" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="bc8e-0d88-aeb4-0697" name="True Grit" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="bc8e-0d88-aeb4-0697" name="True Grit" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: True Grit"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7021,7 +7021,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="81c1-c353-1a80-b857" name="Unyielding Will" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="81c1-c353-1a80-b857" name="Unyielding Will" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Unyielding Will"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7042,7 +7042,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="35f7-a79a-addd-5b1e" name="Feel No Pain" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="35f7-a79a-addd-5b1e" name="Feel No Pain" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Feel No Pain"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7063,7 +7063,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c54d-80b9-65cd-13f4" name="Iron Constitution" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c54d-80b9-65cd-13f4" name="Iron Constitution" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Iron Constitution"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7086,7 +7086,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="826f-ebbf-43ef-895b" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="826f-ebbf-43ef-895b" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -7126,7 +7126,7 @@
             <categoryLink id="ea5b-1e8e-68fb-6bcc" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="b4b0-eedf-fda4-976a" name="True Grit" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b4b0-eedf-fda4-976a" name="True Grit" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: True Grit"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7155,7 +7155,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7ea7-fcd5-2fae-f13c" name="Iron Constitution" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7ea7-fcd5-2fae-f13c" name="Iron Constitution" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Iron Constitution"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7184,7 +7184,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="af5f-6191-9695-ffff" name="Unyielding Will" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="af5f-6191-9695-ffff" name="Unyielding Will" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Unyielding Will"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7213,7 +7213,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3d7b-68fe-e3d3-ba54" name="Hard to Kill" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3d7b-68fe-e3d3-ba54" name="Hard to Kill" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Hard to Kill"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7242,7 +7242,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="54bd-c2ce-89fc-83a3" name="Feel No Pain" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="54bd-c2ce-89fc-83a3" name="Feel No Pain" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Feel No Pain"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7271,7 +7271,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="be24-706f-b2b1-6587" name="Indomitable" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="be24-706f-b2b1-6587" name="Indomitable" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Indomitable"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7304,14 +7304,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="f16c-5bff-2059-76d3" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="f33a-4127-ab18-e61e" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="f16c-5bff-2059-76d3" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="f33a-4127-ab18-e61e" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cd3d-2c23-094b-93b8" name="Leadership" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="cd3d-2c23-094b-93b8" name="Leadership" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -7328,7 +7328,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2b9d-b0da-1127-a959" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="952a-65a4-2870-1d3d" name="Level 1: Symbol of Courage" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="952a-65a4-2870-1d3d" name="Level 1: Symbol of Courage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff26-e3cf-949c-0106" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa3f-aeeb-4179-f9c3" type="max"/>
@@ -7345,7 +7345,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5614-657c-08bd-5f08" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="5614-657c-08bd-5f08" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -7365,7 +7365,7 @@
             <categoryLink id="94aa-93d9-b58f-0bcd" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="fd9a-7dc0-175b-1258" name="Aura of Command" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="fd9a-7dc0-175b-1258" name="Aura of Command" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Aura of Command"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7381,7 +7381,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="faa4-2196-dc24-695c" name="Inspiring" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="faa4-2196-dc24-695c" name="Inspiring" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Inspiring"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7399,7 +7399,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="76c5-6425-f6d4-73f6" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="76c5-6425-f6d4-73f6" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -7419,7 +7419,7 @@
             <categoryLink id="c80e-94a4-c7d6-4d2b" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="39bc-38d5-d319-2b63" name="Grim Determination" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="39bc-38d5-d319-2b63" name="Grim Determination" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Grim Determination"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7440,7 +7440,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c800-82ee-0347-c8fc" name="Tenacious" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c800-82ee-0347-c8fc" name="Tenacious" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Tenacious"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7461,7 +7461,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3740-f372-5e69-69f1" name="Master of War" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3740-f372-5e69-69f1" name="Master of War" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Master of War"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7482,7 +7482,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9dbe-57bc-cf21-ebe7" name="Heroic" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9dbe-57bc-cf21-ebe7" name="Heroic" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Heroic"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7505,7 +7505,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d2e2-5a0e-d14b-3cac" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="d2e2-5a0e-d14b-3cac" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -7545,7 +7545,7 @@
             <categoryLink id="8daf-3042-5867-e718" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="c443-ee9c-e0c9-6b02" name="Master of War" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c443-ee9c-e0c9-6b02" name="Master of War" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Master of War"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7574,7 +7574,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cabd-9cf3-bc72-f3cd" name="Heroic" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cabd-9cf3-bc72-f3cd" name="Heroic" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Heroic"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7603,7 +7603,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dc93-4815-0bfa-dcdd" name="Tenacious" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="dc93-4815-0bfa-dcdd" name="Tenacious" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Tenacious"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7632,7 +7632,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0d9e-6d52-66c6-b739" name="Inspiring" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0d9e-6d52-66c6-b739" name="Inspiring" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Inspiring"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7661,7 +7661,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6060-aa05-8656-fcf8" name="Aura of Command" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6060-aa05-8656-fcf8" name="Aura of Command" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Aura of Command"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7690,7 +7690,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="beb1-ac5c-9459-cd34" name="Grim Determination" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="beb1-ac5c-9459-cd34" name="Grim Determination" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Grim Determination"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7723,14 +7723,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ba44-9a73-f655-cc23" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="d19a-6ffa-b4b8-5a04" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="ba44-9a73-f655-cc23" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="d19a-6ffa-b4b8-5a04" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="436b-cc7d-caf2-b09c" name="Logistics" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="436b-cc7d-caf2-b09c" name="Logistics" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -7747,7 +7747,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f544-4cc8-b543-575b" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="d351-b506-c829-c9c9" name="Level 1: Extra Armour" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d351-b506-c829-c9c9" name="Level 1: Extra Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="917b-3d11-28f1-5e3b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e9b-d4c4-c855-7823" type="max"/>
@@ -7764,7 +7764,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="017c-a13d-7454-a5de" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="017c-a13d-7454-a5de" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -7784,7 +7784,7 @@
             <categoryLink id="1747-eea9-e13a-2723" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="1fc2-9a8e-b984-36cd" name="Quartermaster" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1fc2-9a8e-b984-36cd" name="Quartermaster" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Quartermaster"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7800,7 +7800,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b685-bf13-7818-645c" name="Armed to the Teeth" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b685-bf13-7818-645c" name="Armed to the Teeth" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Armed to the Teeth"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7818,7 +7818,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="141b-b2f7-36d2-9e0d" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="141b-b2f7-36d2-9e0d" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -7838,7 +7838,7 @@
             <categoryLink id="e8af-ddeb-34f2-7faf" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="c62d-d363-9965-ca60" name="Scavenger" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c62d-d363-9965-ca60" name="Scavenger" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Scavenger"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7859,7 +7859,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b81b-ab3b-6287-f4de" name="Rangefinder Scope" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b81b-ab3b-6287-f4de" name="Rangefinder Scope" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Rangefinder Scope"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7880,7 +7880,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="84fc-c317-9395-9e31" name="Master Artisan" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="84fc-c317-9395-9e31" name="Master Artisan" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Master Artisan"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7901,7 +7901,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="87e5-913c-641b-7c58" name="Master of Sabotage" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="87e5-913c-641b-7c58" name="Master of Sabotage" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Master of Sabotage"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7924,7 +7924,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="159f-a3f5-f426-9c93" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="159f-a3f5-f426-9c93" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -7964,7 +7964,7 @@
             <categoryLink id="f955-c689-64a6-d62f" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="1821-c956-1314-7d07" name="Rangefinder Scope" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1821-c956-1314-7d07" name="Rangefinder Scope" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Rangefinder Scope"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -7993,7 +7993,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e5a5-fe45-0958-7468" name="Master Artisan" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e5a5-fe45-0958-7468" name="Master Artisan" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Master Artisan"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8022,7 +8022,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1c35-84dc-a739-6fad" name="Scavenger" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1c35-84dc-a739-6fad" name="Scavenger" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Scavenger"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8051,7 +8051,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1529-d97a-5c9e-a376" name="Master of Sabotage" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1529-d97a-5c9e-a376" name="Master of Sabotage" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Master of Sabotage"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8080,7 +8080,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a907-d80e-dcf6-cece" name="Armed to the Teeth" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a907-d80e-dcf6-cece" name="Armed to the Teeth" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Armed to the Teeth"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8109,7 +8109,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2b20-d5ab-6127-2034" name="Quartermaster" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2b20-d5ab-6127-2034" name="Quartermaster" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Quartermaster"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8142,14 +8142,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="cc5e-0983-e659-74e1" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="57e1-9dd5-7f87-17c8" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="cc5e-0983-e659-74e1" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="57e1-9dd5-7f87-17c8" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d429-68d8-5a9f-fab6" name="Melee" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="d429-68d8-5a9f-fab6" name="Melee" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -8166,7 +8166,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f1b1-4622-ec03-f80a" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="9ed1-9961-598f-30ee" name="Level 1: Expert Fighter" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9ed1-9961-598f-30ee" name="Level 1: Expert Fighter" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e93-d285-1a68-9ed8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d428-c99c-2ef2-aaeb" type="max"/>
@@ -8183,7 +8183,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c242-bf91-2c9f-3e42" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="c242-bf91-2c9f-3e42" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -8203,7 +8203,7 @@
             <categoryLink id="0cb9-3b26-76d6-03b7" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="87fe-41db-0133-c5bd" name="Swift Parry" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="87fe-41db-0133-c5bd" name="Swift Parry" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Swift Parry"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8219,7 +8219,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4dc0-2004-4c14-9078" name="Warrior Born" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4dc0-2004-4c14-9078" name="Warrior Born" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Warrior Born"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8237,7 +8237,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="df25-888b-43c1-0fe6" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="df25-888b-43c1-0fe6" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -8257,7 +8257,7 @@
             <categoryLink id="38a9-5c2d-5987-472b" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="2927-6d46-7681-b00d" name="Lightning Reflexes" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2927-6d46-7681-b00d" name="Lightning Reflexes" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Lightning Reflexes"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8278,7 +8278,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1e39-98c9-0b6a-1868" name="Impenetrable Defence" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1e39-98c9-0b6a-1868" name="Impenetrable Defence" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Impenetrable Defence"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8299,7 +8299,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="86b2-ade9-89c5-0ad0" name="Duellist" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="86b2-ade9-89c5-0ad0" name="Duellist" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Duellist"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8320,7 +8320,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="065f-c361-3d8b-02be" name="Precision Strike" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="065f-c361-3d8b-02be" name="Precision Strike" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Precision Strike"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8343,7 +8343,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="595e-8cd8-ccfa-8df7" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="595e-8cd8-ccfa-8df7" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -8383,7 +8383,7 @@
             <categoryLink id="69b2-2031-0c13-07f7" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="ff45-609b-e942-783e" name="Lightning Reflexes" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ff45-609b-e942-783e" name="Lightning Reflexes" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Lightning Reflexes"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8412,7 +8412,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fc13-0e44-7cef-9470" name="Warrior Born" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="fc13-0e44-7cef-9470" name="Warrior Born" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Warrior Born"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8441,7 +8441,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1106-280f-0277-b41b" name="Precision Strike" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1106-280f-0277-b41b" name="Precision Strike" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Precision Strike"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8470,7 +8470,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b738-acb5-3c2b-110a" name="Duellist" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b738-acb5-3c2b-110a" name="Duellist" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Duellist"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8499,7 +8499,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="066f-23bd-ab90-b807" name="Swift Parry" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="066f-23bd-ab90-b807" name="Swift Parry" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Swift Parry"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8528,7 +8528,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ead6-b7b3-b338-22f0" name="Impenetrable Defence" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ead6-b7b3-b338-22f0" name="Impenetrable Defence" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Impenetrable Defence"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8561,14 +8561,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="15d8-a84a-a60e-0885" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="d834-fb9c-6d94-b5bc" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="15d8-a84a-a60e-0885" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="d834-fb9c-6d94-b5bc" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3b6a-c3c2-c00b-170e" name="Shooting" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="3b6a-c3c2-c00b-170e" name="Shooting" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -8585,7 +8585,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3174-3634-9fb5-fd82" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="7088-a1ce-44f9-b351" name="Level 1: Shootist" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="7088-a1ce-44f9-b351" name="Level 1: Shootist" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4304-d3ae-2a75-c0c5" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3e5-1120-bc07-2166" type="max"/>
@@ -8602,7 +8602,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8b48-d21d-72ef-d64c" name="Level 2" hidden="false" collective="false">
+        <selectionEntryGroup id="8b48-d21d-72ef-d64c" name="Level 2" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -8622,7 +8622,7 @@
             <categoryLink id="7187-f300-3749-19a1" name="Level 2" hidden="false" targetId="32ef-fb0a-d404-f1ea" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="56cc-da5f-ea41-d216" name="Trick-shooter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="56cc-da5f-ea41-d216" name="Trick-shooter" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Trick-shooter"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8638,7 +8638,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0ab3-ac48-9881-5620" name="Pistoleer" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0ab3-ac48-9881-5620" name="Pistoleer" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 2: Pistoleer"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8656,7 +8656,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9728-988b-09fa-1e80" name="Level 3" hidden="false" collective="false">
+        <selectionEntryGroup id="9728-988b-09fa-1e80" name="Level 3" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -8676,7 +8676,7 @@
             <categoryLink id="8361-3c30-a6c6-86b6" name="Level 3" hidden="false" targetId="0a93-6219-2f28-9a37" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="9fdb-8641-d1be-4c13" name="Long Bomb" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9fdb-8641-d1be-4c13" name="Long Bomb" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Long Bomb"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8697,7 +8697,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="01d9-22db-60e2-0992" name="Hip Shooter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="01d9-22db-60e2-0992" name="Hip Shooter" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Hip Shooter"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8718,7 +8718,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9aa0-7734-f1d2-f92b" name="Targeting Weak Spots" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9aa0-7734-f1d2-f92b" name="Targeting Weak Spots" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Targeting Weak Spots"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8739,7 +8739,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3ca2-818d-d608-8885" name="Precision Strike" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3ca2-818d-d608-8885" name="Precision Strike" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 3: Precision Strike"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8762,7 +8762,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d65a-ec1d-b483-234f" name="Level 4" hidden="false" collective="false">
+        <selectionEntryGroup id="d65a-ec1d-b483-234f" name="Level 4" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -8802,7 +8802,7 @@
             <categoryLink id="e15c-a9c4-f71d-9b9e" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="c147-edb7-fd32-3011" name="Hip Shooter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c147-edb7-fd32-3011" name="Hip Shooter" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Hip Shooter"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8831,7 +8831,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="aee5-0d15-1df3-9d6c" name="Targeting Weak Spots" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="aee5-0d15-1df3-9d6c" name="Targeting Weak Spots" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Targeting Weak Spots"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8860,7 +8860,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b986-6034-ce7d-9bfa" name="Precision Strike" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b986-6034-ce7d-9bfa" name="Precision Strike" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Precision Strike"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8889,7 +8889,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f001-be4c-a993-3108" name="Pistoleer" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f001-be4c-a993-3108" name="Pistoleer" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Pistoleer"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8918,7 +8918,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="402f-240d-026d-ebcf" name="Long Bomb" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="402f-240d-026d-ebcf" name="Long Bomb" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Long Bomb"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8947,7 +8947,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="392a-2e85-0dfe-e8e7" name="Trick-shooter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="392a-2e85-0dfe-e8e7" name="Trick-shooter" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="Level 4: Trick-shooter"/>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
@@ -8980,14 +8980,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c8a1-2b4b-b48f-3e4d" name="Commander Traits" hidden="false" collective="false" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
-        <entryLink id="097d-376d-33d1-cca7" name="Generalist Abilities" hidden="false" collective="false" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
+        <entryLink id="c8a1-2b4b-b48f-3e4d" name="Commander Traits" hidden="false" collective="false" import="true" targetId="eff3-f5cf-03ea-a563" type="selectionEntryGroup"/>
+        <entryLink id="097d-376d-33d1-cca7" name="Generalist Abilities" hidden="false" collective="false" import="true" targetId="3134-09b9-9b39-7c96" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="51ae-59d9-809a-f5dc" name="Janus Draik" hidden="false" collective="false" type="model">
+    <selectionEntry id="51ae-59d9-809a-f5dc" name="Janus Draik" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="2716-8c50-55db-8113" value="1">
           <conditions>
@@ -9061,7 +9061,7 @@
         <categoryLink id="53e7-ad3b-e96f-d555" name="Janus Draik" hidden="false" targetId="e7f5-09f4-86d3-cfb0" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1530-3060-9514-bc5c" name="Monomolecular rapier" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1530-3060-9514-bc5c" name="Monomolecular rapier" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03eb-597c-6ca0-a271" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8193-82a0-40c2-3856" type="max"/>
@@ -9082,7 +9082,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="48bf-37d6-3fae-6f6b" name="Heirloom pistol" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="48bf-37d6-3fae-6f6b" name="Heirloom pistol" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="066c-7222-1e5c-3d70" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3deb-4c04-c711-1bcf" type="max"/>
@@ -9103,7 +9103,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="93bf-3945-9cb1-c426" name="Archeotech grenade" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="93bf-3945-9cb1-c426" name="Archeotech grenade" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="792d-0956-d7d2-618f" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5c3-9354-2776-3992" type="max"/>
@@ -9126,7 +9126,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="494d-7e89-9e83-962b" name="Leadership" hidden="false" collective="false" targetId="cd3d-2c23-094b-93b8" type="selectionEntry">
+        <entryLink id="494d-7e89-9e83-962b" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b78-4b06-3eba-5587" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42fe-bdb6-bdf3-7059" type="max"/>
@@ -9137,7 +9137,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7279-c5fe-a464-94c4" name="Kroot Rifle" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7279-c5fe-a464-94c4" name="Kroot Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="94ee-38cd-57a8-0ff0" name="Kroot rifle (melee)" hidden="false" targetId="a811-8667-f649-253d" type="profile"/>
         <infoLink id="951f-7f97-310b-ba1c" name="Kroot rifle (shooting)" hidden="false" targetId="e7b3-c621-161f-f5c3" type="profile"/>
@@ -9146,7 +9146,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="36c9-84e1-2296-8655" name="Kroot Carnivore" hidden="false" collective="false" type="model">
+    <selectionEntry id="36c9-84e1-2296-8655" name="Kroot Carnivore" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="1991-87c5-8b32-6098" name="Kroot Carnivore" hidden="false" targetId="4e58-8631-e807-c595" type="profile"/>
       </infoLinks>
@@ -9157,7 +9157,7 @@
         <categoryLink id="b5dd-d826-d786-755c" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="353e-c059-6c4e-4930" name="Specialism" hidden="false" collective="false">
+        <selectionEntryGroup id="353e-c059-6c4e-4930" name="Specialism" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -9176,7 +9176,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a20-a522-7722-8aad" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="29be-9194-00c9-01b4" name="Leader" hidden="false" collective="false" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
+            <entryLink id="29be-9194-00c9-01b4" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -9185,7 +9185,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="28f1-02a2-ba7b-18c4" name="Scout" hidden="false" collective="false" targetId="1d42-7d93-e0a4-330b" type="selectionEntry">
+            <entryLink id="28f1-02a2-ba7b-18c4" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -9198,7 +9198,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="c311-377d-4aaa-f9a6" name="Sniper" hidden="false" collective="false" targetId="ead5-ea32-5412-c857" type="selectionEntry">
+            <entryLink id="c311-377d-4aaa-f9a6" name="Sniper" hidden="false" collective="false" import="true" targetId="ead5-ea32-5412-c857" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -9207,7 +9207,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="5a92-37aa-10e8-92cf" name="Veteran" hidden="false" collective="false" targetId="c89e-5e73-276f-cc16" type="selectionEntry">
+            <entryLink id="5a92-37aa-10e8-92cf" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -9216,7 +9216,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="24a8-4bdb-01e1-2d0a" name="Zealot" hidden="false" collective="false" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry">
+            <entryLink id="24a8-4bdb-01e1-2d0a" name="Zealot" hidden="false" collective="false" import="true" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -9225,7 +9225,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="1d98-a9ce-6685-276c" name="Combat" hidden="false" collective="false" targetId="cc58-f869-82d1-b353" type="selectionEntry">
+            <entryLink id="1d98-a9ce-6685-276c" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -9238,7 +9238,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="b6a4-b0d8-b61d-25de" name="Kroot Rifle" hidden="false" collective="false" targetId="7279-c5fe-a464-94c4" type="selectionEntry">
+        <entryLink id="b6a4-b0d8-b61d-25de" name="Kroot Rifle" hidden="false" collective="false" import="true" targetId="7279-c5fe-a464-94c4" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3c6-ade8-e0c4-b90c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="030e-2bb3-d96e-a8ab" type="max"/>
@@ -9249,7 +9249,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1625-23f9-5e9b-d3ac" name="Legendary Hunter - Level 4" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1625-23f9-5e9b-d3ac" name="Legendary Hunter - Level 4" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29b9-0103-f190-15de" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f588-e298-7897-96ee" type="max"/>
@@ -9264,7 +9264,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7da4-b687-c93e-28d0" name="Legendary Hunter - Level 3" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7da4-b687-c93e-28d0" name="Legendary Hunter - Level 3" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eefd-1465-1451-430a" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebb8-7d9b-7a70-dd7a" type="max"/>
@@ -9278,7 +9278,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f39-9bac-6c2f-f48b" name="Legendary Hunter - Level 2" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2f39-9bac-6c2f-f48b" name="Legendary Hunter - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6328-66f5-3d69-a6a8" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb5d-7326-87c9-4925" type="max"/>
@@ -9291,7 +9291,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="76e6-74f4-a19a-f455" name="Legendary Hunter - Level 1" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="76e6-74f4-a19a-f455" name="Legendary Hunter - Level 1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4abf-2242-0af3-74a6" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a45-8f37-feb7-cd51" type="max"/>
@@ -9303,7 +9303,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0fd3-65bd-a18e-1a30" name="Inquisitor Eisenhorn" hidden="false" collective="false" type="model">
+    <selectionEntry id="0fd3-65bd-a18e-1a30" name="Inquisitor Eisenhorn" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="c8a4-1000-2f7a-f292" value="1.0">
           <conditionGroups>
@@ -9386,7 +9386,7 @@
         <categoryLink id="b48d-5ad8-3447-99e8" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1f7d-b8e2-dd53-d96c" name="Enforce Will" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1f7d-b8e2-dd53-d96c" name="Enforce Will" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5931-55a6-c2c6-2d5c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6edf-5fc8-f601-8563" type="max"/>
@@ -9402,7 +9402,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8e4a-a78b-4737-5597" name="Artificer bolt pistol" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="8e4a-a78b-4737-5597" name="Artificer bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2af-650e-15d9-07b7" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="472b-1598-4d80-454e" type="max"/>
@@ -9423,7 +9423,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="934b-87bc-deb6-2997" name="Barbarisater" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="934b-87bc-deb6-2997" name="Barbarisater" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0216-6764-cdd8-b73b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2358-bace-1bc0-16f3" type="max"/>
@@ -9444,7 +9444,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="61d0-f28a-ce24-8c45" name="Runestaff" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="61d0-f28a-ce24-8c45" name="Runestaff" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="154f-5d07-9c6e-b482" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f302-c7f0-07ae-111c" type="max"/>
@@ -9467,8 +9467,8 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="34b7-8a8f-1a7e-6a62" name="Psybolt" hidden="false" collective="false" targetId="bb99-4086-e731-058e" type="selectionEntry"/>
-        <entryLink id="0ee9-0e1a-28c7-a985" name="Strategist" hidden="false" collective="false" targetId="8301-dd25-06aa-2d15" type="selectionEntry">
+        <entryLink id="34b7-8a8f-1a7e-6a62" name="Psybolt" hidden="false" collective="false" import="true" targetId="bb99-4086-e731-058e" type="selectionEntry"/>
+        <entryLink id="0ee9-0e1a-28c7-a985" name="Strategist" hidden="false" collective="false" import="true" targetId="8301-dd25-06aa-2d15" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e55d-fad9-298d-b7c0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5de2-92fc-1074-b124" type="max"/>
@@ -9481,7 +9481,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="eff3-f5cf-03ea-a563" name="Commander Traits" hidden="false" collective="false">
+    <selectionEntryGroup id="eff3-f5cf-03ea-a563" name="Commander Traits" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -9493,7 +9493,7 @@
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f4f-040e-e641-ca71" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="31ea-4847-1ffa-3b56" name="Iron Will" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="31ea-4847-1ffa-3b56" name="Iron Will" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="912b-9218-4967-2545" type="max"/>
           </constraints>
@@ -9508,7 +9508,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5784-7b41-4e5f-f3e4" name="Stoic Hero" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="5784-7b41-4e5f-f3e4" name="Stoic Hero" page="" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -9535,7 +9535,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d91b-04a3-7434-542c" name="Generalist" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d91b-04a3-7434-542c" name="Generalist" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -9557,7 +9557,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2c29-4579-e21a-ae3c" name="Destined By Fate" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2c29-4579-e21a-ae3c" name="Destined By Fate" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9b7-75ba-1f1a-b337" type="max"/>
           </constraints>
@@ -9572,7 +9572,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b598-a14f-757a-0052" name="Tactical Planner" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b598-a14f-757a-0052" name="Tactical Planner" page="" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="5291-dc2c-cfa5-a77f" value="20">
               <conditionGroups>
@@ -9599,7 +9599,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3243-2d22-60d0-b1ea" name="Twisted Brilliance" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="3243-2d22-60d0-b1ea" name="Twisted Brilliance" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -9621,7 +9621,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ab6b-67cf-3423-dd48" name="Master of Vermin" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="ab6b-67cf-3423-dd48" name="Master of Vermin" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -9643,7 +9643,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="31c1-bcf0-0cab-bf3c" name="Explorator Fleetmaster" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="31c1-bcf0-0cab-bf3c" name="Explorator Fleetmaster" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -9665,7 +9665,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9eb0-b34b-5d00-af20" name="Trader Militant" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9eb0-b34b-5d00-af20" name="Trader Militant" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -9687,7 +9687,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c796-180e-66a6-05c3" name="Stoic Hero" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c796-180e-66a6-05c3" name="Stoic Hero" page="" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -9716,10 +9716,10 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="8670-5cfa-c2a5-22d7" name="Master Specialist" hidden="false" collective="false" targetId="b11f-9539-8ab0-2c1a" type="selectionEntry"/>
+        <entryLink id="8670-5cfa-c2a5-22d7" name="Master Specialist" hidden="false" collective="false" import="true" targetId="b11f-9539-8ab0-2c1a" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3134-09b9-9b39-7c96" name="Generalist Abilities" hidden="false" collective="false">
+    <selectionEntryGroup id="3134-09b9-9b39-7c96" name="Generalist Abilities" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -9734,7 +9734,7 @@
         <categoryLink id="1a67-794e-c5de-9391" name="Level 4" hidden="false" targetId="363a-fe8e-4043-4722" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="7f09-e3ab-43c5-201f" name="Combat: Expert Fighter" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="7f09-e3ab-43c5-201f" name="Combat: Expert Fighter" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Level 4: Expert Fighter"/>
             <modifier type="set" field="hidden" value="true">
@@ -9762,7 +9762,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e644-c8b1-5dd4-502a" name="Demolitions: Breacher" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e644-c8b1-5dd4-502a" name="Demolitions: Breacher" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Level 4: Breacher"/>
             <modifier type="set" field="hidden" value="true">
@@ -9783,7 +9783,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c20e-1230-f070-d6c6" name="Scout: Swift" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c20e-1230-f070-d6c6" name="Scout: Swift" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -9804,7 +9804,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c7a3-7184-447c-eebb" name="Veteran: Grizzled" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c7a3-7184-447c-eebb" name="Veteran: Grizzled" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Level 4: Grizzled"/>
             <modifier type="set" field="hidden" value="true">
@@ -9832,7 +9832,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5ff8-4386-d5e3-6e84" name="Zealot: Frenzied" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="5ff8-4386-d5e3-6e84" name="Zealot: Frenzied" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Level 4: Frenzied"/>
             <modifier type="set" field="hidden" value="true">
@@ -9860,7 +9860,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1fe1-2ad4-f94a-6583" name="Strength: Muscular" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1fe1-2ad4-f94a-6583" name="Strength: Muscular" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -9915,7 +9915,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4ec2-94f5-15c5-7612" name="Strategist: Resourceful" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4ec2-94f5-15c5-7612" name="Strategist: Resourceful" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -9968,7 +9968,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="75e1-3117-3466-fe31" name="Stealth: Steady Aim" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="75e1-3117-3466-fe31" name="Stealth: Steady Aim" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -10026,7 +10026,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ebe4-dd97-9b55-2143" name="Psyker: Student of the Arcane" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="ebe4-dd97-9b55-2143" name="Psyker: Student of the Arcane" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Level 4: Student of the Arcane"/>
             <modifier type="set" field="hidden" value="true">
@@ -10047,7 +10047,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9bb5-ae64-c43a-169f" name="Ferocity: Counter-attack" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9bb5-ae64-c43a-169f" name="Ferocity: Counter-attack" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Level 4: Counter-attack"/>
             <modifier type="set" field="hidden" value="true">
@@ -10098,7 +10098,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="428b-f994-e7a0-a6f1" name="Fortitude: Hardy Constitution" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="428b-f994-e7a0-a6f1" name="Fortitude: Hardy Constitution" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Level 4: Hardy Constitution"/>
             <modifier type="set" field="hidden" value="true">
@@ -10146,7 +10146,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3728-b654-ea59-65d5" name="Leadership: Symbol of Courage" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="3728-b654-ea59-65d5" name="Leadership: Symbol of Courage" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Level 4: Symbol of Courage"/>
             <modifier type="set" field="hidden" value="true">
@@ -10194,7 +10194,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6b3d-bdee-9a22-5940" name="Logistics: Extra Armour" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="6b3d-bdee-9a22-5940" name="Logistics: Extra Armour" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Level 4: Extra Armour"/>
             <modifier type="set" field="hidden" value="true">
@@ -10246,7 +10246,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9a38-bd0a-798b-d842" name="Melee: Expert Fighter" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9a38-bd0a-798b-d842" name="Melee: Expert Fighter" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Level 4: Expert Fighter"/>
             <modifier type="set" field="hidden" value="true">
@@ -10289,7 +10289,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0a68-8b22-6084-5ddf" name="Shooting: Shootist" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0a68-8b22-6084-5ddf" name="Shooting: Shootist" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Level 4: Shootist"/>
             <modifier type="set" field="hidden" value="true">
@@ -10352,9 +10352,9 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="f1f5-3b33-9be9-6aec" name="Commander Psychic Powers" hidden="false" collective="false" defaultSelectionEntryId="247b-342f-21f4-b2af">
+    <selectionEntryGroup id="f1f5-3b33-9be9-6aec" name="Commander Psychic Powers" hidden="false" collective="false" import="true" defaultSelectionEntryId="247b-342f-21f4-b2af">
       <selectionEntries>
-        <selectionEntry id="ca8a-f323-85b3-ba30" name="1. Iron Arm" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="ca8a-f323-85b3-ba30" name="1. Iron Arm" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="09b8-bc2f-a6f7-7abd" type="max"/>
           </constraints>
@@ -10369,7 +10369,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="162d-56b6-14cc-8281" name="2. Forewarning" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="162d-56b6-14cc-8281" name="2. Forewarning" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c1fc-07fb-3e2f-c6b9" type="max"/>
           </constraints>
@@ -10384,7 +10384,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1af7-5ec9-54da-f116" name="3. Fire Shield" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1af7-5ec9-54da-f116" name="3. Fire Shield" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0723-4367-cd0a-df53" type="max"/>
           </constraints>
@@ -10399,7 +10399,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c050-e256-fa8a-6078" name="4. Psychic Shriek" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c050-e256-fa8a-6078" name="4. Psychic Shriek" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c8f0-69d2-e749-f0f2" type="max"/>
           </constraints>
@@ -10414,7 +10414,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2aca-2ac2-a91f-9e58" name="5. Enfeeble" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2aca-2ac2-a91f-9e58" name="5. Enfeeble" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df10-304c-fe87-8d70" type="max"/>
           </constraints>
@@ -10429,7 +10429,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fc55-aa31-dc8c-0eed" name="6. Misfortune" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="fc55-aa31-dc8c-0eed" name="6. Misfortune" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4a55-c08b-ac1c-ac31" type="max"/>
           </constraints>
@@ -10444,7 +10444,7 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="247b-342f-21f4-b2af" name="0. Psybolt" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="247b-342f-21f4-b2af" name="0. Psybolt" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="722b-8854-778a-00f9" value="0.0"/>
           </modifiers>
