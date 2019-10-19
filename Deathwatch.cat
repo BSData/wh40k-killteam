@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7548-75cf-ab24-7e9c" name="Deathwatch" revision="16" battleScribeVersion="2.03" authorName="@MadSpy" authorUrl="https://github.com/BSData/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7548-75cf-ab24-7e9c" name="Deathwatch" revision="17" battleScribeVersion="2.03" authorName="@MadSpy" authorUrl="https://github.com/BSData/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7548-75cf-pubN65537" name="Warhammer 40,000 - Kill Team - Core Manual"/>
   </publications>
@@ -809,10 +809,59 @@
         <categoryLink id="2523-993a-00f9-1817" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
         <categoryLink id="2bac-3e09-61e8-361a" name="Adeptus Astartes" hidden="false" targetId="76f9-f77f-8300-3b37" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="315a-9c96-4c4d-0b73" name="Melee weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76f7-01c6-00aa-4af5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6dce-3ead-b012-33b1" name="Power fist" hidden="false" collective="false" import="true" targetId="1689-c138-0775-3587" type="selectionEntry"/>
+            <entryLink id="2d52-2c2b-a93c-e468" name="Power sword" hidden="false" collective="false" import="true" targetId="ecb3-8447-db60-da63" type="selectionEntry"/>
+            <entryLink id="f7b4-fb5b-0f17-a278" name="Thunder hammer" hidden="false" collective="false" import="true" targetId="0528-7cff-65ac-73f7" type="selectionEntry"/>
+            <entryLink id="8cb7-5442-4104-7296" name="Chainsword" hidden="false" collective="false" import="true" targetId="a4a3-5f51-7929-17df" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8cb4-c6bc-e9a5-66e0" name="Ranged weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="dc70-6ad3-6e34-1e23">
+          <modifiers>
+            <modifier type="set" field="26e0-1d32-b294-7b6a" value="0.0">
+              <conditions>
+                <condition field="selections" scope="cf1d-d0f5-b708-5bca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4a3-5f51-7929-17df" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ede2-f41d-2ea1-7142" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26e0-1d32-b294-7b6a" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c429-c2dd-96ce-d988" name="Hand flamer" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="4e32-30bc-28ff-f69e" name="Hand flamer" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">8&quot;</characteristic>
+                    <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Pistol D3</characteristic>
+                    <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">3</characteristic>
+                    <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+                    <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                    <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">This weapon automatically hits its target.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="d246-e884-bb08-70ce" name="Auto bolt rifle" hidden="false" collective="false" import="true" targetId="4fd5-97ec-a360-9b25" type="selectionEntry"/>
+            <entryLink id="dc70-6ad3-6e34-1e23" name="Bolt rifle" hidden="false" collective="false" import="true" targetId="68da-1d94-e214-6391" type="selectionEntry"/>
+            <entryLink id="03c9-1f09-b80b-7e8c" name="Stalker bolt rifle" hidden="false" collective="false" import="true" targetId="1adb-10d2-c501-9343" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="b68e-1a09-9371-5f0e" name="Frag and krak grenades" hidden="false" collective="false" import="true" targetId="cc75-b2ca-11ae-5e7f" type="selectionEntry"/>
         <entryLink id="1d55-da3a-1077-de96" name="Specialism" hidden="false" collective="false" import="true" targetId="e124-5805-2258-ee20" type="selectionEntryGroup"/>
-        <entryLink id="f209-83cb-0261-f447" name="Intercessor weapons" hidden="false" collective="false" import="true" targetId="3c6e-fe09-0910-09a7" type="selectionEntryGroup"/>
         <entryLink id="f4f4-d82b-cf7e-5f25" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="cfb4-7791-2e49-9f10" type="selectionEntry"/>
         <entryLink id="ba6b-a5dd-68ac-392d" name="Auspex" hidden="false" collective="false" import="true" targetId="0591-71c0-964e-7617" type="selectionEntry"/>
       </entryLinks>
@@ -1736,6 +1785,87 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="4fd5-97ec-a360-9b25" name="Auto bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="244b-0604-6d34-e504" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2c36-d40c-0fa6-3b4c" name="Auto bolt rifle" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">24&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Assault 2</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="049a-9465-9f36-4937" name="Special Issue Ammunition" hidden="false" targetId="0d8c-55e8-2b4f-0a25" type="profile"/>
+        <infoLink id="7587-19f8-6ca8-1daf" name="Kraken bolt" hidden="false" targetId="6d7b-d730-68fd-06fb" type="profile"/>
+        <infoLink id="9d7f-c207-99a3-6ea1" name="Vengeance round" hidden="false" targetId="a906-43c0-8e5d-7d1e" type="profile"/>
+        <infoLink id="01e4-2906-fcba-e77a" name="Dragonfire bolt" hidden="false" targetId="f29e-115d-082d-4a64" type="profile"/>
+        <infoLink id="66cd-3918-ac3d-2ba2" name="Hellfire round" hidden="false" targetId="267f-bd63-4497-bccd" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="68da-1d94-e214-6391" name="Bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6a9-8a6c-cc6c-21db" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="85a1-bf62-39d4-43d7" name="Bolt rifle" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">30&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Rapid Fire 1</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0d1e-544e-911a-9d3c" name="Special Issue Ammunition" hidden="false" targetId="0d8c-55e8-2b4f-0a25" type="profile"/>
+        <infoLink id="1614-59c8-77e0-99a3" name="Kraken bolt" hidden="false" targetId="6d7b-d730-68fd-06fb" type="profile"/>
+        <infoLink id="ffbb-7174-63f9-8f57" name="Vengeance round" hidden="false" targetId="a906-43c0-8e5d-7d1e" type="profile"/>
+        <infoLink id="3f76-d941-640f-7602" name="Dragonfire bolt" hidden="false" targetId="f29e-115d-082d-4a64" type="profile"/>
+        <infoLink id="0efe-ff3f-9890-a89a" name="Hellfire round" hidden="false" targetId="267f-bd63-4497-bccd" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1adb-10d2-c501-9343" name="Stalker bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2712-1f44-fd62-3869" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4723-2c74-3f16-3a4b" name="Stalker bolt rifle" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">36&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Heavy 1</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-2</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="84c6-275c-00c9-55c9" name="Special Issue Ammunition" hidden="false" targetId="0d8c-55e8-2b4f-0a25" type="profile"/>
+        <infoLink id="5dc9-0f86-f9cf-2e92" name="Kraken bolt" hidden="false" targetId="6d7b-d730-68fd-06fb" type="profile"/>
+        <infoLink id="d31c-8b81-eee8-8a26" name="Vengeance round" hidden="false" targetId="a906-43c0-8e5d-7d1e" type="profile"/>
+        <infoLink id="0265-3942-ddd5-0c41" name="Dragonfire bolt" hidden="false" targetId="f29e-115d-082d-4a64" type="profile"/>
+        <infoLink id="8762-3ea8-d54e-b6cf" name="Hellfire round" hidden="false" targetId="267f-bd63-4497-bccd" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="31da-cb72-0cd0-4450" name="Deathwatch Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="566a-1fb4-02bc-4505">
@@ -2241,170 +2371,16 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3c6e-fe09-0910-09a7" name="Intercessor weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="9023-f8fe-2f84-4a9d">
-      <modifiers>
-        <modifier type="set" field="4f0e-b9be-f683-036e" value="2">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46d3-9b54-2272-b5fc" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df91-8771-3e62-43ea" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46d3-9b54-2272-b5fc" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df91-8771-3e62-43ea" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+    <selectionEntryGroup id="3c6e-fe09-0910-09a7" name="Intercessor weapons" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f0e-b9be-f683-036e" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a0a-5ef2-098f-38f1" type="min"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry id="8711-6672-105c-af1a" name="Auto bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de18-f621-ab09-4ef1" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="e0e6-825d-a961-d9e7" name="Auto bolt rifle" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">24&quot;</characteristic>
-                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Assault 2</characteristic>
-                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
-                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
-                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
-                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="cd03-2bd9-d1c9-caeb" name="Special Issue Ammunition" hidden="false" targetId="0d8c-55e8-2b4f-0a25" type="profile"/>
-            <infoLink id="a824-dd95-e10c-fd05" name="Kraken bolt" hidden="false" targetId="6d7b-d730-68fd-06fb" type="profile"/>
-            <infoLink id="a106-f5b8-4e46-78d7" name="Vengeance round" hidden="false" targetId="a906-43c0-8e5d-7d1e" type="profile"/>
-            <infoLink id="54e3-931b-5885-0e2e" name="Dragonfire bolt" hidden="false" targetId="f29e-115d-082d-4a64" type="profile"/>
-            <infoLink id="af8a-66d3-512f-fccf" name="Hellfire round" hidden="false" targetId="267f-bd63-4497-bccd" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9023-f8fe-2f84-4a9d" name="Bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98f5-3221-f370-25c6" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="82b2-99e7-c1b3-ae50" name="Bolt rifle" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">30&quot;</characteristic>
-                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Rapid Fire 1</characteristic>
-                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
-                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
-                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
-                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="2c72-8f8b-002e-c275" name="Special Issue Ammunition" hidden="false" targetId="0d8c-55e8-2b4f-0a25" type="profile"/>
-            <infoLink id="87fc-21bb-8011-e31a" name="Kraken bolt" hidden="false" targetId="6d7b-d730-68fd-06fb" type="profile"/>
-            <infoLink id="38d5-2bab-235c-513f" name="Vengeance round" hidden="false" targetId="a906-43c0-8e5d-7d1e" type="profile"/>
-            <infoLink id="3ad3-1b6b-0777-f65f" name="Dragonfire bolt" hidden="false" targetId="f29e-115d-082d-4a64" type="profile"/>
-            <infoLink id="39d5-8a68-1d2f-447f" name="Hellfire round" hidden="false" targetId="267f-bd63-4497-bccd" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6194-2a0e-647a-6c3c" name="Stalker bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53ad-2d42-90d7-368e" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="d6a1-c61d-d036-06bd" name="Stalker bolt rifle" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">36&quot;</characteristic>
-                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Heavy 1</characteristic>
-                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
-                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-2</characteristic>
-                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
-                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="2ae6-b2d3-6d56-1586" name="Special Issue Ammunition" hidden="false" targetId="0d8c-55e8-2b4f-0a25" type="profile"/>
-            <infoLink id="219c-9842-df25-3868" name="Kraken bolt" hidden="false" targetId="6d7b-d730-68fd-06fb" type="profile"/>
-            <infoLink id="cebc-74ec-fc59-ff1b" name="Vengeance round" hidden="false" targetId="a906-43c0-8e5d-7d1e" type="profile"/>
-            <infoLink id="e1f9-093c-8bf5-e016" name="Dragonfire bolt" hidden="false" targetId="f29e-115d-082d-4a64" type="profile"/>
-            <infoLink id="8012-e025-3d62-dad7" name="Hellfire round" hidden="false" targetId="267f-bd63-4497-bccd" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="df91-8771-3e62-43ea" name="Chainsword" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf1d-d0f5-b708-5bca" type="notInstanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d7f-3f0d-01a1-0c56" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="344a-e373-08e9-8a01" name="Chainsword" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
-                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
-                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
-                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
-                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
-                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">Each time the bearer fights, it can make 1 additional attack with this weapon.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="46d3-9b54-2272-b5fc" name="Power sword" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf1d-d0f5-b708-5bca" type="notInstanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc72-eabc-efcf-043a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="749e-56a0-0a13-df04" name="Power sword" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
-                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
-                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
-                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-3</characteristic>
-                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
-                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3c95-4f8c-7b2a-a035" name="Auto bolt rifle" hidden="false" collective="false" import="true" targetId="4fd5-97ec-a360-9b25" type="selectionEntry"/>
+        <entryLink id="53b2-fef3-e625-7e7a" name="Bolt rifle" hidden="false" collective="false" import="true" targetId="68da-1d94-e214-6391" type="selectionEntry"/>
+        <entryLink id="0dad-de96-cca4-4e89" name="Stalker bolt rifle" hidden="false" collective="false" import="true" targetId="1adb-10d2-c501-9343" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="09fb-bc3f-6568-3928" name="Specialism" hidden="false" collective="false" import="true">
       <constraints>
