@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a796-a947-905e-205c" name="Asuryani" revision="21" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a796-a947-905e-205c" name="Asuryani" revision="22" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="efd1-273e-3910-f3e8" name="Warhost" hidden="false"/>
     <categoryEntry id="5bef-7545-be74-0e33" name="Guardian" hidden="false"/>
@@ -2773,15 +2773,16 @@
         <categoryLink id="eebc-e457-d4cd-7aca" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="79eb-4ff5-0617-c9c1" name="Melee weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="3d3f-134a-aee8-9443">
+        <selectionEntryGroup id="79eb-4ff5-0617-c9c1" name="Weapon options" hidden="false" collective="false" import="true" defaultSelectionEntryId="3d3f-134a-aee8-9443">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1cf-ff09-d44c-07a9" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7512-e0dd-f2ec-bef9" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3d3f-134a-aee8-9443" name="Power sword" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3d3f-134a-aee8-9443" name="Power sword and shuriken pistol" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="7a45-2f89-bade-3b7b" name="Power sword" hidden="false" targetId="1770-e7e0-ceb0-dff7" type="profile"/>
+                <infoLink id="e149-b9d9-3bf0-a333" name="Shuriken pistol" hidden="false" targetId="6833-6001-63ff-3745" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
@@ -2804,7 +2805,7 @@
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="585f-fb82-d9d8-519b" name="Executioner" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="585f-fb82-d9d8-519b" name="Executioner and shuriken pistol" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="0c7a-7a0e-2ebc-68d6" name="Executioner" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
                   <characteristics>
@@ -2817,6 +2818,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="b89d-b4d3-eb90-051c" name="Shuriken pistol" hidden="false" targetId="6833-6001-63ff-3745" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
               </costs>
@@ -2825,24 +2829,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="f56e-a418-059d-0f98" name="Shuriken pistol" hidden="false" collective="false" import="true" targetId="755b-977f-2a38-6ce5" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="4d28-6808-9231-1e1b" value="0.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e4b-ce0a-94cd-6708" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="2aba-53cf-262e-31c6" value="0.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e4b-ce0a-94cd-6708" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d28-6808-9231-1e1b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2aba-53cf-262e-31c6" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="4ec6-d1a2-9c10-872b" name="Specialism" hidden="false" collective="false" import="true" targetId="9a9b-8261-3296-9a12" type="selectionEntryGroup"/>
         <entryLink id="2c24-8ed7-4458-4fac" name="Craftworld" hidden="false" collective="false" import="true" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
