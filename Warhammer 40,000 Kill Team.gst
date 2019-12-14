@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="34" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="35" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="a467-5f42-pubN89361" name="Core Manual"/>
     <publication id="a467-5f42-pubN90767" name="Rogue Trader"/>
     <publication id="701a-4a21-90a2-7618" name="Elites"/>
     <publication id="27d3-34b5-e6cf-69e3" name="Commanders"/>
+    <publication id="69e0-b697-c118-d32d" name="Kill Team Annual 2019"/>
   </publications>
   <costTypes>
     <costType id="5291-dc2c-cfa5-a77f" name="pts" defaultCostLimit="-1.0"/>
@@ -246,6 +247,7 @@
     <categoryEntry id="d187-b1b2-ccab-93c1" name="Aradia Madellan" hidden="false"/>
     <categoryEntry id="39b3-b2ec-6701-903d" name="Daedalosus" hidden="false"/>
     <categoryEntry id="306d-58df-88c7-bad3" name="Neyam Shai Murad" hidden="false"/>
+    <categoryEntry id="995d-d712-dbb7-1ba1" name="Faction: Adepta Sororitas" publicationId="69e0-b697-c118-d32d" page="106" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
