@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="18" battleScribeVersion="2.03" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="19" battleScribeVersion="2.03" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="6c15-6156-5ba7-10f3" name="Special Issue Ammunition">
       <characteristicTypes>
@@ -1586,6 +1586,31 @@
         <categoryLink id="4a24-74d5-97db-bf09" name="Infiltrator" hidden="false" targetId="3333-6452-51dd-5243" primary="false"/>
         <categoryLink id="7479-232b-6e04-3486" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="dd63-4d54-b999-9e81" name="Infiltrator Comms Array" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="b4ba-08d9-0057-2fa4" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d3f-62a3-e436-cb78" type="max"/>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4ba-08d9-0057-2fa4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f92e-923e-afc6-3185" name="Infiltrator Comms Array" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
+              <characteristics>
+                <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">Add 1 to the Leadership characteristic of models within 6&quot; of any friendly models equipped with an Infiltrator Comms Array.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="01af-623a-4fc9-e616" name="Frag and krak grenades" hidden="false" collective="false" import="true" targetId="c0eb-48a8-64a0-8635" type="selectionEntry"/>
         <entryLink id="5ea9-7099-e1bc-1eda" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="7780-b707-dff3-642d" type="selectionEntry">
