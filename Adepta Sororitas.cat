@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aff2-95a5-3b50-cc8f" name="Adepta Sororitas" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aff2-95a5-3b50-cc8f" name="Adepta Sororitas" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a486-00fc-27d4-1d2f" name="Battle Sister" publicationId="69e0-b697-c118-d32d" page="107" hidden="false"/>
     <categoryEntry id="947a-3d06-b5a3-0b87" name="Sister Repentia" publicationId="69e0-b697-c118-d32d" page="107" hidden="false"/>
@@ -650,9 +650,14 @@
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79c6-76fc-47ee-c005" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="f825-ee60-957c-0926" value="1.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79c6-76fc-47ee-c005" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f825-ee60-957c-0926" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f825-ee60-957c-0926" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fca-d1dd-1701-721d" type="max"/>
           </constraints>
         </entryLink>
@@ -725,6 +730,11 @@
         </entryLink>
         <entryLink id="0c4b-a46a-9189-2fe3" name="Zealot" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry">
           <modifiers>
+            <modifier type="set" field="d919-c726-ac57-df0c" value="1.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79c6-76fc-47ee-c005" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79c6-76fc-47ee-c005" type="instanceOf"/>
@@ -732,7 +742,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d919-c726-ac57-df0c" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d919-c726-ac57-df0c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99f1-75b2-22fc-817f" type="max"/>
           </constraints>
         </entryLink>
