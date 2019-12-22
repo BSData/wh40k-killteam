@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a34e-d16c-80ff-06bf" name="Orks" revision="25" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a34e-d16c-80ff-06bf" name="Orks" revision="26" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2a73-3eb4-3c77-db12" name="Ork Boy" hidden="false"/>
     <categoryEntry id="d9e4-66e2-9d74-a149" name="Burna Boy" hidden="false"/>
@@ -961,13 +961,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="307e-6966-5e6b-64c7" name="Power Klaw" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="5.0">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7a03-5282-0796-f8b9" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="2a54-976d-214a-96cd" name="Power Klaw" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
@@ -981,7 +974,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e6ad-7425-f9d8-2373" name="Choppa" hidden="false" collective="false" import="true" type="upgrade">
@@ -989,7 +982,7 @@
         <infoLink id="47f7-ef33-8457-8bba" name="Choppa" hidden="false" targetId="49ca-0c81-ba66-0bc8" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b54c-8a0c-bbff-387d" name="Big Choppa" hidden="false" collective="false" import="true" type="upgrade">
@@ -1006,7 +999,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="026a-c710-eb0b-06f3" name="Burna Spanner" hidden="false" collective="false" import="true" type="model">
@@ -2005,6 +1998,9 @@
           </constraints>
         </entryLink>
         <entryLink id="ca02-de58-ecdc-d3e3" name="Choppa" hidden="false" collective="false" import="true" targetId="e6ad-7425-f9d8-2373" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce56-e9d6-89d3-1b07" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9b2-4adc-e33b-621c" type="min"/>
@@ -2487,7 +2483,7 @@
         <entryLink id="1ef7-d872-ec0a-c799" name="Snazzgun" hidden="false" collective="false" import="true" targetId="9564-1a01-6286-31b9" type="selectionEntry"/>
         <entryLink id="297c-8bc0-9edc-9b0c" name="Stikkbombs" hidden="false" collective="false" import="true" targetId="8fad-e5b9-1b41-ba1e" type="selectionEntry"/>
         <entryLink id="3706-c1f7-9834-e5bf" name="Gitfinda Squig" hidden="false" collective="false" import="true" targetId="5555-14bf-47cd-f0f2" type="selectionEntry"/>
-        <entryLink id="eb15-5e8c-bccf-d2f8" name="Choppa (Flash Gitz)" hidden="false" collective="false" import="true" targetId="bff6-ef1d-1635-a0dc" type="selectionEntry"/>
+        <entryLink id="eb15-5e8c-bccf-d2f8" name="Choppa" hidden="false" collective="false" import="true" targetId="e6ad-7425-f9d8-2373" type="selectionEntry"/>
         <entryLink id="3177-85a5-85a8-c365" name="Slugga" hidden="false" collective="false" import="true" targetId="03d5-f89c-c9ad-e706" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -2542,7 +2538,7 @@
         <entryLink id="b6e8-a754-0f8d-c7a6" name="Snazzgun" hidden="false" collective="false" import="true" targetId="9564-1a01-6286-31b9" type="selectionEntry"/>
         <entryLink id="932a-ff5f-4737-50e2" name="Stikkbombs" hidden="false" collective="false" import="true" targetId="8fad-e5b9-1b41-ba1e" type="selectionEntry"/>
         <entryLink id="23b3-3dad-dee4-5938" name="Gitfinda Squig" hidden="false" collective="false" import="true" targetId="5555-14bf-47cd-f0f2" type="selectionEntry"/>
-        <entryLink id="902e-6bbf-aeea-3393" name="Choppa" hidden="false" collective="false" import="true" targetId="bff6-ef1d-1635-a0dc" type="selectionEntry"/>
+        <entryLink id="902e-6bbf-aeea-3393" name="Choppa" hidden="false" collective="false" import="true" targetId="e6ad-7425-f9d8-2373" type="selectionEntry"/>
         <entryLink id="5921-1a88-8500-11f8" name="Slugga" hidden="false" collective="false" import="true" targetId="03d5-f89c-c9ad-e706" type="selectionEntry"/>
         <entryLink id="f494-619b-c826-0911" name="Clan" hidden="false" collective="false" import="true" targetId="842a-673e-f031-5ad9" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2594,30 +2590,6 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bff6-ef1d-1635-a0dc" name="Choppa" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="745e-f89d-b204-63c0" value="1">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03d5-f89c-c9ad-e706" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="745e-f89d-b204-63c0" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a6-0f8e-e458-47d9" type="max"/>
-      </constraints>
-      <infoLinks>
-        <infoLink id="306d-57d3-1d1b-eaa3" name="Choppa" hidden="false" targetId="49ca-0c81-ba66-0bc8" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="03d5-f89c-c9ad-e706" name="Slugga" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="98e4-c40e-3b4e-898a" value="1">
@@ -2627,7 +2599,7 @@
         </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bff6-ef1d-1635-a0dc" type="equalTo"/>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6ad-7425-f9d8-2373" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3073,12 +3045,12 @@
           </constraints>
         </entryLink>
         <entryLink id="8fd2-2fa0-2554-20a1" name="Kombi-weapon with Skorcha" hidden="false" collective="false" import="true" targetId="4e96-6242-1ba5-cd58" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74a7-8805-a74f-773e" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
-          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -3110,13 +3082,13 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="0478-3b14-3437-5526" name="Big Choppa" hidden="false" collective="false" import="true" targetId="b54c-8a0c-bbff-387d" type="selectionEntry">
+        <entryLink id="0478-3b14-3437-5526" name="Big Choppa" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" targetId="b54c-8a0c-bbff-387d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="2.0"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d76-23db-31bb-a35b" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
-          </costs>
         </entryLink>
         <entryLink id="8f29-2448-276b-1a34" name="Killsaw" hidden="false" collective="false" import="true" targetId="cf8d-83cc-3e72-8832" type="selectionEntry">
           <constraints>
@@ -3126,14 +3098,12 @@
         <entryLink id="51c0-6599-3f4c-2d39" name="Choppa" hidden="false" collective="false" import="true" targetId="e6ad-7425-f9d8-2373" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="a7f6-8dea-68cf-4b23" value="0.0"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d43e-eda3-49c5-042b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7f6-8dea-68cf-4b23" type="min"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
-          </costs>
         </entryLink>
         <entryLink id="579e-13a9-a5c3-3d25" name="Power Klaw" hidden="false" collective="false" import="true" targetId="307e-6966-5e6b-64c7" type="selectionEntry">
           <constraints>
@@ -3193,6 +3163,9 @@
               </constraints>
             </entryLink>
             <entryLink id="983f-302d-c841-0e2d" name="Kombi-weapon with Skorcha" hidden="false" collective="false" import="true" targetId="4e96-6242-1ba5-cd58" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b896-87d1-c0e5-a9aa" type="max"/>
               </constraints>
@@ -3213,6 +3186,7 @@
         <entryLink id="7171-c6d2-6de5-e138" name="Power Klaw" hidden="false" collective="false" import="true" targetId="307e-6966-5e6b-64c7" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="4ff5-12ad-65b6-77b9" value="0.0"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="4.0"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ff5-12ad-65b6-77b9" type="min"/>
