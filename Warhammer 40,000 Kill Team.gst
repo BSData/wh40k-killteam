@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="36" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="37" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="a467-5f42-pubN89361" name="Core Manual"/>
     <publication id="a467-5f42-pubN90767" name="Rogue Trader"/>
@@ -250,6 +250,7 @@
     <categoryEntry id="995d-d712-dbb7-1ba1" name="Faction: Adepta Sororitas" publicationId="69e0-b697-c118-d32d" page="106" hidden="false"/>
     <categoryEntry id="e121-80bc-cd92-5aa7" name="Canoness" publicationId="69e0-b697-c118-d32d" hidden="false"/>
     <categoryEntry id="500a-a522-3219-5d95" name="Repentia Superior" publicationId="69e0-b697-c118-d32d" page="109" hidden="false"/>
+    <categoryEntry id="1b6d-6f48-8eca-b43e" name="Traitor Commisar" publicationId="69e0-b697-c118-d32d" page="123" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
