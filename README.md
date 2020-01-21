@@ -5,7 +5,7 @@ Warhammer 40,000: Kill Team (2018)
 ![Github commits (since latest release)](https://img.shields.io/github/commits-since/BSData/wh40k-killteam/latest.svg?style=flat-square)
 [![AppVeyor master branch](https://img.shields.io/appveyor/ci/BSData/wh40k-killteam/master.svg?style=flat-square&logo=appveyor)](https://ci.appveyor.com/project/BSData/wh40k-killteam)
 
-[![Chat on Gitter](https://img.shields.io/gitter/room/BSData/wh40k-killteam.svg?style=flat-square&logo=gitter-white)](https://gitter.im/BSData/wh40k-killteam)
+[![Chat on Discord](https://img.shields.io/discord/558412685981777922?style=flat-square)](https://discord.gg/KqPVhds)
 [![GitHub contributors](https://img.shields.io/github/contributors/BSData/wh40k-killteam.svg?style=flat-square)](https://github.com/BSData/wh40k-killteam/graphs/contributors)
 ![GitHub commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/wh40k-killteam.svg?style=flat-square)
 
