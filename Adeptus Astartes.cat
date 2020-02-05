@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6112-edb9-977c-198e" name="Adeptus Astartes" revision="28" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6112-edb9-977c-198e" name="Adeptus Astartes" revision="29" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="51fd-2592-44bd-2226" name="Intercessor" hidden="false"/>
     <categoryEntry id="200c-8203-0e5a-0f41" name="Primaris" hidden="false"/>
@@ -2700,9 +2700,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9c80-128a-37c7-05a6" name="Auspex" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="79d2-530f-c4a1-702e" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="967d-3edc-32f5-a983" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="15de-e05b-5bb4-031b" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="79d2-530f-c4a1-702e" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="4b84-e91a-d054-09a3" name="Auspex" hidden="false" targetId="607b-046c-a5af-feaf" type="profile"/>
