@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a34e-d16c-80ff-06bf" name="Orks" revision="26" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a34e-d16c-80ff-06bf" name="Orks" revision="27" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2a73-3eb4-3c77-db12" name="Ork Boy" hidden="false"/>
     <categoryEntry id="d9e4-66e2-9d74-a149" name="Burna Boy" hidden="false"/>
@@ -18,7 +18,99 @@
     <categoryEntry id="300e-b879-4e40-9c9d" name="Freebooterz" hidden="false"/>
     <categoryEntry id="80b1-ca7a-5d59-05cd" name="Goffs" hidden="false"/>
     <categoryEntry id="0914-2a26-a686-8798" name="Snakebites" hidden="false"/>
+    <categoryEntry id="9605-743c-ddf9-d938" name="Da Red Gobbo" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="9b4c-ba7f-a491-14ff" name="Da Red Gobbo" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="52.0">
+          <conditions>
+            <condition field="selections" scope="9b4c-ba7f-a491-14ff" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="61.0">
+          <conditions>
+            <condition field="selections" scope="9b4c-ba7f-a491-14ff" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="70.0">
+          <conditions>
+            <condition field="selections" scope="9b4c-ba7f-a491-14ff" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="fffd-336d-5227-f24a" name="Has Yoo Been a Good Little Grot This Year?" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">At the start of the Movement phase, you can pick one other GRETCHIN model that is within 3&quot; of this model and roll one D6. On a 1, that model suffers 1 mortal wound. On a 2-6, treat that model as being armed with stikkbombs in addition to its other wargear until the end of the battle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="80e7-7e56-a5c7-d4f3" name="Da Revolushun!" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">While this model is on the battlefield, add 1 to hit rolls and subtract 1 from Nerve tests for models in your kill team if every model in your kill team is a GRETCHIN.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="59e6-049b-87de-2323" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
+        <categoryLink id="9e3b-b996-0441-0ec3" name="Faction: Orks" hidden="false" targetId="3630-39cf-f986-6209" primary="false"/>
+        <categoryLink id="22f4-48b1-d33f-ba23" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="408f-3755-7d7c-68d2" name="Gretchin" hidden="false" targetId="9154-0e71-6fa2-2234" primary="false"/>
+        <categoryLink id="aa1b-82e0-5c14-fc9a" name="Da Red Gobbo" hidden="false" targetId="9605-743c-ddf9-d938" primary="false"/>
+        <categoryLink id="176d-8fc4-c1ac-7a24" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="17bd-74a9-28c4-f555" name="Kustom grot blasta" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43ba-a7cf-3ea7-7d09" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62f9-a5f2-8737-e205" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3e44-adad-71d7-5f0f" name="Kustom grot blasta" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">12&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Pistol D3</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">5</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">2</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="143b-819b-303e-6a8e" name="Icon of da Revolushun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eee6-d7f7-06bc-0e7d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e1-c916-737a-2ca6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e638-c45d-1155-ab97" name="Icon of da Revolushun" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">For each wound roll of 6+ made for this weapon, the target model suffers 1 mortal wound in addition to the normal damage.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="31c2-1ba4-f63b-5bae" name="Stikkbombs" hidden="false" collective="false" import="true" targetId="8fad-e5b9-1b41-ba1e" type="selectionEntry"/>
+        <entryLink id="9e82-eae1-1611-3a83" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acd1-3ad2-d3f1-182b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf5b-0a5d-aeba-b719" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="43.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="7150-a0ae-d338-10a2" name="Burna Boy" hidden="false" collective="false" import="true" targetId="6f0a-a880-0cbc-22f2" type="selectionEntry">
       <modifiers>
