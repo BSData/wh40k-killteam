@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="37" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="38" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="a467-5f42-pubN89361" name="Core Manual"/>
     <publication id="a467-5f42-pubN90767" name="Rogue Trader"/>
@@ -251,6 +251,11 @@
     <categoryEntry id="e121-80bc-cd92-5aa7" name="Canoness" publicationId="69e0-b697-c118-d32d" hidden="false"/>
     <categoryEntry id="500a-a522-3219-5d95" name="Repentia Superior" publicationId="69e0-b697-c118-d32d" page="109" hidden="false"/>
     <categoryEntry id="1b6d-6f48-8eca-b43e" name="Traitor Commisar" publicationId="69e0-b697-c118-d32d" page="123" hidden="false"/>
+    <categoryEntry id="6460-c782-f2dc-6f95" name="Adeptus Ministorum" hidden="false"/>
+    <categoryEntry id="9208-b8bd-1de6-9985" name="Ministorum Priest" hidden="false"/>
+    <categoryEntry id="2e2f-f8c5-332d-1c27" name="Crusader" hidden="false"/>
+    <categoryEntry id="e60d-8034-9c1f-7722" name="Gotfret de Montbard" hidden="false"/>
+    <categoryEntry id="8db4-3159-8f3e-d184" name="Pious Vorne" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
@@ -8806,6 +8811,7 @@
         <categoryLink id="a234-99dd-2f36-2b50" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
         <categoryLink id="3cb9-f8da-4382-da26" name="Rogue Trader" hidden="false" targetId="aa62-e352-d145-8e72" primary="false"/>
         <categoryLink id="53e7-ad3b-e96f-d555" name="Janus Draik" hidden="false" targetId="e7f5-09f4-86d3-cfb0" primary="false"/>
+        <categoryLink id="a785-2395-dc65-e86a" name="Faction: Adepta Sororitas" hidden="false" targetId="995d-d712-dbb7-1ba1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1530-3060-9514-bc5c" name="Monomolecular rapier" hidden="false" collective="false" import="true" type="upgrade">
@@ -9330,6 +9336,354 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f478-68da-2b34-2a6c" name="Taddeus the Purifier" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="6b13-bb88-33bc-ca24" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="5">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b13-bb88-33bc-ca24" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e756-32b0-6e57-6998" name="Rosarius" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
+          <characteristics>
+            <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0ef8-2f43-b1d5-6623" name="War Hymns" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Add 1 to the Attacks characteristic of ASTRA MILITARUM models whilst they are within 6&quot; of any friendly MINISTORUM PRIESTS.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f057-c341-eabb-dc40" name="Taddeus the Purifier" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">6&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">4+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">4+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">4</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">3</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e76c-f04a-7447-12d7" name="Zealot" hidden="false" targetId="ba3e-c1ab-c2e1-dca0" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0c9d-2d36-285b-cdb8" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
+        <categoryLink id="905a-a7c6-723f-fa14" name="New CategoryLink" hidden="false" targetId="995d-d712-dbb7-1ba1" primary="false"/>
+        <categoryLink id="1c90-61df-2883-268b" name="Faction: Astra Militarum" hidden="false" targetId="96ae-2ec0-4de4-b4d7" primary="false"/>
+        <categoryLink id="0f90-2ef0-0cda-680e" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false"/>
+        <categoryLink id="c9b7-9487-9a71-bb4a" name="Adeptus Ministorum" hidden="false" targetId="6460-c782-f2dc-6f95" primary="false"/>
+        <categoryLink id="7199-be05-adc1-95a1" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="854a-1f28-5b9a-c6c8" name="Ministorum Priest" hidden="false" targetId="9208-b8bd-1de6-9985" primary="false"/>
+        <categoryLink id="f4cd-ac6e-198f-de3f" name="Taddeus the Purifier" hidden="false" targetId="452e-867b-23cb-68c0" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="00d9-8997-0d8c-ac1a" name="Power maul" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8da-db3f-bcde-de73" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79b5-989d-258b-dfe6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="af48-6430-5547-71ba" name="Power maul" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">+2</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="23fd-2079-7a69-475a" name="Servo-stubber" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a91-3179-4820-9ae1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0ad-adb7-ac7f-3930" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="63ba-ea9b-6bd4-4fe2" name="Servo-stubber" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">12&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Pistol 3</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="749d-be42-df6d-4e45" name="Ferocity" hidden="false" collective="false" import="true" targetId="275f-0c8c-74e6-899f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3cf-9f82-8a20-c8d7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e50-8f50-249a-ea06" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="20f5-740b-c531-0c36" name="Laspistol" hidden="false" collective="false" import="true" targetId="a032-866a-d823-c502" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="836a-82a8-94a7-6da6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aa2-2ad8-39a2-e810" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a032-866a-d823-c502" name="Laspistol" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0c5c-4703-5ada-aa9a" name="Laspistol" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">12&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Pistol 1</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">3</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a592-56e2-6741-3767" name="Gotfret de Montbard" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="c3e5-6281-eae9-12b4" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c3e5-6281-eae9-12b4" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="decb-9e05-da6c-7158" name="Gotfret de Montbard" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">6&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">4+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">3</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">4</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">8</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">4+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d5a1-15b5-7b94-2693" name="Hacking Advance" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Each unmodified hit roll of 6 made for Gotfret de Montbard&apos;s attacks in the Fight phase scores 2 hits instead of 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ff2d-b6ba-13e1-a030" name="New CategoryLink" hidden="false" targetId="181f-e47f-6ec3-2e9b" primary="true"/>
+        <categoryLink id="6226-6847-e039-ba25" name="Faction: Adepta Sororitas" hidden="false" targetId="995d-d712-dbb7-1ba1" primary="false"/>
+        <categoryLink id="34c4-a9eb-37ac-98e9" name="Faction: Astra Militarum" hidden="false" targetId="96ae-2ec0-4de4-b4d7" primary="false"/>
+        <categoryLink id="ab4c-a363-62a5-c384" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false"/>
+        <categoryLink id="f9b9-2440-a598-05fe" name="Adeptus Ministorum" hidden="false" targetId="6460-c782-f2dc-6f95" primary="false"/>
+        <categoryLink id="bec4-b7c3-fcc3-301f" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="39db-8f73-29ad-918a" name="Crusader" hidden="false" targetId="2e2f-f8c5-332d-1c27" primary="false"/>
+        <categoryLink id="8e8a-30a8-ab60-f128" name="Gotfret de Montbard" hidden="false" targetId="e60d-8034-9c1f-7722" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="84ee-514b-7e08-6cbd" name="Storm shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdb6-95a4-6377-2250" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ea-ba30-7ea1-9ec5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cc2b-7d0e-5665-0d29" name="Storm shield" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
+              <characteristics>
+                <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">This model has a 3+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="661b-2259-9141-8026" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a81-caa1-fdb9-aa41" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d01b-b54f-ff59-ca5a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="037c-74e3-2cac-015c" name="Power Sword" hidden="false" collective="false" import="true" targetId="fece-175e-d43f-e00c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b993-87dd-72aa-cfba" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e4a-58f5-b473-e125" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fece-175e-d43f-e00c" name="Power Sword" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="2">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f9ed-533c-fb52-aa0e" name="Power Sword" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-3</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="748b-9d1f-176c-31b9" name="Pious Vorne" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="9489-6c2c-adcc-49ef" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9489-6c2c-adcc-49ef" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="592e-2f47-f924-ab6e" name="Pious Vorne" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">6&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">4+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">3</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">3</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">7+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e02c-7909-8399-275c" name="Maniacal Fervour" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Roll a D6 each time this model loses a wound; on a 5+ that wound is not lost.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0744-d828-0079-9383" name="Zealot" hidden="false" targetId="ba3e-c1ab-c2e1-dca0" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5dc0-c0f6-cfb6-7848" name="New CategoryLink" hidden="false" targetId="181f-e47f-6ec3-2e9b" primary="true"/>
+        <categoryLink id="eccf-7fed-ab22-f50e" name="Faction: Adepta Sororitas" hidden="false" targetId="995d-d712-dbb7-1ba1" primary="false"/>
+        <categoryLink id="4b92-c809-f59e-0748" name="Faction: Astra Militarum" hidden="false" targetId="96ae-2ec0-4de4-b4d7" primary="false"/>
+        <categoryLink id="7fb5-a88e-88b1-3c6c" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false"/>
+        <categoryLink id="854d-437d-1504-abb6" name="Adeptus Ministorum" hidden="false" targetId="6460-c782-f2dc-6f95" primary="false"/>
+        <categoryLink id="1ad3-c390-828c-38e0" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="7cc9-5adc-be0a-bdbb" name="Pious Vorne" hidden="false" targetId="8db4-3159-8f3e-d184" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0332-7c1f-8c59-fef2" name="Vindicator" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ea5-2ad3-ff04-cdd5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2c8-fbc4-82ec-5c07" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b21a-4216-4782-2a1d" name="Vindicator (melee)" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">+1</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="6cd8-e9ad-1ccb-0a65" name="Vindicator (shooting)" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">8&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Assault D6</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">5</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">This weapon automatically hits its target. If the target is a CHAOS model, roll two D6 to determine the number of attacks made with this weapon and discard the lowest result.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="0534-c078-a91f-07e7" name="Zealot" hidden="false" collective="false" import="true" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="548a-1aae-2cb0-b21e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a4f-92a4-02e3-422b" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -11129,6 +11483,11 @@
     <profile id="88d9-6830-b08b-5ea7" name="Rogue Trader" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">This model cannot be affected by any Tactics or abilities that affect models with a particular Faction keyword.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ba3e-c1ab-c2e1-dca0" name="Zealot" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll failed hit rolls for attacks made by this model in a battle round in which it charged or was charged.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
