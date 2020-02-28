@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="38" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="39" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="a467-5f42-pubN89361" name="Core Manual"/>
     <publication id="a467-5f42-pubN90767" name="Rogue Trader"/>
@@ -9397,6 +9397,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="e76c-f04a-7447-12d7" name="Zealot" hidden="false" targetId="ba3e-c1ab-c2e1-dca0" type="profile"/>
+        <infoLink id="7527-6ae5-53c7-7061" name="Advisor" hidden="false" targetId="b8b2-8366-8773-40bb" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0c9d-2d36-285b-cdb8" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
@@ -9524,6 +9525,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="a187-17e0-b845-e31c" name="Advisor" hidden="false" targetId="b8b2-8366-8773-40bb" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="ff2d-b6ba-13e1-a030" name="New CategoryLink" hidden="false" targetId="181f-e47f-6ec3-2e9b" primary="true"/>
         <categoryLink id="6226-6847-e039-ba25" name="Faction: Adepta Sororitas" hidden="false" targetId="995d-d712-dbb7-1ba1" primary="false"/>
@@ -9616,7 +9620,7 @@
             <characteristic name="BS" typeId="27ff-d5c5-5422-1614">4+</characteristic>
             <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
             <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
-            <characteristic name="W" typeId="0c48-aed0-609b-9818">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">2</characteristic>
             <characteristic name="A" typeId="d63d-20cc-db25-5dd5">3</characteristic>
             <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
             <characteristic name="Sv" typeId="c319-1a2d-3648-2294">7+</characteristic>
@@ -9631,6 +9635,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="0744-d828-0079-9383" name="Zealot" hidden="false" targetId="ba3e-c1ab-c2e1-dca0" type="profile"/>
+        <infoLink id="6d12-e0d8-5d82-ac98" name="Advisor" hidden="false" targetId="b8b2-8366-8773-40bb" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5dc0-c0f6-cfb6-7848" name="New CategoryLink" hidden="false" targetId="181f-e47f-6ec3-2e9b" primary="true"/>
@@ -11488,6 +11493,11 @@
     <profile id="ba3e-c1ab-c2e1-dca0" name="Zealot" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll failed hit rolls for attacks made by this model in a battle round in which it charged or was charged.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b8b2-8366-8773-40bb" name="Advisor" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">This model may not be picked to be affected by an order as part of the Voice of Command ability.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
