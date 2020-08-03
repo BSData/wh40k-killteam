@@ -3591,7 +3591,7 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1.0">
           <repeats>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
           </repeats>
@@ -3651,11 +3651,25 @@
               </constraints>
             </entryLink>
             <entryLink id="373b-a6d6-3998-04c1" name="Combi-weapons" hidden="false" collective="false" import="true" targetId="03e3-689a-1443-24b0" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="65f5-0aad-82bb-2c0c" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="50e6-375c-f7a3-2a9d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8ca-aee4-68b8-8eb8" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65f5-0aad-82bb-2c0c" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="5a9b-edd1-f05a-fb7e" name="Special weapons" hidden="false" collective="false" import="true" targetId="b8ca-aee4-68b8-8eb8" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="f96a-c89f-3c69-d75e" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="50e6-375c-f7a3-2a9d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03e3-689a-1443-24b0" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f96a-c89f-3c69-d75e" type="max"/>
               </constraints>
@@ -3666,6 +3680,18 @@
               </constraints>
             </entryLink>
             <entryLink id="452a-a503-bc51-3c34" name="Boltgun" hidden="false" collective="false" import="true" targetId="29a8-a3ad-c367-508f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="42e9-d219-21a1-824b" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="50e6-375c-f7a3-2a9d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03e3-689a-1443-24b0" type="greaterThan"/>
+                        <condition field="selections" scope="50e6-375c-f7a3-2a9d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8ca-aee4-68b8-8eb8" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42e9-d219-21a1-824b" type="max"/>
               </constraints>
