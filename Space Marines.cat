@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="26" battleScribeVersion="2.03" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="27" battleScribeVersion="2.03" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="6c15-6156-5ba7-10f3" name="Special Issue Ammunition">
       <characteristicTypes>
@@ -1392,18 +1392,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="064b-e268-55e0-44b8" name="Chainfist" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77cd-3383-52b2-a4e3" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="a250-9200-a01e-8f32" name="Chainfist" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
@@ -2219,11 +2207,7 @@
           </selectionEntries>
           <entryLinks>
             <entryLink id="735e-b454-f78f-2cfd" name="Power fist" hidden="false" collective="false" import="true" targetId="1689-c138-0775-3587" type="selectionEntry"/>
-            <entryLink id="e9bd-f59e-7cd7-48e5" name="Chainfist" hidden="false" collective="false" import="true" targetId="064b-e268-55e0-44b8" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false"/>
-              </modifiers>
-            </entryLink>
+            <entryLink id="e9bd-f59e-7cd7-48e5" name="Chainfist" hidden="false" collective="false" import="true" targetId="064b-e268-55e0-44b8" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2451,11 +2435,7 @@
           </constraints>
           <entryLinks>
             <entryLink id="9114-8748-fe75-1792" name="Power fist" hidden="false" collective="false" import="true" targetId="1689-c138-0775-3587" type="selectionEntry"/>
-            <entryLink id="f368-1960-c6d4-4bc9" name="Chainfist" hidden="false" collective="false" import="true" targetId="064b-e268-55e0-44b8" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false"/>
-              </modifiers>
-            </entryLink>
+            <entryLink id="f368-1960-c6d4-4bc9" name="Chainfist" hidden="false" collective="false" import="true" targetId="064b-e268-55e0-44b8" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2810,14 +2790,9 @@
         <entryLink id="e4dc-d6a6-6104-52bf" name="Cyclone missile launcher" hidden="false" collective="false" import="true" targetId="4812-31c7-9c35-7ea1" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="9332-5265-e260-c80e" value="0.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="f512-7b06-73fb-f089" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d560-8349-fadc-1e47" type="equalTo"/>
-                    <condition field="selections" scope="f512-7b06-73fb-f089" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa76-84bc-7536-6c24" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="f512-7b06-73fb-f089" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d560-8349-fadc-1e47" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -4433,7 +4408,7 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
             </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4544,7 +4519,7 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
           <entryLinks>
             <entryLink id="b445-31ac-1b96-da68" name="Chainfist" hidden="false" collective="false" import="true" targetId="064b-e268-55e0-44b8" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b47d-7e43-a755-01f5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b47d-7e43-a755-01f5" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="e2c2-77bd-fb78-3550" name="Lightning claw" hidden="false" collective="false" import="true" targetId="fa76-651f-322a-dee3" type="selectionEntry">
@@ -4559,33 +4534,19 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
             </entryLink>
             <entryLink id="7295-3507-4e20-416a" name="Power fist" hidden="false" collective="false" import="true" targetId="1689-c138-0775-3587" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="eeb0-64c0-bc05-1303" value="0.0"/>
+                <modifier type="set" field="3044-b216-6c6d-cea6" value="0.0"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65fc-ae6c-d7af-99bf" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eeb0-64c0-bc05-1303" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3044-b216-6c6d-cea6" type="min"/>
               </constraints>
             </entryLink>
             <entryLink id="324b-5d7f-73ff-6386" name="Power maul" hidden="false" collective="false" import="true" targetId="6edf-c2d4-de82-80f6" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="169e-63e6-cdb3-a2c9" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="3348-fc6d-72e9-1199" name="Power sword" hidden="false" collective="false" import="true" targetId="ecb3-8447-db60-da63" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="222a-2bd7-ce95-6c86" type="max"/>
               </constraints>
@@ -4713,7 +4674,7 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-c261-fa08-eb51" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-c261-fa08-eb51" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="5291-dc2c-cfa5-a77f" value="1"/>
