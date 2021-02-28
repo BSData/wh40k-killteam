@@ -258,6 +258,9 @@
     <categoryEntry id="8db4-3159-8f3e-d184" name="Pious Vorne" hidden="false"/>
     <categoryEntry id="299d-5251-b985-9d67" name="Mk X Gravis" hidden="false"/>
     <categoryEntry id="61af-7337-f0bb-f4fd" name="Judiciar" hidden="false"/>
+    <categoryEntry id="13d5-bf80-9ada-3fa0" name="Chronomancer" hidden="false"/>
+    <categoryEntry id="92b2-c231-e955-d8b7" name="Royal Warden" hidden="false"/>
+    <categoryEntry id="7927-8370-d661-9c92" name="Technomancer" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
@@ -10006,6 +10009,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39b3-b2ec-6701-903d" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92b2-c231-e955-d8b7" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10310,6 +10314,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39b3-b2ec-6701-903d" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="500a-a522-3219-5d95" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13d5-bf80-9ada-3fa0" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10416,6 +10421,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39b3-b2ec-6701-903d" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92b2-c231-e955-d8b7" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
