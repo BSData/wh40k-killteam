@@ -359,20 +359,9 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="8075-cdb2-e328-0880" value="1.0">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3483-b0a7-800f-6bdf" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8075-cdb2-e328-0880" type="min"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="49c6-1aa8-c120-1cf1" name="Level 1: Resourceful" hidden="false" collective="false" import="true" type="upgrade">
@@ -5846,12 +5835,7 @@
     </selectionEntry>
     <selectionEntry id="fa4c-5101-4760-038f" name="Psyker" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="9c1a-2f64-1b4f-e96f" value="1">
+        <modifier type="set" field="9c1a-2f64-1b4f-e96f" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
           </conditions>
@@ -6252,12 +6236,7 @@
     </selectionEntry>
     <selectionEntry id="275f-0c8c-74e6-899f" name="Ferocity" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="b7bb-7bcd-d618-3cb2" value="1">
+        <modifier type="set" field="b7bb-7bcd-d618-3cb2" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0f7-c442-b695-bf07" type="atLeast"/>
           </conditions>
@@ -7476,7 +7455,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e9b-d4c4-c855-7823" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="b5da-6406-18dd-2c96" name="Extra Armour (Logistics)" hidden="false" targetId="441d-35ac-d7dd-5a53" type="profile"/>
+            <infoLink id="b5da-6406-18dd-2c96" name="Extra Armour (Heavy)" hidden="false" targetId="9c4a-bbc8-ddee-a90d" type="profile"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="ade9-feed-9819-cf8c" name="Level 1" hidden="false" targetId="6e29-5d9a-98f5-ad2a" primary="false"/>
@@ -10390,7 +10369,7 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="132d-3dcc-da54-3c5c" name="Extra Armour (Logistics)" hidden="false" targetId="441d-35ac-d7dd-5a53" type="profile"/>
+            <infoLink id="132d-3dcc-da54-3c5c" name="Extra Armour (Heavy)" hidden="false" targetId="9c4a-bbc8-ddee-a90d" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
@@ -10630,9 +10609,6 @@
       </characteristics>
     </profile>
     <profile id="368b-a852-46f8-bc48" name="Inspiring (Leader)" publicationId="a467-5f42-pubN89361" page="68" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-      <modifiers>
-        <modifier type="set" field="name" value="Inspiring"/>
-      </modifiers>
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">Other friendly models within 3&quot; of this model - as long as this model is not shaken - automatically pass Nerve tests.</characteristic>
       </characteristics>
@@ -10718,9 +10694,6 @@
       </characteristics>
     </profile>
     <profile id="521e-ce94-d4ea-b004" name="Bloodlust (Combat)" publicationId="a467-5f42-pubN89361" page="69" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-      <modifiers>
-        <modifier type="set" field="name" value="Bloodlust"/>
-      </modifiers>
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll any failed charge rolls you make for this model.</characteristic>
       </characteristics>
@@ -10805,10 +10778,7 @@
         <characteristic name="Description" typeId="b373-019d-503a-1124">Enemy models that are targeted by this model in the Shooting phase suffer a -1 penalty to the hit rolls until the end of the phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="9c4a-bbc8-ddee-a90d" name="Extra Armour (Heavy)" publicationId="a467-5f42-pubN89361" page="72" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-      <modifiers>
-        <modifier type="set" field="name" value="Extra Armour"/>
-      </modifiers>
+    <profile id="9c4a-bbc8-ddee-a90d" name="Extra Armour" page="" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">Ignore AP characteristics of -1 for attacks that target this model.</characteristic>
       </characteristics>
@@ -11124,9 +11094,6 @@
       </characteristics>
     </profile>
     <profile id="931f-5a2c-1ec4-a37b" name="Bloodlust (Ferocity)" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-      <modifiers>
-        <modifier type="set" field="name" value="Bloodlust"/>
-      </modifiers>
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll failed charge rolls you make for this model.</characteristic>
       </characteristics>
@@ -11202,9 +11169,6 @@
       </characteristics>
     </profile>
     <profile id="9f4b-f307-7d2b-b05c" name="Inspiring (Leadership)" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-      <modifiers>
-        <modifier type="set" field="name" value="Inspiring"/>
-      </modifiers>
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">Friendly models within 3&quot; of this model - as long as it is not shaken - automatically pass Nerve tests.</characteristic>
       </characteristics>
@@ -11227,14 +11191,6 @@
     <profile id="bebf-df92-3f67-33d7" name="Tenacious" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">This model always controls an objective marker if it is within 2&quot; of it, even if there are more enemy models within 2&quot; of that objective marker. If an enemy model with a similar ability is also within 2&quot; of that objective marker, neither ability has an effect for either model.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="441d-35ac-d7dd-5a53" name="Extra Armour (Logistics)" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-      <modifiers>
-        <modifier type="set" field="name" value="Extra Armour"/>
-      </modifiers>
-      <characteristics>
-        <characteristic name="Description" typeId="b373-019d-503a-1124">Ignore AP characteristics of -1 for attacks that target this model.</characteristic>
       </characteristics>
     </profile>
     <profile id="5fe0-31d3-5945-1fa0" name="Quartermaster" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
@@ -11283,9 +11239,6 @@
       </characteristics>
     </profile>
     <profile id="33d4-d36c-94e4-4cbd" name="Precision Strike (Melee)" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-      <modifiers>
-        <modifier type="set" field="name" value="Precision Strike"/>
-      </modifiers>
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">Each time you make a wound roll of 6+ for this model&apos;s attack in the Fight phase, inflict a number of mortal wounds on the target equal to the weapon&apos;s Damage characteristic - the attack sequence then ends.</characteristic>
       </characteristics>
@@ -11336,9 +11289,6 @@
       </characteristics>
     </profile>
     <profile id="dee2-a5c9-dfd6-61da" name="Precision Strike (Shooting)" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-      <modifiers>
-        <modifier type="set" field="name" value="Precision Strike"/>
-      </modifiers>
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">Each time you make a wound roll of 6+ for this model&apos;s attack in the Shooting phase, inflict a number of mortal wounds on the target equal to the weapon&apos;s Damage characteristic - the attack sequence then ends.</characteristic>
       </characteristics>
@@ -11407,7 +11357,7 @@
         <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll failed hit rolls for attacks made by this model in a battle round in which it charged or was charged.</characteristic>
       </characteristics>
     </profile>
-    <profile id="b8b2-8366-8773-40bb" name="Advisor" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+    <profile id="b8b2-8366-8773-40bb" name="Advisor (Blackstone Fortress)" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">This model may not be picked to be affected by an order as part of the Voice of Command ability.</characteristic>
       </characteristics>
