@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c51-0669-1f79-d8aa" name="Astra Militarum" revision="28" battleScribeVersion="2.03" authorName="@Mad-Spy" authorUrl="https://discord.gg/Y5x9UnErYN" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4c51-0669-1f79-d8aa" name="Astra Militarum" revision="29" battleScribeVersion="2.03" authorName="@Mad-Spy" authorUrl="https://discord.gg/Y5x9UnErYN" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="23ec-80ab-7550-fb7e" name="Astra Militarum Orders">
       <characteristicTypes>
@@ -222,6 +222,33 @@
       <categoryLinks>
         <categoryLink id="d0e9-2e50-6076-26dd" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5b1b-a479-c302-8b14" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c5-7b25-a7d7-8dcb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4206-a8c4-ad8f-1786" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f7d1-7132-6aad-06b7" name="Medic" hidden="false" collective="false" import="true" targetId="01ab-630a-cf81-38c9" type="selectionEntry"/>
+            <entryLink id="dd8a-c0a1-2aae-970f" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+            <entryLink id="19cf-f21c-3766-a928" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry"/>
+            <entryLink id="f475-e1e0-b505-fbc5" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+            <entryLink id="c014-6320-0b67-9026" name="Sniper" hidden="false" collective="false" import="true" targetId="ead5-ea32-5412-c857" type="selectionEntry"/>
+            <entryLink id="05db-10fa-9b33-2c1a" name="Comms" hidden="false" collective="false" import="true" targetId="02a0-4107-4818-7c99" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="8005-5143-f3d0-c10d" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f520-cbcd-b611-d169" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8005-5143-f3d0-c10d" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink id="70da-d4db-ecd3-6232" name="Guardsman Gunner" hidden="false" collective="false" import="true" targetId="5685-5d66-9c9b-faf4" type="selectionEntry">
       <modifiers>
@@ -239,11 +266,35 @@
       <categoryLinks>
         <categoryLink id="97b5-7eb5-0741-9151" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="585d-0349-978b-6e55" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="faaf-3f75-366f-bf01" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="568d-c304-e575-37f2" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d099-72eb-95c8-7b18" name="Medic" hidden="false" collective="false" import="true" targetId="01ab-630a-cf81-38c9" type="selectionEntry"/>
+            <entryLink id="e129-684f-aeab-b096" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+            <entryLink id="8754-38c4-000e-0ea2" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry"/>
+            <entryLink id="0f12-2320-e187-803e" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+            <entryLink id="fc9a-bfea-5c8b-52b9" name="Sniper" hidden="false" collective="false" import="true" targetId="ead5-ea32-5412-c857" type="selectionEntry"/>
+            <entryLink id="2d2e-736f-e0e7-fb01" name="Heavy" hidden="false" collective="false" import="true" targetId="8c9b-a772-02e7-d673" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink id="fce2-8c2d-0843-41ef" name="Sergeant" hidden="false" collective="false" import="true" targetId="8d63-9ed2-1596-d8e6" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a6ae-3434-5ef2-edd4" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="26f0-4f1f-eced-93b7" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a4-7166-3de2-c7f0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dba-fa23-b65d-b2d3" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="fd62-9708-3ade-3b78" name="Sergeant" hidden="false" collective="false" import="true" targetId="8d63-9ed2-1596-d8e6" type="selectionEntry">
       <modifiers>
@@ -261,11 +312,41 @@
       <categoryLinks>
         <categoryLink id="0923-b2ae-6433-7ef8" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b1ac-15bb-84a2-5b5b" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f7-05b5-5a1c-14ec" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f774-2cfa-23d9-9e85" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d65f-a48b-0007-8bad" name="Medic" hidden="false" collective="false" import="true" targetId="01ab-630a-cf81-38c9" type="selectionEntry"/>
+            <entryLink id="d9e3-68ed-5d72-2762" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+            <entryLink id="0279-bd26-808e-d3c9" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry"/>
+            <entryLink id="410e-718f-2298-d6de" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+            <entryLink id="c8d7-28cd-64df-50d9" name="Sniper" hidden="false" collective="false" import="true" targetId="ead5-ea32-5412-c857" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink id="082b-2d2c-aa8b-7009" name="Special Weapons Guardsman" hidden="false" collective="false" import="true" targetId="0e48-4b39-f955-7e20" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5837-b9f5-7d8f-aa3a" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1c80-d3cd-4b43-0498" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="135e-fdf4-0c8e-0756" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="263a-bd26-63c4-350d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8fb2-b09d-e7b4-d72a" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+            <entryLink id="049e-6231-b75f-ee7b" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry"/>
+            <entryLink id="f5da-759d-8cac-b22b" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+            <entryLink id="50d8-6200-fa05-556f" name="Sniper" hidden="false" collective="false" import="true" targetId="ead5-ea32-5412-c857" type="selectionEntry"/>
+            <entryLink id="5c21-ca04-56d2-1afa" name="Medic" hidden="false" collective="false" import="true" targetId="01ab-630a-cf81-38c9" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink id="4d48-d5e9-1b18-12e4" name="Special Weapons Guardsman" hidden="false" collective="false" import="true" targetId="0e48-4b39-f955-7e20" type="selectionEntry">
       <modifiers>
@@ -283,11 +364,35 @@
       <categoryLinks>
         <categoryLink id="1bb3-d071-5ad3-0892" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="a15f-c3c1-69b5-ef31" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="683e-1a29-f3fb-b3f9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f275-812c-c269-906d" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="19e1-f298-ca1f-934e" name="Special Weapons Gunner" hidden="false" collective="false" import="true" targetId="d863-7299-321c-ccec" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e34f-3b51-0f7a-73d7" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ab91-13b5-8935-c75d" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a868-1eff-7c2d-aa51" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b42c-d033-20d1-469b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9b6f-7375-39ec-5782" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+            <entryLink id="b351-e408-d943-e775" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry"/>
+            <entryLink id="d24a-524d-f773-232a" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+            <entryLink id="d6eb-e3d2-60ce-6819" name="Sniper" hidden="false" collective="false" import="true" targetId="ead5-ea32-5412-c857" type="selectionEntry"/>
+            <entryLink id="9dc6-d5e0-ed5f-ea3e" name="Medic" hidden="false" collective="false" import="true" targetId="01ab-630a-cf81-38c9" type="selectionEntry"/>
+            <entryLink id="e70b-534a-9e36-f496" name="Heavy" hidden="false" collective="false" import="true" targetId="8c9b-a772-02e7-d673" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink id="049c-a7a8-7ae6-84f6" name="Special Weapons Gunner" hidden="false" collective="false" import="true" targetId="d863-7299-321c-ccec" type="selectionEntry">
       <modifiers>
@@ -305,11 +410,27 @@
       <categoryLinks>
         <categoryLink id="0b50-67d1-5972-0595" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="d917-4bd4-0296-ba7b" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cd4-e06b-683f-7b2e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec94-3aee-63d8-3cc8" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="edb1-b0d9-b966-ef48" name="Tempestor" hidden="false" collective="false" import="true" targetId="1896-6dfe-2a22-7878" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c291-36a6-7e00-9e36" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="b0f3-1d4e-6e10-06a8" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af1-a971-8c5f-8576" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6834-57ab-22c5-2824" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="c805-5f2d-fcc8-0c5e" name="Tempestor" hidden="false" collective="false" import="true" targetId="1896-6dfe-2a22-7878" type="selectionEntry">
       <modifiers>
@@ -327,6 +448,20 @@
       <categoryLinks>
         <categoryLink id="dff8-dfd7-d2c3-34c0" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="221a-915e-bb6a-1fba" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d52c-27ae-07da-7b34" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baf3-ed8e-34af-e958" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1fa2-cf84-9176-7cd1" name="Medic" hidden="false" collective="false" import="true" targetId="01ab-630a-cf81-38c9" type="selectionEntry"/>
+            <entryLink id="88f8-e980-aed9-e278" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry"/>
+            <entryLink id="4284-2866-d569-89ac" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+            <entryLink id="d5cb-242d-dcf3-8d0a" name="Sniper" hidden="false" collective="false" import="true" targetId="ead5-ea32-5412-c857" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink id="5a38-13c0-550a-619a" name="Scion Gunner" hidden="false" collective="false" import="true" targetId="3092-d4ca-7c11-034a" type="selectionEntry">
       <modifiers>
@@ -344,8 +479,24 @@
       <categoryLinks>
         <categoryLink id="97aa-7dd4-b121-d546" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7784-2a62-6345-08b7" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79e5-ed19-1dec-0965" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4869-ac2c-e616-1bb9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b820-060a-4306-f73b" name="Medic" hidden="false" collective="false" import="true" targetId="01ab-630a-cf81-38c9" type="selectionEntry"/>
+            <entryLink id="e1e8-a524-d162-55ba" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry"/>
+            <entryLink id="4025-73f4-4a35-d31b" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+            <entryLink id="d441-fd5d-fa7f-35c9" name="Sniper" hidden="false" collective="false" import="true" targetId="ead5-ea32-5412-c857" type="selectionEntry"/>
+            <entryLink id="20fa-32d2-b406-5387" name="Heavy" hidden="false" collective="false" import="true" targetId="8c9b-a772-02e7-d673" type="selectionEntry"/>
+            <entryLink id="a853-a025-8875-3d87" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
-    <entryLink id="0ca7-7036-a6ff-0c27" name="Militarum Tempestus Scion" hidden="false" collective="false" import="true" targetId="0f8c-8784-485a-5063" type="selectionEntry">
+    <entryLink id="0ca7-7036-a6ff-0c27" name="Scion" hidden="false" collective="false" import="true" targetId="0f8c-8784-485a-5063" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -357,10 +508,36 @@
         <categoryLink id="fffa-af9c-227b-ef03" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="8edf-82df-a3ff-5a05" name="Militarum Tempestus Scion" hidden="false" collective="false" import="true" targetId="0f8c-8784-485a-5063" type="selectionEntry">
+    <entryLink id="8edf-82df-a3ff-5a05" name="Scion" hidden="false" collective="false" import="true" targetId="0f8c-8784-485a-5063" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a05d-3b0d-1fdc-540d" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="138c-117d-dbb1-06fe" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6277-4e3a-f63f-3e45" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b64e-a2a2-5aeb-9951" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1f2c-7a52-9849-a152" name="Medic" hidden="false" collective="false" import="true" targetId="01ab-630a-cf81-38c9" type="selectionEntry"/>
+            <entryLink id="474b-f957-9b66-366e" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry"/>
+            <entryLink id="b3e4-9309-68e6-092a" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+            <entryLink id="42e7-4433-326c-a4db" name="Sniper" hidden="false" collective="false" import="true" targetId="ead5-ea32-5412-c857" type="selectionEntry"/>
+            <entryLink id="218f-e686-41de-38ec" name="Comms" hidden="false" collective="false" import="true" targetId="02a0-4107-4818-7c99" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="cc8d-2fdf-d57e-7c63" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f520-cbcd-b611-d169" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc8d-2fdf-d57e-7c63" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink id="c550-b1f6-5f2c-e6d1" name="Infantry Squad Fire Team" hidden="false" collective="false" import="true" targetId="90ff-92bf-17b3-38fd" type="selectionEntry">
       <modifiers>
@@ -401,7 +578,6 @@
     <entryLink id="7c14-11ca-e23c-1fad" name="Lord Commissar" hidden="false" collective="false" import="true" targetId="7206-4819-ffd3-1f3f" type="selectionEntry"/>
     <entryLink id="23be-3b7c-e2d4-7694" name="Platoon Commander" hidden="false" collective="false" import="true" targetId="5dc9-5992-cb96-1a85" type="selectionEntry"/>
     <entryLink id="8614-d2c6-2a8a-7810" name="Company Commander" hidden="false" collective="false" import="true" targetId="234d-fd85-b46d-5257" type="selectionEntry"/>
-    <entryLink id="0d4d-57a0-2887-31dc" name="Tempestor Prime" hidden="false" collective="false" import="true" targetId="a939-0338-9f05-86ec" type="selectionEntry"/>
     <entryLink id="a449-c1b9-c20b-1c00" name="Janus Draik" hidden="false" collective="false" import="true" targetId="51ae-59d9-809a-f5dc" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -433,6 +609,20 @@
       <categoryLinks>
         <categoryLink id="c9b4-bb48-9a6f-cdda" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="13c2-4fe6-339d-cc6f" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cea8-fce7-3f78-8610" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff5b-62d9-a5f3-a5b6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b3fb-b200-479e-5ffb" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry"/>
+            <entryLink id="0e0b-1572-9e0b-cbce" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+            <entryLink id="d75e-37d2-c186-12c4" name="Heavy" hidden="false" collective="false" import="true" targetId="8c9b-a772-02e7-d673" type="selectionEntry"/>
+            <entryLink id="066a-967c-a994-d0a0" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink id="0238-14e8-a0d4-92fc" name="Ogryn Bone &apos;ead" hidden="false" collective="false" import="true" targetId="92d0-899a-1577-0552" type="selectionEntry">
       <modifiers>
@@ -450,11 +640,33 @@
       <categoryLinks>
         <categoryLink id="11ef-ea8e-b617-cba0" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d162-ac35-4950-ad3e" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eb9-4448-bcb7-4573" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cca5-695f-8b0f-a25b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7864-1348-df8e-d093" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry"/>
+            <entryLink id="5d31-9bf0-3a28-ba97" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+            <entryLink id="72aa-f8ef-5951-a8dd" name="Heavy" hidden="false" collective="false" import="true" targetId="8c9b-a772-02e7-d673" type="selectionEntry"/>
+            <entryLink id="671b-0bae-38d0-b800" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink id="a078-29b4-887d-11df" name="Ogryn Bone &apos;ead" hidden="false" collective="false" import="true" targetId="92d0-899a-1577-0552" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="bae7-eb0b-7ebd-bfbd" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="7e2e-d20c-26ca-491f" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed0d-f599-c3cf-f890" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba39-3a99-2461-ad72" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="ca97-0a84-11bf-65d1" name="Bullgryn" hidden="false" collective="false" import="true" targetId="4d1d-b7ac-85d7-982e" type="selectionEntry">
       <modifiers>
@@ -472,6 +684,20 @@
       <categoryLinks>
         <categoryLink id="61b1-bf81-9910-7909" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e9c6-4cba-e543-fc9a" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4414-9f2b-4ab2-473c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43e4-bd0d-2892-d7cf" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="746d-a2d8-267e-b9eb" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry"/>
+            <entryLink id="9312-3316-ee7d-8074" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+            <entryLink id="457a-ae94-777a-5798" name="Heavy" hidden="false" collective="false" import="true" targetId="8c9b-a772-02e7-d673" type="selectionEntry"/>
+            <entryLink id="1359-f614-7740-990c" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink id="4812-63f1-f0b2-8709" name="Ogryn Fire Team" hidden="false" collective="false" import="true" targetId="2187-0934-5670-9753" type="selectionEntry">
       <modifiers>
@@ -489,6 +715,20 @@
       <categoryLinks>
         <categoryLink id="63f3-8b5f-eeb7-7f08" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1645-fbe8-0b84-7fae" name="Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bcb-2ccd-7bfe-0bd3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0bf-dec9-bce5-4562" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e50d-3a89-171c-f5db" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry"/>
+            <entryLink id="2caa-024a-3cb1-2fb6" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+            <entryLink id="69f8-f0a3-a2d1-9361" name="Heavy" hidden="false" collective="false" import="true" targetId="8c9b-a772-02e7-d673" type="selectionEntry"/>
+            <entryLink id="5f07-bc61-70b1-21e9" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink id="b4eb-a77f-04de-e029" name="Bullgryn Bone &apos;ead" hidden="false" collective="false" import="true" targetId="4517-6428-dbc1-b4ad" type="selectionEntry">
       <modifiers>
@@ -506,6 +746,14 @@
       <categoryLinks>
         <categoryLink id="e33d-f078-6d31-da53" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="1090-72eb-65dc-5ddc" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="714b-7336-85dc-1eac" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14a7-e872-235f-ba0e" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="57bc-0420-b51d-b7cd" name="Bullgryn Fire Team" hidden="false" collective="false" import="true" targetId="70de-aeb7-5104-6c3e" type="selectionEntry">
       <modifiers>
@@ -918,7 +1166,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="671e-1e9f-7d74-0f8d" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="c467-4e3b-8d17-1008" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
         <entryLink id="5946-6819-2046-8faa" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -981,7 +1228,6 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="4bc5-8b36-0e5e-654d" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
         <entryLink id="66a5-26e0-6e3d-0c12" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1098,8 +1344,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1cb-e6e5-e4d8-71fa" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="0310-cf52-78ae-ea90" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
-        <entryLink id="08fa-0ca6-71ec-79d4" name="Krak grenade" hidden="false" collective="false" import="true" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
+        <entryLink id="08fa-0ca6-71ec-79d4" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="017b-5a5b-2b5a-f16d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdd4-3b17-9572-a36a" type="max"/>
@@ -1411,7 +1656,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ee-db84-de48-c660" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="dce0-e701-6657-d716" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
         <entryLink id="d9bf-2b6c-30e6-9da5" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1499,7 +1743,6 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="8dac-62a8-8f0d-1bb0" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
         <entryLink id="455c-3a18-bbc8-9ab7" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1630,7 +1873,6 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="9607-ac3b-768b-bba8" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
         <entryLink id="4cb6-5cdb-df90-186e" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1754,8 +1996,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="4a23-cc59-9d67-28d9" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
-        <entryLink id="8b8d-4feb-a096-3e6f" name="Krak grenade" hidden="false" collective="false" import="true" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
+        <entryLink id="8b8d-4feb-a096-3e6f" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74b8-b899-0ce0-22c3" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d41-53c4-f428-3136" type="max"/>
@@ -1829,8 +2070,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1155-b126-fa33-034d" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
-        <entryLink id="6b74-0cb1-8b4e-d1c2" name="Krak grenade" hidden="false" collective="false" import="true" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
+        <entryLink id="6b74-0cb1-8b4e-d1c2" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="833a-6d88-27ff-ea6a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bd2-d8d1-b7fe-04e3" type="max"/>
@@ -2013,10 +2253,22 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="dfa9-2465-9500-5c8f" name="Commander Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11b9-cea1-bdc8-eace" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aacd-185e-03d8-7663" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c929-1398-89ee-4417" name="Fortitude" hidden="false" collective="false" import="true" targetId="88d4-1fdb-1672-18cc" type="selectionEntry"/>
+            <entryLink id="50f3-7aa4-1a54-1a2c" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+            <entryLink id="6b43-01f3-6cb6-e67f" name="Logistics" hidden="false" collective="false" import="true" targetId="436b-cc7d-caf2-b09c" type="selectionEntry"/>
+            <entryLink id="86f9-cc4d-e0fd-ebf8" name="Shooting" hidden="false" collective="false" import="true" targetId="3b6a-c3c2-c00b-170e" type="selectionEntry"/>
+            <entryLink id="c696-ac16-0d53-a86b" name="Strategist" hidden="false" collective="false" import="true" targetId="8301-dd25-06aa-2d15" type="selectionEntry"/>
+            <entryLink id="c0e4-94e4-2053-9059" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+            <entryLink id="de8d-e419-2899-f0ba" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="2a23-8850-ff45-23c9" name="Specialism (C)" hidden="false" collective="false" import="true" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
       </costs>
@@ -2105,10 +2357,21 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="ba88-a0c8-8b16-c73f" name="Commander Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d15-7017-8f8b-f24d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75c6-47fe-263a-e014" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0abd-7389-f0ec-282f" name="Fortitude" hidden="false" collective="false" import="true" targetId="88d4-1fdb-1672-18cc" type="selectionEntry"/>
+            <entryLink id="f31e-7832-ab2f-5cbb" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+            <entryLink id="50a3-e04b-807c-c2db" name="Logistics" hidden="false" collective="false" import="true" targetId="436b-cc7d-caf2-b09c" type="selectionEntry"/>
+            <entryLink id="a390-cc22-e71d-12bc" name="Shooting" hidden="false" collective="false" import="true" targetId="3b6a-c3c2-c00b-170e" type="selectionEntry"/>
+            <entryLink id="8739-dee1-0945-faef" name="Strategist" hidden="false" collective="false" import="true" targetId="8301-dd25-06aa-2d15" type="selectionEntry"/>
+            <entryLink id="4d1d-74ee-c91b-d7ff" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="cba2-8918-006d-a86d" name="Commander Specialism" hidden="false" collective="false" import="true" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="25.0"/>
       </costs>
@@ -2197,10 +2460,22 @@
             <entryLink id="6e31-1f55-4a36-86f5" name="Power Sword" hidden="false" collective="false" import="true" targetId="7598-2c68-319a-4264" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="6a2d-f78e-79b3-ce0f" name="Commander Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2219-60da-01e2-5fcb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33ca-0644-597f-fdc4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e0b1-6bb9-3c3b-aa12" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+            <entryLink id="ca40-5ab4-82ac-dbde" name="Logistics" hidden="false" collective="false" import="true" targetId="436b-cc7d-caf2-b09c" type="selectionEntry"/>
+            <entryLink id="138e-489f-bffb-1df0" name="Shooting" hidden="false" collective="false" import="true" targetId="3b6a-c3c2-c00b-170e" type="selectionEntry"/>
+            <entryLink id="7002-bf37-9ddb-81dc" name="Strategist" hidden="false" collective="false" import="true" targetId="8301-dd25-06aa-2d15" type="selectionEntry"/>
+            <entryLink id="0500-5bc1-d1fc-5d0a" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8794-aab8-b73e-b5fb" name="Display Voice of Command Orders" hidden="false" collective="false" import="true" targetId="b091-39d9-f78c-b993" type="selectionEntry"/>
-        <entryLink id="1f7d-2de3-d432-73d6" name="Commander Specialisim" hidden="false" collective="false" import="true" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup"/>
         <entryLink id="62b9-ca3d-2a32-4a63" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry"/>
         <entryLink id="4b2e-0eaa-f748-241c" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2314,10 +2589,22 @@
             <entryLink id="de61-3ca4-330d-3c92" name="Power Sword" hidden="false" collective="false" import="true" targetId="7598-2c68-319a-4264" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="d593-29e3-5946-6303" name="Commander Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71e0-57f8-5340-a8f6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17f4-8b7e-c16b-276f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d8ee-4082-1a3e-bb0f" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+            <entryLink id="48a5-d436-6dd3-f8cc" name="Logistics" hidden="false" collective="false" import="true" targetId="436b-cc7d-caf2-b09c" type="selectionEntry"/>
+            <entryLink id="afe5-2d4d-2d0d-dd88" name="Shooting" hidden="false" collective="false" import="true" targetId="3b6a-c3c2-c00b-170e" type="selectionEntry"/>
+            <entryLink id="6eed-3868-0bab-997e" name="Strategist" hidden="false" collective="false" import="true" targetId="8301-dd25-06aa-2d15" type="selectionEntry"/>
+            <entryLink id="359e-604b-760e-1c0c" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="bd54-b45b-f8a8-5b9f" name="Display Voice of Command Orders" hidden="false" collective="false" import="true" targetId="b091-39d9-f78c-b993" type="selectionEntry"/>
-        <entryLink id="036b-7930-a157-7c41" name="Specialism (C)" hidden="false" collective="false" import="true" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup"/>
         <entryLink id="1d44-5b9d-04f9-d494" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry"/>
         <entryLink id="1dcc-c0af-6e88-4eab" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2413,9 +2700,21 @@
             <entryLink id="b017-012e-2b27-6cc6" name="Tempestus Command Rod" hidden="false" collective="false" import="true" targetId="2f10-7d2a-3950-8fa4" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="260e-8a39-0fb3-589d" name="Commander Specialism" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1da7-70d3-063b-9e89" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="988b-0762-cb1f-3378" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ba0c-9a43-3738-74b5" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+            <entryLink id="c454-edea-e77a-c5c4" name="Logistics" hidden="false" collective="false" import="true" targetId="436b-cc7d-caf2-b09c" type="selectionEntry"/>
+            <entryLink id="f3aa-91d0-9b2a-40c8" name="Shooting" hidden="false" collective="false" import="true" targetId="3b6a-c3c2-c00b-170e" type="selectionEntry"/>
+            <entryLink id="0cc7-9eb9-a2c3-ac60" name="Strategist" hidden="false" collective="false" import="true" targetId="8301-dd25-06aa-2d15" type="selectionEntry"/>
+            <entryLink id="45a8-dd61-00b3-45c0" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4522-6e8e-a37a-8c26" name="Commander Specialisim" hidden="false" collective="false" import="true" targetId="4025-e686-fa2b-8a8a" type="selectionEntryGroup"/>
         <entryLink id="45af-b421-6e40-8ea2" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry"/>
         <entryLink id="0da3-9186-0a67-e95d" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="c01f-945c-7d58-34fd" type="selectionEntry"/>
         <entryLink id="eb26-dc6a-9160-a25b" name="Display Voice of Command Orders" hidden="false" collective="false" import="true" targetId="b091-39d9-f78c-b993" type="selectionEntry"/>
@@ -3023,7 +3322,6 @@
       <entryLinks>
         <entryLink id="e5a6-daab-0d2a-add5" name="Ripper gun" hidden="false" collective="false" import="true" targetId="f6da-4a84-57d4-4521" type="selectionEntry"/>
         <entryLink id="678b-3387-40e0-739b" name="Frag bombs" hidden="false" collective="false" import="true" targetId="85f7-28ec-e419-70c9" type="selectionEntry"/>
-        <entryLink id="87be-0047-5154-6dc1" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="26.0"/>
@@ -3133,7 +3431,6 @@
       <entryLinks>
         <entryLink id="0d98-e2a7-f5a9-00d2" name="Ripper gun" hidden="false" collective="false" import="true" targetId="f6da-4a84-57d4-4521" type="selectionEntry"/>
         <entryLink id="1286-3190-61ef-98c7" name="Frag bombs" hidden="false" collective="false" import="true" targetId="85f7-28ec-e419-70c9" type="selectionEntry"/>
-        <entryLink id="5933-685a-5b09-67c4" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="27.0"/>
@@ -3221,7 +3518,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="efdc-a27b-3138-af2f" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
         <entryLink id="fd3b-c448-0875-aa39" name="Frag bombs" hidden="false" collective="false" import="true" targetId="85f7-28ec-e419-70c9" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -3385,7 +3681,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ca1e-314a-440a-c391" name="Specialism" hidden="false" collective="false" import="true" targetId="d441-da84-8194-ea3e" type="selectionEntryGroup"/>
         <entryLink id="98dc-8a09-e4ba-3712" name="Frag bombs" hidden="false" collective="false" import="true" targetId="85f7-28ec-e419-70c9" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -3509,215 +3804,6 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="d441-da84-8194-ea3e" name="Specialism" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="notInstanceOf"/>
-                <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29e7-d60f-5acd-4d99" type="notInstanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7741-43df-af6f-0e8b" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d60-329f-5244-bb1a" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="f94c-1a35-f3fa-a4de" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry"/>
-        <entryLink id="5945-d439-53c6-5514" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
-        <entryLink id="4583-e0e8-7ed7-9d0f" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d63-9ed2-1596-d8e6" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5bc-71b5-c24f-4e96" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5685-5d66-9c9b-faf4" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d863-7299-321c-ccec" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0e48-4b39-f955-7e20" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f8c-8784-485a-5063" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1896-6dfe-2a22-7878" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3092-d4ca-7c11-034a" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="8dd9-f244-c5e4-4cb9" name="Comms" hidden="false" collective="false" import="true" targetId="02a0-4107-4818-7c99" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d863-7299-321c-ccec" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5685-5d66-9c9b-faf4" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d63-9ed2-1596-d8e6" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0e48-4b39-f955-7e20" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1896-6dfe-2a22-7878" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3092-d4ca-7c11-034a" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3244-7b29-a389-49ed" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f8c-8784-485a-5063" type="instanceOf"/>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f520-cbcd-b611-d169" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5bc-71b5-c24f-4e96" type="instanceOf"/>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f520-cbcd-b611-d169" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="a4df-f7b9-d08a-c4cd" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1896-6dfe-2a22-7878" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f8c-8784-485a-5063" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="3e01-8eb2-7b98-8aa0" name="Heavy" hidden="false" collective="false" import="true" targetId="8c9b-a772-02e7-d673" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d63-9ed2-1596-d8e6" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5bc-71b5-c24f-4e96" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0e48-4b39-f955-7e20" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f8c-8784-485a-5063" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1896-6dfe-2a22-7878" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="de9a-b225-2564-b01c" name="Medic" hidden="false" collective="false" import="true" targetId="01ab-630a-cf81-38c9" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3244-7b29-a389-49ed" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="ab8f-caba-6f0f-e172" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3244-7b29-a389-49ed" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="4ed8-de0e-6b74-ee4a" name="Sniper" hidden="false" collective="false" import="true" targetId="ead5-ea32-5412-c857" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3244-7b29-a389-49ed" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="60bd-ebc1-6e1c-dd66" name="Zealot" hidden="false" collective="false" import="true" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d63-9ed2-1596-d8e6" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5bc-71b5-c24f-4e96" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5685-5d66-9c9b-faf4" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d863-7299-321c-ccec" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0e48-4b39-f955-7e20" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3092-d4ca-7c11-034a" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1896-6dfe-2a22-7878" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f8c-8784-485a-5063" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3244-7b29-a389-49ed" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="4025-e686-fa2b-8a8a" name="Commander Specialism" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08a3-a780-60e3-831e" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caa5-46d9-01d7-9252" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="77b2-0ad4-2fa7-3da5" name="Fortitude" hidden="false" collective="false" import="true" targetId="88d4-1fdb-1672-18cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="23be-3b7c-e2d4-7694" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d4d-57a0-2887-31dc" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8614-d2c6-2a8a-7810" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="462e-3a49-1761-7cf8" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
-        <entryLink id="4fea-7d10-d399-704e" name="Logistics" hidden="false" collective="false" import="true" targetId="436b-cc7d-caf2-b09c" type="selectionEntry"/>
-        <entryLink id="2d6b-2297-addc-03d0" name="Shooting" hidden="false" collective="false" import="true" targetId="3b6a-c3c2-c00b-170e" type="selectionEntry"/>
-        <entryLink id="7b45-e7d9-b797-5648" name="Strategist" hidden="false" collective="false" import="true" targetId="8301-dd25-06aa-2d15" type="selectionEntry"/>
-        <entryLink id="42f4-d8ca-4f43-5215" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="23be-3b7c-e2d4-7694" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d4d-57a0-2887-31dc" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8614-d2c6-2a8a-7810" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="2635-d5ee-e7af-fcd9" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7c14-11ca-e23c-1fad" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
     <selectionEntryGroup id="0698-0499-9840-7475" name="Regiment" hidden="false" collective="false" import="true" defaultSelectionEntryId="39d2-4f09-6952-19c5">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a90-8700-9c50-c014" type="min"/>
