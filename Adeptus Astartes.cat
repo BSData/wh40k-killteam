@@ -2838,13 +2838,21 @@
                 <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c90-5d2a-45c8-6a4f" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="6502-ede8-912d-4e64" name="Power axe" hidden="false" collective="false" import="true" targetId="04f8-a3f8-7769-09fa" type="selectionEntry"/>
+                <entryLink id="6502-ede8-912d-4e64" name="Power axe" hidden="false" collective="false" import="true" targetId="04f8-a3f8-7769-09fa" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="2165-98fb-c9fc-edfb" name="Power sword" hidden="false" collective="false" import="true" targetId="ecb3-8447-db60-da63" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="0e55-9917-f200-afc6" name="Astartes shotgun" hidden="false" collective="false" import="true" targetId="f9fd-bdcb-3db6-f7a5" type="selectionEntry"/>
+            <entryLink id="0e55-9917-f200-afc6" name="Astartes shotgun" hidden="false" collective="false" import="true" targetId="f9fd-bdcb-3db6-f7a5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="369d-6638-724b-9bb9" type="max"/>
+              </constraints>
+            </entryLink>
             <entryLink id="44fd-00ec-c6c8-3303" name="Boltgun" hidden="false" collective="false" import="true" targetId="29a8-a3ad-c367-508f" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1051-246e-f182-fd8c" value="1.0">
@@ -2855,9 +2863,14 @@
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="ce2c-0700-1680-aab5" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1051-246e-f182-fd8c" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b04f-4ad9-79b2-24d0" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="02b1-b913-0b58-6893" name="Combat knife" hidden="false" collective="false" import="true" targetId="4e19-9c2e-053b-5f29" type="selectionEntry"/>
+            <entryLink id="02b1-b913-0b58-6893" name="Combat knife" hidden="false" collective="false" import="true" targetId="4e19-9c2e-053b-5f29" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="defe-d498-b0e6-a7fd" type="max"/>
+              </constraints>
+            </entryLink>
             <entryLink id="ce63-08d4-6662-783b" name="Sniper rifle and Camo cloak" hidden="false" collective="false" import="true" targetId="62c5-ddf4-a580-e914" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -2879,6 +2892,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b99c-86ff-aa1e-ffc0" type="max"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
