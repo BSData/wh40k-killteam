@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6112-edb9-977c-198e" name="Adeptus Astartes" revision="34" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6112-edb9-977c-198e" name="Adeptus Astartes" revision="35" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="31b9-6ae7-0eb3-cc3c" name="Incursor Fire Team" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2404,27 +2404,43 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="62c5-ddf4-a580-e914" name="Sniper rifle and Camo cloak" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="62c5-ddf4-a580-e914" name="Scout sniper rifle and camo cloak" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b23c-04bf-0d06-8857" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="769e-46f3-ce34-1dfb" name="Sniper rifle" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">36&quot;</characteristic>
-            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Heavy 1</characteristic>
-            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
-            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
-            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
-            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">A model firing a sniper rifle does not suffer the penalty to hit rolls for firing at long range. If you roll a wound roll of 6+ for this weapon, it inflicts a mortal wound in addition to its normal damage.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="3be5-3f17-19c2-daf7" name="Camo Cloak" hidden="false" targetId="81d8-993a-7624-5934" type="profile"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="58f4-b707-f10c-b3ba" name="Scout sniper rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77ef-17eb-86e7-1356" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61b2-10d9-f99f-6ab6" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="66e5-ab35-ccc3-cbff" name="Scout sniper rifle" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">36&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Heavy 1</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">A model firing a Scout sniper rifle does not suffer the penalty to hit rolls for firing at long range. If you roll a wound roll of 6+ for this weapon, it inflicts a mortal wound in addition to its normal damage.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="4034-ba31-84ae-687b" name="Camo cloak" hidden="false" collective="false" import="true" targetId="3baf-6762-885e-5268" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d1f-ec0f-e2c9-9125" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4dd-4633-2514-6b20" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3004-28ce-dcee-638b" name="Tactical Marine" hidden="false" collective="false" import="true" type="model">
@@ -2479,7 +2495,7 @@
         <entryLink id="d6d6-c1c8-482f-8415" name="Chapter" hidden="false" collective="false" import="true" targetId="72dc-01ba-36f1-563f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c321-a1b9-ec3e-82e1" name="Intercessor Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2650,7 +2666,7 @@
         <entryLink id="9d6c-a6c8-43cf-043a" name="Chapter" hidden="false" collective="false" import="true" targetId="72dc-01ba-36f1-563f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4590-24a8-380b-a130" name="Tactical Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -2766,7 +2782,7 @@
         <entryLink id="dd4b-bb9a-c270-4bdb" name="Auspex" hidden="false" collective="false" import="true" targetId="e5e1-a3fa-895f-64e8" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ce2c-0700-1680-aab5" name="Scout" hidden="false" collective="false" import="true" type="model">
@@ -2829,12 +2845,12 @@
                 <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c90-5d2a-45c8-6a4f" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="6502-ede8-912d-4e64" name="Power axe" hidden="false" collective="false" import="true" targetId="04f8-a3f8-7769-09fa" type="selectionEntry">
+                <entryLink id="6502-ede8-912d-4e64" name="Power axe" hidden="false" collective="false" import="true" targetId="04f8-a3f8-7769-09fa" type="selectionEntry"/>
+                <entryLink id="2165-98fb-c9fc-edfb" name="Power sword" hidden="false" collective="false" import="true" targetId="ecb3-8447-db60-da63" type="selectionEntry">
                   <costs>
-                    <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+                    <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="2165-98fb-c9fc-edfb" name="Power sword" hidden="false" collective="false" import="true" targetId="ecb3-8447-db60-da63" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -2862,7 +2878,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="defe-d498-b0e6-a7fd" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="ce63-08d4-6662-783b" name="Sniper rifle and Camo cloak" hidden="false" collective="false" import="true" targetId="62c5-ddf4-a580-e914" type="selectionEntry"/>
+            <entryLink id="ce63-08d4-6662-783b" name="Scout sniper rifle and Camo cloak" hidden="false" collective="false" import="true" targetId="62c5-ddf4-a580-e914" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="e60c-f85b-2ec0-9235" name="Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="82be-0bd0-2edb-1e99">
@@ -2952,25 +2968,17 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="477d-2cff-e7f5-5452" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="8143-45e1-4e49-281f" name="Camo cloak" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fbb-2620-23e9-68f5" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7281-52e7-bc25-7e6a" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="a6c6-3622-7873-d938" name="Camo Cloak" hidden="false" targetId="81d8-993a-7624-5934" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <entryLinks>
                 <entryLink id="5b91-a027-e9db-aa3d" name="Missile launcher" hidden="false" collective="false" import="true" targetId="7140-30df-c867-af59" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec7e-4598-db97-34e1" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab87-8c16-3e97-9cf2" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="f6d3-7c1f-26c6-dc98" name="Camo cloak" hidden="false" collective="false" import="true" targetId="3baf-6762-885e-5268" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0225-a19d-ab89-3a60" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97f0-bf8f-6350-0be3" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2986,7 +2994,7 @@
               </constraints>
             </entryLink>
             <entryLink id="ef34-652f-2a6a-5cc9" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="9b48-e38f-8deb-7f0a" type="selectionEntry"/>
-            <entryLink id="7d63-f730-6ea8-ed01" name="Sniper rifle and Camo cloak" hidden="false" collective="false" import="true" targetId="62c5-ddf4-a580-e914" type="selectionEntry"/>
+            <entryLink id="7d63-f730-6ea8-ed01" name="Scout sniper rifle and Camo cloak" hidden="false" collective="false" import="true" targetId="62c5-ddf4-a580-e914" type="selectionEntry"/>
             <entryLink id="cb6a-b194-eef3-ea9e" name="Missile launcher" hidden="false" collective="false" import="true" targetId="7140-30df-c867-af59" type="selectionEntry"/>
             <entryLink id="a97e-c087-e3a8-022c" name="Special weapons" hidden="false" collective="false" import="true" targetId="b8ca-aee4-68b8-8eb8" type="selectionEntryGroup">
               <modifiers>
