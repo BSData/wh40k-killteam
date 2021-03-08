@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="31" battleScribeVersion="2.03" authorName="@Mad-Spy" authorUrl="https://discord.gg/Y5x9UnErYN" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fce0-30e5-a4fc-8736" name="Space Marines" revision="32" battleScribeVersion="2.03" authorName="@Mad-Spy" authorUrl="https://discord.gg/Y5x9UnErYN" library="true" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="6c15-6156-5ba7-10f3" name="Special Issue Ammunition">
       <characteristicTypes>
@@ -3477,18 +3477,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4567-8606-3a1e-b64d" name="Special issue boltgun" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="c672-0cbc-a228-d3c7" name="Special-issue boltgun" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">30&quot;</characteristic>
-            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Rapid Fire 1</characteristic>
-            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
-            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-2</characteristic>
-            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
-            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink id="a9d4-7bd9-fc7a-465b" name="Special-issue boltgun" hidden="false" targetId="19ac-d3f9-6852-f3a3" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
       </costs>
@@ -3671,7 +3662,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1696-0b82-f02f-3c77" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7a68-72ce-f9b9-d3f9" name="Special-issue boltgun" hidden="false" collective="false" import="true" targetId="4567-8606-3a1e-b64d" type="selectionEntry">
+            <entryLink id="7a68-72ce-f9b9-d3f9" name="Special issue boltgun" hidden="false" collective="false" import="true" targetId="4567-8606-3a1e-b64d" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc0a-367e-9bf9-f157" type="max"/>
               </constraints>
@@ -3694,6 +3685,35 @@
             <entryLink id="973f-f77e-fd2a-c768" name="Storm shield" hidden="false" collective="false" import="true" targetId="dcd7-2c59-d232-9579" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1db6-14f0-ec23-a4a5" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7e9a-9d53-0499-63e7" name="Extra weapon" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="1075-de62-6d53-eb7a" value="0.0">
+              <conditions>
+                <condition field="selections" scope="cbd1-4c72-ae04-15f9" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4567-8606-3a1e-b64d" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1075-de62-6d53-eb7a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="471d-a0b7-ae1c-3f4a" name="Special issue boltgun" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d345-5fef-0373-9344" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0aeb-f294-7790-df1e" name="Special-issue boltgun" hidden="false" targetId="19ac-d3f9-6852-f3a3" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="5792-c719-5961-3dc5" name="Combi-weapons" hidden="false" collective="false" import="true" targetId="03e3-689a-1443-24b0" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5f5-4de7-e53f-d4e2" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -3850,6 +3870,9 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cfb-0a84-83a0-d0b4" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -4065,6 +4088,9 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fe5-aa61-2fed-1b9c" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -8742,6 +8768,16 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
         <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
         <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
         <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">This weapon automatically hits its target.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="19ac-d3f9-6852-f3a3" name="Special-issue boltgun" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">30&quot;</characteristic>
+        <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Rapid Fire 1</characteristic>
+        <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+        <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-2</characteristic>
+        <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+        <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
