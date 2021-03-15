@@ -1191,6 +1191,9 @@
       <infoLinks>
         <infoLink id="e60f-9c51-3624-6e79" name="Special Issue Ammunition" hidden="false" targetId="6716-b28d-7669-437e" type="infoGroup"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="72df-333f-d44f-e598" name="Chaplain in Terminator Armour" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -5020,6 +5023,13 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
       </constraints>
       <profiles>
         <profile id="2d62-b61d-008e-2d66" name="Veteran Gunner" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <modifiers>
+            <modifier type="set" field="0a65-6cb0-f00d-e414" value="12&quot;">
+              <conditions>
+                <condition field="selections" scope="c95f-1eae-da79-71af" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1717-a715-0736-05e3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="M" typeId="0a65-6cb0-f00d-e414">6&quot;</characteristic>
             <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
@@ -5060,6 +5070,18 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
               </constraints>
             </entryLink>
           </entryLinks>
+        </entryLink>
+        <entryLink id="949b-91fb-99b8-ddbf" name="Jump Pack" hidden="false" collective="false" import="true" targetId="1717-a715-0736-05e3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="c95f-1eae-da79-71af" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdfb-06e9-444c-1844" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
