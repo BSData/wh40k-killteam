@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="41" battleScribeVersion="2.03" authorName="@Mad-Spy" authorUrl="https://discord.gg/Y5x9UnErYN" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="42" battleScribeVersion="2.03" authorName="@Mad-Spy" authorUrl="https://discord.gg/Y5x9UnErYN" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="a467-5f42-pubN89361" name="Core Manual"/>
     <publication id="a467-5f42-pubN90767" name="Rogue Trader"/>
@@ -9023,22 +9023,6 @@
         <categoryLink id="b48d-5ad8-3447-99e8" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1f7d-b8e2-dd53-d96c" name="Enforce Will" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5931-55a6-c2c6-2d5c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6edf-5fc8-f601-8563" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="a7f4-e58a-be98-99f8" name="Enforce Will" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
-              <characteristics>
-                <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">Enforce Will has a warp charge value of 8. If manifested, pick an enemy model that is within 12&quot; of this model and visible to him. You can immediately shoot with that model as if it was the Shooting phase and that model was in your kill team, or fight with that model as if it was the Fight phase and that model was in your kill team.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="8e4a-a78b-4737-5597" name="Artificer bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2af-650e-15d9-07b7" type="min"/>
@@ -9110,7 +9094,33 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5de2-92fc-1074-b124" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="6e8a-fa7b-afca-bc8e" name="Commander Psychic Powers" hidden="false" collective="false" import="true" targetId="f1f5-3b33-9be9-6aec" type="selectionEntryGroup"/>
+        <entryLink id="6e8a-fa7b-afca-bc8e" name="Commander Psychic Powers" hidden="false" collective="false" import="true" targetId="f1f5-3b33-9be9-6aec" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef27-d3c8-091c-a280" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="242c-f9ba-842a-5518" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9b6e-9156-2833-4466" name="Enforce Will" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="e23e-7542-d6c6-94d7" value="0.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e23e-7542-d6c6-94d7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c296-a951-5b0d-508b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7612-2f84-3fd9-1096" name="Enforce Will" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">Enforce Will has a warp charge value of 8. If manifested, pick an enemy model that is within 12&quot; of this model and visible to him. You can immediately shoot with that model as if it was the Shooting phase and that model was in your kill team, or fight with that model as if it was the Fight phase and that model was in your kill team.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="70.0"/>
