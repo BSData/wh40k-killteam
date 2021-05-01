@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="a467-5f42-d24c-6e5b" name="Warhammer 40,000: Kill Team (2018)" revision="43" battleScribeVersion="2.03" authorName="@Mad-Spy" authorContact="https://discord.gg/Y5x9UnErYN" authorUrl="https://bsdata.net/" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <readme></readme>
   <publications>
     <publication id="a467-5f42-pubN89361" name="Core Manual"/>
     <publication id="a467-5f42-pubN90767" name="Rogue Trader"/>
@@ -8779,7 +8778,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="494d-7e89-9e83-962b" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry">
+        <entryLink id="494d-7e89-9e83-962b" name="Logistics" hidden="false" collective="false" import="true" targetId="436b-cc7d-caf2-b09c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b78-4b06-3eba-5587" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42fe-bdb6-bdf3-7059" type="max"/>
