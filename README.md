@@ -1,4 +1,4 @@
-Warhammer 40,000: Kill Team (2018)
+Warhammer 40,000: Kill Team
 ==================================
 
 [![GitHub release](https://img.shields.io/github/release/BSData/wh40k-killteam.svg?style=flat-square)](https://github.com/BSData/wh40k-killteam/releases/latest)
