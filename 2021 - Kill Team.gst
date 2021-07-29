@@ -40,6 +40,7 @@
     <categoryEntry id="ba61-d304-9352-ec15" name="Chaos" hidden="false"/>
     <categoryEntry id="ee8c-cc44-acc3-40f0" name="Gunner" hidden="false"/>
     <categoryEntry id="b9a4-31a5-b4ed-b4c7" name="Warrior" hidden="false"/>
+    <categoryEntry id="4470-2839-f56b-81ec" name="Fighter" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7138-2b60-74ce-a90b" name="Kill Team" hidden="false"/>
