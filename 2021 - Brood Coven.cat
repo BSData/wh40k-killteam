@@ -11,13 +11,13 @@
   <sharedSelectionEntries>
     <selectionEntry id="925b-c105-4813-e376" name="Neophyte Hybrid (Gunner)" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="052f-344e-7042-b317" name="Neophyte Hybrid (Gunner)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Model">
+        <profile id="052f-344e-7042-b317" name="Neophyte Hybrid (Gunner)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
           <characteristics>
             <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
             <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
             <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
             <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="Sv" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
             <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
           </characteristics>
         </profile>
@@ -35,7 +35,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a27a-d440-8e6f-9912" type="max"/>
           </constraints>
           <profiles>
-            <profile id="cd9b-dfdc-504c-8fbd" name="⚔ Gun butt" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapon">
+            <profile id="cd9b-dfdc-504c-8fbd" name="⚔ Gun butt" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
               <characteristics>
                 <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
                 <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
@@ -46,7 +46,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" pts" typeId="3505-be44-28c9-3e64" value="0.0"/>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -59,7 +59,7 @@
           <selectionEntries>
             <selectionEntry id="d815-8fc3-8f84-359b" name="Grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="dec6-e7ed-92c2-ff66" name="⚔ Grenade launcher - Frag" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapon">
+                <profile id="dec6-e7ed-92c2-ff66" name="⚔ Grenade launcher - Frag" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
                   <characteristics>
                     <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
                     <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
@@ -68,7 +68,7 @@
                     <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="6150-173c-3dfa-afa3" name="⚔ Grenade launcher - Krak" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapon">
+                <profile id="6150-173c-3dfa-afa3" name="⚔ Grenade launcher - Krak" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
                   <characteristics>
                     <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
                     <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
@@ -78,13 +78,17 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="94b5-a028-490f-6684" name="Blast x" hidden="false" targetId="d848-be09-6d6d-4708" type="rule"/>
+                <infoLink id="a269-b3e4-b110-ed45" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+              </infoLinks>
               <costs>
-                <cost name=" pts" typeId="3505-be44-28c9-3e64" value="0.0"/>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d2bd-d594-2c11-a819" name="Webber" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="37b0-0dc4-5781-06a7" name="Webber" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapon">
+                <profile id="37b0-0dc4-5781-06a7" name="Webber" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
                   <characteristics>
                     <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
                     <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
@@ -94,8 +98,13 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="9bed-f8a3-72bb-0340" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+                <infoLink id="f843-d861-7191-fcc6" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
+                <infoLink id="6015-8a47-129c-a662" name="Stun" hidden="false" targetId="a1e3-4e0b-f7c2-eb59" type="rule"/>
+              </infoLinks>
               <costs>
-                <cost name=" pts" typeId="3505-be44-28c9-3e64" value="0.0"/>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -105,18 +114,18 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" pts" typeId="3505-be44-28c9-3e64" value="0.0"/>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
-    <profile id="c8b8-5226-756c-a886" name="Shape Reference" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Model">
+    <profile id="c8b8-5226-756c-a886" name="Shape Reference" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
       <characteristics>
         <characteristic name="M" typeId="c36f-3952-a91d-5a06">▲</characteristic>
         <characteristic name="APL" typeId="c84a-a042-6fe6-519b">⬤</characteristic>
         <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">⬛</characteristic>
         <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">⬟</characteristic>
-        <characteristic name="Sv" typeId="dd03-76d2-dda8-eca2">⌖ ⚔</characteristic>
+        <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">⌖ ⚔</characteristic>
         <characteristic name="W" typeId="db11-738c-048c-759e">💀</characteristic>
       </characteristics>
     </profile>

@@ -3,20 +3,23 @@
   <categoryEntries>
     <categoryEntry id="8dc1-46e8-f00d-0e7d" name="Death Guard" hidden="false"/>
     <categoryEntry id="2075-e773-0480-a423" name="Poxwalker" hidden="false"/>
+    <categoryEntry id="fb65-5ed8-a91f-3bc0" name="Bubonic Astartes" hidden="false"/>
+    <categoryEntry id="e54f-fe6d-91ba-bb1c" name="Plague Marine" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="289d-9f75-809b-3344" name="Poxwalker" hidden="false" collective="false" import="true" targetId="39a3-ab03-79fa-8bc6" type="selectionEntry"/>
+    <entryLink id="ee54-5537-9e54-f9f9" name="Plague Marine (Heavy Gunner)" hidden="false" collective="false" import="true" targetId="44be-12b7-c044-ca49" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="39a3-ab03-79fa-8bc6" name="Poxwalker" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="43c8-e634-7012-32e9" name="Poxwalker" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Model">
+        <profile id="43c8-e634-7012-32e9" name="Poxwalker" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
           <characteristics>
             <characteristic name="M" typeId="c36f-3952-a91d-5a06">2⬤</characteristic>
             <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
             <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
             <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="Sv" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
             <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
           </characteristics>
         </profile>
@@ -37,7 +40,7 @@
       <selectionEntries>
         <selectionEntry id="9587-e052-479b-baf4" name="Improvised weapon" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="4b70-283e-4cda-0e0e" name="⚔ Improvised weapon" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapon">
+            <profile id="4b70-283e-4cda-0e0e" name="⚔ Improvised weapon" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
               <characteristics>
                 <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
                 <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
@@ -48,23 +51,123 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" pts" typeId="3505-be44-28c9-3e64" value="0.0"/>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" pts" typeId="3505-be44-28c9-3e64" value="0.0"/>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="44be-12b7-c044-ca49" name="Plague Marine (Heavy Gunner)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6bf1-c684-1b8d-bf37" name="Plague Marine (Heavy Gunner)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">2⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a0ef-8372-7705-efbf" name="Disgustingly Resilient" hidden="false" targetId="1889-3a76-7175-56b3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e41b-ac75-da8f-3055" name="Death Guard" hidden="false" targetId="8dc1-46e8-f00d-0e7d" primary="false"/>
+        <categoryLink id="a39d-018f-0b8e-5bd7" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
+        <categoryLink id="54d5-8627-63bb-e9c0" name="Bubonic Astartes" hidden="false" targetId="fb65-5ed8-a91f-3bc0" primary="false"/>
+        <categoryLink id="6eb3-5d9b-6fd3-e372" name="Plague Marine" hidden="false" targetId="e54f-fe6d-91ba-bb1c" primary="false"/>
+        <categoryLink id="a26a-ba9a-9bf6-1b7c" name="Heavy Gunner" hidden="false" targetId="0e59-07ae-65c2-2de6" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1305-e632-237d-bcba" name="Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1ad-a245-862c-087e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="626f-b19d-b190-c713" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dfcd-b5a2-9400-8739" name="Blight launcher" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="12cb-15b6-c107-e07c" name="⌖ Blight launcher" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="02c7-2ae8-3765-6c68" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fb85-3090-e925-a021" name="Plague spewer" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="0b40-6ff2-9eb9-ce83" name="⌖ Plague spewer" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">6</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Torrent ⬤</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="ff23-5a10-a40e-1284" name="Torrent x" hidden="false" targetId="ec4b-2d70-51a7-5653" type="rule"/>
+                <infoLink id="80ad-8af7-69e5-35ac" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3709-f1db-e993-1bfa" name="Plague knife" hidden="false" collective="false" import="true" targetId="c483-729d-1dcf-f579" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9276-4a20-21c7-4219" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55a2-d941-ad29-c96e" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c483-729d-1dcf-f579" name="Plague knife" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="06d6-ba12-5bc6-5377" name="⚔ Plague knife" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/5</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
-    <profile id="67e3-d7f2-b4a9-8f05" name="Shape Reference" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Model">
+    <profile id="67e3-d7f2-b4a9-8f05" name="Shape Reference" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
       <characteristics>
         <characteristic name="M" typeId="c36f-3952-a91d-5a06">▲</characteristic>
         <characteristic name="APL" typeId="c84a-a042-6fe6-519b">⬤</characteristic>
         <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">⬛</characteristic>
         <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">⬟</characteristic>
-        <characteristic name="Sv" typeId="dd03-76d2-dda8-eca2">⌖ ⚔</characteristic>
+        <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">⌖ ⚔</characteristic>
         <characteristic name="W" typeId="db11-738c-048c-759e">💀</characteristic>
       </characteristics>
     </profile>
