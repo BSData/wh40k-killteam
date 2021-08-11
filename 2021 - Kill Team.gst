@@ -62,6 +62,7 @@
     <categoryEntry id="3198-c1ce-dfd0-fb4f" name="Leader" hidden="false"/>
     <categoryEntry id="fb89-efb1-54e4-59c5" name="Configuration" hidden="false"/>
     <categoryEntry id="8e1d-1094-f504-d8cd" name="Medic" hidden="false"/>
+    <categoryEntry id="383e-c92a-c607-c7e1" name="Fly" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7138-2b60-74ce-a90b" name="Roster" hidden="false">
@@ -193,21 +194,33 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="97d8-19ec-143d-8aad" name="Combat" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f921-8f0a-957d-d614" type="max"/>
+      </constraints>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="715c-810e-df05-01ad" name="Marksman" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fd6-9286-920e-fe26" type="max"/>
+      </constraints>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9118-a98b-0ffe-9e3d" name="Scout" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3440-43c7-2739-8a59" type="max"/>
+      </constraints>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eb50-055a-4cd2-e1d5" name="Staunch" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1694-be5a-4323-f738" type="max"/>
+      </constraints>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
@@ -853,6 +866,9 @@ Each time a friendly operative fights in combat with this weapon, in the Resolve
     </rule>
     <rule id="b30a-9fa8-7a06-ce70" name="Unwieldy" hidden="false">
       <description>An operative can only make a shooting attack with this weapon if an extra AP is subtracted to perform a Shoot action. It cannot make a shooting attack with this weapon by performing an Overwatch action.</description>
+    </rule>
+    <rule id="e2ae-574a-94ab-3550" name="Fusillade" hidden="false">
+      <description>Each time a friendly operative performs a Shoot action and selects this weapon, after selecting a valid target, you can select any number of other valid targets within ⬤ of the original target. Distribute your attack dice between the targets you have selected. Make a shooting attack with this weapon (using the same profile) against each of the targets you have selected using the attack dice you have distributed to each of them.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
