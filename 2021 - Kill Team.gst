@@ -63,6 +63,7 @@
     <categoryEntry id="fb89-efb1-54e4-59c5" name="Configuration" hidden="false"/>
     <categoryEntry id="8e1d-1094-f504-d8cd" name="Medic" hidden="false"/>
     <categoryEntry id="383e-c92a-c607-c7e1" name="Fly" hidden="false"/>
+    <categoryEntry id="c62e-f54d-e0bb-6940" name="Aeldari" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7138-2b60-74ce-a90b" name="Roster" hidden="false">
