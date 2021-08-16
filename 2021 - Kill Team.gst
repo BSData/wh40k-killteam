@@ -48,6 +48,11 @@
         <characteristicType id="4450-d14f-e45c-105e" name="Battle Scar"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="031c-1555-fc2c-3d40" name="Psychic Power">
+      <characteristicTypes>
+        <characteristicType id="3895-3533-1c76-676a" name="Effect"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="15ae-553e-01d1-23a9" name="Imperium" hidden="false"/>
@@ -64,6 +69,7 @@
     <categoryEntry id="8e1d-1094-f504-d8cd" name="Medic" hidden="false"/>
     <categoryEntry id="383e-c92a-c607-c7e1" name="Fly" hidden="false"/>
     <categoryEntry id="c62e-f54d-e0bb-6940" name="Aeldari" hidden="false"/>
+    <categoryEntry id="55b9-413d-e975-492a" name="Psyker" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7138-2b60-74ce-a90b" name="Roster" hidden="false">
