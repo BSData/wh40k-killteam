@@ -814,7 +814,7 @@
       <description>Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, your opponent can only parry with critical hits.</description>
     </rule>
     <rule id="ce9a-aa0d-7b46-3d04" name="Ceaseless" hidden="false">
-      <description>Each time a friendly operative fights in combat otr makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, you can re-roll any or all of your attack dice results of 1.</description>
+      <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, you can re-roll any or all of your attack dice results of 1.</description>
     </rule>
     <rule id="83c3-fce7-8ac1-9872" name="Hot" hidden="false">
       <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, for each attack dice result of 1 that is discarded, that operative suffers 3 mortal wounds.</description>
@@ -832,7 +832,7 @@
       <description>Each time a friendly operative makes a shooting attack with this weapon, in the select valid target step of that shooting attack, enemy operatives are not in Cover.</description>
     </rule>
     <rule id="d7a8-7b6e-b437-a6fc" name="Invulnerable Save x+" hidden="false">
-      <description>Each time a shootnig attack is made against an operative, the defender can use its invulnerable save instead of its normal Save characteristic. An invulnerable save is used like a normal Save characteristic, except that it cannot be modified in any way, and is not affected by any APx special rules (meaning the defender would use their normal Defence characteristic. x of the invulnerable save is the dice roll required for the defence dice to be successful, e.g. 4+.</description>
+      <description>Each time a shooting attack is made against an operative, the defender can use its invulnerable save instead of its normal Save characteristic. An invulnerable save is used like a normal Save characteristic, except that it cannot be modified in any way, and is not affected by any APx special rules (meaning the defender would use their normal Defence characteristic). x of the invulnerable save is the dice roll required for the defence dice to be successful, e.g. 4+.</description>
     </rule>
     <rule id="be29-25db-e215-b3b0" name="Lethal x" hidden="false">
       <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combact or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
