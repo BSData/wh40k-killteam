@@ -186,10 +186,6 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="20b9-d639-5c89-2e81" name="Chaos Space Marine (Gunner)" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1bb7-0737-2101-921d" type="max"/>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a47-6501-d634-3b24" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="0ee1-546c-6b91-e378" name="Chaos Space Marine" hidden="false" targetId="5fcf-cfed-a30d-386d" type="profile"/>
       </infoLinks>
@@ -206,10 +202,59 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd5c-ef2d-8b3b-b9e3" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70a4-d755-5c06-04da" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="9d5c-bdc7-b2a9-7201" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c305-bbd0-756b-689e" name="⌖ Meltagun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">6/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP2</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="4351-a8cf-4972-e1bc" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+                <infoLink id="b0b3-6e08-ef57-9efb" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b3fa-d0ab-4a86-9961" name="Plasma gun" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="84af-c12d-e08b-29a8" name="⌖ Plasma gun - Standard" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="1070-8b29-76c9-91c5" name="⌖ Plasma gun - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP2, Hot</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="49ea-54de-10a4-aa2f" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+                <infoLink id="efea-e603-8f6a-fbe4" name="Hot" hidden="false" targetId="83c3-fce7-8ac1-9872" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="b2f9-4e42-8b22-bb3d" name="Flamer" hidden="false" collective="false" import="true" targetId="f18c-06a7-747c-90c0" type="selectionEntry"/>
-            <entryLink id="9b9f-c2d9-733e-c19d" name="Meltagun" hidden="false" collective="false" import="true" targetId="b2ee-7d19-5b06-f304" type="selectionEntry"/>
-            <entryLink id="3160-cf64-16ff-700d" name="Plasma gun" hidden="false" collective="false" import="true" targetId="814e-a544-1fe0-d17b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -273,6 +318,9 @@
                 </entryLink>
                 <entryLink id="5a0d-2119-29ff-2de2" name="Fists" hidden="false" collective="false" import="true" targetId="bc7c-88b7-63fa-b468" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f526-3b0a-1a57-b2a0" name="Chainsword and bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -287,6 +335,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -300,6 +351,9 @@
         <entryLink id="9269-5752-1288-2e6a" name="Specialism" hidden="false" collective="false" import="true" targetId="d05c-2b48-8aa6-a042" type="selectionEntryGroup"/>
         <entryLink id="dfbf-e18b-443d-7894" name="Equipment" hidden="false" collective="false" import="true" targetId="fb15-1448-aff7-7c3b" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="558b-ce41-d9a3-1414" name="Boltgun" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -323,6 +377,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="238a-2d6d-b4e1-54a7" name="Bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -346,6 +403,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f4a2-6882-9fc9-2f03" name="Chainsword" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -369,6 +429,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e1f7-3b36-e807-f50c" name="Chaos Space Marine (Heavy Gunner)" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
@@ -405,6 +468,9 @@
                 <infoLink id="ee22-4127-465d-47cd" name="Fusillade" hidden="false" targetId="e2ae-574a-94ab-3550" type="rule"/>
                 <infoLink id="0915-2c24-7648-ff99" name="Px" hidden="false" targetId="1f11-c169-2746-13cf" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2e66-6b92-73ff-c129" name="Missile launcher" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -432,6 +498,9 @@
                 <infoLink id="83dd-396e-2257-260a" name="Blast x" hidden="false" targetId="d848-be09-6d6d-4708" type="rule"/>
                 <infoLink id="23a5-2a53-bdb5-ba95" name="Heavy" hidden="false" targetId="1e77-6974-cf90-6008" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -488,6 +557,9 @@
                 </entryLink>
                 <entryLink id="b12d-dc20-4248-3037" name="Fists" hidden="false" collective="false" import="true" targetId="bc7c-88b7-63fa-b468" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d10d-99ca-d16e-059d" name="Chainsword and bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -502,6 +574,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -515,6 +590,9 @@
         <entryLink id="b083-c0d8-077e-ac62" name="Specialism" hidden="false" collective="false" import="true" targetId="d05c-2b48-8aa6-a042" type="selectionEntryGroup"/>
         <entryLink id="a79e-af95-eaca-4434" name="Equipment" hidden="false" collective="false" import="true" targetId="fb15-1448-aff7-7c3b" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b532-b9b4-af08-5935" name="Aspiring Champion" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -552,6 +630,9 @@
                 </entryLink>
                 <entryLink id="7011-6e41-1c65-3303" name="Fists" hidden="false" collective="false" import="true" targetId="bc7c-88b7-63fa-b468" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f6ab-a55c-66d0-5aaa" name="Melee and pistol" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -586,6 +667,9 @@
                         <infoLink id="2c4b-5cbb-b61f-34ce" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
                         <infoLink id="e387-f0d9-06f7-789e" name="Hot" hidden="false" targetId="83c3-fce7-8ac1-9872" type="rule"/>
                       </infoLinks>
+                      <costs>
+                        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -613,6 +697,9 @@
                       <infoLinks>
                         <infoLink id="9d5b-b224-275b-dd4a" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
                       </infoLinks>
+                      <costs>
+                        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="29b2-3b4d-d6ee-591e" name="Power fist" hidden="false" collective="false" import="true" type="upgrade">
                       <profiles>
@@ -629,6 +716,9 @@
                       <infoLinks>
                         <infoLink id="6ec0-8a8b-24af-84ed" name="Brutal" hidden="false" targetId="16e9-a975-03a1-91c0" type="rule"/>
                       </infoLinks>
+                      <costs>
+                        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -636,6 +726,9 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -643,6 +736,9 @@
       <entryLinks>
         <entryLink id="522e-fc88-c3b2-31fa" name="Equipment" hidden="false" collective="false" import="true" targetId="fb15-1448-aff7-7c3b" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9cf5-b475-e570-6810" name="Chaos Cultist (Fighter)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -666,12 +762,18 @@
                 <entryLink id="27aa-06cb-30dc-6740" name="Autogun" hidden="false" collective="false" import="true" targetId="3f80-1b71-a82b-2976" type="selectionEntry"/>
                 <entryLink id="e67d-f07f-c6b8-75f8" name="Gun butt" hidden="false" collective="false" import="true" targetId="8ecd-7b05-c088-6728" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9b91-d4ce-dce9-f7f2" name="Brutal assault weapon and autopistol" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="ac21-6b21-ea84-c5bf" name="Autopistol" hidden="false" collective="false" import="true" targetId="917e-4947-d6a0-8482" type="selectionEntry"/>
                 <entryLink id="e309-8567-a400-0a55" name="Brutal assault weapon" hidden="false" collective="false" import="true" targetId="0ddd-2041-453c-0e9f" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -685,6 +787,9 @@
         <entryLink id="c7fb-e67a-13d7-5b10" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
         <entryLink id="ea22-443f-c57c-b57f" name="Equipment" hidden="false" collective="false" import="true" targetId="fb15-1448-aff7-7c3b" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="917e-4947-d6a0-8482" name="Autopistol" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -702,6 +807,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3f80-1b71-a82b-2976" name="Autogun" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -719,6 +827,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0ddd-2041-453c-0e9f" name="Brutal assault weapon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -736,6 +847,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8ecd-7b05-c088-6728" name="Gun butt" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -753,6 +867,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6e2a-fdd3-f90b-a4a0" name="Chaos Cultist (Gunner)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -787,6 +904,9 @@
                 <infoLink id="6f76-7f4f-5acc-afa0" name="Heavy" hidden="false" targetId="1e77-6974-cf90-6008" type="rule"/>
                 <infoLink id="4a92-ec20-4941-dc7b" name="Ceaseless" hidden="false" targetId="ce9a-aa0d-7b46-3d04" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -803,6 +923,9 @@
         <entryLink id="f8e4-875f-ffd6-314c" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
         <entryLink id="4cb3-1827-a13b-8c04" name="Equipment" hidden="false" collective="false" import="true" targetId="fb15-1448-aff7-7c3b" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a769-e6ed-4f3c-194c" name="Chaos Cultist Champion" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -826,12 +949,18 @@
                 <entryLink id="f02a-4b79-7a0c-1323" name="Autogun" hidden="false" collective="false" import="true" targetId="3f80-1b71-a82b-2976" type="selectionEntry"/>
                 <entryLink id="f9c7-50b6-32cc-360f" name="Gun butt" hidden="false" collective="false" import="true" targetId="8ecd-7b05-c088-6728" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c480-4a30-61ef-c2e9" name="Brutal assault weapon and autopistol" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="00b5-8e6c-33d4-c7ab" name="Autopistol" hidden="false" collective="false" import="true" targetId="917e-4947-d6a0-8482" type="selectionEntry"/>
                 <entryLink id="b129-0054-698e-5fce" name="Brutal assault weapon" hidden="false" collective="false" import="true" targetId="0ddd-2041-453c-0e9f" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f817-20f3-2483-d352" name="Brutal assault weapon and shotgun" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
@@ -851,11 +980,17 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="52ac-e321-abab-d81a" name="Brutal assault weapon" hidden="false" collective="false" import="true" targetId="0ddd-2041-453c-0e9f" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -869,6 +1004,9 @@
         <entryLink id="9a08-5a22-54d2-75dd" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
         <entryLink id="2830-b8c3-6795-f7e2" name="Equipment" hidden="false" collective="false" import="true" targetId="fb15-1448-aff7-7c3b" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -1142,7 +1280,7 @@
         <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">⬟</characteristic>
         <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">⚔ 
 ⌖ </characteristic>
-        <characteristic name="W" typeId="db11-738c-048c-759e"></characteristic>
+        <characteristic name="W" typeId="db11-738c-048c-759e"/>
       </characteristics>
     </profile>
     <profile id="5fcf-cfed-a30d-386d" name="Chaos Space Marine" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">

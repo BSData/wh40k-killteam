@@ -22,7 +22,7 @@
       </constraints>
       <categoryLinks>
         <categoryLink id="8cc2-68e8-1757-efba" name="Configuration" hidden="false" targetId="fb89-efb1-54e4-59c5" primary="false"/>
-		<categoryLink id="7f00-a331-e0f2-b17b" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
+        <categoryLink id="7f00-a331-e0f2-b17b" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
         <categoryLink id="3fae-a477-9ae8-2a61" name="Leader" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2318-54c1-a964-dcbf" type="max"/>
@@ -616,7 +616,7 @@
                 <profile id="cd03-bfea-f96b-2db1" name="⌖ Plasma pistol - Standard" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
                   <characteristics>
                     <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
                     <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
                     <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1</characteristic>
                     <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
@@ -625,7 +625,7 @@
                 <profile id="e047-0937-52a4-5585" name="⌖ Plasma pistol - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
                   <characteristics>
                     <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
                     <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
                     <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP2, Hot</characteristic>
                     <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
@@ -860,17 +860,37 @@
         <categoryLink id="c697-45a7-6e53-a882" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
         <categoryLink id="a529-ac30-0b5f-b590" name="Gunner Veteran" hidden="false" targetId="900c-91f5-1f16-b811" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1e90-800a-6195-7e22" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2948-436d-2af8-ddec" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1177-556a-05d7-8607" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="887f-d999-0b34-117a" name="⌖ Meltagun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">6/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP2</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c390-789d-9cd8-4819" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+            <infoLink id="a32e-4156-8c6e-4e56" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="6090-ea86-76eb-852b" name="Bayonet" hidden="false" collective="false" import="true" targetId="d4e8-fa0c-0ead-0ed8" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6c5-5288-3f81-738a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04b9-5915-4cc9-7c95" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="891e-b4df-862a-e689" name="Meltagun" hidden="false" collective="false" import="true" targetId="b2ee-7d19-5b06-f304" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5efa-de85-6fd2-d902" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4205-9ed0-3683-afc1" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="148a-24c8-b509-2530" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
@@ -948,17 +968,46 @@
         <categoryLink id="dcb6-bc2d-2ffa-4327" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
         <categoryLink id="0947-a661-7b3c-ba95" name="Gunner Veteran" hidden="false" targetId="900c-91f5-1f16-b811" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="278f-dcab-5e7b-a30e" name="Plasma gun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b46b-df97-f667-72fd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4077-ea28-3610-5edc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4c43-0c30-519a-c86f" name="⌖ Plasma gun - Standard" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="b0f2-ed5e-3af9-ae84" name="⌖ Plasma gun - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP2, Hot</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="a9bf-2edd-26fa-2551" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+            <infoLink id="4084-a88d-96c7-518d" name="Hot" hidden="false" targetId="83c3-fce7-8ac1-9872" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="71d5-9dd1-61a3-a231" name="Bayonet" hidden="false" collective="false" import="true" targetId="d4e8-fa0c-0ead-0ed8" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab5-ba85-9dab-3034" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd27-d274-239b-b047" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c4aa-15ca-66c9-dd22" name="Plasma gun" hidden="false" collective="false" import="true" targetId="814e-a544-1fe0-d17b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d4-6f34-5657-9b06" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72f2-4c83-c154-593f" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="12b8-21c1-d1c9-db5d" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>

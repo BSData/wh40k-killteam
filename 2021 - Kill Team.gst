@@ -108,55 +108,6 @@
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b2ee-7d19-5b06-f304" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="733b-bd83-ffb8-2f35" name="⌖ Meltagun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-          <characteristics>
-            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
-            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">6/3</characteristic>
-            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP2</characteristic>
-            <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW4</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="8621-5d0b-c185-1a36" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
-        <infoLink id="7540-071a-4919-46eb" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="814e-a544-1fe0-d17b" name="Plasma gun" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="e6a5-641f-ab7d-2306" name="⌖ Plasma gun - Standard" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-          <characteristics>
-            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
-            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
-            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
-            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0e93-05ee-6ce4-04a0" name="⌖ Plasma gun - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-          <characteristics>
-            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
-            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
-            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP2, Hot</characteristic>
-            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="100c-75e4-a916-29d9" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
-        <infoLink id="f9a5-183e-b391-c813" name="Hot" hidden="false" targetId="83c3-fce7-8ac1-9872" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="ce6c-1c61-35c2-8202" name="Game Type" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe30-9a58-451c-a638" type="min"/>
