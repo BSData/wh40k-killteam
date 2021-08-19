@@ -22,6 +22,7 @@
       </constraints>
       <categoryLinks>
         <categoryLink id="8cc2-68e8-1757-efba" name="Configuration" hidden="false" targetId="fb89-efb1-54e4-59c5" primary="false"/>
+		<categoryLink id="7f00-a331-e0f2-b17b" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
         <categoryLink id="3fae-a477-9ae8-2a61" name="Leader" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2318-54c1-a964-dcbf" type="max"/>
@@ -83,6 +84,18 @@
         <categoryLink id="f476-5a6e-b6b5-f900" name="Comms Veteran" hidden="false" targetId="6790-22ed-c8fa-6309" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7425-00a8-25fc-0f3e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0b3d-436f-a1ac-392a" name="Trooper Veteran" hidden="false" targetId="ef4a-6883-982a-2b4b" primary="false">
+          <modifiers>
+            <modifier type="set" field="10a4-98b0-e27a-85d8" value="4.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e147-08fc-a35d-ac3a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10a4-98b0-e27a-85d8" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
