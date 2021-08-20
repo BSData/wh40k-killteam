@@ -54,7 +54,6 @@
     <forceEntry id="8ca8-23a2-6000-1c2b" name="Tempestus Scion Fire Team" hidden="false">
       <categoryLinks>
         <categoryLink id="643c-2268-d929-7936" name="Configuration" hidden="false" targetId="fb89-efb1-54e4-59c5" primary="false"/>
-        <categoryLink id="d4bd-fd55-236b-02d1" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
         <categoryLink id="8513-b380-60f0-b150" name="Leader" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4968-ffaf-6652-a54a" type="max"/>
@@ -366,6 +365,11 @@
         <categoryLink id="74cc-3185-1ebf-f5dd" name="New CategoryLink" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="a089-3c40-b9d4-070b" name="Guardsmen Order Reference" hidden="false" collective="false" import="true" targetId="49ca-4e5b-9793-886d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6346-cc97-1582-2171" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="04bf-1f2d-e94e-aa10" name="Tempestus Scion (Trooper)" hidden="false" collective="false" import="true" type="model">
@@ -624,24 +628,24 @@
     </selectionEntry>
     <selectionEntry id="49ca-4e5b-9793-886d" name="Guardsmen Order Reference" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="1691-8ceb-08bc-bd79" name="Move! Move! Move!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+        <profile id="1691-8ceb-08bc-bd79" name="Move! Move! Move! (1CP)" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
           <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Add ▲ to the Movement characteristics of each friendly operative that was issued this order.</characteristic>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Until the end of the Turning Point, each time a friendly operative that was isued this Guardsman Order is activated, until the end of that activation, add ▲ to its Movement characteristic.</characteristic>
           </characteristics>
         </profile>
-        <profile id="00ef-446d-8f15-e945" name="Take Aim!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+        <profile id="00ef-446d-8f15-e945" name="Take Aim! (1CP)" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
           <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time a friendly operative that was issued this order makes a shooting attack, in the Roll Attack Dice step of that shooting attack, you can re-roll any or all of your attack dice results of 1. This order has no effect on shooting attacks made with the mortar barrage and remote mine ranged weapons, or attacks made with tactical assets.</characteristic>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Until the end of the Turning Point, each time a friendly operative that was issued this Guardsman Order makes a shooting attack, in the Roll Attack Dice step of that shooting attack, you can re-roll any or all of your attack dice results of 1.</characteristic>
           </characteristics>
         </profile>
-        <profile id="4a82-d92a-8bd6-c305" name="Hold Position!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+        <profile id="4a82-d92a-8bd6-c305" name="Hold Position! (1CP)" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
           <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time a shooting attack is made against a friendly operative that was issued this order, in the Roll Defence Dice step of that shooting attack, if that Operative is in Cover, you can re-roll any or all of your defence dice results of 1. Friendly operatives that were issued this order cannot perform Dash or Charge actions.</characteristic>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Until the end of the Turning Point, each time a shooting attack is made against a friendly operative that was issued this Guardsman Order, in the Roll Defence Dice step of that shooting attack, if it is in Cover, you can re-roll any or all of your defence dice results of 1.</characteristic>
           </characteristics>
         </profile>
-        <profile id="16ab-d45f-d653-bbeb" name="Fix Bayonets!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+        <profile id="16ab-d45f-d653-bbeb" name="Fix Bayonets! (1CP)" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
           <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time a friendly operative that was issued this order fights in combat, in the Roll Attack Dice step of that combat, you can re-roll any or all of your attack dice results of 1.</characteristic>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time a friendly operative that was issued this Guardsman Order fights in combat, in the Roll Attack Dice step of that combat, you can re-roll any or all of your attack dice results of 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1720,9 +1724,8 @@
     </profile>
     <profile id="7962-4788-186b-027f" name="Guardsman Orders" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
       <characteristics>
-        <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once in each Strategy phase, when it is your turn to use a Strategic Ploy, if this operative is in the killzone, it can issue a Guardsman Order: if it does, all friendly VETERAN GUARDSMAN operatives within ⬟ of and Visible to it are issued a Guardsman Order.
-
-Each time a friendly operative issues a Guardsman Order, select one Guardsman Order to take effect until the end of the Turning Point.</characteristic>
+        <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time you use one of the Strategic Ploys. it takes effect as a Guardsman Order. All friendly TEMPESTUS SCION operative and all friendly GUARDSMAN operatives within ⬟ of and Visibel to a friendly GUARDSMAN SERGEANT operative are issued that order.
+</characteristic>
       </characteristics>
     </profile>
     <profile id="eac4-ea4e-bf5f-f806" name="Guardsman" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
