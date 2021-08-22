@@ -73,14 +73,22 @@
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7138-2b60-74ce-a90b" name="Roster" hidden="false">
-      <constraints>
-        <constraint field="c61a-51a3-370d-bf55" scope="force" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81eb-67af-8920-4d3b" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="d5be-41bd-807a-4bd8" name="Configuration" hidden="false" targetId="fb89-efb1-54e4-59c5" primary="false"/>
         <categoryLink id="0c8c-a792-3d9b-7bef" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
         <categoryLink id="d670-aaeb-206e-58ac" name="Leader" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="false"/>
-        <categoryLink id="3dec-25e4-dcf8-3fb8" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false"/>
+        <categoryLink id="3dec-25e4-dcf8-3fb8" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false">
+          <modifiers>
+            <modifier type="decrement" field="2125-5680-e8b9-6f9c" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="7138-2b60-74ce-a90b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2125-5680-e8b9-6f9c" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
