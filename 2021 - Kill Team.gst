@@ -70,6 +70,7 @@
     <categoryEntry id="383e-c92a-c607-c7e1" name="Fly" hidden="false"/>
     <categoryEntry id="c62e-f54d-e0bb-6940" name="Aeldari" hidden="false"/>
     <categoryEntry id="55b9-413d-e975-492a" name="Psyker" hidden="false"/>
+    <categoryEntry id="c5c1-db85-5269-3c3c" name="Drone" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7138-2b60-74ce-a90b" name="Roster" hidden="false">
@@ -89,6 +90,7 @@
             <constraint field="selections" scope="roster" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2125-5680-e8b9-6f9c" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="adfa-b821-d9f9-04db" name="Drone" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
