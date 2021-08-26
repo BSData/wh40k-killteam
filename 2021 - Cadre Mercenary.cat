@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="399f-3c25-a4fe-d4be" name="Cadre Mercenary" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="6fbb-f054-7e20-1333" name="T&apos;au Empire" hidden="false"/>
+    <categoryEntry id="baa9-98be-400d-0c04" name="Kroot" hidden="false"/>
+    <categoryEntry id="ef70-b683-a42d-fe29" name="Carnivore" hidden="false"/>
+    <categoryEntry id="17cc-8d13-74d5-21f0" name="Cadre Mercenary" hidden="false"/>
+    <categoryEntry id="aa8b-08d8-22ca-714f" name="Hound" hidden="false"/>
+    <categoryEntry id="ec57-1c03-a3a6-8ba3" name="Krootox" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="6fff-a0f4-8cab-facd" name="Cadre Mercenary Kill Team" hidden="false">
+      <categoryLinks>
+        <categoryLink id="17bb-8089-8f40-ca85" name="Configuration" hidden="false" targetId="fb89-efb1-54e4-59c5" primary="false"/>
+        <categoryLink id="cbb2-3fd9-8dc5-e560" name="Leader" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cdbc-8298-a859-c535" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="fbc2-1671-b3d7-61af" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false"/>
+        <categoryLink id="a96f-1146-4c10-d60e" name="Kroot" hidden="false" targetId="baa9-98be-400d-0c04" primary="false">
+          <modifiers>
+            <modifier type="decrement" field="8725-8e9b-9eb4-2a0e" value="1.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec57-1c03-a3a6-8ba3" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="13.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8725-8e9b-9eb4-2a0e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5681-d6b8-c1a9-a56b" name="Hound" hidden="false" targetId="aa8b-08d8-22ca-714f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c8c-49a5-8452-f086" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a326-f91e-10b0-5d12" name="Krootox" hidden="false" targetId="ec57-1c03-a3a6-8ba3" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5450-f133-175c-fa23" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink id="d681-d123-82f6-ebc9" name="Kroot Carnivore (Warrior)" hidden="false" collective="false" import="true" targetId="4610-8b6b-f1d5-7899" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f8ce-2b22-31c8-6a2d" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6c55-7322-a7e5-c787" name="Kroot Carnivore (Leader)" hidden="false" collective="false" import="true" targetId="4eb1-2921-1f03-fb63" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="90ee-3023-d06c-259b" name="New CategoryLink" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="aaa0-fb5e-f9ba-4518" name="Kroot Hound" hidden="false" collective="false" import="true" targetId="ef16-f02a-05f8-c3f0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7366-01fc-6997-7a7f" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a9ad-a7e5-5cd5-f2eb" name="Krootox" hidden="false" collective="false" import="true" targetId="dc18-8b3d-8cd7-841d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="68c4-39fe-a326-2f09" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="4610-8b6b-f1d5-7899" name="Kroot Carnivore (Warrior)" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="450d-1d46-df04-bd95" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="de4c-5f42-0681-9478" name="Masters of Camouflage" hidden="false" targetId="0994-6395-0ef0-d581" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="95dd-0298-9b60-d72d" name="Cadre Mercenary" hidden="false" targetId="17cc-8d13-74d5-21f0" primary="false"/>
+        <categoryLink id="44e0-8794-57d0-a91d" name="T&apos;au Empire" hidden="false" targetId="6fbb-f054-7e20-1333" primary="false"/>
+        <categoryLink id="8730-833a-4b97-113d" name="Kroot" hidden="false" targetId="baa9-98be-400d-0c04" primary="false"/>
+        <categoryLink id="0a78-876e-e4e3-1c38" name="Carnivore" hidden="false" targetId="ef70-b683-a42d-fe29" primary="false"/>
+        <categoryLink id="5a72-bc41-b362-e530" name="Warrior" hidden="false" targetId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="25bf-bac0-06c7-fcd2" name="Kroot rifle" hidden="false" collective="false" import="true" targetId="ae59-fe22-6fe3-1ab5" type="selectionEntry"/>
+        <entryLink id="8ead-965b-15cb-673e" name="Rifle blades" hidden="false" collective="false" import="true" targetId="8afb-70c0-c6c1-86d9" type="selectionEntry"/>
+        <entryLink id="dee7-457d-d255-791c" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="c01c-592e-a9b6-207d" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup"/>
+        <entryLink id="2979-be5b-7a4a-649a" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup"/>
+        <entryLink id="e7c5-4eb5-5cb4-c59e" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup"/>
+        <entryLink id="c09d-0622-bd12-7a0f" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="0283-5040-a287-5739" name="Equipment" hidden="false" collective="false" import="true" targetId="4cc1-75b2-3ce2-a67d" type="selectionEntryGroup"/>
+        <entryLink id="9e70-f69a-bcab-47e7" name="Specialism" hidden="false" collective="false" import="true" targetId="2839-ddfd-d275-feb3" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4eb1-2921-1f03-fb63" name="Kroot Carnivore (Leader)" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="1cf4-321c-6d50-143a" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6fff-a0f4-8cab-facd" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cf4-321c-6d50-143a" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="003a-a13a-8f7c-f52e" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="78db-8e86-a621-e56d" name="Masters of Camouflage" hidden="false" targetId="0994-6395-0ef0-d581" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e9be-de07-f088-3b38" name="Cadre Mercenary" hidden="false" targetId="17cc-8d13-74d5-21f0" primary="false"/>
+        <categoryLink id="f1ee-c2a4-d635-78e6" name="T&apos;au Empire" hidden="false" targetId="6fbb-f054-7e20-1333" primary="false"/>
+        <categoryLink id="61b8-88be-a8dc-e15d" name="Kroot" hidden="false" targetId="baa9-98be-400d-0c04" primary="false"/>
+        <categoryLink id="33cf-566f-3d87-db34" name="Carnivore" hidden="false" targetId="ef70-b683-a42d-fe29" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="beaa-c392-b14c-d789" name="Kroot rifle" hidden="false" collective="false" import="true" targetId="ae59-fe22-6fe3-1ab5" type="selectionEntry"/>
+        <entryLink id="7081-494d-69e8-803a" name="Rifle blades" hidden="false" collective="false" import="true" targetId="8afb-70c0-c6c1-86d9" type="selectionEntry"/>
+        <entryLink id="4aba-1681-8859-8091" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="f1b8-93dc-39f6-efcd" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup"/>
+        <entryLink id="24b0-633b-2d11-d07b" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup"/>
+        <entryLink id="6c1a-ed02-abe8-87fd" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup"/>
+        <entryLink id="6c7e-1198-7451-6f6a" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="8fe1-540a-91b0-a9e9" name="Equipment" hidden="false" collective="false" import="true" targetId="4cc1-75b2-3ce2-a67d" type="selectionEntryGroup"/>
+        <entryLink id="0507-767f-fd0d-88d5" name="Specialism" hidden="false" collective="false" import="true" targetId="2839-ddfd-d275-feb3" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8afb-70c0-c6c1-86d9" name="Rifle blades" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31b9-01fe-dc67-8eff" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a72-4907-2bb9-6961" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0eb6-5465-2569-912d" name="⚔ Rifle blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ae59-fe22-6fe3-1ab5" name="Kroot rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80be-d2ef-7a17-f9ad" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf6b-17a1-195f-02e2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9560-6942-0ed2-7182" name="⌖ Kroot rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ef16-f02a-05f8-c3f0" name="Kroot Hound" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="73cd-ae52-2ebb-6c26" name="Kroot Hound" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">4⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eacf-3a24-498f-bc6e" name="Hunting Beast" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative cannot perform mission actions and cannot be equipped with equipment.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="189c-09bd-849a-4679" name="Masters of Camouflage" hidden="false" targetId="0994-6395-0ef0-d581" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3e19-6841-a77d-413a" name="Cadre Mercenary" hidden="false" targetId="17cc-8d13-74d5-21f0" primary="false"/>
+        <categoryLink id="7d21-5c8f-966d-43a0" name="T&apos;au Empire" hidden="false" targetId="6fbb-f054-7e20-1333" primary="false"/>
+        <categoryLink id="edd2-525d-9d88-baed" name="Kroot" hidden="false" targetId="baa9-98be-400d-0c04" primary="false"/>
+        <categoryLink id="2c22-12fa-5fdc-e48d" name="Hound" hidden="false" targetId="aa8b-08d8-22ca-714f" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="bcbc-c4e4-d2e8-1bfb" name="Ripping fangs" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c3d-5dc2-c0d7-c7b9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33fb-7bb7-9ba0-6c2d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3ef8-c81e-dcd3-3bc6" name="⚔ Ripping fangs" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="d367-b111-e24b-46a2" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="b1cb-02b7-9812-1bfa" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="6c4a-cadc-21af-db79" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup"/>
+        <entryLink id="3e53-9e5c-5f14-0e78" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup"/>
+        <entryLink id="1117-c837-9d3c-18e8" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="a280-6d29-2e89-fd8e" name="Specialism" hidden="false" collective="false" import="true" targetId="2839-ddfd-d275-feb3" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dc18-8b3d-8cd7-841d" name="Krootox" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8129-ed08-66ca-872a" name="Krootox" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">16</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="409b-1b7f-ef22-ccc2" name="Cadre Mercenary" hidden="false" targetId="17cc-8d13-74d5-21f0" primary="false"/>
+        <categoryLink id="de56-602f-ee8c-1ece" name="T&apos;au Empire" hidden="false" targetId="6fbb-f054-7e20-1333" primary="false"/>
+        <categoryLink id="1387-cc8b-958d-c80c" name="Kroot" hidden="false" targetId="baa9-98be-400d-0c04" primary="false"/>
+        <categoryLink id="8818-8d86-9aad-2e6e" name="Krootox" hidden="false" targetId="ec57-1c03-a3a6-8ba3" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f197-b74f-80fb-a12d" name="Kroot gun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2541-56f8-1697-3f9d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a84-f6bd-59e6-c62c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b5a9-ccf9-345d-8ac6" name="⌖ Kroot gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="3491-6b7d-a181-2ec5" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9d8c-12fd-88de-8408" name="Krootox fists" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e4c-9ec7-4bc1-671e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dfc-1b5d-3737-2b6f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="eb37-32a1-8bca-6dcd" name="⚔ Krootox fists" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Brutal</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b133-8892-4171-0aae" name="Brutal" hidden="false" targetId="16e9-a975-03a1-91c0" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="ce77-a4cd-85af-d9b1" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="9f02-98bb-ff07-db9d" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup"/>
+        <entryLink id="6240-ea0c-c2c3-7360" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup"/>
+        <entryLink id="4a9d-57c4-41ab-4e02" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup"/>
+        <entryLink id="102e-c037-aee1-be56" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="2165-8f50-d9dd-be2f" name="Specialism" hidden="false" collective="false" import="true" targetId="2839-ddfd-d275-feb3" type="selectionEntryGroup"/>
+        <entryLink id="e090-9ccd-bcf7-8dec" name="Equipment" hidden="false" collective="false" import="true" targetId="4cc1-75b2-3ce2-a67d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="2839-ddfd-d275-feb3" name="Specialism" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82af-b9b8-518f-aaf1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb80-d070-7305-a58d" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="718a-3f47-0426-9f93" name="Combat" hidden="false" collective="false" import="true" targetId="97d8-19ec-143d-8aad" type="selectionEntry"/>
+        <entryLink id="06db-be2e-d869-ec2e" name="Marksman" hidden="false" collective="false" import="true" targetId="715c-810e-df05-01ad" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa8b-08d8-22ca-714f" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="c8db-8078-f584-1683" name="Scout" hidden="false" collective="false" import="true" targetId="9118-a98b-0ffe-9e3d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec57-1c03-a3a6-8ba3" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="a341-1d7d-fb64-6aa7" name="Staunch" hidden="false" collective="false" import="true" targetId="eb50-055a-4cd2-e1d5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec57-1c03-a3a6-8ba3" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4cc1-75b2-3ce2-a67d" name="Equipment" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7138-2b60-74ce-a90b" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="c61a-51a3-370d-bf55" scope="roster" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9c1-769a-72b0-cc9a" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="b9e8-4a60-50eb-9f9a" name="Kroot Hunting Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05bf-70fd-b503-c787" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="569e-c696-04de-e6b0" name="⌖ Kroot Hunting Rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Heavy, Silent</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="12b0-ed83-a7e1-c112" name="Heavy" hidden="false" targetId="1e77-6974-cf90-6008" type="rule"/>
+            <infoLink id="530e-dc3d-5115-1fc8" name="Silent" hidden="false" targetId="ce60-8109-69c9-3908" type="rule"/>
+            <infoLink id="567c-1da4-ca89-dea9" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a043-d495-a844-8096" name="Sure-foot Charm*" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11e6-b05a-1867-c3a4" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5722-839d-f94b-ba1c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="36d5-bb82-1795-1fca" name="Sure-foot Charm" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative is activated, you can select one other ready friendly CADRE MERCENARY operative within ⬛ of and Visible to it. After this operative&apos;s activation ends, you can activate that friendly operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cc73-6511-4d0c-60a3" name="Skinning Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cce2-ec09-7395-870c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3804-cbe6-c223-2bc5" name="⚔ Skinning blade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/5</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="23d9-02a0-1741-c9c0" name="Trophy Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c15-1b41-620b-f790" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c699-d178-4cb9-f1ac" name="⌖ Trophy Pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced, Blast ▲, Rng ⬟</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="5883-17a4-c319-1d3a" name="Balanced" hidden="false" targetId="547c-e6e5-64d4-a519" type="rule"/>
+            <infoLink id="7a86-84ac-0603-b013" name="Blast x" hidden="false" targetId="d848-be09-6d6d-4708" type="rule"/>
+            <infoLink id="e790-072b-91e3-a140" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="de80-8b6d-fa7f-5097" name="Bolas" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="168d-abc3-4416-5c67" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5c62-0059-822f-8c8d" name="Bolas (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative Visible to and within ⬟ of this operative, then roll three D6 and add the results together. If the total is greater than that of the enemy operative&apos;s Wounds characteristic, subtract 1 from its APL. This operative can only perform this action once, and cannot perform this action while within Engagement Range of enemy operatives.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="8536-aceb-18ee-99c6" name="Shape Reference" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+      <characteristics>
+        <characteristic name="M" typeId="c36f-3952-a91d-5a06">▲</characteristic>
+        <characteristic name="APL" typeId="c84a-a042-6fe6-519b">⬤</characteristic>
+        <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">⬛</characteristic>
+        <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">⬟</characteristic>
+        <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">⌖ 
+⚔ </characteristic>
+        <characteristic name="W" typeId="db11-738c-048c-759e">💀</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
