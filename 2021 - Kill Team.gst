@@ -408,7 +408,7 @@
           <profiles>
             <profile id="a326-6ca7-5a01-022a" name="Sharpshooter" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
               <characteristics>
-                <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">Each time this operative performs a Shoot action, when you would retain attack dice for that action&apos;s shooting attack, if it has not performed a Normal Move, Fall Back or Charge action during that activation, you can select one fo your results of 5+ to be retained as a critical hit.</characteristic>
+                <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">Each time this operative performs a Shoot action, when you would retain attack dice for that action&apos;s shooting attack, if it has not performed a Normal Move, Fall Back or Charge action during that activation, you can select one of your results of 5+ to be retained as a critical hit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -796,7 +796,7 @@
       <description>Each time a shooting attack is made against an operative, the defender can use its invulnerable save instead of its normal Save characteristic. An invulnerable save is used like a normal Save characteristic, except that it cannot be modified in any way, and is not affected by any APx special rules (meaning the defender would use their normal Defence characteristic). x of the invulnerable save is the dice roll required for the defence dice to be successful, e.g. 4+.</description>
     </rule>
     <rule id="be29-25db-e215-b3b0" name="Lethal x" hidden="false">
-      <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combact or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+      <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
     </rule>
     <rule id="1eb0-6ad3-3e5a-d8ec" name="Limited" hidden="false">
       <description>This weapon can only be selected for use once per battle. If the weapon has a special rule that would allow it to make more than one shooting attack for an action (e.g. Blast), make each of those attacks as normal.</description>
@@ -805,7 +805,7 @@
       <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, for each critical hit retained, inflict x mortal wounds on the target. x is the number after the weapon&apos;s MW, e.g. MW3.</description>
     </rule>
     <rule id="c091-97f7-8640-5e56" name="No Cover" hidden="false">
-      <description>Each time a friendly operative makes a shooting attack with this weapon, for that shooting attack, defence dice cannot be automatically retianed as a result of Cover (they must be rolled instead).</description>
+      <description>Each time a friendly operative makes a shooting attack with this weapon, for that shooting attack, defence dice cannot be automatically retained as a result of Cover (they must be rolled instead).</description>
     </rule>
     <rule id="1f11-c169-2746-13cf" name="Px" hidden="false">
       <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, if you retain any critical hits, the weapon gains the APx rule for that shooting attack. x is the number after the weapon&apos;s P, e.g. P1.</description>
