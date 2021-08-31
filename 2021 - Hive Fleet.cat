@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="72dc-a368-6033-3922" name="Hive Fleet" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="72dc-a368-6033-3922" name="Hive Fleet" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b3ce-5f83-362e-98bb" name="Hive Fleet" hidden="false"/>
     <categoryEntry id="bdc3-c91d-ac0f-26c2" name="Tyranid" hidden="false"/>
@@ -346,8 +346,18 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc68-f9ab-335b-ec28" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="5c06-718b-5d7e-50cd" name="Scything talons" hidden="false" collective="false" import="true" targetId="2e9e-d011-bbe8-1552" type="selectionEntry"/>
-        <entryLink id="38f8-ca97-4c18-5ffe" name="Rending claws" hidden="false" collective="false" import="true" targetId="c462-5c7a-9b1d-dfb6" type="selectionEntry"/>
+        <entryLink id="5c06-718b-5d7e-50cd" name="Scything talons" hidden="false" collective="false" import="true" targetId="2e9e-d011-bbe8-1552" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ea-a783-1925-9436" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a37a-c456-1a8e-b36d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="38f8-ca97-4c18-5ffe" name="Rending claws" hidden="false" collective="false" import="true" targetId="c462-5c7a-9b1d-dfb6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e40b-ba21-cf10-7485" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fde7-3082-f177-81ef" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
@@ -607,6 +617,11 @@
             <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="337a-2e5b-e4e3-f489" value="2/3">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65e4-e5ed-d212-6cb0" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -885,6 +900,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d27b-bbb0-e1f3-9e79" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="af8f-4ac8-c119-a1a2" name="Claws" hidden="false" collective="false" import="true" targetId="a927-858b-0ffd-0f01" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
@@ -953,6 +969,7 @@
         <entryLink id="5700-ff10-8537-0889" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
         <entryLink id="3535-f59a-efe0-f15d" name="Equipment" hidden="false" collective="false" import="true" targetId="fbd6-e005-c86c-217a" type="selectionEntryGroup"/>
         <entryLink id="1b35-40ea-550f-e15c" name="Specialism" hidden="false" collective="false" import="true" targetId="8c89-d00d-4963-4edd" type="selectionEntryGroup"/>
+        <entryLink id="94e0-3cda-8db1-8fd2" name="Claws" hidden="false" collective="false" import="true" targetId="a927-858b-0ffd-0f01" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
@@ -982,6 +999,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27ee-b1a5-d14a-9e59" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="7593-2cd5-de11-486d" name="Claws" hidden="false" collective="false" import="true" targetId="a927-858b-0ffd-0f01" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
