@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="78ae-9b9e-d839-725c" name="Space Marine" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="78ae-9b9e-d839-725c" name="Space Marine" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c6d4-8f35-b8e5-d319" name="Adeptus Astartes" hidden="false"/>
     <categoryEntry id="09fb-fa9f-6d29-e39d" name="Primaris" hidden="false"/>
@@ -1271,11 +1271,14 @@
             <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
             <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/7</characteristic>
-            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Brutal</characteristic>
             <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="9453-fd8d-880a-2769" name="Brutal" hidden="false" targetId="16e9-a975-03a1-91c0" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
@@ -3963,7 +3966,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="1.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="985f-b8d3-2e63-8eed" name="Grav-chute" hidden="false" collective="false" import="true" type="upgrade">
@@ -4003,6 +4006,31 @@
           </profiles>
           <costs>
             <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f900-09de-2c4e-3ef9" name="Krak Grenade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db9c-e09e-b24e-528d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="710a-dd93-141c-bf89" name="⌖ Krak grenade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Limited, AP1, Indirect</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="4bfa-f40a-a28c-1e2c" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+            <infoLink id="f293-7834-364a-2d69" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+            <infoLink id="0f5f-2b1c-99e2-2d2f" name="Limited" hidden="false" targetId="1eb0-6ad3-3e5a-d8ec" type="rule"/>
+            <infoLink id="18f8-b567-224e-9067" name="Indirect" hidden="false" targetId="653d-16a5-eefb-8b71" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
