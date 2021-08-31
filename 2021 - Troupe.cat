@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7dce-23ed-9607-16ae" name="Troupe" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7dce-23ed-9607-16ae" name="Troupe" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0eb1-3543-bb77-7baa" name="Player" hidden="false"/>
     <categoryEntry id="6d00-9251-6013-c017" name="Harlequins" hidden="false"/>
@@ -22,7 +22,7 @@
         </categoryLink>
         <categoryLink id="a4de-bd1d-5521-2bdf" name="Player" hidden="false" targetId="0eb1-3543-bb77-7baa" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e3d-90d1-c444-cf33" type="max"/>
+            <constraint field="selections" scope="force" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e3d-90d1-c444-cf33" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -257,7 +257,26 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c475-9b40-652e-2c15" name="Melee weapon" hidden="false" collective="false" import="true" targetId="cc96-8d5f-ddf0-4f3d" type="selectionEntryGroup"/>
+        <entryLink id="c475-9b40-652e-2c15" name="Melee weapon" hidden="false" collective="false" import="true" targetId="cc96-8d5f-ddf0-4f3d" type="selectionEntryGroup">
+          <selectionEntries>
+            <selectionEntry id="501e-fed9-48f7-adad" name="Power weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="3eef-dbdc-62c2-a4ff" name="⚔ Power weapon" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="55fe-c61a-cac5-6d08" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
         <entryLink id="be71-90db-87d8-9090" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
         <entryLink id="3a23-d841-2433-91db" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup"/>
         <entryLink id="7b40-e134-3eed-6fa6" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup"/>
