@@ -101,12 +101,24 @@
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8b76-3348-046e-220d" type="greaterThan"/>
               </conditions>
             </modifier>
+            <modifier type="decrement" field="6532-edc4-efae-4f6c" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc11-921b-fa68-38d1" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6532-edc4-efae-4f6c" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="9f2e-e611-58d2-d009" name="Drone" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false">
+          <modifiers>
+            <modifier type="decrement" field="5364-e5dc-3776-f83f" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc11-921b-fa68-38d1" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5364-e5dc-3776-f83f" type="max"/>
           </constraints>
@@ -257,6 +269,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="9800-dba5-5aba-9c93" name="MV36 Guardian Drone" hidden="false" collective="false" import="true" targetId="f0cd-0e8e-2eba-1ab1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f32d-9cc2-efe6-9479" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7138-2b60-74ce-a90b" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="e508-ef29-dd12-6c7c" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="true"/>
       </categoryLinks>
@@ -439,6 +463,13 @@
     <selectionEntry id="e77a-d99a-0c8f-3c7f" name="Pulse blaster" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="ae5d-3884-5c34-faf5" name="⌖ Pulse blaster - Close range" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="127d-b434-953a-23bf" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
@@ -448,6 +479,13 @@
           </characteristics>
         </profile>
         <profile id="d735-06c5-fee1-3e33" name="⌖ Pulse blaster - Long range" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="127d-b434-953a-23bf" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
@@ -464,6 +502,13 @@
     <selectionEntry id="d42c-8685-8765-d93e" name="Pulse carbine" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="b321-e0f6-417a-e51d" name="⌖ Pulse carbine" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="127d-b434-953a-23bf" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
@@ -480,6 +525,13 @@
     <selectionEntry id="6ad9-9da3-e384-4252" name="Pulse rifle" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="1f6a-e49d-5f06-013a" name="⌖ Pulse rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="127d-b434-953a-23bf" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
@@ -732,7 +784,7 @@
             </modifier>
             <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb3e-91ab-d817-baf7" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
