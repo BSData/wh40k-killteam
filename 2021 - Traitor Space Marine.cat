@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="228f-66c4-e3e0-2b01" name="Traitor Space Marine" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="228f-66c4-e3e0-2b01" name="Traitor Space Marine" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="dc01-4030-c1e5-8e9a" name="Chaos Space Marine" hidden="false"/>
     <categoryEntry id="2e87-8f94-62f7-9457" name="Traitor Space Marine💀" hidden="false"/>
@@ -272,8 +272,20 @@
       </constraints>
       <profiles>
         <profile id="1453-9959-e1c9-339b" name="⚔ Fists" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="5f37-25bb-661b-5c9c" value="3">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0e59-07ae-65c2-2de6" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee8c-cc44-acc3-40f0" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <characteristics>
-            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
             <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
             <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
@@ -1062,6 +1074,13 @@
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="fb15-1448-aff7-7c3b" name="Equipment" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7138-2b60-74ce-a90b" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="c61a-51a3-370d-bf55" scope="roster" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81b8-de0e-0b86-e252" type="max"/>
       </constraints>
