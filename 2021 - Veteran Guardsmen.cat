@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8e62-da18-67f9-c594" name="Veteran Guardsmen" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8e62-da18-67f9-c594" name="Veteran Guardsmen" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6790-22ed-c8fa-6309" name="Comms Veteran" hidden="false"/>
     <categoryEntry id="e2e3-78d3-0b08-9d27" name="VETERAN GUARDSMAN" hidden="false"/>
@@ -613,7 +613,7 @@
                 <profile id="cd03-bfea-f96b-2db1" name="⌖ Plasma pistol - Standard" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
                   <characteristics>
                     <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
                     <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
                     <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1</characteristic>
                     <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
@@ -622,7 +622,7 @@
                 <profile id="e047-0937-52a4-5585" name="⌖ Plasma pistol - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
                   <characteristics>
                     <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
                     <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
                     <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP2, Hot</characteristic>
                     <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
@@ -692,6 +692,13 @@
     <selectionEntry id="9019-3398-6f94-0046" name="Bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="85e4-0962-9269-8773" name="⌖ Bolt pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="4+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5cae-0173-65fc-4139" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
@@ -1133,7 +1140,7 @@
             </profile>
             <profile id="a14a-705c-7ba5-6fd0" name="Detonate" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative makes a Shoot action using its remote mine, make a shooting attack against each operative within ⬛ of the centre of its Mine token with that weapon. When making those shooting attacks, each operative is treated as being Visible, but when determining if it is in Cover, treat this operative&apos;s Mine token as the active operative. Then remove this operative&apos;s Mine token. An operative cannot make a shooting attack with this weapon by performing an Overwatch action, or if its Mine token is not in the killzone.</characteristic>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative makes a Shoot action using its remote mine, make a shooting attack against each operative within ⬛ of the centre of its Mine token with that weapon. When making those shooting attacks, each operative is treated as being Visible and not Obscured, but when determining if it is in Cover, treat this operative&apos;s Mine token as the active operative. Then remove this operative&apos;s Mine token. An operative cannot make a shooting attack with this weapon by performing an Overwatch action, or if its Mine token is not in the killzone.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1228,7 +1235,7 @@
         </profile>
         <profile id="abcf-eaa6-37ce-8fca" name="Medic!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
           <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, the first time a friendly VETERAN GUARDSMAN operative would be incapacitated while Visible to and within ⬛ of this operative and not within Engagement Range of an enemy operative, if this operative is not within Engagement Range of an enemy operative, this operative can revive it. That operative is not incapacitated, has 1 wound remaining, and if it was a shooting attack, any remaining attack dice are discarded. That other friendly operative can then perform a free Dash action, but must finish that move within ▲ of this operative. Subtract 1 from both operatives&apos; APL.</characteristic>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, the first time another friendly VETERAN GUARDSMAN operative would be incapacitated while Visible to and within ⬛ of this operative and not within Engagement Range of an enemy operative, if this operative is not within Engagement Range of an enemy operative, this operative can revive it. That operative is not incapacitated, has 1 wound remaining, and if it was a shooting attack, any remaining attack dice are discarded. That other friendly operative can then perform a free Dash action, but must finish that move within ▲ of this operative. Subtract 1 from both operatives&apos; APL.</characteristic>
           </characteristics>
         </profile>
         <profile id="d1e1-8b6b-27e3-fd2f" name="Medikit (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
@@ -1921,8 +1928,8 @@
     <profile id="8152-db38-7fc8-8011" name="Guardsman Orders" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
       <characteristics>
         <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once in each Strategy phase, when it is your turn to use a Strategic Ploy, if this operative is in the killzone, it can issue a Guardsman Order: if it does, all friendly VETERAN GUARDSMAN operatives within ⬟ of and Visible to it are issued a Guardsman Order.
-
-Each time a friendly operative issues a Guardsman Order, select one Guardsman Order to take effect until the end of the Turning Point.</characteristic>
+Each time a friendly operative issues a Guardsman Order, select one Guardsman Order to take effect until the end of the Turning Point.
+If more than one Guardsmen Order could be issued by your kill team during the Turning Point, e.g. the Inspirational Leadership Tactical Ploy (pg 45), they must be different Guardsmen Orders.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
