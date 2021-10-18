@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="78ae-9b9e-d839-725c" name="Space Marine" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="78ae-9b9e-d839-725c" name="Space Marine" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c6d4-8f35-b8e5-d319" name="Adeptus Astartes" hidden="false"/>
     <categoryEntry id="09fb-fa9f-6d29-e39d" name="Primaris" hidden="false"/>
@@ -755,8 +755,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9460-22ae-bc2e-3880" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70e1-b65b-1dc6-80d6" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09fb-fa9f-6d29-e39d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="393a-5829-1637-bd96" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1225,9 +1225,14 @@
               </conditionGroups>
             </modifier>
             <modifier type="set" field="5f37-25bb-661b-5c9c" value="5">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="21cf-c7b0-34a2-2f22" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f445-b2ee-2a30-a78c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0173-5446-db37-5576" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <characteristics>
@@ -2554,9 +2559,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="43d4-bb38-7d27-a566" name="Tactical Marine Sergeant" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="e82d-e2c3-55f6-c246" name="Tactical Marine" hidden="false" targetId="c119-16ec-a574-adc4" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile id="711a-c8a0-07ef-a4c6" name="Tactical Marine Sergeant" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="3f4e-13c5-0870-b162" name="Space Marine" hidden="false" targetId="277e-c36c-062b-b72f" primary="false"/>
         <categoryLink id="6fb3-f63a-3d6b-49fb" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
