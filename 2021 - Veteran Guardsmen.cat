@@ -641,7 +641,7 @@
         </profile>
         <profile id="eadf-d5b7-2ea5-811c" name="Uplifting Primer (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
           <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Until the end of the Turning Point, while a friendly VETERAN GUARDSMAN💀 operative is within ⬛ of this operative, that friendly operative is uplifted. While an operative is uplifted, each time it fights in combat or makes a shooting attack, in the Roll Attack Dice step of that combat or shooting attack, you can select one of your results of 5+ to be retained as a critical hit.</characteristic>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Until the end of the Turning Point, while a friendly VETERAN GUARDSMAN operative is within ⬛ of this operative, that friendly operative is uplifted. While an operative is uplifted, each time it fights in combat or makes a shooting attack, in the Roll Attack Dice step of that combat or shooting attack, you can select one of your results of 5+ to be retained as a critical hit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2003,6 +2003,180 @@
           </profiles>
           <costs>
             <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0910-f1ff-0d73-5a4c" name="Relic Sidearm" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9019-3398-6f94-0046" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e502-3f08-2a1a-5d74" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f3a9-ab84-0fa0-737e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ad2-dc31-def7-6c6f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2030-6f91-442e-c847" name="Relic sidearm" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Select a bolt pistol or laspistol the operative is equipped with. It gains the following improvements for the battle.
+
+- Improve its Ballistic Skill characteristic by 1.
+- Add 1 to its Attacks characteristic.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7ecf-894d-2b89-4ffd" name="Vid-capture Relay" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6790-22ed-c8fa-6309" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a3b0-10d6-4f4b-15b0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b84a-12fc-b4db-f83e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="62af-34a1-cdf2-f9a1" name="Vid-capture Relay" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative performs the Signal action, it can select any friendly operative in the killzone, rather than within ⬟ and Visible to it.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="611c-aaac-7fb0-0fb8" name="Litany of Sacrifice" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e0d-a324-98e7-6fb7" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad1e-55ac-f513-9a91" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1a9-784b-f9bc-c6ba" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7aeb-85d4-39d8-c04d" name="Litany of Sacrifice (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Until the end of the Turning Point, while a friendly VETERAN GUARDMAN operative is within ⬟ of this operative, it is inspired by sacrifice. While an operative is inspired by sacrifice, each time it fights in combat or is the target of a shooting attack, in the Roll Attack Dice step of that combat or shooting attack, you can change one of your opponent&apos;s critical hits to a normal hit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8c80-3b4d-37ec-935e" name="Regimental Heirloom" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ceba-e209-9729-dcda" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4449-0d03-5655-e2e6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7742-c0d1-d156-75b2" name="Regimental Heirloom" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">At the end of this operative&apos;s activation, if it did not perform a Shoot action during that activation, until the start of its next activation it is motivated by honour. While an operative is motivated by honour:
+- When determining control of an objective marker, treat its APL as 1 higher (to a maximum of 3). Note that this is not a modifier.
+- In the Resolve Successful Hits step of a shooting attack or combat, each time damage is inflicted on the operative, halve the damage that is applied (rounding up).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c961-7972-a3df-b5d9" name="Diagnosticator" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c44a-2ec6-3764-e5f4" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c05-2150-23e4-4eab" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc25-8148-aa0b-86d6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d196-e071-e677-572c" name="Diagnosticator" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">- Each time this operative performs the Medikit action, the friendly operative selected regains D3+3 lost wounds, rather than 2D3.
+- After the battle, in the Update Dataslates step of the mission sequence, if this operative was not incapacitated during the battle, you can re-roll two Casualty test as a result of this Medic, rather than 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9317-b31f-123f-5579" name="Prized Sabre" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9493-3bf5-fcb7-7478" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d2c3-db55-b96f-4e41" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a98c-a120-933a-4931" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3a6c-4e5e-dcbf-ec4c" name="Prized Sabre" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Select a power weapon the operative is equipped with. It gains the Balanced special rule for the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="1.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
