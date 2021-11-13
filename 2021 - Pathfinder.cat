@@ -1475,6 +1475,7 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
         </entryLink>
         <entryLink id="95e7-8e20-c14c-a5bf" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
         <entryLink id="1b50-b8d4-5c22-f92d" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="0c1d-6479-4899-315a" name="Equipment" hidden="false" collective="false" import="true" targetId="7784-0737-ca59-f234" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
@@ -1591,6 +1592,7 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
         </entryLink>
         <entryLink id="63aa-78cc-7615-2f3c" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
         <entryLink id="d0b6-d331-16e3-645d" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="49b6-0023-e936-4119" name="Equipment" hidden="false" collective="false" import="true" targetId="7784-0737-ca59-f234" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
@@ -1655,6 +1657,7 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
         </entryLink>
         <entryLink id="a79f-d78b-75c1-fcc3" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
         <entryLink id="3fac-6d67-383c-04ba" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="ceae-b1ac-aa45-f8e9" name="Equipment" hidden="false" collective="false" import="true" targetId="7784-0737-ca59-f234" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
@@ -1731,6 +1734,7 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
             <entryLink id="a8de-cb20-adc9-f488" name="Pathfinder 6 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="d920-19e2-bc81-cb3d" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
+        <entryLink id="196b-faa5-2e05-648b" name="Equipment" hidden="false" collective="false" import="true" targetId="7784-0737-ca59-f234" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
@@ -1806,6 +1810,7 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
             <entryLink id="b7c9-5f25-3f71-209f" name="Pathfinder 6 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="d920-19e2-bc81-cb3d" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
+        <entryLink id="bc9d-7d31-9edf-3b06" name="Equipment" hidden="false" collective="false" import="true" targetId="7784-0737-ca59-f234" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
@@ -1886,6 +1891,7 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
             <entryLink id="a3d9-2176-a5dd-f96b" name="Pathfinder 6 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="d920-19e2-bc81-cb3d" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
+        <entryLink id="f2c4-97a9-b5b4-31c5" name="Equipment" hidden="false" collective="false" import="true" targetId="7784-0737-ca59-f234" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
@@ -1900,12 +1906,29 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43e5-75bb-298d-bec2" type="notInstanceOf"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="c61a-51a3-370d-bf55" scope="roster" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0174-b1c1-c052-0021" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="f3a0-83b8-c115-2c57" name="Target Analysis Optic" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31be-2ec6-00c8-615a" type="max"/>
           </constraints>
@@ -1921,6 +1944,13 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
           </costs>
         </selectionEntry>
         <selectionEntry id="8114-e688-b594-fd2b" name="High-intensity Markerlight" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e90-2b17-964b-43a5" type="max"/>
           </constraints>
@@ -1936,6 +1966,13 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
           </costs>
         </selectionEntry>
         <selectionEntry id="3e83-b6ab-6308-e165" name="Orbital Survey Uplink*" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89e9-df4a-3023-71b1" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8f12-7242-5b34-f7e7" type="max"/>
@@ -1952,6 +1989,13 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
           </costs>
         </selectionEntry>
         <selectionEntry id="046d-abb9-fee8-06a9" name="Drone Repair Kit" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="affb-b6e7-9894-1c5f" type="max"/>
           </constraints>
@@ -1967,6 +2011,13 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
           </costs>
         </selectionEntry>
         <selectionEntry id="3a41-a0b7-fa8f-9775" name="Climbing Equipment" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1094-ff0c-00f8-f58d" type="max"/>
           </constraints>
@@ -1984,19 +2035,222 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
             <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="1.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="69b6-8c35-f947-4bbf" name="Experimental Pulse Ammunition (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50e1-d538-b03c-fbd0" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5411-ccef-319f-3382" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="74c4-493c-dce5-6ab0" name="Experimental Pulse Ammunition" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Select a pulse weapon the operative is equipped with. It gains the following improvements for the battle.
+- It gains the P1 [special] critical hit rule.
+- Add 1 to its Attacks characteristic.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fff6-a21b-fb1f-2de7" name="Honour Blade (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bd2-268c-8eec-fdf6" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbbd-c2e0-b024-b5bc" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d50a-5053-d086-4e50" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1c59-bf7b-d78b-3667" name="Honour Blade" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">The bonding knife the operative is equipped with gains the following improvements for the battle.
+- Improve its Weapon Skill characteristic by 1.
+- Add 1 to both its Damage characteristics.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e88a-3940-255f-3864" name="Shield Generator (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1998-df5f-d589-e1ed" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a704-8943-4430-8070" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f9e4-401e-4684-c15c" name="Shield Generator" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">This operative has a 4+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f17d-ee11-5e33-2cdf" name="Markerlight Grenade (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="633a-68f1-df3e-32fa" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6cd8-7099-22ae-2da9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2ebd-4f53-01dc-1606" name="Markerlight Grenade (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one point in the killzone Visible to this operative. Roll one D6 for each enemy operative within ⬛ of that point, subtracting 1 from the result as follows:
+- If that enemy operative is not Visible to this operative.
+- If that enemy operative is more than ⬟ from this operative.
+
+On a 2+, that enemy operative gains 1 Markerlight token.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6590-3f55-f976-3894" name="Projection Field (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bc8-607c-7582-8f8b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="78e2-21ad-ba77-1669" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ce32-6c0a-08c9-125e" name="Projection Field (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Change this operative&apos;s order.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d11a-9944-3988-d600" name="Advanced Cogitation Chip (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83ce-29e4-3c31-cb93" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="97b4-0fa3-0bbb-62c7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2466-17e1-6b70-0d79" name="Advanced Cogitation Chip" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">The operative gains the following abilities for the battle:
+- It is not considered to have the first three bullet points of its Artificial Intelligence ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="1.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="6cfd-7e53-c7d2-a14f" name="Fusion grenade" hidden="false" collective="false" import="true" targetId="6552-81bf-a748-4431" type="selectionEntry">
+        <entryLink id="6cfd-7e53-c7d2-a14f" name="Fusion Grenade" hidden="false" collective="false" import="true" targetId="6552-81bf-a748-4431" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="4.0"/>
           </costs>
         </entryLink>
-        <entryLink id="e9ee-beec-305d-73ee" name="EMP grenade" hidden="false" collective="false" import="true" targetId="7548-4ef8-745a-7772" type="selectionEntry">
+        <entryLink id="e9ee-beec-305d-73ee" name="EMP Grenade" hidden="false" collective="false" import="true" targetId="7548-4ef8-745a-7772" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
           </costs>
         </entryLink>
-        <entryLink id="854c-7609-2445-02c9" name="Photon grenade" hidden="false" collective="false" import="true" targetId="0aed-a104-88c1-6e3e" type="selectionEntry">
+        <entryLink id="854c-7609-2445-02c9" name="Photon Grenade" hidden="false" collective="false" import="true" targetId="0aed-a104-88c1-6e3e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
           </costs>
