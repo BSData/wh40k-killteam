@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f0f5-a53d-98ae-4237" name="Ecclesiarchy" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f0f5-a53d-98ae-4237" name="Ecclesiarchy" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a946-5ea7-18c7-5580" name="Adeptus Ministorum" hidden="false"/>
     <categoryEntry id="919a-20a2-f1cb-5848" name="Adepta Sororitas" hidden="false"/>
@@ -579,7 +579,12 @@
     </selectionEntry>
     <selectionEntry id="1029-2966-1aca-2dff" name="Battle Sister Superior" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
-        <infoLink id="35b3-1977-91dc-d022" name="Battle Sister" hidden="false" targetId="ac6d-fea6-7d92-7cd4" type="profile"/>
+        <infoLink id="35b3-1977-91dc-d022" name="Battle Sister" hidden="false" targetId="ac6d-fea6-7d92-7cd4" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Battle Sister Superior"/>
+            <modifier type="set" field="db11-738c-048c-759e" value="9"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b6eb-7ac2-8c20-8584" name="Ecclesiarchy" hidden="false" targetId="6fe2-fd36-529a-e247" primary="false"/>
@@ -633,6 +638,19 @@
               <costs>
                 <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry id="a953-3435-b826-2fb9" name="Chainsword" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="3670-3d54-c794-3045" name="⚔ Chainsword" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -1218,13 +1236,6 @@
       </characteristics>
     </profile>
     <profile id="ac6d-fea6-7d92-7cd4" name="Battle Sister" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-      <modifiers>
-        <modifier type="set" field="db11-738c-048c-759e" value="9">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbcc-b98f-5939-8dbe" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <characteristics>
         <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
         <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
