@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="78ae-9b9e-d839-725c" name="Space Marine" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="78ae-9b9e-d839-725c" name="Space Marine" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c6d4-8f35-b8e5-d319" name="Adeptus Astartes" hidden="false"/>
     <categoryEntry id="09fb-fa9f-6d29-e39d" name="Primaris" hidden="false"/>
@@ -3558,6 +3558,7 @@
                   <conditions>
                     <condition field="selections" scope="ed6e-8206-139f-e322" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26a2-c305-80c7-8480" type="equalTo"/>
                     <condition field="selections" scope="ed6e-8206-139f-e322" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8410-2d82-db4d-d54e" type="equalTo"/>
+                    <condition field="selections" scope="ed6e-8206-139f-e322" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a60-6366-4178-83f6" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3567,6 +3568,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="ed6e-8206-139f-e322" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26a2-c305-80c7-8480" type="equalTo"/>
+                    <condition field="selections" scope="ed6e-8206-139f-e322" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a60-6366-4178-83f6" type="equalTo"/>
                     <condition field="selections" scope="ed6e-8206-139f-e322" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8410-2d82-db4d-d54e" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
@@ -3577,8 +3579,36 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d1f-6a16-0852-f742" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6105-2e18-ea7f-10b8" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="1a60-6366-4178-83f6" name="Deathwatch boltgun; power weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c34-9334-97c5-ceb5" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="fad1-b9ca-b4bf-7e69" name="Deathwatch boltgun" hidden="false" collective="false" import="true" targetId="f4db-b951-357c-bc68" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e72-5714-ad05-5f3b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b12f-a004-105f-20cc" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="cc51-6d7b-b693-7acc" name="Power weapon" hidden="false" collective="false" import="true" targetId="03aa-7374-7520-d70a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b45-a207-3129-ace2" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="902c-b24b-460d-2c3b" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="063b-2e29-7d29-176f" name="Melee weapon" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="6877-4dc7-fcaa-612d" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ed6e-8206-139f-e322" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a60-6366-4178-83f6" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6877-4dc7-fcaa-612d" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d86a-0141-b376-8d48" type="max"/>

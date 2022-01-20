@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="c61a-51a3-370d-bf55" name=" EP" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -1010,7 +1010,7 @@
       <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice stop of that combat or shooting attack, you can re-roll one of your attack dice.</description>
     </rule>
     <rule id="d848-be09-6d6d-4708" name="Blast x" hidden="false">
-      <description>Each time a friendly operative performs a Shoot action and selects this weapon (or, in the case of profiles, this weapon&apos;s profile), after making the shooting attack against the target, make a shooting attack with this weapon (using the same profile) against each other operative within x of the original target. When determining if each other operative is a valid target or in Cover, treat the original target as the active operative. An operative cannot make a shooting attack with this weapon by performing an Overwatch action.</description>
+      <description>Each time a friendly operative performs a Shoot action and selects this weapon (or, in the case of profiles, this weapon’s profile), after making the shooting attack against the target, make a shooting attack with this weapon (using the same profile) against each other operative Visible to and within X of the original target – each of them is a valid target and cannot be in Cover. X is the distance after the weapon’s Blast, e.g. Blast . An operative cannot make a shooting attack with this weapon by performing an Overwatch action.</description>
     </rule>
     <rule id="16e9-a975-03a1-91c0" name="Brutal" hidden="false">
       <description>Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, your opponent can only parry with critical hits.</description>
