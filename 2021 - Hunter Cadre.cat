@@ -27,22 +27,28 @@
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73a1-2e83-16ac-bb62" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="2942-e782-41b5-6330" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false"/>
-        <categoryLink id="0739-dfc4-027f-1c2c" name="Fire Warrior" hidden="false" targetId="56aa-c7c8-0c02-d757" primary="false">
+        <categoryLink id="2942-e782-41b5-6330" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false">
           <modifiers>
-            <modifier type="decrement" field="08ca-4912-9859-8e6d" value="1.0">
+            <modifier type="decrement" field="03f0-8ea5-bc67-0ec8" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03f0-8ea5-bc67-0ec8" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5cc2-e06f-1c82-ba57" name="Drone" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false">
+          <modifiers>
+            <modifier type="increment" field="801a-d8ec-5248-6a50" value="1.0">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56aa-c7c8-0c02-d757" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08ca-4912-9859-8e6d" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="5cc2-e06f-1c82-ba57" name="Drone" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="801a-d8ec-5248-6a50" type="max"/>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="801a-d8ec-5248-6a50" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -55,22 +61,45 @@
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="39f4-c31d-3552-d6e9" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="fc4b-31c4-03bf-a6b2" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false"/>
-        <categoryLink id="37bb-e8e2-a4b2-f0d1" name="Stealth Battlesuit" hidden="false" targetId="ba61-de7f-08b4-b47b" primary="false">
+        <categoryLink id="fc4b-31c4-03bf-a6b2" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false">
           <modifiers>
-            <modifier type="decrement" field="c518-aa00-d5a7-2ee2" value="1.0">
+            <modifier type="increment" field="daca-cabc-920a-73d7" value="1.0">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="daca-cabc-920a-73d7" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c518-aa00-d5a7-2ee2" type="max"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="daca-cabc-920a-73d7" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="0334-6c19-bc27-37b1" name="Drone" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false">
+          <modifiers>
+            <modifier type="set" field="1323-2791-7f07-9b80" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba61-de7f-08b4-b47b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1323-2791-7f07-9b80" type="max"/>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1323-2791-7f07-9b80" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="fdf1-4329-a0ab-1781" name="Stealth Battlesuit" hidden="false" targetId="ba61-de7f-08b4-b47b" primary="false">
+          <modifiers>
+            <modifier type="decrement" field="35b3-7b59-5c26-02c4" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5c1-db85-5269-3c3c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="35b3-7b59-5c26-02c4" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -83,44 +112,33 @@
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a92f-5ad4-77de-3ae2" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="2d01-52dc-eceb-7d3d" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false"/>
+        <categoryLink id="2d01-52dc-eceb-7d3d" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false">
+          <modifiers>
+            <modifier type="decrement" field="ff31-bbef-eabc-6fb0" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc11-921b-fa68-38d1" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff31-bbef-eabc-6fb0" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="50f3-1e64-1946-a43a" name="Heavy Gunner" hidden="false" targetId="0e59-07ae-65c2-2de6" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab08-774b-cf4d-88a2" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="8817-e9ef-df84-3263" name="Pathfinder" hidden="false" targetId="ced0-50df-b87f-4f71" primary="false">
-          <modifiers>
-            <modifier type="decrement" field="6532-edc4-efae-4f6c" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-db85-5269-3c3c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="6532-edc4-efae-4f6c" value="1.0">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8b76-3348-046e-220d" type="greaterThan"/>
-              </conditions>
-            </modifier>
-            <modifier type="decrement" field="6532-edc4-efae-4f6c" value="1.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc11-921b-fa68-38d1" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6532-edc4-efae-4f6c" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="9f2e-e611-58d2-d009" name="Drone" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false">
           <modifiers>
-            <modifier type="decrement" field="5364-e5dc-3776-f83f" value="1.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc11-921b-fa68-38d1" type="equalTo"/>
-              </conditions>
+            <modifier type="increment" field="5364-e5dc-3776-f83f" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ced0-50df-b87f-4f71" repeats="1" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5364-e5dc-3776-f83f" type="max"/>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5364-e5dc-3776-f83f" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -260,12 +278,14 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="eb58-8c97-841a-6dfb" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="true"/>
+        <categoryLink id="eb58-8c97-841a-6dfb" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
+        <categoryLink id="4b73-cedb-ea73-d7de" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0e55-929e-78c1-e726" name="MV4 Shield Drone" hidden="false" collective="false" import="true" targetId="fb3c-48e9-de99-1c21" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="3bd5-c2d4-71e1-c744" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="true"/>
+        <categoryLink id="3bd5-c2d4-71e1-c744" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
+        <categoryLink id="cbc9-dca8-c25e-df62" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9800-dba5-5aba-9c93" name="MV36 Guardian Drone" hidden="false" collective="false" import="true" targetId="f0cd-0e8e-2eba-1ab1" type="selectionEntry">
@@ -282,7 +302,8 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e508-ef29-dd12-6c7c" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="true"/>
+        <categoryLink id="e508-ef29-dd12-6c7c" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
+        <categoryLink id="abee-0b7c-e780-047d" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0c63-1496-b568-f249" name="MV31 Pulse Accelerator Drone" hidden="false" collective="false" import="true" targetId="5d6c-9a74-8ff1-c02d" type="selectionEntry">
@@ -299,7 +320,8 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="3299-5273-df66-8e39" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="true"/>
+        <categoryLink id="3299-5273-df66-8e39" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
+        <categoryLink id="5151-3df9-c2e8-ba8f" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0705-be69-7950-01c6" name="MV33 Grav-Inhibitor Drone" hidden="false" collective="false" import="true" targetId="24bc-9679-ea3f-0de4" type="selectionEntry">
@@ -316,17 +338,20 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="ffec-1200-f6da-7101" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="true"/>
+        <categoryLink id="ffec-1200-f6da-7101" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
+        <categoryLink id="1467-edbb-15be-c0e5" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d00b-ad0f-b903-a875" name="MV7 Marker Drone" hidden="false" collective="false" import="true" targetId="6be9-2b2a-fed3-5cd7" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="cdd7-790e-7ff9-4c9c" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="true"/>
+        <categoryLink id="cdd7-790e-7ff9-4c9c" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
+        <categoryLink id="c89e-11a1-aa1e-8fce" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c318-6b9e-5eb5-187a" name="MV1 Gun Drone" hidden="false" collective="false" import="true" targetId="b803-0b0a-fddc-cc5e" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="4dae-c621-f0ed-488e" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="true"/>
+        <categoryLink id="4dae-c621-f0ed-488e" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
+        <categoryLink id="6951-6c12-b6e4-28ed" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="66cd-1102-0453-c26b" name="MB3 Recon Drone" hidden="false" collective="false" import="true" targetId="dc11-921b-fa68-38d1" type="selectionEntry">
@@ -343,7 +368,8 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="45c5-4eec-122d-4736" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="true"/>
+        <categoryLink id="45c5-4eec-122d-4736" name="New CategoryLink" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
+        <categoryLink id="84f4-60c7-f0dd-f775" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -907,7 +933,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dbd5-d605-b7c0-dd4f" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dbd5-d605-b7c0-dd4f" type="max"/>
       </constraints>
       <profiles>
         <profile id="4e27-31d8-8bc5-aa33" name="MV1 Gun Drone" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -1003,7 +1029,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8efe-9e99-844e-c18a" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8efe-9e99-844e-c18a" type="max"/>
       </constraints>
       <profiles>
         <profile id="100b-c1b4-b5ae-a8bb" name="MV4 Shield Drone" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -1052,7 +1078,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f7dc-fa5d-b282-ef1b" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f7dc-fa5d-b282-ef1b" type="max"/>
       </constraints>
       <profiles>
         <profile id="79f5-da2d-42bf-0e31" name="MV36 Guardian Drone" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -1106,7 +1132,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6c79-037a-576a-7bc2" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6c79-037a-576a-7bc2" type="max"/>
       </constraints>
       <profiles>
         <profile id="433f-1160-2d8d-7122" name="MV31 Pulse Accelerator Drone" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -1156,7 +1182,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="30f1-a90b-bdc3-5fca" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="30f1-a90b-bdc3-5fca" type="max"/>
       </constraints>
       <profiles>
         <profile id="733c-a75c-fd0d-fb72" name="MV33 Grav-inhibitor Drone" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -1211,7 +1237,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="08a5-840e-887d-8658" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="08a5-840e-887d-8658" type="max"/>
       </constraints>
       <profiles>
         <profile id="5198-30fd-2788-700e" name="MV7 Marker Drone" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
