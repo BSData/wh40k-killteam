@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="945a-0f25-eba7-691d" name="Hunter Clade" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="945a-0f25-eba7-691d" name="Hunter Clade" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="c7e7-80f7-a912-1eec" name="Doctrina Imperatives">
       <characteristicTypes>
@@ -257,7 +257,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Both are in effect
           </constraints>
         </entryLink>
         <entryLink id="9231-58fa-b0f3-d854" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="d2a8-a633-c4b3-6cef" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+        <entryLink id="d2a8-a633-c4b3-6cef" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
           <entryLinks>
             <entryLink id="89d8-0a32-ae54-3ac3" name="Hunter Clade 5 - Consecrated Cybernetics" hidden="false" collective="false" import="true" targetId="9754-6bcb-eace-973c" type="selectionEntry"/>
             <entryLink id="feb9-5581-9f5c-f2dc" name="Hunter Clade 4 - Enhanced Bionics" hidden="false" collective="false" import="true" targetId="9e0b-c751-d92d-5570" type="selectionEntry"/>
@@ -270,6 +270,16 @@ Each Imperative has an Optimisation and a Deprecation effect. Both are in effect
         <entryLink id="8f06-5283-15fa-f077" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
         <entryLink id="3db5-261a-3831-6c1c" name="Equipment" hidden="false" collective="false" import="true" targetId="adb0-2e73-f294-58c8" type="selectionEntryGroup"/>
         <entryLink id="afb7-b5ab-8012-2e27" name="Specialism" hidden="false" collective="false" import="true" targetId="6a76-efc1-fb54-686a" type="selectionEntryGroup"/>
+        <entryLink id="2478-9ed5-2617-58b0" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="542c-2b1f-d05b-8814" name="Hunter Clade 5 - Consecrated Cybernetics" hidden="false" collective="false" import="true" targetId="9754-6bcb-eace-973c" type="selectionEntry"/>
+            <entryLink id="9385-326a-a68f-a242" name="Hunter Clade 4 - Enhanced Bionics" hidden="false" collective="false" import="true" targetId="9e0b-c751-d92d-5570" type="selectionEntry"/>
+            <entryLink id="cc52-5304-7c25-cc81" name="Hunter Clade 6 - Autonomic Cortex" hidden="false" collective="false" import="true" targetId="808f-8044-e24b-b558" type="selectionEntry"/>
+            <entryLink id="216e-1569-b0fe-d10f" name="Hunter Clade 1 - Fixated" hidden="false" collective="false" import="true" targetId="5f96-e18f-4797-bd60" type="selectionEntry"/>
+            <entryLink id="85f5-452f-220e-480a" name="Hunter Clade 2 - Faith in the Machine" hidden="false" collective="false" import="true" targetId="6c57-0a77-7008-663a" type="selectionEntry"/>
+            <entryLink id="23d2-ddbe-64c8-bce1" name="Hunter Clade 3 - Blessed Components" hidden="false" collective="false" import="true" targetId="1930-94ab-c2e7-bee7" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
@@ -2101,6 +2111,137 @@ Each Imperative has an Optimisation and a Deprecation effect. Both are in effect
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e6c9-cca1-61df-df4c" name="Thorium Rounds (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1301-04f5-5540-595d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8df6-8dc0-539c-01f6" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e3f8-ac49-ab12-aa83" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9b4d-ef78-2700-b9f2" name="Thorium Rounds" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Select a master-crafted radium pistol this operative is equipped with. It gains the following improvements for the battle:
+- Lethal 5+ special rule
+- Add 1 to its Normal damage characteristic. This is not cumulative with the Enriched Round equipment.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dbbb-b17c-7289-a08a" name="Technodermic Weave (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c47f-e9c4-7217-40de" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="203b-80ae-3d8c-296c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c125-d171-f0bb-e6e6" name="Technodermic Weave" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Change this operative&apos;s Save characteristic to 3+ for the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9827-e621-8237-99ab" name="Autorepair Appendage (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ebe-21a2-c53e-1ac6" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="439b-318d-71cc-b6f1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c3a4-5826-5e62-6bfc" name="Autorepair Appendage" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Each time the operative is activated, you can use the Motive Force Vitality Tactical Ploy without spending any CPs.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e641-48f4-1da8-2dcd" name="Amplified Data Emitter (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fa7-f36f-0f97-216b" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91c6-ac1d-0bb4-4fa7" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="04ea-720f-0bdd-32df" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0afc-eb8b-8f58-bf40" name="Amplified Data Emitter" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Each time the operative performs the Enhanced Data Tether action, you can select any friendly HUNTER CLADE operative in the kill zone (instead of one Visible to and within ⬟ of it).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4e06-9777-3b99-871f" name="Omnispectral Analyser (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfc8-f580-1682-87cd" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc85-19ce-eabf-7be6" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a69c-d251-d226-b06b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d351-83ba-0967-f842" name="Omnispectral Analyser" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">For the battle, for the purposes of the operative&apos;s Omnispex action, add the following bullet point to the list of effects for the shooting attack specified by that action:
+- That friendly operative&apos;s ranged weapons have the Relentless special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="77a9-79ad-1c8e-ea7f" name="Arc Grenade (RARE)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="783e-ec43-2b33-4d4d" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="edf8-4623-617e-84fb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3e71-4dc1-77ae-2d61" name="⌖ Arc Grenade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1, Limited, Indirect</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Stun</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="50ef-608a-0230-6645" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+            <infoLink id="fe58-d204-8b03-ca66" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+            <infoLink id="d6d4-d66d-c202-a438" name="Indirect" hidden="false" targetId="653d-16a5-eefb-8b71" type="rule"/>
+            <infoLink id="79ca-7993-a432-8e84" name="Limited" hidden="false" targetId="1eb0-6ad3-3e5a-d8ec" type="rule"/>
+            <infoLink id="7666-2478-a721-1149" name="Stun" hidden="false" targetId="a1e3-4e0b-f7c2-eb59" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
           </costs>
