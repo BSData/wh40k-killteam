@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f8ef-a36f-f720-5f60" name="Novitiate" revision="4" battleScribeVersion="2.03" authorName="Mad-Spy" authorContact="" authorUrl="https://bsdata.net" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f8ef-a36f-f720-5f60" name="Novitiate" revision="5" battleScribeVersion="2.03" authorName="Mad-Spy" authorContact="" authorUrl="https://bsdata.net" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="0bd2-8527-d8d9-fc3b" name="Acts of Faith">
       <characteristicTypes>
@@ -117,7 +117,7 @@ Unless otherwise specified, only one Act of Faith can be used during each activa
         </profile>
         <profile id="7c87-fa62-83a8-6ee9" name="Faithful Blessing" hidden="false" typeId="0bd2-8527-d8d9-fc3b" typeName="Acts of Faith">
           <characteristics>
-            <characteristic name="Effect" typeId="7b3f-92e0-b630-4215">When a friendly NOVITIATE operative fights in combat or makes a shooting attack, in the Roll Attack Dice or Roll Defence Dice step of that combat or shooting attack, re-roll one of your attack dice or defence dice. This Act of Faith can be used more than once in each activation, and can be used with other Acts of Faith.</characteristic>
+            <characteristic name="Effect" typeId="7b3f-92e0-b630-4215">When a friendly NOVITIATE operative is fighting in combat or making a shooting attack, or a shooting attack is being made against it, in the Roll Attack Dice step (for the former) or Roll Defence Dice step (for the latter) of that combat or shooting attack, re-roll one of your attack dice or defence dice. This Act of Faith can be used more than once in each activation, and can be used with other Acts of Faith.</characteristic>
             <characteristic name="Cost" typeId="d161-d5ad-c3bd-9830">1 Faith point</characteristic>
           </characteristics>
         </profile>
@@ -159,7 +159,9 @@ Unless otherwise specified, only one Act of Faith can be used during each activa
         </profile>
         <profile id="1e0a-791b-88d7-227c" name="Blinding Aura" hidden="false" typeId="0bd2-8527-d8d9-fc3b" typeName="Acts of Faith">
           <characteristics>
-            <characteristic name="Effect" typeId="7b3f-92e0-b630-4215">When an enemy operative performs a shooting attack, select one friendly NOVITIATE operative. Until the end of that activation, while that friendly operative is more than ⬤ from that enemy operative, that friendly operative is treated as being in Cover.</characteristic>
+            <characteristic name="Effect" typeId="7b3f-92e0-b630-4215">When an enemy operative performs a shooting attack, select one friendly NOVITIATE operative. Until the end of that activation, while that friendly operative is more than ⬤ from that enemy operative,:
+- That friendly operative is treated as being in Cover.
+- While that friendly operative has a Conceal order, it is always treated as having a Conceal order, regardless of any other rules (e,g, Vantage Point).</characteristic>
             <characteristic name="Cost" typeId="d161-d5ad-c3bd-9830">2 Faith points</characteristic>
           </characteristics>
         </profile>
@@ -841,7 +843,7 @@ Unless otherwise specified, only one Act of Faith can be used during each activa
         </profile>
         <profile id="0179-2182-f1e2-3a56" name="Absolution Through Destruction (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
           <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Perform a Fight action with this operative, then perform another Fight action.</characteristic>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Perform a free Fight action with this operative. After completing that action’s fight sequence, if this operative is still within Engagement Range of an enemy operative, you can immediately fight in combat with this operative again (for the second combat, you do not have to select the same target and the Zealous Rage ability has no effect).</characteristic>
           </characteristics>
         </profile>
       </profiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50fd-3b1c-0a95-233b" name="Pathfinder" revision="4" battleScribeVersion="2.03" authorName="Mad-Spy" authorUrl="https://bsdata.net" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50fd-3b1c-0a95-233b" name="Pathfinder" revision="5" battleScribeVersion="2.03" authorName="Mad-Spy" authorUrl="https://bsdata.net" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="3394-cf2d-5727-164a" name="Markerlight Tokens">
       <characteristicTypes>
@@ -1490,14 +1490,9 @@ On a 2+, that enemy operative gains a Photon token. While an operative has any P
         <profile id="1461-0a61-d8bb-2ecb" name="⚔ Ram" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
           <modifiers>
             <modifier type="set" field="337a-2e5b-e4e3-f489" value="3/4">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b44f-3991-99c6-f72b" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2be6-45e6-393e-3756" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b44f-3991-99c6-f72b" type="instanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -2269,7 +2264,7 @@ On a 2+, that enemy operative gains 1 Markerlight token.</characteristic>
 - Unless otherwise specifed, this operative cannot be equipped with equipment.</description>
     </rule>
     <rule id="ccef-752d-e179-5b3f" name="Saviour Protocols" hidden="false">
-      <description>Each time a friendly PATHFINDER operative (excluding DRONE operatives) is selected as the target of a shooting attack, if there is a friendly DRONE operative with this ability Visible to and within ⬤ of it and not within Engagement Range of an enemy operative, if that friendly DRONE operative is not protecting any other operatives, it can protect that friendly PATHFINDER operative until the end of the Turning Point. If it does so, until the end of the Turning Point, each time a shooting attack is made against that friendly PATHFINDER operative, make that shooting attack against that friendly DRONE operative instead, even if it would not be a valid target. In the Roll Defence Dice step of that shooting attack, defence dice cannot be automatically retained as a result of Cover. Friendly PATHFINDER operatives cannot be protected by Saviour Protocols from shooting attacks made against each operative within range of a specified point (e.g. remote mine, see Kill Team: Octarius). Note that this also means they cannot be protected from the subsequent shooting attacks made as a result of the Blast X or Torrent X special rules.</description>
+      <description>Each time a friendly PATHFINDER operative (excluding DRONE operatives) is selected as the target of a shooting attack, if there is a friendly DRONE operative with this ability Visible to and within ⬤ of it and not within Engagement Range of an enemy operative, if that friendly DRONE operative is not protecting any other operatives, it can protect that friendly PATHFINDER operative until the end of the Turning Point. If it does so, until the end of the Turning Point or until they are no longer within ⬤ of each other (whichever comes first), each time a shooting attack is made against that friendly PATHFINDER operative, make that shooting attack against that friendly DRONE operative instead, even if it would not be a valid target. In the Roll Defence Dice step of that shooting attack, defence dice cannot be automatically retained as a result of Cover. Friendly PATHFINDER operatives cannot be protected by Saviour Protocols from shooting attacks made against each operative within range of a specified point (e.g. remote mine, see Kill Team: Octarius). Note that this also means they cannot be protected from the subsequent shooting attacks made as a result of the Blast X or Torrent X special rules.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

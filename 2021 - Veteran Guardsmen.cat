@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8e62-da18-67f9-c594" name="Veteran Guardsmen" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8e62-da18-67f9-c594" name="Veteran Guardsmen" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6790-22ed-c8fa-6309" name="Comms Veteran" hidden="false"/>
     <categoryEntry id="e2e3-78d3-0b08-9d27" name="VETERAN GUARDSMAN" hidden="false"/>
@@ -811,13 +811,6 @@
     <selectionEntry id="9019-3398-6f94-0046" name="Bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="85e4-0962-9269-8773" name="⌖ Bolt pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-          <modifiers>
-            <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2de5-ea5c-3735-de87" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <characteristics>
             <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
@@ -1306,7 +1299,7 @@
             </profile>
             <profile id="a14a-705c-7ba5-6fd0" name="Detonate" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative makes a Shoot action using its remote mine, make a shooting attack against each operative within ⬛ of the centre of its Mine token with that weapon. When making those shooting attacks, each operative is treated as being Visible and not Obscured, but when determining if it is in Cover, treat this operative&apos;s Mine token as the active operative. Then remove this operative&apos;s Mine token. An operative cannot make a shooting attack with this weapon by performing an Overwatch action, or if its Mine token is not in the killzone.</characteristic>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative makes a Shoot action using its remote mine, make a shooting attack against each operative within ⬛ of the centre of its Mine token with that weapon. When making those shooting attacks, each operative (friendly and enemy) within ⬛ is a valid target, but when determining if it is in Cover, treat this operative&apos;s Mine token as the active operative. Then remove this operative&apos;s Mine token. An operative cannot make a shooting attack with this weapon by performing an Overwatch action, or if its Mine token is not in the killzone.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2324,13 +2317,15 @@
     </profile>
     <profile id="2b94-a7a5-ceba-1190" name="Directive" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
       <characteristics>
-        <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative is activated, if it has not been nominated for command, you can select one ready friendly model VETERAN GUARDSMAN operative within ⬟ and Visible to it. After this operative&apos;s activation ends, activate that operative, and treat its Group Activation characteristic as 1 for that activation.</characteristic>
+        <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative is activated, if it has not been nominated for command, you can select one other ready friendly VETERAN GUARDSMAN operative within ⬟ of and Visible to it. After this operative&apos;s activation ends, activate that operative, and treat its Group Activation characteristic as 1 for that activation.</characteristic>
       </characteristics>
     </profile>
     <profile id="8152-db38-7fc8-8011" name="Guardsman Orders" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
       <characteristics>
         <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once in each Strategy phase, when it is your turn to use a Strategic Ploy, if this operative is in the killzone, it can issue a Guardsman Order: if it does, all friendly VETERAN GUARDSMAN operatives within ⬟ of and Visible to it are issued a Guardsman Order.
+
 Each time a friendly operative issues a Guardsman Order, select one Guardsman Order to take effect until the end of the Turning Point.
+
 If more than one Guardsmen Order could be issued by your kill team during the Turning Point, e.g. the Inspirational Leadership Tactical Ploy (pg 45), they must be different Guardsmen Orders.</characteristic>
       </characteristics>
     </profile>
