@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="bfeb-dc54-faa7-a9ba" name="Blooded" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="bfeb-dc54-faa7-a9ba" name="Blooded" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a07d-2f4e-2358-5660" name="Traitor Chieftain" hidden="false"/>
     <categoryEntry id="dd95-f453-40a2-118d" name="Traitor Brimstone Grenadier" hidden="false"/>
@@ -1470,6 +1470,7 @@ This operative cannot perform this action while within Engagement Range of an en
     <selectionEntry id="afe5-8d04-a923-b22e" name="Frag Grenade" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4864-b1a3-c1a1-7ef0" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad2f-0893-c7ac-1d0e" type="max"/>
       </constraints>
       <profiles>
         <profile id="0976-c157-9c0f-1203" name="⌖ Frag grenade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1495,6 +1496,7 @@ This operative cannot perform this action while within Engagement Range of an en
     <selectionEntry id="a494-1f2c-b00a-3b59" name="Krak Grenade" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc3-92b1-3f21-f130" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f5ce-88f4-67c9-2ea0" type="max"/>
       </constraints>
       <profiles>
         <profile id="3592-4d17-072c-e1aa" name="⌖ Krak grenade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -2024,6 +2026,13 @@ Incendiary Shells: Each time this weapon is selected to shoot with, you can choo
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="b4e6-86e5-0070-52d0" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+            <infoLink id="c069-a73d-7574-3ffb" name="Blast x" hidden="false" targetId="d848-be09-6d6d-4708" type="rule"/>
+            <infoLink id="2502-ac42-c893-e521" name="Indirect" hidden="false" targetId="653d-16a5-eefb-8b71" type="rule"/>
+            <infoLink id="65a3-297e-52e5-6673" name="No Cover" hidden="false" targetId="c091-97f7-8640-5e56" type="rule"/>
+            <infoLink id="102b-fdef-d738-f94b" name="Limited" hidden="false" targetId="1eb0-6ad3-3e5a-d8ec" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
           </costs>
@@ -2194,6 +2203,8 @@ Incendiary Shells: Each time this weapon is selected to shoot with, you can choo
             <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
           </costs>
         </entryLink>
+        <entryLink id="d22e-4f42-df63-96e9" name="Melee Weapons Rare Equipment" hidden="false" collective="false" import="true" targetId="d419-7a47-04c4-e1d9" type="selectionEntryGroup"/>
+        <entryLink id="b88e-3830-c10f-2ca4" name="Ranged Weapons Rare Equipment" hidden="false" collective="false" import="true" targetId="aaad-f73a-1e28-248c" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="eeb2-4002-2c34-3243" name="Specialism" hidden="false" collective="false" import="true">
