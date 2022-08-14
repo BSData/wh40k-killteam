@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="555c-9d39-ccdc-f007" name="Phobos Strike Team" revision="6" battleScribeVersion="2.03" authorName="@Mad-Spy" authorContact="" authorUrl="https://bsdata.net" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="555c-9d39-ccdc-f007" name="Phobos Strike Team" revision="7" battleScribeVersion="2.03" authorName="@Mad-Spy" authorContact="" authorUrl="https://bsdata.net" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="584e-6521-8a6f-b708" name="Adeptus Astartes" hidden="false"/>
     <categoryEntry id="429e-f448-e1c5-5044" name="Primaris" hidden="false"/>
@@ -217,7 +217,7 @@
         </profile>
         <profile id="cfc4-ea5d-ee83-edd4" name="Plant Saboteur Explosive (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
           <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Place a Saboteur Explosives token within ▲ of this operative. This operative cannot perform this action while within Engagement Range of an enemy operative. If this operative is incapacitated and removed from the killzone, remove its Saboteur Explosives token. This operative can only perform this action once.</characteristic>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Place a Saboteur Explosives token within ▲ of and Visible to this operative. This operative cannot perform this action while within Engagement Range of an enemy operative. If this operative is incapacitated and removed from the killzone, remove its Saboteur Explosives token. This operative can only perform this action once.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -252,7 +252,7 @@
             </profile>
             <profile id="4360-b2cb-77ef-5486" name="*Detonate" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">If this operative performs a Shoot action with this weapon, make a shooting attack against each operative within ⬛ of the centre of its Saboteur Explosives token with this weapon. When making those shooting attacks, each operative is treated as being Visible, but when determining if it is in Cover, treat this operative&apos;s Saboteur Explosives token as the active Operative. Then remove this operative&apos;s Saboteur Explosives token. An operative cannot make a shooting attack with this weapon by performing an Overwatch action, or if its Saboteur Explosives token is not in the killzone.</characteristic>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">If this operative performs a Shoot action with this weapon, make a shooting attack against each operative within ⬛ of the centre of its Saboteur Explosives token with this weapon. When making those shooting attacks, each operative (friendly and enemy) within ⬛ is a valid target, but when determining if it is in Cover, treat this operative&apos;s Saboteur Explosives token as the active Operative. Then remove this operative&apos;s Saboteur Explosives token. An operative cannot make a shooting attack with this weapon by performing an Overwatch action, or if its Saboteur Explosives token is not in the killzone.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -652,7 +652,7 @@
       <profiles>
         <profile id="a2cc-c01c-dcbc-4c1f" name="Plant Haywire Mine (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
           <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Place a Haywire Mine token within ▲of this operative. This operative cannot perform this action while within Engagement Range of an enemy operative. This operative can only perform this action once.</characteristic>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Place a Haywire Mine token within ▲of and Visible to this operative. This operative cannot perform this action while within Engagement Range of an enemy operative. This operative can only perform this action once.</characteristic>
           </characteristics>
         </profile>
         <profile id="6843-b354-c669-e4a0" name="Incursor Minelayer" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -697,7 +697,7 @@
             </profile>
             <profile id="2679-e8b4-9ae3-7767" name="*Proximity" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">The first time an enemy operative moves within ⬛ of this operative&apos;s Haywire Mine token, make a shooting attack against that operative with this weapon (even if this operative is not in the killzone). When making that shooting attack, that enemy operative is always a valid target. Then remove this operative&apos;s Haywire Mine token. An operative cannot make a shooting attack with this weapon by any other means, or if its Haywire Mine token is not in the killzone.</characteristic>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">The first time an enemy operative moves within ⬛ of this operative&apos;s Haywire Mine token, make a shooting attack against that operative with this weapon (even if this operative is not in the killzone, and ignore all Ballistic Skill modifiers). When making that shooting attack, that enemy operative is always a valid target. Then remove this operative&apos;s Haywire Mine token. An operative cannot make a shooting attack with this weapon by any other means, or if its Haywire Mine token is not in the killzone.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1393,7 +1393,7 @@
           <profiles>
             <profile id="c243-5ecd-4c45-6bdb" name="Smoke Grenade (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
               <characteristics>
-                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Place the centre of one Smoke token on a point within ⬟ of this operative. That token creates an area of smoke with a ⬤ radius and unlimited upward height (but not below) measured from the centre of that token. Until the end of the Turning Point, an operative is not visible if a Cover line drawn to it crosses an area of smoke. This operative can only perform this action once, and cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Place the centre of one Smoke token on a point within ⬟ of this operative. That token creates an area of smoke with a ⬤ radius and unlimited upward height (but not below) measured from the centre of that token. Until the end of the Turning Point, an operative is Obscured if every Cover line drawn to it crosses an area of smoke. This operative can only perform this action once, and cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
               </characteristics>
             </profile>
           </profiles>
