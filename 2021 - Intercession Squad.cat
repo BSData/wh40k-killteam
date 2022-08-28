@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1e23-aa01-270e-3fd6" name="Intercession Squad" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1e23-aa01-270e-3fd6" name="Intercession Squad" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="591b-5789-c8e1-5b51" name="INTERCESSION SQUAD" hidden="false"/>
     <categoryEntry id="e1c1-f9a5-db1d-7722" name="Adeptus Astartes" hidden="false"/>
@@ -546,19 +546,20 @@
       </constraints>
       <profiles>
         <profile id="86c4-beaa-ba06-fe16" name="⚔ Chainsword" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-          <modifierGroups>
-            <modifierGroup>
+          <modifiers>
+            <modifier type="set" field="5f37-25bb-661b-5c9c" value="4">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e0b-1013-144f-dd94" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7280-1e68-9b15-588b" type="instanceOf"/>
               </conditions>
-              <modifiers>
-                <modifier type="set" field="32b4-9a0e-e740-6031" value="2+"/>
-                <modifier type="set" field="5f37-25bb-661b-5c9c" value="5"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
+            </modifier>
+          </modifiers>
           <characteristics>
-            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
             <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
             <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
@@ -1050,16 +1051,25 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c3f-5c4f-5e31-8565" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="72c8-487b-d8bf-4349" name="Dueller" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcc6-b2a5-092b-213e" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="0ebd-bd49-686a-8610" name="Rapid" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0213-f02c-cffd-10fa" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1069,16 +1079,25 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e0f-7840-d440-fe68" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="cfb7-5175-bb67-98a8" name="Mobile" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53b6-7055-0b4d-004c" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="45f6-fcad-2af8-1b18" name="Stealthy" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6149-7a65-7bfd-8230" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1088,16 +1107,25 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0df-a22c-46e4-d13c" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="4c15-d537-abfc-a8ab" name="Accurate" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc33-dc3c-1486-cb60" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="7916-96b7-8039-d429" name="Methodical" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="403f-4b5c-386f-e442" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1107,22 +1135,34 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebbb-d806-58b3-1400" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="6dca-c0a0-879a-557e" name="Durable" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0774-4a7d-4a42-6aeb" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="00f7-3b58-ca6b-7d84" name="Hardy" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3944-c46e-adf7-e984" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
