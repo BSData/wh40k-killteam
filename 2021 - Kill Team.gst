@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="4" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="c61a-51a3-370d-bf55" name=" EP" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -71,6 +71,7 @@
     <categoryEntry id="c62e-f54d-e0bb-6940" name="Aeldari" hidden="false"/>
     <categoryEntry id="55b9-413d-e975-492a" name="Psyker" hidden="false"/>
     <categoryEntry id="c5c1-db85-5269-3c3c" name="Drone" hidden="false"/>
+    <categoryEntry id="5378-18da-9409-091a" name="Mutoid Vermin" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7138-2b60-74ce-a90b" name="Roster" hidden="false">
@@ -91,6 +92,7 @@
           </constraints>
         </categoryLink>
         <categoryLink id="adfa-b821-d9f9-04db" name="Drone" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
+        <categoryLink id="b6b4-8178-6092-bdff" name="Mutoid Vermin" hidden="false" targetId="5378-18da-9409-091a" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1087,8 +1089,8 @@ Each time a friendly operative fights in combat with this weapon, in the Resolve
         <characteristic name="APL" typeId="c84a-a042-6fe6-519b">⬤</characteristic>
         <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">⬛</characteristic>
         <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">⬟</characteristic>
-        <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">⌖ ⚔</characteristic>
-        <characteristic name="W" typeId="db11-738c-048c-759e">💀</characteristic>
+        <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">⌖ </characteristic>
+        <characteristic name="W" typeId="db11-738c-048c-759e">⚔ </characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
