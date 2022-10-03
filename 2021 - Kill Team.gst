@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="4" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="5" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="c61a-51a3-370d-bf55" name=" EP" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -969,7 +969,7 @@
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b29-ade5-3396-0025" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3298-c6d0-b1ff-6890" name="Power Enhancer" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+            <profile id="3298-c6d0-b1ff-6890" name="Arc Unit" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
               <characteristics>
                 <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Select one melee weapon the operative is equipped with. This weapon gains the Stun special rule.</characteristic>
               </characteristics>
