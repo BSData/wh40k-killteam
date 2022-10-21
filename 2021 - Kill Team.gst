@@ -60,7 +60,7 @@
     <profileType id="1e11-8a99-d34b-1cca" name="Ploy">
       <characteristicTypes>
         <characteristicType id="8348-e7ed-5256-b5b4" name="Description"/>
-        <characteristicType id="a1bd-1b05-542f-3433" name="Cost"/>
+        <characteristicType id="a1bd-1b05-542f-3433" name="CP"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>

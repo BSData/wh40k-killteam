@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7465-527f-4350-203d" name="Death Guard" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7465-527f-4350-203d" name="Death Guard" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="8dc1-46e8-f00d-0e7d" name="DEATH GUARD" hidden="false"/>
     <categoryEntry id="2075-e773-0480-a423" name="Poxwalker" hidden="false"/>
@@ -77,6 +77,7 @@
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7058-5641-acd1-478e" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="9fb3-5c04-97e1-e641" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="9ca4-6a11-3529-552a" name="Poxwalker Fire Team" hidden="false">
@@ -88,6 +89,7 @@
             <constraint field="selections" scope="force" value="8.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8aa8-bdc7-a80e-c736" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="e3ae-1ab1-e224-02b9" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -176,6 +178,8 @@
         <categoryLink id="b59c-d544-50d7-3c8d" name="New CategoryLink" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="ae1b-a0cf-7dde-0ccd" name="Strategic Ploys" hidden="false" collective="false" import="true" targetId="f146-6f3b-24d2-61e5" type="selectionEntry"/>
+    <entryLink id="f878-2fa2-3c8f-e212" name="Tactical Ploys" hidden="false" collective="false" import="true" targetId="bfd5-f256-9197-8fde" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="39a3-ab03-79fa-8bc6" name="Poxwalker" hidden="false" collective="false" import="true" type="model">
@@ -847,6 +851,69 @@
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="f146-6f3b-24d2-61e5" name="Strategic Ploys" publicationId="af59-14b6-6fe1-9e92" page="78" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f90-f1d6-e4db-d611" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9df6-773b-ee40-efc4" name="Malicious Volleys" publicationId="af59-14b6-6fe1-9e92" page="78" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly BUBONIC ASTARTES operative is activated, if it does not perform a Fight action during that activation, it ca n perform two Shoot actions during that activation if a bolt wea pon is selected for each of those shooti ng attacks. A bolt weapon is a ranged weapon that i ncludes &apos;bolt&apos; i n its name, e.g. boltgun, bolt pistol etc.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fae2-0808-9511-627f" name="Contagion" publicationId="af59-14b6-6fe1-9e92" page="78" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, while an enemy operative is Visibie to and within ⬤ of a friendiy DEATH GUARD operative, that enemy operative is treated as being injured (only subtract ⬤ from its Movement characteristic as a result of being injured if it is activated within ⬤ of a friendly DEATH GUARD operative).</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6211-aba4-fdb8-c37c" name="Hateful Assault" publicationId="af59-14b6-6fe1-9e92" page="78" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turn i ng Poi nt, each time a friendly BUBONIC ASTARTES operative is activated, if it does not perform a Shoot action during that activation, it can perform two Fight actions during that activation.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6b57-17bb-1b3d-aa2d" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="bfd5-f256-9197-8fde" name="Tactical Ploys" publicationId="af59-14b6-6fe1-9e92" page="78" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7334-7f77-df85-5c9c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9f2e-1dd3-3ed7-bb95" name="Effluent Demise" publicationId="af59-14b6-6fe1-9e92" page="78" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a friendly BUBONIC ASTARTES operative is incapacitated. Inflict D3 mortal wou nds on each enemy operative Visible to and within ⬤ of that operative.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="43d2-a72c-6885-8d79" name="Revolting Durability" publicationId="af59-14b6-6fe1-9e92" page="78" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy in either the Resolve Successful Hits or Resolve Successful Saves step of a combat or shooting attack made against a friendly BUBONIC ASTARTES operative. You can change one of your opponent&apos;s critical hits into a
+normal hit.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6b08-1e20-f126-5ded" name="Dig In" publicationId="af59-14b6-6fe1-9e92" page="78" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a friendly BUBONIC ASTARTES operative is activated. Until the end of that operative&apos;s activation, it can perform the following action:</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c57e-7a07-93d3-9aac" name="Dig In" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Until the end of the Turning Point, add 1 to this operative&apos;s Defence characteristic.
+1 AP</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d861-704a-b73c-a171" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
