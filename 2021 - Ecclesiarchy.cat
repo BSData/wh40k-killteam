@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f0f5-a53d-98ae-4237" name="Ecclesiarchy" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f0f5-a53d-98ae-4237" name="Ecclesiarchy" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a946-5ea7-18c7-5580" name="Adeptus Ministorum" hidden="false"/>
     <categoryEntry id="919a-20a2-f1cb-5848" name="Adepta Sororitas" hidden="false"/>
@@ -215,6 +215,8 @@
         <categoryLink id="4604-d034-f942-55fb" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="ea3d-2c7c-c65c-fe47" name="Strategic Ploys" hidden="false" collective="false" import="true" targetId="887a-2491-ddff-e1ed" type="selectionEntry"/>
+    <entryLink id="10dd-6172-a1d0-62e5" name="Tactical Ploys" hidden="false" collective="false" import="true" targetId="effe-8b9c-84a5-d404" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4e4f-1070-b0e7-d33a" name="Sister Repentia" hidden="false" collective="false" import="true" type="model">
@@ -1006,6 +1008,73 @@
         <entryLink id="a279-3905-5364-12fa" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup"/>
         <entryLink id="b1f9-c4f8-489a-a69b" name="Specialism" hidden="false" collective="false" import="true" targetId="0887-5633-7e6f-9ef8" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="887a-2491-ddff-e1ed" name="Strategic Ploys" publicationId="af59-14b6-6fe1-9e92" page="58" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a240-ee5d-e1e8-a976" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="73bb-4fd0-16b9-e2a6" name="Emperor&apos;s Guidance" publicationId="af59-14b6-6fe1-9e92" page="58" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly ADEPTA SORORITAS operative fights in combat or makes a shooting attack, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits, you can re-roll one of your attack dice.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ade3-a5b8-3468-3b7f" name="Divine Shield" publicationId="af59-14b6-6fe1-9e92" page="58" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a shooting attack is made against a friendly ADEPTA SORORITAS operative, in the Roll Defence Dice step of that shooting attack, if you retain any critical saves, you can re-roll one of your failed saves.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5690-9d37-dea3-8c23" name="Extremis Trigger Word" publicationId="af59-14b6-6fe1-9e92" page="58" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point:
+
+• Each time a friendly ARCO-FLAGELLANT operative performs a Dash or Charge action, it can move an additional ▲ for that action.
+• Arca-flails that friendly ARCO-FLAGELLANT operatives are equipped with gain the Lethal 5+ special rule.
+
+You can only use this Strategic Ploy once.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a296-c14b-0636-3569" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="effe-8b9c-84a5-d404" name="Tactical Ploys" publicationId="af59-14b6-6fe1-9e92" page="58" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc64-d6ed-ee85-8629" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d697-7121-1bce-4757" name="Penance Through Death" publicationId="af59-14b6-6fe1-9e92" page="58" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a friendly SISTER REPENTIA or ARCO-FLAGELLANT operative is incapacitated in combat by an enemy operative. Before that friendly operative is removed from the killzone, select one melee weapon it is equipped with and roll one attack dice as if it is fighting in combat. If the result is a successful hit, you can immediately strike an enemy operative within Engagement Range of it. Then remove that friendly operative from the killzone as normal.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9374-8807-0e1a-36f8" name="Storm of Retribution" publicationId="af59-14b6-6fe1-9e92" page="58" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a friendly BATTLE SISTER GUNNER or friendly BATTLE SISTER HEAVY GUNNER operative is activated. Until the end of that operative&apos;s activation, ranged weapons it is equipped with lose the Heavy special rule (if they have it) and gain the No Cover special rule.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9254-ac14-3f49-4ad5" name="Divine Intervention" publicationId="af59-14b6-6fe1-9e92" page="58" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy in the Resolve Successful Hits step of a combat or shooting attack, when an attack dice would inflict damage on a friendly ADEPTA SORORITAS operative. Ignore the damage inflicted from that attack dice.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5e75-5197-5011-53f5" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>

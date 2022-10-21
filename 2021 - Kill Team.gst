@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="5" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="6" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <publications>
+    <publication id="af59-14b6-6fe1-9e92" name="Compendium"/>
+    <publication id="c493-0f94-c61d-4f83" name="Octarius"/>
+  </publications>
   <costTypes>
     <costType id="c61a-51a3-370d-bf55" name=" EP" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -51,6 +55,12 @@
     <profileType id="031c-1555-fc2c-3d40" name="Psychic Power">
       <characteristicTypes>
         <characteristicType id="3895-3533-1c76-676a" name="Effect"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="1e11-8a99-d34b-1cca" name="Ploy">
+      <characteristicTypes>
+        <characteristicType id="8348-e7ed-5256-b5b4" name="Description"/>
+        <characteristicType id="a1bd-1b05-542f-3433" name="Cost"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
