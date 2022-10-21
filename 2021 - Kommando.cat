@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9210-4d15-82ce-4526" name="Kommando" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9210-4d15-82ce-4526" name="Kommando" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="fff5-e805-1699-7f74" name="Ork" hidden="false"/>
     <categoryEntry id="27c3-6016-6b60-a2d3" name="Kommando Grot" hidden="false"/>
@@ -139,6 +139,8 @@
         <categoryLink id="9890-d6f1-5fdf-2c37" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="0a5d-9334-0b96-c61b" name="Strategic Ploys" hidden="false" collective="false" import="true" targetId="45b3-987a-a89a-06dd" type="selectionEntry"/>
+    <entryLink id="de19-98dc-b9cc-571c" name="Tactical Ploys" hidden="false" collective="false" import="true" targetId="eeda-371b-e337-fbce" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8425-4dd8-3cb1-90fc" name="Grot" hidden="false" collective="false" import="true" type="model">
@@ -1265,6 +1267,69 @@
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="45b3-987a-a89a-06dd" name="Strategic Ploys" publicationId="c493-0f94-c61d-4f83" page="59" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a391-c1ba-5ca8-4c3f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="02c9-c4a2-b925-d820" name="SSSSHHHH!" publicationId="c493-0f94-c61d-4f83" page="59" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Friendly KOMMANDO operatives that are not withing Line of Sight of enemy operatives, or have a Conceal order and are more than ⬟ from enemy operatives, can immediately perform a free Dash action. 
+You can only use this Strategic Ploy once.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2fe6-3dfa-04d6-c872" name="DAKKA! DAKKA! DAKKA!" publicationId="c493-0f94-c61d-4f83" page="59" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly KOMMANDO operative makes a shooting attack, in the Roll Attack Dice step of that shooting attack, if you retain any critical hits, you can select one of your failed hits to be retained as a successful normal hit.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6413-a9ca-3b16-8670" name="WAAAGH!" publicationId="c493-0f94-c61d-4f83" page="59" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly KOMMANDO operative fights in combat, in the Roll Attack Dice step of that combat, when you would retain two or more normal hits, you can select one of those hits to be retained as a critical hit instead.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0aa1-345d-234d-cbaa" name="Skulk About" publicationId="c493-0f94-c61d-4f83" page="59" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a shooting attack is made against a friendly KOMMANDO operative, before rolling defence dice for that shooting attack, if it has a Conceal order, you can retains one as a successful normal save without rolling it.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2d00-8d6d-4d4b-81e4" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="eeda-371b-e337-fbce" name="Tactical Ploys" publicationId="c493-0f94-c61d-4f83" page="59" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddd1-2032-a964-5a06" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b80b-d984-5611-ece6" name="Just a Scratch" publicationId="c493-0f94-c61d-4f83" page="59" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy in the Resolve Successful Hits step of a shooting attack or combat, when damage would be inflicted on a friendly KOMMANDO operative (excluding KOMMANDO GROT operatives) from an attack dice. Ignore the damage inflicted from that attack dice.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d89f-9fdc-a855-56a9" name="Krump &apos;Em!" publicationId="c493-0f94-c61d-4f83" page="59" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy at the end of the Firefight phase. Select one friendly KOMMANDO operative. It can perform a free Fight action.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="631f-35ae-8eba-d8a7" name="Sneaky Git" publicationId="c493-0f94-c61d-4f83" page="59" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy in the Set Up Operatives step of the mission sequence. Select one friendly KOMMANDO operative (excluding BOMB SQUIG operatives). That operative can be set up with a Conceal order anywhere on the battlefield that is withing ▲ of Heavy terrain and more than ⬟ from enemy operatives and the enemy drop zone.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6a72-6a71-9027-f17b" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
