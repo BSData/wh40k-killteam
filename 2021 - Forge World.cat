@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4f21-fa11-b61d-598c" name="Forge World (Legends)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4f21-fa11-b61d-598c" name="Forge World (Legends)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="606f-85a8-c32d-f5f3" name="FORGE WORLD" hidden="false"/>
     <categoryEntry id="f282-583b-d61e-c0bc" name="Adeptus Mechanicus" hidden="false"/>
@@ -35,6 +35,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d04d-0214-be70-e7b6" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="8e08-dcf0-ce98-cda7" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="e17d-0023-6bf9-64e9" name="Skitarii Vanguard Fire Team" hidden="false">
@@ -56,6 +57,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2a7-431c-34cd-3b37" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="4d1c-51ab-d946-1b48" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="02fa-ad62-5182-0c53" name="Sicarian Fire Team" hidden="false">
@@ -72,6 +74,7 @@
             <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8a1-2f63-eeea-f425" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="bc00-45b7-5cd6-f279" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -246,6 +249,8 @@
         <categoryLink id="f202-9844-67f9-6b00" name="New CategoryLink" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="7392-627a-7018-416b" name="Strategic Ploys" hidden="false" collective="false" import="true" targetId="4a40-322c-b5f9-2529" type="selectionEntry"/>
+    <entryLink id="aa3a-a355-2415-ef49" name="Tactical Ploys" hidden="false" collective="false" import="true" targetId="8515-e2f1-7f83-6757" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="bff8-5b93-baf0-0695" name="Skitarii Ranger (Gunner)" hidden="false" collective="false" import="true" type="model">
@@ -1241,6 +1246,84 @@
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="4a40-322c-b5f9-2529" name="Strategic Ploys" publicationId="af59-14b6-6fe1-9e92" page="50" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="437a-9c45-83e4-f604" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="582a-2e10-8d5e-05ee" name="Protector Imperative" publicationId="af59-14b6-6fe1-9e92" page="50" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point:
+
+• Each time a friendly FORGE WORLD operative makes a shooting attack, in the Roll Attack Dice step of that shooting attack, you can re-roll one of your attack dice.
+• Each time a friendly FORGE WORLD operative fights in combat, in the Roll Attack Dice step of that combat, you must re-roll one of your successful hits.
+
+You can only use this Strategic Ploy once.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="952a-67d5-ae73-b618" name="Bulwark Imperative" publicationId="af59-14b6-6fe1-9e92" page="50" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point:
+
+• Each time a shooting attack is made against a friendly FORGE WORLD operative, in the Roll Defence Dice step of that shooting attack, you can re-roll one of your
+defence dice.
+• Subtract ⬤ from the Movement characteristic of friendly FORGE WORLD operatives.
+
+You can only use this Strategic Ploy once.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3190-3e15-2ff9-5b6f" name="Aggressor Imperative" publicationId="af59-14b6-6fe1-9e92" page="50" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point:
+
+• Each time a friendly FORGE WORLD operative performs a Normal Move or Charge action, it can move an additional ▲.
+• Each time a shooting attack is made against a friendly FORGE WORLD operative, in the Roll Defence Dice step of that shooting attack, you must re-roll one of your
+successful saves.
+
+You can only use this Strategic Ploy once.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="73c6-9307-bccc-f3e6" name="Conqueror Imperative" publicationId="af59-14b6-6fe1-9e92" page="50" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point:
+
+• Each time a friendly FORGE WORLD operative fights in combat, in the Roll Attack Dice step of that combat, you can re-roll one of your attack dice.
+• Each time a friendly FORGE WORLD operative makes a shooting attack, in the Roll Attack Dice step of that shooting attack, you must re-roll one of your successful hits.
+
+You can only use this Strategic Ploy once.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d35e-8d58-6bc4-d7a9" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="8515-e2f1-7f83-6757" name="Tactical Ploys" publicationId="af59-14b6-6fe1-9e92" page="50" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e5e-2d93-f193-a60b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d414-4dbf-16ef-6e5d" name="Neurostatic Interference" publicationId="af59-14b6-6fe1-9e92" page="50" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy at the start of the Firefight phase. Select one enemy operative Visible to and within ⬟ of a friendly INFILTRATOR operative. Until the end of the Turning Point, that enemy operative cannot be activated until another enemy operative has been activated (unless it is the only remaining enemy operative).</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="efb7-c47d-b35d-e4c4" name="Control Edict" publicationId="af59-14b6-6fe1-9e92" page="50" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when you activate a ready friendly FORGE WORLD LEADER operative. Select one other ready friendly FORGE WORLD operative Visible to and within ⬛ of that LEADER operative. At the end of that LEADER operative&apos;s activation, you can activate that other ready friendly operative.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a081-cfd0-5d38-6d5c" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

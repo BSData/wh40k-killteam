@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8e62-da18-67f9-c594" name="Veteran Guardsmen" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8e62-da18-67f9-c594" name="Veteran Guardsmen" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6790-22ed-c8fa-6309" name="Comms Veteran" hidden="false"/>
     <categoryEntry id="e2e3-78d3-0b08-9d27" name="VETERAN GUARDSMAN" hidden="false"/>
@@ -95,6 +95,7 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10a4-98b0-e27a-85d8" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="19f8-2cac-e93d-4599" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -203,6 +204,8 @@
     </entryLink>
     <entryLink id="54a1-e038-b31c-5c31" name="Tactical Assets Reference" hidden="false" collective="false" import="true" targetId="1c7c-5467-5174-bba4" type="selectionEntry"/>
     <entryLink id="9ed8-28ec-d7d1-468f" name="Guardsmen Order Reference" hidden="false" collective="false" import="true" targetId="a06c-10ae-cb63-b501" type="selectionEntry"/>
+    <entryLink id="8466-2f52-6afc-b5be" name="Strategic Ploys" hidden="false" collective="false" import="true" targetId="d11f-c02d-17d6-b317" type="selectionEntry"/>
+    <entryLink id="4eac-bba5-7ff9-9e3d" name="Tactical Ploys" hidden="false" collective="false" import="true" targetId="e6d0-4772-10bc-45de" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d4e8-fa0c-0ead-0ed8" name="Bayonet" hidden="false" collective="false" import="true" type="upgrade">
@@ -1656,6 +1659,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1c7c-5467-5174-bba4" name="Tactical Assets Reference" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3645-f783-1a0c-4f45" type="max"/>
+      </constraints>
       <profiles>
         <profile id="22fc-9472-d86e-81b5" name="Artillery Barrage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
           <characteristics>
@@ -1846,6 +1852,97 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d11f-c02d-17d6-b317" name="Strategic Ploys" publicationId="c493-0f94-c61d-4f83" page="45" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fefb-adec-df03-040e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a262-4213-20d8-b2dc" name="Take Cover" publicationId="c493-0f94-c61d-4f83" page="45" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a shooting attack is made against a friendly VETERAN GUARDSMAN operative, if it is in Cover, improve its Save characteristic by 1 for that shooting attack.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="232d-ba6d-48fb-5f48" name="Into the Breach" publicationId="c493-0f94-c61d-4f83" page="45" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Each friendly VETARAN GUARDSMAN operative withing your drop zone can perfom a free Dash action, but must finish that move closer to the enemy&apos;s drop zone.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6bbf-b75c-9fa9-7300" name="Clear the Line" publicationId="c493-0f94-c61d-4f83" page="45" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly VETERAN GUARDSMAN operative fights in combat, before rolling your attack dice for that combat, you can retain one as a successfull normal hit without rolling it.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8778-ac01-1ed2-ffa4" name="Overcharge Lasguns" publicationId="c493-0f94-c61d-4f83" page="45" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, change the profile of lasguns that friendly VETERAN GUARDSMAN operatives are equipped with the following:</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c12d-5be5-8a69-2319" name="Overcharge Lasguns - Standard" publicationId="c493-0f94-c61d-4f83" page="45" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650"/>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+          </characteristics>
+        </profile>
+        <profile id="7861-214a-d3e5-e9f9" name="Overcharge Lasguns - Overcharge" publicationId="c493-0f94-c61d-4f83" page="45" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1, Hot</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5595-b9c9-85d9-d056" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+        <infoLink id="6bbd-51be-6402-f1d8" name="Hot" hidden="false" targetId="83c3-fce7-8ac1-9872" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3c7e-d0f1-9442-f8ef" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e6d0-4772-10bc-45de" name="Tactical Ploys" publicationId="c493-0f94-c61d-4f83" page="45" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cffa-1439-29f0-6297" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7709-78ba-04b6-3842" name="Inspirational Leadership" publicationId="c493-0f94-c61d-4f83" page="45" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy during a VETERAN GUARDSMAN LEADER operative&apos;s activation. That operative issues a Guardsmen Order to all friendly VETERAN GUARDSMAN operatives withing ⬟ of an Visible to it.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1972-c771-f38c-21a6" name="In Death, Atonement" publicationId="c493-0f94-c61d-4f83" page="45" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a ready friendly VETERAN GUARDSMAN operative is incapacitated. That operative is not removed from the killzone until the end of your next activation and does not count as being injured.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a9b1-f8c1-f1ac-1dbd" name="Combined Arms" publicationId="c493-0f94-c61d-4f83" page="45" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy after rolling your attack dice for a shooting attack made by a friendly VETERAN GUARDSMAN operative. If the target of that attack is an enemy operative that was targeted by another friendly VETERAN GUARDSMAN operative with a shooting attack during that Turning Point, you can re-roll any or all of your attack dice for that shooting attack.</characteristic>
+            <characteristic name="Cost" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="73e5-9a02-3e6f-4daf" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+        <categoryLink id="a502-a2a0-e265-aee6" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>

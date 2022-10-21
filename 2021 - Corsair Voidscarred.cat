@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ad47-af38-c541-ae07" name="Corsair Voidscarred" revision="5" battleScribeVersion="2.03" authorName="Mad-Spy" authorContact="www.bsdata.net/contact" authorUrl="www.bsdata.net" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ad47-af38-c541-ae07" name="Corsair Voidscarred" revision="6" battleScribeVersion="2.03" authorName="Mad-Spy" authorContact="www.bsdata.net/contact" authorUrl="www.bsdata.net" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a2ec-0e4b-dd02-659d" name="CORSAIR VOIDSCARRED" hidden="false"/>
     <categoryEntry id="b378-bb76-8683-dba4" name="Voidscarred Felarch" hidden="false"/>
@@ -105,6 +105,9 @@
     <entryLink id="cf43-8799-38c1-2ef1" name="Starstorm Duellist" hidden="false" collective="false" import="true" targetId="9c0d-f375-4e73-b881" type="selectionEntry"/>
     <entryLink id="517f-5e54-e4dd-4bb8" name="Way Seeker" hidden="false" collective="false" import="true" targetId="9093-c7cb-35dc-a3de" type="selectionEntry"/>
     <entryLink id="e743-bfad-8982-5d24" name="Fate Dealer" hidden="false" collective="false" import="true" targetId="66a9-ed9f-3a74-7d44" type="selectionEntry"/>
+    <entryLink id="2b7c-8c3e-d079-d47a" name="Strategic Ploys" hidden="false" collective="false" import="true" targetId="86a8-e80b-a178-cd69" type="selectionEntry"/>
+    <entryLink id="2a0f-0d52-8469-ec0e" name="Tactical Ploys" hidden="false" collective="false" import="true" targetId="7569-d930-ad4e-ab46" type="selectionEntry"/>
+    <entryLink id="42aa-6987-3c12-6dd4" name="Psychic Power Reference" hidden="false" collective="false" import="true" targetId="4d69-0172-6119-cb1d" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="66a9-ed9f-3a74-7d44" name="Fate Dealer" hidden="false" collective="false" import="true" type="model">
@@ -1471,6 +1474,168 @@ On a 6+, until the end of the Turning Point, friendly CORSAIR VOIDSCARRED operat
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="86a8-e80b-a178-cd69" name="Strategic Ploys" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2214-9677-97d0-07c4" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="fc35-55eb-e158-f978" name="Aeldari Agility" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly CORSAIR VOIDSCARRED operative is activated, it can use its Aeldari agility. If it does so, it cannot perform Fight or Shoot actions during that activation, but each time it performs a Dash, Fall Back or Normal Move action during this activation, it can move an additional ▲ for that action.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6b86-3f1f-c657-9449" name="Outcasts" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly CORSAIR VOIDSCARRED operative fights in combat or makes a shooting attack, in the Roll Attack Dice step of that combat or shooting attack, if it is more than ⬟ from friendly operatives, if you retain any critical hits, you can select one of your failed hits to be retained as a successful normal hit.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b74d-4f6d-c6fe-45c5" name="Rapid Strike" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly CORSAIR VOIDSCARRED operative fights in combat, in the Roll Attack Dice step of that combat, if you are the Attacker and the target is not ready, you can select one of your normal hits to be retained as a critical hit.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24f0-5be1-3fa3-39f2" name="Plunderers" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Select up to three friendly CORSAIR VOIDSCARRED operatives. Each of those operatives can immediately perform a free Dash action. When doing so, if the mission you are playing has any objective markers that are not being carried by operatives, each selected operative must end their Dash action closer to the nearest objective marker.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2960-12d8-e987-7efe" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7569-d930-ad4e-ab46" name="Tactical Ploys" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d983-4992-9bf1-14c0" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9fd2-975d-77da-4975" name="Deadly Ambush" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy after an enemy operative finishes an action in which it moved. Select one friendly CORSAIR VOIDSCARRED operative that is not within Engagement Range of an enemy operative. That friendly operative can immediately perform a free Charge action, but can only move up to ⬛ and must finish that move within Engagement Range of that enemy operative (otherwise it cannot move).</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="da08-e43c-8431-53c2" name="One Step Ahead" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy at the end of the Initiative phase of the first Turning Point. You can redeploy up to two friendly CORSAIR VOIDSCARRED. They must be set up wholly within your deployment zone and you can change their order.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c6c0-50c8-9539-9e5b" name="Light Fingers" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy during a friendly CORSAIR VOIDSCARRED operative’s activation. Until the end of that activation, that operative can perform for free either one mission action or the Pick Up action, even if it is within Engagement Range of an enemy operative.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0706-bb1e-0868-6af7" name="Opportunistic Fighters" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when an enemy operative performs a Fall Back action. Before it moves, that enemy operative suffers D3 mortal wounds for each friendly CORSAIR VOIDSCARRED operative within Engagement Range of it.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="30a3-8e26-774a-0ba6" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+        <categoryLink id="415e-5550-102a-76f3" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d69-0172-6119-cb1d" name="Psychic Power Reference" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8c11-4cef-e646-9e38" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+        <categoryLink id="9f1a-c689-22c1-68e0" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="75de-2e40-ade4-d4d1" name="Lightning Strike" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc48-48d9-636e-f12a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35c3-63ce-b193-1496" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e91d-a419-c747-3da2" name="Lightning Strike" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Effect" typeId="3895-3533-1c76-676a">Perform a free Shoot action using the following ranged weapon:</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="fc2c-6b47-8249-784f" name="Lightning Strike" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="dec4-3085-4fee-2ae7" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2160-a600-f83c-73e2" name="Warding Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e5a-d0a5-3a19-82a4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bf9-6104-50ff-3934" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f429-f8af-1aa6-6a0c" name="Warding Shield" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Effect" typeId="3895-3533-1c76-676a">Select one friendly CORSAIR VOIDSCARRED operative Visible to and within ⬟ of this operative. Until the end of the Turning Point, that operative has a 3+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="433c-e6dc-7449-224e" name="Freezing Grasp" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db98-0657-21ad-a0e2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2646-660d-b72c-fed5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="225e-8fe0-421f-5d16" name="Freezing Grasp" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Effect" typeId="3895-3533-1c76-676a">Select one enemy operative Visible to this operative. Until the end of the Turning Point, subtract 2⬤ from that enemy operative’s Movement characteristic and it cannot perform the Dash action.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a2df-7455-ab00-7a5c" name="Warp Fold" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="715b-185b-043c-4113" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="789c-fc7c-f647-72d8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="551c-bd32-8ad4-f91c" name="Warp Fold" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Effect" typeId="3895-3533-1c76-676a">Select one other friendly CORSAIR VOIDSCARRED operative Visible to and within ⬟ of this operative. That friendly operative and this operative both drop any objective markers they are carrying. That friendly operative then swaps positions with this operative; remove both operatives from the killzone and set them back up in their new positions.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
