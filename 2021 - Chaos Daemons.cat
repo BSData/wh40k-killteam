@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1ae1-0f5b-cc2b-6aee" name="Chaos Daemons" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1ae1-0f5b-cc2b-6aee" name="Chaos Daemons" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c41a-d645-b823-5fd5" name="CHAOS DAEMONS" hidden="false"/>
     <categoryEntry id="6873-500e-bd9e-3390" name="Daemon" hidden="false"/>
@@ -35,6 +35,7 @@
             <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cbb6-aea9-8f28-0ae1" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="447e-c40d-8ca8-f1bd" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="5356-4f17-d4d6-4553" name="Daemonette Fire Team" hidden="false">
@@ -51,6 +52,7 @@
             <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="10dc-581a-ec65-5325" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="648a-1e89-9b86-3824" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="0963-a609-327e-c8e7" name="Blue Horror Fire Team" hidden="false">
@@ -84,6 +86,7 @@
             <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="562b-934b-ce5b-22b9" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="5e1f-9e7c-d722-7fad" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="9929-2fe3-9fe8-ea33" name="Pink Horror Fire Team" hidden="false">
@@ -399,6 +402,8 @@
         <categoryLink id="4359-35a7-7746-0753" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="f9f3-b755-a69c-68c2" name="Strategic Ploys" hidden="false" collective="false" import="true" targetId="35a0-95e9-98ee-d464" type="selectionEntry"/>
+    <entryLink id="2315-a4c5-78c6-a7df" name="Tactical Ploys" hidden="false" collective="false" import="true" targetId="106e-fabd-14fb-75cd" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4504-7beb-f60a-6a00" name="Bloodletter (Fighter)" hidden="false" collective="false" import="true" type="model">
@@ -1227,6 +1232,77 @@
       <entryLinks>
         <entryLink id="2d18-50f5-354b-e67b" name="Fists" hidden="false" collective="false" import="true" targetId="c316-be5c-b1cb-7b8c" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="35a0-95e9-98ee-d464" name="Strategic Ploys" publicationId="af59-14b6-6fe1-9e92" page="99" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7424-138d-f41c-c900" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3868-4845-b45b-3456" name="Unstoppable Ferocity" page="" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, add 1 to the Attacks characteristic of melee weapons friendly KHORNE operatives are equipped with.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8d88-83a3-b637-00e3" name="Quicksilver Swiftness" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly SLAANESH operative is activated, it can perform a free Dash action during that activation.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9282-53c0-7e4c-83ff" name="Glistening Barrage" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, ranged weapons friendly TZEENTCH operatives are equipped with gain the Ceaseless special rule.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c7f0-a3ac-099a-1394" name="Contagion" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, while an enemy operative is Visible to and within ⬤ of a friendly NURGLE operative, that enemy operative is treated as being injured (only subtract ⬤ from its Movement characteristic as a result of being injured if it is activated within ⬤ of a friendly NURGLE operative).</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5f91-395a-d904-38d8" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="106e-fabd-14fb-75cd" name="Tactical Ploys" publicationId="af59-14b6-6fe1-9e92" page="99" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9f4-a9be-88ae-395a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d83c-a324-4816-c650" name="Warp Surge" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a friendly CHAOS DAEMON operative is selected as the target of a ranged attack. Until the end of the Turning Point, each time a shooting attack is made against that friendly operative, in the Roll Defence Dice step of that shooting attack, you can re-roil any or all of your defence dice.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0d42-804c-ac17-683c" name="Ephemeral Regeneration" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a friendly CHAOS DAEMON operative is activated. That friendly operative regains 2D3 lost wounds.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1e71-b1ed-a3a6-d1f0" name="Split" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a friendly PINK HORROR operative is incapacitated for 2CP, or when a friendly BLUE HORROR operative is incapacitated for 1CP.
+- Before that PINK HORROR operative is removed from the killzone, set up two BLUE HORROR operatives as close as possible to that operative and not within Engagement Range of enemy operatives.
+- Before that BLUE HORROR operative is removed from the killzone, set up one BRIMSTONE HORRORS operative as close as possible to that operative and not within Engagement Range of enemy operatives.
+In either case, set up those operatives with the same order as the previous operative (including if it was ready or activated). In narrative play, any operatives set up as a result of this Tactical Ploy are no longer part of your kill team after the game.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1/2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2385-c785-035e-a0c3" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
