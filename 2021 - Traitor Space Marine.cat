@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="228f-66c4-e3e0-2b01" name="Traitor Space Marine" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="228f-66c4-e3e0-2b01" name="Traitor Space Marine" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="dc01-4030-c1e5-8e9a" name="Chaos Space Marine" hidden="false"/>
     <categoryEntry id="2e87-8f94-62f7-9457" name="TRAITOR SPACE MARINE" hidden="false"/>
@@ -56,6 +56,7 @@
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a23-2b98-e0c8-ae6f" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="d8b5-1889-d502-7b5e" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="fc17-3b1c-8002-6fbb" name="Chaos Cultist Fire Team" hidden="false">
@@ -77,6 +78,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="72f0-b430-c1b5-85b8" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="4e14-31bb-220b-317d" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -177,6 +179,8 @@
         <categoryLink id="ef73-3405-4429-ee07" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="397f-246b-76e7-6f9c" name="Tactical Ploys" hidden="false" collective="false" import="true" targetId="c715-9d03-9b01-4b23" type="selectionEntry"/>
+    <entryLink id="8b3d-e533-6b69-cba8" name="Strategic Ploys" hidden="false" collective="false" import="true" targetId="0444-4dd3-215b-26e7" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="20b9-d639-5c89-2e81" name="Chaos Space Marine (Gunner)" hidden="false" collective="false" import="true" type="model">
@@ -1074,6 +1078,56 @@
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="0444-4dd3-215b-26e7" name="Strategic Ploys" publicationId="af59-14b6-6fe1-9e92" page="71" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a5f9-97e5-e187-27a7" name="Hateful Assault" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly HERETIC ASTARTES operative is activated, if it does not perform a Shoot action during that activation, it can perform two Fight actions during that activation.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eab1-4406-66cb-7355" name="Malicious Volleys" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly HERETIC ASTARTES operative is activated, if it does not perform a Fight action during that activation, it can perform two Shoot actions during that activation if a bolt weapon is selected for each of those shooting attacks. A bolt weapon is a ranged weapon that includes ‘bolt’ in its name, e.g. boltgun, heavy bolter etc.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7e3b-a3db-97ff-cb0e" name="Let the Galaxy Burn!" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly HERETIC ASTARTES operative is activated, once during that activation, in the Roll Attack Dice step of a combat or shooting attack, if it is targeting the closest valid target, you can retain one of your attack dice results of 5+ that is a successful hit as a critical hit (if you could already retain one of your results of 5+, you can retain one of your results of 4+ instead).</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="dba3-81a3-1f1a-1ecd" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="c715-9d03-9b01-4b23" name="Tactical Ploys" publicationId="af59-14b6-6fe1-9e92" page="71" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5e17-b055-b25f-22ba" name="Warp Infused" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a friendly HERETIC ASTARTES operative is activated. Until the end of that operative’s activation, you can ignore any or all modifiers to its APL characteristic and it is not injured.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b1bd-514f-eff1-7db5" name="Veteran of the Long War" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy in a friendly HERETIC ASTARTES operative’s activation, after it fights in combat or makes a shooting attack. If the target did not lose any wounds as a result of that combat or shooting attack, repeat that combat or shooting attack.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bedb-74b5-732f-3da7" name="Strike from Within" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy in the Set Up Operatives step of the mission sequence. Select one friendly CHAOS CULTIST operative. That operative can be set up with a Conceal order anywhere in the killzone that is within ▲ of Heavy terrain and more than ⬟ from enemy operatives and the enemy drop zone.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cf43-3c27-d2b9-8151" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
