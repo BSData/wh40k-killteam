@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7232-14ad-4b1e-3aeb" name="Void-Dancer Troupe" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7232-14ad-4b1e-3aeb" name="Void-Dancer Troupe" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="e0f0-c569-de36-d361" name="Allegory">
       <characteristicTypes>
@@ -57,6 +57,9 @@
     <entryLink id="cbf2-8ed4-8f65-976c" name="Player" hidden="false" collective="false" import="true" targetId="13ea-471e-55f5-b59c" type="selectionEntry"/>
     <entryLink id="a958-f348-d46a-7e5a" name="Shadowseer" hidden="false" collective="false" import="true" targetId="ba73-4761-0b9a-4269" type="selectionEntry"/>
     <entryLink id="d65f-6ac4-bc1f-7277" name="Saedath" hidden="false" collective="false" import="true" targetId="5592-910d-900f-da92" type="selectionEntry"/>
+    <entryLink id="1c70-bcdf-7501-ed03" name="Strategic Ploys" hidden="false" collective="false" import="true" targetId="4604-148a-6a8a-0a84" type="selectionEntry"/>
+    <entryLink id="74ea-2bb2-fd80-0447" name="Tactical Ploys" hidden="false" collective="false" import="true" targetId="55d9-a748-4430-1722" type="selectionEntry"/>
+    <entryLink id="dae9-4e55-16cc-2954" name="Psychic Power Reference" hidden="false" collective="false" import="true" targetId="175b-2fc7-48a8-e8b9" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="07dc-ea59-cf33-5b7d" name="Neuro disruptor" hidden="false" collective="false" import="true" type="upgrade">
@@ -724,6 +727,101 @@ When you add the fourth mark to your Performance tally:
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="4604-148a-6a8a-0a84" name="Strategic Ploys" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bbe-5bc4-2695-ef7b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="143c-eb51-d73b-6f38" name="Between Colours" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, friendly VOID-DANCER TROUPE operatives can perform Shoot actions during Normal Move actions (any remaining increments of movement can be used after performing the Shoot action). You cannot select a shrieker cannon for those shooting attacks.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8d34-64a5-0768-511a" name="Prismatic Blur" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly VOID-DANCER TROUPE operative performs an action in which it moves, it is a prismatic blur until the end of the Turning Point. Each time a shooting attack is made against a friendly operative that is a prismatic blur, in the Roll Defence Dice step of that shooting attack, you can re-roll one of your defence dice.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6538-fab6-ffc7-e949" name="Domino Field" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point or until it makes a shooting attack, each friendly VOID-DANCER TROUPE operative has a domino field. For the purposes of determining Line of Sight, while a friendly operative with a domino field is within ▲ of a terrain feature and more than ⬟ from the active operative, the active operative always treats that friendly operative as having a Conceal order, regardless of any other rules (e.g. Vantage Point).</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">This Strategic Ploy costs 1 additional Command point for each previous time you’ve used it during the battle (e.g. 1CP the first time you would use it, 2CP the second time, etc.).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f8ff-e1d9-2694-a5b3" name="Cegorach&apos;s Jest" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly VOID-DANCER TROUPE operative fights in combat, once in the Resolve Successful Hits step of that combat, when your opponent strikes with a normal hit, you can roll one D6. If the result is equal to or less than the Weapon Skill characteristic of the enemy operative’s selected melee weapon, treat that strike as a parry instead (the Brutal special rule has no effect for that parry).</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2524-4645-9991-a459" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="55d9-a748-4430-1722" name="Tactical Ploys" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e1-a229-a037-4e20" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="07d6-b751-8fd4-6053" name="Murderous Entrance" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy in the Resolve Successful Hits step of a combat, after a friendly VOID-DANCER TROUPE operative that performed a Charge action during this activation strikes with a critical hit. You can immediately select one of your remaining attack dice and strike with it.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="37da-80b3-6af7-0b3e" name="The Curtain Falls" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy in the Resolve Successful Hits step of a combat, after an active friendly VOID-DANCER TROUPE operative strikes. Immediately end that combat and that friendly operative can perform a Fall Back action for 1AP, even if it has performed an action during that activation that prevents it from performing a Fall Back action (e.g. a Charge action).</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d33a-13a4-13c0-ab7b" name="Ruthless Derision" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy after rolling your attack dice for a shooting attack made by a friendly VOID-DANCER TROUPE operative in an activation in which it performed a Fall Back action. You can re-roll any or all of your attack dice for that shooting attack.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5bc6-ee03-a0fb-3530" name="Capricious Role" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a friendly VOID-DANCER TROUPE operative is activated. Until the end of its activation, that operative can perform Dash and Charge actions while within Engagement Range of enemy operatives.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0742-d3d2-3032-6920" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="175b-2fc7-48a8-e8b9" name="Psychic Power Reference" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e07-4799-951a-4fe8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cc4d-0e84-6688-29fe" name="Veil of Tears" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Effect" typeId="3895-3533-1c76-676a">Select one friendly VOID-DANCER TROUPE operative Visible to this operative. Until the end of the Turning Point:
+- For the purposes of determining Line of Sight, while that operative is more than ⬟ from the active operative, it is in Cover.
+- Enemy operatives cannot end a Charge action within Engagement Range of that operative unless they began that action within ⬟ of it, or they would also end that action within Engagement Range of another friendly operative from your kill team.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f9df-5477-e989-f36e" name="Fog of Dreams" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Effect" typeId="3895-3533-1c76-676a">Select one ready enemy operative Visible to this operative and roll one D6. Until the end of the Turning Point, that enemy operative is treated as having a Group Activation characteristic of 1, and cannot be activated or perform actions until it is the last enemy operative to be activated, or a number of enemy operatives have been activated equal to the result of the D6 (whichever comes first).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5320-b6df-d494-d6d1" name="Mirror of Minds" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Effect" typeId="3895-3533-1c76-676a">Select one enemy operative within this operative’s Line of Sight. Both players roll six D6. Pair your dice with your opponent’s dice based on matching results. For each matching pair, that enemy operative suffers 1 mortal wound. For example, if you roll 6, 5, 5, 4, 2, 1 and your opponent rolls 6, 5, 4, 4, 3, 1 that enemy operative would suffer 4 mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="614a-9a35-f63d-916f" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
