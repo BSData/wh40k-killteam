@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="bfeb-dc54-faa7-a9ba" name="Blooded" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="bfeb-dc54-faa7-a9ba" name="Blooded" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a07d-2f4e-2358-5660" name="Traitor Chieftain" hidden="false"/>
     <categoryEntry id="dd95-f453-40a2-118d" name="Traitor Brimstone Grenadier" hidden="false"/>
@@ -132,6 +132,7 @@
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2db7-fe67-49a6-7abc" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="bdb2-4d1b-f672-1355" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1450,6 +1451,76 @@ This operative cannot perform this action while within Engagement Range of an en
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="db07-7178-0bef-82c0" name="Strategic Ploys" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5302-71c2-4c63-ec8f" name="Overcharge Lasguns" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a las weapon is selected for a friendly BLOODED operative to shoot with (excluding a Sharpshooter’s long-las), you can choose to overcharge it. If you do so, that weapon gains the AP1 and Hot special rules for that shooting attack. A las weapon is a ranged weapon that includes ’las’ in its name, e.g. lasgun, laspistol etc.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3f67-0df6-35d2-4eed" name="Glory Kill" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Select one enemy operative Visible to a friendly BLOODED operative. Until the end of the Turning Point, each time a friendly BLOODED operative fights in combat with or makes a shooting attack against that enemy operative, in the Roll Attack Dice step of that combat or shooting attack, you can re-roll one of your attack dice.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c48d-f82a-5131-cc21" name="Reckless Aspirants" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">In the next Firefight phase, while a friendly BLOODED operative that does not have a Blooded token is within ⬟ of your opponent’s drop zone, treat it as if it has a Blooded token.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5dc2-2f2b-496a-489b" name="Dirty Fighters" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Until the end of the Turning Point, each time a friendly BLOODED operative fights in combat, in the Roll Attack Dice step of that combat, if another friendly operative is supporting them, you can retain one of your successful normal hits as a critical hit (excluding a normal hit retained as a result of a Blooded token).</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="effc-55ef-9e8f-7493" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="7d75-5d7a-575b-e2cf" name="Tactical Ploys" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="da00-f3d1-b040-2ad9" name="Callous Disregard" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a Shoot action is declared for a friendly BLOODED operative. For that shooting attack:
+Having other friendly operatives within Engagement Range of an enemy operative does not prevent that enemy operative from being selected as a valid target.
+When determining Line of Sight, enemy operatives cannot use friendly operatives’ bases as Cover.
+In the Roll Attack Dice step of that shooting attack, failed hits are instead retained separately as successful normal hits.
+In the Resolve Successful Hits step of that shooting attack, those retained hits inflict damage on one friendly operative within Engagement Range of the target operative.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="547b-f392-c58f-d321" name="Moment of Repute" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a friendly BLOODED operative that is under the gaze of the gods is activated. Add 1 to its APL.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5ba1-f5bf-0c5d-a8fe" name="Reward Earned" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when an enemy operative is incapacitated by a friendly BLOODED operative within ⬛ of it. Add 1 Blooded token to your pool.</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c9e4-f12b-f47d-7c8b" name="Dark Favour" hidden="false" typeId="1e11-8a99-d34b-1cca" typeName="Ploy">
+          <characteristics>
+            <characteristic name="Description" typeId="8348-e7ed-5256-b5b4">Use this Tactical Ploy when a friendly BLOODED operative that has a Blooded token is selected as the target of a shooting attack. Select one other friendly BLOODED operative that:
+- Does not have a Blooded token.
+- Is within ⬤ of that friendly operative.
+- Is Visible to the active operative.
+Resolve that shooting attack against that other friendly operative instead (it is treated as a valid target).</characteristic>
+            <characteristic name="CP" typeId="a1bd-1b05-542f-3433">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="30e5-1310-7c60-6f3f" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
