@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="5" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="6" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="c61a-51a3-370d-bf55" name=" EP" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -393,7 +393,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a75b-97c9-c0fd-5336" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2bf1-3374-0f50-602b" name="4 - Careful Aim" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
+            <profile id="2bf1-3374-0f50-602b" name="Careful Aim" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
               <characteristics>
                 <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">Each time this operative makes a shooting attack, when determining if the intended target is in Cover, Cover lines ignore the bases of all other operatives.</characteristic>
               </characteristics>
