@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="945a-0f25-eba7-691d" name="Hunter Clade" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="945a-0f25-eba7-691d" name="Hunter Clade" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="c7e7-80f7-a912-1eec" name="Doctrina Imperatives">
       <characteristicTypes>
@@ -34,51 +34,65 @@
         <categoryLink id="78b6-7e4a-fbf0-6876" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
         <categoryLink id="7ce8-2a20-fbe4-6da3" name="Leader" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5d69-06ce-9e74-1878" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5d69-06ce-9e74-1878" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="4d05-68ab-9a1a-8e8f" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6eb-d72c-9d94-7c2b" type="max"/>
-            <constraint field="selections" scope="force" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2d7-1584-e01a-afae" type="min"/>
+            <constraint field="selections" scope="force" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6eb-d72c-9d94-7c2b" type="max"/>
+            <constraint field="selections" scope="force" value="9" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2d7-1584-e01a-afae" type="min"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="a6eb-d72c-9d94-7c2b" id="ce2d-baa8-16c-5abe">
+              <conditions>
+                <condition type="lessThan" value="4" field="selections" scope="force" childId="bf2c-0f37-ac1a-a88f" shared="true" id="1a07-2145-eb34-6a9e" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="1e3a-60b9-41cd-7eb2" name="Gunner" hidden="false" targetId="ee8c-cc44-acc3-40f0" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d04d-0214-be70-e7b6" type="max"/>
+            <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d04d-0214-be70-e7b6" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="d04d-0214-be70-e7b6" id="da66-50a4-658e-3cfe">
+              <conditions>
+                <condition type="greaterThan" value="3" field="selections" scope="force" childId="bf2c-0f37-ac1a-a88f" shared="true" id="8fa1-6f41-a4aa-40d0" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="cbc9-a5c4-1ee3-5011" name="Surveyor" hidden="false" targetId="bfc8-f580-1682-87cd" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b466-36cf-c193-b11b" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b466-36cf-c193-b11b" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="a9a1-4e1a-8096-8134" name="Diktat" hidden="false" targetId="9fa7-f36f-0f97-216b" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cf9-7f23-0a61-b0b8" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cf9-7f23-0a61-b0b8" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="a96e-1408-be44-2eb9" name="Sicarian" hidden="false" targetId="bf2c-0f37-ac1a-a88f" primary="false">
           <modifiers>
-            <modifier type="increment" field="853c-e29d-c172-b365" value="1.0">
+            <modifier type="increment" field="853c-e29d-c172-b365" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ead-29c6-f9b1-bdc8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fa9-04a0-895d-4576" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ead-29c6-f9b1-bdc8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fa9-04a0-895d-4576" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="decrement" field="853c-e29d-c172-b365" value="1.0">
+            <modifier type="decrement" field="853c-e29d-c172-b365" value="1">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fa9-04a0-895d-4576" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ead-29c6-f9b1-bdc8" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fa9-04a0-895d-4576" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ead-29c6-f9b1-bdc8" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="853c-e29d-c172-b365" type="max"/>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="853c-e29d-c172-b365" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -105,8 +119,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <profile id="ecec-80e2-0106-35c7" name="Protector Imperative" hidden="false" typeId="c7e7-80f7-a912-1eec" typeName="Doctrina Imperatives">
           <characteristics>
             <characteristic name="Optimisation" typeId="6fcf-d7cf-fdbb-39d0">Each time a friendly HUNTER CLADE operative makes a shooting attack, in the Roll Attack Dice step of that shooting attack, before any other re-rolls, if you rolled two or more failed hits, you can re-roll one of your attack dice.</characteristic>
-            <characteristic name="Deprecation" typeId="2d6f-70a5-cd62-d9bf">Each time a friendly HUNTER CLADE operative fights in combat, in the Roll Attack Dice step of that combat, before any other re-rolls, you must re-roll one of your critical hits (if any).
-</characteristic>
+            <characteristic name="Deprecation" typeId="2d6f-70a5-cd62-d9bf">Each time a friendly HUNTER CLADE operative fights in combat, in the Roll Attack Dice step of that combat, before any other re-rolls, you must re-roll one of your critical hits (if any).</characteristic>
           </characteristics>
         </profile>
         <profile id="163d-c7cb-0454-8518" name="Bulwark Imperative" hidden="false" typeId="c7e7-80f7-a912-1eec" typeName="Doctrina Imperatives">
@@ -132,7 +145,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <categoryLink id="a087-f5ef-afb7-1736" name="New CategoryLink" hidden="false" targetId="322e-38ea-bf3e-c785" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -224,8 +237,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <selectionEntryGroups>
         <selectionEntryGroup id="c7ab-27f3-6401-cfb8" name="Weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7d0-c6b6-7e94-93cb" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a27-5524-5690-f004" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7d0-c6b6-7e94-93cb" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a27-5524-5690-f004" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="98e5-a43f-339d-2b8a" name="Arc rifle" hidden="false" collective="false" import="true" targetId="38d7-d953-1ae8-76a3" type="selectionEntry"/>
@@ -237,7 +250,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <entryLinks>
         <entryLink id="e988-f56c-5368-15cb" name="Gun butt" hidden="false" collective="false" import="true" targetId="bc21-2832-1317-b50a" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="934f-b631-3802-76a4" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="934f-b631-3802-76a4" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="9231-58fa-b0f3-d854" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -266,20 +279,20 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="38d7-d953-1ae8-76a3" name="Arc rifle" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="d5c7-ec39-434d-894d" value="1.0">
+        <modifier type="set" field="d5c7-ec39-434d-894d" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e83b-53d9-c0dd-524b" type="max"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d5c7-ec39-434d-894d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e83b-53d9-c0dd-524b" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d5c7-ec39-434d-894d" type="max"/>
       </constraints>
       <profiles>
         <profile id="8b41-33be-6d6c-5c88" name="⌖ Arc rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -297,20 +310,20 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="f242-e49d-9844-c4c6" name="Stun" hidden="false" targetId="a1e3-4e0b-f7c2-eb59" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d670-e96c-1afc-90da" name="Plasma caliver" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="4ad2-9baf-9571-cba8" value="1.0">
+        <modifier type="set" field="4ad2-9baf-9571-cba8" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efb5-8452-a7de-04df" type="max"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4ad2-9baf-9571-cba8" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efb5-8452-a7de-04df" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4ad2-9baf-9571-cba8" type="max"/>
       </constraints>
       <profiles>
         <profile id="e335-8329-d132-ac00" name="⌖ Plasma caliver - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -337,7 +350,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="9c2a-da08-5ebf-e0d5" name="Hot" hidden="false" targetId="83c3-fce7-8ac1-9872" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a914-3247-0f7d-7aee" name="Skitarii Ranger Marksman" hidden="false" collective="false" import="true" type="model">
@@ -355,8 +368,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <entryLinks>
         <entryLink id="897d-26f5-a5c9-7db1" name="Galvanic rifle" hidden="false" collective="false" import="true" targetId="7ac6-92bb-3ccf-3cf9" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b761-bb26-2d8b-bea2" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="774d-4a0b-ae81-ad40" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b761-bb26-2d8b-bea2" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="774d-4a0b-ae81-ad40" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="b8e9-5b3a-a43d-b2f2" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -375,8 +388,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <entryLink id="bf3f-c2b8-1a01-b399" name="Specialism" hidden="false" collective="false" import="true" targetId="6a76-efc1-fb54-686a" type="selectionEntryGroup"/>
         <entryLink id="75e4-a34d-44bb-46d5" name="Gun butt" hidden="false" collective="false" import="true" targetId="bc21-2832-1317-b50a" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="921c-8146-baf2-7356" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8766-1d23-9833-c312" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="921c-8146-baf2-7356" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8766-1d23-9833-c312" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="cb16-c75e-37bd-7fd2" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
@@ -391,7 +404,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2c81-11a5-252f-6cdc" name="Skitarii Ranger Alpha" hidden="false" collective="false" import="true" type="model">
@@ -423,110 +436,110 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <selectionEntryGroups>
         <selectionEntryGroup id="4a65-8704-dd24-406b" name="Weapons" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ab-e7c7-308c-78de" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="118e-ce16-ae3e-8fd1" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ab-e7c7-308c-78de" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="118e-ce16-ae3e-8fd1" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="2745-5559-fcac-8a3c" name="Galvanic rifle and gun butt" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="420a-399f-2206-f04d" name="Galvanic rifle" hidden="false" collective="false" import="true" targetId="7ac6-92bb-3ccf-3cf9" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bae3-c4ce-df61-d585" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bae3-c4ce-df61-d585" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="c857-e4d9-e1c6-1852" name="Gun butt" hidden="false" collective="false" import="true" targetId="bc21-2832-1317-b50a" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0df8-fde4-0973-0422" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0df8-fde4-0973-0422" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a651-c87e-a0e3-6a52" name="Master-crafted radium pistol and power weapon" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="e419-18f8-a122-f36d" name="Master-crafted radium pistol" hidden="false" collective="false" import="true" targetId="1301-04f5-5540-595d" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f22-3021-93e5-4dc5" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f22-3021-93e5-4dc5" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="f5e0-e2e3-09f8-63f8" name="Power weapon" hidden="false" collective="false" import="true" targetId="f11a-1162-3cc6-63db" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="662e-86e6-45e3-56d4" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="662e-86e6-45e3-56d4" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f931-623f-06dd-dc03" name="Arc pistol and arc maul" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="5222-be3f-e797-e4c6" name="Arc maul" hidden="false" collective="false" import="true" targetId="ee75-4410-e598-63d5" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de72-7424-f42b-6cd5" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de72-7424-f42b-6cd5" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="8c57-d141-e590-180c" name="Arc pistol" hidden="false" collective="false" import="true" targetId="b29d-4b66-bbef-8278" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1329-5ea2-a278-5746" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1329-5ea2-a278-5746" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9b72-256f-8fcb-0897" name="Arc pistol and taser goad" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="cbe0-d123-570f-7668" name="Arc pistol" hidden="false" collective="false" import="true" targetId="b29d-4b66-bbef-8278" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6100-80d1-c787-1cea" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6100-80d1-c787-1cea" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="cb8d-7503-bcc4-baf4" name="Taser goad" hidden="false" collective="false" import="true" targetId="eb1f-afbb-afe3-0cbf" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fd3-1023-0d85-0ae5" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fd3-1023-0d85-0ae5" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8796-88fa-a7a6-9800" name="Phosphor blast pistol and arc maul" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="1560-ffa2-6077-3035" name="Phosphor blast pistol" hidden="false" collective="false" import="true" targetId="7fdb-2b21-d111-af60" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b68-ff44-d0b3-8825" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b68-ff44-d0b3-8825" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="0691-18d4-1cae-54d5" name="Arc maul" hidden="false" collective="false" import="true" targetId="ee75-4410-e598-63d5" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ea9-cbb0-a5e5-31a6" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ea9-cbb0-a5e5-31a6" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7857-c967-549d-ceb1" name="Phosphor blast pistol and taser goad" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="2b82-2ce5-8030-2bf9" name="Phosphor blast pistol" hidden="false" collective="false" import="true" targetId="7fdb-2b21-d111-af60" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="459f-a945-2a80-6b3a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="459f-a945-2a80-6b3a" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="d05f-c8b2-1b87-5ed0" name="Taser goad" hidden="false" collective="false" import="true" targetId="eb1f-afbb-afe3-0cbf" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f01b-a88f-ec2a-9094" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f01b-a88f-ec2a-9094" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -559,12 +572,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b29d-4b66-bbef-8278" name="Arc pistol" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e996-4eea-59b3-b9b8" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e996-4eea-59b3-b9b8" type="max"/>
       </constraints>
       <profiles>
         <profile id="e843-2018-d746-4849" name="⌖ Arc pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -583,12 +596,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="37c0-7e9f-4c62-cbae" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7fdb-2b21-d111-af60" name="Phosphor blast pistol" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a55-485f-ed58-6cd9" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a55-485f-ed58-6cd9" type="max"/>
       </constraints>
       <profiles>
         <profile id="3168-839f-b545-49eb" name="⌖ Phosphor blast pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -607,12 +620,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="160d-5cd2-162c-4542" name="No Cover" hidden="false" targetId="c091-97f7-8640-5e56" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1301-04f5-5540-595d" name="Master-crafted radium pistol" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3691-ae65-baf7-65b0" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3691-ae65-baf7-65b0" type="max"/>
       </constraints>
       <profiles>
         <profile id="0831-3a44-340d-11ea" name="⌖ Master-crafted radium pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -631,12 +644,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="7149-c53d-b30e-2e15" name="Balanced" hidden="false" targetId="547c-e6e5-64d4-a519" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ee75-4410-e598-63d5" name="Arc maul" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d092-d39d-611f-4dfc" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d092-d39d-611f-4dfc" type="max"/>
       </constraints>
       <profiles>
         <profile id="2b4c-4e62-0ba3-b38b" name="⚔ Arc maul" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -653,19 +666,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="5754-0ac0-2b60-c58a" name="Stun" hidden="false" targetId="a1e3-4e0b-f7c2-eb59" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f11a-1162-3cc6-63db" name="Power weapon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09dd-1abe-1d9d-4d68" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09dd-1abe-1d9d-4d68" type="max"/>
       </constraints>
       <profiles>
         <profile id="e09d-2187-6e0b-40c3" name="⚔ Power weapon" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
           <modifiers>
             <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4a9-81f3-3b48-b09d" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4a9-81f3-3b48-b09d" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -682,19 +695,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="debf-0edf-610d-3176" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eb1f-afbb-afe3-0cbf" name="Taser goad" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96ce-a264-97ab-128d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96ce-a264-97ab-128d" type="max"/>
       </constraints>
       <profiles>
         <profile id="a626-e6eb-dc1c-3a26" name="⚔ Taser goad" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
           <modifiers>
             <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4a9-81f3-3b48-b09d" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4a9-81f3-3b48-b09d" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -712,7 +725,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="a402-92bc-c4bb-b2c3" name="Stun" hidden="false" targetId="a1e3-4e0b-f7c2-eb59" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6dff-831b-a94a-76b3" name="Skitarii Vanguard Gunner" hidden="false" collective="false" import="true" type="model">
@@ -731,8 +744,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <selectionEntryGroups>
         <selectionEntryGroup id="c4f3-631d-96e1-b9aa" name="Weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41d4-8df0-e4a7-1456" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7380-71d6-a9be-99cb" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41d4-8df0-e4a7-1456" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7380-71d6-a9be-99cb" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="cfd2-8572-a2d2-4a77" name="Arc rifle" hidden="false" collective="false" import="true" targetId="38d7-d953-1ae8-76a3" type="selectionEntry"/>
@@ -744,8 +757,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <entryLinks>
         <entryLink id="593e-b95e-c55f-4eb5" name="Gun butt" hidden="false" collective="false" import="true" targetId="bc21-2832-1317-b50a" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0621-5d73-8992-f552" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1be8-5962-4df3-905e" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0621-5d73-8992-f552" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1be8-5962-4df3-905e" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="ad74-c97b-fe6a-7273" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -774,7 +787,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="662c-a618-d1ac-d2ed" name="Skitarii Vanguard Shocktrooper" hidden="false" collective="false" import="true" type="model">
@@ -793,8 +806,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <entryLinks>
         <entryLink id="179b-2df1-e06b-efd2" name="Radium carbine" hidden="false" collective="false" import="true" targetId="defa-f78f-2158-76f0" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f80-0de0-e6e2-1167" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4753-5e41-c39f-6e36" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f80-0de0-e6e2-1167" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4753-5e41-c39f-6e36" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="1b00-0c96-8d93-8e9c" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -813,8 +826,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <entryLink id="f273-889e-cf7d-4172" name="Specialism" hidden="false" collective="false" import="true" targetId="6a76-efc1-fb54-686a" type="selectionEntryGroup"/>
         <entryLink id="97ff-2c70-cd7e-233a" name="Gun butt" hidden="false" collective="false" import="true" targetId="bc21-2832-1317-b50a" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c44-4ed3-09a0-a60e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b8-4a5e-b0ca-8a3d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c44-4ed3-09a0-a60e" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b8-4a5e-b0ca-8a3d" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="c69d-beef-d6e0-6375" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
@@ -829,19 +842,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="defa-f78f-2158-76f0" name="Radium carbine" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eb7-6de6-2d78-46bd" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eb7-6de6-2d78-46bd" type="max"/>
       </constraints>
       <profiles>
         <profile id="a867-7cca-d9c7-39a6" name="⌖ Radium carbine" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
           <modifiers>
             <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -858,7 +871,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="196e-3bba-4888-6185" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fd38-18c9-7fe8-1a02" name="Sicarian Ruststalker Assassin" hidden="false" collective="false" import="true" type="model">
@@ -889,8 +902,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <selectionEntryGroups>
         <selectionEntryGroup id="5d41-f38f-9e44-58fc" name="Weapons" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68d4-362a-de8d-7f05" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27e9-22ab-0ad8-8cdd" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68d4-362a-de8d-7f05" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27e9-22ab-0ad8-8cdd" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="cedc-4efa-cc1a-e039" name="Transonic blades" hidden="false" collective="false" import="true" targetId="af10-e9c8-53ae-82e2" type="selectionEntry"/>
@@ -925,12 +938,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <entryLink id="21c0-cdbd-41be-1d4d" name="Specialism" hidden="false" collective="false" import="true" targetId="6a76-efc1-fb54-686a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c8ff-4a3a-142d-4f1b" name="Chordclaw and transonic razor" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21b8-350f-ddde-1a80" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21b8-350f-ddde-1a80" type="max"/>
       </constraints>
       <profiles>
         <profile id="a818-6aa7-594e-599b" name="⚔ Chordclaw and transonic razor" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -947,12 +960,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="42c4-08de-54ac-3cd1" name="Balanced" hidden="false" targetId="547c-e6e5-64d4-a519" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="af10-e9c8-53ae-82e2" name="Transonic blades" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99cc-e187-0ed2-11be" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99cc-e187-0ed2-11be" type="max"/>
       </constraints>
       <profiles>
         <profile id="1fde-5d5b-ed4d-ef51" name="⚔ Transonic blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -969,7 +982,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="bf27-834a-f7f0-5e33" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5495-af2a-fe68-4b4c" name="Sicarian Ruststalker Princeps" hidden="false" collective="false" import="true" type="model">
@@ -1000,8 +1013,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <selectionEntries>
         <selectionEntry id="64e4-6f6b-a34c-ec72" name="Chordclaw and transonic blades" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce54-140e-3897-4e61" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58d7-b84f-a09f-33d6" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce54-140e-3897-4e61" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58d7-b84f-a09f-33d6" type="max"/>
           </constraints>
           <profiles>
             <profile id="2892-56b9-f6e4-00ce" name="⚔ Chordclaw and transonic blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1019,7 +1032,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             <infoLink id="5478-8a99-bfed-dbdb" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1050,7 +1063,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <entryLink id="e3b1-8b3c-a940-4e86" name="Specialism" hidden="false" collective="false" import="true" targetId="6a76-efc1-fb54-686a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d3f9-039a-5331-a717" name="Sicarian Infiltrator Tracker" hidden="false" collective="false" import="true" type="model">
@@ -1078,8 +1091,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <selectionEntryGroups>
         <selectionEntryGroup id="992c-35e5-0ee9-2233" name="Ranged weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af1e-48d9-517d-215a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4334-8532-c7c4-6d8b" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af1e-48d9-517d-215a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4334-8532-c7c4-6d8b" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="3ac0-e613-9a75-5c15" name="Flechette blaster" hidden="false" collective="false" import="true" targetId="4d58-bdea-1bdc-7eb2" type="selectionEntry"/>
@@ -1088,8 +1101,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </selectionEntryGroup>
         <selectionEntryGroup id="9536-8991-0aa5-1aa4" name="Melee weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8d2-7329-8195-adcf" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3dd-5610-12b7-7d96" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8d2-7329-8195-adcf" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3dd-5610-12b7-7d96" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="79a5-5112-4b7a-0d33" name="Power weapon" hidden="false" collective="false" import="true" targetId="f11a-1162-3cc6-63db" type="selectionEntry"/>
@@ -1134,19 +1147,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <entryLink id="2ae1-4254-f770-5206" name="Specialism" hidden="false" collective="false" import="true" targetId="6a76-efc1-fb54-686a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4d58-bdea-1bdc-7eb2" name="Flechette blaster" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6438-5f6b-31aa-ca18" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6438-5f6b-31aa-ca18" type="max"/>
       </constraints>
       <profiles>
         <profile id="d61b-ef85-0a02-6447" name="⌖ Flechette blaster" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
           <modifiers>
             <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47e7-8b8c-ce52-5428" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47e7-8b8c-ce52-5428" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1165,19 +1178,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="de8d-5d94-f02f-5e85" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8c0c-0877-247a-588a" name="Stubcarbine" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7b5-aedb-9b57-c47b" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7b5-aedb-9b57-c47b" type="max"/>
       </constraints>
       <profiles>
         <profile id="2b9c-cd85-6e7e-a536" name="⌖ Stubcarbine" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
           <modifiers>
             <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47e7-8b8c-ce52-5428" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47e7-8b8c-ce52-5428" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1194,7 +1207,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="1e1b-5013-cc2d-e8ed" name="Ceaseless" hidden="false" targetId="ce9a-aa0d-7b46-3d04" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4f8b-59ff-b834-bfe8" name="Sicarian Infiltrator Princeps" hidden="false" collective="false" import="true" type="model">
@@ -1227,8 +1240,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <selectionEntryGroups>
         <selectionEntryGroup id="a541-7941-4713-a4dc" name="Ranged weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca26-8ef2-e495-512b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab48-5a0c-4102-ddb9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca26-8ef2-e495-512b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab48-5a0c-4102-ddb9" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="8696-13eb-0991-9227" name="Flechette blaster" hidden="false" collective="false" import="true" targetId="4d58-bdea-1bdc-7eb2" type="selectionEntry"/>
@@ -1237,8 +1250,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </selectionEntryGroup>
         <selectionEntryGroup id="add0-faac-e832-0222" name="Melee weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c09-faf4-e83e-1cf1" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8725-7777-4821-0722" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c09-faf4-e83e-1cf1" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8725-7777-4821-0722" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="9d87-a66d-8488-0bab" name="Power weapon" hidden="false" collective="false" import="true" targetId="f11a-1162-3cc6-63db" type="selectionEntry"/>
@@ -1283,19 +1296,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <entryLink id="a264-c522-7ed3-cc8b" name="Specialism" hidden="false" collective="false" import="true" targetId="6a76-efc1-fb54-686a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7ac6-92bb-3ccf-3cf9" name="Galvanic rifle" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17fc-0de8-d93b-97b1" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17fc-0de8-d93b-97b1" type="max"/>
       </constraints>
       <profiles>
         <profile id="d3d7-89e1-6e42-5c32" name="⌖ Galvanic rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
           <modifiers>
             <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1313,12 +1326,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="8b95-eee5-7b19-f5d3" name="Px" hidden="false" targetId="1f11-c169-2746-13cf" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bc21-2832-1317-b50a" name="Gun butt" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0a3-9400-b989-f801" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0a3-9400-b989-f801" type="max"/>
       </constraints>
       <profiles>
         <profile id="23cd-c467-f2b8-fdd4" name="⚔ Gun butt" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1332,19 +1345,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3643-747e-7759-a69a" name="Skitarii Ranger Diktat" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="f390-e32a-5ed4-8a14" value="1.0">
+        <modifier type="set" field="f390-e32a-5ed4-8a14" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f390-e32a-5ed4-8a14" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f390-e32a-5ed4-8a14" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="374e-75bb-4b9d-de36" name="Skitarii Ranger" hidden="false" targetId="0bcd-9ed9-37c9-fdd8" type="profile"/>
@@ -1361,8 +1374,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <entryLinks>
         <entryLink id="9fef-ae06-6d25-0dd1" name="Galvanic rifle" hidden="false" collective="false" import="true" targetId="7ac6-92bb-3ccf-3cf9" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6176-e2e6-c8ee-5043" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9929-3109-32c8-ce90" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6176-e2e6-c8ee-5043" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9929-3109-32c8-ce90" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="b088-3432-e4b0-ea8a" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -1371,8 +1384,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <entryLink id="569d-03bb-70b8-174b" name="Specialism" hidden="false" collective="false" import="true" targetId="6a76-efc1-fb54-686a" type="selectionEntryGroup"/>
         <entryLink id="9ef0-cad9-4989-7da6" name="Gun butt" hidden="false" collective="false" import="true" targetId="bc21-2832-1317-b50a" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7c4-b997-6510-385e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dd5-b8e2-587d-b343" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7c4-b997-6510-385e" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dd5-b8e2-587d-b343" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="f43b-095a-8d4c-7cd0" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
@@ -1387,19 +1400,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4fbc-716a-61cd-a0fe" name="Skitarii Ranger Surveyor" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="9adf-340f-d2ed-09f9" value="1.0">
+        <modifier type="set" field="9adf-340f-d2ed-09f9" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9adf-340f-d2ed-09f9" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9adf-340f-d2ed-09f9" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="1913-0664-6ff9-9702" name="Skitarii Ranger" hidden="false" targetId="0bcd-9ed9-37c9-fdd8" type="profile"/>
@@ -1416,8 +1429,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <entryLinks>
         <entryLink id="7ed1-5de4-315f-cfa2" name="Galvanic rifle" hidden="false" collective="false" import="true" targetId="7ac6-92bb-3ccf-3cf9" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07fc-549e-5afe-6dcf" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebd8-a88b-9c82-6e98" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07fc-549e-5afe-6dcf" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebd8-a88b-9c82-6e98" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="a74a-0890-a1c4-bdff" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -1426,8 +1439,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <entryLink id="6f44-744e-b136-3982" name="Specialism" hidden="false" collective="false" import="true" targetId="6a76-efc1-fb54-686a" type="selectionEntryGroup"/>
         <entryLink id="3ae2-97d5-bfc7-19b9" name="Gun butt" hidden="false" collective="false" import="true" targetId="bc21-2832-1317-b50a" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d56e-cffa-e2d6-40bc" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a085-36e2-c3bf-c66c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d56e-cffa-e2d6-40bc" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a085-36e2-c3bf-c66c" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="dceb-8e44-2896-0a69" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
@@ -1442,19 +1455,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="39dc-53a3-f2eb-6924" name="Transuranic arquebus" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="af80-80b9-4210-d1ea" value="1.0">
+        <modifier type="set" field="af80-80b9-4210-d1ea" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af80-80b9-4210-d1ea" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af80-80b9-4210-d1ea" type="max"/>
       </constraints>
       <profiles>
         <profile id="697d-5380-d029-25b5" name="⌖ Transuranic arquebus" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1474,19 +1487,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <infoLink id="17c6-e293-b476-b6e8" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fad5-6495-7129-b29d" name="Skitarii Vanguard Diktat" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="7416-5a26-6003-2463" value="1.0">
+        <modifier type="set" field="7416-5a26-6003-2463" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7416-5a26-6003-2463" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7416-5a26-6003-2463" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="1367-b26c-3bf4-4f60" name="Skitarii Vanguard" hidden="false" targetId="0ca1-7332-f8eb-67ab" type="profile"/>
@@ -1504,7 +1517,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <entryLinks>
         <entryLink id="02e5-0078-750e-b313" name="Radium carbine" hidden="false" collective="false" import="true" targetId="defa-f78f-2158-76f0" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fd2-13ae-221e-3312" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fd2-13ae-221e-3312" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="3ceb-7564-302f-ce5e" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -1513,7 +1526,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <entryLink id="defa-8695-10c7-379f" name="Specialism" hidden="false" collective="false" import="true" targetId="6a76-efc1-fb54-686a" type="selectionEntryGroup"/>
         <entryLink id="cbd0-32f2-a7b1-3e87" name="Gun butt" hidden="false" collective="false" import="true" targetId="bc21-2832-1317-b50a" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6064-ad10-688e-691b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6064-ad10-688e-691b" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="3633-2d7a-4925-d5ec" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
@@ -1528,19 +1541,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c70b-129a-f864-f61d" name="Skitarii Vanguard Surveyor" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="dfeb-787b-5f08-8375" value="1.0">
+        <modifier type="set" field="dfeb-787b-5f08-8375" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cc2-61e8-74b6-4363" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dfeb-787b-5f08-8375" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dfeb-787b-5f08-8375" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="f22e-22a5-db66-e2ce" name="Skitarii Vanguard" hidden="false" targetId="0ca1-7332-f8eb-67ab" type="profile"/>
@@ -1558,7 +1571,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <entryLinks>
         <entryLink id="b043-fcfc-52e2-2201" name="Radium carbine" hidden="false" collective="false" import="true" targetId="defa-f78f-2158-76f0" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e29e-9eed-72be-46de" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e29e-9eed-72be-46de" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="33f5-bcaa-5502-359d" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -1567,7 +1580,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <entryLink id="7988-28f4-e2f2-b65c" name="Specialism" hidden="false" collective="false" import="true" targetId="6a76-efc1-fb54-686a" type="selectionEntryGroup"/>
         <entryLink id="eceb-4006-66e7-4958" name="Gun butt" hidden="false" collective="false" import="true" targetId="bc21-2832-1317-b50a" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5310-e6e6-86d0-530f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5310-e6e6-86d0-530f" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="d052-01f4-bf13-5d5a" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
@@ -1582,7 +1595,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f8c0-100f-450a-ec6b" name="Skitarii Vanguard Alpha" hidden="false" collective="false" import="true" type="model">
@@ -1617,110 +1630,110 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <selectionEntryGroups>
         <selectionEntryGroup id="336a-8cf5-16fc-c9b0" name="Weapons" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d66b-3660-ca93-8f9b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec6f-dbaf-0317-d65f" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d66b-3660-ca93-8f9b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec6f-dbaf-0317-d65f" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="9692-e751-f295-9a7c" name="Radium carbine and gun butt" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="6977-7f22-0a33-b891" name="Radium carbine" hidden="false" collective="false" import="true" targetId="defa-f78f-2158-76f0" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc6-02c0-8466-cc0d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc6-02c0-8466-cc0d" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="4f36-6d00-3efe-5cca" name="Gun butt" hidden="false" collective="false" import="true" targetId="bc21-2832-1317-b50a" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c5b-f50f-d99b-d377" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c5b-f50f-d99b-d377" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="39f9-c68c-be25-7753" name="Master-crafted radium pistol and power weapon" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="5fdf-b103-ae54-de05" name="Master-crafted radium pistol" hidden="false" collective="false" import="true" targetId="1301-04f5-5540-595d" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="074b-75ae-48d3-98f3" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="074b-75ae-48d3-98f3" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="8fa6-c188-f502-4004" name="Power weapon" hidden="false" collective="false" import="true" targetId="f11a-1162-3cc6-63db" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82e1-c0fb-eb80-095c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82e1-c0fb-eb80-095c" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9846-9cbb-ee02-0582" name="Arc pistol and arc maul" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="7c2e-9433-60bc-88e9" name="Arc maul" hidden="false" collective="false" import="true" targetId="ee75-4410-e598-63d5" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a697-0474-2cff-cc26" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a697-0474-2cff-cc26" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="c657-a20a-5602-f48b" name="Arc pistol" hidden="false" collective="false" import="true" targetId="b29d-4b66-bbef-8278" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0afa-dbb4-d027-7495" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0afa-dbb4-d027-7495" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="687d-9346-b6d8-87f7" name="Arc pistol and taser goad" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="560f-9b9b-cfaf-cf23" name="Arc pistol" hidden="false" collective="false" import="true" targetId="b29d-4b66-bbef-8278" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="508b-2e70-a8b3-2378" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="508b-2e70-a8b3-2378" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="e212-7ddd-f632-64c6" name="Taser goad" hidden="false" collective="false" import="true" targetId="eb1f-afbb-afe3-0cbf" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ef1-c2ab-f06b-8bf3" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ef1-c2ab-f06b-8bf3" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="248d-85d1-c4d7-e28b" name="Phosphor blast pistol and arc maul" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="be15-2783-1040-1507" name="Phosphor blast pistol" hidden="false" collective="false" import="true" targetId="7fdb-2b21-d111-af60" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4418-cc97-405f-7afe" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4418-cc97-405f-7afe" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="9c52-52a7-8ba9-8654" name="Arc maul" hidden="false" collective="false" import="true" targetId="ee75-4410-e598-63d5" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="564d-d7e6-667f-c64e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="564d-d7e6-667f-c64e" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0bce-dbf1-647c-564d" name="Phosphor blast pistol and taser goad" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="5a32-4e88-d520-470e" name="Phosphor blast pistol" hidden="false" collective="false" import="true" targetId="7fdb-2b21-d111-af60" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f7f-c735-1328-8627" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f7f-c735-1328-8627" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="7bb7-1091-ff75-beee" name="Taser goad" hidden="false" collective="false" import="true" targetId="eb1f-afbb-afe3-0cbf" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9932-92a8-f203-83cb" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9932-92a8-f203-83cb" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1753,12 +1766,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5f96-e18f-4797-bd60" name="Hunter Clade 1 - Fixated" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d36-50f8-ea01-9f6a" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d36-50f8-ea01-9f6a" type="max"/>
       </constraints>
       <profiles>
         <profile id="a280-219a-eb85-34b0" name="Fixated" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1768,12 +1781,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6c57-0a77-7008-663a" name="Hunter Clade 2 - Faith in the Machine" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba12-9ade-5eae-ae06" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba12-9ade-5eae-ae06" type="max"/>
       </constraints>
       <profiles>
         <profile id="d951-5643-d548-eb02" name="Faith in the Machine" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1783,12 +1796,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1930-94ab-c2e7-bee7" name="Hunter Clade 3 - Blessed Components" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d27-eb4d-f0f9-a7b8" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d27-eb4d-f0f9-a7b8" type="max"/>
       </constraints>
       <profiles>
         <profile id="42f2-8741-50bf-2ad9" name="Blessed Components" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1798,12 +1811,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9e0b-c751-d92d-5570" name="Hunter Clade 4 - Enhanced Bionics" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eda4-cf5b-8731-13fa" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eda4-cf5b-8731-13fa" type="max"/>
       </constraints>
       <profiles>
         <profile id="73e2-7773-40e6-776c" name="Enhanced Bionics" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1813,12 +1826,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9754-6bcb-eace-973c" name="Hunter Clade 5 - Consecrated Cybernetics" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c069-3138-35b9-518a" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c069-3138-35b9-518a" type="max"/>
       </constraints>
       <profiles>
         <profile id="c417-cf90-14c7-6827" name="Consecrated Cybernetics" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1828,12 +1841,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="808f-8044-e24b-b558" name="Hunter Clade 6 - Autonomic Cortex" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c99-78a7-1f56-45c5" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c99-78a7-1f56-45c5" type="max"/>
       </constraints>
       <profiles>
         <profile id="5a90-cb7a-1d06-d2db" name="Autonomic Cortex" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1843,7 +1856,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1852,12 +1865,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82af-b9b8-518f-aaf1" type="lessThan"/>
+            <condition field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82af-b9b8-518f-aaf1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64a7-b86f-8889-c21f" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64a7-b86f-8889-c21f" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="b94a-ece9-7b96-1e3b" name="Combat" hidden="false" collective="false" import="true" targetId="97d8-19ec-143d-8aad" type="selectionEntry">
@@ -1866,8 +1879,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ead-29c6-f9b1-bdc8" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5fa9-04a0-895d-4576" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ead-29c6-f9b1-bdc8" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5fa9-04a0-895d-4576" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1880,9 +1893,9 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fa7-f36f-0f97-216b" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54fd-2e51-0139-ad67" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfc8-f580-1682-87cd" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fa7-f36f-0f97-216b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54fd-2e51-0139-ad67" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfc8-f580-1682-87cd" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1895,7 +1908,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5fa9-04a0-895d-4576" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5fa9-04a0-895d-4576" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1908,8 +1921,8 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ead-29c6-f9b1-bdc8" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf2c-0f37-ac1a-a88f" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ead-29c6-f9b1-bdc8" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf2c-0f37-ac1a-a88f" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1922,12 +1935,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7138-2b60-74ce-a90b" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7138-2b60-74ce-a90b" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="c61a-51a3-370d-bf55" scope="roster" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="22e7-752b-0c4f-834c" type="max"/>
+        <constraint field="c61a-51a3-370d-bf55" scope="roster" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="22e7-752b-0c4f-834c" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="6290-0adb-5780-8afd" name="Uplinked Vid-feed" hidden="false" collective="false" import="true" type="upgrade">
@@ -1936,15 +1949,15 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5fa9-04a0-895d-4576" type="notInstanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ead-29c6-f9b1-bdc8" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5fa9-04a0-895d-4576" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ead-29c6-f9b1-bdc8" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a92-7e94-cbd2-0945" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a92-7e94-cbd2-0945" type="max"/>
           </constraints>
           <profiles>
             <profile id="f730-d0c7-2796-30ef" name="Uplinked Vid-feed" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1954,12 +1967,12 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="1.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="87a5-5805-ac18-95cd" name="Cense Bearer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5833-d8ed-d6ff-5ff7" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5833-d8ed-d6ff-5ff7" type="max"/>
           </constraints>
           <profiles>
             <profile id="7081-2f40-1c70-cfa6" name="Cense Bearer" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1969,13 +1982,13 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3e78-9cd0-b98a-3ec5" name="Servo-skull*" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f36-e736-fced-9925" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="90a2-a499-58e5-a3a5" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f36-e736-fced-9925" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="90a2-a499-58e5-a3a5" type="max"/>
           </constraints>
           <profiles>
             <profile id="ff83-565c-904c-df92" name="Servo-skull" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1985,13 +1998,13 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c652-cfcd-de30-0b61" name="Mechadendrites*" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1434-e13f-b934-b98a" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a27-9adb-c343-720c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1434-e13f-b934-b98a" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a27-9adb-c343-720c" type="max"/>
           </constraints>
           <profiles>
             <profile id="e3a1-31ec-214c-acef" name="Mechadendrite" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -2001,20 +2014,20 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="be2a-fdc0-c7fe-0a15" name="Command Uplink*" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fa7-f36f-0f97-216b" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fa7-f36f-0f97-216b" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a50d-446a-2aa3-4bbd" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cf42-a237-c189-c827" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a50d-446a-2aa3-4bbd" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cf42-a237-c189-c827" type="max"/>
           </constraints>
           <profiles>
             <profile id="eeed-28cb-4588-bfac" name="Command Uplink (2AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
@@ -2024,7 +2037,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="4.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="4"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d289-3c97-3efb-02f6" name="Enriched Rounds" hidden="false" collective="false" import="true" type="upgrade">
@@ -2033,15 +2046,15 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="defa-f78f-2158-76f0" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1301-04f5-5540-595d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="defa-f78f-2158-76f0" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1301-04f5-5540-595d" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1433-a6e0-ecdf-328c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1433-a6e0-ecdf-328c" type="max"/>
           </constraints>
           <profiles>
             <profile id="6866-6f14-cb20-3631" name="Enriched Rounds" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
@@ -2051,19 +2064,19 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0ade-32bd-776c-454e" name="Optimised Gait" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54fd-2e51-0139-ad67" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54fd-2e51-0139-ad67" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5234-af95-20cc-7b03" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5234-af95-20cc-7b03" type="max"/>
           </constraints>
           <profiles>
             <profile id="222b-8a0e-71a8-cda1" name="Optimised Gait" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -2073,20 +2086,20 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="1.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="94b0-835e-4430-c365" name="Refractor Field*" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ba-f824-d8ad-2312" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="559f-c329-81ff-76f3" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ba-f824-d8ad-2312" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="559f-c329-81ff-76f3" type="max"/>
           </constraints>
           <profiles>
             <profile id="5340-51e0-4135-a9e7" name="Refractor Field" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -2096,20 +2109,25 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e6c9-cca1-61df-df4c" name="Thorium Rounds (RARE)" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1301-04f5-5540-595d" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1301-04f5-5540-595d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8df6-8dc0-539c-01f6" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e3f8-ac49-ab12-aa83" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8df6-8dc0-539c-01f6" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e3f8-ac49-ab12-aa83" type="max"/>
           </constraints>
           <profiles>
             <profile id="9b4d-ef78-2700-b9f2" name="Thorium Rounds" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
@@ -2121,13 +2139,13 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="dbbb-b17c-7289-a08a" name="Technodermic Weave (RARE)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c47f-e9c4-7217-40de" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="203b-80ae-3d8c-296c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c47f-e9c4-7217-40de" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="203b-80ae-3d8c-296c" type="max"/>
           </constraints>
           <profiles>
             <profile id="c125-d171-f0bb-e6e6" name="Technodermic Weave" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
@@ -2137,13 +2155,20 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
           </costs>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="9827-e621-8237-99ab" name="Autorepair Appendage (RARE)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ebe-21a2-c53e-1ac6" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="439b-318d-71cc-b6f1" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ebe-21a2-c53e-1ac6" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="439b-318d-71cc-b6f1" type="max"/>
           </constraints>
           <profiles>
             <profile id="c3a4-5826-5e62-6bfc" name="Autorepair Appendage" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
@@ -2153,20 +2178,32 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="e641-48f4-1da8-2dcd" name="Amplified Data Emitter (RARE)" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fa7-f36f-0f97-216b" type="notInstanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fa7-f36f-0f97-216b" type="notInstanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91c6-ac1d-0bb4-4fa7" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="04ea-720f-0bdd-32df" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91c6-ac1d-0bb4-4fa7" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="04ea-720f-0bdd-32df" type="max"/>
           </constraints>
           <profiles>
             <profile id="0afc-eb8b-8f58-bf40" name="Amplified Data Emitter" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
@@ -2176,20 +2213,25 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4e06-9777-3b99-871f" name="Omnispectral Analyser (RARE)" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfc8-f580-1682-87cd" type="notInstanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfc8-f580-1682-87cd" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc85-19ce-eabf-7be6" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a69c-d251-d226-b06b" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc85-19ce-eabf-7be6" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a69c-d251-d226-b06b" type="max"/>
           </constraints>
           <profiles>
             <profile id="d351-83ba-0967-f842" name="Omnispectral Analyser" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
@@ -2200,13 +2242,13 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="77a9-79ad-1c8e-ea7f" name="Arc Grenade (RARE)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="783e-ec43-2b33-4d4d" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="edf8-4623-617e-84fb" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="783e-ec43-2b33-4d4d" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="edf8-4623-617e-84fb" type="max"/>
           </constraints>
           <profiles>
             <profile id="3e71-4dc1-77ae-2d61" name="⌖ Arc Grenade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -2227,8 +2269,15 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
             <infoLink id="7666-2478-a721-1149" name="Stun" hidden="false" targetId="a1e3-4e0b-f7c2-eb59" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
           </costs>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2245,7 +2294,7 @@ Each Imperative has an Optimisation and a Deprecation effect. Ignore each Impera
         <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">⬛</characteristic>
         <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">⬟</characteristic>
         <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">⌖ 
-⚔ </characteristic>
+⚔</characteristic>
         <characteristic name="W" typeId="db11-738c-048c-759e">💀</characteristic>
       </characteristics>
     </profile>
