@@ -893,8 +893,8 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8009-1bed-70da-798e" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="a1b9-5e5d-91d4-fc1c" name="Gauss blaster (Despotek)" hidden="false" collective="false" import="true" targetId="707b-cb4f-bad8-2a54" type="selectionEntry"/>
-            <entryLink id="de5f-a7a2-8374-3ff2" name="Tesla carbine (Despotek)" hidden="false" collective="false" import="true" targetId="5817-1b54-10ee-0510" type="selectionEntry"/>
+            <entryLink id="a1b9-5e5d-91d4-fc1c" name="Gauss blaster" hidden="false" collective="false" import="true" targetId="4fb7-6def-f7cc-808e" type="selectionEntry"/>
+            <entryLink id="de5f-a7a2-8374-3ff2" name="Tesla carbine" hidden="false" collective="false" import="true" targetId="4a5f-e486-22f1-8279" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -917,7 +917,7 @@
             <entryLink id="03e5-66c9-673e-eee5" name="Hierotek 1 - Enduring" hidden="false" collective="false" import="true" targetId="db95-5eb2-d14a-63c1" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="3a93-1968-092f-ca87" name="Bayonet (Despotek)" hidden="false" collective="false" import="true" targetId="a938-8aa3-8729-e131" type="selectionEntry"/>
+        <entryLink id="3a93-1968-092f-ca87" name="Bayonet" hidden="false" collective="false" import="true" targetId="a67c-07e9-e029-2d7a" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
@@ -1044,6 +1044,13 @@ In narrative play, operatives that are successfully reanimated are not treated a
     <selectionEntry id="4fb7-6def-f7cc-808e" name="Gauss blaster" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="d505-5ae2-2e6c-5774" name="⌖ Gauss blaster" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f950-d16a-6efc-e730" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
@@ -1063,6 +1070,13 @@ In narrative play, operatives that are successfully reanimated are not treated a
     <selectionEntry id="4a5f-e486-22f1-8279" name="Tesla carbine" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="8b5a-1be1-d5ee-0ab1" name="⌖ Tesla carbine" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f950-d16a-6efc-e730" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
@@ -1086,6 +1100,13 @@ In narrative play, operatives that are successfully reanimated are not treated a
       </constraints>
       <profiles>
         <profile id="bd15-262b-f038-2a8d" name="⚔ Bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f950-d16a-6efc-e730" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
@@ -1182,64 +1203,6 @@ In narrative play, operatives that are successfully reanimated are not treated a
         <profile id="2196-f532-beb0-26af" name="Unrelenting" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
           <characteristics>
             <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">You can ignore any or all modifiers to this operative&apos;s APL and Movement characteristics and it is not affected by the Stun critical hit rule.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="707b-cb4f-bad8-2a54" name="Gauss blaster (Despotek)" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="2a77-229c-fe1e-99b8" name="⌖ Gauss blaster" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-          <characteristics>
-            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
-            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
-            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
-            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="43c1-1eb1-de59-7a1d" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="5817-1b54-10ee-0510" name="Tesla carbine (Despotek)" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="a663-c70f-9418-6139" name="⌖ Tesla carbine" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-          <characteristics>
-            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
-            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
-            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/3</characteristic>
-            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
-            <characteristic name="!" typeId="c495-8d08-b6b8-b434">Splash 1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="2413-07d2-38dd-f66d" name="Splash x" hidden="false" targetId="eab8-73f5-feed-5924" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a938-8aa3-8729-e131" name="Bayonet (Despotek)" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ad9-97ed-ea05-f1c3" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2204-384c-71ff-fb31" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="a0ee-5e82-3347-6e12" name="⚔ Bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-          <characteristics>
-            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
-            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
-            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
-            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
