@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5d8e-22a5-1698-fb08" name="Warp Coven" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5d8e-22a5-1698-fb08" name="Warp Coven" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="0221-fadb-8acc-cec7" name="Boon of Tzeentch">
       <characteristicTypes>
@@ -24,39 +24,39 @@
         <categoryLink id="dc69-1243-316f-592c" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
         <categoryLink id="eb35-32ac-1060-0fe7" name="Leader" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0db3-fe4b-c8f1-c77b" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="330c-7567-783d-2fe5" type="min"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0db3-fe4b-c8f1-c77b" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="330c-7567-783d-2fe5" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="08c4-8122-d521-edc4" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false">
           <modifiers>
-            <modifier type="decrement" field="25b5-9c7a-c975-397e" value="1.0">
+            <modifier type="decrement" field="25b5-9c7a-c975-397e" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="068e-3abc-9324-4740" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="068e-3abc-9324-4740" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="11.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25b5-9c7a-c975-397e" type="max"/>
+            <constraint field="selections" scope="roster" value="11" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25b5-9c7a-c975-397e" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="2280-256c-f1a0-11e6" name="Rubric Marine" hidden="false" targetId="56f4-f969-5d17-db4e" primary="false"/>
         <categoryLink id="91a3-2b01-4fe6-092e" name="Gunner" hidden="false" targetId="ee8c-cc44-acc3-40f0" primary="false">
           <modifiers>
-            <modifier type="increment" field="a9c0-a4eb-9420-861f" value="1.0">
+            <modifier type="increment" field="a9c0-a4eb-9420-861f" value="1">
               <conditions>
-                <condition field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f4-f969-5d17-db4e" type="atLeast"/>
+                <condition field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f4-f969-5d17-db4e" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9c0-a4eb-9420-861f" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9c0-a4eb-9420-861f" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="c5b8-a58c-e3ad-c6f4" name="Tzaangor" hidden="false" targetId="5770-50c2-6588-a81c" primary="false"/>
         <categoryLink id="2fc0-9e39-98a5-5db2" name="Sorcerer" hidden="false" targetId="7079-e733-9e1a-2b8e" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8815-d1a0-b49f-53d4" type="max"/>
+            <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8815-d1a0-b49f-53d4" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -120,6 +120,7 @@
         <infoLink id="6069-c2c7-f360-cb05" name="Favoured by Change" hidden="false" targetId="3091-24b0-2f5c-6904" type="profile"/>
         <infoLink id="698e-e0e1-30e2-5519" name="All Is Dust" hidden="false" targetId="4ba9-8b14-56e7-87b3" type="profile"/>
         <infoLink id="f60b-f351-bb7c-3d85" name="Rubric Marine" hidden="false" targetId="5e3c-ba15-8253-f67f" type="profile"/>
+        <infoLink name="Sorcerer&apos;s Command" hidden="false" type="profile" id="b78a-7e32-8b3d-f2a9" targetId="8fa0-2a9e-7f96-5ccb"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3154-9db4-d9c8-07de" name="Thousand Sons💀" hidden="false" targetId="fd70-de19-3d96-ca29" primary="false"/>
@@ -151,18 +152,18 @@
         <entryLink id="1bfe-d9fa-666d-e105" name="Inferno bolt gun" hidden="false" collective="false" import="true" targetId="ddcf-9259-704f-c9ca" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="62f1-4f72-8725-dfd7" name="Fists" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c3a-3ce7-30b6-622a" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5023-63f0-05d6-abf3" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c3a-3ce7-30b6-622a" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5023-63f0-05d6-abf3" type="max"/>
       </constraints>
       <profiles>
         <profile id="3856-276f-a1a4-1583" name="⚔ Fists" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
           <characteristics>
-            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
             <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
             <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
@@ -171,19 +172,19 @@
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6918-4260-992b-da37" name="Rubric Marine Icon Bearer" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="171e-a9fe-3d67-5e0f" value="1.0">
+        <modifier type="set" field="171e-a9fe-3d67-5e0f" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="171e-a9fe-3d67-5e0f" type="max"/>
+        <constraint field="selections" scope="roster" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="171e-a9fe-3d67-5e0f" type="max"/>
       </constraints>
       <profiles>
         <profile id="a807-6adf-3750-53d6" name="Icon Bearer" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -201,6 +202,7 @@
         <infoLink id="74f0-b9ed-043f-7ccc" name="Favoured by Change" hidden="false" targetId="3091-24b0-2f5c-6904" type="profile"/>
         <infoLink id="7879-96d0-4099-1164" name="All Is Dust" hidden="false" targetId="4ba9-8b14-56e7-87b3" type="profile"/>
         <infoLink id="3ac7-fce2-0073-5f9d" name="Rubric Marine" hidden="false" targetId="5e3c-ba15-8253-f67f" type="profile"/>
+        <infoLink name="Sorcerer&apos;s Command" hidden="false" type="profile" id="376b-2986-1b56-cd0a" targetId="8fa0-2a9e-7f96-5ccb"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5a2f-731c-d818-2b19" name="Thousand Sons💀" hidden="false" targetId="fd70-de19-3d96-ca29" primary="false"/>
@@ -225,24 +227,25 @@
         <entryLink id="0c36-1aae-2a92-7551" name="Equipment" hidden="false" collective="false" import="true" targetId="8cc5-9eb9-ecd3-e66a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f870-15c9-a795-20f7" name="Rubric Marine Gunner with soulreaper cannon" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="931b-6414-48b7-ea0e" value="1.0">
+        <modifier type="set" field="931b-6414-48b7-ea0e" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="931b-6414-48b7-ea0e" type="max"/>
+        <constraint field="selections" scope="roster" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="931b-6414-48b7-ea0e" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ec3d-0ebf-8b7c-7ba9" name="Favoured by Change" hidden="false" targetId="3091-24b0-2f5c-6904" type="profile"/>
         <infoLink id="2200-f34d-ed32-b5dd" name="All Is Dust" hidden="false" targetId="4ba9-8b14-56e7-87b3" type="profile"/>
         <infoLink id="dfb3-abc7-f331-496f" name="Rubric Marine" hidden="false" targetId="5e3c-ba15-8253-f67f" type="profile"/>
+        <infoLink name="Sorcerer&apos;s Command" hidden="false" type="profile" id="8160-fb3c-e843-318" targetId="8fa0-2a9e-7f96-5ccb"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6f98-ed9f-6037-8454" name="Thousand Sons💀" hidden="false" targetId="fd70-de19-3d96-ca29" primary="false"/>
@@ -254,8 +257,8 @@
       <selectionEntries>
         <selectionEntry id="de8f-0132-31cb-9760" name="Soulreaper cannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8bb-a5dc-592f-d858" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9fd-4037-b12b-0d55" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8bb-a5dc-592f-d858" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9fd-4037-b12b-0d55" type="max"/>
           </constraints>
           <profiles>
             <profile id="fe42-f8b5-0890-c42d" name="⌖ Soulreaper cannon" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -273,7 +276,7 @@
             <infoLink id="883c-eac1-750f-b695" name="Fusillade" hidden="false" targetId="e2ae-574a-94ab-3550" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -299,13 +302,13 @@
         <entryLink id="677b-4909-92a2-7a0b" name="Equipment" hidden="false" collective="false" import="true" targetId="8cc5-9eb9-ecd3-e66a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ddcf-9259-704f-c9ca" name="Inferno bolt gun" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b03-10ab-995f-9f47" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e64-b54a-870a-9cfc" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b03-10ab-995f-9f47" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e64-b54a-870a-9cfc" type="max"/>
       </constraints>
       <profiles>
         <profile id="cfec-1ad1-145e-abfc" name="⌖ Inferno bolt gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -322,7 +325,7 @@
         <infoLink id="4274-b492-733d-57ac" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="da44-1363-b5d8-ff7f" name="Rubric Marine Gunner with warpflamer" hidden="false" collective="false" import="true" type="model">
@@ -330,6 +333,7 @@
         <infoLink id="67f6-adfd-0977-0ec6" name="Favoured by Change" hidden="false" targetId="3091-24b0-2f5c-6904" type="profile"/>
         <infoLink id="71f3-99ba-19b1-8d0f" name="All Is Dust" hidden="false" targetId="4ba9-8b14-56e7-87b3" type="profile"/>
         <infoLink id="89e4-2fca-585e-c47f" name="Rubric Marine" hidden="false" targetId="5e3c-ba15-8253-f67f" type="profile"/>
+        <infoLink name="Sorcerer&apos;s Command" hidden="false" type="profile" id="830f-c208-f9fc-ee19" targetId="8fa0-2a9e-7f96-5ccb"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8088-82bb-69e6-3030" name="Thousand Sons💀" hidden="false" targetId="fd70-de19-3d96-ca29" primary="false"/>
@@ -341,8 +345,8 @@
       <selectionEntries>
         <selectionEntry id="4bd0-3041-602d-569f" name="Warpflamer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a8f-2873-dc94-bdc9" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49b7-7319-a77b-fd8e" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a8f-2873-dc94-bdc9" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49b7-7319-a77b-fd8e" type="max"/>
           </constraints>
           <profiles>
             <profile id="0531-fed7-92fd-be33" name="⌖ Warpflamer" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -361,7 +365,7 @@
             <infoLink id="ed19-c59f-134e-b146" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -387,14 +391,14 @@
         <entryLink id="da2c-e3b8-ed06-df6e" name="Equipment" hidden="false" collective="false" import="true" targetId="8cc5-9eb9-ecd3-e66a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cb22-ce50-e321-93a6" name="Sorcerer" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="add" field="category" value="383e-c92a-c607-c7e1">
           <conditions>
-            <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="769d-fd94-f7b5-5e17" type="equalTo"/>
+            <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="769d-fd94-f7b5-5e17" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -403,12 +407,12 @@
           <modifiers>
             <modifier type="set" field="dd03-76d2-dda8-eca2" value="2+">
               <conditions>
-                <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8be6-0f4b-7f9b-f3b0" type="equalTo"/>
+                <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8be6-0f4b-7f9b-f3b0" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="c36f-3952-a91d-5a06" value="3⬤ + 1▲">
               <conditions>
-                <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e963-ff5b-07db-ef49" type="equalTo"/>
+                <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e963-ff5b-07db-ef49" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -426,11 +430,6 @@
             <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Psychic action. Resolve a WARPCOVEN psychic power. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
           </characteristics>
         </profile>
-        <profile id="90e8-5b56-1791-4b33" name="Rubric Command" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, when a friendly RUBRIC MARINE operative Visible to and within ⬟ of this operative is activated, you can add 1 to that friendly operative&apos;s APL.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="4f8e-a017-207e-bef8" name="Favoured by Change" hidden="false" targetId="3091-24b0-2f5c-6904" type="profile"/>
@@ -445,25 +444,25 @@
       <selectionEntries>
         <selectionEntry id="825a-0ca0-3232-537f" name="Force stave" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea52-0e3f-8fb1-c248" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9781-0eee-7653-3890" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea52-0e3f-8fb1-c248" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9781-0eee-7653-3890" type="max"/>
           </constraints>
           <profiles>
             <profile id="0b4c-5e40-c1a3-080d" name="⚔ Force stave" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
               <modifiers>
                 <modifier type="set" field="c9c0-f6c9-c787-e650" value="Relentless">
                   <conditions>
-                    <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e03a-c230-8051-e343" type="equalTo"/>
+                    <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e03a-c230-8051-e343" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="increment" field="5f37-25bb-661b-5c9c" value="1">
                   <conditions>
-                    <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e963-ff5b-07db-ef49" type="equalTo"/>
+                    <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e963-ff5b-07db-ef49" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="337a-2e5b-e4e3-f489" value="5/6">
                   <conditions>
-                    <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2d3-183c-2ad0-47b7" type="equalTo"/>
+                    <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2d3-183c-2ad0-47b7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -482,22 +481,22 @@
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="cb22-ce50-e321-93a6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e03a-c230-8051-e343" type="equalTo"/>
+                    <condition field="selections" scope="cb22-ce50-e321-93a6" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e03a-c230-8051-e343" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </infoLink>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="c3d5-e7c1-b9af-86bc" name="Pistol/khopesh" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc3a-2be1-de1f-762d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d581-ae74-2a94-e9b3" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc3a-2be1-de1f-762d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d581-ae74-2a94-e9b3" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="3bb4-fa4e-88bb-90ab" name="Inferno bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -506,7 +505,7 @@
                   <modifiers>
                     <modifier type="set" field="c9c0-f6c9-c787-e650" value="Rng ⬟, AP1, Lethal 5+, No Cover">
                       <conditions>
-                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c69-2da0-bcff-b245" type="equalTo"/>
+                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c69-2da0-bcff-b245" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -524,7 +523,7 @@
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c69-2da0-bcff-b245" type="equalTo"/>
+                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c69-2da0-bcff-b245" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -539,26 +538,26 @@
                 <infoLink id="3cb3-2f65-8182-7aad" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d1dc-745d-9d1c-b63a" name="Warpflame pistol" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="691a-11f6-4d60-0e7a" value="1.0">
+                <modifier type="set" field="691a-11f6-4d60-0e7a" value="1">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="691a-11f6-4d60-0e7a" type="max"/>
+                <constraint field="selections" scope="roster" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="691a-11f6-4d60-0e7a" type="max"/>
               </constraints>
               <profiles>
                 <profile id="42be-908f-ec93-45ba" name="⌖ Warpflame pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
                   <modifiers>
                     <modifier type="set" field="c9c0-f6c9-c787-e650" value="Rng ⬟, AP1, Torrent ▲, Lethal 5+, No Cover">
                       <conditions>
-                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c69-2da0-bcff-b245" type="equalTo"/>
+                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c69-2da0-bcff-b245" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -576,7 +575,7 @@
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c69-2da0-bcff-b245" type="equalTo"/>
+                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c69-2da0-bcff-b245" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -592,7 +591,7 @@
                 <infoLink id="e177-4bee-b52c-3628" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e03a-c230-8051-e343" name="Prosperine khopesh" hidden="false" collective="false" import="true" type="upgrade">
@@ -601,12 +600,12 @@
                   <modifiers>
                     <modifier type="increment" field="5f37-25bb-661b-5c9c" value="1">
                       <conditions>
-                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e963-ff5b-07db-ef49" type="equalTo"/>
+                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e963-ff5b-07db-ef49" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="337a-2e5b-e4e3-f489" value="5/6">
                       <conditions>
-                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2d3-183c-2ad0-47b7" type="equalTo"/>
+                        <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2d3-183c-2ad0-47b7" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -624,33 +623,33 @@
                 <infoLink id="68ff-c980-e37b-e1f0" name="Relentless" hidden="false" targetId="1875-9b07-2a07-aacc" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="1cee-2b49-fcfb-6ad2" name="Boon of Tzeentch" hidden="false" collective="false" import="true">
           <modifiers>
-            <modifier type="increment" field="d588-f585-1688-c458" value="1.0">
+            <modifier type="increment" field="d588-f585-1688-c458" value="1">
               <conditions>
-                <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc72-8c11-24a4-a0b1" type="equalTo"/>
+                <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc72-8c11-24a4-a0b1" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="247d-1712-2f30-8cfd" value="1.0">
+            <modifier type="increment" field="247d-1712-2f30-8cfd" value="1">
               <conditions>
-                <condition field="selections" scope="cb22-ce50-e321-93a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc72-8c11-24a4-a0b1" type="equalTo"/>
+                <condition field="selections" scope="cb22-ce50-e321-93a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc72-8c11-24a4-a0b1" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="247d-1712-2f30-8cfd" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d588-f585-1688-c458" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="247d-1712-2f30-8cfd" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d588-f585-1688-c458" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="71a0-b957-f191-81f2" name="Fate - Patron of Destiny" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cd7c-2da5-2589-8fef" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eff-1e11-b948-c6bd" type="max"/>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cd7c-2da5-2589-8fef" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eff-1e11-b948-c6bd" type="max"/>
               </constraints>
               <profiles>
                 <profile id="44cd-7f7b-e118-3dc7" name="Patron of Destiny" hidden="false" typeId="0221-fadb-8acc-cec7" typeName="Boon of Tzeentch">
@@ -660,13 +659,13 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7c69-2da0-bcff-b245" name="Fate - Incorporeal Sight" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b18c-1fb7-b3ea-0631" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34b6-675d-1d93-a1b9" type="max"/>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b18c-1fb7-b3ea-0631" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34b6-675d-1d93-a1b9" type="max"/>
               </constraints>
               <profiles>
                 <profile id="57d5-316e-569e-403d" name="Incorporeal Sight" hidden="false" typeId="0221-fadb-8acc-cec7" typeName="Boon of Tzeentch">
@@ -676,13 +675,13 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e963-ff5b-07db-ef49" name="Fate - Time-walker" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae37-5f92-0881-054e" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="613e-86a0-3c72-3fb2" type="max"/>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae37-5f92-0881-054e" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="613e-86a0-3c72-3fb2" type="max"/>
               </constraints>
               <profiles>
                 <profile id="aa8e-7347-e27a-40a2" name="Time-walker" hidden="false" typeId="0221-fadb-8acc-cec7" typeName="Boon of Tzeentch">
@@ -693,13 +692,13 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="769d-fd94-f7b5-5e17" name="Aetheric - Immaterial Flight" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="59d0-4106-7fef-5785" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbe1-0700-4482-021a" type="max"/>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="59d0-4106-7fef-5785" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbe1-0700-4482-021a" type="max"/>
               </constraints>
               <profiles>
                 <profile id="2d76-b4c8-0b9f-9365" name="Immaterial Flight" hidden="false" typeId="0221-fadb-8acc-cec7" typeName="Boon of Tzeentch">
@@ -709,13 +708,13 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8be6-0f4b-7f9b-f3b0" name="Aetheric - Crystalline" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7f34-e488-c857-1f72" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e15e-6f89-7f37-7fdd" type="max"/>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7f34-e488-c857-1f72" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e15e-6f89-7f37-7fdd" type="max"/>
               </constraints>
               <profiles>
                 <profile id="fc5b-3ab8-9f6d-69aa" name="Crystalline" hidden="false" typeId="0221-fadb-8acc-cec7" typeName="Boon of Tzeentch">
@@ -725,13 +724,13 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8807-b330-9e05-ca10" name="Aetheric - Empyric Ward" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="072b-020d-44d4-8215" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a13d-9440-90b6-7670" type="max"/>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="072b-020d-44d4-8215" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a13d-9440-90b6-7670" type="max"/>
               </constraints>
               <profiles>
                 <profile id="2b89-2010-552c-75ef" name="Empyric Ward" hidden="false" typeId="0221-fadb-8acc-cec7" typeName="Boon of Tzeentch">
@@ -741,59 +740,59 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fe36-19ff-709b-35bf" name="Mutation - Avian Talons" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1be2-dc3e-9da6-cd3e" type="max"/>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d09f-4ca1-2d20-f42b" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1be2-dc3e-9da6-cd3e" type="max"/>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d09f-4ca1-2d20-f42b" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="8e53-b663-f542-9d13" name="Avian Talons" hidden="false" targetId="0f47-df8a-e621-8e7d" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b2d3-183c-2ad0-47b7" name="Mutation - Warp Swell" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c49b-9382-cf8e-2da9" type="max"/>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6046-e724-be2c-3b85" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c49b-9382-cf8e-2da9" type="max"/>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6046-e724-be2c-3b85" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="71c0-b89a-7fcb-34e9" name="Warp Swell" hidden="false" targetId="e051-6c4d-c203-2db9" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ed6a-b0a5-fa39-0f38" name="Mutation - Mutant Appendage" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f23-19ad-af93-1653" type="max"/>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="95c7-d079-b9e5-c44f" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f23-19ad-af93-1653" type="max"/>
+                <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="95c7-d079-b9e5-c44f" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="3f75-e824-3f76-734a" name="Mutant Appendage" hidden="false" targetId="9d4b-7b4a-90cc-78e8" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="4f9e-a780-6306-f43d" name="Psychic Discipline" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a00-dcd6-022a-8cdd" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e12-5dc7-d84d-b12c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a00-dcd6-022a-8cdd" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e12-5dc7-d84d-b12c" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="721f-cb90-2693-4428" name="Destiny" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="fa0d-de21-c7d3-1db8" name="Weave Fate" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19cc-b811-2928-49d6" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e962-0521-3fb9-bd57" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19cc-b811-2928-49d6" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e962-0521-3fb9-bd57" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="e338-981c-aca6-df35" name="Weave Fate" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
@@ -803,13 +802,13 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                    <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="c59b-4a68-39f0-6f5d" name="Twist Destiny" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="170d-f802-2c4b-bf26" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb22-8bf1-7267-698d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="170d-f802-2c4b-bf26" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb22-8bf1-7267-698d" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="0c96-41a7-a90f-6a63" name="Twist Destiny" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
@@ -821,13 +820,13 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                    <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="60dd-3f01-ba16-4ddf" name="Doombolt" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4df6-66d4-222b-2100" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86bd-44db-2a89-3072" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4df6-66d4-222b-2100" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86bd-44db-2a89-3072" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="f91d-0667-163c-c627" name="Doombolt" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
@@ -850,20 +849,20 @@
                     <infoLink id="4f5f-edfb-7dab-85b3" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                    <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e7ee-ccc8-9225-0c0a" name="Warpfire" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="355b-7980-cb88-39b1" name="Firestorm" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b63e-e837-715e-8375" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="247b-9b52-23ab-4ffa" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b63e-e837-715e-8375" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="247b-9b52-23ab-4ffa" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="45dd-9a2a-6232-0a33" name="Firestorm" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
@@ -887,13 +886,13 @@
                     <infoLink id="3a67-f424-7909-ad50" name="Blast x" hidden="false" targetId="d848-be09-6d6d-4708" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                    <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="525c-b60d-cc4f-a8ab" name="Warp Portal" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f5c-0eb1-acc5-458e" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ec5-8724-459b-5aea" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f5c-0eb1-acc5-458e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ec5-8724-459b-5aea" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="9c0f-dcf7-cb33-e508" name="Warp Portal" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
@@ -903,13 +902,13 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                    <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e728-fc41-4886-b455" name="Infernal Fire" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dc9-30af-6d59-085d" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6320-beb1-605f-7e07" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dc9-30af-6d59-085d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6320-beb1-605f-7e07" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="2e3c-30e8-288c-ce87" name="Infernal Fire" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
@@ -919,20 +918,20 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                    <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2a69-b0e9-434a-6fb6" name="Tempyric" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="f359-8c34-2cba-a4c7" name="Fluxblast" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6f3-63b4-92d0-409b" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1a2-c4b8-6966-2a6d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6f3-63b4-92d0-409b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1a2-c4b8-6966-2a6d" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="d895-afc6-e639-9721" name="Fluxblast" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
@@ -955,13 +954,13 @@
                     <infoLink id="8a02-eef6-1954-f748" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                    <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8662-efd7-f674-bcbf" name="Temporal Manipulation" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42d0-4373-5587-2eba" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99cd-a0ec-82ac-d908" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42d0-4373-5587-2eba" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99cd-a0ec-82ac-d908" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="fefe-7b90-72d9-f6e9" name="Temporal Manipulation" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
@@ -971,13 +970,13 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                    <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="c581-351c-2fc0-e895" name="Ephemeral Instability" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="614a-a6ef-a271-0e7b" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b23-4624-e320-99fd" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="614a-a6ef-a271-0e7b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b23-4624-e320-99fd" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="c277-61f3-5e54-1776" name="Ephemeral Instability" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
@@ -987,12 +986,12 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                    <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1026,7 +1025,7 @@
         <entryLink id="ca87-fb6f-1a03-7672" name="Equipment" hidden="false" collective="false" import="true" targetId="8cc5-9eb9-ecd3-e66a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f559-8366-9d85-60cd" name="Tzaangor Fighter" hidden="false" collective="false" import="true" type="model">
@@ -1043,28 +1042,28 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="30a1-006e-6e80-d2c3" name="Weapons" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76a6-ec3b-f54e-32b8" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cbe-a8aa-12ab-fa0d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76a6-ec3b-f54e-32b8" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cbe-a8aa-12ab-fa0d" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="89dd-1ada-71aa-d9a2" name="Autopistol and chainsword" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="df0b-c3e6-f1f8-5a55" name="Autopistol" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b8-079a-3b02-2580" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bd1-4c95-3816-1ce7" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b8-079a-3b02-2580" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bd1-4c95-3816-1ce7" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="3ace-be5d-2d33-bc86" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
                       <modifiers>
                         <modifier type="set" field="c9c0-f6c9-c787-e650" value="Rng ⬟, Rending">
                           <conditions>
-                            <condition field="selections" scope="f559-8366-9d85-60cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                            <condition field="selections" scope="f559-8366-9d85-60cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                           </conditions>
                         </modifier>
                         <modifier type="set" field="337a-2e5b-e4e3-f489" value="3/4">
                           <conditions>
-                            <condition field="selections" scope="f559-8366-9d85-60cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="70e3-2914-c6ae-4fb8" type="equalTo"/>
+                            <condition field="selections" scope="f559-8366-9d85-60cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="70e3-2914-c6ae-4fb8" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -1083,32 +1082,32 @@
                       <modifiers>
                         <modifier type="set" field="hidden" value="true">
                           <conditions>
-                            <condition field="selections" scope="f559-8366-9d85-60cd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                            <condition field="selections" scope="f559-8366-9d85-60cd" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                     </infoLink>
                   </infoLinks>
                   <costs>
-                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                    <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="f851-53e6-c505-997b" name="Chainsword" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60dd-6899-3274-1c40" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57e7-f9c1-07be-5025" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60dd-6899-3274-1c40" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57e7-f9c1-07be-5025" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="f518-8d00-6b80-adec" name="⚔ Chainsword" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
                       <modifiers>
                         <modifier type="set" field="c9c0-f6c9-c787-e650" value="Rending">
                           <conditions>
-                            <condition field="selections" scope="f559-8366-9d85-60cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                            <condition field="selections" scope="f559-8366-9d85-60cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                           </conditions>
                         </modifier>
                         <modifier type="set" field="337a-2e5b-e4e3-f489" value="5/5">
                           <conditions>
-                            <condition field="selections" scope="f559-8366-9d85-60cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
+                            <condition field="selections" scope="f559-8366-9d85-60cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -1126,19 +1125,19 @@
                       <modifiers>
                         <modifier type="set" field="hidden" value="true">
                           <conditions>
-                            <condition field="selections" scope="f559-8366-9d85-60cd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                            <condition field="selections" scope="f559-8366-9d85-60cd" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                     </infoLink>
                   </infoLinks>
                   <costs>
-                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                    <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1480-a590-6956-ff1f" name="Tzaangor blades" hidden="false" collective="false" import="true" type="upgrade">
@@ -1147,12 +1146,12 @@
                   <modifiers>
                     <modifier type="set" field="c9c0-f6c9-c787-e650" value="Relentless, Rending">
                       <conditions>
-                        <condition field="selections" scope="f559-8366-9d85-60cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                        <condition field="selections" scope="f559-8366-9d85-60cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="337a-2e5b-e4e3-f489" value="5/5">
                       <conditions>
-                        <condition field="selections" scope="f559-8366-9d85-60cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
+                        <condition field="selections" scope="f559-8366-9d85-60cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1171,14 +1170,14 @@
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="f559-8366-9d85-60cd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                        <condition field="selections" scope="f559-8366-9d85-60cd" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1206,19 +1205,19 @@
         <entryLink id="6b69-9d90-a837-70f9" name="Tzaangor Boon" hidden="false" collective="false" import="true" targetId="83ab-fedb-04eb-f9cc" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9696-b43f-26c3-4874" name="Tzaangor Champion" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="f73e-03cb-0241-5f0a" value="1.0">
+        <modifier type="set" field="f73e-03cb-0241-5f0a" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f73e-03cb-0241-5f0a" type="max"/>
+        <constraint field="selections" scope="roster" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f73e-03cb-0241-5f0a" type="max"/>
       </constraints>
       <profiles>
         <profile id="a85f-ffda-73bc-3c4b" name="Tzaangor Champion" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -1249,8 +1248,8 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="6d91-2986-d4fb-dae7" name="Weapons" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0032-ff1d-6bc1-e640" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f62-dd6b-f59c-0bd6" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0032-ff1d-6bc1-e640" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f62-dd6b-f59c-0bd6" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="953d-9f9a-5f08-a873" name="Tzaangor greataxe" hidden="false" collective="false" import="true" type="upgrade">
@@ -1259,12 +1258,12 @@
                   <modifiers>
                     <modifier type="set" field="c9c0-f6c9-c787-e650" value="Brutal, Lethal 5+, Rending">
                       <conditions>
-                        <condition field="selections" scope="9696-b43f-26c3-4874" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                        <condition field="selections" scope="9696-b43f-26c3-4874" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="337a-2e5b-e4e3-f489" value="5/5">
                       <conditions>
-                        <condition field="selections" scope="9696-b43f-26c3-4874" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
+                        <condition field="selections" scope="9696-b43f-26c3-4874" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1284,14 +1283,14 @@
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b3a7-8ac8-6423-1610" name="Tzaangor greatblade" hidden="false" collective="false" import="true" type="upgrade">
@@ -1300,12 +1299,12 @@
                   <modifiers>
                     <modifier type="set" field="c9c0-f6c9-c787-e650" value="Lethal 5+, Rending">
                       <conditions>
-                        <condition field="selections" scope="9696-b43f-26c3-4874" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                        <condition field="selections" scope="9696-b43f-26c3-4874" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="337a-2e5b-e4e3-f489" value="5/5">
                       <conditions>
-                        <condition field="selections" scope="9696-b43f-26c3-4874" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
+                        <condition field="selections" scope="9696-b43f-26c3-4874" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1325,14 +1324,14 @@
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1360,19 +1359,19 @@
         <entryLink id="6faf-67d5-2cec-c831" name="Tzaangor Boons" hidden="false" collective="false" import="true" targetId="83ab-fedb-04eb-f9cc" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="94f4-1a1e-1a01-f88e" name="Tzaangor Icon Bearer" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="b0e9-95f9-7ec5-70a4" value="1.0">
+        <modifier type="set" field="b0e9-95f9-7ec5-70a4" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0e9-95f9-7ec5-70a4" type="max"/>
+        <constraint field="selections" scope="roster" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0e9-95f9-7ec5-70a4" type="max"/>
       </constraints>
       <profiles>
         <profile id="62ff-3842-7798-5d4f" name="Icon Bearer" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1399,20 +1398,20 @@
       <selectionEntries>
         <selectionEntry id="a886-59b2-d33e-da64" name="Dagger" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd4e-9d44-d99d-a0e9" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e65f-8014-e34e-18bd" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd4e-9d44-d99d-a0e9" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e65f-8014-e34e-18bd" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="9a36-c33d-9484-684b" name="⚔ Dagger" hidden="false" targetId="29fa-2e9e-c7e2-3320" type="profile">
               <modifiers>
                 <modifier type="set" field="337a-2e5b-e4e3-f489" value="4/4">
                   <conditions>
-                    <condition field="selections" scope="94f4-1a1e-1a01-f88e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
+                    <condition field="selections" scope="94f4-1a1e-1a01-f88e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="c9c0-f6c9-c787-e650" value="Rending">
                   <conditions>
-                    <condition field="selections" scope="94f4-1a1e-1a01-f88e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                    <condition field="selections" scope="94f4-1a1e-1a01-f88e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1421,14 +1420,14 @@
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="94f4-1a1e-1a01-f88e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                    <condition field="selections" scope="94f4-1a1e-1a01-f88e" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </infoLink>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1454,19 +1453,19 @@
         <entryLink id="b91c-1935-8104-baf1" name="Tzaangor Boon" hidden="false" collective="false" import="true" targetId="83ab-fedb-04eb-f9cc" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2052-5f13-e33e-446a" name="Tzaangor Horn Bearer" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="ec12-5866-d294-41f9" value="1.0">
+        <modifier type="set" field="ec12-5866-d294-41f9" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="812d-731d-5da3-7bc8" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ec12-5866-d294-41f9" type="max"/>
+        <constraint field="selections" scope="roster" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ec12-5866-d294-41f9" type="max"/>
       </constraints>
       <profiles>
         <profile id="50d8-ed52-3932-a183" name="Brayhorn (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
@@ -1488,20 +1487,20 @@
       <selectionEntries>
         <selectionEntry id="e728-34cc-6a48-7a44" name="Dagger" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31a0-c9d9-7238-1a95" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc86-110f-f5ac-759b" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31a0-c9d9-7238-1a95" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc86-110f-f5ac-759b" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="0275-d40f-8653-223b" name="⚔ Dagger" hidden="false" targetId="29fa-2e9e-c7e2-3320" type="profile">
               <modifiers>
                 <modifier type="set" field="c9c0-f6c9-c787-e650" value="Rending">
                   <conditions>
-                    <condition field="selections" scope="2052-5f13-e33e-446a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                    <condition field="selections" scope="2052-5f13-e33e-446a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="337a-2e5b-e4e3-f489" value="4/4">
                   <conditions>
-                    <condition field="selections" scope="2052-5f13-e33e-446a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
+                    <condition field="selections" scope="2052-5f13-e33e-446a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706d-bce3-f5cf-5e83" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1510,14 +1509,14 @@
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="2052-5f13-e33e-446a" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
+                    <condition field="selections" scope="2052-5f13-e33e-446a" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d2a-61ba-89ab-777a" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </infoLink>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1543,12 +1542,12 @@
         <entryLink id="9cd8-5e10-5a91-1335" name="Tzaangor Boon" hidden="false" collective="false" import="true" targetId="83ab-fedb-04eb-f9cc" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="101e-1727-34f7-a152" name="Rubric Marine 1 - Warded" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="799b-deec-85ed-0a95" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="799b-deec-85ed-0a95" type="max"/>
       </constraints>
       <profiles>
         <profile id="bf20-3ee3-d240-3938" name="Warded" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1558,12 +1557,12 @@
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2a44-d2aa-1e64-558e" name="Rubric Marine 2 - Unwavering" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acfc-90c6-0e88-a211" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acfc-90c6-0e88-a211" type="max"/>
       </constraints>
       <profiles>
         <profile id="ea2b-fb9e-aecf-9757" name="Unwavering" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1573,12 +1572,12 @@
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c80d-8607-e33f-5a14" name="Rubric Marine 3 - Automata" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f57d-0b5a-8dd4-57b8" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f57d-0b5a-8dd4-57b8" type="max"/>
       </constraints>
       <profiles>
         <profile id="267f-67c5-5a55-1119" name="Automata" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1589,12 +1588,12 @@
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bc72-8c11-24a4-a0b1" name="Sorcerer 1 - Boon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6ec-84ef-6dfd-fc21" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6ec-84ef-6dfd-fc21" type="max"/>
       </constraints>
       <profiles>
         <profile id="3a29-3332-3356-00bd" name="Boon" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1604,12 +1603,12 @@
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ace4-595b-81a5-7205" name="Sorcerer 2 - Studious" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1d0-baf8-18af-69c4" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1d0-baf8-18af-69c4" type="max"/>
       </constraints>
       <profiles>
         <profile id="1145-080d-684a-b0c9" name="Studious" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1619,12 +1618,12 @@
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3f6d-9274-89a7-121a" name="Sorcerer 3 - Rubric Affinity" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2c8-d84e-a07d-e286" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2c8-d84e-a07d-e286" type="max"/>
       </constraints>
       <profiles>
         <profile id="aaab-97b9-f2c2-84a8" name="Rubric Affinity" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1634,48 +1633,48 @@
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2530-fa7a-2814-7c9e" name="Mutation - Avian Talons" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2346-eb5c-8a40-28d9" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ea35-2dcb-a961-31f6" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2346-eb5c-8a40-28d9" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ea35-2dcb-a961-31f6" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="faa9-7873-21f2-e0a6" name="Avian Talons" hidden="false" targetId="0f47-df8a-e621-8e7d" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c706-4621-7cf7-5b5a" name="Mutation - Mutant Appendage" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="998f-dfed-8517-04c1" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1297-7b80-afe7-5f8f" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="998f-dfed-8517-04c1" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1297-7b80-afe7-5f8f" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="9a58-fdb3-e137-64c3" name="Mutant Appendage" hidden="false" targetId="9d4b-7b4a-90cc-78e8" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="706d-bce3-f5cf-5e83" name="Mutation - Warp Swell" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21c8-3ac5-c8f8-f760" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="110f-f0dc-13cf-cfce" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21c8-3ac5-c8f8-f760" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="110f-f0dc-13cf-cfce" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ed1c-256f-9adf-fbab" name="Warp Swell" hidden="false" targetId="e051-6c4d-c203-2db9" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0958-2460-921e-996e" name="Tzaangor 1 - Avian Mobility" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e07-e452-20f7-b3e2" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e07-e452-20f7-b3e2" type="max"/>
       </constraints>
       <profiles>
         <profile id="3d3e-a997-471a-0a8c" name="Avian Mobility" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1686,12 +1685,12 @@
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6a5b-b7d5-0869-1df8" name="Tzaangor 2 - Mutation" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3c3-a7d9-1a76-7672" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3c3-a7d9-1a76-7672" type="max"/>
       </constraints>
       <profiles>
         <profile id="94cb-9e78-1564-3333" name="Mutation" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1701,12 +1700,12 @@
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6d2a-61ba-89ab-777a" name="Tzaangor 3 - Savage" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06f7-735e-1b5f-8378" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06f7-735e-1b5f-8378" type="max"/>
       </constraints>
       <profiles>
         <profile id="3600-751d-f327-5858" name="Savage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1716,7 +1715,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1725,19 +1724,19 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82af-b9b8-518f-aaf1" type="lessThan"/>
+            <condition field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82af-b9b8-518f-aaf1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9290-420e-0f4f-136a" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9290-420e-0f4f-136a" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="80e3-51d9-497e-3b67" name="Combat" hidden="false" collective="false" import="true" targetId="97d8-19ec-143d-8aad" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="56f4-f969-5d17-db4e" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="56f4-f969-5d17-db4e" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1748,8 +1747,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5770-50c2-6588-a81c" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9f56-4f62-6d62-1de9" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5770-50c2-6588-a81c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9f56-4f62-6d62-1de9" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1760,7 +1759,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5770-50c2-6588-a81c" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5770-50c2-6588-a81c" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1769,7 +1768,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5770-50c2-6588-a81c" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5770-50c2-6588-a81c" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1780,29 +1779,29 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7138-2b60-74ce-a90b" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7138-2b60-74ce-a90b" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="c61a-51a3-370d-bf55" scope="roster" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f961-67ca-60fd-b797" type="max"/>
+        <constraint field="c61a-51a3-370d-bf55" scope="roster" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f961-67ca-60fd-b797" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="bbd9-166c-4ef7-4beb" name="Gargoyle Bayonet" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="56f4-f969-5d17-db4e" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="56f4-f969-5d17-db4e" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71cd-02a2-6027-bbe9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71cd-02a2-6027-bbe9" type="max"/>
           </constraints>
           <profiles>
             <profile id="4784-2a57-b965-b34f" name="⚔ Gargoyle bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
               <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
                 <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
                 <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/4</characteristic>
                 <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
@@ -1811,20 +1810,20 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b360-0b90-2252-c6b1" name="Sorcerous Scroll*" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7079-e733-9e1a-2b8e" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7079-e733-9e1a-2b8e" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3ac-783d-45a4-1d0f" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38c7-fbb4-82a1-2457" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3ac-783d-45a4-1d0f" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38c7-fbb4-82a1-2457" type="max"/>
           </constraints>
           <profiles>
             <profile id="810c-763b-da9a-551a" name="Sorcerous Scroll" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1834,19 +1833,19 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="4.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="4"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3e46-74be-3b5f-a1bd" name="Gilded Horns" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5770-50c2-6588-a81c" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5770-50c2-6588-a81c" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf4-7807-f2e9-cec2" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf4-7807-f2e9-cec2" type="max"/>
           </constraints>
           <profiles>
             <profile id="19b4-2d4d-55ce-6e93" name="Gilded Horns" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1856,19 +1855,19 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="1.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="70e3-2914-c6ae-4fb8" name="Ensorcelled Rounds" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89dd-1ada-71aa-d9a2" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89dd-1ada-71aa-d9a2" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5316-4fe7-47f4-db46" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5316-4fe7-47f4-db46" type="max"/>
           </constraints>
           <profiles>
             <profile id="6f1d-4e4a-bb2f-adeb" name="Ensorcelled Rounds" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
@@ -1878,19 +1877,19 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e205-406c-52cd-21b8" name="Arcane Robes" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7079-e733-9e1a-2b8e" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7079-e733-9e1a-2b8e" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c8c-68d2-3e0e-efa7" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c8c-68d2-3e0e-efa7" type="max"/>
           </constraints>
           <profiles>
             <profile id="4789-14b9-0058-e290" name="Arcane Robes" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1900,7 +1899,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8dc8-3738-3025-4dfa" name="High Capacity Magazine" hidden="false" collective="false" import="true" type="upgrade">
@@ -1909,21 +1908,21 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddcf-9259-704f-c9ca" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3bb4-fa4e-88bb-90ab" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89dd-1ada-71aa-d9a2" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddcf-9259-704f-c9ca" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3bb4-fa4e-88bb-90ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89dd-1ada-71aa-d9a2" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="c61a-51a3-370d-bf55" value="1.0">
+            <modifier type="set" field="c61a-51a3-370d-bf55" value="1">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89dd-1ada-71aa-d9a2" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89dd-1ada-71aa-d9a2" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4469-f7f6-e040-7bd8" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4469-f7f6-e040-7bd8" type="max"/>
           </constraints>
           <profiles>
             <profile id="c734-37e9-74af-96fb" name="High Capacity Magazine" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
@@ -1933,12 +1932,12 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1e4b-7c1b-543f-3d1c" name="Occult Talisman" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d159-03b3-2452-b44f" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d159-03b3-2452-b44f" type="max"/>
           </constraints>
           <profiles>
             <profile id="4b32-bff3-e9d4-e53a" name="Occult Talisman" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1948,7 +1947,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1961,12 +1960,12 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a5b-b7d5-0869-1df8" type="equalTo"/>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a5b-b7d5-0869-1df8" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="020f-fe14-d702-fe95" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="020f-fe14-d702-fe95" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="accd-f364-8a07-9d53" name="Mutation - Avian Talons" hidden="false" collective="false" import="true" targetId="2530-fa7a-2814-7c9e" type="selectionEntry"/>
@@ -1983,7 +1982,7 @@
         <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">⬛</characteristic>
         <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">⬟</characteristic>
         <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">⌖ 
-⚔ </characteristic>
+⚔</characteristic>
         <characteristic name="W" typeId="db11-738c-048c-759e">💀</characteristic>
       </characteristics>
     </profile>
@@ -2001,7 +2000,7 @@
     <profile id="5e3c-ba15-8253-f67f" name="Rubric Marine" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
       <characteristics>
         <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-        <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+        <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
         <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
         <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
         <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
@@ -2040,6 +2039,11 @@
         <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
         <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
         <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sorcerer&apos;s Command" hidden="false" id="8fa0-2a9e-7f96-5ccb" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative is activated, if it isn’t within ⬟ of a friendly SORCERER operative, subtract 1 from its APL.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
