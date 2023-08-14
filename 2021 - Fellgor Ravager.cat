@@ -216,10 +216,68 @@
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Specialism" hidden="false" id="16d6-f367-edd6-f1e0">
       <entryLinks>
-        <entryLink import="true" name="Combat" hidden="false" type="selectionEntry" id="76c0-843f-d5e-9f78" targetId="97d8-19ec-143d-8aad"/>
-        <entryLink import="true" name="Marksman" hidden="false" type="selectionEntry" id="4bf5-3aa5-15a0-9fce" targetId="715c-810e-df05-01ad"/>
-        <entryLink import="true" name="Scout" hidden="false" type="selectionEntry" id="fb41-df2a-222b-9d3a" targetId="9118-a98b-0ffe-9e3d"/>
-        <entryLink import="true" name="Staunch" hidden="false" type="selectionEntry" id="ae76-6ea0-9508-a9bb" targetId="eb50-055a-4cd2-e1d5"/>
+        <entryLink import="true" name="Combat" hidden="false" type="selectionEntry" id="76c0-843f-d5e-9f78" targetId="97d8-19ec-143d-8aad">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87b8-90b1-d88b-b68d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7255-b439-8ed-57f5" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1311-2d31-43dd-b180" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Marksman" hidden="false" type="selectionEntry" id="4bf5-3aa5-15a0-9fce" targetId="715c-810e-df05-01ad">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e74b-bc55-d419-a22e" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e52a-1d77-7498-a892" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Scout" hidden="false" type="selectionEntry" id="fb41-df2a-222b-9d3a" targetId="9118-a98b-0ffe-9e3d">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="8d25-935c-1e60-c44f" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="639d-85af-cc94-5444" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="7255-b439-8ed-57f5" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="87b8-90b1-d88b-b68d" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="b9a4-31a5-b4ed-b4c7" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Staunch" hidden="false" type="selectionEntry" id="ae76-6ea0-9508-a9bb" targetId="eb50-055a-4cd2-e1d5">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8d25-935c-1e60-c44f" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="639d-85af-cc94-5444" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6ef7-d3b-e51f-640e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9a4-31a5-b4ed-b4c7" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64a3-72f-a1e-f801"/>
