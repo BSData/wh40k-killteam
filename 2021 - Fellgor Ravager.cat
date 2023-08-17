@@ -313,7 +313,7 @@
           <profiles>
             <profile name="Crown of Horns" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="ef1b-a493-3d02-17f6">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d"/>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">You can use the Animalistic Fury Tactical Ploy for 0CP if this operative is the friendly FELLGOR RAVAGERS operative.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -332,7 +332,7 @@
           <profiles>
             <profile name="Brass Hooves" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="12f6-5b72-7cf1-9ca5">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d"/>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">You can use the Wild Rage Tactical Ploy for 0CP if this operative is the friendly FELLGOR RAVAGER operative.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -357,7 +357,7 @@
           <profiles>
             <profile name="Mighty Trophy" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="7503-5388-94b0-2b45">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d"/>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per battle, when this operative is activated, you can use this ability. If you do so, add 1 to this operative&apos;s APL.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -382,16 +382,16 @@
           <profiles>
             <profile name="Dark Talisman" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="13a9-3338-6318-f4be">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d"/>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative can perform the Manifest Psychic Power action twice during its activation. If it does so, you must select different psychic powers to be resolved.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7255-b439-8ed-57f5" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="7255-b439-8ed-57f5" shared="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="b888-71c3-b9f6-b49d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
@@ -403,7 +403,7 @@
           <profiles>
             <profile name="Goremark" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="6046-31ee-99aa-53e1">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d"/>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative cannot be injured and you can ignore any or all modifiers to its characteristics. If it&apos;s incapacitated, it automatically passes its Casualty test after the battle.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -426,9 +426,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b860-f3c1-498a-f238"/>
           </constraints>
           <profiles>
-            <profile name="Infernal Vambraces [RARE]" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="f456-caee-c092-da13">
+            <profile name="Infernal Vambraces" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="f456-caee-c092-da13">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d"/>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Improve the Weapon Skill characteristic of the operative&apos;s melee weapons by 1 (to a maximum of 2+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -509,6 +509,13 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="235b-8807-c464-bc8a"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8d8c-45cf-497e-fd21" shared="true" id="6df9-c6d8-3814-c7db" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Corrupted Weapon" hidden="false" id="8a41-c424-83a-49eb">
           <costs>
@@ -524,6 +531,18 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a401-f81f-c5f4-f735"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="3f-1de0-1bc3-3565" shared="true" id="16ed-4e24-4b7-b1b" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="8f27-369f-1b92-700c" shared="true" id="f409-39fb-7e43-7dfd" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Unholy Talisman" hidden="false" id="b9de-c2b3-2f20-ae73">
           <costs>
@@ -535,7 +554,7 @@
           <profiles>
             <profile name="Unholy Talisman" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="b244-221e-c32a-4200">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d"/>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative gains a 5+ invulnerable save for the battle.</characteristic>
               </characteristics>
             </profile>
           </profiles>
