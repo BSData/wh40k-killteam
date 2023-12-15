@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="13e2-04bc-4cc1-0c53" name="Kasrkin" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="13e2-04bc-4cc1-0c53" name="Kasrkin" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a241-be0f-4dae-b452" name="KASRKIN" hidden="false"/>
     <categoryEntry id="d954-d36e-32d4-e53e" name="Kasrkin Sergeant" hidden="false"/>
@@ -774,7 +774,7 @@
         </profile>
         <profile id="76dd-4a9c-2d71-f9a0" name="Warden Auspex (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
           <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative. Until the end of the Turning Point, each time a friendly KASRKIN operative makes a shooting attack against that enemy operative, the ranged weapon that friendly operative is equipped with gains the No Cover rule for that shooting attack, and that enemy operative is not treated as being in Cover for the specified Cover purposes of the Elimination Pattern Strategic Ploy and Neitralise Target Tactical Ploy. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative. Until the end of the Turning Point, each time a friendly KASRKIN operative makes a shooting attack, that enemy operative is not Obscured. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1364,9 +1364,25 @@ Long-range Scope: Each time a friendly operative makes a shooting attack with th
         <selectionEntry id="c655-2105-625e-42a6" name="Foregrip" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c211-3124-6df0-a1c6" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c211-3124-6df0-a1c6" type="equalTo"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="edd9-40f5-94a6-9049" shared="true" includeChildSelections="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="305f-96fb-eac9-fcc7" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="c61a-51a3-370d-bf55">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="edd9-40f5-94a6-9049" shared="true" includeChildSelections="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="305f-96fb-eac9-fcc7" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -1375,7 +1391,9 @@ Long-range Scope: Each time a friendly operative makes a shooting attack with th
           <profiles>
             <profile id="2de4-9420-2aca-775f" name="Foregrip" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
               <characteristics>
-                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative performs an Overwatch action, for that action&apos;s shooting attack, do not worsen the Ballistic Skill characteristic of a hot-shot lasgun it is equipped with as a result of performing an Overwatch action.</characteristic>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative performs an Overwatch action, for that action&apos;s shooting attack, do not worsen the Ballistic Skill characteristic of a hot-shot lasgun it is equipped with as a result of performing an Overwatch action.
+
+GUNNER and SHARPSHOOTER operatives can use this for any ranged weapon on their datacard.</characteristic>
               </characteristics>
             </profile>
           </profiles>
