@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3cd3-7d31-f105-e415" name="Farstalker Kinband" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3cd3-7d31-f105-e415" name="Farstalker Kinband" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="53d9-aee4-991f-1f73" name="FARSTALKER KINBAND" hidden="false"/>
     <categoryEntry id="0b91-407c-2178-9392" name="Kroot" hidden="false"/>
@@ -20,19 +20,19 @@
         <categoryLink id="fbaf-25a5-2242-ee23" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
         <categoryLink id="b765-c123-fbd9-2d4c" name="Leader" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="947f-1292-0435-2ced" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0efe-1666-4c45-575e" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="947f-1292-0435-2ced" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0efe-1666-4c45-575e" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="bba6-4b7d-98e5-b779" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="11.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d6c-e8b2-2b8e-1e53" type="min"/>
-            <constraint field="selections" scope="parent" value="11.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3b3-83e7-dbd9-c267" type="max"/>
+            <constraint field="selections" scope="parent" value="11" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d6c-e8b2-2b8e-1e53" type="min"/>
+            <constraint field="selections" scope="parent" value="11" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3b3-83e7-dbd9-c267" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="0241-7d97-f3ab-1289" name="Heavy Gunner" hidden="false" targetId="0e59-07ae-65c2-2de6" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7c0-ba7d-416c-7ca0" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7c0-ba7d-416c-7ca0" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -53,7 +53,10 @@
         </profile>
         <profile id="57d4-b00b-c0cf-be00" name="Call the Kill" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
           <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once in each Strategy phase, when it is your turn to use a Strategic Ploy or pass, you can select one enemy operative Visible to this operative instead. Until the end of the Turning Point, each time a friendly FARSTALKER KINBAND operative fights in combat or makes a shooting attack against that enemy operative, in the Roll Attack Dice step of that combat or shooting attack, before rolling your attack dice, you can retain one as a successful normal hit without rolling it.</characteristic>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once in each Strategy phase, when it is your turn to use a Strategic Ploy or pass, you can select one enemy operative in the killzone. Until the end of the Turning Point, each time a friendly FARSTALKER KINBAND operative fights in combat or makes a shooting attack against that enemy operative, in the Roll Attack Dice step of that combat or shooting attack, before rolling your attack dice, you can choose one of the following effects:
+- Retain one attack dice as a successful normal hit without rolling it
+- The weapon gains the Ceaseless special rule
+- The weapon gains the P1 critical hit rule</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -69,8 +72,8 @@
       <selectionEntries>
         <selectionEntry id="be69-1e30-e189-60c4" name="Blade" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ec-3e89-fa93-a530" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e051-05e2-2b51-ca83" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ec-3e89-fa93-a530" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e051-05e2-2b51-ca83" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="513b-602f-bddb-5fe2" name="⚔ Blade" hidden="false" targetId="59f2-ce0d-aa90-437f" type="profile">
@@ -79,8 +82,8 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="f9f1-33ec-cd5c-3ddb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0fa-ec54-1f66-18f2" type="equalTo"/>
-                        <condition field="selections" scope="f9f1-33ec-cd5c-3ddb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="388a-a1de-5673-35df" type="equalTo"/>
+                        <condition field="selections" scope="f9f1-33ec-cd5c-3ddb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0fa-ec54-1f66-18f2" type="equalTo"/>
+                        <condition field="selections" scope="f9f1-33ec-cd5c-3ddb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="388a-a1de-5673-35df" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -89,15 +92,15 @@
             </infoLink>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="3028-9903-0d72-bf58" name="Ranged weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea27-3f5e-a077-5642" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ba6-3625-6963-2e11" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea27-3f5e-a077-5642" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ba6-3625-6963-2e11" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="3d3b-362b-ebad-fbd7" name="Pulse rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -113,7 +116,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4145-22a6-1f4f-11b2" name="Pulse carbine" hidden="false" collective="false" import="true" type="upgrade">
@@ -137,7 +140,7 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
                 </profile>
               </profiles>
               <costs>
-                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -183,19 +186,19 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
         <entryLink id="aeb9-bd6b-384e-f103" name="Specialism" hidden="false" collective="false" import="true" targetId="d4ab-70eb-6d0f-e6c3" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3824-6dba-d69c-1786" name="Bow-hunter" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="038f-514f-e51c-38a4" value="1.0">
+        <modifier type="set" field="038f-514f-e51c-38a4" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="038f-514f-e51c-38a4" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="038f-514f-e51c-38a4" type="max"/>
       </constraints>
       <profiles>
         <profile id="89c4-f715-6d67-8856" name="Bow-hunter" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -226,8 +229,8 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
       <selectionEntries>
         <selectionEntry id="8d63-161e-3927-8e86" name="Accelerator bow" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8050-a38b-5347-8b32" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f2a-6365-cc02-d4a6" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8050-a38b-5347-8b32" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f2a-6365-cc02-d4a6" type="max"/>
           </constraints>
           <profiles>
             <profile id="968a-e9ae-e031-1f59" name="⌖ Accelerator bow - Fused" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -264,7 +267,7 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
             <infoLink id="fc6c-6ae7-9550-b33f" name="Splash x" hidden="false" targetId="eab8-73f5-feed-5924" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -286,19 +289,19 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ed1e-c160-a2d0-1678" name="Cut-skin" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="f40c-013e-71bf-1397" value="1.0">
+        <modifier type="set" field="f40c-013e-71bf-1397" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f40c-013e-71bf-1397" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f40c-013e-71bf-1397" type="max"/>
       </constraints>
       <profiles>
         <profile id="2416-d571-5c07-cc85" name="Cut-skin" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -334,8 +337,8 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
       <selectionEntries>
         <selectionEntry id="41f9-c466-23bf-288b" name="Cut-skin&apos;s blades" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a432-e339-c8a4-670c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44b9-e8ae-1395-fef3" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a432-e339-c8a4-670c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44b9-e8ae-1395-fef3" type="max"/>
           </constraints>
           <profiles>
             <profile id="9f48-f807-f7b6-a56b" name="⚔ Cut-skin&apos;s blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -353,7 +356,7 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
             <infoLink id="038d-1db7-4d51-803e" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -374,19 +377,19 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5357-ed37-80f2-4c15" name="Cold-blood" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="2714-a4ad-f6f1-df93" value="1.0">
+        <modifier type="set" field="2714-a4ad-f6f1-df93" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2714-a4ad-f6f1-df93" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2714-a4ad-f6f1-df93" type="max"/>
       </constraints>
       <profiles>
         <profile id="332b-563d-a516-efdb" name="Cold-blood" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -426,18 +429,18 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
         <entryLink id="9ea1-02ce-f59b-8bc5" name="Equipment" hidden="false" collective="false" import="true" targetId="141e-5b01-a4b4-e8ef" type="selectionEntryGroup"/>
         <entryLink id="c3ee-5aaf-0ac1-5444" name="Kroot rifle" hidden="false" collective="false" import="true" targetId="8255-2f10-816b-00fc" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ad3-525a-7135-fc2c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ad3-525a-7135-fc2c" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="243e-0800-7582-f63f" name="Specialism" hidden="false" collective="false" import="true" targetId="d4ab-70eb-6d0f-e6c3" type="selectionEntryGroup"/>
         <entryLink id="e73e-ac6b-1a85-bffc" name="Piercing Shot" hidden="false" collective="false" import="true" targetId="01ab-69e4-a4ae-7399" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52d5-7826-418e-7e53" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52d5-7826-418e-7e53" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="1738-19a9-5034-0059" name="Toxin Shot" hidden="false" collective="false" import="true" targetId="6d40-a875-1660-1b60" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="243e-94b1-4be2-6a79" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="243e-94b1-4be2-6a79" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="442c-696d-b070-f42e" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
@@ -462,7 +465,7 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8b50-93bf-7739-5d71" name="Heavy Gunner w/ tribalest" hidden="false" collective="false" import="true" type="model">
@@ -490,8 +493,8 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
       <selectionEntries>
         <selectionEntry id="4265-b591-b94b-5d8c" name="Londaxi tribalest" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="546a-2524-ec6c-05bf" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31d3-f6d6-0b82-594d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="546a-2524-ec6c-05bf" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31d3-f6d6-0b82-594d" type="max"/>
           </constraints>
           <profiles>
             <profile id="0ab9-9457-37f7-5b33" name="⌖ Londaxi tribalest" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -510,7 +513,7 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
             <infoLink id="ff2d-7251-9911-b7d0" name="*Cumbersome" hidden="false" targetId="a4b8-e5e1-a673-f0e3" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -532,7 +535,7 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f008-83d7-ef2c-e3d7" name="Hound" hidden="false" collective="false" import="true" type="model">
@@ -575,8 +578,8 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
       <selectionEntries>
         <selectionEntry id="fe99-e048-ff65-6028" name="Ripping fangs" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1ca-901a-be1c-78a6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6ef-91cf-bb92-8345" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1ca-901a-be1c-78a6" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6ef-91cf-bb92-8345" type="max"/>
           </constraints>
           <profiles>
             <profile id="17f2-1a9b-4c2d-9671" name="Ripping fangs" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -593,7 +596,7 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
             <infoLink id="0163-fb55-5a9d-7dbf" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -623,19 +626,19 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="49ef-f7b0-1273-659f" name="Long-sight" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="be4c-cb6a-3bb4-e96e" value="1.0">
+        <modifier type="set" field="be4c-cb6a-3bb4-e96e" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be4c-cb6a-3bb4-e96e" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be4c-cb6a-3bb4-e96e" type="max"/>
       </constraints>
       <profiles>
         <profile id="ae68-0859-86f4-d092" name="Long-sight" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -672,8 +675,8 @@ This operative cannot perform this action while within Engagement Range of an en
       <selectionEntries>
         <selectionEntry id="61eb-72bc-7511-1700" name="Kroot hunting rifle" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9032-c397-4ca9-5ce4" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="026e-e44b-4248-f03c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9032-c397-4ca9-5ce4" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="026e-e44b-4248-f03c" type="max"/>
           </constraints>
           <profiles>
             <profile id="054f-fbeb-11bb-bb35" name="⌖ Kroot hunting rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -691,7 +694,7 @@ This operative cannot perform this action while within Engagement Range of an en
             <infoLink id="f5a7-8ede-1274-bec9" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -713,19 +716,19 @@ This operative cannot perform this action while within Engagement Range of an en
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a0c4-a33d-115f-e0da" name="Pistolier" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="caf7-ee39-ca59-5f60" value="1.0">
+        <modifier type="set" field="caf7-ee39-ca59-5f60" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="caf7-ee39-ca59-5f60" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="caf7-ee39-ca59-5f60" type="max"/>
       </constraints>
       <profiles>
         <profile id="d5f0-7543-4513-54ec" name="Pistolier" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -761,8 +764,8 @@ This operative cannot perform this action while within Engagement Range of an en
       <selectionEntries>
         <selectionEntry id="6d9c-1c6a-53ad-20a0" name="Dual Kroot pistols" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c88-3f1c-5de6-020c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbf6-7618-b799-3de1" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c88-3f1c-5de6-020c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbf6-7618-b799-3de1" type="max"/>
           </constraints>
           <profiles>
             <profile id="6685-cfa1-ca77-25e5" name="⌖ Dual Kroot pistols" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -781,7 +784,7 @@ This operative cannot perform this action while within Engagement Range of an en
             <infoLink id="bf81-23b6-19aa-4c0f" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -813,19 +816,19 @@ This operative cannot perform this action while within Engagement Range of an en
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cae7-f392-994d-6506" name="Stalker" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="3b38-c77b-da7f-08a9" value="1.0">
+        <modifier type="set" field="3b38-c77b-da7f-08a9" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b38-c77b-da7f-08a9" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b38-c77b-da7f-08a9" type="max"/>
       </constraints>
       <profiles>
         <profile id="5b34-b003-aae8-31bc" name="Stalker" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -864,8 +867,8 @@ This operative cannot perform this action while within Engagement Range of an en
       <selectionEntries>
         <selectionEntry id="409d-b282-f06a-6216" name="Stalker&apos;s blade" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2609-3b1e-5974-155e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f947-846b-2284-08f1" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2609-3b1e-5974-155e" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f947-846b-2284-08f1" type="max"/>
           </constraints>
           <profiles>
             <profile id="9ca1-6887-2bc4-58ab" name="⚔ Stalker&apos;s blade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -883,7 +886,7 @@ This operative cannot perform this action while within Engagement Range of an en
             <infoLink id="86c7-6081-ad07-4c29" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -894,7 +897,7 @@ This operative cannot perform this action while within Engagement Range of an en
         <entryLink id="43a7-56d2-d2f5-9b8a" name="Specialism" hidden="false" collective="false" import="true" targetId="d4ab-70eb-6d0f-e6c3" type="selectionEntryGroup"/>
         <entryLink id="c98f-8ea2-8a13-0528" name="Kroot scattergun" hidden="false" collective="false" import="true" targetId="6f8e-6b58-5a73-00b9" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="113e-63ef-a2de-0634" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="113e-63ef-a2de-0634" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="76a5-286e-e7ce-30b9" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
@@ -919,19 +922,19 @@ This operative cannot perform this action while within Engagement Range of an en
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4609-aade-c68a-1b72" name="Tracker" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="1b60-703d-6d32-1dec" value="1.0">
+        <modifier type="set" field="1b60-703d-6d32-1dec" value="1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b60-703d-6d32-1dec" type="max"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b60-703d-6d32-1dec" type="max"/>
       </constraints>
       <profiles>
         <profile id="5eb1-3b0e-8552-71fe" name="Tracker" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
@@ -976,7 +979,7 @@ This operative cannot perform this action while within Engagement Range of an en
         <entryLink id="6927-e804-fec5-f282" name="Equipment" hidden="false" collective="false" import="true" targetId="141e-5b01-a4b4-e8ef" type="selectionEntryGroup"/>
         <entryLink id="4bbf-05ca-5afd-8677" name="Kroot rifle" hidden="false" collective="false" import="true" targetId="8255-2f10-816b-00fc" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3ed-6cbb-fdfd-bef6" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3ed-6cbb-fdfd-bef6" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="07a7-77cd-f57c-8c59" name="Specialism" hidden="false" collective="false" import="true" targetId="d4ab-70eb-6d0f-e6c3" type="selectionEntryGroup"/>
@@ -1002,7 +1005,7 @@ This operative cannot perform this action while within Engagement Range of an en
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8516-9673-6cf6-40e5" name="Warrior w/ scattergun" hidden="false" collective="false" import="true" type="model">
@@ -1034,7 +1037,7 @@ This operative cannot perform this action while within Engagement Range of an en
         <entryLink id="abae-0c29-39ae-f022" name="Equipment" hidden="false" collective="false" import="true" targetId="141e-5b01-a4b4-e8ef" type="selectionEntryGroup"/>
         <entryLink id="7f41-50e7-aed7-c673" name="Kroot scattergun" hidden="false" collective="false" import="true" targetId="6f8e-6b58-5a73-00b9" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5795-6e87-c4ce-22e6" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5795-6e87-c4ce-22e6" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="cb66-9e42-0185-086a" name="Specialism" hidden="false" collective="false" import="true" targetId="d4ab-70eb-6d0f-e6c3" type="selectionEntryGroup"/>
@@ -1070,7 +1073,7 @@ This operative cannot perform this action while within Engagement Range of an en
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be6a-e2ce-78f6-cb3c" name="Warrior w/ rifle" hidden="false" collective="false" import="true" type="model">
@@ -1102,7 +1105,7 @@ This operative cannot perform this action while within Engagement Range of an en
         <entryLink id="392c-4cda-b622-aa7f" name="Equipment" hidden="false" collective="false" import="true" targetId="141e-5b01-a4b4-e8ef" type="selectionEntryGroup"/>
         <entryLink id="d534-4079-9e92-6731" name="Kroot rifle" hidden="false" collective="false" import="true" targetId="8255-2f10-816b-00fc" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="093c-1714-9045-8e1f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="093c-1714-9045-8e1f" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="3f05-a827-5ecb-57e1" name="Specialism" hidden="false" collective="false" import="true" targetId="d4ab-70eb-6d0f-e6c3" type="selectionEntryGroup"/>
@@ -1138,7 +1141,7 @@ This operative cannot perform this action while within Engagement Range of an en
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b8fc-697a-6454-4232" name="Heavy Gunner w/ skinner" hidden="false" collective="false" import="true" type="model">
@@ -1166,8 +1169,8 @@ This operative cannot perform this action while within Engagement Range of an en
       <selectionEntries>
         <selectionEntry id="266f-7dae-f1ab-d3d1" name="Dvorgita skinner" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f76c-41bd-d33c-b756" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0bb-cb48-91ff-5591" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f76c-41bd-d33c-b756" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0bb-cb48-91ff-5591" type="max"/>
           </constraints>
           <profiles>
             <profile id="3b88-596b-ed5f-d550" name="⌖ Dvorgita skinner" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1187,7 +1190,7 @@ This operative cannot perform this action while within Engagement Range of an en
             <infoLink id="6ec1-fd5c-0382-e938" name="*Cumbersome" hidden="false" targetId="a4b8-e5e1-a673-f0e3" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1209,26 +1212,26 @@ This operative cannot perform this action while within Engagement Range of an en
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="4097-0a14-2867-79f2" name="Blade" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2284-1910-7c6d-01c2" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8567-8b64-4d5c-5b3c" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2284-1910-7c6d-01c2" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8567-8b64-4d5c-5b3c" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="1c2c-d44f-3c23-0dfc" name="⚔ Blade" hidden="false" targetId="59f2-ce0d-aa90-437f" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8255-2f10-816b-00fc" name="Kroot rifle" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0768-6eb7-aff3-2f1d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0768-6eb7-aff3-2f1d" type="max"/>
       </constraints>
       <profiles>
         <profile id="ff95-bca3-2af1-4faf" name="⌖ Kroot rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1237,8 +1240,8 @@ This operative cannot perform this action while within Engagement Range of an en
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6467-0adb-e2d5-46aa" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b9a4-31a5-b4ed-b4c7" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6467-0adb-e2d5-46aa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b9a4-31a5-b4ed-b4c7" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1254,12 +1257,12 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f8e-6b58-5a73-00b9" name="Kroot scattergun" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9c7-db05-d4b0-6a9f" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9c7-db05-d4b0-6a9f" type="max"/>
       </constraints>
       <profiles>
         <profile id="44f1-b855-4cf9-0ae4" name="⌖ Kroot scattergun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1276,7 +1279,7 @@ This operative cannot perform this action while within Engagement Range of an en
         <infoLink id="a66b-7e12-8a63-8c9a" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="01ab-69e4-a4ae-7399" name="Piercing Shot" hidden="false" collective="false" import="true" type="upgrade">
@@ -1285,16 +1288,16 @@ This operative cannot perform this action while within Engagement Range of an en
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8255-2f10-816b-00fc" type="equalTo"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d9c-1c6a-53ad-20a0" type="equalTo"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ab0-427c-bbbd-7906" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8255-2f10-816b-00fc" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d9c-1c6a-53ad-20a0" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ab0-427c-bbbd-7906" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ed6-84c6-fc21-2805" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ed6-84c6-fc21-2805" type="max"/>
       </constraints>
       <profiles>
         <profile id="3ab6-4045-7d6a-81d9" name="Piercing Shot" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1317,7 +1320,7 @@ This operative cannot perform this action while within Engagement Range of an en
         <infoLink id="e54b-05a8-3e0d-a9bd" name="Limited" hidden="false" targetId="1eb0-6ad3-3e5a-d8ec" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6d40-a875-1660-1b60" name="Toxin Shot" hidden="false" collective="false" import="true" type="upgrade">
@@ -1326,17 +1329,17 @@ This operative cannot perform this action while within Engagement Range of an en
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8255-2f10-816b-00fc" type="equalTo"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d9c-1c6a-53ad-20a0" type="equalTo"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ab0-427c-bbbd-7906" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8255-2f10-816b-00fc" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d9c-1c6a-53ad-20a0" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ab0-427c-bbbd-7906" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d45-cf5c-603d-c822" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fbd2-fa14-4c33-b702" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d45-cf5c-603d-c822" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fbd2-fa14-4c33-b702" type="max"/>
       </constraints>
       <profiles>
         <profile id="61d9-691b-5047-7172" name="Toxin Shot" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1360,32 +1363,32 @@ This operative cannot perform this action while within Engagement Range of an en
         <infoLink id="dfb0-53a8-909d-2aa4" name="Stun" hidden="false" targetId="a1e3-4e0b-f7c2-eb59" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be1c-96a4-bfe1-1100" name="Ancient Flintlock [RARE]" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8255-2f10-816b-00fc" type="equalTo"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8e-6b58-5a73-00b9" type="equalTo"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ab0-427c-bbbd-7906" type="equalTo"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d9c-1c6a-53ad-20a0" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8255-2f10-816b-00fc" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8e-6b58-5a73-00b9" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ab0-427c-bbbd-7906" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d9c-1c6a-53ad-20a0" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f78-bf35-d19e-aad7" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="58e8-a48e-186c-6c76" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f78-bf35-d19e-aad7" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="58e8-a48e-186c-6c76" type="max"/>
       </constraints>
       <profiles>
         <profile id="fadd-f69d-fc06-3209" name="Ancient Flintlock" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
@@ -1398,12 +1401,12 @@ This operative cannot perform this action while within Engagement Range of an en
         <infoLink id="f4bb-5e5d-abf9-c104" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a06e-8b1c-45c9-3672" name="Farband 3 - Trapper" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b23c-dac8-4f58-ef96" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b23c-dac8-4f58-ef96" type="max"/>
       </constraints>
       <profiles>
         <profile id="42f3-38dd-8a87-15b6" name="Trapper" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1413,12 +1416,12 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4489-beb0-1594-8ce1" name="Farband 2 - Eye on the Mark" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1b5-c43d-2e76-56d7" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1b5-c43d-2e76-56d7" type="max"/>
       </constraints>
       <profiles>
         <profile id="933c-ceda-5d9c-af7f" name="Eye on the Mark" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1428,12 +1431,12 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b884-1b45-5612-27a7" name="Farband 4 - Wiry" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="260b-bc81-c97e-7bcf" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="260b-bc81-c97e-7bcf" type="max"/>
       </constraints>
       <profiles>
         <profile id="d5de-978b-7bfb-f8fd" name="Wiry" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1443,12 +1446,12 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="703b-675b-938c-b495" name="Farband 5 - Leathery Hide" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94ec-92b6-3945-df23" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94ec-92b6-3945-df23" type="max"/>
       </constraints>
       <profiles>
         <profile id="b306-40df-455f-0062" name="Leathery Physiology" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1458,12 +1461,12 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="54b8-70cb-8bde-ed7a" name="Farband 6 - Clandestine" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4239-32f9-fab4-0511" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4239-32f9-fab4-0511" type="max"/>
       </constraints>
       <profiles>
         <profile id="e96d-be3f-ade1-703b" name="Clandestine" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1473,12 +1476,12 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6a78-4666-5697-5763" name="Farband 1 - Savage" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53a5-fe11-51ea-af4e" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53a5-fe11-51ea-af4e" type="max"/>
       </constraints>
       <profiles>
         <profile id="fbc9-e712-e69b-48d4" name="Savage" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
@@ -1488,7 +1491,7 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <costs>
-        <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1497,18 +1500,18 @@ This operative cannot perform this action while within Engagement Range of an en
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="notInstanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ed6-3bbe-0269-a512" type="notInstanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="c61a-51a3-370d-bf55" scope="force" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="93b3-fb34-f37a-220c" type="max"/>
+        <constraint field="c61a-51a3-370d-bf55" scope="force" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="93b3-fb34-f37a-220c" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="11d1-e3d8-9dd6-4cb3" name="Quill Grenade" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d86a-022b-9ee2-68fc" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="59f2-cb68-798b-1dcc" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d86a-022b-9ee2-68fc" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="59f2-cb68-798b-1dcc" type="max"/>
           </constraints>
           <profiles>
             <profile id="d9fc-9936-0c93-637f" name="⌖ Quill Grenade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1528,12 +1531,12 @@ This operative cannot perform this action while within Engagement Range of an en
             <infoLink id="8e2c-2dd7-3278-905f" name="Limited" hidden="false" targetId="1eb0-6ad3-3e5a-d8ec" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0ab0-427c-bbbd-7906" name="Kroot pistol" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="901d-9d25-5110-647f" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="901d-9d25-5110-647f" type="max"/>
           </constraints>
           <profiles>
             <profile id="5cfd-cec4-c925-7cbc" name="⚔ Kroot pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1550,12 +1553,12 @@ This operative cannot perform this action while within Engagement Range of an en
             <infoLink id="2ce6-3814-3a8f-cb50" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="1.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7559-296f-bb1d-2e16" name="Meat" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf6a-0f75-7f1d-7b99" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf6a-0f75-7f1d-7b99" type="max"/>
           </constraints>
           <profiles>
             <profile id="3c73-ee3e-e72b-2efe" name="Meat" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1565,12 +1568,12 @@ This operative cannot perform this action while within Engagement Range of an en
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="1.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="05f9-adcb-ff8a-ee83" name="Trophy" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80e5-bebf-ab33-239a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80e5-bebf-ab33-239a" type="max"/>
           </constraints>
           <profiles>
             <profile id="2a8a-3142-027e-fcf6" name="Trophy" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1580,20 +1583,20 @@ This operative cannot perform this action while within Engagement Range of an en
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d0fa-ec54-1f66-18f2" name="Ritual Blade" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8849-52f5-8ddf-0699" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8849-52f5-8ddf-0699" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c3e-640f-86de-4f36" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dabf-7da3-605c-0df6" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c3e-640f-86de-4f36" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dabf-7da3-605c-0df6" type="max"/>
           </constraints>
           <profiles>
             <profile id="a4cc-86ad-ada0-d766" name="⚔ Ritual blade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1607,25 +1610,25 @@ This operative cannot perform this action while within Engagement Range of an en
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="388a-a1de-5673-35df" name="Kinblade [RARE]" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8849-52f5-8ddf-0699" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8849-52f5-8ddf-0699" type="notInstanceOf"/>
               </conditions>
             </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7ce-4fc4-4f70-2b5f" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1858-6eee-b2c3-32cc" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7ce-4fc4-4f70-2b5f" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1858-6eee-b2c3-32cc" type="max"/>
           </constraints>
           <profiles>
             <profile id="e593-2196-0451-c2ac" name="⚔ Kinblade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
@@ -1643,20 +1646,20 @@ This operative cannot perform this action while within Engagement Range of an en
             <infoLink id="d7a4-39ef-673e-7227" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3dc0-22fb-7aea-1d62" name="Kroothawk Totem [RARE]" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1e1-b263-9a60-16b9" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="92aa-9182-3b9f-ec3c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1e1-b263-9a60-16b9" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="92aa-9182-3b9f-ec3c" type="max"/>
           </constraints>
           <profiles>
             <profile id="e240-d56b-f6ac-2457" name="Kroothawk Totem" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1666,20 +1669,20 @@ This operative cannot perform this action while within Engagement Range of an en
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="70e1-ace3-baec-59c4" name="Kin Totem [RARE]" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d348-7c0a-128b-90c1" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5f46-a7c2-2663-eeea" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d348-7c0a-128b-90c1" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5f46-a7c2-2663-eeea" type="max"/>
           </constraints>
           <profiles>
             <profile id="e198-9c22-61d9-c77c" name="Kin Totem" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1689,20 +1692,20 @@ This operative cannot perform this action while within Engagement Range of an en
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="61f8-976f-db84-f547" name="Windmark [RARE]" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f101-8392-3d83-b4b7" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ebc-f1f8-0e03-8683" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f101-8392-3d83-b4b7" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ebc-f1f8-0e03-8683" type="max"/>
           </constraints>
           <profiles>
             <profile id="1bdd-1eca-dcb3-a8b0" name="Windmark" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1712,20 +1715,20 @@ This operative cannot perform this action while within Engagement Range of an en
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="1.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="434b-f91e-3949-0c4a" name="Knarloc Hide [RARE]" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ec-1351-a0dc-517e" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7fa5-fbf9-c6fb-6722" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ec-1351-a0dc-517e" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7fa5-fbf9-c6fb-6722" type="max"/>
           </constraints>
           <profiles>
             <profile id="6396-7acb-f7e5-6bbd" name="Knarloc Hide" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
@@ -1735,7 +1738,7 @@ This operative cannot perform this action while within Engagement Range of an en
             </profile>
           </profiles>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1746,24 +1749,24 @@ This operative cannot perform this action while within Engagement Range of an en
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d2c-7ab8-c748-dc64" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d2c-7ab8-c748-dc64" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </entryLink>
         <entryLink id="ac01-2d53-f441-3453" name="Toxin Shot" hidden="false" collective="false" import="true" targetId="6d40-a875-1660-1b60" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d2c-7ab8-c748-dc64" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d2c-7ab8-c748-dc64" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <costs>
-            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
           </costs>
         </entryLink>
         <entryLink id="443e-976d-48a3-8499" name="Ancient Flintlock [RARE]" hidden="false" collective="false" import="true" targetId="be1c-96a4-bfe1-1100" type="selectionEntry"/>
@@ -1773,12 +1776,12 @@ This operative cannot perform this action while within Engagement Range of an en
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82af-b9b8-518f-aaf1" type="lessThan"/>
+            <condition field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82af-b9b8-518f-aaf1" type="lessThan"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a4b-be7c-59cd-54a7" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a4b-be7c-59cd-54a7" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="bd2a-2042-9322-b5ef" name="Combat" hidden="false" collective="false" import="true" targetId="97d8-19ec-143d-8aad" type="selectionEntry">
@@ -1787,11 +1790,11 @@ This operative cannot perform this action while within Engagement Range of an en
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5040-f504-79ae-64e6" type="notInstanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1e70-e101-e63b-776e" type="notInstanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8849-52f5-8ddf-0699" type="notInstanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d4d-360e-fa8f-785e" type="notInstanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b9a4-31a5-b4ed-b4c7" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5040-f504-79ae-64e6" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1e70-e101-e63b-776e" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8849-52f5-8ddf-0699" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d4d-360e-fa8f-785e" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b9a4-31a5-b4ed-b4c7" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1804,9 +1807,9 @@ This operative cannot perform this action while within Engagement Range of an en
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5040-f504-79ae-64e6" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1e70-e101-e63b-776e" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d4d-360e-fa8f-785e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5040-f504-79ae-64e6" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1e70-e101-e63b-776e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d4d-360e-fa8f-785e" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1817,7 +1820,7 @@ This operative cannot perform this action while within Engagement Range of an en
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d2c-7ab8-c748-dc64" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d2c-7ab8-c748-dc64" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1828,11 +1831,11 @@ This operative cannot perform this action while within Engagement Range of an en
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d2c-7ab8-c748-dc64" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1e70-e101-e63b-776e" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f25f-97c7-f917-9943" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0e59-07ae-65c2-2de6" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8cc-9240-278b-7bae" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d2c-7ab8-c748-dc64" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1e70-e101-e63b-776e" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f25f-97c7-f917-9943" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0e59-07ae-65c2-2de6" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8cc-9240-278b-7bae" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1860,15 +1863,15 @@ In addition, each time a shooting attack is made against this operative, the No 
         <characteristic name="APL" typeId="c84a-a042-6fe6-519b">⬤</characteristic>
         <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">⬛</characteristic>
         <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">⬟</characteristic>
-        <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">⌖ </characteristic>
-        <characteristic name="W" typeId="db11-738c-048c-759e">⚔ </characteristic>
+        <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">⌖</characteristic>
+        <characteristic name="W" typeId="db11-738c-048c-759e">⚔</characteristic>
       </characteristics>
     </profile>
     <profile id="59f2-ce0d-aa90-437f" name="⚔ Blade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
       <modifiers>
         <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8849-52f5-8ddf-0699" type="instanceOf"/>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8849-52f5-8ddf-0699" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
