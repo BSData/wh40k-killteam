@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8e62-da18-67f9-c594" name="Veteran Guardsmen" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="8e62-da18-67f9-c594" name="Veteran Guardsmen" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6790-22ed-c8fa-6309" name="Comms Veteran" hidden="false"/>
     <categoryEntry id="e2e3-78d3-0b08-9d27" name="VETERAN GUARDSMAN" hidden="false"/>
@@ -96,6 +96,13 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="8e62-da18-67f9-c594" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
