@@ -1570,6 +1570,30 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink id="c52f-371d-b3fd-1e38" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false">
+          <modifiers>
+            <modifier type="decrement" field="8999-6937-9432-ed0e" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edd9-40f5-94a6-9049" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8999-6937-9432-ed0e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Gunner Veteran" hidden="false" id="87d8-fdcb-39a0-2173" targetId="900c-91f5-1f16-b811" type="category">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3712-8b5b-e7d7-c630" type="max"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" field="3712-8b5b-e7d7-c630" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1ff-4296-787b-39c3" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -2848,28 +2872,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="d4c9-511b-6ae8-796b" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="972-2121-7fc6-1ace" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="3e38-1d3a-e5aa-c2c5" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="5eca-26df-7f2-834b" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="b9af-ee0c-17f7-9fb5" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="10e0-165b-db79-b687" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="fca3-e3c9-63f6-67ed" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="c4c9-1e4f-4251-d166" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="903b-e62a-a9a0-8b54" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="bcc2-6dbb-9d67-d721" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-            <entryLink id="3074-8e9e-beaf-c65c" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="fb19-fe28-aff4-67ac" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="4a8-bf5-49ef-fb57" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="bd87-f6ab-718a-d858" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="bebc-935b-bd6b-fa47" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="ea21-fd86-19eb-b292" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="97dd-c333-ed24-3166" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="5ad2-a0bc-a0c0-f28a" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
@@ -2883,28 +2886,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="9e8-4f72-114b-a90a" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="39a3-f5e5-34f-62df" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="4b1d-c615-944e-f6f" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="fe06-64b2-f35e-9dac" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-            <entryLink id="0-5be0-6c5a-6869" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="b1d9-1756-35c3-945e" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="6c92-4324-258f-9d72" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="b3c5-dda4-789a-9874" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="4dac-bc03-9f24-7446" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="864f-1f83-b9a1-ca29" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="5d91-e779-b287-a580" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-            <entryLink id="161f-74b-14b8-da74" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="4e06-c84e-7de9-6099" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="9925-f311-4d19-2488" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="a439-7e51-79cc-984b" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="6878-d9cc-4ffb-95da" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="857a-38aa-8fdf-615f" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="4f7d-cbf3-2e9b-5a8e" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
@@ -2918,27 +2900,6 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="9f44-ffa4-4cd9-356f" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="8429-8119-86c9-2639" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="9013-d5b7-6355-74e6" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="8f2-aee3-5395-ed85" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="d861-f7a3-a2c8-50a9" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="d530-f86e-819f-63a4" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="4576-e4c3-6f68-fc29" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="13f-5ff5-301a-e95" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="a6ba-ac99-4caa-2388" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="417d-5c3a-5054-b503" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-            <entryLink id="a2d9-5654-fe47-a842" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="aa64-a85a-9d5-e8" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="405f-80a2-c94b-631a" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="e89b-b078-8408-1ec5" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="417f-4323-e7ce-7bb7" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="8ac1-60df-2fa1-95ea" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="d288-9a20-aee7-eaa" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
@@ -2952,18 +2913,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="4753-7608-295d-5fb8" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="41b5-e13f-1a4c-7ba6" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="e4b6-db92-a73a-8efe" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="54fe-ff4e-d8f-a57d" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="22c9-a442-c168-e65" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-            <entryLink id="9c1b-137d-c31b-a40d" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="361-5e35-8be1-c787" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="5cdc-e352-a4ef-df82" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="5591-c7b8-481c-322e" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="7d55-a429-21b0-95d7" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="a989-a031-7f65-92d7" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
       <constraints>
@@ -2987,18 +2937,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="b44c-6c0a-66e9-5b73" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="37bb-1cc-bac6-e231" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="c696-fd3c-8ad1-1ea6" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="5efa-820a-308c-383a" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="ce58-da82-a528-ef0" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="157f-c6ee-4453-9bac" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="3ba7-74a9-9a2c-5833" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-            <entryLink id="5999-2ad9-3548-48a" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="f946-90f0-b256-bb1b" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="84c1-8dd7-f507-ce88" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="d6e-93ba-8058-8bf6" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
       <constraints>
@@ -3022,18 +2961,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="a7b3-9931-2783-17bf" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="f480-3977-f6e4-4aa5" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="d9c8-93c4-4d09-ab8f" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="ba54-1354-81a0-7991" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="2caa-360b-a6fb-8aee" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="e5b9-afc3-bc6b-7d17" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="7988-ce4a-f635-fa34" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="fc35-1235-9eb8-6e20" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="f1a4-2520-7731-4810" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="7651-c42f-4757-ad06" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="9c57-f1a7-6efc-a136" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
       <constraints>
@@ -3057,18 +2985,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="31ae-fa2b-1f17-6542" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="f425-afb0-fb33-d77c" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="9ed0-bf47-f869-a83" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="b95c-2eac-cf84-923c" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="473d-9ab1-fbd0-b104" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="b660-c224-dbab-4b28" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="8357-b1a1-dffc-33a8" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="1023-b4fc-a7b6-59b9" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="26bc-c227-7b7a-539c" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="2694-94d5-63b6-5709" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="1bdb-71e4-aa16-ca6d" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
       <constraints>
@@ -3092,19 +3009,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="acb6-ac0e-c721-63a0" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="70ae-18a4-30cd-b205" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="4946-7c50-2035-4f83" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="639d-241a-aead-aede" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="4c57-2598-de97-fe20" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="6e11-21a-1755-e353" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="cdd5-4a2d-84d7-2442" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="1176-7f3a-a876-4f1c" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="6d3f-10ae-6d2b-21b5" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup"/>
         <entryLink id="841a-2390-8392-e27e" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="e77f-c8e8-9e22-7523" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="1db3-ac5a-9c7c-b17f" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
@@ -3119,28 +3024,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="47fd-3d73-7f44-b52b" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="c1c9-cd81-4187-7e68" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="403d-c48a-77fa-5c39" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="8f30-c91d-91b2-1171" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="e741-a3e4-7658-bf26" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="a141-1b89-3876-a94f" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="d4de-deb-711a-7d3e" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="4e10-acfb-e57b-27a9" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="4a0-42a7-5343-d3ea" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="f49d-6ea6-8677-31e3" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-            <entryLink id="b16e-4cc4-16f0-b632" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="62e-1418-1b34-9ea4" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="1a75-9fdf-989e-fc65" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="74b2-441-e320-c506" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="afa2-ce6e-1c03-5da8" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="bf38-6c44-b20f-49f4" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="7c43-7c5a-8b10-bc1a" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="d338-9ad4-c793-ca13" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
@@ -3154,18 +3038,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="29de-247a-a6a-9423" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="5a61-5daa-544d-9ea5" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="e40e-914d-44f9-4de8" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="40f6-47e-d6e0-76" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="126a-9f30-b612-e804" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="ec07-19ee-7122-7b64" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="bf54-b45b-1f9-42dd" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="5f3b-381e-866d-6802" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="1446-ccd2-e287-5096" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="d075-7118-e4fd-a80b" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="f551-dbf1-7b75-ab17" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
@@ -3179,28 +3052,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="c780-6f6b-59b2-e99e" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="ef4a-d0ec-f859-7a3d" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="24ec-8ebd-462a-2118" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="4a2d-7eea-f6f2-1c5b" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="aa9c-2ae9-f3f5-da8c" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="1be7-43f8-3ab8-1bb" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="f6bd-2649-1fdf-32" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="aa69-9cd0-4f72-e3b5" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="a6dd-536c-a263-d5a7" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="e34d-c46-ae1d-8467" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-            <entryLink id="1aa1-8ecc-a71-92c2" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="f664-475a-4b94-1ad8" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-            <entryLink id="a28d-43f9-af7a-a86f" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="947e-95d7-5ce8-4edc" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="f1f0-e54e-78dc-7bc3" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="575e-bbde-33c2-7e4e" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="e202-9cb9-1e29-5af3" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="93e6-3167-e895-2071" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
@@ -3214,18 +3066,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </categoryLinks>
       <entryLinks>
         <entryLink id="3ee1-5418-cd6a-93fd" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="2c52-77c0-77c1-b06b" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="9c53-7a1c-67b6-16e3" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
-            <entryLink id="78bd-cae-a316-af26" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
-            <entryLink id="4d8-d17a-b9ea-f2ba" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
-            <entryLink id="9660-fd1d-2b2d-5f00" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
-            <entryLink id="469e-c3c8-d394-e45" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
-            <entryLink id="c776-51d4-55b8-d47e" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
         <entryLink id="7a0d-da65-d888-f736" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="b04b-93f9-a0da-9f36" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
         <entryLink id="27b9-933-3f29-6c02" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
