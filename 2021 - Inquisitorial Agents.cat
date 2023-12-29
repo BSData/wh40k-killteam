@@ -24,6 +24,7 @@
     <categoryEntry name="Trooper" hidden="false" id="64d5-91ea-8301-6e28"/>
     <categoryEntry name="Kasrkin" hidden="false" id="377-6b36-e6ba-4d4e"/>
     <categoryEntry name="Imperial Navy Breachers" hidden="false" id="137f-5a5b-5edb-e122"/>
+    <categoryEntry name="Exaction Squad" hidden="false" id="1948-af22-3c47-22ab"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Interrogator Agent" hidden="false" id="7494-2f19-df87-a03f">
@@ -1542,6 +1543,19 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Exaction Squad" hidden="false" id="aabf-323a-fd88-fa37" targetId="1948-af22-3c47-22ab" type="category">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b393-6c00-ac8f-d0a5"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="289a-471d-e28a-1067"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="256d-b91-d8f3-adaf" shared="true" id="4fb8-4c93-b03d-cef2" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1978,6 +1992,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Kasrkin" id="7cc4-4f39-6be7-5f92" targetId="13e2-04bc-4cc1-0c53"/>
     <catalogueLink type="catalogue" name="Imperial Navy Breacher" id="7935-1be1-5d1-c19f" targetId="f13d-1085-02f7-bcfb"/>
+    <catalogueLink type="catalogue" name="Exaction Squad" id="36e4-c799-d212-57a0" targetId="eee3-50f4-51f9-cede"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Combat Medic" hidden="false" type="selectionEntry" id="5f5c-a184-9e4f-15c8" targetId="7a81-7fad-e0a5-5995">
@@ -2532,6 +2547,281 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="97fe-ee6e-8024-170d" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="bfa4-eddc-f632-37c6" primary="false" name="Navis"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites Castigator" hidden="false" type="selectionEntry" id="efb6-5329-16a5-a8f2" targetId="bfc5-d389-8c89-9820">
+      <entryLinks>
+        <entryLink id="fc8a-6bca-b189-82a9" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="9d8a-27aa-eaa2-61eb" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+        <entryLink id="14b7-1d65-ca4d-5751" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="7481-73eb-cc5f-ff06" primary="false" name="Imperium"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="a020-5853-be0b-8a1f" primary="true" name="Operative"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="bc55-3947-93e5-24ff" primary="false" name="Arbites"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="d5f6-5810-5111-416a" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="52f3-8710-5b77-4269" id="fea5-a050-c5b9-8a20" primary="false" name="Castigator"/>
+        <categoryLink targetId="1948-af22-3c47-22ab" id="114-61d4-c1cc-729c" primary="false" name="Exaction Squad"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="1ebf-2600-c0d8-194c" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="597f-c3cf-2a37-8db3" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="597f-c3cf-2a37-8db3" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Arbites Chirurgant" hidden="false" type="selectionEntry" id="2611-c2d1-7019-2f60" targetId="74ac-d4e6-fd9a-fd8a">
+      <entryLinks>
+        <entryLink id="ac94-8fd4-3ddc-16a3" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="8551-f1e-7d37-cf81" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="e1c1-3be5-68c6-76e4" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="4993-d9b5-f3f9-a90e" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="ac9b-5541-8cd3-3a36" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="73c3-6f01-9407-267f" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="6b2a-a1c5-645-338e" primary="false" name="Arbites"/>
+        <categoryLink targetId="7b50-67f3-134a-044a" id="fa3b-c63e-97c-dbb9" primary="false" name="Chirurgant"/>
+        <categoryLink targetId="1948-af22-3c47-22ab" id="1823-5eb1-4ccf-4edc" primary="false" name="Exaction Squad"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="6b23-e076-e811-9ba1" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2b76-a92b-c02c-9f08" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="2b76-a92b-c02c-9f08" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Arbites Gunner" hidden="false" type="selectionEntry" id="6d44-8f80-a69f-c15f" targetId="1111-cee5-3499-b0a4">
+      <entryLinks>
+        <entryLink id="692b-4e03-87a3-2528" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="f262-a983-be68-9b91" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="53d0-d0ec-eacc-1191" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="4e5c-9a2-a4f3-f69f" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="1d55-21e-839b-ab6b" primary="false" name="Imperium"/>
+        <categoryLink targetId="ee8c-cc44-acc3-40f0" id="4652-ac7c-c6f5-fbe1" primary="false" name="Gunner"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="2027-36a5-576d-6318" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="67c0-98c6-e7f5-7cad" primary="false" name="Arbites"/>
+        <categoryLink targetId="1948-af22-3c47-22ab" id="effb-3100-ddca-17a5" primary="false" name="Exaction Squad"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="f7bd-569c-1503-b902" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5269-abb1-8c99-b16d" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="5269-abb1-8c99-b16d" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Arbites Leashmaster" hidden="false" type="selectionEntry" id="1a1b-e713-5d8c-c9b0" targetId="852e-114a-85d-7e18">
+      <entryLinks>
+        <entryLink id="e2ba-d63b-b8b1-bca9" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="1ca7-73ea-72be-a084" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="9a70-a3bd-8bac-bb61" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="5866-1e5b-b103-991d" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="bb66-af3a-fe4e-8967" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="c9-7d7a-bca4-d480" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="8000-963e-3220-861e" primary="false" name="Arbites"/>
+        <categoryLink targetId="3b56-8e29-78cb-f7a4" id="462a-9627-7876-1f7d" primary="false" name="Leashmaster"/>
+        <categoryLink targetId="1948-af22-3c47-22ab" id="17d2-4e2d-c9ed-200f" primary="false" name="Exaction Squad"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="baaa-8c00-20ee-e469" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="acdb-458-bf80-e318" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="acdb-458-bf80-e318" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Arbites Malocator" hidden="false" type="selectionEntry" id="ddf6-b1c9-ecd9-32dd" targetId="5093-89be-f8f2-66df">
+      <entryLinks>
+        <entryLink id="985c-4455-8947-e11f" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="ce88-5547-38a-8296" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="856e-e75d-982f-5d5b" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="2f05-fd73-9b1b-1b8d" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="45d0-929a-309e-255" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="f8e7-ea8e-e6ed-c7ae" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="f81b-50d2-c3ab-59c2" primary="false" name="Arbites"/>
+        <categoryLink targetId="bd36-7f72-a1ef-ce74" id="cc6a-cb5a-6e2b-7d5d" primary="false" name="Malocator"/>
+        <categoryLink targetId="1948-af22-3c47-22ab" id="c166-1220-8b5-be07" primary="false" name="Exaction Squad"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="1853-b401-d354-21d7" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dbef-121c-e8f0-3756" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="dbef-121c-e8f0-3756" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Arbites Marksman" hidden="false" type="selectionEntry" id="680-c50e-aa50-cfae" targetId="1548-cf2c-f1fb-dbdb">
+      <entryLinks>
+        <entryLink id="551c-67aa-f874-d38f" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="2135-72eb-775a-fa45" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="7f9-a090-f51b-9f0a" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="f6e2-1396-6eb-2c3" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="8444-f073-1a10-b1c1" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="47c3-b811-2646-7626" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="757c-b771-edaf-d4d3" primary="false" name="Arbites"/>
+        <categoryLink targetId="7fc0-8607-697d-74d5" id="f1ee-2b35-fe54-2292" primary="false" name="Marksman"/>
+        <categoryLink targetId="1948-af22-3c47-22ab" id="8737-3f60-a91a-7ae1" primary="false" name="Exaction Squad"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="f045-4000-e543-a7e8" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e7bb-82c-4fbf-653c" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="e7bb-82c-4fbf-653c" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Arbites R-VR Cyber Mastiff" hidden="false" type="selectionEntry" id="2022-971d-7c6f-25e6" targetId="ecf8-7dac-ea4e-66fa">
+      <entryLinks>
+        <entryLink id="e754-ddd7-33e2-6a84" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="de5c-2470-acd5-3ddb" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="2b2f-a83-b173-8b06" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="f38f-521f-edee-9731" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="f9e3-2856-4622-6f59" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="8a1d-cf23-9d97-3ad2" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="045f-1f64-cccc-7ff5" id="c79f-ca9a-5efa-399" primary="false" name="R-VR Cyber Mastiff"/>
+        <categoryLink targetId="1948-af22-3c47-22ab" id="50c8-29d2-33ef-365a" primary="false" name="Exaction Squad"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="d8b8-eac7-20f3-4dea" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d83d-f900-aaa0-13b6" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="d83d-f900-aaa0-13b6" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Arbites Revelatum" hidden="false" type="selectionEntry" id="f9ba-cbf0-90e5-2279" targetId="dcab-fa5e-cd70-6e">
+      <entryLinks>
+        <entryLink id="4ec6-e085-afe8-90f4" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="e0e5-4bbc-f668-a881" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="e48f-cb8a-2410-1c4d" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="10a1-d627-ea39-5fc" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="207e-b352-df37-a901" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="496-2052-7376-7f38" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="b4d6-c2bc-cf03-ae2c" primary="false" name="Arbites"/>
+        <categoryLink targetId="0151-5f39-3ada-406a" id="43c8-eb0-f636-6b78" primary="false" name="Revelatum"/>
+        <categoryLink targetId="1948-af22-3c47-22ab" id="c8e3-d6b2-5127-cf63" primary="false" name="Exaction Squad"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="150a-f822-8b88-fc76" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b7d2-edf2-d4d4-da84" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="b7d2-edf2-d4d4-da84" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Arbites Subductor" hidden="false" type="selectionEntry" id="3ed-1ff3-7a8b-8d09" targetId="31d0-3e6c-ad60-d40a">
+      <entryLinks>
+        <entryLink id="c9c0-6d82-6ffb-1e76" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="35d5-3a35-a3d4-a87" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="13f0-8de4-f46e-9a71" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="90c9-bb9f-e973-eec2" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="31b4-a4ab-a836-418e" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="6fdd-8be1-c7bc-a4ac" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="d17b-7b38-f6af-8be7" primary="false" name="Arbites"/>
+        <categoryLink targetId="5f5a-816b-ac62-bf83" id="49d1-81d5-6f12-ea97" primary="false" name="Subductor"/>
+        <categoryLink targetId="1948-af22-3c47-22ab" id="3741-7a73-9fff-11d2" primary="false" name="Exaction Squad"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="583b-3276-9492-b4de" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca15-3f46-4933-cac2" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="ca15-3f46-4933-cac2" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Arbites Vigilant" hidden="false" type="selectionEntry" id="ca24-aaa-d2cd-e738" targetId="8e4c-c8c5-d120-b0f7">
+      <entryLinks>
+        <entryLink id="6789-881c-fe29-20ab" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="eee2-155e-8c0b-78c8" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="a51-5c44-fe6b-a19d" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="10d6-8238-1ebe-fd16" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="3bdf-286e-9417-5e59" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="3bf6-46f1-3036-920f" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="a992-94-bed9-ab62" primary="false" name="Arbites"/>
+        <categoryLink targetId="d537-9cb6-ba03-5162" id="119d-1320-35ba-656a" primary="false" name="Vigilant"/>
+        <categoryLink targetId="1948-af22-3c47-22ab" id="d62c-712-5ce5-e2ab" primary="false" name="Exaction Squad"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="ec33-ca38-125e-467f" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites Vox-signifier" hidden="false" type="selectionEntry" id="bff-d0e6-270-cba5" targetId="ea-9b10-8fab-970c">
+      <entryLinks>
+        <entryLink id="d015-ea96-38bf-73d6" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="e6c-39b2-1d2b-c281" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="6f4-2d4-84c4-da78" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="e7cb-67b6-2734-3c3e" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="ffcc-3696-6cd5-a626" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="d7a6-2486-d906-cfc4" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="3628-59d8-c85a-40f9" primary="false" name="Arbites"/>
+        <categoryLink targetId="53b7-e174-1b8c-859a" id="4a4c-e7c9-f064-d0a8" primary="false" name="Vox-signifier"/>
+        <categoryLink targetId="1948-af22-3c47-22ab" id="1e0d-87a5-81bb-1059" primary="false" name="Exaction Squad"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="50fc-9456-cd02-9129" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c083-338-9257-55d3" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="c083-338-9257-55d3" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
 </catalogue>
