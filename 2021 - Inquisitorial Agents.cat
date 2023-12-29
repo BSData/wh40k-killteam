@@ -23,6 +23,7 @@
     <categoryEntry name="Comms" hidden="false" id="f4a7-72d6-9caa-fd5b"/>
     <categoryEntry name="Trooper" hidden="false" id="64d5-91ea-8301-6e28"/>
     <categoryEntry name="Kasrkin" hidden="false" id="377-6b36-e6ba-4d4e"/>
+    <categoryEntry name="Imperial Navy Breachers" hidden="false" id="137f-5a5b-5edb-e122"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Interrogator Agent" hidden="false" id="7494-2f19-df87-a03f">
@@ -1528,42 +1529,18 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="e88a-788a-db0b-7900"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="e174-431b-c902-e7f9" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false">
+        <categoryLink name="Imperial Navy Breachers" hidden="false" id="5574-7445-18b9-70d0" targetId="137f-5a5b-5edb-e122" type="category">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="2822-90cd-501d-e7d5"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ab70-c008-8bb9-ed93"/>
+          </constraints>
           <modifiers>
-            <modifier type="decrement" field="eda4-c363-bf39-5810" value="1">
+            <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edd9-40f5-94a6-9049" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="ab16-c0c3-f0c4-a132" shared="true" id="caff-914f-7e5-7bc2" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eda4-c363-bf39-5810" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Kasrkin Combat Medic" hidden="false" id="4099-918b-7078-d455" targetId="7c43-3a9c-461c-7ea8" type="category">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2703-918f-54e2-ccf0"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Kasrkin Demo-Trooper" hidden="false" id="6dac-918a-d110-5749" targetId="a7df-0dbc-9cb7-3bcf" type="category">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2944-9c58-e59e-b351"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Kasrkin Recon-Trooper" hidden="false" id="cade-e522-8e44-3d4e" targetId="d200-c6e2-6570-55a4" type="category">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3107-6c40-979a-7d03"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Kasrkin Sharpshooter" hidden="false" id="ca82-d384-5111-c05f" targetId="edd9-40f5-94a6-9049" type="category">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5947-3a5-65c6-7d7d"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Kasrkin Vox-Trooper" hidden="false" id="3003-1bdd-64d-f43b" targetId="1505-9bee-8526-0fa1" type="category">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c88-1e64-a41e-1bb0"/>
-          </constraints>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -2000,6 +1977,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
   </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Kasrkin" id="7cc4-4f39-6be7-5f92" targetId="13e2-04bc-4cc1-0c53"/>
+    <catalogueLink type="catalogue" name="Imperial Navy Breacher" id="7935-1be1-5d1-c19f" targetId="f13d-1085-02f7-bcfb"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Combat Medic" hidden="false" type="selectionEntry" id="5f5c-a184-9e4f-15c8" targetId="7a81-7fad-e0a5-5995">
@@ -2016,6 +1994,16 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="6a3f-408-63fd-2017" targetId="f080-d126-4651-b003"/>
         <entryLink import="true" name="Specialism" hidden="false" type="selectionEntryGroup" id="925e-e195-63ed-77ee" targetId="08e3-f5e7-6fa4-2808"/>
       </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="894f-f021-7780-fc60" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="894f-f021-7780-fc60" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Demo-Trooper" hidden="false" type="selectionEntry" id="4353-a010-45b2-d5ce" targetId="7e7c-8fc6-cd8e-f542">
       <entryLinks>
@@ -2031,6 +2019,16 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="eb77-dfd8-6b5c-591b" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="a7df-0dbc-9cb7-3bcf" id="8cb1-80c6-f36e-835e" primary="false" name="Kasrkin Demo-Trooper"/>
       </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dcbf-dee1-f6e5-8235" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="dcbf-dee1-f6e5-8235" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Gunner w/ flamer" hidden="false" type="selectionEntry" id="e422-2fce-6722-b93e" targetId="5a7d-6a80-8043-1fa">
       <entryLinks>
@@ -2171,6 +2169,16 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="c257-791c-58eb-389e" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="d200-c6e2-6570-55a4" id="8fcc-b46f-3fbf-4fbc" primary="false" name="Kasrkin Recon-Trooper"/>
       </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c5ca-5d1c-2149-fc74" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="c5ca-5d1c-2149-fc74" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Sharpshooter" hidden="false" type="selectionEntry" id="b8f8-99bc-cc9a-46b0" targetId="24cd-4af2-f63b-67c1">
       <entryLinks>
@@ -2186,6 +2194,16 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="8c93-a767-3bc7-e115" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="edd9-40f5-94a6-9049" id="4ce5-8e73-12eb-2521" primary="false" name="Kasrkin Sharpshooter"/>
       </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b9e-2e35-b065-6f4c" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="b9e-2e35-b065-6f4c" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Trooper" hidden="false" type="selectionEntry" id="d68d-bd11-84c7-df7d" targetId="8f48-568f-4334-5296">
       <categoryLinks>
@@ -2216,6 +2234,304 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="76b8-78f9-67fb-991f" targetId="f080-d126-4651-b003"/>
         <entryLink import="true" name="Specialism" hidden="false" type="selectionEntryGroup" id="5cb2-5058-435a-5297" targetId="08e3-f5e7-6fa4-2808"/>
       </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2075-6361-8e5-25cd" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="2075-6361-8e5-25cd" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Navis Armsman" hidden="false" type="selectionEntry" id="9a45-f1f1-8f42-9a68" targetId="410c-8e84-46ae-b30c">
+      <entryLinks>
+        <entryLink id="14d3-97ab-c9d8-1cc2" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="2b5d-5692-a27d-81ee" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="3693-1c48-f660-6d89" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="ba56-ae0b-9b5b-9e9d" primary="false" name="Imperium"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="5a95-b544-4643-c865" primary="false" name="Navis"/>
+        <categoryLink targetId="480b-a8ee-4331-41cc" id="afc4-935-a2a0-b1e3" primary="false" name="Armsman"/>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="cc36-615-2ef5-b30e" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="6096-ca8e-edcd-ca11" primary="false" name="INQUISITORIAL AGENT"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Axejack" hidden="false" type="selectionEntry" id="2dd1-f802-d14a-a512" targetId="a8cd-4ab5-349e-64c9">
+      <entryLinks>
+        <entryLink id="a878-5f03-ff6a-e97c" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="69e3-51e5-e421-455a" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="6f39-b547-3f4f-84c9" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8314-77a9-2431-f52e" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="8314-77a9-2431-f52e" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="7eb2-1d92-da7d-f9d5" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="3a60-7640-bcc8-68e4" primary="false" name="Imperium"/>
+        <categoryLink targetId="171c-145e-76c8-4290" id="4eab-637-2a01-383e" primary="false" name="Axejack"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="e32f-24e2-342f-95de" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="2a7f-a689-746a-428a" primary="false" name="Navis"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis C.A.T. Unit" hidden="false" type="selectionEntry" id="d497-3811-8d8c-1b62" targetId="b5ca-71eb-b0d8-7d37">
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c494-2a55-606d-301e" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="c494-2a55-606d-301e" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="c494-2a55-606d-301e" value="0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-d8cb-bedd-1130" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="3858-9d29-7f78-dcee" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="8eaa-c96e-3a6b-2333" primary="false" name="Imperium"/>
+        <categoryLink targetId="7773-1668-cee3-324e" id="6bd1-f353-8572-419b" primary="false" name="C.A.T. Unit"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="5d6c-e95a-ab6d-f580" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="c582-9ca5-3a6a-990" primary="false" name="Navis"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Endurant" hidden="false" type="selectionEntry" id="9cc5-aa4b-b9c2-28eb" targetId="1799-4a24-eee8-29f3">
+      <entryLinks>
+        <entryLink id="9a80-cdbc-25ed-d3e8" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="a71d-ab0-a99e-2e8d" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="5c07-8dd6-2481-3a68" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="945e-ef8e-978d-a76a" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="945e-ef8e-978d-a76a" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="972c-137-6edc-bca6" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="c13b-8fe1-300f-c15b" primary="false" name="Imperium"/>
+        <categoryLink targetId="a89c-3c25-ab9c-2c78" id="902-e76e-bad0-480f" primary="false" name="Endurant"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="c1e9-bd45-1b4e-805e" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="6bf0-ae13-4584-af54" primary="false" name="Navis"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Gheistskull" hidden="false" type="selectionEntry" id="c47b-30df-f595-80b9" targetId="ad3-90d5-49ad-f8c1">
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56c3-671d-f0cb-85c5" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="56c3-671d-f0cb-85c5" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="56c3-671d-f0cb-85c5" value="0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="530c-c734-c629-05a1" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="4a52-bbe1-4253-be11" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="39f2-1d03-813-e2b2" primary="false" name="Imperium"/>
+        <categoryLink targetId="02d3-a1e6-0a99-e114" id="a2b0-d33a-ad82-1d3e" primary="false" name="Gheistskull"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="6481-180b-410e-162d" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="5641-45a7-414f-62fa" primary="false" name="Navis"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Grenadier" hidden="false" type="selectionEntry" id="6367-9a64-52ee-4a28" targetId="3f9c-cd32-d405-bebd">
+      <entryLinks>
+        <entryLink id="51c2-cd9d-353f-9de" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="9b69-3c40-7906-8b5a" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="5530-3882-6a49-472e" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4433-e6ee-7bb9-a66e" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="4433-e6ee-7bb9-a66e" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="5e19-627a-fff9-ea08" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="51a3-ef18-68fe-58a1" primary="false" name="Imperium"/>
+        <categoryLink targetId="2566-5a1d-9809-905b" id="f2e8-1c5b-3087-ea9e" primary="false" name="Grenadier"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="4157-8f93-42bc-bd1e" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="d107-5224-9979-bbc0" primary="false" name="Navis"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Gunner w/ las-volley" hidden="false" type="selectionEntry" id="6ef-877f-28b2-6758" targetId="df46-6db0-cc6a-5bf8">
+      <entryLinks>
+        <entryLink id="b324-79a1-fd8c-ce2d" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="17ed-6c81-ffa8-fed3" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="4dee-fa1b-b5cb-70bd" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1db0-b999-dc0f-ef1f" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="1db0-b999-dc0f-ef1f" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="95ff-2af6-f160-dc9b" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="64ac-f7d9-f3aa-69ed" primary="false" name="Imperium"/>
+        <categoryLink targetId="ee8c-cc44-acc3-40f0" id="854b-7e87-73af-b675" primary="false" name="Gunner"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="f5e8-642e-4847-57f2" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="3316-4e58-4786-6909" primary="false" name="Navis"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Gunner w/ meltagun" hidden="false" type="selectionEntry" id="a071-3399-768e-9b6a" targetId="fe98-5d47-2000-f842">
+      <entryLinks>
+        <entryLink id="6bf-1506-da1-b511" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="7b97-7fe2-fbff-c4ea" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="3bbe-9e49-d68-4ce1" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c9-b0df-38d4-f563" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="8c9-b0df-38d4-f563" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="6c1f-fd21-9c34-7743" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="c325-2442-49bc-dab" primary="false" name="Imperium"/>
+        <categoryLink targetId="ee8c-cc44-acc3-40f0" id="d309-3750-60ef-ffaf" primary="false" name="Gunner"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="8d72-a9a1-506d-506" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="9efd-bca6-3b50-80b7" primary="false" name="Navis"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Gunner w/ plasma gun" hidden="false" type="selectionEntry" id="15a4-3eb3-c65e-6cf8" targetId="443f-d3a6-6955-265a">
+      <entryLinks>
+        <entryLink id="b3b0-3b6c-3c0f-807d" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="9b30-ea71-b62c-106a" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="7072-852b-f808-f885" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaf7-37a0-947a-35c" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="aaf7-37a0-947a-35c" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="1970-cc03-9b8b-fa04" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="faa3-3b92-4b15-e6ca" primary="false" name="Imperium"/>
+        <categoryLink targetId="ee8c-cc44-acc3-40f0" id="54b6-6383-e8e8-231e" primary="false" name="Gunner"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="e1b6-3a53-2e37-e40f" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="cac7-a6dc-37e9-77b7" primary="false" name="Navis"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Hatchcutter" hidden="false" type="selectionEntry" id="73aa-7261-a728-301d" targetId="b9a4-e740-bfc2-2789">
+      <entryLinks>
+        <entryLink id="d1b-98da-420e-3229" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="ea40-310-38d0-7994" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="91d0-ee48-4ca5-cda0" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="78f5-696f-95e3-7bd5" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="78f5-696f-95e3-7bd5" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="c570-6b8c-5f9e-d43f" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="45bc-5964-16f7-f5ec" primary="false" name="Imperium"/>
+        <categoryLink targetId="cb42-dd3b-99fd-bbe4" id="19e2-bf81-686a-7176" primary="false" name="Hatchcutter"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="9f41-36ca-14bd-123d" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="bb4a-1fbb-35f3-9f27" primary="false" name="Navis"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Surveyor" hidden="false" type="selectionEntry" id="df73-56b9-7cd4-9d6a" targetId="d67c-bf89-e0f6-f6dd">
+      <entryLinks>
+        <entryLink id="2795-2c7c-f27-4f73" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="56d1-a71f-864b-60fe" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="8603-5c2c-298b-224a" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a7-cab2-4b4b-509f" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="6a7-cab2-4b4b-509f" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="e0f-dd95-e42a-de04" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="f1ed-df2b-68c1-5926" primary="false" name="Imperium"/>
+        <categoryLink targetId="1c1a-d8cb-bedd-1130" id="5613-22f8-392e-bcb5" primary="false" name="Surveyor"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="f1de-1877-44ac-4e60" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="cf2a-fd2b-df1b-9b18" primary="false" name="Navis"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Void-jammer" hidden="false" type="selectionEntry" id="df99-71bd-7f7a-aff5" targetId="e516-b0e6-7a66-11f">
+      <entryLinks>
+        <entryLink id="530-7d5f-ba9e-9a92" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="f982-49af-c022-9b96" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="f1b-bb15-ea2e-d69a" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b698-162b-56ae-9706" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="b698-162b-56ae-9706" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="137f-5a5b-5edb-e122" id="33c0-7069-96b7-c315" primary="true" name="Imperial Navy Breachers"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="45d0-f8e6-cc94-6bd0" primary="false" name="Imperium"/>
+        <categoryLink targetId="530c-c734-c629-05a1" id="45c3-9816-a5d0-f0e0" primary="false" name="Void-jammer"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="97fe-ee6e-8024-170d" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="bfa4-eddc-f632-37c6" primary="false" name="Navis"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
 </catalogue>
