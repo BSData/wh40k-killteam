@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="INQUISITORIAL AGENT" hidden="false" id="762e-9a1c-ad3a-3424"/>
     <categoryEntry name="Inquisition" hidden="false" id="307-ad5e-52b1-3bcd"/>
@@ -25,6 +25,7 @@
     <categoryEntry name="Kasrkin" hidden="false" id="377-6b36-e6ba-4d4e"/>
     <categoryEntry name="Imperial Navy Breachers" hidden="false" id="137f-5a5b-5edb-e122"/>
     <categoryEntry name="Exaction Squad" hidden="false" id="1948-af22-3c47-22ab"/>
+    <categoryEntry name="Veteran Guardsmen" hidden="false" id="787e-6218-c35f-93fa"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Interrogator Agent" hidden="false" id="7494-2f19-df87-a03f">
@@ -1556,6 +1557,19 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Veteran Guardsmen" hidden="false" id="ac49-7ade-ed05-80b7" targetId="787e-6218-c35f-93fa" type="category">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="2239-e9dd-27b-5cbc"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d29e-788-58c7-57b1"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="aeb8-d5dc-3b72-522b" shared="true" id="ae6-2ed1-a432-7cd7" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1993,6 +2007,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
     <catalogueLink type="catalogue" name="Kasrkin" id="7cc4-4f39-6be7-5f92" targetId="13e2-04bc-4cc1-0c53"/>
     <catalogueLink type="catalogue" name="Imperial Navy Breacher" id="7935-1be1-5d1-c19f" targetId="f13d-1085-02f7-bcfb"/>
     <catalogueLink type="catalogue" name="Exaction Squad" id="36e4-c799-d212-57a0" targetId="eee3-50f4-51f9-cede"/>
+    <catalogueLink type="catalogue" name="Veteran Guardsmen" id="20ce-303e-ce9b-bb0e" targetId="8e62-da18-67f9-c594"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Combat Medic" hidden="false" type="selectionEntry" id="5f5c-a184-9e4f-15c8" targetId="7a81-7fad-e0a5-5995">
@@ -2822,6 +2837,397 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
           </conditions>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink id="cdca-f9fd-8e15-378" name="Bruiser Veteran" hidden="false" collective="false" import="true" targetId="1d6a-b33a-0a6a-1b3f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="221f-2bec-9119-108c" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="67bf-23a4-5927-f4c0" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="b590-f8ac-02b1-a5e5" id="7539-d972-9f67-df08" primary="false" name="Bruiser Veteran"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="25ff-9b60-d523-a993" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="3672-6972-c80b-38b7" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d4c9-511b-6ae8-796b" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="972-2121-7fc6-1ace" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="3e38-1d3a-e5aa-c2c5" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="5eca-26df-7f2-834b" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="b9af-ee0c-17f7-9fb5" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="10e0-165b-db79-b687" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="fca3-e3c9-63f6-67ed" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="c4c9-1e4f-4251-d166" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="903b-e62a-a9a0-8b54" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="bcc2-6dbb-9d67-d721" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+            <entryLink id="3074-8e9e-beaf-c65c" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="fb19-fe28-aff4-67ac" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="4a8-bf5-49ef-fb57" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="bd87-f6ab-718a-d858" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="bebc-935b-bd6b-fa47" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="ea21-fd86-19eb-b292" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="97dd-c333-ed24-3166" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="5ad2-a0bc-a0c0-f28a" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="ef61-e0ee-ff1e-b2a1" name="Comms Veteran" hidden="false" collective="false" import="true" targetId="fd80-a323-bec1-ab9e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="9614-3ac9-aa61-649f" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="c73e-c14a-79c-6bbf" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="6790-22ed-c8fa-6309" id="3abb-1786-ae0c-833c" primary="false" name="Comms Veteran"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="d417-743d-3b5a-e11" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="d705-441b-6608-338b" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9e8-4f72-114b-a90a" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="39a3-f5e5-34f-62df" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="4b1d-c615-944e-f6f" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="fe06-64b2-f35e-9dac" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+            <entryLink id="0-5be0-6c5a-6869" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="b1d9-1756-35c3-945e" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="6c92-4324-258f-9d72" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="b3c5-dda4-789a-9874" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="4dac-bc03-9f24-7446" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="864f-1f83-b9a1-ca29" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="5d91-e779-b287-a580" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+            <entryLink id="161f-74b-14b8-da74" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="4e06-c84e-7de9-6099" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="9925-f311-4d19-2488" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="a439-7e51-79cc-984b" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="6878-d9cc-4ffb-95da" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="857a-38aa-8fdf-615f" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="4f7d-cbf3-2e9b-5a8e" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="faf9-69d8-850b-e5f0" name="Demolition Veteran" hidden="false" collective="false" import="true" targetId="f8ae-452c-1257-3db1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="6195-eac2-2dcd-33d5" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="e3fc-d1d4-695-f0e7" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="dc5e-7a69-2c1d-12bb" id="b3a9-3093-2f92-6449" primary="false" name="Demolition Veteran"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="664-4379-618d-3ec1" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="cc0c-88f-3d6-48c5" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9f44-ffa4-4cd9-356f" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="8429-8119-86c9-2639" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9013-d5b7-6355-74e6" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="8f2-aee3-5395-ed85" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="d861-f7a3-a2c8-50a9" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="d530-f86e-819f-63a4" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="4576-e4c3-6f68-fc29" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="13f-5ff5-301a-e95" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="a6ba-ac99-4caa-2388" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="417d-5c3a-5054-b503" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+            <entryLink id="a2d9-5654-fe47-a842" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="aa64-a85a-9d5-e8" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="405f-80a2-c94b-631a" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="e89b-b078-8408-1ec5" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="417f-4323-e7ce-7bb7" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="8ac1-60df-2fa1-95ea" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="d288-9a20-aee7-eaa" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="42bd-9eb7-3e9a-5bc8" name="Gunner Veteran w/ flamer" hidden="false" collective="false" import="true" targetId="d5ad-e160-1114-2ea5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="81cf-cb83-751c-c1c8" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="eb2a-26fa-a856-c1b0" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="900c-91f5-1f16-b811" id="1aff-ef87-d652-14be" primary="false" name="Gunner Veteran"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="7c76-1880-f18-67e4" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="c522-d70b-bfa3-4f4f" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4753-7608-295d-5fb8" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="41b5-e13f-1a4c-7ba6" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e4b6-db92-a73a-8efe" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="54fe-ff4e-d8f-a57d" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="22c9-a442-c168-e65" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+            <entryLink id="9c1b-137d-c31b-a40d" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="361-5e35-8be1-c787" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="5cdc-e352-a4ef-df82" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="5591-c7b8-481c-322e" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="7d55-a429-21b0-95d7" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="a989-a031-7f65-92d7" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="36b7-56bc-61ef-ca11" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="ca6b-e491-9592-3683" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="23da-9b6a-4eeb-a87e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="f7bf-2307-2bf9-c4ec" name="Gunner Veteran w/ grenade launcher" hidden="false" collective="false" import="true" targetId="36e7-6831-da22-9496" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="900c-91f5-1f16-b811" id="40fd-4f57-76ea-bf92" primary="false" name="Gunner Veteran"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="f0c1-bdda-1269-93b8" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="757b-39e1-bb61-6a1e" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="449-63b9-4687-7e80" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="b341-48c0-ba39-3974" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b44c-6c0a-66e9-5b73" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="37bb-1cc-bac6-e231" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="c696-fd3c-8ad1-1ea6" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="5efa-820a-308c-383a" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="ce58-da82-a528-ef0" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="157f-c6ee-4453-9bac" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="3ba7-74a9-9a2c-5833" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+            <entryLink id="5999-2ad9-3548-48a" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="f946-90f0-b256-bb1b" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="84c1-8dd7-f507-ce88" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="d6e-93ba-8058-8bf6" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e7a-135f-c00b-1c1e" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="9e7a-135f-c00b-1c1e" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="23da-9b6a-4eeb-a87e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="d35b-2407-14ff-a697" name="Gunner Veteran w/ meltagun" hidden="false" collective="false" import="true" targetId="d0f7-1b0f-3dee-cec7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="900c-91f5-1f16-b811" id="ee9b-8922-452f-d773" primary="false" name="Gunner Veteran"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="1ef-c0a5-7688-13a8" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="9ebb-6314-8540-62e9" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="96ab-90dd-af87-d29e" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="ea86-2bbb-b7b4-9020" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a7b3-9931-2783-17bf" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="f480-3977-f6e4-4aa5" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="d9c8-93c4-4d09-ab8f" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="ba54-1354-81a0-7991" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="2caa-360b-a6fb-8aee" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="e5b9-afc3-bc6b-7d17" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="7988-ce4a-f635-fa34" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="fc35-1235-9eb8-6e20" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="f1a4-2520-7731-4810" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="7651-c42f-4757-ad06" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="9c57-f1a7-6efc-a136" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f93-fc0a-e448-3fec" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="6f93-fc0a-e448-3fec" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="23da-9b6a-4eeb-a87e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="fcfa-90c4-e68d-ec46" name="Gunner Veteran w/ plasma gun" hidden="false" collective="false" import="true" targetId="f6e0-202d-7d02-90ab" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="900c-91f5-1f16-b811" id="b289-9bb8-7503-5107" primary="false" name="Gunner Veteran"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="42ac-3012-2f86-2ade" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="8791-324b-2acb-49b6" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="3710-5ad4-b623-b90" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="e786-2bb4-55c5-f3a6" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="31ae-fa2b-1f17-6542" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="f425-afb0-fb33-d77c" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9ed0-bf47-f869-a83" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="b95c-2eac-cf84-923c" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="473d-9ab1-fbd0-b104" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="b660-c224-dbab-4b28" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="8357-b1a1-dffc-33a8" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="1023-b4fc-a7b6-59b9" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="26bc-c227-7b7a-539c" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="2694-94d5-63b6-5709" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="1bdb-71e4-aa16-ca6d" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6892-3ccf-5e9f-9a69" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="6892-3ccf-5e9f-9a69" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="23da-9b6a-4eeb-a87e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="e7f7-680f-8762-2637" name="Hardened Veteran" hidden="false" collective="false" import="true" targetId="78b0-3547-6240-9f90" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="643c-fc2f-9c2f-92fd" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="3905-e812-a802-3be1" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="3e9d-eaef-1b8e-d9c5" id="684a-8371-3182-3b7a" primary="false" name="Hardened Veteran"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="4c47-1086-2ddb-ff59" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="eba-a49c-3a76-4178" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="acb6-ac0e-c721-63a0" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="70ae-18a4-30cd-b205" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="4946-7c50-2035-4f83" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="639d-241a-aead-aede" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="4c57-2598-de97-fe20" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="6e11-21a-1755-e353" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="cdd5-4a2d-84d7-2442" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="1176-7f3a-a876-4f1c" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="6d3f-10ae-6d2b-21b5" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup"/>
+        <entryLink id="841a-2390-8392-e27e" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="e77f-c8e8-9e22-7523" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="1db3-ac5a-9c7c-b17f" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="d456-fb56-8ee8-58e" name="Medic Veteran" hidden="false" collective="false" import="true" targetId="6923-10c2-770e-29ce" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="7cdd-8269-fe1d-6533" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="8acb-bfcc-62-af4c" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="c44a-2ec6-3764-e5f4" id="5fc2-d659-aaa5-bb62" primary="false" name="Medic Veteran"/>
+        <categoryLink targetId="8e1d-1094-f504-d8cd" id="9fb2-66ce-de3f-1695" primary="false" name="Medic"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="7a26-5ea5-a0fd-83ed" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="b0fd-85c8-3168-486a" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="47fd-3d73-7f44-b52b" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="c1c9-cd81-4187-7e68" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="403d-c48a-77fa-5c39" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="8f30-c91d-91b2-1171" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="e741-a3e4-7658-bf26" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="a141-1b89-3876-a94f" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="d4de-deb-711a-7d3e" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="4e10-acfb-e57b-27a9" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="4a0-42a7-5343-d3ea" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="f49d-6ea6-8677-31e3" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+            <entryLink id="b16e-4cc4-16f0-b632" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="62e-1418-1b34-9ea4" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="1a75-9fdf-989e-fc65" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="74b2-441-e320-c506" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="afa2-ce6e-1c03-5da8" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="bf38-6c44-b20f-49f4" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="7c43-7c5a-8b10-bc1a" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="d338-9ad4-c793-ca13" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="faa5-5b7d-b8fe-6cf1" name="Sniper Veteran" hidden="false" collective="false" import="true" targetId="592b-b629-b07e-b4ed" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="7e5f-6ed4-aa14-aaa9" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="eeb8-5dcf-fa3b-6044" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="b1ff-4296-787b-39c3" id="39f-4832-14ab-5026" primary="false" name="Sniper Veteran"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="f5a3-c76d-fecb-2e92" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="d5ec-561b-38d8-89c3" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="29de-247a-a6a-9423" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="5a61-5daa-544d-9ea5" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e40e-914d-44f9-4de8" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="40f6-47e-d6e0-76" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="126a-9f30-b612-e804" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="ec07-19ee-7122-7b64" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="bf54-b45b-1f9-42dd" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="5f3b-381e-866d-6802" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="1446-ccd2-e287-5096" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="d075-7118-e4fd-a80b" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="f551-dbf1-7b75-ab17" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="8764-63b7-5bb9-5e2" name="Trooper Veteran" hidden="false" collective="false" import="true" targetId="0cf8-8e64-3967-af72" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="70bc-a251-78d5-cdc3" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="e0e3-214a-fcad-aca7" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="ef4a-6883-982a-2b4b" id="916-ba1-9539-be18" primary="false" name="Trooper Veteran"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="1fb7-8569-8ed4-544c" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="254a-3c51-a6b9-57c4" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c780-6f6b-59b2-e99e" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="ef4a-d0ec-f859-7a3d" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="24ec-8ebd-462a-2118" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="4a2d-7eea-f6f2-1c5b" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="aa9c-2ae9-f3f5-da8c" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="1be7-43f8-3ab8-1bb" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="f6bd-2649-1fdf-32" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="aa69-9cd0-4f72-e3b5" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="a6dd-536c-a263-d5a7" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e34d-c46-ae1d-8467" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+            <entryLink id="1aa1-8ecc-a71-92c2" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="f664-475a-4b94-1ad8" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+            <entryLink id="a28d-43f9-af7a-a86f" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="947e-95d7-5ce8-4edc" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="f1f0-e54e-78dc-7bc3" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="575e-bbde-33c2-7e4e" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="e202-9cb9-1e29-5af3" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="93e6-3167-e895-2071" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="d4c2-8fe2-bc10-f86f" name="Zealot Veteran" hidden="false" collective="false" import="true" targetId="43af-6f5c-2ced-9e37" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="9650-4012-979d-5525" primary="false" name="Imperium"/>
+        <categoryLink targetId="51d2-f096-47a9-1956" id="4ee9-99fa-2ce8-1f5e" primary="false" name="Astra Militarum"/>
+        <categoryLink targetId="5e0d-a324-98e7-6fb7" id="1322-f31c-8d87-3c2d" primary="false" name="Zealot Veteran"/>
+        <categoryLink targetId="762e-9a1c-ad3a-3424" id="d97a-544c-7c7a-8fa3" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="787e-6218-c35f-93fa" id="3b99-c64e-3c11-1e4e" primary="false" name="Veteran Guardsmen"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3ee1-5418-cd6a-93fd" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="2c52-77c0-77c1-b06b" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9c53-7a1c-67b6-16e3" name="5 - Decorated Veteran" hidden="false" collective="false" import="true" targetId="4270-ce70-8f0e-eb2c" type="selectionEntry"/>
+            <entryLink id="78bd-cae-a316-af26" name="4 - Grit and Determination" hidden="false" collective="false" import="true" targetId="6def-fae8-4b4a-ec20" type="selectionEntry"/>
+            <entryLink id="4d8-d17a-b9ea-f2ba" name="1 - Capable Under Fire" hidden="false" collective="false" import="true" targetId="210a-435b-6c35-d8a3" type="selectionEntry"/>
+            <entryLink id="9660-fd1d-2b2d-5f00" name="6 - Final Litany" hidden="false" collective="false" import="true" targetId="9b9e-0e7c-4073-ee3b" type="selectionEntry"/>
+            <entryLink id="469e-c3c8-d394-e45" name="2 - Brash" hidden="false" collective="false" import="true" targetId="c972-f6f1-dec7-74db" type="selectionEntry"/>
+            <entryLink id="c776-51d4-55b8-d47e" name="3 - Siege Specialist" hidden="false" collective="false" import="true" targetId="b72b-0987-56f0-7850" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="7a0d-da65-d888-f736" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="b04b-93f9-a0da-9f36" name="Equipment" hidden="false" collective="false" import="true" targetId="7509-328c-ba71-6725" type="selectionEntryGroup"/>
+        <entryLink id="27b9-933-3f29-6c02" name="Specialism" hidden="false" collective="false" import="true" targetId="4c89-5f1c-1aa4-d614" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
 </catalogue>
