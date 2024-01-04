@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="INQUISITORIAL AGENT" hidden="false" id="762e-9a1c-ad3a-3424"/>
     <categoryEntry name="Inquisition" hidden="false" id="307-ad5e-52b1-3bcd"/>
@@ -506,6 +506,16 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
                 <infoLink name="Px" hidden="false" type="rule" id="909b-a83f-5e21-aae1" targetId="1f11-c169-2746-13cf"/>
                 <infoLink name="Heavy" hidden="false" type="rule" id="bc95-1c30-9b22-1730" targetId="1e77-6974-cf90-6008"/>
               </infoLinks>
+              <constraints>
+                <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bc18-6254-85a3-7365" type="max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" field="bc18-6254-85a3-7365" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="e495-692-9c65-b1d2">
               <profiles>
@@ -524,6 +534,16 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
                 <infoLink name="APx" hidden="false" type="rule" id="2f88-ee0-a759-91bf" targetId="db98-339e-d0a2-e042"/>
                 <infoLink name="Heavy" hidden="false" type="rule" id="70b2-e90f-9d6e-7a2f" targetId="1e77-6974-cf90-6008"/>
               </infoLinks>
+              <constraints>
+                <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ed13-189a-b17f-7429" type="max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" field="ed13-189a-b17f-7429" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="3f7b-80d4-9084-8a4a">
               <profiles>
@@ -552,6 +572,16 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
                 <infoLink name="APx" hidden="false" type="rule" id="9875-2a10-4eb2-7ec6" targetId="db98-339e-d0a2-e042"/>
                 <infoLink name="Heavy" hidden="false" type="rule" id="9fcb-b8a4-d83f-2a50" targetId="1e77-6974-cf90-6008"/>
               </infoLinks>
+              <constraints>
+                <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd7c-6e54-320b-c9a1" type="max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" field="fd7c-6e54-320b-c9a1" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b626-b122-1bf6-20fb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1550,30 +1580,40 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
           </constraints>
         </categoryLink>
         <categoryLink name="Sister of Silence" hidden="true" id="245c-41d2-3550-990b" targetId="bbc8-f96b-e446-3ec7" type="category">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="ac09-429b-3afe-c022" shared="true" id="e493-71ca-f340-5052" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d179-78b0-e01c-3544"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="352f-5802-6b9-c88b"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6c68-3e0a-95c9-6674-min"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6c68-3e0a-95c9-6674-max"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="5" field="6c68-3e0a-95c9-6674-min"/>
+                <modifier type="set" value="5" field="6c68-3e0a-95c9-6674-max"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="ac09-429b-3afe-c022" shared="true" id="4bf1-7d4c-a435-9119" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </categoryLink>
         <categoryLink name="Tempestus Scion" hidden="true" id="8bb6-e44a-7267-a492" targetId="9461-ff8f-ba6d-7abe" type="category">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="a90f-a427-ef52-ec67" shared="true" id="e07c-88d5-937f-a569" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d179-78b0-e01c-3544"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="352f-5802-6b9-c88b"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8288-b154-30c5-f93e-min"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8288-b154-30c5-f93e-max"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="5" field="8288-b154-30c5-f93e-min"/>
+                <modifier type="set" value="5" field="8288-b154-30c5-f93e-max"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a90f-a427-ef52-ec67" shared="true" id="f54b-7154-e7e3-c6d1" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </categoryLink>
         <categoryLink name="Gunner" hidden="false" id="cd4d-7e23-52dc-c39b" targetId="ee8c-cc44-acc3-40f0" type="category">
           <constraints>
@@ -1591,56 +1631,76 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
           </constraints>
         </categoryLink>
         <categoryLink name="Kasrkin" hidden="true" id="842c-cd7e-f57a-b5c1" targetId="377-6b36-e6ba-4d4e" type="category">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="df71-7975-54ed-adb4" shared="true" id="d3-97ac-bc09-6d16" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="9a23-590c-24ee-626a"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="e88a-788a-db0b-7900"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dc97-52b9-c485-67c4-min"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dc97-52b9-c485-67c4-max"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="5" field="dc97-52b9-c485-67c4-min"/>
+                <modifier type="set" value="5" field="dc97-52b9-c485-67c4-max"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="df71-7975-54ed-adb4" shared="true" id="8a8a-f1d0-c09d-3e7e" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </categoryLink>
         <categoryLink name="Imperial Navy Breachers" hidden="true" id="5574-7445-18b9-70d0" targetId="137f-5a5b-5edb-e122" type="category">
           <constraints>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="2822-90cd-501d-e7d5"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ab70-c008-8bb9-ed93"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f4b9-b510-14d8-bf2a-min"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f4b9-b510-14d8-bf2a-max"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="6" field="f4b9-b510-14d8-bf2a-min"/>
+                <modifier type="set" value="6" field="f4b9-b510-14d8-bf2a-max"/>
+              </modifiers>
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="ab16-c0c3-f0c4-a132" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="ab16-c0c3-f0c4-a132" shared="true" id="d400-4611-ed7f-74e3" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </categoryLink>
         <categoryLink name="Exaction Squad" hidden="true" id="aabf-323a-fd88-fa37" targetId="1948-af22-3c47-22ab" type="category">
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b393-6c00-ac8f-d0a5"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="289a-471d-e28a-1067"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1e3-458d-cc9f-31be-min"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1e3-458d-cc9f-31be-max"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="5" field="1e3-458d-cc9f-31be-min"/>
+                <modifier type="set" value="5" field="1e3-458d-cc9f-31be-max"/>
+              </modifiers>
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="256d-b91-d8f3-adaf" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="256d-b91-d8f3-adaf" shared="true" id="ee8b-aff3-89-5a60" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </categoryLink>
         <categoryLink name="Veteran Guardsmen" hidden="true" id="ac49-7ade-ed05-80b7" targetId="787e-6218-c35f-93fa" type="category">
           <constraints>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="2239-e9dd-27b-5cbc"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d29e-788-58c7-57b1"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e544-a590-ff29-1b6a-min"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e544-a590-ff29-1b6a-max"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="6" field="e544-a590-ff29-1b6a-min"/>
+                <modifier type="set" value="6" field="e544-a590-ff29-1b6a-max"/>
+              </modifiers>
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="aeb8-d5dc-3b72-522b" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="aeb8-d5dc-3b72-522b" shared="true" id="c681-c3a7-7627-4a8a" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </categoryLink>
         <categoryLink id="c52f-371d-b3fd-1e38" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false">
           <modifiers>
