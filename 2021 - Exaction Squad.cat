@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="eee3-50f4-51f9-cede" name="Exaction Squad" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="eee3-50f4-51f9-cede" name="Exaction Squad" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" hidden="false">
   <categoryEntries>
     <categoryEntry id="2340-12c8-a052-142e" name="EXACTION SQUAD" hidden="false"/>
     <categoryEntry id="314e-1833-e85a-2256" name="Adeptus Arbites" hidden="false"/>
@@ -17,7 +17,7 @@
     <categoryEntry id="53b7-e174-1b8c-859a" name="Vox-signifier" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="dd0e-4ce4-6097-d63a" name="Kill Team" hidden="false">
+    <forceEntry id="dd0e-4ce4-6097-d63a" name="Exaction Squad Kill Team" hidden="false">
       <categoryLinks>
         <categoryLink id="4a35-d8fd-b56a-f53e" name="Configuration" hidden="false" targetId="fb89-efb1-54e4-59c5" primary="false"/>
         <categoryLink id="3db3-819e-60ec-ad24" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
@@ -89,10 +89,17 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="eee3-50f4-51f9-cede" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="3240-1389-721e-de18" name="Proctor-Exactant" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="3240-1389-721e-de18" name="Arbites Proctor-Exactant" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="4800-641b-ba5e-e11d" name="Proctor-Exactant" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
           <modifiers>
@@ -213,869 +220,6 @@
             <entryLink id="8088-5f1b-992d-8437" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
             <entryLink id="0a73-0bdb-af24-b0b4" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
             <entryLink id="57a5-20e9-2f6b-b87c" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6c51-5320-16cf-5beb" name="Castigator" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="7f79-41d0-c03f-1234" name="Castigator" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="9e24-16ba-553b-9bd6" name="Engendered Focus" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">You can ignore any or all modifiers to this operative&apos;s characteristics (including modifiers to the weapons it is equipped with).</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6376-6a2f-d644-5eb2" name="Zealous Dedication" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative would lose a wound, roll one D6: on a 6, that wound is not lost.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d17d-9ffd-72a8-4729" name="Castigator&apos;s Arrest (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Perform a free Fight action with this operative against a valid target with a Wounds characteristic of 10 or less. At the end of that combat, if neither operative has been incapacitated, the target is arrested until the end of the battle. While a friendly EXACTION SQUAD operative is within Engagement Range of no more than one arrested enemy operative and no other enemy operatives, that arrested enemy operative cannot perform any actions other than Pass. Operatives that can perform this action cannot themselves be arrested.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="5cc3-5886-4993-6506" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="691d-85e2-978b-a5c7" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="b5b8-4869-4260-64a0" name="EXACTION SQUAD" hidden="false" targetId="2340-12c8-a052-142e" primary="false"/>
-        <categoryLink id="cbae-0c09-1bc3-adcb" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="9935-f322-a117-7abc" name="Adeptus Arbites" hidden="false" targetId="314e-1833-e85a-2256" primary="false"/>
-        <categoryLink id="48f8-8d4b-53b3-5534" name="Arbites" hidden="false" targetId="7f93-bd9f-2338-8268" primary="false"/>
-        <categoryLink id="7716-9de9-4bda-b095" name="Castigator" hidden="false" targetId="52f3-8710-5b77-4269" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="c8e4-5c38-06b1-0279" name="Excruciator maul" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bda-8dd0-6b15-c393" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b8c-65aa-99fd-3070" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="ddf5-064d-a8c3-9fd1" name="Excruciator maul" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/4</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending, Stun</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="9aae-de08-cb57-270f" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
-            <infoLink id="31b8-ba25-9be0-d160" name="Stun" hidden="false" targetId="a1e3-4e0b-f7c2-eb59" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="74f1-84c2-5b94-7ed6" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
-        <entryLink id="f065-0dc7-8181-f330" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="c64a-7f29-23a2-bc83" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="fcd2-018f-aa6c-a933" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
-        <entryLink id="06ff-38c5-3d5d-eb36" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
-        <entryLink id="f047-6380-beef-b7cf" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="22de-0759-c63a-7bdf" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="0b92-6877-9d6c-d763" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="641b-72fa-a94c-bce5" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="05fd-0890-6e3b-d430" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="bb72-dabd-7843-4e09" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="3d1b-cb56-9b00-15cf" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="ae73-bc0e-a079-1525" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="9787-e1bd-0d14-0dca" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="8b53-798f-0974-d40f" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="b2d6-173a-6e6c-4cac" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="9c83-8238-14e8-dbb5" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="7175-3726-f859-1416" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="fd20-7fb2-0fc8-97cd" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a87b-0597-7632-3993" name="Chirurgant" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="64ad-814a-9b41-31ee" name="Chirurgant" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f80d-7089-a0bd-69eb" name="Medic!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, the first time another friendly EXACTION SQUAD operative would be incapacitated while Visible to and within ⬛ of this operative and not within Engagement Range of an enemy operative, if this operative is not within Engagement Range of an enemy operative, this operative can revive it. That friendly operative is not incapacitated, has 1 wound remaining, and if it was a shooting attack, any remaining attack dice are discarded. That friendly operative can then perform a free Dash action, but must finish that move within ▲ of this operative. Subtract 1 from both operatives&apos; API.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ea08-208f-98a3-d70f" name="Medi-kit (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly operative Visible to and within ▲ of this operative. That friendly operative regains 2D3 lost wounds. An operative cannot be selected for this action if it was revived using the Medic! ability during the same Turning Point. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="d66e-596d-9496-e7ab" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="094a-55ff-5d4e-3080" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="f10e-6285-06cc-bdf0" name="EXACTION SQUAD" hidden="false" targetId="2340-12c8-a052-142e" primary="false"/>
-        <categoryLink id="f37f-1056-3253-0f36" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="7ca8-792f-4ce8-ad6d" name="Adeptus Arbites" hidden="false" targetId="314e-1833-e85a-2256" primary="false"/>
-        <categoryLink id="925c-ab6e-c186-f561" name="Medic" hidden="false" targetId="8e1d-1094-f504-d8cd" primary="false"/>
-        <categoryLink id="c071-e6e8-ef70-2cf6" name="Arbites" hidden="false" targetId="7f93-bd9f-2338-8268" primary="false"/>
-        <categoryLink id="e72c-6c39-cb90-eaec" name="Chirurgant" hidden="false" targetId="7b50-67f3-134a-044a" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="f0db-d512-8f3a-0647" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
-        <entryLink id="63e4-9f6d-a3bb-1e81" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="cdef-f218-9122-51cc" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="329e-e64f-570d-e060" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
-        <entryLink id="7027-c3b9-848d-7f36" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
-        <entryLink id="bf81-b5e8-3fd1-28e2" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
-        <entryLink id="6c1b-b1c7-74e3-a4f7" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="e286-6b5d-0abe-b35b" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="d5c0-96aa-34a4-7d64" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="ae90-17cc-c1a1-8ea6" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="943c-4c22-4073-f5c4" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="454c-f2b9-d2cd-7f71" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="aaf3-c61e-fb48-3139" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="f036-81b5-086a-dc87" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="9848-60b0-be22-2181" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="9036-6207-df03-25ec" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="f1b4-ece1-b4d8-72ba" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="fefb-6299-c60d-b341" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="5dae-f0c6-6824-8fc2" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="476c-a4cf-d029-3236" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7652-573c-5818-b347" name="Gunner" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="27ac-0a94-4a14-a6c3" name="Gunner" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="28b9-d8ad-3471-600f" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="b15d-bb7e-93ba-fad4" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="5932-ba5c-66d9-bf0d" name="EXACTION SQUAD" hidden="false" targetId="2340-12c8-a052-142e" primary="false"/>
-        <categoryLink id="976c-0671-259a-1a87" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="f784-372b-9e89-697b" name="Adeptus Arbites" hidden="false" targetId="314e-1833-e85a-2256" primary="false"/>
-        <categoryLink id="0677-6fc5-b6e5-3f65" name="Arbites" hidden="false" targetId="7f93-bd9f-2338-8268" primary="false"/>
-        <categoryLink id="97ae-1337-e438-a709" name="Gunner" hidden="false" targetId="ee8c-cc44-acc3-40f0" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="84f3-73f1-d34b-1173" name="Weapon" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb9b-2b3d-ed82-2549" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc23-eca5-53d4-5aba" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="5a24-fc23-8355-3e24" name="Grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="4a82-8fe7-4a1b-2512" value="1">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd0e-4ce4-6097-d63a" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4a82-8fe7-4a1b-2512" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="1ad9-dc1d-ffb1-fc90" name="⌖ Grenade launcher" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
-                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
-                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
-                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="2695-466a-292a-3053" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="9d9f-67af-b904-6d37" name="Heavy stubber" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="b83e-b61e-d691-2f1b" value="1">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd0e-4ce4-6097-d63a" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b83e-b61e-d691-2f1b" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4880-f348-3874-6e49" name="⌖ Heavy stubber" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
-                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
-                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
-                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Ceaseless, Fusillade, Heavy</characteristic>
-                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="e9aa-83db-25eb-39bb" name="Ceaseless" hidden="false" targetId="ce9a-aa0d-7b46-3d04" type="rule"/>
-                <infoLink id="c11c-88f7-4bbe-01bb" name="Fusillade" hidden="false" targetId="e2ae-574a-94ab-3550" type="rule"/>
-                <infoLink id="0d5f-a529-08dc-00b2" name="Heavy" hidden="false" targetId="1e77-6974-cf90-6008" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="59e4-3bae-d00e-1e09" name="Webber" hidden="false" collective="false" import="true" targetId="21a0-6b9e-b257-aea7" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="31b1-c342-cc7d-a685" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="cde0-db11-4270-6393" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="5c15-e2c7-6c89-989a" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
-        <entryLink id="fc56-f087-c527-55e5" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
-        <entryLink id="b808-d256-5fc0-fea7" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
-        <entryLink id="05d3-95dd-ee49-941a" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="cc49-8fb2-aa46-e717" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="bee9-4337-b127-ec8d" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="8b3e-c6d1-b9ff-11c0" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="6fc2-6ae7-15a6-9c01" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="69ec-44ac-34c0-119a" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="b30b-a4c7-15b2-9629" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="e1c3-2ea1-daa3-e35d" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="4b86-ca85-0b56-6609" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="6ea5-f6a8-c108-5bc3" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="c54e-6b83-8092-627b" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="dba6-e555-4253-1263" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="8a17-9913-d4fc-0731" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="e873-34e9-b95c-4859" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="bd15-b7ea-4e48-79ff" name="Leashmaster" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="e4c4-b4cf-8891-3793" name="Leashmaster" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e147-dfda-7da3-9427" name="Handler" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative is activated, you can also activate a ready friendly R-VR CYBER-MASTIFF operative at the same time. Complete their actions in any order.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3981-bb32-fb69-5da2" name="Attack Pattern" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">When this operative is selected for deployment, select one of the following attack patterns for a friendly R-VR CYBER-MASTIFF operative to have for the battle:
-• Aggressive: Melee weapons it is equipped with gain the Relentless special rule.
-• Swift: Add ⬤ to its Movement characteristic.
-• Defensive: Improve its Save characteristic by 1.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f785-9ea4-671b-9274" name="Command (0AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly R-VR CYBER-MASTIFF operative within ⬟ of this operative and change its attack pattern.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="b8c2-6c15-c27c-d1e1" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="5d7a-8bed-6dfe-cf56" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="f9b0-759e-184c-4e83" name="EXACTION SQUAD" hidden="false" targetId="2340-12c8-a052-142e" primary="false"/>
-        <categoryLink id="013e-59cf-fed2-9d1d" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="d80d-0d18-733d-52da" name="Adeptus Arbites" hidden="false" targetId="314e-1833-e85a-2256" primary="false"/>
-        <categoryLink id="e7f5-76ed-2c39-35f0" name="Arbites" hidden="false" targetId="7f93-bd9f-2338-8268" primary="false"/>
-        <categoryLink id="2f7e-1247-6f55-932d" name="Leashmaster" hidden="false" targetId="3b56-8e29-78cb-f7a4" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="d67c-0514-056d-c67b" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="4302-6eff-8315-cd7a" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="e1fe-4526-24f4-5e09" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
-        <entryLink id="e562-94b8-dfec-502a" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
-        <entryLink id="ba42-30f7-95f1-1b55" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
-        <entryLink id="c3ec-37ba-bd48-7cb7" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
-        <entryLink id="c18d-bdfa-ef62-a4d7" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="c926-7c6c-287c-3689" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="923c-ee57-fee0-7f57" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="b191-4821-4d3f-178c" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="bab7-df5d-8427-9d62" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="f451-62c5-eb24-f194" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="05d3-806d-78f9-00bc" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="3d25-8164-48f4-9ce8" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="d035-0184-70fd-baf5" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="1568-b9c8-f5a4-c3bc" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="b090-ed1c-fc83-5685" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="30a1-69bc-eabb-a07a" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="5741-ddd2-6ad5-587e" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="f683-fbac-0bb6-0fdb" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="73bb-3c91-bdf1-fc3f" name="R-VR Cyber Mastiff" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="bbdc-1117-7c90-a466" name="R-VR Cyber Mastiff" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="5807-62d8-2c82-ad07" name="Beast" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Other than the Gather Evidence mission action, this operative cannot perform mission actions and cannot be equipped with equipment.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="de9b-b9da-e283-304e" name="Apprehend (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative within this operative&apos;s Engagement Range. That enemy operative suffers D3 mortal wounds, and until it&apos;s no longer within this operative&apos;s Engagement Range, it&apos;s apprehended. Each time an apprehended enemy operative would perform a Fall Back action, your opponent must roll one D6, adding 1 to the result for each wound it has remaining that&apos;s greater than this operative&apos;s remaining wounds. If the result is less than this operative&apos;s remaining wounds, that enemy operative cannot perform that action (the action points are refunded).</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="adc0-bf8e-62ad-2208" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="8b10-cc12-c177-dd91" name="EXACTION SQUAD" hidden="false" targetId="2340-12c8-a052-142e" primary="false"/>
-        <categoryLink id="85e7-7d89-4186-42c5" name="Adeptus Arbites" hidden="false" targetId="314e-1833-e85a-2256" primary="false"/>
-        <categoryLink id="f93f-64a2-3795-b11f" name="R-VR Cyber Mastiff" hidden="false" targetId="045f-1f64-cccc-7ff5" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5c33-a720-ca9b-4918" name="Mechanical bite" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e67b-1bfe-0077-8a78" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d928-83c1-a0d7-f91e" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="c4ce-684b-8ebc-7128" name="Mechanical bite" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/5</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Lethal x" hidden="false" type="rule" id="a3a9-e602-56c4-df9f" targetId="be29-25db-e215-b3b0"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="bb79-af03-c47c-97ae" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
-        <entryLink id="e533-4291-4728-3341" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="5ee2-4364-d2eb-2445" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="4d36-9602-9050-deed" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="7b62-03e6-b5d7-c864" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="ce2e-687d-b8c5-7078" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="f9f7-8da8-6be3-26f3" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="37ce-9dd4-f1a6-74a1" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="8270-4ab4-cc03-7e15" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="76be-4a93-20b9-8838" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="10a3-7c65-66c7-bcd0" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="d85b-aea4-26a4-a35a" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="5401-64d5-5bb8-c974" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="917f-e56e-c7d0-d1ab" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="ac93-942d-2a16-9808" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="f035-c594-fe31-c133" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="7c46-c80f-5794-1826" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry id="8a28-30f3-4db4-8bcd" name="Marksman" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="4ff2-c257-940a-e72c" name="Marksman" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="fed6-c339-7e69-9858" name="Take Aim (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Until the end of the activation, the executioner shotgun this operative is equipped with gains the Balanced and No Cover special rules. This operative cannot perform this action while within ⬛ of an enemy operative.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="ac4d-96a1-8455-c8ba" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="2000-b05b-0562-9072" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="4a93-ff3a-756b-e578" name="EXACTION SQUAD" hidden="false" targetId="2340-12c8-a052-142e" primary="false"/>
-        <categoryLink id="3360-1bd9-8078-3039" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="68f7-990d-c061-a2bf" name="Adeptus Arbites" hidden="false" targetId="314e-1833-e85a-2256" primary="false"/>
-        <categoryLink id="19e1-a943-b007-2e90" name="Arbites" hidden="false" targetId="7f93-bd9f-2338-8268" primary="false"/>
-        <categoryLink id="a6f5-7f4b-a181-cc7f" name="Marksman" hidden="false" targetId="7fc0-8607-697d-74d5" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="7319-737e-4667-2c77" name="Executioner shotgun" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5703-6f89-b945-7a16" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae8f-7337-80ef-b6fd" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="97b2-327f-ef10-36d0" name="⌖ Executioner shotgun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/1</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Heavy, Lethal 5+, Silent</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW3</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="f53d-42ff-e76f-7fc1" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
-            <infoLink id="e63e-18d5-7af7-aa62" name="Silent" hidden="false" targetId="ce60-8109-69c9-3908" type="rule"/>
-            <infoLink id="fa82-6242-7e0b-4c45" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
-            <infoLink id="bae5-6059-8f96-10e6" name="Heavy" hidden="false" targetId="1e77-6974-cf90-6008" type="rule"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="b410-2977-b4a4-491d" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="6145-55db-a465-4716" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="83b1-b577-87c5-8c70" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
-        <entryLink id="90bf-a815-3bea-0f94" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
-        <entryLink id="ff84-6c23-c724-09c5" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
-        <entryLink id="7993-677a-8866-a7d7" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="cead-588e-3ae7-82a9" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="9021-f258-0bac-84cd" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="99b9-d4a4-4a90-1b59" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="4c47-40fb-f90a-ae1c" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="78ad-7873-c22b-c483" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="7b6d-13f2-b7b8-282b" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9c3b-7299-1e48-3ffa" name="Malocator" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="2a26-f11e-c104-4a89" name="Malocator" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="16c5-0d82-5c19-b0a2" name="Acute Focus" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, during this operative&apos;s activation, it can perform a mission action or the Pick Up action for one less action point (to a minimum of OAP).</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b95c-54b0-43d8-2fea" name="Veriscant (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative in this operative&apos;s Line of Sight. Until the end of the Turning Point, each time a friendly EXACTION SQUAD operative fights in combat or makes a shooting attack against that enemy operative, in the Roll Attack Dice step of that combat or shooting attack, you can retain one of your successful normal hits as a critical hit instead. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="1aa2-7920-eef0-53e7" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="5341-9c7c-3d8c-ccd6" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="ad9f-a2df-757f-6399" name="EXACTION SQUAD" hidden="false" targetId="2340-12c8-a052-142e" primary="false"/>
-        <categoryLink id="714e-056b-b2dc-1c9a" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="47da-c41c-7698-dd6e" name="Adeptus Arbites" hidden="false" targetId="314e-1833-e85a-2256" primary="false"/>
-        <categoryLink id="31a3-fe9e-fd70-db75" name="Arbites" hidden="false" targetId="7f93-bd9f-2338-8268" primary="false"/>
-        <categoryLink id="ad68-17cc-3a61-7c64" name="Malocator" hidden="false" targetId="bd36-7f72-a1ef-ce74" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="e165-f147-1e21-2946" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="906e-0300-41ef-e927" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="73cc-b767-ec9f-b65a" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
-        <entryLink id="2afb-4edf-a69a-38ca" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
-        <entryLink id="5119-0c99-0672-5763" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
-        <entryLink id="0d60-7cb4-9515-46f9" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
-        <entryLink id="56ef-05dc-9fbe-9dac" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="94bf-1861-665a-480d" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="416b-96dd-03bc-49ab" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="2644-dc17-4f11-5923" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="ca77-6f54-9f36-0cfb" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="f04d-97c2-34e5-a672" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="6a55-528b-e127-f061" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="839e-5627-8afc-40ce" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="42d1-dc8e-0754-90f7" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="f11b-b3d9-3df4-7007" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="4dd0-9c15-b158-04e3" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="f648-af65-a12a-1be0" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="b9ca-89d9-6ab5-59a2" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="ba74-163c-db19-9d88" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d0a8-1deb-d920-ad35" name="Revelatum" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="1250-d396-1e72-2f3e" name="Revelatum" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="65ee-376f-b1b0-936c" name="First in the Field" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">At the end of the Initiative phase of the first Turning Point, if this operative is wholly within your drop zone, it can perform a free Normal Move action as if it can FLY.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="488c-ee9d-bae9-7399" name="Soulguilt Scan (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative Visible to and within ⬟ of this operative. Until the end of the Turning Point, friendly operatives Visible to and within ⬛ of this operative treat that enemy operative as if it has an Engage order.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="f89d-3268-395a-f6e2" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="6dbb-06f0-ccbd-9c04" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="2aaf-075b-b283-6106" name="EXACTION SQUAD" hidden="false" targetId="2340-12c8-a052-142e" primary="false"/>
-        <categoryLink id="31b8-9ab3-5fc6-772d" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="24d6-50c6-0a77-0c70" name="Adeptus Arbites" hidden="false" targetId="314e-1833-e85a-2256" primary="false"/>
-        <categoryLink id="5be5-06bf-a96b-988e" name="Arbites" hidden="false" targetId="7f93-bd9f-2338-8268" primary="false"/>
-        <categoryLink id="ce7d-48e2-5b3b-9df4" name="Revelatum" hidden="false" targetId="0151-5f39-3ada-406a" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="98b9-21d7-e990-2373" name="Scoped shotpistol" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5251-11e1-d6d2-b0b6" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3642-39fd-44e4-95a6" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="901f-ed1d-00ad-6f42" name="⌖ Scoped shotpistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/1</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="98df-9f20-4bcb-0d16" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
-            <infoLink id="974-ebc4-bb1-dad9" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="7922-94cc-32f9-f534" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="0326-3b2c-0f9a-9af2" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="d4dc-7434-6b8d-cde5" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
-        <entryLink id="0ece-4a16-4571-9326" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
-        <entryLink id="ae63-e15b-76f1-cf24" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
-        <entryLink id="f9b3-0681-961d-d9fe" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="c65c-be21-4ef6-96c2" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="798f-d1e5-4880-65e1" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="e79e-6472-81bc-42c0" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="cecc-306e-ec4a-f2ff" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="9a79-899b-57c4-edf9" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="3ca2-2f6d-0555-94be" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="5a14-7f77-a613-7391" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="4f38-ffc7-e06e-e9e5" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="6cdb-5c71-9a64-2bb1" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="49d4-8245-9475-b323" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="2eaf-114f-d573-0c60" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="af28-ae93-cf0e-4a92" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="2918-e39d-5f17-55cf" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="bcf9-8b27-77bf-b234" name="Subductor" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="0545-26f9-e605-dd3c" name="Subductor" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="95c4-2f41-8638-5398" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="586f-d63a-a1af-37bd" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="895f-41a9-2559-1b76" name="EXACTION SQUAD" hidden="false" targetId="2340-12c8-a052-142e" primary="false"/>
-        <categoryLink id="3dd9-58d4-effc-05f3" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="28e5-4bfa-f2c1-e83c" name="Adeptus Arbites" hidden="false" targetId="314e-1833-e85a-2256" primary="false"/>
-        <categoryLink id="40f4-fb66-5175-0505" name="Arbites" hidden="false" targetId="7f93-bd9f-2338-8268" primary="false"/>
-        <categoryLink id="f2ef-b052-e976-528c" name="Subductor" hidden="false" targetId="5f5a-816b-ac62-bf83" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="10b7-2c6d-6f86-9045" name="Shock maul &amp; assault shield" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4ec-670e-aa2d-8e53" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a72-ca14-5cf6-f797" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="b013-a078-2bf7-befb" name="⚔ Shock maul &amp; assault shield" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/4</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Repress*, Shield*</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Stun</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="03b6-4ad2-42a1-8d28" name="*Repress" hidden="false" targetId="d262-1668-3a65-4e7f" type="profile"/>
-            <infoLink id="65fc-bb9b-9190-adf2" name="*Shield" hidden="false" targetId="06f6-a6c4-d1f6-7872" type="profile"/>
-            <infoLink id="bacf-f0eb-a467-c41d" name="Stun" hidden="false" targetId="a1e3-4e0b-f7c2-eb59" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="7840-a8a9-4b29-cfc1" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="912f-e926-2642-c3c0" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="4ea0-2b64-28cb-c12d" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
-        <entryLink id="d952-8cf9-9a77-f83c" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
-        <entryLink id="7d62-fe57-1788-c94b" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="43cf-6a40-d066-f873" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="82ef-100d-100f-5c89" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="9721-97e9-8190-9b82" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="2415-c776-8248-480f" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="50fd-5571-e247-aa9e" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="04d2-4bcc-b1e1-57be" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="acb1-ac5a-64c9-19c3" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="4dab-6618-84d1-0e93" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="34a0-8801-8ce7-9ec8" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="ad4b-ec48-8e34-b572" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="647c-a236-c5ae-f80e" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="cc32-17ef-ee0c-8885" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="49d9-4645-9979-7824" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7fda-8879-af37-2b10" name="Vigilant" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="ac20-2015-571d-7be4" name="Vigilant" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="031d-807d-4821-5c22" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="1c2e-ddda-ffcb-d1f1" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="b028-45a4-a648-03a6" name="EXACTION SQUAD" hidden="false" targetId="2340-12c8-a052-142e" primary="false"/>
-        <categoryLink id="9a93-e232-9407-bbed" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="4ed4-303b-404c-1690" name="Adeptus Arbites" hidden="false" targetId="314e-1833-e85a-2256" primary="false"/>
-        <categoryLink id="d6fe-b92e-f102-d0f7" name="Arbites" hidden="false" targetId="7f93-bd9f-2338-8268" primary="false"/>
-        <categoryLink id="75f9-3038-2e8b-c84a" name="Vigilant" hidden="false" targetId="d537-9cb6-ba03-5162" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="d11e-8faa-99c5-690e" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="788b-2bad-e2bd-9205" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="421f-8c8b-3da7-14b3" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
-        <entryLink id="fbf1-9f56-ba2b-717a" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
-        <entryLink id="0ce9-ddee-5061-a83e" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
-        <entryLink id="b745-b209-f277-5f61" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
-        <entryLink id="a2bf-e1c9-4551-a60c" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="f007-33b3-c998-7670" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="055d-bd69-b324-0dda" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="3b9f-1027-8bdb-7541" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="c5aa-5ab6-ecf7-f4f8" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="5937-864c-e59e-c5c7" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="fac8-6512-0916-ed0c" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="0a07-65aa-b532-32cf" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="5e41-924f-7fd6-e38d" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="e89b-d5b3-7bba-c354" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="2e2e-b5dd-3d53-c8e4" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="36c2-f491-62d8-f630" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="b081-f6c2-5a97-c3f4" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="e55f-086c-4ac2-f08a" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="39f3-8ec9-cd51-e124" name="Vox-signifier" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="c11b-b6f4-11f8-c728" name="Vigilant" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3198-a581-46ca-df6e" name="Precinct Vox-relay (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly EXACTION SQUAD operative (excluding R-VR CYBER-MASTIFF operatives) Visible to this operative. Add 1 to its APL This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="faec-4865-aa41-fdd2" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="be89-07ef-8e44-affd" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="a3f4-a393-6dab-d862" name="EXACTION SQUAD" hidden="false" targetId="2340-12c8-a052-142e" primary="false"/>
-        <categoryLink id="1de1-553c-e257-d097" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="5011-881e-f8df-756d" name="Adeptus Arbites" hidden="false" targetId="314e-1833-e85a-2256" primary="false"/>
-        <categoryLink id="8bee-3306-ebac-f326" name="Arbites" hidden="false" targetId="7f93-bd9f-2338-8268" primary="false"/>
-        <categoryLink id="2961-ce0f-e234-6560" name="Vox-signifier" hidden="false" targetId="53b7-e174-1b8c-859a" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="2baf-96ab-1ba5-2b73" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="e633-a1a3-ec2f-cf64" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="2902-e097-4252-c6c7" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
-        <entryLink id="6f9c-e1ee-71ec-6e95" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
-        <entryLink id="79bb-606a-3154-2237" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
-        <entryLink id="2e97-e6a7-ce34-13cd" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
-        <entryLink id="469d-b94e-3a75-32c0" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="4dce-c02e-e69f-f8c8" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="fbb8-47a6-5383-5d12" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="83fb-df0d-0e36-4020" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="9b91-c687-e608-aa64" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="3f61-1450-7567-6d15" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="aa83-8de3-39b0-6077" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="1893-af20-eadf-9170" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="0b0b-8f3f-c46a-6c47" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
-            <entryLink id="3ffe-5458-190a-368d" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
-            <entryLink id="b838-0df0-c8cb-7b55" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
-            <entryLink id="e209-daa6-8542-f30c" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
-            <entryLink id="bf9f-8f97-8fbd-b76f" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
-            <entryLink id="23c6-f76f-329a-8d35" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -1254,6 +398,525 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry id="bfc5-d389-8c89-9820" name="Arbites Castigator" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="4092-e308-cfa8-f735" name="Castigator" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9b77-a292-566e-b5a2" name="Engendered Focus" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">You can ignore any or all modifiers to this operative&apos;s characteristics (including modifiers to the weapons it is equipped with).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="39f2-4bc4-ecbb-8434" name="Zealous Dedication" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative would lose a wound, roll one D6: on a 6, that wound is not lost.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a8b-6577-1cfa-91ec" name="Castigator&apos;s Arrest (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Perform a free Fight action with this operative against a valid target with a Wounds characteristic of 10 or less. At the end of that combat, if neither operative has been incapacitated, the target is arrested until the end of the battle. While a friendly EXACTION SQUAD operative is within Engagement Range of no more than one arrested enemy operative and no other enemy operatives, that arrested enemy operative cannot perform any actions other than Pass. Operatives that can perform this action cannot themselves be arrested.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="768c-1d45-df2b-dced" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="f917-51aa-800f-83ae" name="Excruciator maul" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="411e-ee6d-d6b6-b2e1" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b36-781a-faaf-6ef6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3e52-c007-b829-1210" name="Excruciator maul" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/4</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending, Stun</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b054-daf6-8352-f25" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
+            <infoLink id="6da1-59a9-a038-1251" name="Stun" hidden="false" targetId="a1e3-4e0b-f7c2-eb59" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="121-3929-fc1e-c41d" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="74ac-d4e6-fd9a-fd8a" name="Arbites Chirurgant" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b429-f2f3-382a-9692" name="Chirurgant" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ea26-f4bd-930f-9399" name="Medic!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, the first time another friendly EXACTION SQUAD operative would be incapacitated while Visible to and within ⬛ of this operative and not within Engagement Range of an enemy operative, if this operative is not within Engagement Range of an enemy operative, this operative can revive it. That friendly operative is not incapacitated, has 1 wound remaining, and if it was a shooting attack, any remaining attack dice are discarded. That friendly operative can then perform a free Dash action, but must finish that move within ▲ of this operative. Subtract 1 from both operatives&apos; API.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9157-6c19-5778-195e" name="Medi-kit (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly operative Visible to and within ▲ of this operative. That friendly operative regains 2D3 lost wounds. An operative cannot be selected for this action if it was revived using the Medic! ability during the same Turning Point. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b820-2d14-bbbb-d413" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="f790-9b9f-14e7-4a72" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
+        <entryLink id="8dbb-c5a-dfe2-cbea" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1111-cee5-3499-b0a4" name="Arbites Gunner" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="fc17-6fd7-d24d-8da7" name="Gunner" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="736-919-6a54-71b9" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bfca-ca18-27c8-6501" name="Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd70-2c7a-6f55-1da4" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18f5-fd17-c054-a3b7" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5747-ec4f-7043-449c" name="Grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="e10e-4d01-44d2-c2d5" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd0e-4ce4-6097-d63a" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e10e-4d01-44d2-c2d5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="1ca-fc9e-ce76-8ba4" name="⌖ Grenade launcher" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="ec6b-9c5-8316-e2cd" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="c744-2f8-89cb-db0b" name="Heavy stubber" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="44f1-273d-22a6-57d7" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd0e-4ce4-6097-d63a" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="44f1-273d-22a6-57d7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="696f-17d7-8cc8-64d9" name="⌖ Heavy stubber" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Ceaseless, Fusillade, Heavy</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="b251-69e9-5ba1-cb70" name="Ceaseless" hidden="false" targetId="ce9a-aa0d-7b46-3d04" type="rule"/>
+                <infoLink id="82f4-618e-bd7e-c787" name="Fusillade" hidden="false" targetId="e2ae-574a-94ab-3550" type="rule"/>
+                <infoLink id="5e44-d620-bc65-8f31" name="Heavy" hidden="false" targetId="1e77-6974-cf90-6008" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="b250-ea10-510b-94a" name="Webber" hidden="false" collective="false" import="true" targetId="21a0-6b9e-b257-aea7" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2e0c-ac52-c098-ade" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="852e-114a-85d-7e18" name="Arbites Leashmaster" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="6a6c-9357-ebe1-6d15" name="Leashmaster" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ae9b-c6a7-27c2-78f" name="Handler" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative is activated, you can also activate a ready friendly R-VR CYBER-MASTIFF operative at the same time. Complete their actions in any order.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="245a-b046-45a3-4a56" name="Attack Pattern" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">When this operative is selected for deployment, select one of the following attack patterns for a friendly R-VR CYBER-MASTIFF operative to have for the battle:
+• Aggressive: Melee weapons it is equipped with gain the Relentless special rule.
+• Swift: Add ⬤ to its Movement characteristic.
+• Defensive: Improve its Save characteristic by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="59bb-4773-2936-390b" name="Command (0AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly R-VR CYBER-MASTIFF operative within ⬟ of this operative and change its attack pattern.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2cb9-1609-e175-9622" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="bd1-5a1b-6ee4-b313" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
+        <entryLink id="9a1-bea8-3f37-c009" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5093-89be-f8f2-66df" name="Arbites Malocator" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="c2be-6206-f0a9-153f" name="Malocator" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="789f-5429-3530-cba" name="Acute Focus" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, during this operative&apos;s activation, it can perform a mission action or the Pick Up action for one less action point (to a minimum of OAP).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3eb6-c8f9-9fca-81da" name="Veriscant (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative in this operative&apos;s Line of Sight. Until the end of the Turning Point, each time a friendly EXACTION SQUAD operative fights in combat or makes a shooting attack against that enemy operative, in the Roll Attack Dice step of that combat or shooting attack, you can retain one of your successful normal hits as a critical hit instead. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f58-73c0-7346-12a3" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="1382-4434-4e74-5344" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
+        <entryLink id="adba-cda7-c687-ff6d" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1548-cf2c-f1fb-dbdb" name="Arbites Marksman" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="64c1-6b3-ec15-6be" name="Marksman" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1799-26f7-7e56-f9d" name="Take Aim (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Until the end of the activation, the executioner shotgun this operative is equipped with gains the Balanced and No Cover special rules. This operative cannot perform this action while within ⬛ of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="55b2-1ca2-68ec-5716" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="e39c-21e7-756c-c127" name="Executioner shotgun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bef-df9-a9bb-b631" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51e4-921d-5016-36f2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6946-f059-72b-603a" name="⌖ Executioner shotgun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/1</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Heavy, Lethal 5+, Silent</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="80e4-c2c3-1704-7089" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
+            <infoLink id="a8bd-dffb-899-e302" name="Silent" hidden="false" targetId="ce60-8109-69c9-3908" type="rule"/>
+            <infoLink id="6122-a60d-e02d-3566" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
+            <infoLink id="4e10-84f2-eb42-a18d" name="Heavy" hidden="false" targetId="1e77-6974-cf90-6008" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="6a04-7100-c80f-e456" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ecf8-7dac-ea4e-66fa" name="Arbites R-VR Cyber Mastiff" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="1f69-30b1-8d18-2805" name="R-VR Cyber Mastiff" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f2ca-adb0-6eb-859a" name="Beast" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Other than the Gather Evidence mission action, this operative cannot perform mission actions and cannot be equipped with equipment.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d906-34ba-ffbe-813" name="Apprehend (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative within this operative&apos;s Engagement Range. That enemy operative suffers D3 mortal wounds, and until it&apos;s no longer within this operative&apos;s Engagement Range, it&apos;s apprehended. Each time an apprehended enemy operative would perform a Fall Back action, your opponent must roll one D6, adding 1 to the result for each wound it has remaining that&apos;s greater than this operative&apos;s remaining wounds. If the result is less than this operative&apos;s remaining wounds, that enemy operative cannot perform that action (the action points are refunded).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="4b4c-bc80-6fc4-fda0" name="Mechanical bite" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67c9-aa43-1118-c597" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="143a-1ec-c4f5-344e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9247-d3ae-5cac-a6d2" name="Mechanical bite" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/5</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x" hidden="false" type="rule" id="9733-e43e-b213-b261" targetId="be29-25db-e215-b3b0"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="dcab-fa5e-cd70-6e" name="Arbites Revelatum" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="eb77-30e4-d246-4f5a" name="Revelatum" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1d7c-a055-3076-4b20" name="First in the Field" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">At the end of the Initiative phase of the first Turning Point, if this operative is wholly within your drop zone, it can perform a free Normal Move action as if it can FLY.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e811-eb6f-32ea-2a8c" name="Soulguilt Scan (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative Visible to and within ⬟ of this operative. Until the end of the Turning Point, friendly operatives Visible to and within ⬛ of this operative treat that enemy operative as if it has an Engage order.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="79a1-6bce-82ad-8eb9" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="7f48-ba15-68ff-5137" name="Scoped shotpistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f63f-6388-3255-bb69" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4602-543-202f-9cf1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="118b-292d-d4f0-c420" name="⌖ Scoped shotpistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/1</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1f64-e969-fd56-ad34" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
+            <infoLink id="8bb4-a9f3-492b-85bf" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3aae-687-a7c1-3b37" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="31d0-3e6c-ad60-d40a" name="Arbites Subductor" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="4a8c-3050-c78e-2e58" name="Subductor" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bbde-e9e0-b6f1-e29d" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="678c-5877-f629-7ae0" name="Shock maul &amp; assault shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ac6-3112-d5fa-849b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea64-bce0-3738-e56a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="dfab-b091-a4d4-177a" name="⚔ Shock maul &amp; assault shield" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/4</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Repress*, Shield*</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Stun</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="227e-ec9a-e422-9af7" name="*Repress" hidden="false" targetId="d262-1668-3a65-4e7f" type="profile"/>
+            <infoLink id="2780-ac22-eac2-d4d0" name="*Shield" hidden="false" targetId="06f6-a6c4-d1f6-7872" type="profile"/>
+            <infoLink id="6aed-b117-f42-95c3" name="Stun" hidden="false" targetId="a1e3-4e0b-f7c2-eb59" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e4c-c8c5-d120-b0f7" name="Arbites Vigilant" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="123b-5f96-d048-5417" name="Vigilant" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="50cf-7a3e-c4f9-10c9" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="8d16-f43a-4f8-48ae" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
+        <entryLink id="93ca-e46c-e1a5-b062" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ea-9b10-8fab-970c" name="Arbites Vox-signifier" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="c0f3-ce87-f526-254a" name="Vigilant" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3dd7-46ab-139-5f58" name="Precinct Vox-relay (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly EXACTION SQUAD operative (excluding R-VR CYBER-MASTIFF operatives) Visible to this operative. Add 1 to its APL This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b224-822c-ee4f-bfda" name="Ruthless Efficiency" hidden="false" targetId="1875-8a09-660c-c779" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="585d-5b0e-7806-4b52" name="Repression baton" hidden="false" collective="false" import="true" targetId="ebd6-5456-22b1-0997" type="selectionEntry"/>
+        <entryLink id="4e92-8675-6d04-7f16" name="Combat shotgun" hidden="false" collective="false" import="true" targetId="ce12-747d-e650-b563" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -1709,4 +1372,380 @@ Each time a friendly operative with this ability makes a shooting attack with a 
       </characteristics>
     </profile>
   </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Arbites Castigator" hidden="false" type="selectionEntry" id="8a0f-3300-4c9f-f0e8" targetId="bfc5-d389-8c89-9820">
+      <entryLinks>
+        <entryLink id="7011-f5e4-c4bb-ee08" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="448e-30dd-13f-9fa0" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+        <entryLink id="2851-d66c-4202-3c88" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
+        <entryLink id="9ee6-e803-b85a-8b70" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="a5a9-1deb-9030-23bf" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="79c3-6a8a-479-aae4" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="d6ff-4e19-62e0-b9f2" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="e881-6b7b-47bc-2e7f" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="f871-d595-c986-5ab4" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="2fda-dbc-5e82-b32e" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="d4d4-3fb-87c4-6f7e" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="82fc-8846-acd9-a30f" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="5f97-6770-7c75-89d2" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="6a6-6c58-80bf-55fb" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="ae44-7bba-a842-f562" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="3969-8fee-32ae-d6ac" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="e2cb-d101-50fa-5660" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="2b47-ebde-3965-d332" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="b504-631b-8460-55e9" primary="false" name="Imperium"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="cad7-8316-a7f8-db6d" primary="true" name="Operative"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="8b4b-1356-8e66-f09" primary="false" name="Arbites"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="9eaa-945e-8785-76be" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="52f3-8710-5b77-4269" id="c630-18a6-36c2-802f" primary="false" name="Castigator"/>
+        <categoryLink targetId="2340-12c8-a052-142e" id="4404-f817-45cd-9005" primary="false" name="EXACTION SQUAD"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites Chirurgant" hidden="false" type="selectionEntry" id="7484-8a84-80cb-9173" targetId="74ac-d4e6-fd9a-fd8a">
+      <entryLinks>
+        <entryLink id="257c-5868-7b22-c87a" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="1a80-80ac-6996-e467" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="1afe-5fdc-440e-6cc1" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="d1ee-328f-a4b0-6868" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="35c4-a8fd-da22-c7eb" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="ca7b-e668-7dda-12bf" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="3688-82bd-26a8-16c7" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="de02-a472-e2d5-1a52" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="5e9d-a6ec-efb3-3070" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="c233-330b-203-2a5f" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="b493-dce0-d23c-8fc4" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="3b9e-b237-b9bd-8cf7" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="5953-9f02-c45-3c20" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="2884-d7d2-5748-1797" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="14d1-dd51-fa37-8e14" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="d648-77f4-76ce-91af" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="cbe4-8add-7dbc-eb9e" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
+        <entryLink id="88b7-d1ba-a835-108a" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="aeee-cfca-8def-a88d" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="48c8-d8a4-ef29-a33f" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="5def-ce28-8241-779b" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="4c2c-be1e-e30-ccac" primary="false" name="Arbites"/>
+        <categoryLink targetId="2340-12c8-a052-142e" id="a939-2463-47ce-8dd8" primary="false" name="EXACTION SQUAD"/>
+        <categoryLink targetId="7b50-67f3-134a-044a" id="36b1-6380-3f0-4114" primary="false" name="Chirurgant"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites Gunner" hidden="false" type="selectionEntry" id="c7cf-affe-56ad-eba4" targetId="1111-cee5-3499-b0a4">
+      <entryLinks>
+        <entryLink id="61a7-311b-a2b7-1930" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="1818-131-14fd-e8d1" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="c6f2-d6d3-2af6-a577" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="f40-7d0c-1c1-26b7" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="cbf2-36f3-fe03-e959" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="b872-143f-4533-b0fa" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="cffc-1d40-9215-cc83" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="fc72-2566-148-9657" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="4d5a-5d92-ba84-8dde" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="204c-273a-bad0-7ddf" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="a3ca-2228-314a-3962" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="a3a3-d3cb-331d-cfa9" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="340c-4440-5848-d866" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="b145-da2-166-e1e2" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="5e03-1042-6348-d7c3" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="585-634f-e7a9-f2e6" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="c80c-ca25-68b1-5737" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
+        <entryLink id="c4d6-605a-67bf-e363" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="f9b1-ef71-a903-e97f" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="8387-2812-127a-c1bb" primary="false" name="Imperium"/>
+        <categoryLink targetId="ee8c-cc44-acc3-40f0" id="e80-2db7-9713-4831" primary="false" name="Gunner"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="fa97-40a2-6d4a-b214" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="530b-806-af82-b057" primary="false" name="Arbites"/>
+        <categoryLink targetId="2340-12c8-a052-142e" id="4bc1-3a3a-6f26-aa8f" primary="false" name="EXACTION SQUAD"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites Leashmaster" hidden="false" type="selectionEntry" id="9485-1be1-7848-a0cc" targetId="852e-114a-85d-7e18">
+      <entryLinks>
+        <entryLink id="e5e8-ace3-1876-d59c" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="c5a1-8967-2015-5ccc" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="c15c-5c65-d1f3-3bad" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="670d-70c9-a947-1264" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="d238-981f-39fd-c584" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="1f2c-5999-5106-5767" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="a030-150a-34b3-2f21" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="6201-102f-792-cf86" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="874e-8d54-bab8-dc98" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="bc0a-d4ad-2ca6-bf91" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="1564-7668-e2c7-a7dd" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="9166-5abf-4e1-38e6" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="d4b5-ebd0-d1ba-d47f" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="d3b-b980-952e-d1e2" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="34ac-e541-54e4-217c" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="bf6e-cc37-22f9-39cb" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="845f-5b57-93ca-d5e6" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
+        <entryLink id="9965-7322-c8e8-46f0" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="5898-c99d-5d8-c2b5" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="2eee-e0a8-4182-863f" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="6bd1-8770-3c36-714a" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="1875-5f1b-f5af-4a76" primary="false" name="Arbites"/>
+        <categoryLink targetId="2340-12c8-a052-142e" id="4577-a1b9-51ff-2856" primary="false" name="EXACTION SQUAD"/>
+        <categoryLink targetId="3b56-8e29-78cb-f7a4" id="a0d1-b312-b429-183d" primary="false" name="Leashmaster"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites Malocator" hidden="false" type="selectionEntry" id="fbfc-ad40-40a1-3f3b" targetId="5093-89be-f8f2-66df">
+      <entryLinks>
+        <entryLink id="6282-389f-277-61f8" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="3587-d98f-b0f7-8858" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="fef7-77e8-b12e-cbe2" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="56e-7d0-7665-5694" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="4ee5-3288-fb6e-3083" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="60ee-7821-8bb6-adbf" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="40a2-ab5c-63ae-69ea" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="cf1d-898c-6e30-a139" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="c36f-c802-479f-9123" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="bfef-57a1-e33b-75ec" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="b7a9-c583-9ae1-434e" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="6a64-6dc-c64-d59e" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="79b6-f0b8-4e47-9fed" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="269c-3665-1b00-276d" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="f4e9-cdd5-f6c5-9119" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="7f32-30df-ea67-4b2c" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="c250-7771-858c-7cde" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
+        <entryLink id="4fde-de81-73a-85b7" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="fd16-3c04-8566-1650" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="939e-c261-d87a-84b0" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="cbe5-6e90-7642-86da" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="42a-db42-db66-d64c" primary="false" name="Arbites"/>
+        <categoryLink targetId="2340-12c8-a052-142e" id="b25-511a-c22d-6575" primary="false" name="EXACTION SQUAD"/>
+        <categoryLink targetId="bd36-7f72-a1ef-ce74" id="8bfa-2f4a-7404-f65e" primary="false" name="Malocator"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites Marksman" hidden="false" type="selectionEntry" id="971-e00-2ffe-c17f" targetId="1548-cf2c-f1fb-dbdb">
+      <entryLinks>
+        <entryLink id="1e06-a0fa-261f-7bcc" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="d5b3-8076-fb0c-9132" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="f8d6-b315-106f-4382" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="74de-500a-22b5-d34b" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="acb5-1b3d-3e43-c69b" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="d76b-2660-2a63-e18d" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="4bd9-aeeb-a32-4471" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="d6a1-b0fc-643c-ecd8" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="c5d7-e4b5-ce1e-ff09" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="daa0-4174-308a-6e67" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
+        <entryLink id="4a63-b279-73ef-5ee9" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="bf3f-eb1f-84c0-9082" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="26f7-c245-ee63-3a1d" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="21cb-157f-fe1a-10a" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="42c8-1c2d-5bbe-bbb9" primary="false" name="Arbites"/>
+        <categoryLink targetId="2340-12c8-a052-142e" id="bcd6-d7da-68b2-fda5" primary="false" name="EXACTION SQUAD"/>
+        <categoryLink targetId="7fc0-8607-697d-74d5" id="7cb4-e1bf-2845-8197" primary="false" name="Marksman"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites R-VR Cyber Mastiff" hidden="false" type="selectionEntry" id="cfc2-79f7-b40b-1f59" targetId="ecf8-7dac-ea4e-66fa">
+      <entryLinks>
+        <entryLink id="dec1-329d-6808-5c12" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="4b75-77d1-180f-5c8b" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="ec69-6c75-d728-4929" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="dbd9-ee10-6505-a4a5" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="1ba2-8190-84ca-2b04" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="cfcf-5729-fde-c8aa" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="acb4-3e48-3e5c-37c2" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="e597-ac6e-57bd-4631" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="f554-f819-62b7-4608" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e08c-f717-43b4-66ff" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="a674-a614-5f1a-8da9" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="b7d1-90bb-c2c9-96" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="2916-9fee-dbc0-1e1e" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="54e3-91e2-3ce8-8c1d" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="a8e4-9137-605c-7372" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="538a-cbc1-c736-4d03" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="98a0-1ec8-7468-67a8" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="5250-745b-9d2e-a3a6" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="9cb1-7307-9aea-e88c" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="8fb6-58e4-223b-f4d1" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="2340-12c8-a052-142e" id="ba42-876-8861-2c4" primary="false" name="EXACTION SQUAD"/>
+        <categoryLink targetId="045f-1f64-cccc-7ff5" id="7ad8-eac1-6e4e-81b7" primary="false" name="R-VR Cyber Mastiff"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites Revelatum" hidden="false" type="selectionEntry" id="a374-72e2-bb6b-6c6a" targetId="dcab-fa5e-cd70-6e">
+      <entryLinks>
+        <entryLink id="4918-fba9-868c-d4e8" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="9669-7721-adcc-32f1" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="d26-14ec-bd09-4819" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="d07d-297e-6c51-df60" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="f4c7-78b9-a803-2fd5" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="4ba7-5d39-5fba-d1ff" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="88e4-3aef-5bc6-9c3f" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="a032-9f3-a7ef-4b4f" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="2ede-b191-f89-62ee" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="bbb8-a895-414-dd47" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
+        <entryLink id="7585-d9e3-99d7-ec6e" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="dcba-1c8c-8037-19b6" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="bd29-793-7778-8f6b" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="6c33-2c88-499c-a69a" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="6883-e787-b08f-5593" primary="false" name="Arbites"/>
+        <categoryLink targetId="2340-12c8-a052-142e" id="ca76-ce8a-6a0a-4780" primary="false" name="EXACTION SQUAD"/>
+        <categoryLink targetId="0151-5f39-3ada-406a" id="f72a-7006-27d8-75f8" primary="false" name="Revelatum"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites Subductor" hidden="false" type="selectionEntry" id="627e-ff30-5523-c288" targetId="31d0-3e6c-ad60-d40a">
+      <entryLinks>
+        <entryLink id="497d-ed3a-9210-57c7" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="4af-b37d-f46-642c" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="f03c-9b80-aa78-ad45" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="1ef-8978-4b19-dd5" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="6e60-2818-2d69-f849" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="858b-15fe-160e-ce6" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="18c7-bab4-1b5e-4765" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="b3-e790-74d3-e002" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="ee19-3879-1f7-77e1" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="5a72-f35f-7347-1df5" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="56be-65bd-4ccd-f6fe" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="c579-9e20-fadc-4db0" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="1b1d-fce2-88d5-9ee1" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="9e60-8825-b975-683b" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="6861-a86-5184-c726" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="a1ad-748b-c841-2228" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="18bd-afa5-305-1b28" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
+        <entryLink id="9501-f75a-594-65db" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="4631-6163-d356-bd9b" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="7d2-fec3-f863-7b12" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="ad33-7a53-7529-dc4b" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="850c-1753-202a-bb4d" primary="false" name="Arbites"/>
+        <categoryLink targetId="2340-12c8-a052-142e" id="1377-5346-8a82-bc3f" primary="false" name="EXACTION SQUAD"/>
+        <categoryLink targetId="5f5a-816b-ac62-bf83" id="8068-73a5-6dd5-4d22" primary="false" name="Subductor"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites Vigilant" hidden="false" type="selectionEntry" id="dc70-205e-5a91-ac71" targetId="8e4c-c8c5-d120-b0f7">
+      <entryLinks>
+        <entryLink id="15a0-86cb-20af-e3d2" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="760f-8763-8dd-ae0f" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="850-93f9-7652-a44" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="c5bc-4f09-ed0a-cdd" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="1287-4bd6-6477-f54a" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="8537-1e7d-5fd1-a829" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="612-7a4b-27d-39f3" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="d242-e30a-144c-ab1d" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="4b0f-3701-79f0-4597" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="a5e-da3b-3569-ca86" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="d017-9ca8-b2f9-4def" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="5a27-21b5-dfae-ab32" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="2862-91ec-bd5a-40bb" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="2ccb-1605-3c38-5417" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="b909-7bb5-7806-353" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="8557-1f6d-e122-fc21" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="7f88-a609-65e2-fc25" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
+        <entryLink id="41f5-42aa-775f-c823" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="6c4c-21c2-dbcc-5c52" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="cde-2f97-5530-6e32" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="4fb-5060-b959-175f" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="d8c2-482e-a5b2-2bd6" primary="false" name="Arbites"/>
+        <categoryLink targetId="2340-12c8-a052-142e" id="2d59-a634-a48b-46dc" primary="false" name="EXACTION SQUAD"/>
+        <categoryLink targetId="d537-9cb6-ba03-5162" id="91c6-edbe-9355-6cce" primary="false" name="Vigilant"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arbites Vox-signifier" hidden="false" type="selectionEntry" id="eab6-b85f-8ad4-3cba" targetId="ea-9b10-8fab-970c">
+      <entryLinks>
+        <entryLink id="d076-8c4e-c5f8-cb07" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="3215-ff2b-f4a8-73dc" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9708-1b6f-629d-18a1" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="f8d8-f8dc-4c3-8f29" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="df9-36f3-44f7-68f9" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="cc44-ff63-f9dd-f419" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="47b8-1720-82cb-eec4" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="41d4-ae9b-ea80-d3f7" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="9795-6bf9-5e1b-a6f" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="ad70-224b-68ee-dcc3" name="Exaction 3 - Rigid Determination" hidden="false" collective="false" import="true" targetId="f802-9391-ba07-273c" type="selectionEntry"/>
+            <entryLink id="80a0-814a-233d-fceb" name="Exaction 2 - Precinct Champion" hidden="false" collective="false" import="true" targetId="39d2-b813-5154-8778" type="selectionEntry"/>
+            <entryLink id="f89f-791-b119-dad4" name="Exaction 5 - Judicious Efficiency" hidden="false" collective="false" import="true" targetId="3bb5-0067-8b7d-74b7" type="selectionEntry"/>
+            <entryLink id="2f6d-aa26-d7a4-4e5" name="Exaction 6 - Priority Endowment" hidden="false" collective="false" import="true" targetId="8930-f16c-39b6-7bcc" type="selectionEntry"/>
+            <entryLink id="36a6-efa3-e15e-cbe3" name="Exaction 4 - No Lenience" hidden="false" collective="false" import="true" targetId="dd1d-be73-59b6-7fe8" type="selectionEntry"/>
+            <entryLink id="e14e-7077-3407-b23c" name="Exaction 1 - Obstinate" hidden="false" collective="false" import="true" targetId="96a3-56f0-c7a2-8efb" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="3f12-798-fffb-9a4d" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="ef0e-bd5e-92d1-c130" name="Equipment" hidden="false" collective="false" import="true" targetId="c248-f23b-f5b4-70c1" type="selectionEntryGroup"/>
+        <entryLink id="4fa3-9256-ff37-9a92" name="Specialism" hidden="false" collective="false" import="true" targetId="a846-2029-ac45-9630" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="9372-f55a-2595-ee3d" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="4e99-bd01-9269-a75c" primary="false" name="Imperium"/>
+        <categoryLink targetId="314e-1833-e85a-2256" id="9737-995b-fdc8-c8b2" primary="false" name="Adeptus Arbites"/>
+        <categoryLink targetId="7f93-bd9f-2338-8268" id="6b7e-cf96-eba5-b457" primary="false" name="Arbites"/>
+        <categoryLink targetId="2340-12c8-a052-142e" id="ef20-8e6e-63ea-cef8" primary="false" name="EXACTION SQUAD"/>
+        <categoryLink targetId="53b7-e174-1b8c-859a" id="2f00-ccdc-76a7-8514" primary="false" name="Vox-signifier"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>

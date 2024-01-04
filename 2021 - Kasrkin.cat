@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="13e2-04bc-4cc1-0c53" name="Kasrkin" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="13e2-04bc-4cc1-0c53" name="Kasrkin" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a241-be0f-4dae-b452" name="KASRKIN" hidden="false"/>
     <categoryEntry id="d954-d36e-32d4-e53e" name="Kasrkin Sergeant" hidden="false"/>
@@ -66,10 +66,17 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="13e2-04bc-4cc1-0c53" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="d2ce-dbd0-1d89-acf9" name="Sergeant" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="d2ce-dbd0-1d89-acf9" name="Kasrkin Sergeant" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="0fe9-7b4b-4ec7-7cc6" name="Sergeant" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
           <characteristics>
@@ -264,769 +271,6 @@
             <entryLink id="fc24-6e4f-4f8e-f79e" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
             <entryLink id="f459-4e85-46cb-9c9b" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
             <entryLink id="833b-126f-4589-45b4" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="bf57-da56-78d1-7341" name="Combat Medic" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="3ef5-fcfb-7257-4274" name="Combat Medic" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3978-917e-d8e2-d000" name="Medic!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, the first time another friendly KASRKIN operative would be incapacitated while Visible to and within ⬛ of this operative and not within Engagement Range of an enemy operative, if this operative is not within Engagement Range of an enemy operative, this operative can revive it. That friendly operative is not incapacitated, has 1 wound remaining, and if it was a shooting attack, any remaining attack dice are discarded. That friendly operative can then perform a free Dash action, but must finish that move within ▲ of this operative. Subtract 1 from both operative&apos;s APL.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d8e6-2a85-ece8-7ce3" name="Combat Stimms (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly KASRKIN operative Visible to and within ▲ of this operative. That friendly operative regains 2D3 lost wounds. An operative cannot be selected for this action if it was revived using the Medic! ability during the same Turning Point. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="ed50-f25a-f00b-7e8f" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="9058-8ba9-f24d-aad9" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="b12d-2e8b-20a2-9ba9" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
-        <categoryLink id="0292-d0fd-c8d9-5795" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="88ac-b6f5-0f43-d4a9" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
-        <categoryLink id="0528-df30-b20f-3ddd" name="Medic" hidden="false" targetId="8e1d-1094-f504-d8cd" primary="false"/>
-        <categoryLink id="a746-143c-340d-5f2a" name="Kasrkin Combat Medic" hidden="false" targetId="7c43-3a9c-461c-7ea8" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="8980-320b-5cf1-be70" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="8b22-490d-331b-e9d9" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="e3d7-9fe8-8af4-3a6f" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="0e91-a2f7-e38e-d57c" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="42a2-9eb5-e639-5eeb" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="b341-bfdd-8f5f-effd" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="b04d-1a69-01d1-28d8" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="85a7-b651-e617-2175" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="a663-e669-5198-7152" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="1b48-2a0a-2d51-1b23" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
-        <entryLink id="3de9-0d62-9d98-fd58" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
-        <entryLink id="0a0c-d7d7-e78f-d8f1" name="Hot-shot lasgun" hidden="false" collective="false" import="true" targetId="c211-3124-6df0-a1c6" type="selectionEntry"/>
-        <entryLink id="d96e-17b4-ba3e-1d11" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
-        <entryLink id="f1b8-8274-da68-ca2e" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="525d-4878-7b00-3c00" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="9e1d-124d-8629-34b3" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="9158-24a8-aeb4-7c02" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="19f0-4f57-e7bc-bfc8" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="45d8-4621-1a2b-7ea0" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="8f1d-2451-a11a-060a" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1a30-4186-9653-a6df" name="Demo-Trooper" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="8633-078e-05e0-11a6" name="Demo-Trooper" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">9</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="524a-2fc0-3e58-2799" name="Blast Padding" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time a shooting attack is made against this operative, if theranged weapon has the Blast special rule, or makes a shooting attack against each operative within range of a specified point (e.g. melta mine), in the Roll Defence Dice step of that shooting attack, you can re-roll any or all of your defence dice. In addition, this operative is unaffected by the Splash X critical hit rule, unless it is selected as the target of the shooting attack.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="eb26-9e3f-9019-25f4" name="Plant Melta Mine (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Place your Melta Mine token within ▲ of this operative and more than ⬤ from any enemy operatives. This operative can only perform this action once, and cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="d406-b7a1-65ce-dca3" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="1073-0863-25bc-6baa" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="7e45-2ef5-1a70-5676" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
-        <categoryLink id="35e9-3f2c-26ab-b729" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="654e-0d03-c9df-9f12" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
-        <categoryLink id="ed0a-3267-2f4c-6e92" name="Kasrkin Demo-Trooper" hidden="false" targetId="a7df-0dbc-9cb7-3bcf" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="8969-e9cc-1b64-9808" name="Melta mine" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e36-1c6c-4425-849c" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="046b-f746-8115-c25a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="8759-4970-0954-bde6" name="⌖ Melta mine" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/2</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP2, Proximity*</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW3</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="79bd-ba50-a1e8-e0e7" name="*Proximity" hidden="false">
-              <description>The first time an enemy operative moves within ⬤ of this operative&apos;s Melta Mine token, make a shooting attack against each operative within ⬤ of that token with this weapon (even if this operative is not in the killzone). When making those attacks, those operatives are always valid targets and cannot be in Cover. At the end of those shooting attacks, remove that token. An operative cannot make a shooting attack with this weapon by any other means, or if its Melta Mine token is not in the killzone.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="35f5-1450-eace-cc31" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
-            <infoLink id="c733-cca1-fb22-dcfd" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="55c9-7ee3-6243-629e" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="58be-ec81-27fc-76d8" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="7a32-ea0d-979e-ddee" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
-        <entryLink id="e8b4-2706-88f3-b52a" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
-        <entryLink id="935c-0337-e64c-de55" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
-        <entryLink id="ea20-78c8-b1c3-349d" name="Hot-shot laspistol" hidden="false" collective="false" import="true" targetId="811d-e628-8683-e222" type="selectionEntry"/>
-        <entryLink id="32d2-7736-a3b1-401b" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="8b14-52d1-5010-fb84" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="7867-b227-69a4-3b20" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="7684-1fed-2a89-f775" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="9a40-d5a6-432e-d04d" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="2410-f3b5-b210-255e" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="aad2-8e51-26af-4ec0" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="18ce-d0bb-6887-81f0" name="Gunner w/ plasma gun" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="dae0-4115-4121-5671" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
-        <infoLink name="Gunner" hidden="false" type="profile" id="81c8-54d8-b951-7df3" targetId="6e17-d40-8e98-e133"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="5e85-e5db-ce04-5ce6" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="96c0-7b1f-b151-8607" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
-        <categoryLink id="5b18-00d5-1c22-60ff" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="da66-bac2-9064-e760" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
-        <categoryLink id="f183-5ede-306b-87cc" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="c33b-f4c6-4dbb-b8f8" name="Plasma gun" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb8a-d772-72c3-b602" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a39-e1a3-8524-1756" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="ea17-29bb-e1f0-34f6" name="⌖ Plasma gun - Standard" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="544c-1f8a-c687-f640" name="⌖ Plasma gun - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP2, Hot</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="d134-c2c2-290b-a38d" name="⌖ Plasma gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">-</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">-</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">-</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="9629-f607-b6ac-8a17" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
-            <infoLink id="c46d-6a62-7244-80fa" name="Hot" hidden="false" targetId="83c3-fce7-8ac1-9872" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="7f60-2a2c-a5b0-e3e4" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
-        <entryLink id="8d45-6de7-4242-5d86" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="4b2f-f52a-554b-34b6" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="b2ba-cea6-9e09-4285" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
-        <entryLink id="d91a-a932-15f2-b2ba" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
-        <entryLink id="a51a-7535-51e8-7e21" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="faf6-78ae-bf3a-7ae3" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="f70a-6fc0-2ea7-d2a0" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="39a7-52ce-4ee4-7b35" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="30d4-4eaa-733b-f395" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="140d-896f-54ed-6bfe" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="756b-2dd4-4704-8516" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="758a-a763-8d1e-0eb6" name="Gunner w/ hot-shot volley gun" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="3d7a-3e08-0f56-dc3a" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
-        <infoLink name="Gunner" hidden="false" type="profile" id="61df-d9ed-265a-6d24" targetId="6e17-d40-8e98-e133"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="16ef-e387-a75f-587d" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="f7e0-7fb3-d2ac-64f7" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
-        <categoryLink id="d39d-32d9-74ed-a4f1" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="07d7-1708-3d55-0051" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
-        <categoryLink id="efdd-ba7d-79ce-8eb4" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="470d-bc7d-f1f9-8eb0" name="Hot-shot volley gun" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1639-a6ac-27ce-8135" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f6d-96af-420c-ab24" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="be2f-1727-7625-a031" name="⌖ Hot-shot volley gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Fusillade</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">P1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="82d3-2a94-f98f-058b" name="Fusillade" hidden="false" targetId="e2ae-574a-94ab-3550" type="rule"/>
-            <infoLink id="17bf-a624-43a5-2d64" name="Px" hidden="false" targetId="1f11-c169-2746-13cf" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="45e6-9b9a-6e9f-9c75" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
-        <entryLink id="36e2-6dbf-3b91-b49d" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="9a79-0cd8-2df7-5b3a" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="ea9f-6f2b-2fb6-6ada" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
-        <entryLink id="0ed9-bacc-d9c9-0c45" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
-        <entryLink id="6e47-d275-a820-af34" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="22e7-51d2-df50-bdfc" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="eb94-1e15-bd8a-8426" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="800b-7abb-f46c-1f6f" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="1cae-b32b-abc1-f4b6" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="b695-9be0-76b5-ff02" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="2d02-825b-b039-d278" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="5510-5bef-40c1-537f" name="Gunner w/ grenade launcher" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="82aa-5217-bd05-6bb4" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
-        <infoLink name="Gunner" hidden="false" type="profile" id="328a-5fa8-2680-ce89" targetId="6e17-d40-8e98-e133"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="9680-3529-1de1-40e4" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="672c-12d6-2f77-5120" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
-        <categoryLink id="cd6f-2994-e1c1-f1e3" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="97be-98cc-ef6a-7547" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
-        <categoryLink id="91c1-30cf-368a-092c" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5093-4ce7-7f38-d8e7" name="Grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f251-73f5-b8f2-e3a3" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bd7-bd24-6d95-b2c0" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="f767-15c8-1879-ea4e" name="⌖ Grenade launcher" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">-</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">-</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">-</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="1fcf-177f-c11a-436c" name="⌖ Grenade launcher - Frag" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/4</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Blast ⬤</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="5e96-379e-36d4-13ca" name="⌖ Grenade launcher - Krak" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="37fc-e3ee-a6dd-8246" name="Blast x" hidden="false" targetId="d848-be09-6d6d-4708" type="rule"/>
-            <infoLink id="16b6-19f6-d2ff-cddb" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="5200-3f0b-c70c-2cec" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
-        <entryLink id="74d2-5d07-a8ab-4ed7" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="533b-6342-c148-2bbc" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="9525-f2b2-90f3-bdf9" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
-        <entryLink id="aa6d-6f93-fae0-60ef" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
-        <entryLink id="0c72-60c5-1091-42e6" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="3a99-7e9f-ae6b-04b2" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="354c-a401-0497-4a6a" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="be3a-ab1a-16cd-422f" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="2ae5-833a-3077-c65b" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="750b-a9df-bd7a-636b" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="1770-95f6-f916-ab60" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="dd64-d3f0-def7-d9de" name="Gunner w/ flamer" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="1c0a-e67e-7523-4605" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
-        <infoLink name="Gunner" hidden="false" type="profile" id="f6ee-b224-10bd-e66b" targetId="6e17-d40-8e98-e133"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="47b6-260f-9031-28bd" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="0972-3a0f-a775-a22d" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
-        <categoryLink id="429c-f77a-df8a-e785" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="750e-b635-d388-57e7" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
-        <categoryLink id="09bc-89d7-9e06-694b" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="2db9-fba1-1110-6b73" name="Flamer" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59ef-6cb1-71bd-88d9" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b13f-24d4-bcd6-5031" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4085-aa2f-83dd-58dc" name="⌖ Flamer" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/2</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Torrent ⬤</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="252b-3d48-cdae-600b" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
-            <infoLink id="6392-a14f-b028-928b" name="Torrent x" hidden="false" targetId="ec4b-2d70-51a7-5653" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="5d61-2a9c-b0f1-d3fa" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
-        <entryLink id="1a84-3331-46dc-65d6" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="14d6-ef06-fbff-bbd6" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="b044-5e20-de32-e56d" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
-        <entryLink id="a5ec-1157-d0fd-4a51" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
-        <entryLink id="e759-3e25-d3a8-8fa7" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="80f8-f984-ac41-6a8c" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="b007-d1a1-7d71-355e" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="4bc4-f71c-9ad1-e153" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="b6af-281a-afcf-83d9" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="ce61-7909-eeac-285f" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="63b5-b56b-5404-1c52" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="15cf-e553-3fee-d767" name="Gunner w/ meltagun" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="6cb6-7af4-14fd-1e8a" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
-        <infoLink name="Gunner" hidden="false" type="profile" id="5314-f975-956f-2ba1" targetId="6e17-d40-8e98-e133"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="4b91-0ff6-c742-c83b" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="db89-17d0-5c76-997c" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
-        <categoryLink id="f083-6fc1-e690-35f6" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="a386-45dd-1b2c-1370" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
-        <categoryLink id="8722-7e9b-13f2-b611" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="e55f-5cdc-1aea-31bc" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56ae-5ab8-207e-8f69" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0459-ab38-82f7-3658" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="c855-a436-aaa1-f569" name="⌖ Meltagun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">6/3</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP2</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW4</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="e322-6ac3-9def-091a" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
-            <infoLink id="49bf-58f0-59b8-0eb0" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
-            <infoLink id="172d-f2ee-b388-7f95" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="9939-f852-6323-487e" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
-        <entryLink id="c54a-5654-94e8-c1a2" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="ca49-f61e-ed36-9785" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="7e37-a82a-0546-a9b8" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
-        <entryLink id="c362-a860-40c9-0dc4" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
-        <entryLink id="46a4-4247-2719-c525" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="3d58-2186-ce06-2aa5" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="7f98-3316-70da-910d" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="45ec-668b-ca3d-ad28" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="aaf5-40e4-cca6-8cbb" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="479f-00b9-5b01-96c7" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="79f9-b4bf-e0a0-6e91" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="84b5-bd69-a090-0483" name="Recon-Trooper" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="13f0-213b-a90a-7ce9" name="Recon-Trooper" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c028-06b4-b05f-0542" name="Reconnoitre Killzone" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">In the Scouting step, after resolving your selection, you can resolve an additional Recon option (even if you have already selected that option). Initiative is still determined by your original selection. If both players have this or a similar ability, the Defender resolves this ability first.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="76dd-4a9c-2d71-f9a0" name="Warden Auspex (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative. Until the end of the Turning Point, each time a friendly KASRKIN operative makes a shooting attack, that enemy operative is not Obscured. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="7026-c9c6-c410-30b2" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="a690-4189-33e0-2701" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="0f08-dfbb-18f5-d27c" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
-        <categoryLink id="226d-33fa-3b33-6571" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="53fd-45d2-26a4-3a50" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
-        <categoryLink id="3531-2bee-1987-dc8e" name="Kasrkin Recon-Trooper" hidden="false" targetId="d200-c6e2-6570-55a4" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="a5c5-be10-138b-c4e5" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="a451-188d-af0a-c0a6" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="7460-b463-eef5-8ea5" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
-        <entryLink id="2e0c-5a7d-d65e-fcb0" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
-        <entryLink id="bcf5-d4cd-fee0-5241" name="Hot-shot lasgun" hidden="false" collective="false" import="true" targetId="c211-3124-6df0-a1c6" type="selectionEntry"/>
-        <entryLink id="487d-0c74-967c-d62e" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
-        <entryLink id="bb91-39b9-d61d-152e" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="8e17-7a17-7277-0f5e" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="d064-83c6-7fe6-5cd1" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="8f6a-4370-816d-04c4" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="0374-7035-9536-e685" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="daac-19bc-e62e-0187" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="b15e-1ca9-6a3a-7da3" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="546c-3cf3-4bb8-7801" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="f73d-4db8-d2af-db51" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="5b1f-4f2b-e1e4-030e" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="5835-fe34-0689-94d7" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="c2db-83c8-5275-479f" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="291e-e4da-6902-61f0" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="dda5-7ca7-3a25-a5df" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="dc8d-bbb2-ba4c-5361" name="Trooper" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="f884-0b56-2f17-d18c" name="Trooper" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="45fe-b357-b2f1-b369" name="Elite Trooper" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative makes a shooting attack, you can spend one Elite point for free during that shooting attack (even if you don&apos;t have any in your pool).</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="751c-c7a4-9452-c979" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="4221-15f7-5cf9-71e8" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="eaf4-1ea6-d537-3146" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
-        <categoryLink id="5dab-73ab-c9ae-77d2" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="66f0-8071-c9b3-5289" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
-        <categoryLink id="51fa-e4d2-a2c9-7053" name="Kasrkin Trooper" hidden="false" targetId="c613-8f8e-4471-34c6" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="f7da-1d56-58c2-6f70" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="e74c-3443-1082-2eb9" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="c4e1-6904-ad8e-24bd" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
-        <entryLink id="e26a-fea0-9ad7-0084" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
-        <entryLink id="993d-8518-ab05-283c" name="Hot-shot lasgun" hidden="false" collective="false" import="true" targetId="c211-3124-6df0-a1c6" type="selectionEntry"/>
-        <entryLink id="1a3a-9a15-f13f-e779" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
-        <entryLink id="93d8-30b3-4540-d40f" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="b352-e76d-3a57-3210" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="6e7e-a87b-1df8-d5c3" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="e5de-5b92-a6d5-baaf" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="43ab-1200-60a7-2db1" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="af63-d5ff-5d39-7e3d" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="ff19-ce83-0989-87fe" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="c019-a373-b7e6-0bac" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="7360-3578-2c2f-7a87" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="9f9f-a4ff-fc04-17a4" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="200a-8f12-2aae-68d6" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="ff65-69b1-9b8c-158f" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="3fde-2d25-d67d-efbf" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="546f-7a33-fc30-d8f4" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4361-0c56-182a-57f7" name="Sharpshooter" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="0cf1-9858-8903-9ae4" name="Sharpshooter" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="bb93-a5f4-0d88-9f3d" name="Camo Cloak" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time a shooting attack is made against this operative, in the Roll Defence Dice step of that shooting attack, before rolling your defence dice, if it is in Cover, one additional dice can be retained as a successful normal save as a result of Cover.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="5086-18a1-e5ea-505d" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="596a-cb10-ce22-c590" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="6fc6-a3a5-8c96-9a07" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
-        <categoryLink id="52eb-1318-07a9-4c48" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="e1dd-b98e-19db-7bae" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
-        <categoryLink id="9369-bf1c-5383-5743" name="Kasrkin Sharpshooter" hidden="false" targetId="edd9-40f5-94a6-9049" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="aa0a-c601-2acb-2244" name="Hot-shot marksman rifle" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a281-1283-c27f-b586" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b0b-7ee3-f6a3-832d" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="91c6-dc1b-7939-411d" name="⌖ Hot-shot marksman rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">-</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">-</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">-</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="d16d-0bcb-2094-93da" name="⌖ Hot-shot marksman rifle - Sharpshot" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="00b1-29ef-22cb-95e0" name="⌖ Hot-shot marksman rifle - Snipe" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/3</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Heavy, Silent</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW3</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="fbcd-6be1-e4af-a56c" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
-            <infoLink id="16bb-f0e2-9ee5-f180" name="Heavy" hidden="false" targetId="1e77-6974-cf90-6008" type="rule"/>
-            <infoLink id="0c66-816d-3604-f17c" name="Silent" hidden="false" targetId="ce60-8109-69c9-3908" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="53d1-42b7-eef7-0d14" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="17e4-3161-448f-1de6" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="6929-d312-20d2-5af5" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
-        <entryLink id="11f0-0f1d-21f8-6a12" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
-        <entryLink id="80a6-144f-e1fc-f6ca" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
-        <entryLink id="5e1f-5448-c89b-4910" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="196a-0943-dc00-9fc6" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="91e2-8207-16dd-534b" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="f8d5-636b-3365-5cf8" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="8126-0dc8-f236-1168" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="c87f-17f8-b2b5-9de7" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="0530-7277-7690-e9e4" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="829d-f744-d2b2-9d9f" name="Vox-Trooper" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="6d80-658a-e92d-2818" name="Vox-Trooper" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
-          <characteristics>
-            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
-            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
-            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
-            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
-            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f613-cfdc-d4a1-9a4f" name="Battle Comms (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly KASRKIN operative in the killzone. Add 1 to its APL. This operative can perform this action twice during its activation, but cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="e0a8-5e27-164e-0718" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="273e-2273-d34f-9cae" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
-        <categoryLink id="9409-2b20-c1c7-5f10" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
-        <categoryLink id="8745-485b-47b8-807c" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
-        <categoryLink id="c39e-7c66-cf00-6978" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
-        <categoryLink id="8ea5-36c4-016f-9c77" name="Kasrkin Vox-Trooper" hidden="false" targetId="1505-9bee-8526-0fa1" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="9e03-e86a-7d07-7ac5" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
-        <entryLink id="1b70-9a53-1b23-a186" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
-        <entryLink id="e804-3abc-6f71-93de" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
-        <entryLink id="3073-6b8d-afaa-e596" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
-        <entryLink id="cb36-1071-0e49-f4ce" name="Hot-shot lasgun" hidden="false" collective="false" import="true" targetId="c211-3124-6df0-a1c6" type="selectionEntry"/>
-        <entryLink id="99a5-2b81-ec52-50f3" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
-        <entryLink id="5631-3ef0-8480-17d5" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="5949-6297-93e8-06f8" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="c82a-35ae-fe1f-8912" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="9357-93ca-cff7-8f01" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="ed52-b0fa-e17f-1d6d" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="78dd-2b6d-27c2-78d4" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="68da-f376-731d-7b3e" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="5f5e-0e08-f0c0-15a5" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
-          <entryLinks>
-            <entryLink id="8b74-d13d-1b6e-d393" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
-            <entryLink id="ec40-84d4-055a-08fa" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
-            <entryLink id="f3a5-e301-cb54-7bf8" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
-            <entryLink id="5bcc-bd96-1493-ad53" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
-            <entryLink id="a0ea-89f1-4a6c-de41" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
-            <entryLink id="94ec-203e-7cbc-0ff8" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -1229,6 +473,552 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7a81-7fad-e0a5-5995" name="Kasrkin Combat Medic" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="d2ed-7aa3-bd37-9c86" name="Combat Medic" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1724-7485-dc8d-5d3e" name="Medic!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, the first time another friendly KASRKIN operative would be incapacitated while Visible to and within ⬛ of this operative and not within Engagement Range of an enemy operative, if this operative is not within Engagement Range of an enemy operative, this operative can revive it. That friendly operative is not incapacitated, has 1 wound remaining, and if it was a shooting attack, any remaining attack dice are discarded. That friendly operative can then perform a free Dash action, but must finish that move within ▲ of this operative. Subtract 1 from both operative&apos;s APL.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eee2-356b-4131-477d" name="Combat Stimms (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly KASRKIN operative Visible to and within ▲ of this operative. That friendly operative regains 2D3 lost wounds. An operative cannot be selected for this action if it was revived using the Medic! ability during the same Turning Point. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3afc-3fdc-3f3e-a82a" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="4571-9678-208b-22b7" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
+        <categoryLink id="d638-28d3-e3e1-1e20" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="6a45-c5bb-8459-aa0d" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
+        <categoryLink id="3f31-5405-7df6-5185" name="Medic" hidden="false" targetId="8e1d-1094-f504-d8cd" primary="false"/>
+        <categoryLink id="1b96-7358-7543-a2f5" name="Kasrkin Combat Medic" hidden="false" targetId="7c43-3a9c-461c-7ea8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="33d7-1c43-2f3a-2237" name="Hot-shot lasgun" hidden="false" collective="false" import="true" targetId="c211-3124-6df0-a1c6" type="selectionEntry"/>
+        <entryLink id="8f53-776a-cee1-f9fe" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7e7c-8fc6-cd8e-f542" name="Kasrkin Demo-Trooper" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="de0d-f1ac-bef3-4fb3" name="Demo-Trooper" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">9</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="12b-5c6e-c8f6-db59" name="Blast Padding" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time a shooting attack is made against this operative, if theranged weapon has the Blast special rule, or makes a shooting attack against each operative within range of a specified point (e.g. melta mine), in the Roll Defence Dice step of that shooting attack, you can re-roll any or all of your defence dice. In addition, this operative is unaffected by the Splash X critical hit rule, unless it is selected as the target of the shooting attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f421-be54-59b3-c15b" name="Plant Melta Mine (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Place your Melta Mine token within ▲ of this operative and more than ⬤ from any enemy operatives. This operative can only perform this action once, and cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3436-d5a1-816-ccb0" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="85ce-cac4-1e87-ba44" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
+        <categoryLink id="1856-41a2-7950-9259" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="1401-af46-4d68-e9e7" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
+        <categoryLink id="85ad-cd24-c0bd-6c78" name="Kasrkin Demo-Trooper" hidden="false" targetId="a7df-0dbc-9cb7-3bcf" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b2b3-824e-7de3-5ef0" name="Melta mine" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="182-320d-cc6f-a27a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4b2-57e9-99ce-5535" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8d91-f481-edcf-cc5a" name="⌖ Melta mine" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/2</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP2, Proximity*</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="6098-7304-c7a5-7450" name="*Proximity" hidden="false">
+              <description>The first time an enemy operative moves within ⬤ of this operative&apos;s Melta Mine token, make a shooting attack against each operative within ⬤ of that token with this weapon (even if this operative is not in the killzone). When making those attacks, those operatives are always valid targets and cannot be in Cover. At the end of those shooting attacks, remove that token. An operative cannot make a shooting attack with this weapon by any other means, or if its Melta Mine token is not in the killzone.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="9373-b112-b75c-82eb" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+            <infoLink id="551b-a9a1-43e-eb70" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="ebac-a6db-4bb-3cc4" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
+        <entryLink id="b4e1-469b-cd60-42e9" name="Hot-shot laspistol" hidden="false" collective="false" import="true" targetId="811d-e628-8683-e222" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5a7d-6a80-8043-1fa" name="Kasrkin Gunner w/ flamer" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Gunner" hidden="false" type="profile" id="c231-e35d-c28d-11fd" targetId="6e17-d40-8e98-e133"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f731-2e1f-3b99-93cb" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="6d5a-89d6-29e3-9b84" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
+        <categoryLink id="89f1-ec86-aa0e-5987" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="decf-d5a6-11d6-7e49" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
+        <categoryLink id="9fe3-12e8-af4d-552f" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="fd32-2c1-ec61-b8dc" name="Flamer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d3a-aa31-a7d4-a306" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9fe-7594-7ebd-b4e9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8164-e4bc-3720-2b73" name="⌖ Flamer" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/2</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Torrent ⬤</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="f390-63ca-a7a8-6e06" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+            <infoLink id="f86c-5e3d-bbf4-1e5c" name="Torrent x" hidden="false" targetId="ec4b-2d70-51a7-5653" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3429-3694-ba15-f89d" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="129-fd69-db06-fb72" name="Kasrkin Gunner w/ grenade launcher" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Gunner" hidden="false" type="profile" id="f874-bbd6-af16-66d3" targetId="6e17-d40-8e98-e133"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6aea-b6b3-ca1a-1116" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="3a1b-9dcd-1969-3386" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
+        <categoryLink id="5e80-82b1-ed05-6ddf" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="180f-5fdf-ea2d-a7cb" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
+        <categoryLink id="d79e-a7c8-4160-b23f" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6346-216b-7685-a98d" name="Grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddc9-11eb-9af3-881f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b85-7a3f-e2ff-a1ec" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7837-a9d6-87c4-a734" name="⌖ Grenade launcher" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">-</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">-</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">-</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="aebd-ab6b-5d00-a70b" name="⌖ Grenade launcher - Frag" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/4</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Blast ⬤</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="5138-ac30-242d-bcd8" name="⌖ Grenade launcher - Krak" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="a2c3-db87-6642-d18e" name="Blast x" hidden="false" targetId="d848-be09-6d6d-4708" type="rule"/>
+            <infoLink id="8e6a-f2fe-d65b-243d" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e6e2-5d7a-1fdf-b85d" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3c59-1e93-79ce-4330" name="Kasrkin Gunner w/ hot-shot volley gun" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Gunner" hidden="false" type="profile" id="1faa-a006-bf86-e5b7" targetId="6e17-d40-8e98-e133"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ccae-653-4beb-74f" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="6f25-1a3f-4afb-a545" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
+        <categoryLink id="2548-3d2e-214a-dee3" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="92ef-182b-54b3-173a" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
+        <categoryLink id="db8b-7532-68fe-7b3f" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2250-c354-32bd-be91" name="Hot-shot volley gun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aee-8eb0-c1fc-1021" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="214b-707c-1b90-c7a2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2a1c-8a1d-39-3e3c" name="⌖ Hot-shot volley gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Fusillade</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">P1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="e526-7394-b5aa-ca7" name="Fusillade" hidden="false" targetId="e2ae-574a-94ab-3550" type="rule"/>
+            <infoLink id="328b-cc97-4c2e-3a35" name="Px" hidden="false" targetId="1f11-c169-2746-13cf" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="a093-1b22-2108-50d0" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4651-a1a3-c9c5-de02" name="Kasrkin Gunner w/ meltagun" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Gunner" hidden="false" type="profile" id="6294-b823-b5d-64c4" targetId="6e17-d40-8e98-e133"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="303-a52f-3510-9a4" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="50c7-ca11-50b0-253e" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
+        <categoryLink id="a14e-e33b-6d23-1f78" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="1bed-1d76-a034-b0ae" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
+        <categoryLink id="c4e7-d17e-5636-ce1b" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="14c8-704f-3654-e074" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="201b-cde8-fbdb-17d8" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7edc-c234-bc1f-4524" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="865f-eec-c2a1-11d3" name="⌖ Meltagun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">6/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP2</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c953-fe53-31b2-1e3a" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+            <infoLink id="604c-bf9e-2b89-bdbc" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+            <infoLink id="7f16-35eb-6f85-d8ea" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="590b-b96d-6304-c228" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e18-cc37-b188-27da" name="Kasrkin Gunner w/ plasma gun" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Gunner" hidden="false" type="profile" id="b8a0-f224-694d-fc4f" targetId="6e17-d40-8e98-e133"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="104a-24fd-c3ea-3bb6" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="8c3f-df0c-174-38d6" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
+        <categoryLink id="1acf-87c4-7381-21cc" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="8bd6-7f35-7fc6-30e3" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
+        <categoryLink id="73a2-17f5-5041-6aa6" name="Kasrkin Gunner" hidden="false" targetId="305f-96fb-eac9-fcc7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9d38-8905-7bef-65e6" name="Plasma gun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d60-1d72-3c75-d421" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a970-c94d-cb22-5f99" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="df98-5f1e-72ab-8029" name="⌖ Plasma gun - Standard" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9a9d-a89c-3baf-52e5" name="⌖ Plasma gun - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP2, Hot</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="614a-e473-d9d3-b89" name="⌖ Plasma gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">-</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">-</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">-</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="380-2de5-6f88-847b" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+            <infoLink id="6b0f-951c-dbfa-6570" name="Hot" hidden="false" targetId="83c3-fce7-8ac1-9872" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="4c31-ea5f-522e-5b0a" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e6b7-c531-18b9-e235" name="Kasrkin Recon-Trooper" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9835-3e1e-415a-f292" name="Recon-Trooper" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="36ba-cded-820b-528" name="Reconnoitre Killzone" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">In the Scouting step, after resolving your selection, you can resolve an additional Recon option (even if you have already selected that option). Initiative is still determined by your original selection. If both players have this or a similar ability, the Defender resolves this ability first.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3280-eba7-dd5a-a68a" name="Warden Auspex (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative. Until the end of the Turning Point, each time a friendly KASRKIN operative makes a shooting attack, that enemy operative is not Obscured. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="18a7-4f18-545d-a0b7" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="f36e-9fdf-37f6-196a" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
+        <categoryLink id="18ec-d2d5-bac9-1826" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="8939-c90a-d0ad-670a" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
+        <categoryLink id="28c3-6f80-227d-a4e6" name="Kasrkin Recon-Trooper" hidden="false" targetId="d200-c6e2-6570-55a4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6672-5fb4-6c2a-d607" name="Hot-shot lasgun" hidden="false" collective="false" import="true" targetId="c211-3124-6df0-a1c6" type="selectionEntry"/>
+        <entryLink id="3164-25d7-9248-ca3a" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="24cd-4af2-f63b-67c1" name="Kasrkin Sharpshooter" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="a358-6304-a9fa-fbff" name="Sharpshooter" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f10f-5c6a-d6ac-b10d" name="Camo Cloak" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time a shooting attack is made against this operative, in the Roll Defence Dice step of that shooting attack, before rolling your defence dice, if it is in Cover, one additional dice can be retained as a successful normal save as a result of Cover.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b4e9-2582-a1c3-d25b" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="e760-8853-62e9-11bb" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
+        <categoryLink id="6c1-4771-46b7-16d2" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="c30a-dcf7-1e36-e020" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
+        <categoryLink id="96ff-e43d-affd-82e6" name="Kasrkin Sharpshooter" hidden="false" targetId="edd9-40f5-94a6-9049" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1299-581d-8ad2-1952" name="Hot-shot marksman rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14ae-55f1-764d-4932" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f96c-721d-ca56-467f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="de44-9fa2-f6f3-6c0b" name="⌖ Hot-shot marksman rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">-</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">-</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">-</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="428b-4a9-bf8a-7311" name="⌖ Hot-shot marksman rifle - Sharpshot" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="a2f1-d84d-a558-2e3c" name="⌖ Hot-shot marksman rifle - Snipe" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Heavy, Silent</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="5fd0-531-7cf0-e439" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
+            <infoLink id="c819-c7cc-9bf6-aa3e" name="Heavy" hidden="false" targetId="1e77-6974-cf90-6008" type="rule"/>
+            <infoLink id="62e7-e935-b58e-128e" name="Silent" hidden="false" targetId="ce60-8109-69c9-3908" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e41b-51ad-b664-fbd" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8f48-568f-4334-5296" name="Kasrkin Trooper" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="95d4-45b4-fb58-720e" name="Trooper" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c52a-84d0-49db-c90b" name="Elite Trooper" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative makes a shooting attack, you can spend one Elite point for free during that shooting attack (even if you don&apos;t have any in your pool).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="dbc5-880e-4d56-7b18" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="b841-fe00-7af7-19a7" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
+        <categoryLink id="95f2-c73a-852d-97af" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="8e4e-84c5-ade5-55fa" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
+        <categoryLink id="91c7-2311-507e-f731" name="Kasrkin Trooper" hidden="false" targetId="c613-8f8e-4471-34c6" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="63cd-34f-240-ebd4" name="Hot-shot lasgun" hidden="false" collective="false" import="true" targetId="c211-3124-6df0-a1c6" type="selectionEntry"/>
+        <entryLink id="9113-bfdd-503d-57df" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ab64-1656-c70e-2b6e" name="Kasrkin Vox-Trooper" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="208d-79c4-af66-e6d3" name="Vox-Trooper" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1b0b-ff28-aa4a-f739" name="Battle Comms (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly KASRKIN operative in the killzone. Add 1 to its APL. This operative can perform this action twice during its activation, but cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f4f7-d6fc-b404-721" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="ed20-1b90-6d43-2431" name="KASRKIN" hidden="false" targetId="a241-be0f-4dae-b452" primary="false"/>
+        <categoryLink id="e7b3-e7c9-8189-5eb4" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="e51a-3143-91c-5f6d" name="Astra Militarum" hidden="false" targetId="51d2-f096-47a9-1956" primary="false"/>
+        <categoryLink id="fb12-f530-1683-7f3f" name="Kasrkin Vox-Trooper" hidden="false" targetId="1505-9bee-8526-0fa1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5b38-e2c9-2f72-fd4a" name="Hot-shot lasgun" hidden="false" collective="false" import="true" targetId="c211-3124-6df0-a1c6" type="selectionEntry"/>
+        <entryLink id="5498-9981-3d90-df38" name="Gun butt" hidden="false" collective="false" import="true" targetId="5731-1e99-6d33-a1b5" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
@@ -1701,4 +1491,360 @@ In each Strategy phase, add 2 Elite points to your pool.</description>
       </characteristics>
     </profile>
   </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Kasrkin Combat Medic" hidden="false" type="selectionEntry" id="4b99-8293-2cee-29e2" targetId="7a81-7fad-e0a5-5995">
+      <entryLinks>
+        <entryLink id="ce41-9627-2133-f777" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="76fd-282b-4af3-5768" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="2025-1f6a-db93-eb66" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="4f5-c400-85af-8232" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="28fb-9d3c-d228-bb1" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="a9d6-3dac-abbe-1073" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="7ce4-84db-96f5-f592" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="f739-4f35-4f1a-600d" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="bc9b-8628-f3e9-1ba4" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="7bf6-f0a4-31d6-e961" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="dd10-a071-7777-e968" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="89e3-e877-6a85-5952" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="5c0e-48a5-791f-52dd" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="2b3f-6072-9b48-3aa7" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="7098-151b-e8a-12a" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="101d-23e7-4e5c-6410" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="6848-b57f-beae-338f" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
+        <entryLink id="39cb-4963-cf4c-d7f1" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink id="8299-8947-8216-9b4b" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="bc84-e2cd-149d-dc3a" primary="true" name="Operative"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kasrkin Demo-Trooper" hidden="false" type="selectionEntry" id="7503-1884-bd31-1457" targetId="7e7c-8fc6-cd8e-f542">
+      <entryLinks>
+        <entryLink id="9891-ac06-f7c2-3c3e" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="3b15-1112-67a6-5f53" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="8ef-87ec-cbe3-11a1" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="305e-6602-b71a-4115" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="5eb9-17cb-9b69-4849" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="107-ccf9-a732-646d" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="d749-1954-297e-7c07" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="1447-2fad-e6a0-5946" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="8b29-b85-682d-2f13" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="509-3955-6931-7ecf" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
+        <entryLink id="16f0-477b-b021-ff04" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink id="61e7-1ae5-c784-dcc7" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="e183-6a1a-53ba-d05f" primary="true" name="Operative"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kasrkin Gunner w/ flamer" hidden="false" type="selectionEntry" id="c253-7b8f-234-9219" targetId="5a7d-6a80-8043-1fa">
+      <entryLinks>
+        <entryLink id="fc5f-494a-b3d2-6ddd" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="38ee-44f7-200b-e4c5" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="6c07-5c03-9f89-cb39" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="df78-ca7-5318-f725" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="2f37-e62b-2c72-931c" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="6e90-6c14-b7c0-f645" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="c185-851b-6ac4-3ce5" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="e1f5-27fd-b68f-a3b2" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="5899-ffdb-a780-bc24" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="d522-9336-80de-33a2" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
+        <entryLink id="a658-3851-a0df-9494" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink id="31ef-5cca-3fda-6f50" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="f670-93d9-21af-f21e" primary="true" name="Operative"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="26c-1fa1-f8b0-28aa" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="26c-1fa1-f8b0-28aa" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="64da-d76e-ef18-44df" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Kasrkin Gunner w/ grenade launcher" hidden="false" type="selectionEntry" id="91ea-b769-3dba-1e9" targetId="129-fd69-db06-fb72">
+      <entryLinks>
+        <entryLink id="14de-7b52-7fa6-817e" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="d11e-1f3e-cbd4-a249" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="7c06-967b-b14c-42dc" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="888f-5359-714-3931" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="4f90-354-1924-c6ac" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="c2ce-666b-d4c1-57cd" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="47de-91ef-ff59-6554" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="45fb-c031-8b37-5099" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="d5ee-e434-6eca-46d5" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="e3d-ba3d-a24e-42c8" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
+        <entryLink id="5039-3e04-1d63-120" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink id="86b-5aab-437c-8070" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="7221-3280-f4d7-fb61" primary="true" name="Operative"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cbb-a0e7-3109-56b8" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="7cbb-a0e7-3109-56b8" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="64da-d76e-ef18-44df" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Kasrkin Gunner w/ hot-shot volley gun" hidden="false" type="selectionEntry" id="b309-823c-8d8c-7541" targetId="3c59-1e93-79ce-4330">
+      <entryLinks>
+        <entryLink id="26c8-25d4-a4d2-f900" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="c182-d33d-20d4-30cb" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="369f-c1fa-fec4-161c" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="6ce4-ddbd-ecaf-db" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="c354-a3f4-7dd-a0be" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="9dc-3461-c75e-f4de" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="e6c4-f699-2231-a683" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="75b9-b013-5ff6-b48d" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="eca1-c7fe-869f-7b03" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="9477-557b-7011-bd69" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
+        <entryLink id="53b3-a56c-77d8-8f52" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink id="bdf1-5fcc-8c0d-a93c" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="ec4d-d51c-5dbe-fdf0" primary="true" name="Operative"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9403-2405-82c-cd3" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="9403-2405-82c-cd3" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="64da-d76e-ef18-44df" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Kasrkin Gunner w/ meltagun" hidden="false" type="selectionEntry" id="66e9-5383-91af-d9bb" targetId="4651-a1a3-c9c5-de02">
+      <entryLinks>
+        <entryLink id="f966-cb69-c390-7366" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="f5c5-cf98-8908-b55c" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="1d9a-988b-1c74-ea99" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="3425-b7e5-ff86-220c" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="e135-49b1-cda9-d6de" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="9fa0-6881-5f84-4d16" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="b5bb-185d-eed3-f7ae" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="a7ff-4802-c3a8-14bb" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="80c7-833b-1d56-6962" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="72ec-13a2-d82c-8453" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
+        <entryLink id="7100-eef2-ef92-5cf4" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink id="9eb1-3a20-2c09-490f" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="41ee-f18d-dcb7-3299" primary="true" name="Operative"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="834f-5a82-d4a8-f4b3" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="834f-5a82-d4a8-f4b3" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="64da-d76e-ef18-44df" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Kasrkin Gunner w/ plasma gun" hidden="false" type="selectionEntry" id="b03a-efe1-6a7f-9a03" targetId="4e18-cc37-b188-27da">
+      <entryLinks>
+        <entryLink id="6d41-b3db-f443-2384" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="fdc6-fbcc-32ca-ad0f" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9fc-ae3c-95db-842" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="edcc-846e-a396-e6ab" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="ff9e-91dc-1204-2211" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="b500-d753-77bd-d153" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="c06a-f44f-4b30-d860" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="93fd-a897-ae01-b593" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="c841-189d-7bcd-20d4" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="3872-361e-189c-c9ed" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
+        <entryLink id="60d5-1d77-f689-5bae" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink id="2807-6bfa-926-c0b8" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="e655-e95b-8198-f68e" primary="true" name="Operative"/>
+      </categoryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f727-3593-b2cd-2d7b" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="f727-3593-b2cd-2d7b" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="64da-d76e-ef18-44df" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Kasrkin Recon-Trooper" hidden="false" type="selectionEntry" id="fe6c-e6f-51b9-b68f" targetId="e6b7-c531-18b9-e235">
+      <entryLinks>
+        <entryLink id="1959-4a0f-26fc-f490" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="ad0-9765-65ba-399b" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="d705-4ba8-d3d2-5c59" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="d61d-fff1-685e-9e27" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="6d94-9717-b618-4bad" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="536-358f-5847-ef92" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="6621-6e2e-b0b0-6c18" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="a896-ab69-8473-2c27" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="7afe-251d-f044-cc3c" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="4d7-cb1e-7595-69e2" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="3f1e-c6f8-d15e-70be" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="d8f4-4f2c-4dad-5647" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="a7da-974b-e72f-42f1" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="2d9c-27f2-3e40-4c20" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="29e6-b9b9-f145-e61e" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="8ff8-10fa-a3f8-c751" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="4ac0-5d0c-6f7a-6a4f" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
+        <entryLink id="535a-bb6a-80b7-2f63" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink id="a13f-ca7-9bc2-4e75" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="49bb-1ead-fe64-6f6c" primary="true" name="Operative"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kasrkin Sharpshooter" hidden="false" type="selectionEntry" id="bbbe-8082-8086-e0f8" targetId="24cd-4af2-f63b-67c1">
+      <entryLinks>
+        <entryLink id="e6b8-e817-f891-a423" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="ffaa-6f5b-401d-9012" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="eef4-5fa9-2d42-c7c9" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="bff4-61ec-6198-854" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="cae5-adad-4f1a-130b" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="ffed-c628-94d-3244" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="c3b8-16c4-4f13-ca3a" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="3393-fe4f-e253-3b74" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="f8fb-a185-217-9fd8" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="1fe7-a6c6-51f7-ac40" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
+        <entryLink id="7b86-6e46-cd17-c7ae" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink id="7806-e7a8-6b25-a632" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="c991-8d69-beef-1538" primary="true" name="Operative"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kasrkin Trooper" hidden="false" type="selectionEntry" id="f294-b491-20be-6dcf" targetId="8f48-568f-4334-5296">
+      <entryLinks>
+        <entryLink id="70aa-45a1-ca25-7ec8" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="d618-f5f4-fa9f-2970" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="2274-cb06-d37d-ef10" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="bf73-d6b1-1707-fdf8" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="3d2b-d452-229b-c4ae" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="1b4b-45-4c86-face" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="dbf9-119-5195-7ec4" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="4b55-8da-65ec-50a" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="ee35-882b-f3a5-427e" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="71af-324f-c6d7-8fd1" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="4535-7bcf-3227-4dca" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="2475-77ee-b4e7-b316" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="fc06-6988-36a-7830" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="2c28-578-f6ea-b648" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="fb1e-694e-55df-bdef" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="cece-59ff-d36a-2e88" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="ad51-6b47-54dd-a87c" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
+        <entryLink id="89e8-ccfb-cb83-101" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink id="e42e-a88f-7624-aa54" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="8aff-4aea-56b8-4a21" primary="true" name="Operative"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kasrkin Vox-Trooper" hidden="false" type="selectionEntry" id="54b2-2705-1012-6e7e" targetId="ab64-1656-c70e-2b6e">
+      <entryLinks>
+        <entryLink id="70d3-d827-3a8b-9792" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="456f-6f0c-b819-1ca2" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9417-d276-ef7d-81d3" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="5201-7edb-15f6-9d6c" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="310-fc79-2222-1013" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="d019-e816-c8c9-b340" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="4052-b951-5e34-aa82" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="ae06-54be-5903-4629" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="23b4-e6be-5812-88c" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="7aaf-1552-1839-88e0" name="Kasrkin 2 - Vengeful" hidden="false" collective="false" import="true" targetId="906d-1eec-2dd9-27f3" type="selectionEntry"/>
+            <entryLink id="c54c-cd8-153a-f3eb" name="Kasrkin 3 - Resolute" hidden="false" collective="false" import="true" targetId="7c7e-ad8d-67bf-155c" type="selectionEntry"/>
+            <entryLink id="ac65-6db6-619d-cc31" name="Kasrkin 4 - Kill Shot" hidden="false" collective="false" import="true" targetId="5c2c-6324-e5df-d9d6" type="selectionEntry"/>
+            <entryLink id="1a74-9ba2-8bf6-2b5" name="Kasrkin 5 - Sharp Instincts" hidden="false" collective="false" import="true" targetId="dd71-0e70-8dcc-69f0" type="selectionEntry"/>
+            <entryLink id="f72e-5a5b-e4bf-3641" name="Kasrkin 6 - Independent Equipage" hidden="false" collective="false" import="true" targetId="fbe5-607e-931b-ae76" type="selectionEntry"/>
+            <entryLink id="6844-9e0a-8ca7-f1d4" name="Kasrkin 1 - War-hardened" hidden="false" collective="false" import="true" targetId="43f5-3070-3dc8-66f9" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="efe3-df16-351e-334" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="2b94-e2d-a487-f880" name="Equipment" hidden="false" collective="false" import="true" targetId="5a9d-c69c-e0ff-d6de" type="selectionEntryGroup"/>
+        <entryLink id="9c9a-e2f9-aac0-7933" name="Specialism" hidden="false" collective="false" import="true" targetId="08e3-f5e7-6fa4-2808" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink id="29c5-8ce4-2326-260f" name="Elite" hidden="false" targetId="33cf-2b94-3086-1589" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="ac71-c999-a3c7-87e" primary="true" name="Operative"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>
