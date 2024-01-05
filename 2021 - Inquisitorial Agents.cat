@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="INQUISITORIAL AGENT" hidden="false" id="762e-9a1c-ad3a-3424"/>
     <categoryEntry name="Inquisition" hidden="false" id="307-ad5e-52b1-3bcd"/>
@@ -15,17 +15,11 @@
     <categoryEntry name="Penal Legionnaire" hidden="false" id="84e1-aaa2-adb6-435a"/>
     <categoryEntry name="Pistolier" hidden="false" id="27bb-b755-46db-fb50"/>
     <categoryEntry name="Anathema Psykana" hidden="false" id="ba5-efe1-f6cd-fb9e"/>
-    <categoryEntry name="Sister of Silence" hidden="false" id="bbc8-f96b-e446-3ec7"/>
     <categoryEntry name="Prosecutor" hidden="false" id="ce9f-cdc7-416f-e980"/>
     <categoryEntry name="Vigilator" hidden="false" id="6ca9-20ce-a52a-8901"/>
     <categoryEntry name="Witchseeker" hidden="false" id="a0d1-95ed-8fff-b669"/>
-    <categoryEntry name="Tempestus Scion" hidden="false" id="9461-ff8f-ba6d-7abe"/>
     <categoryEntry name="Comms" hidden="false" id="f4a7-72d6-9caa-fd5b"/>
     <categoryEntry name="Trooper" hidden="false" id="64d5-91ea-8301-6e28"/>
-    <categoryEntry name="Kasrkin" hidden="false" id="377-6b36-e6ba-4d4e"/>
-    <categoryEntry name="Imperial Navy Breachers" hidden="false" id="137f-5a5b-5edb-e122"/>
-    <categoryEntry name="Exaction Squad" hidden="false" id="1948-af22-3c47-22ab"/>
-    <categoryEntry name="Veteran Guardsmen" hidden="false" id="787e-6218-c35f-93fa"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Interrogator Agent" hidden="false" id="7494-2f19-df87-a03f">
@@ -178,6 +172,13 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="b626-b122-1bf6-20fb" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Autosavant Agent" hidden="false" id="e22c-d36b-6d2c-6239">
       <categoryLinks>
@@ -876,8 +877,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="1470-ad30-88b3-af77" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="3b0c-ffee-8d75-8295" primary="false" name="Imperium"/>
         <categoryLink targetId="ba5-efe1-f6cd-fb9e" id="31da-e9b-73de-3e" primary="false" name="Anathema Psykana"/>
-        <categoryLink targetId="bbc8-f96b-e446-3ec7" id="9742-a27c-51fd-d658" primary="true" name="Sister of Silence"/>
         <categoryLink targetId="ce9f-cdc7-416f-e980" id="282b-1cc3-12bb-6ac5" primary="false" name="Prosecutor"/>
+        <categoryLink targetId="ddb1-20b1-eebf-aa4a" id="56f7-4e73-c005-79be" primary="true" name="Sister of Silence"/>
       </categoryLinks>
       <profiles>
         <profile name="Sister of Silence Prosecutor" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="fb37-e4ba-923a-7cf2">
@@ -925,8 +926,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="4bc2-741d-d9fa-e736" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="ff46-12c4-a660-1435" primary="false" name="Imperium"/>
         <categoryLink targetId="ba5-efe1-f6cd-fb9e" id="c5b7-8e76-d226-1610" primary="false" name="Anathema Psykana"/>
-        <categoryLink targetId="bbc8-f96b-e446-3ec7" id="d691-1eed-9692-ba84" primary="true" name="Sister of Silence"/>
         <categoryLink targetId="6ca9-20ce-a52a-8901" id="4714-d94a-cf02-dea5" primary="false" name="Vigilator"/>
+        <categoryLink targetId="ddb1-20b1-eebf-aa4a" id="1fb5-386c-47d8-3ee3" primary="true" name="Sister of Silence"/>
       </categoryLinks>
       <profiles>
         <profile name="Sister of Silence Vigilator" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="1277-bb56-1c58-80a7">
@@ -976,8 +977,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="5013-2041-a761-ffd6" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="51d-79f7-56fc-144c" primary="false" name="Imperium"/>
         <categoryLink targetId="ba5-efe1-f6cd-fb9e" id="5174-10e0-524a-36b3" primary="false" name="Anathema Psykana"/>
-        <categoryLink targetId="bbc8-f96b-e446-3ec7" id="7a02-b424-a295-fef4" primary="true" name="Sister of Silence"/>
         <categoryLink targetId="a0d1-95ed-8fff-b669" id="52b6-8bb0-6ff4-2c28" primary="false" name="Witchseeker"/>
+        <categoryLink targetId="ddb1-20b1-eebf-aa4a" id="ef6e-f0c8-ed2-794f" primary="true" name="Sister of Silence"/>
       </categoryLinks>
       <profiles>
         <profile name="Sister of Silence Witchseeker" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="d868-e2a1-f6bc-7e7e">
@@ -1012,8 +1013,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="1484-500e-34fc-7fad" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="47ec-6663-41e0-3c6b" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="9a2d-8ee5-9f21-d591" primary="false" name="Astra Militarum"/>
-        <categoryLink targetId="9461-ff8f-ba6d-7abe" id="356b-e7f3-91ad-18a2" primary="true" name="Tempestus Scion"/>
         <categoryLink targetId="f4a7-72d6-9caa-fd5b" id="231-13ba-ed32-dd88" primary="false" name="Comms"/>
+        <categoryLink targetId="5d21-66e8-b1eb-209f" id="79c3-d676-3f1a-74ff" primary="true" name="Tempestus Scion"/>
       </categoryLinks>
       <profiles>
         <profile name="Tempestus Scion Comms" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="3e71-edf5-b224-7509">
@@ -1045,8 +1046,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="695-bed-ecd2-1e3" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="2e11-f7f2-fb02-2f28" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="dff3-371e-6252-590" primary="false" name="Astra Militarum"/>
-        <categoryLink targetId="9461-ff8f-ba6d-7abe" id="b002-9ebe-1cde-6749" primary="true" name="Tempestus Scion"/>
         <categoryLink targetId="8e1d-1094-f504-d8cd" id="22f-743d-5168-4c27" primary="false" name="Medic"/>
+        <categoryLink targetId="5d21-66e8-b1eb-209f" id="aaf6-b465-ced8-a7b0" primary="true" name="Tempestus Scion"/>
       </categoryLinks>
       <profiles>
         <profile name="Tempestus Scion Medic" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="2005-f552-ab0-ad40">
@@ -1083,8 +1084,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="745b-5db4-8ad8-5fab" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="5123-d448-2153-7083" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="2f83-532f-1d98-b9b3" primary="false" name="Astra Militarum"/>
-        <categoryLink targetId="9461-ff8f-ba6d-7abe" id="54c9-6f89-6c91-e99f" primary="true" name="Tempestus Scion"/>
         <categoryLink targetId="64d5-91ea-8301-6e28" id="dc8-d86-5136-fc25" primary="false" name="Trooper"/>
+        <categoryLink targetId="5d21-66e8-b1eb-209f" id="e81b-f7ae-c1e9-8621" primary="true" name="Tempestus Scion"/>
       </categoryLinks>
       <profiles>
         <profile name="Tempestus Scion Trooper" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="20e4-4453-619d-e1c0">
@@ -1111,8 +1112,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="63ab-dd89-ee5d-6b8c" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="c319-10e2-eee2-5ccf" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="69b4-1786-4ee1-191c" primary="false" name="Astra Militarum"/>
-        <categoryLink targetId="9461-ff8f-ba6d-7abe" id="8d-a1d4-65b1-b821" primary="true" name="Tempestus Scion"/>
         <categoryLink targetId="ee8c-cc44-acc3-40f0" id="6f07-45a0-2f42-f197" primary="false" name="Gunner"/>
+        <categoryLink targetId="5d21-66e8-b1eb-209f" id="d565-9fd9-454f-1ce5" primary="true" name="Tempestus Scion"/>
       </categoryLinks>
       <profiles>
         <profile name="Tempestus Scion Gunner" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="a5c1-9273-488a-11cf">
@@ -1579,7 +1580,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4377-4fd2-8577-4474"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Sister of Silence" hidden="true" id="245c-41d2-3550-990b" targetId="bbc8-f96b-e446-3ec7" type="category">
+        <categoryLink name="Sister of Silence" hidden="true" id="245c-41d2-3550-990b" targetId="ddb1-20b1-eebf-aa4a" type="category">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6c68-3e0a-95c9-6674-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6c68-3e0a-95c9-6674-max"/>
@@ -1597,7 +1598,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifierGroup>
           </modifierGroups>
         </categoryLink>
-        <categoryLink name="Tempestus Scion" hidden="true" id="8bb6-e44a-7267-a492" targetId="9461-ff8f-ba6d-7abe" type="category">
+        <categoryLink name="Tempestus Scion" hidden="true" id="8bb6-e44a-7267-a492" targetId="5d21-66e8-b1eb-209f" type="category">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8288-b154-30c5-f93e-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8288-b154-30c5-f93e-max"/>
@@ -1630,7 +1631,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="119a-6bdf-fcad-d4a8"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Kasrkin" hidden="true" id="842c-cd7e-f57a-b5c1" targetId="377-6b36-e6ba-4d4e" type="category">
+        <categoryLink name="Kasrkin" hidden="true" id="842c-cd7e-f57a-b5c1" targetId="21f1-9708-dcc8-d36c" type="category">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dc97-52b9-c485-67c4-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dc97-52b9-c485-67c4-max"/>
@@ -1648,7 +1649,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifierGroup>
           </modifierGroups>
         </categoryLink>
-        <categoryLink name="Imperial Navy Breachers" hidden="true" id="5574-7445-18b9-70d0" targetId="137f-5a5b-5edb-e122" type="category">
+        <categoryLink name="Imperial Navy Breachers" hidden="true" id="5574-7445-18b9-70d0" targetId="5eb9-3063-33ee-fc3" type="category">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f4b9-b510-14d8-bf2a-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f4b9-b510-14d8-bf2a-max"/>
@@ -1666,7 +1667,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifierGroup>
           </modifierGroups>
         </categoryLink>
-        <categoryLink name="Exaction Squad" hidden="true" id="aabf-323a-fd88-fa37" targetId="1948-af22-3c47-22ab" type="category">
+        <categoryLink name="Exaction Squad" hidden="true" id="aabf-323a-fd88-fa37" targetId="5750-52c0-127a-fa5b" type="category">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1e3-458d-cc9f-31be-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1e3-458d-cc9f-31be-max"/>
@@ -1684,7 +1685,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifierGroup>
           </modifierGroups>
         </categoryLink>
-        <categoryLink name="Veteran Guardsmen" hidden="true" id="ac49-7ade-ed05-80b7" targetId="787e-6218-c35f-93fa" type="category">
+        <categoryLink name="Veteran Guardsmen" hidden="true" id="ac49-7ade-ed05-80b7" targetId="dfb3-bfe0-549d-be8" type="category">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e544-a590-ff29-1b6a-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e544-a590-ff29-1b6a-max"/>
@@ -2171,8 +2172,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="15ae-553e-01d1-23a9" id="1dbf-5a27-e606-5b1e" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="944f-57fa-801a-b231" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="22dc-fd03-3973-ab81" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="377-6b36-e6ba-4d4e" id="5db2-e146-3ae0-3a32" primary="true" name="Kasrkin"/>
         <categoryLink targetId="7c43-3a9c-461c-7ea8" id="750f-bb26-3429-ebab" primary="false" name="Kasrkin Combat Medic"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="d2c6-9316-a0dd-5f0b" primary="false" name="Operative"/>
+        <categoryLink targetId="21f1-9708-dcc8-d36c" id="c7f0-966-7e0b-3065" primary="true" name="Kasrkin"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="50da-6fd-526b-5a50" targetId="82af-b9b8-518f-aaf1"/>
@@ -2229,11 +2231,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="377-6b36-e6ba-4d4e" id="f47d-a924-a7e6-72e7" primary="true" name="Kasrkin"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="2633-ed46-e72a-1fe5" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="90d6-1ed9-e65b-16e3" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="eb77-dfd8-6b5c-591b" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="a7df-0dbc-9cb7-3bcf" id="8cb1-80c6-f36e-835e" primary="false" name="Kasrkin Demo-Trooper"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="cb55-f183-5286-5145" primary="false" name="Operative"/>
+        <categoryLink targetId="21f1-9708-dcc8-d36c" id="1c9b-5520-99f0-a542" primary="true" name="Kasrkin"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dcbf-dee1-f6e5-8235" type="max"/>
@@ -2266,9 +2269,10 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       <categoryLinks>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="6b77-801f-b198-df39" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="829e-5504-49c8-31e5" primary="false" name="Astra Militarum"/>
-        <categoryLink targetId="377-6b36-e6ba-4d4e" id="3c2d-da02-9b3f-46de" primary="true" name="Kasrkin"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="8589-fd03-3575-967" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="305f-96fb-eac9-fcc7" id="8f49-1669-da2e-31a4" primary="false" name="Kasrkin Gunner"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="992-100a-5fce-c3c" primary="false" name="Operative"/>
+        <categoryLink targetId="21f1-9708-dcc8-d36c" id="bd61-d681-cf50-9087" primary="true" name="Kasrkin"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5e13-5063-faeb-4b77" type="max"/>
@@ -2299,11 +2303,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="377-6b36-e6ba-4d4e" id="7990-8fc9-9695-ee76" primary="true" name="Kasrkin"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="702a-b3f7-de46-e0c" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="ca6a-c7bc-15c9-f135" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="7d0a-7c98-4553-e9eb" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="305f-96fb-eac9-fcc7" id="14f-eb68-d7cb-b6b9" primary="false" name="Kasrkin Gunner"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="34a1-6a30-bd4a-5483" primary="false" name="Operative"/>
+        <categoryLink targetId="21f1-9708-dcc8-d36c" id="c0b-ac8e-70a1-358e" primary="true" name="Kasrkin"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="813c-d7a8-5dd-1f30" type="max"/>
@@ -2334,11 +2339,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="377-6b36-e6ba-4d4e" id="8964-2c69-858f-f6e8" primary="true" name="Kasrkin"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="7dff-b109-6c59-598f" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="d750-c6bd-5cc9-84c3" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="6dfe-24f1-103f-647f" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="305f-96fb-eac9-fcc7" id="8337-1bda-5ffa-b3c4" primary="false" name="Kasrkin Gunner"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="c340-deff-fd39-8f64" primary="false" name="Operative"/>
+        <categoryLink targetId="21f1-9708-dcc8-d36c" id="7d47-95ab-9f66-5cd4" primary="true" name="Kasrkin"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d6b-991c-499c-8364" type="max"/>
@@ -2369,11 +2375,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="377-6b36-e6ba-4d4e" id="3d27-f24a-1d3e-88" primary="true" name="Kasrkin"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="d4-ea9d-17d-ba59" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="9ab0-9e4e-a367-142d" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="9b6-f53d-42ed-3454" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="305f-96fb-eac9-fcc7" id="1136-7afc-b624-1341" primary="false" name="Kasrkin Gunner"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="a45d-a9a5-9f91-55de" primary="false" name="Operative"/>
+        <categoryLink targetId="21f1-9708-dcc8-d36c" id="2fbd-213a-4731-2b3" primary="true" name="Kasrkin"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e85b-b4d9-da1d-47cb" type="max"/>
@@ -2404,11 +2411,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="377-6b36-e6ba-4d4e" id="5184-5996-7b83-9a3e" primary="true" name="Kasrkin"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="b293-c3f6-1a93-94ad" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="158e-5bc1-5752-d9d" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="3933-6eb7-31ea-785" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="305f-96fb-eac9-fcc7" id="ff6c-a6f0-7c07-616d" primary="false" name="Kasrkin Gunner"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="ddaa-c624-f750-991d" primary="false" name="Operative"/>
+        <categoryLink targetId="21f1-9708-dcc8-d36c" id="d162-e23e-f637-a4cd" primary="true" name="Kasrkin"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd6a-e926-868d-308b" type="max"/>
@@ -2449,11 +2457,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="377-6b36-e6ba-4d4e" id="77a6-9da2-c49-4547" primary="true" name="Kasrkin"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="ca62-8471-1f15-7e50" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="f37-2a8-d344-49fc" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="c257-791c-58eb-389e" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="d200-c6e2-6570-55a4" id="8fcc-b46f-3fbf-4fbc" primary="false" name="Kasrkin Recon-Trooper"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="776c-8794-59f3-3abd" primary="false" name="Operative"/>
+        <categoryLink targetId="21f1-9708-dcc8-d36c" id="dd0d-fd2-42ff-329a" primary="true" name="Kasrkin"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c5ca-5d1c-2149-fc74" type="max"/>
@@ -2484,11 +2493,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="377-6b36-e6ba-4d4e" id="5ea2-64f8-e1cf-dd01" primary="true" name="Kasrkin"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="f95e-c8ea-165-bd6f" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="da35-618d-3aa4-9976" primary="false" name="Imperium"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="8c93-a767-3bc7-e115" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="edd9-40f5-94a6-9049" id="4ce5-8e73-12eb-2521" primary="false" name="Kasrkin Sharpshooter"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="5fb6-c417-e103-f7fd" primary="false" name="Operative"/>
+        <categoryLink targetId="21f1-9708-dcc8-d36c" id="1d31-1f23-82a6-7b4" primary="true" name="Kasrkin"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b9e-2e35-b065-6f4c" type="max"/>
@@ -2503,11 +2513,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
     </entryLink>
     <entryLink import="true" name="Trooper" hidden="false" type="selectionEntry" id="d68d-bd11-84c7-df7d" targetId="8f48-568f-4334-5296">
       <categoryLinks>
-        <categoryLink targetId="377-6b36-e6ba-4d4e" id="ffab-9781-23e4-4096" primary="true" name="Kasrkin"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="6e74-26c6-4921-a50d" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="4ef2-5246-cd64-6ad8" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="8d5-4952-7731-903e" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="c613-8f8e-4471-34c6" id="7255-d6a6-8c3f-3626" primary="false" name="Kasrkin Trooper"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="fc19-1d9c-1002-2eff" primary="false" name="Operative"/>
+        <categoryLink targetId="21f1-9708-dcc8-d36c" id="e695-b245-c47b-57aa" primary="true" name="Kasrkin"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="df0-3d1b-b44f-f37c" targetId="82af-b9b8-518f-aaf1"/>
@@ -2538,11 +2549,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
     </entryLink>
     <entryLink import="true" name="Vox-Trooper" hidden="false" type="selectionEntry" id="a059-d7f-353b-849a" targetId="ab64-1656-c70e-2b6e">
       <categoryLinks>
-        <categoryLink targetId="377-6b36-e6ba-4d4e" id="f5a4-b9f5-9d5a-4677" primary="true" name="Kasrkin"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="edae-ee14-f1a9-8f15" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="f674-ba0d-e58c-84f3" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="6596-9f2c-857b-be54" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="1505-9bee-8526-0fa1" id="31de-1afe-7556-45ec" primary="false" name="Kasrkin Vox-Trooper"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="d8a3-231b-8463-dddd" primary="false" name="Operative"/>
+        <categoryLink targetId="21f1-9708-dcc8-d36c" id="708f-38ea-50d1-5ca5" primary="true" name="Kasrkin"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="18f1-8a79-75e2-77a8" targetId="82af-b9b8-518f-aaf1"/>
@@ -2612,8 +2624,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="15ae-553e-01d1-23a9" id="ba56-ae0b-9b5b-9e9d" primary="false" name="Imperium"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="5a95-b544-4643-c865" primary="false" name="Navis"/>
         <categoryLink targetId="480b-a8ee-4331-41cc" id="afc4-935-a2a0-b1e3" primary="false" name="Armsman"/>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="cc36-615-2ef5-b30e" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="6096-ca8e-edcd-ca11" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="18ca-8f8-3ad1-ca92" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="3bf0-94e1-da53-83ad" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Navis Axejack" hidden="false" type="selectionEntry" id="2dd1-f802-d14a-a512" targetId="a8cd-4ab5-349e-64c9">
@@ -2654,11 +2667,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="7eb2-1d92-da7d-f9d5" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="3a60-7640-bcc8-68e4" primary="false" name="Imperium"/>
         <categoryLink targetId="171c-145e-76c8-4290" id="4eab-637-2a01-383e" primary="false" name="Axejack"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="e32f-24e2-342f-95de" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="2a7f-a689-746a-428a" primary="false" name="Navis"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="1292-7daa-3303-5f64" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="9e7f-4ade-3c1e-ee76" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Navis C.A.T. Unit" hidden="false" type="selectionEntry" id="d497-3811-8d8c-1b62" targetId="b5ca-71eb-b0d8-7d37">
@@ -2683,11 +2697,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="3858-9d29-7f78-dcee" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="8eaa-c96e-3a6b-2333" primary="false" name="Imperium"/>
         <categoryLink targetId="7773-1668-cee3-324e" id="6bd1-f353-8572-419b" primary="false" name="C.A.T. Unit"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="5d6c-e95a-ab6d-f580" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="c582-9ca5-3a6a-990" primary="false" name="Navis"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="9048-ed7e-bd81-d402" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="54c8-5451-aaa8-d3da" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="4725-4d29-b5ea-8b3c" targetId="f080-d126-4651-b003"/>
@@ -2721,11 +2736,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="972c-137-6edc-bca6" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="c13b-8fe1-300f-c15b" primary="false" name="Imperium"/>
         <categoryLink targetId="a89c-3c25-ab9c-2c78" id="902-e76e-bad0-480f" primary="false" name="Endurant"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="c1e9-bd45-1b4e-805e" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="6bf0-ae13-4584-af54" primary="false" name="Navis"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="a88b-8f06-5d7a-967" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="75d3-1dec-5e57-638f" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Navis Gheistskull" hidden="false" type="selectionEntry" id="c47b-30df-f595-80b9" targetId="ad3-90d5-49ad-f8c1">
@@ -2750,11 +2766,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="4a52-bbe1-4253-be11" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="39f2-1d03-813-e2b2" primary="false" name="Imperium"/>
         <categoryLink targetId="02d3-a1e6-0a99-e114" id="a2b0-d33a-ad82-1d3e" primary="false" name="Gheistskull"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="6481-180b-410e-162d" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="5641-45a7-414f-62fa" primary="false" name="Navis"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="79e4-4c42-290-3036" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="5e4-cc6d-236d-15c" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="ef1d-8d8d-a6e-2a9" targetId="f080-d126-4651-b003"/>
@@ -2788,11 +2805,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="5e19-627a-fff9-ea08" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="51a3-ef18-68fe-58a1" primary="false" name="Imperium"/>
         <categoryLink targetId="2566-5a1d-9809-905b" id="f2e8-1c5b-3087-ea9e" primary="false" name="Grenadier"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="4157-8f93-42bc-bd1e" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="d107-5224-9979-bbc0" primary="false" name="Navis"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="2f00-aae0-252-8a62" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="af15-12ad-bb8b-66e9" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Navis Gunner w/ las-volley" hidden="false" type="selectionEntry" id="6ef-877f-28b2-6758" targetId="df46-6db0-cc6a-5bf8">
@@ -2833,11 +2851,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="95ff-2af6-f160-dc9b" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="64ac-f7d9-f3aa-69ed" primary="false" name="Imperium"/>
         <categoryLink targetId="ee8c-cc44-acc3-40f0" id="854b-7e87-73af-b675" primary="false" name="Gunner"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="f5e8-642e-4847-57f2" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="3316-4e58-4786-6909" primary="false" name="Navis"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="5f7-8bf2-3dda-3a97" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="3b1-d1a-2757-d32f" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Navis Gunner w/ meltagun" hidden="false" type="selectionEntry" id="a071-3399-768e-9b6a" targetId="fe98-5d47-2000-f842">
@@ -2878,11 +2897,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="6c1f-fd21-9c34-7743" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="c325-2442-49bc-dab" primary="false" name="Imperium"/>
         <categoryLink targetId="ee8c-cc44-acc3-40f0" id="d309-3750-60ef-ffaf" primary="false" name="Gunner"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="8d72-a9a1-506d-506" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="9efd-bca6-3b50-80b7" primary="false" name="Navis"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="ebd2-4e5f-2060-c3c0" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="ddeb-7ce4-c68c-5e4d" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Navis Gunner w/ plasma gun" hidden="false" type="selectionEntry" id="15a4-3eb3-c65e-6cf8" targetId="443f-d3a6-6955-265a">
@@ -2923,11 +2943,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="1970-cc03-9b8b-fa04" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="faa3-3b92-4b15-e6ca" primary="false" name="Imperium"/>
         <categoryLink targetId="ee8c-cc44-acc3-40f0" id="54b6-6383-e8e8-231e" primary="false" name="Gunner"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="e1b6-3a53-2e37-e40f" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="cac7-a6dc-37e9-77b7" primary="false" name="Navis"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="7472-39a0-7130-5673" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="88a-d03c-5be9-4897" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Navis Hatchcutter" hidden="false" type="selectionEntry" id="73aa-7261-a728-301d" targetId="b9a4-e740-bfc2-2789">
@@ -2968,11 +2989,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="c570-6b8c-5f9e-d43f" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="45bc-5964-16f7-f5ec" primary="false" name="Imperium"/>
         <categoryLink targetId="cb42-dd3b-99fd-bbe4" id="19e2-bf81-686a-7176" primary="false" name="Hatchcutter"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="9f41-36ca-14bd-123d" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="bb4a-1fbb-35f3-9f27" primary="false" name="Navis"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="8567-2a3d-efad-cd40" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="d201-60e6-1b6-7d7c" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Navis Surveyor" hidden="false" type="selectionEntry" id="df73-56b9-7cd4-9d6a" targetId="d67c-bf89-e0f6-f6dd">
@@ -3003,11 +3025,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="e0f-dd95-e42a-de04" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="f1ed-df2b-68c1-5926" primary="false" name="Imperium"/>
         <categoryLink targetId="1c1a-d8cb-bedd-1130" id="5613-22f8-392e-bcb5" primary="false" name="Surveyor"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="f1de-1877-44ac-4e60" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="cf2a-fd2b-df1b-9b18" primary="false" name="Navis"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="5aeb-ef10-fd75-434e" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="9111-b0c3-379-2bf1" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Navis Void-jammer" hidden="false" type="selectionEntry" id="df99-71bd-7f7a-aff5" targetId="e516-b0e6-7a66-11f">
@@ -3038,11 +3061,12 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="137f-5a5b-5edb-e122" id="33c0-7069-96b7-c315" primary="true" name="Imperial Navy Breachers"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="45d0-f8e6-cc94-6bd0" primary="false" name="Imperium"/>
         <categoryLink targetId="530c-c734-c629-05a1" id="45c3-9816-a5d0-f0e0" primary="false" name="Void-jammer"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="97fe-ee6e-8024-170d" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="bfa4-eddc-f632-37c6" primary="false" name="Navis"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="47cd-556c-723b-e034" primary="false" name="Operative"/>
+        <categoryLink targetId="5eb9-3063-33ee-fc3" id="15d-d724-4bfa-fe36" primary="true" name="Imperial Navy Breachers"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Arbites Castigator" hidden="false" type="selectionEntry" id="efb6-5329-16a5-a8f2" targetId="bfc5-d389-8c89-9820">
@@ -3078,7 +3102,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="314e-1833-e85a-2256" id="d5f6-5810-5111-416a" primary="false" name="Adeptus Arbites"/>
         <categoryLink targetId="52f3-8710-5b77-4269" id="fea5-a050-c5b9-8a20" primary="false" name="Castigator"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="1ebf-2600-c0d8-194c" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="1948-af22-3c47-22ab" id="3394-e701-1599-2b2d" primary="true" name="Exaction Squad"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="a7ea-c458-8307-8938" primary="false" name="Operative"/>
+        <categoryLink targetId="5750-52c0-127a-fa5b" id="87e4-e37d-38b3-32ed" primary="true" name="Exaction Squad"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="597f-c3cf-2a37-8db3" type="max"/>
@@ -3123,8 +3148,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="314e-1833-e85a-2256" id="73c3-6f01-9407-267f" primary="false" name="Adeptus Arbites"/>
         <categoryLink targetId="7f93-bd9f-2338-8268" id="6b2a-a1c5-645-338e" primary="false" name="Arbites"/>
         <categoryLink targetId="7b50-67f3-134a-044a" id="fa3b-c63e-97c-dbb9" primary="false" name="Chirurgant"/>
-        <categoryLink targetId="1948-af22-3c47-22ab" id="1823-5eb1-4ccf-4edc" primary="true" name="Exaction Squad"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="6b23-e076-e811-9ba1" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="af9-2-3177-da64" primary="false" name="Operative"/>
+        <categoryLink targetId="5750-52c0-127a-fa5b" id="ba01-5cad-eb3a-1285" primary="true" name="Exaction Squad"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2b76-a92b-c02c-9f08" type="max"/>
@@ -3169,8 +3195,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="ee8c-cc44-acc3-40f0" id="4652-ac7c-c6f5-fbe1" primary="false" name="Gunner"/>
         <categoryLink targetId="314e-1833-e85a-2256" id="2027-36a5-576d-6318" primary="false" name="Adeptus Arbites"/>
         <categoryLink targetId="7f93-bd9f-2338-8268" id="67c0-98c6-e7f5-7cad" primary="false" name="Arbites"/>
-        <categoryLink targetId="1948-af22-3c47-22ab" id="effb-3100-ddca-17a5" primary="true" name="Exaction Squad"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="f7bd-569c-1503-b902" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="3c48-1ddc-452a-3a9e" primary="false" name="Operative"/>
+        <categoryLink targetId="5750-52c0-127a-fa5b" id="78f-ca31-3dad-7701" primary="true" name="Exaction Squad"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5269-abb1-8c99-b16d" type="max"/>
@@ -3215,8 +3242,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="314e-1833-e85a-2256" id="c9-7d7a-bca4-d480" primary="false" name="Adeptus Arbites"/>
         <categoryLink targetId="7f93-bd9f-2338-8268" id="8000-963e-3220-861e" primary="false" name="Arbites"/>
         <categoryLink targetId="3b56-8e29-78cb-f7a4" id="462a-9627-7876-1f7d" primary="false" name="Leashmaster"/>
-        <categoryLink targetId="1948-af22-3c47-22ab" id="17d2-4e2d-c9ed-200f" primary="true" name="Exaction Squad"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="baaa-8c00-20ee-e469" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="3914-7342-897f-ab9e" primary="false" name="Operative"/>
+        <categoryLink targetId="5750-52c0-127a-fa5b" id="e7cb-9cfb-4067-47d1" primary="true" name="Exaction Squad"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="acdb-458-bf80-e318" type="max"/>
@@ -3261,8 +3289,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="314e-1833-e85a-2256" id="f8e7-ea8e-e6ed-c7ae" primary="false" name="Adeptus Arbites"/>
         <categoryLink targetId="7f93-bd9f-2338-8268" id="f81b-50d2-c3ab-59c2" primary="false" name="Arbites"/>
         <categoryLink targetId="bd36-7f72-a1ef-ce74" id="cc6a-cb5a-6e2b-7d5d" primary="false" name="Malocator"/>
-        <categoryLink targetId="1948-af22-3c47-22ab" id="c166-1220-8b5-be07" primary="true" name="Exaction Squad"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="1853-b401-d354-21d7" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="359a-d20e-fe16-4598" primary="false" name="Operative"/>
+        <categoryLink targetId="5750-52c0-127a-fa5b" id="ade5-4875-a08e-800" primary="true" name="Exaction Squad"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dbef-121c-e8f0-3756" type="max"/>
@@ -3297,8 +3326,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="314e-1833-e85a-2256" id="47c3-b811-2646-7626" primary="false" name="Adeptus Arbites"/>
         <categoryLink targetId="7f93-bd9f-2338-8268" id="757c-b771-edaf-d4d3" primary="false" name="Arbites"/>
         <categoryLink targetId="7fc0-8607-697d-74d5" id="f1ee-2b35-fe54-2292" primary="false" name="Marksman"/>
-        <categoryLink targetId="1948-af22-3c47-22ab" id="8737-3f60-a91a-7ae1" primary="true" name="Exaction Squad"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="f045-4000-e543-a7e8" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="668b-67af-dbc3-f7ef" primary="false" name="Operative"/>
+        <categoryLink targetId="5750-52c0-127a-fa5b" id="a9a3-999-9cc1-96f8" primary="true" name="Exaction Squad"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e7bb-82c-4fbf-653c" type="max"/>
@@ -3342,8 +3372,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="15ae-553e-01d1-23a9" id="f9e3-2856-4622-6f59" primary="false" name="Imperium"/>
         <categoryLink targetId="314e-1833-e85a-2256" id="8a1d-cf23-9d97-3ad2" primary="false" name="Adeptus Arbites"/>
         <categoryLink targetId="045f-1f64-cccc-7ff5" id="c79f-ca9a-5efa-399" primary="false" name="R-VR Cyber Mastiff"/>
-        <categoryLink targetId="1948-af22-3c47-22ab" id="50c8-29d2-33ef-365a" primary="true" name="Exaction Squad"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="d8b8-eac7-20f3-4dea" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="23f2-4823-ee89-b8bc" primary="false" name="Operative"/>
+        <categoryLink targetId="5750-52c0-127a-fa5b" id="6930-66bb-8937-1fb1" primary="true" name="Exaction Squad"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d83d-f900-aaa0-13b6" type="max"/>
@@ -3378,8 +3409,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="314e-1833-e85a-2256" id="496-2052-7376-7f38" primary="false" name="Adeptus Arbites"/>
         <categoryLink targetId="7f93-bd9f-2338-8268" id="b4d6-c2bc-cf03-ae2c" primary="false" name="Arbites"/>
         <categoryLink targetId="0151-5f39-3ada-406a" id="43c8-eb0-f636-6b78" primary="false" name="Revelatum"/>
-        <categoryLink targetId="1948-af22-3c47-22ab" id="c8e3-d6b2-5127-cf63" primary="true" name="Exaction Squad"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="150a-f822-8b88-fc76" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="732f-dadd-818a-5c0e" primary="false" name="Operative"/>
+        <categoryLink targetId="5750-52c0-127a-fa5b" id="9ff5-659-16c1-bd17" primary="true" name="Exaction Squad"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b7d2-edf2-d4d4-da84" type="max"/>
@@ -3424,8 +3456,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="314e-1833-e85a-2256" id="6fdd-8be1-c7bc-a4ac" primary="false" name="Adeptus Arbites"/>
         <categoryLink targetId="7f93-bd9f-2338-8268" id="d17b-7b38-f6af-8be7" primary="false" name="Arbites"/>
         <categoryLink targetId="5f5a-816b-ac62-bf83" id="49d1-81d5-6f12-ea97" primary="false" name="Subductor"/>
-        <categoryLink targetId="1948-af22-3c47-22ab" id="3741-7a73-9fff-11d2" primary="true" name="Exaction Squad"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="583b-3276-9492-b4de" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="78a5-669b-21b6-9992" primary="false" name="Operative"/>
+        <categoryLink targetId="5750-52c0-127a-fa5b" id="38c5-38b0-25a4-d927" primary="true" name="Exaction Squad"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca15-3f46-4933-cac2" type="max"/>
@@ -3470,8 +3503,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="314e-1833-e85a-2256" id="3bf6-46f1-3036-920f" primary="false" name="Adeptus Arbites"/>
         <categoryLink targetId="7f93-bd9f-2338-8268" id="a992-94-bed9-ab62" primary="false" name="Arbites"/>
         <categoryLink targetId="d537-9cb6-ba03-5162" id="119d-1320-35ba-656a" primary="false" name="Vigilant"/>
-        <categoryLink targetId="1948-af22-3c47-22ab" id="d62c-712-5ce5-e2ab" primary="true" name="Exaction Squad"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="ec33-ca38-125e-467f" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="69af-b71-21a9-b2c2" primary="false" name="Operative"/>
+        <categoryLink targetId="5750-52c0-127a-fa5b" id="bda0-8ee8-e7d5-a5f3" primary="true" name="Exaction Squad"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Arbites Vox-signifier" hidden="false" type="selectionEntry" id="bff-d0e6-270-cba5" targetId="ea-9b10-8fab-970c">
@@ -3506,8 +3540,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="314e-1833-e85a-2256" id="d7a6-2486-d906-cfc4" primary="false" name="Adeptus Arbites"/>
         <categoryLink targetId="7f93-bd9f-2338-8268" id="3628-59d8-c85a-40f9" primary="false" name="Arbites"/>
         <categoryLink targetId="53b7-e174-1b8c-859a" id="4a4c-e7c9-f064-d0a8" primary="false" name="Vox-signifier"/>
-        <categoryLink targetId="1948-af22-3c47-22ab" id="1e0d-87a5-81bb-1059" primary="true" name="Exaction Squad"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="50fc-9456-cd02-9129" primary="false" name="INQUISITORIAL AGENT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="a6bb-7702-f147-9d84" primary="false" name="Operative"/>
+        <categoryLink targetId="5750-52c0-127a-fa5b" id="7eac-aacb-bc1b-ac9f" primary="true" name="Exaction Squad"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c083-338-9257-55d3" type="max"/>
@@ -3526,7 +3561,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="51d2-f096-47a9-1956" id="67bf-23a4-5927-f4c0" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="b590-f8ac-02b1-a5e5" id="7539-d972-9f67-df08" primary="false" name="Bruiser Veteran"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="25ff-9b60-d523-a993" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="3672-6972-c80b-38b7" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="456a-d56f-badd-eafa" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="f052-6a4f-ae4d-62e6" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d4c9-511b-6ae8-796b" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -3571,7 +3607,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="51d2-f096-47a9-1956" id="c73e-c14a-79c-6bbf" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="6790-22ed-c8fa-6309" id="3abb-1786-ae0c-833c" primary="false" name="Comms Veteran"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="d417-743d-3b5a-e11" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="d705-441b-6608-338b" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="7282-db82-ff65-1f9c" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="188-5faa-5ce-1c21" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9e8-4f72-114b-a90a" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -3616,7 +3653,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="51d2-f096-47a9-1956" id="e3fc-d1d4-695-f0e7" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="dc5e-7a69-2c1d-12bb" id="b3a9-3093-2f92-6449" primary="false" name="Demolition Veteran"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="664-4379-618d-3ec1" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="cc0c-88f-3d6-48c5" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="4b0a-ea90-cd1b-7a31" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="19c4-8780-9b8-54d7" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9f44-ffa4-4cd9-356f" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -3660,7 +3698,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="51d2-f096-47a9-1956" id="eb2a-26fa-a856-c1b0" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="900c-91f5-1f16-b811" id="1aff-ef87-d652-14be" primary="false" name="Gunner Veteran"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="7c76-1880-f18-67e4" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="c522-d70b-bfa3-4f4f" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="4600-2be-87b1-2234" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="cbfe-8f7a-c3ce-3a41" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4753-7608-295d-5fb8" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -3695,7 +3734,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="15ae-553e-01d1-23a9" id="f0c1-bdda-1269-93b8" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="757b-39e1-bb61-6a1e" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="449-63b9-4687-7e80" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="b341-48c0-ba39-3974" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="9475-c7cf-5d86-7408" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="9304-8657-5c1b-3eb" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b44c-6c0a-66e9-5b73" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -3730,7 +3770,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="15ae-553e-01d1-23a9" id="1ef-c0a5-7688-13a8" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="9ebb-6314-8540-62e9" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="96ab-90dd-af87-d29e" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="ea86-2bbb-b7b4-9020" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="dad-723a-5af4-5aad" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="7bc5-2dbd-e0f5-326b" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a7b3-9931-2783-17bf" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -3765,7 +3806,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="15ae-553e-01d1-23a9" id="42ac-3012-2f86-2ade" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="8791-324b-2acb-49b6" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="3710-5ad4-b623-b90" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="e786-2bb4-55c5-f3a6" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="d962-6a14-ee02-b2b2" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="c7fc-fe4c-e66f-517e" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="31ae-fa2b-1f17-6542" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -3800,7 +3842,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="51d2-f096-47a9-1956" id="3905-e812-a802-3be1" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="3e9d-eaef-1b8e-d9c5" id="684a-8371-3182-3b7a" primary="false" name="Hardened Veteran"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="4c47-1086-2ddb-ff59" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="eba-a49c-3a76-4178" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="8fe3-2bfa-31a1-8bbe" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="ad97-7020-d36b-b79d" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="acb6-ac0e-c721-63a0" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -3846,7 +3889,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="c44a-2ec6-3764-e5f4" id="5fc2-d659-aaa5-bb62" primary="false" name="Medic Veteran"/>
         <categoryLink targetId="8e1d-1094-f504-d8cd" id="9fb2-66ce-de3f-1695" primary="false" name="Medic"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="7a26-5ea5-a0fd-83ed" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="b0fd-85c8-3168-486a" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="7e53-11f2-7783-1962" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="8c2f-e410-4dbb-e436" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="47fd-3d73-7f44-b52b" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -3891,7 +3935,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="51d2-f096-47a9-1956" id="eeb8-5dcf-fa3b-6044" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="b1ff-4296-787b-39c3" id="39f-4832-14ab-5026" primary="false" name="Sniper Veteran"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="f5a3-c76d-fecb-2e92" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="d5ec-561b-38d8-89c3" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="b9b-c555-cf0c-bd9" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="cabf-c793-d002-be38" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="29de-247a-a6a-9423" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -3926,7 +3971,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="51d2-f096-47a9-1956" id="e0e3-214a-fcad-aca7" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="ef4a-6883-982a-2b4b" id="916-ba1-9539-be18" primary="false" name="Trooper Veteran"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="1fb7-8569-8ed4-544c" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="254a-3c51-a6b9-57c4" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="8e97-b5f9-224e-54db" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="9c1b-8555-ba0a-f6e4" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c780-6f6b-59b2-e99e" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -3961,7 +4007,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="51d2-f096-47a9-1956" id="4ee9-99fa-2ce8-1f5e" primary="false" name="Astra Militarum"/>
         <categoryLink targetId="5e0d-a324-98e7-6fb7" id="1322-f31c-8d87-3c2d" primary="false" name="Zealot Veteran"/>
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="d97a-544c-7c7a-8fa3" primary="false" name="INQUISITORIAL AGENT"/>
-        <categoryLink targetId="787e-6218-c35f-93fa" id="3b99-c64e-3c11-1e4e" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="9f68-af62-dad8-a2bd" primary="false" name="Operative"/>
+        <categoryLink targetId="dfb3-bfe0-549d-be8" id="c683-9b60-3604-641c" primary="true" name="Veteran Guardsmen"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3ee1-5418-cd6a-93fd" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>

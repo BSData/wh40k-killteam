@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="7" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="8" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
     <costType id="c61a-51a3-370d-bf55" name="EP" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
@@ -72,6 +72,12 @@
     <categoryEntry id="55b9-413d-e975-492a" name="Psyker" hidden="false"/>
     <categoryEntry id="c5c1-db85-5269-3c3c" name="Drone" hidden="false"/>
     <categoryEntry id="5378-18da-9409-091a" name="Mutoid Vermin" hidden="false"/>
+    <categoryEntry name="Sister of Silence" hidden="false" id="ddb1-20b1-eebf-aa4a"/>
+    <categoryEntry name="Tempestus Scion" hidden="false" id="5d21-66e8-b1eb-209f"/>
+    <categoryEntry name="Veteran Guardsmen" hidden="false" id="dfb3-bfe0-549d-be8"/>
+    <categoryEntry name="Kasrkin" hidden="false" id="21f1-9708-dcc8-d36c"/>
+    <categoryEntry name="Imperial Navy Breachers" hidden="false" id="5eb9-3063-33ee-fc3"/>
+    <categoryEntry name="Exaction Squad" hidden="false" id="5750-52c0-127a-fa5b"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7138-2b60-74ce-a90b" name="Roster" hidden="false">
@@ -93,6 +99,12 @@
         </categoryLink>
         <categoryLink id="adfa-b821-d9f9-04db" name="Drone" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
         <categoryLink id="b6b4-8178-6092-bdff" name="Mutoid Vermin" hidden="false" targetId="5378-18da-9409-091a" primary="false"/>
+        <categoryLink name="Exaction Squad" hidden="false" id="ba8f-9d13-e857-513d" targetId="5750-52c0-127a-fa5b" type="category"/>
+        <categoryLink name="Imperial Navy Breachers" hidden="false" id="ed65-528b-1b6e-83f" targetId="5eb9-3063-33ee-fc3" type="category"/>
+        <categoryLink name="Kasrkin" hidden="false" id="1b4c-f880-8642-2c55" targetId="21f1-9708-dcc8-d36c" type="category"/>
+        <categoryLink name="Sister of Silence" hidden="false" id="1753-cdc3-42b9-278" targetId="ddb1-20b1-eebf-aa4a" type="category"/>
+        <categoryLink name="Tempestus Scion" hidden="false" id="b0a-6a2c-c8a7-a72c" targetId="5d21-66e8-b1eb-209f" type="category"/>
+        <categoryLink name="Veteran Guardsmen" hidden="false" id="6c20-7d5c-b853-538" targetId="dfb3-bfe0-549d-be8" type="category"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
