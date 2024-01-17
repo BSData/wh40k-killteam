@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="INQUISITORIAL AGENT" hidden="false" id="762e-9a1c-ad3a-3424"/>
     <categoryEntry name="Inquisition" hidden="false" id="307-ad5e-52b1-3bcd"/>
@@ -299,9 +299,14 @@
           </conditions>
         </modifier>
       </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Specialism" hidden="false" type="selectionEntryGroup" id="146b-f8d3-3c9f-1d7" targetId="8b8a-af5f-701f-42e2"/>
-      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="-" hidden="false" id="5494-f598-e376-89c6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf71-b4b5-d6a6-f00b"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="440f-3b3e-1c20-8496"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ancillary Support" hidden="false" id="3708-25db-c3c1-b732">
       <categoryLinks>
