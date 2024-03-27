@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3cd3-7d31-f105-e415" name="Farstalker Kinband" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3cd3-7d31-f105-e415" name="Farstalker Kinband" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="53d9-aee4-991f-1f73" name="FARSTALKER KINBAND" hidden="false"/>
     <categoryEntry id="0b91-407c-2178-9392" name="Kroot" hidden="false"/>
@@ -544,7 +544,7 @@ On a 2+, subtract ⬤ from that enemy operative&apos;s Movement characteristic a
           <characteristics>
             <characteristic name="M" typeId="c36f-3952-a91d-5a06">4⬤</characteristic>
             <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
             <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
             <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
             <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
@@ -873,7 +873,7 @@ This operative cannot perform this action while within Engagement Range of an en
           <profiles>
             <profile id="9ca1-6887-2bc4-58ab" name="⚔ Stalker&apos;s blade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
               <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
                 <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
                 <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
                 <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced</characteristic>
@@ -954,12 +954,12 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
         <profile id="7993-255a-1c8c-eb61" name="Marked for the Hunt (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
           <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative. Until the end of the Turning Point, while that enemy operative is within ⬟ horizontally and any distance vertically of your Pech&apos;ra token, it is marked for the hunt. Until the end of the Turning Point, each time a friendly FARSTALKER KINBAND operative within ⬟ horizontally and any distance vertically of your Pech&apos;ra token makes a shooting attack against an enemy operative marked for the hunt, that enemy operative cannot use Light terrain as Cover for that shooting attack. This operative cannot perform this action while within ⬟ of an enemy operative.</characteristic>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative. Until the end of the Turning Point, while that enemy operative is within ⬟ horizontally and any distance vertically of your Pech&apos;ra token, it is marked for the hunt. Until the end of the Turning Point, each time a friendly FARSTALKER KINBAND operative within ⬟ horizontally and any distance vertically of your Pech&apos;ra token makes a shooting attack against an enemy operative marked for the hunt, that enemy operative cannot use Light terrain as Cover for that shooting attack. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
           </characteristics>
         </profile>
         <profile id="b1ea-77bb-91b0-f27e" name="From the Eye Above (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
           <characteristics>
-            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly operative Visible to and within ⬟ of this operative. Add 1 to its APL. This operative cannot perform this action while within ⬟ of an enemy operative.</characteristic>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly operative Visible to and within ⬟ of this operative. Add 1 to its APL. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1601,7 +1601,7 @@ This operative cannot perform this action while within Engagement Range of an en
           <profiles>
             <profile id="a4cc-86ad-ada0-d766" name="⚔ Ritual blade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
               <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
                 <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
                 <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
                 <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
@@ -1872,6 +1872,11 @@ In addition, each time a shooting attack is made against this operative, the No 
         <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
           <conditions>
             <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8849-52f5-8ddf-0699" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="4" field="5f37-25bb-661b-5c9c">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="8849-52f5-8ddf-0699" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
