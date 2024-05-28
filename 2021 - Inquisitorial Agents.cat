@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="INQUISITORIAL AGENT" hidden="false" id="762e-9a1c-ad3a-3424"/>
     <categoryEntry name="Inquisition" hidden="false" id="307-ad5e-52b1-3bcd"/>
@@ -347,7 +347,7 @@
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="2dff-dc7f-6474-c46c" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="8def-1615-f16a-aacd" primary="false" name="Imperium"/>
         <categoryLink targetId="307-ad5e-52b1-3bcd" id="491e-49aa-2c57-ef39" primary="false" name="Inquisition"/>
-        <categoryLink targetId="1d69-c184-dca1-7652" id="1576-d6a1-3e9b-144c" primary="false" name="Autosavant Agent"/>
+        <categoryLink targetId="1d69-c184-dca1-7652" id="1576-d6a1-3e9b-144c" primary="false" name="Autosavant"/>
       </categoryLinks>
       <profiles>
         <profile name="Autosavant Agent" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="1f6f-d02f-97f-6b0f">
@@ -1922,7 +1922,6 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Autopistol" hidden="false" type="selectionEntry" id="7fca-5450-6fe8-7ce8" targetId="2e62-be27-42f9-2aee"/>
         <entryLink import="true" name="Fists" hidden="false" type="selectionEntry" id="6096-9725-d37e-814" targetId="cf7b-e75a-e09d-9d82"/>
         <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="d6e1-f5d2-4cc7-636e" targetId="f080-d126-4651-b003"/>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="9680-5e67-f441-ba4c" targetId="82af-b9b8-518f-aaf1"/>
@@ -2081,6 +2080,29 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
           </selectionEntries>
         </entryLink>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="d40a-5bcd-1fd8-35eb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a1-cd2d-833b-ff73"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8b3-da3b-2ab2-5648"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Autopistol" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="2564-529c-7de6-dc6d">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Indirect</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rng x" id="c61c-83f9-b85-8f01" hidden="false" type="rule" targetId="92de-2ad3-3554-0b3e"/>
+            <infoLink name="Indirect" id="cf0f-3ede-2b63-743d" hidden="false" type="rule" targetId="653d-16a5-eefb-8b71"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Penal Legionnaire Agent" hidden="false" id="e903-c1ad-184-e0ae">
       <categoryLinks>
@@ -4148,7 +4170,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
             <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
             <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
-            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
             <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
           </characteristics>
         </profile>
@@ -4416,15 +4438,15 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
   <forceEntries>
     <forceEntry name="Inquisitorial Agents Kill Team" hidden="false" id="b626-b122-1bf6-20fb">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="256a-af9a-bac7-136" targetId="fb89-efb1-54e4-59c5" type="category"/>
-        <categoryLink name="Leader" hidden="false" id="a63f-91ea-90de-60e2" targetId="3198-c1ce-dfd0-fb4f" type="category">
+        <categoryLink name="Configuration" hidden="false" id="256a-af9a-bac7-136" targetId="fb89-efb1-54e4-59c5"/>
+        <categoryLink name="Leader" hidden="false" id="a63f-91ea-90de-60e2" targetId="3198-c1ce-dfd0-fb4f">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f01f-85fb-213c-d9d7"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="534b-2313-71b3-b271"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Operative" hidden="false" id="5f15-5f43-4e17-dea0" targetId="f98b-0289-0f1f-b233" type="category"/>
-        <categoryLink name="Inquisition" hidden="false" id="9017-74d5-9b3e-23b1" targetId="307-ad5e-52b1-3bcd" type="category">
+        <categoryLink name="Operative" hidden="false" id="5f15-5f43-4e17-dea0" targetId="f98b-0289-0f1f-b233"/>
+        <categoryLink name="Inquisition" hidden="false" id="9017-74d5-9b3e-23b1" targetId="307-ad5e-52b1-3bcd">
           <constraints>
             <constraint type="min" value="12" field="selections" scope="parent" shared="true" id="ac87-ab77-ca39-22a"/>
             <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="425f-9fc5-e885-5362"/>
@@ -4442,27 +4464,27 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Autosavant" hidden="false" id="7eb-e70c-f60f-45a" targetId="1d69-c184-dca1-7652" type="category">
+        <categoryLink name="Autosavant" hidden="false" id="7eb-e70c-f60f-45a" targetId="1d69-c184-dca1-7652">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adb5-cc-3a5f-5228"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Questkeeper" hidden="false" id="1fb3-b0fa-bb7d-d568" targetId="638-d61a-186c-b800" type="category">
+        <categoryLink name="Questkeeper" hidden="false" id="1fb3-b0fa-bb7d-d568" targetId="638-d61a-186c-b800">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adb5-cc-3a5f-5228"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Death World Veteran" hidden="false" id="9bf8-5f3f-818b-9cdc" targetId="fa1a-9176-6479-ad0d" type="category">
+        <categoryLink name="Death World Veteran" hidden="false" id="9bf8-5f3f-818b-9cdc" targetId="fa1a-9176-6479-ad0d">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df27-ed36-9439-96cc"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Enlightener" hidden="false" id="50-acb4-108f-5c7" targetId="2e21-5fda-f1f6-c87d" type="category">
+        <categoryLink name="Enlightener" hidden="false" id="50-acb4-108f-5c7" targetId="2e21-5fda-f1f6-c87d">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adb5-cc-3a5f-5228"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Gun Servitor" hidden="false" id="9ae7-31dd-7726-52f1" targetId="54a8-123c-6127-cf18" type="category">
+        <categoryLink name="Gun Servitor" hidden="false" id="9ae7-31dd-7726-52f1" targetId="54a8-123c-6127-cf18">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97ba-1dcf-75ab-9143"/>
           </constraints>
@@ -4474,28 +4496,28 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Hexorcist" hidden="false" id="9cb9-97ba-aeb9-2780" targetId="1bcf-3f1f-ca63-48d4" type="category">
+        <categoryLink name="Hexorcist" hidden="false" id="9cb9-97ba-aeb9-2780" targetId="1bcf-3f1f-ca63-48d4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adb5-cc-3a5f-5228"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Mystic" hidden="false" id="7c60-e74d-c46e-39c4" targetId="8c85-72a4-3829-d47b" type="category">
+        <categoryLink name="Mystic" hidden="false" id="7c60-e74d-c46e-39c4" targetId="8c85-72a4-3829-d47b">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adb5-cc-3a5f-5228"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Penal Legionnaire" hidden="false" id="af1-be21-7d68-17c6" targetId="84e1-aaa2-adb6-435a" type="category">
+        <categoryLink name="Penal Legionnaire" hidden="false" id="af1-be21-7d68-17c6" targetId="84e1-aaa2-adb6-435a">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ea1-ada2-ffb4-7e06"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58d5-9901-7ad8-e4ca"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Pistolier" hidden="false" id="ddb1-a0e7-cedf-fb6c" targetId="27bb-b755-46db-fb50" type="category">
+        <categoryLink name="Pistolier" hidden="false" id="ddb1-a0e7-cedf-fb6c" targetId="27bb-b755-46db-fb50">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4377-4fd2-8577-4474"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Sister of Silence" hidden="true" id="245c-41d2-3550-990b" targetId="ddb1-20b1-eebf-aa4a" type="category">
+        <categoryLink name="Sister of Silence" hidden="true" id="245c-41d2-3550-990b" targetId="ddb1-20b1-eebf-aa4a">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6c68-3e0a-95c9-6674-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6c68-3e0a-95c9-6674-max"/>
@@ -4513,7 +4535,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifierGroup>
           </modifierGroups>
         </categoryLink>
-        <categoryLink name="Tempestus Scion" hidden="true" id="8bb6-e44a-7267-a492" targetId="5d21-66e8-b1eb-209f" type="category">
+        <categoryLink name="Tempestus Scion" hidden="true" id="8bb6-e44a-7267-a492" targetId="5d21-66e8-b1eb-209f">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8288-b154-30c5-f93e-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8288-b154-30c5-f93e-max"/>
@@ -4531,22 +4553,22 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifierGroup>
           </modifierGroups>
         </categoryLink>
-        <categoryLink name="Gunner" hidden="false" id="cd4d-7e23-52dc-c39b" targetId="ee8c-cc44-acc3-40f0" type="category">
+        <categoryLink name="Gunner" hidden="false" id="cd4d-7e23-52dc-c39b" targetId="ee8c-cc44-acc3-40f0">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="c11e-3e8e-27d0-37d3"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Comms" hidden="false" id="1d3b-473c-4a82-9a54" targetId="f4a7-72d6-9caa-fd5b" type="category">
+        <categoryLink name="Comms" hidden="false" id="1d3b-473c-4a82-9a54" targetId="f4a7-72d6-9caa-fd5b">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7698-f42d-a2ab-1fed"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Medic" hidden="false" id="74e-6ee3-ab13-5a09" targetId="8e1d-1094-f504-d8cd" type="category">
+        <categoryLink name="Medic" hidden="false" id="74e-6ee3-ab13-5a09" targetId="8e1d-1094-f504-d8cd">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="119a-6bdf-fcad-d4a8"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Kasrkin" hidden="true" id="842c-cd7e-f57a-b5c1" targetId="21f1-9708-dcc8-d36c" type="category">
+        <categoryLink name="Kasrkin" hidden="true" id="842c-cd7e-f57a-b5c1" targetId="21f1-9708-dcc8-d36c">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dc97-52b9-c485-67c4-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dc97-52b9-c485-67c4-max"/>
@@ -4564,7 +4586,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifierGroup>
           </modifierGroups>
         </categoryLink>
-        <categoryLink name="Imperial Navy Breachers" hidden="true" id="5574-7445-18b9-70d0" targetId="5eb9-3063-33ee-fc3" type="category">
+        <categoryLink name="Imperial Navy Breachers" hidden="true" id="5574-7445-18b9-70d0" targetId="5eb9-3063-33ee-fc3">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f4b9-b510-14d8-bf2a-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f4b9-b510-14d8-bf2a-max"/>
@@ -4582,7 +4604,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifierGroup>
           </modifierGroups>
         </categoryLink>
-        <categoryLink name="Exaction Squad" hidden="true" id="aabf-323a-fd88-fa37" targetId="5750-52c0-127a-fa5b" type="category">
+        <categoryLink name="Exaction Squad" hidden="true" id="aabf-323a-fd88-fa37" targetId="5750-52c0-127a-fa5b">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1e3-458d-cc9f-31be-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1e3-458d-cc9f-31be-max"/>
@@ -4600,7 +4622,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </modifierGroup>
           </modifierGroups>
         </categoryLink>
-        <categoryLink name="Veteran Guardsmen" hidden="true" id="ac49-7ade-ed05-80b7" targetId="dfb3-bfe0-549d-be8" type="category">
+        <categoryLink name="Veteran Guardsmen" hidden="true" id="ac49-7ade-ed05-80b7" targetId="dfb3-bfe0-549d-be8">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e544-a590-ff29-1b6a-min"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e544-a590-ff29-1b6a-max"/>
@@ -4630,7 +4652,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8999-6937-9432-ed0e" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Gunner Veteran" hidden="false" id="87d8-fdcb-39a0-2173" targetId="900c-91f5-1f16-b811" type="category">
+        <categoryLink name="Gunner Veteran" hidden="false" id="87d8-fdcb-39a0-2173" targetId="900c-91f5-1f16-b811">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3712-8b5b-e7d7-c630" type="max"/>
           </constraints>
@@ -5170,7 +5192,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
     <catalogueLink type="catalogue" name="Veteran Guardsmen" id="20ce-303e-ce9b-bb0e" targetId="8e62-da18-67f9-c594"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Combat Medic" hidden="false" type="selectionEntry" id="5f5c-a184-9e4f-15c8" targetId="7a81-7fad-e0a5-5995">
+    <entryLink import="true" name="Kasrkin Combat Medic" hidden="false" type="selectionEntry" id="5f5c-a184-9e4f-15c8" targetId="7a81-7fad-e0a5-5995">
       <categoryLinks>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="1dbf-5a27-e606-5b1e" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="944f-57fa-801a-b231" primary="false" name="Astra Militarum"/>
@@ -5216,7 +5238,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Demo-Trooper" hidden="false" type="selectionEntry" id="4353-a010-45b2-d5ce" targetId="7e7c-8fc6-cd8e-f542">
+    <entryLink import="true" name="Kasrkin Demo-Trooper" hidden="false" type="selectionEntry" id="4353-a010-45b2-d5ce" targetId="7e7c-8fc6-cd8e-f542">
       <entryLinks>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="d785-e703-62fb-5f68" targetId="82af-b9b8-518f-aaf1"/>
         <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="852f-3dc4-4d11-f605" targetId="d5ae-a34b-acc2-dfe7"/>
@@ -5252,7 +5274,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Gunner w/ flamer" hidden="false" type="selectionEntry" id="e422-2fce-6722-b93e" targetId="5a7d-6a80-8043-1fa">
+    <entryLink import="true" name="Kasrkin Gunner w/ flamer" hidden="false" type="selectionEntry" id="e422-2fce-6722-b93e" targetId="5a7d-6a80-8043-1fa">
       <entryLinks>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="4122-f5bb-6c2a-bc18" targetId="82af-b9b8-518f-aaf1"/>
         <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="1574-9084-66b-7843" targetId="d5ae-a34b-acc2-dfe7"/>
@@ -5288,7 +5310,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Gunner w/ grenade launcher" hidden="false" type="selectionEntry" id="e5d6-57f4-45b0-bb45" targetId="129-fd69-db06-fb72">
+    <entryLink import="true" name="Kasrkin Gunner w/ grenade launcher" hidden="false" type="selectionEntry" id="e5d6-57f4-45b0-bb45" targetId="129-fd69-db06-fb72">
       <entryLinks>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="b513-5dd9-24a8-50c8" targetId="82af-b9b8-518f-aaf1"/>
         <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="ca5d-fe7-196d-2133" targetId="d5ae-a34b-acc2-dfe7"/>
@@ -5324,7 +5346,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Gunner w/ hot-shot volley gun" hidden="false" type="selectionEntry" id="6eae-2ef0-2faf-90a4" targetId="3c59-1e93-79ce-4330">
+    <entryLink import="true" name="Kasrkin Gunner w/ hot-shot volley gun" hidden="false" type="selectionEntry" id="6eae-2ef0-2faf-90a4" targetId="3c59-1e93-79ce-4330">
       <entryLinks>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="671f-c366-1a8c-e230" targetId="82af-b9b8-518f-aaf1"/>
         <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="66a4-946-642e-1295" targetId="d5ae-a34b-acc2-dfe7"/>
@@ -5360,7 +5382,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Gunner w/ meltagun" hidden="false" type="selectionEntry" id="1593-cf69-8c5b-ce0d" targetId="4651-a1a3-c9c5-de02">
+    <entryLink import="true" name="Kasrkin Gunner w/ meltagun" hidden="false" type="selectionEntry" id="1593-cf69-8c5b-ce0d" targetId="4651-a1a3-c9c5-de02">
       <entryLinks>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="5e6a-da9f-88a9-84b" targetId="82af-b9b8-518f-aaf1"/>
         <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="de9b-e49e-d03a-f40b" targetId="d5ae-a34b-acc2-dfe7"/>
@@ -5396,7 +5418,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Gunner w/ plasma gun" hidden="false" type="selectionEntry" id="e14-4f28-54b0-d44d" targetId="4e18-cc37-b188-27da">
+    <entryLink import="true" name="Kasrkin Gunner w/ plasma gun" hidden="false" type="selectionEntry" id="e14-4f28-54b0-d44d" targetId="4e18-cc37-b188-27da">
       <entryLinks>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="5843-afbc-55f4-78f7" targetId="82af-b9b8-518f-aaf1"/>
         <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="20a1-5bce-c78a-65ff" targetId="d5ae-a34b-acc2-dfe7"/>
@@ -5432,7 +5454,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Recon-Trooper" hidden="false" type="selectionEntry" id="62a1-d1ad-bcea-397f" targetId="e6b7-c531-18b9-e235">
+    <entryLink import="true" name="Kasrkin Recon-Trooper" hidden="false" type="selectionEntry" id="62a1-d1ad-bcea-397f" targetId="e6b7-c531-18b9-e235">
       <entryLinks>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="5b76-8e40-2eed-ebc5" targetId="82af-b9b8-518f-aaf1"/>
         <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="8bc4-aa84-44c0-7134" targetId="d5ae-a34b-acc2-dfe7"/>
@@ -5478,7 +5500,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Sharpshooter" hidden="false" type="selectionEntry" id="b8f8-99bc-cc9a-46b0" targetId="24cd-4af2-f63b-67c1">
+    <entryLink import="true" name="Kasrkin Sharpshooter" hidden="false" type="selectionEntry" id="b8f8-99bc-cc9a-46b0" targetId="24cd-4af2-f63b-67c1">
       <entryLinks>
         <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="3aa7-501f-b45f-1ee2" targetId="82af-b9b8-518f-aaf1"/>
         <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="8b82-edf0-d9ef-c9a9" targetId="d5ae-a34b-acc2-dfe7"/>
@@ -5514,7 +5536,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Trooper" hidden="false" type="selectionEntry" id="d68d-bd11-84c7-df7d" targetId="8f48-568f-4334-5296">
+    <entryLink import="true" name="Kasrkin Trooper" hidden="false" type="selectionEntry" id="d68d-bd11-84c7-df7d" targetId="8f48-568f-4334-5296">
       <categoryLinks>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="6e74-26c6-4921-a50d" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="4ef2-5246-cd64-6ad8" primary="false" name="Astra Militarum"/>
@@ -5550,7 +5572,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </entryLink>
       </entryLinks>
     </entryLink>
-    <entryLink import="true" name="Vox-Trooper" hidden="false" type="selectionEntry" id="a059-d7f-353b-849a" targetId="ab64-1656-c70e-2b6e">
+    <entryLink import="true" name="Kasrkin Vox-Trooper" hidden="false" type="selectionEntry" id="a059-d7f-353b-849a" targetId="ab64-1656-c70e-2b6e">
       <categoryLinks>
         <categoryLink targetId="15ae-553e-01d1-23a9" id="edae-ee14-f1a9-8f15" primary="false" name="Imperium"/>
         <categoryLink targetId="51d2-f096-47a9-1956" id="f674-ba0d-e58c-84f3" primary="false" name="Astra Militarum"/>
