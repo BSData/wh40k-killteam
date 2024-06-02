@@ -22,22 +22,27 @@ Warhammer 40,000: Kill Team
 __What's this?__
 
 BSData organisation created this project. It's GitHub repository of datafiles.
-Maintained by community, in no way endorsed by BattleScribe. If you want
+Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want
 to develop - cool! We need you! Take a look at [Getting Started wiki][]
 
 __Okay, nice project. Is it actually working?__ _I just want those files..._
 
 Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
 
+__I found a bug!__ / *I have another request*
+
+Great, thank you! Please [Report a bug][bug report] - you can also suggest enhancements and raise other issues there.
+
 
 ## Links ##
 [Links]: #links
 
-* [BattleScribe homepage][]
-* [BattleScribe Data on Appspot][]
-* [Getting Started wiki][]
+* [BSData organization homepage][BSData.net]
+* [New Recruit homepage](https://www.newrecruit.eu)
+* [Bluescribe homepage](https://bluewinds.github.io/bluescribe/)
+* [BattleScribe app homepage](https://www.battlescribe.net/)
 
-
-[BattleScribe homepage]: http://www.battlescribe.net/
+[BSData.net]: https://www.bsdata.net/
+[bug report]: https://github.com/BSData/wh40k-10e/issues/new/choose
 [BattleScribe Data on Appspot]: http://battlescribedata.appspot.com/#/repos
 [Getting Started wiki]: https://github.com/BSData/catalogue-development/wiki/Getting-Started
