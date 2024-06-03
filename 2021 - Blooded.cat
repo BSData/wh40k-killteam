@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="bfeb-dc54-faa7-a9ba" name="Blooded" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="bfeb-dc54-faa7-a9ba" name="Blooded" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a07d-2f4e-2358-5660" name="Traitor Chieftain" hidden="false"/>
     <categoryEntry id="dd95-f453-40a2-118d" name="Traitor Brimstone Grenadier" hidden="false"/>
@@ -109,7 +109,7 @@
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b3fb-8a92-a030-f10a" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="4239-963a-b4d5-2438" name="Min 4 of:" hidden="false" targetId="39c7-f66f-59b8-3b88" primary="false">
+        <categoryLink id="4239-963a-b4d5-2438" name="Four of:" hidden="false" targetId="39c7-f66f-59b8-3b88" primary="false">
           <modifierGroups>
             <modifierGroup>
               <repeats>
@@ -160,7 +160,7 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="b5c5-22cb-ff99-7d23" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="b5c5-22cb-ff99-7d23" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="65a3-881b-2093-561b" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="1f42-0d05-fec5-cb07" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="ffc2-6276-3811-5a12" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -256,7 +256,7 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="2249-b6fc-4a4d-1e7f" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="2249-b6fc-4a4d-1e7f" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="0857-50d2-3021-e9a3" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="4f29-0b96-7411-e6e6" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="c620-0247-8f18-2da6" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -346,7 +346,7 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="a489-fccb-88b3-7688" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="a489-fccb-88b3-7688" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="8406-e222-8878-7f88" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="a7f4-30bc-0c11-8e4a" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="e025-6630-886c-7f53" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -412,7 +412,7 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="6366-d794-0e00-a91a" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="6366-d794-0e00-a91a" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="3a46-5098-ee43-356a" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="2de7-5337-4988-bee9" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="0363-4d8d-9b4a-a036" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -480,14 +480,13 @@
         <modifier type="set" field="name" value="Traitor Enforcer"/>
       </modifiers>
       <modifierGroups>
-        <modifierGroup>
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7138-2b60-74ce-a90b" type="instanceOf"/>
-          </conditions>
+        <modifierGroup type="and">
           <modifiers>
-            <modifier type="set-primary" field="category" value="f98b-0289-0f1f-b233"/>
-            <modifier type="remove" field="category" value="39c7-f66f-59b8-3b88"/>
+            <modifier type="set-primary" value="39c7-f66f-59b8-3b88" field="category"/>
           </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7138-2b60-74ce-a90b" shared="true"/>
+          </conditions>
         </modifierGroup>
       </modifierGroups>
       <profiles>
@@ -517,11 +516,10 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="4cca-a84d-3e4f-c96b" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false"/>
+        <categoryLink id="4cca-a84d-3e4f-c96b" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="8646-df90-e522-a42f" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="0344-3c9b-5916-7ec5" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
         <categoryLink id="68da-d956-4b62-67d8" name="Traitor Enforcer" hidden="false" targetId="7cb0-30cb-75f2-21fc" primary="false"/>
-        <categoryLink id="a55c-aa37-0962-8a27" name="Mandatory" hidden="false" targetId="39c7-f66f-59b8-3b88" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a241-93c8-2039-8c85" name="Power fist" hidden="false" collective="false" import="true" type="upgrade">
@@ -598,7 +596,7 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="3d17-06de-e8ad-5ee7" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="3d17-06de-e8ad-5ee7" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="972a-edb5-19b0-ff15" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="28ca-c027-7b78-5c4f" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="339b-f51b-2dcb-4a13" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -680,7 +678,7 @@ This operative cannot perform this action while within Engagement Range of an en
         <infoLink id="1b59-282b-9c90-466d" name="Traitor Gunner" hidden="false" targetId="cbb5-155e-bddc-375e" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="31a8-9298-a965-dc55" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="31a8-9298-a965-dc55" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="28ed-dade-a5a2-8228" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="07cf-0fd9-4db0-1517" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="04cf-33c1-c721-162e" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -748,7 +746,7 @@ This operative cannot perform this action while within Engagement Range of an en
         <infoLink id="139e-56b2-8557-7c32" name="Traitor Gunner" hidden="false" targetId="cbb5-155e-bddc-375e" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="5831-b86a-ab08-de45" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="5831-b86a-ab08-de45" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="009c-b0e4-c6b9-7ce0" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="11ed-ac62-9df6-c499" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="45e9-301d-e29c-41b6" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -825,7 +823,7 @@ This operative cannot perform this action while within Engagement Range of an en
         <infoLink id="c098-878d-3bdc-144a" name="Traitor Gunner" hidden="false" targetId="cbb5-155e-bddc-375e" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="47d5-cfca-3035-9feb" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="47d5-cfca-3035-9feb" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="ed33-6fc5-2fce-7f29" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="83f6-9873-2c00-856f" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="517e-7fa8-0677-4611" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -894,7 +892,7 @@ This operative cannot perform this action while within Engagement Range of an en
         <infoLink id="57d6-9ae7-18e6-ea95" name="Traitor Gunner" hidden="false" targetId="cbb5-155e-bddc-375e" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="f539-0b5a-037e-becb" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="f539-0b5a-037e-becb" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="d6ba-2294-8b5c-233a" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="b96b-012f-ec9c-bc18" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="87fd-e320-f9ec-1c4e" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -961,14 +959,13 @@ This operative cannot perform this action while within Engagement Range of an en
         <modifier type="set" field="name" value="Traitor Ogryn"/>
       </modifiers>
       <modifierGroups>
-        <modifierGroup>
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7138-2b60-74ce-a90b" type="instanceOf"/>
-          </conditions>
+        <modifierGroup type="and">
           <modifiers>
-            <modifier type="set-primary" field="category" value="f98b-0289-0f1f-b233"/>
-            <modifier type="remove" field="category" value="39c7-f66f-59b8-3b88"/>
+            <modifier type="set-primary" value="39c7-f66f-59b8-3b88" field="category"/>
           </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7138-2b60-74ce-a90b" shared="true"/>
+          </conditions>
         </modifierGroup>
       </modifierGroups>
       <profiles>
@@ -999,11 +996,10 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="a747-0665-9fe8-d6b4" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false"/>
+        <categoryLink id="a747-0665-9fe8-d6b4" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="c25f-fb21-d72a-1c97" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="c829-100a-59a1-8b58" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
         <categoryLink id="2a26-41d7-8b75-6266" name="Traitor Ogryn" hidden="false" targetId="fc5f-d572-7d38-fa84" primary="false"/>
-        <categoryLink id="798b-f167-3865-1844" name="Mandatory" hidden="false" targetId="39c7-f66f-59b8-3b88" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a336-a0c9-45ce-9d74" name="Power maul and mutant claw" hidden="false" collective="false" import="true" type="upgrade">
@@ -1080,7 +1076,7 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="df8d-bfa1-a113-8333" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="df8d-bfa1-a113-8333" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="d560-2953-e9d2-2d84" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="8474-4396-a613-a3c8" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="48d0-4a03-469b-5c50" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -1162,7 +1158,7 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="3e80-5b0d-d4e3-da03" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="3e80-5b0d-d4e3-da03" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="4922-6d04-c0c1-f053" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="3382-ad5b-5576-4939" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="79ab-b152-fa08-9a15" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -1244,7 +1240,7 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="5334-a907-019c-41da" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="5334-a907-019c-41da" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
         <categoryLink id="6bba-1e1b-8247-199d" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="cbde-8cdb-af34-6ed4" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="c52c-5dec-2f99-c690" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>
@@ -1455,12 +1451,12 @@ This operative cannot perform this action while within Engagement Range of an en
   <entryLinks>
     <entryLink id="4ab7-1aad-e5a4-2672" name="Traitor Trooper" hidden="false" collective="false" import="true" targetId="62b3-4907-d2e1-d8d7" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="7e80-1da1-ccc4-460e" name="New CategoryLink" hidden="false" targetId="39c7-f66f-59b8-3b88" primary="true"/>
+        <categoryLink id="7e80-1da1-ccc4-460e" name="Four of:" hidden="false" targetId="39c7-f66f-59b8-3b88" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4b19-dd57-2f9b-da48" name="Traitor Trooper" hidden="false" collective="false" import="true" targetId="62b3-4907-d2e1-d8d7" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="6bf6-f1dd-57a5-303f" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
+        <categoryLink id="6bf6-f1dd-57a5-303f" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1850,7 +1846,7 @@ This operative cannot perform this action while within Engagement Range of an en
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="90f3-b52a-78ee-6df7" name="New CategoryLink" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false"/>
+        <categoryLink id="90f3-b52a-78ee-6df7" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false"/>
         <categoryLink id="9d5a-16a5-babe-2b25" name="BLOODED" hidden="false" targetId="4e44-aedf-3498-4e1b" primary="false"/>
         <categoryLink id="7fa6-7083-fb19-3599" name="Chaos" hidden="false" targetId="ba61-d304-9352-ec15" primary="false"/>
         <categoryLink id="5543-648e-482e-a543" name="Militarum Traitoris" hidden="false" targetId="0e02-9fa7-8004-6c36" primary="false"/>

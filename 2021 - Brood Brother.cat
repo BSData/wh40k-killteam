@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7b46-bbf-4b5d-deb2" name="Brood Brother" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="8" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7b46-bbf-4b5d-deb2" name="Brood Brother" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="8" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="BROOD BROTHER" id="ff4e-783a-aecf-a6fd" hidden="false"/>
     <categoryEntry name="Tyranid" id="c641-ef3c-6cbd-c42e" hidden="false"/>
@@ -953,8 +953,20 @@
         <categoryLink targetId="c641-ef3c-6cbd-c42e" id="61cd-5851-3dde-4429" primary="false" name="Tyranid"/>
         <categoryLink targetId="3391-553a-c41b-de73" id="715-f78a-9a40-8eeb" primary="false" name="Genestealer Cult"/>
         <categoryLink targetId="bd5f-3e3d-1cc0-2863" id="29c6-f0da-dd4a-989d" primary="false" name="Psychic Familiar"/>
-        <categoryLink targetId="9a77-b7bf-f791-37a6" id="4c1f-42ad-d446-82c9" primary="true" name="Three of:"/>
+        <categoryLink targetId="9a77-b7bf-f791-37a6" id="4c1f-42ad-d446-82c9" primary="false" name="Three of:"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="c230-af46-ace2-f7ad" primary="true" name="Operative"/>
       </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="9a77-b7bf-f791-37a6" field="category"/>
+            <modifier type="remove" value="f98b-0289-0f1f-b233" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7138-2b60-74ce-a90b" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Magus" hidden="false" id="d850-ec90-8d53-174b">
       <entryLinks>
@@ -964,14 +976,13 @@
         <entryLink import="true" name="Specialism" hidden="false" id="63f0-53c7-e33e-3599" type="selectionEntryGroup" targetId="15d8-2387-ff4c-d3d8"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="3198-c1ce-dfd0-fb4f" id="b35f-78fb-27f0-cf15" primary="false" name="Leader"/>
+        <categoryLink targetId="3198-c1ce-dfd0-fb4f" id="b35f-78fb-27f0-cf15" primary="true" name="Leader"/>
         <categoryLink targetId="ff4e-783a-aecf-a6fd" id="ec08-954b-a0d3-c60f" primary="false" name="BROOD BROTHER"/>
         <categoryLink targetId="c1bf-23d8-ba99-994" id="ee65-23d0-a09b-f684" primary="false" name="Broodcoven"/>
         <categoryLink targetId="55b9-413d-e975-492a" id="7fb9-ba6d-521a-5d15" primary="false" name="Psyker"/>
         <categoryLink targetId="f8a6-21a-bfef-d30f" id="a35-625e-32a1-368f" primary="false" name="Magus"/>
         <categoryLink targetId="c641-ef3c-6cbd-c42e" id="c2c0-3f46-49a6-7503" primary="false" name="Tyranid"/>
         <categoryLink targetId="3391-553a-c41b-de73" id="6363-170-f5ef-6384" primary="false" name="Genestealer Cult"/>
-        <categoryLink targetId="9a77-b7bf-f791-37a6" id="fa5e-377a-3b3a-68d9" primary="true" name="Three of:"/>
       </categoryLinks>
       <profiles>
         <profile name="Magus" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="bfb2-ab97-b073-a4c1">
@@ -1062,6 +1073,16 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="9a77-b7bf-f791-37a6" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7138-2b60-74ce-a90b" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Patriarch" hidden="false" id="428e-5093-62cd-51d5">
       <entryLinks>
@@ -1070,14 +1091,13 @@
         <entryLink import="true" name="Specialism" hidden="false" id="dd53-466b-a686-f213" type="selectionEntryGroup" targetId="15d8-2387-ff4c-d3d8"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="3198-c1ce-dfd0-fb4f" id="ed40-a734-196f-d15e" primary="false" name="Leader"/>
+        <categoryLink targetId="3198-c1ce-dfd0-fb4f" id="ed40-a734-196f-d15e" primary="true" name="Leader"/>
         <categoryLink targetId="ff4e-783a-aecf-a6fd" id="c3d0-88f3-b865-806c" primary="false" name="BROOD BROTHER"/>
         <categoryLink targetId="c1bf-23d8-ba99-994" id="cf69-cc89-80c6-edc8" primary="false" name="Broodcoven"/>
         <categoryLink targetId="c641-ef3c-6cbd-c42e" id="3f87-4bee-17ca-aee6" primary="false" name="Tyranid"/>
         <categoryLink targetId="3391-553a-c41b-de73" id="2dd1-e9db-87b4-1cef" primary="false" name="Genestealer Cult"/>
         <categoryLink targetId="55b9-413d-e975-492a" id="9e6e-6211-425e-6685" primary="false" name="Psyker"/>
         <categoryLink targetId="e02d-3c1f-f6c-ff12" id="6c9d-5582-1907-448a" primary="false" name="Patriarch"/>
-        <categoryLink targetId="9a77-b7bf-f791-37a6" id="f2af-debc-5935-43e3" primary="true" name="Three of:"/>
       </categoryLinks>
       <profiles>
         <profile name="Patriarch" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="a686-b82f-faa0-7880">
@@ -1137,6 +1157,16 @@ Until the end of the activation, that enemy operative is a friendly operative (a
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="9a77-b7bf-f791-37a6" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7138-2b60-74ce-a90b" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Primus" hidden="false" id="726f-59bf-6634-195f">
       <entryLinks>
@@ -1146,13 +1176,12 @@ Until the end of the activation, that enemy operative is a friendly operative (a
         <entryLink import="true" name="Specialism" hidden="false" id="798e-c1c3-825e-662c" type="selectionEntryGroup" targetId="15d8-2387-ff4c-d3d8"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="3198-c1ce-dfd0-fb4f" id="638e-3410-9a75-b5b6" primary="false" name="Leader"/>
+        <categoryLink targetId="3198-c1ce-dfd0-fb4f" id="638e-3410-9a75-b5b6" primary="true" name="Leader"/>
         <categoryLink targetId="ff4e-783a-aecf-a6fd" id="5171-d35d-2c0c-fea9" primary="false" name="BROOD BROTHER"/>
         <categoryLink targetId="c1bf-23d8-ba99-994" id="f7fa-5300-cab9-cae7" primary="false" name="Broodcoven"/>
         <categoryLink targetId="c641-ef3c-6cbd-c42e" id="963-63f3-978f-bd11" primary="false" name="Tyranid"/>
         <categoryLink targetId="3391-553a-c41b-de73" id="8527-9104-64a2-97f4" primary="false" name="Genestealer Cult"/>
         <categoryLink targetId="eb12-90fa-d8e0-a064" id="8eff-2b12-6808-9939" primary="false" name="Primus"/>
-        <categoryLink targetId="9a77-b7bf-f791-37a6" id="6458-e2e7-f3b4-bdd5" primary="true" name="Three of:"/>
       </categoryLinks>
       <profiles>
         <profile name="Primus" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="a05a-fd71-eba1-b6ee">
@@ -1238,6 +1267,16 @@ Until the end of the activation, that enemy operative is a friendly operative (a
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="9a77-b7bf-f791-37a6" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7138-2b60-74ce-a90b" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
@@ -1251,7 +1290,12 @@ Until the end of the activation, that enemy operative is a friendly operative (a
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="3833-bfb4-452d-90ca-max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Leader" hidden="false" id="c546-ae4a-957b-ea1c" targetId="3198-c1ce-dfd0-fb4f"/>
+        <categoryLink name="Leader" hidden="false" id="c546-ae4a-957b-ea1c" targetId="3198-c1ce-dfd0-fb4f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69f5-2233-a990-4fba-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69f5-2233-a990-4fba-max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink name="Broodcoven" hidden="false" id="d638-942c-9d6d-16a9" targetId="c1bf-23d8-ba99-994">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4d3f-c625-31cc-93b6"/>
@@ -1329,7 +1373,7 @@ Until the end of the activation, that enemy operative is a friendly operative (a
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Three of:" hidden="false" id="6328-eef9-ea74-8e46" targetId="9a77-b7bf-f791-37a6" type="category">
+        <categoryLink name="Three of:" hidden="false" id="6328-eef9-ea74-8e46" targetId="9a77-b7bf-f791-37a6">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7a19-3d8f-6102-babd"/>
           </constraints>
@@ -1356,7 +1400,7 @@ Until the end of the activation, that enemy operative is a friendly operative (a
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Commander" hidden="false" id="d9b7-6b7e-88c5-1d53" targetId="c209-7596-3328-247a" type="category">
+        <categoryLink name="Commander" hidden="false" id="d9b7-6b7e-88c5-1d53" targetId="c209-7596-3328-247a">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d37b-ab99-515b-fcdf-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d37b-ab99-515b-fcdf-max"/>
