@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="32db-dac-1f92-3151" name="Hernkyn Yaegir" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="8" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="32db-dac-1f92-3151" name="Hernkyn Yaegir" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="8" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Resourceful" id="753a-590-3acb-9cdf" hidden="false">
       <description>Keep a pool of Resourceful points. In the Ready Operatives step of each Turning Point after the first, add Resourceful points to your pool determined by the number of friendly HERNKYN YAEGIR operatives in the killzone within Engagement Range of an enemy operative. At the end of each Turning Point, discard the Resourceful points in your pool.
@@ -400,7 +400,7 @@ Operatives that do so cannot make shooting attacks or perform the Charge action 
         <entryLink import="true" name="Specialism" hidden="false" id="18b8-628e-e106-3374" type="selectionEntryGroup" targetId="781b-aaf6-e787-f825"/>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Wroughtlock revolvers" hidden="false" id="db12-f8f7-76db-487a">
+        <selectionEntry type="upgrade" import="true" name="Wroughtlock revolvers" hidden="false" id="db12-f8f7-76db-487a" defaultAmount="">
           <profiles>
             <profile name="⌖ Wroughtlock revolvers" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="4882-dec5-7e14-6d64">
               <characteristics>
@@ -417,6 +417,10 @@ Operatives that do so cannot make shooting attacks or perform the Charge action 
             <infoLink name="Balanced" id="77ca-7535-6841-9b3b" hidden="false" type="rule" targetId="547c-e6e5-64d4-a519"/>
             <infoLink name="Lethal x" id="a672-64a-b282-c86e" hidden="false" type="rule" targetId="be29-25db-e215-b3b0"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac95-b51f-09b9-dd99"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d85f-04ba-ad23-8fb2"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -474,6 +478,10 @@ Operatives that do so cannot make shooting attacks or perform the Charge action 
               <description>An operative cannot move more 3⬤ in the same activation in which it performs the Shoot action with this ranged weapon.</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfe7-b4e3-9720-7127"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0556-7ba2-191c-b137"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <profiles>
