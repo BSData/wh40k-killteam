@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="20" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="INQUISITORIAL AGENT" hidden="false" id="762e-9a1c-ad3a-3424"/>
     <categoryEntry name="Inquisition" hidden="false" id="307-ad5e-52b1-3bcd"/>
@@ -20,6 +20,7 @@
     <categoryEntry name="Witchseeker" hidden="false" id="a0d1-95ed-8fff-b669"/>
     <categoryEntry name="Comms" hidden="false" id="f4a7-72d6-9caa-fd5b"/>
     <categoryEntry name="Trooper" hidden="false" id="64d5-91ea-8301-6e28"/>
+    <categoryEntry name="AP2" id="da3c-a927-ef4f-5c9b" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Interrogator Agent" hidden="false" id="7494-2f19-df87-a03f">
@@ -35,7 +36,7 @@
           <characteristics>
             <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
             <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2*</characteristic>
             <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
             <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
             <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
@@ -80,6 +81,7 @@
       </selectionEntries>
       <infoLinks>
         <infoLink name="Consecrated Tome" hidden="false" type="infoGroup" id="9743-74ed-fe96-640f" targetId="419e-327e-7c3d-60a9"/>
+        <infoLink name="*Group Activation" id="d959-c6fe-1917-f4ef" hidden="false" type="rule" targetId="3c16-0263-7a6e-69ec"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Fists" hidden="false" type="selectionEntry" id="9921-ea27-d951-bf0d" targetId="cf7b-e75a-e09d-9d82"/>
@@ -264,7 +266,7 @@
           <characteristics>
             <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
             <characteristic name="APL" typeId="c84a-a042-6fe6-519b">1</characteristic>
-            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2*</characteristic>
             <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">2</characteristic>
             <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
             <characteristic name="W" typeId="db11-738c-048c-759e">5</characteristic>
@@ -288,6 +290,7 @@
       </profiles>
       <infoLinks>
         <infoLink name="Consecrated Tome" hidden="false" type="infoGroup" id="e1e3-9cd9-a73d-866f" targetId="419e-327e-7c3d-60a9"/>
+        <infoLink name="*Group Activation" id="57d8-568e-772e-bd9c" hidden="false" type="rule" targetId="3c16-0263-7a6e-69ec"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="4f58-972a-a1d-9f8c"/>
@@ -1396,6 +1399,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
                   </conditions>
                 </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="da3c-a927-ef4f-5c9b" id="2396-b218-54c4-68a8" primary="false" name="AP2"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="3f7b-80d4-9084-8a4a">
               <profiles>
@@ -1434,6 +1440,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
                   </conditions>
                 </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="da3c-a927-ef4f-5c9b" id="8f8f-d61a-8d11-f842" primary="false" name="AP2"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2714,6 +2723,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             <infoLink name="Rng x" hidden="false" type="rule" id="e324-773a-2c64-90e5" targetId="92de-2ad3-3554-0b3e"/>
             <infoLink name="Hot" hidden="false" type="rule" id="ad06-1fa2-12ae-1bfb" targetId="83c3-fce7-8ac1-9872"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="da3c-a927-ef4f-5c9b" id="c264-87fe-5b46-5ad4" primary="false" name="AP2"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Suppressed autopistol" hidden="false" id="ab0e-cba4-963e-8bf6">
           <constraints>
@@ -4025,11 +4037,17 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="25e8-2b3c-b46b-5790" includeChildSelections="true"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink targetId="da3c-a927-ef4f-5c9b" id="978d-db40-d8f9-d97e" primary="false" name="AP2"/>
+              </categoryLinks>
             </entryLink>
             <entryLink import="true" name="Meltagun" hidden="false" type="selectionEntry" id="e085-dcd2-fa3b-a3a3" targetId="e3e3-6f84-b386-bd01">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5fa9-898c-78bf-e7bb" includeChildSelections="true"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink targetId="da3c-a927-ef4f-5c9b" id="c18d-5498-b2c4-0526" primary="false" name="AP2"/>
+              </categoryLinks>
             </entryLink>
             <entryLink import="true" name="Grenade launcher" hidden="false" type="selectionEntry" id="64f7-3672-c6d6-bd34" targetId="6c89-6d52-43fe-ab54">
               <constraints>
@@ -4663,6 +4681,11 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
               </conditions>
             </modifier>
           </modifiers>
+        </categoryLink>
+        <categoryLink name="AP2" hidden="false" id="82ea-8eb2-3dd0-b480" targetId="da3c-a927-ef4f-5c9b">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4df9-726d-56dd-aec8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -6797,6 +6820,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="96ab-90dd-af87-d29e" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="f98b-0289-0f1f-b233" id="dad-723a-5af4-5aad" primary="false" name="Operative"/>
         <categoryLink targetId="dfb3-bfe0-549d-be8" id="7bc5-2dbd-e0f5-326b" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="da3c-a927-ef4f-5c9b" id="7739-7858-ad7b-c87a" primary="false" name="AP2"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a7b3-9931-2783-17bf" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -6833,6 +6857,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="762e-9a1c-ad3a-3424" id="3710-5ad4-b623-b90" primary="false" name="INQUISITORIAL AGENT"/>
         <categoryLink targetId="f98b-0289-0f1f-b233" id="d962-6a14-ee02-b2b2" primary="false" name="Operative"/>
         <categoryLink targetId="dfb3-bfe0-549d-be8" id="c7fc-fe4c-e66f-517e" primary="true" name="Veteran Guardsmen"/>
+        <categoryLink targetId="da3c-a927-ef4f-5c9b" id="17e6-beae-33b9-7576" primary="false" name="AP2"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="31ae-fa2b-1f17-6542" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
@@ -7063,4 +7088,9 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
       </modifiers>
     </entryLink>
   </entryLinks>
+  <sharedRules>
+    <rule name="*Group Activation" id="3c16-0263-7a6e-69ec" hidden="false">
+      <description>INTERROGATOR and TOME-SKULL operatives fulfil each other’s Group Activation requirements.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
