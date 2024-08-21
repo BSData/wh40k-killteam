@@ -1,0 +1,2132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="f13d-1085-02f7-bcfb" name="Imperial Navy Breacher" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <categoryEntries>
+    <categoryEntry id="c60b-9288-289f-0fd4" name="IMPERIAL NAVY BREACHER" hidden="false"/>
+    <categoryEntry id="94cc-693a-2fe6-9fc6" name="Navis" hidden="false"/>
+    <categoryEntry id="8da6-6c16-1a48-58c6" name="Sergeant-at-Arms" hidden="false"/>
+    <categoryEntry id="480b-a8ee-4331-41cc" name="Armsman" hidden="false"/>
+    <categoryEntry id="1c1a-d8cb-bedd-1130" name="Surveyor" hidden="false"/>
+    <categoryEntry id="530c-c734-c629-05a1" name="Void-jammer" hidden="false"/>
+    <categoryEntry id="171c-145e-76c8-4290" name="Axejack" hidden="false"/>
+    <categoryEntry id="cb42-dd3b-99fd-bbe4" name="Hatchcutter" hidden="false"/>
+    <categoryEntry id="a89c-3c25-ab9c-2c78" name="Endurant" hidden="false"/>
+    <categoryEntry id="2566-5a1d-9809-905b" name="Grenadier" hidden="false"/>
+    <categoryEntry id="7773-1668-cee3-324e" name="C.A.T. Unit" hidden="false"/>
+    <categoryEntry id="02d3-a1e6-0a99-e114" name="Gheistskull" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="d5b4-0049-6664-3ab5" name="Imperial Navy Breacher Kill Team" hidden="false">
+      <categoryLinks>
+        <categoryLink id="d025-75fe-d3b2-4cbd" name="Reference" hidden="false" targetId="322e-38ea-bf3e-c785" primary="false"/>
+        <categoryLink id="e03e-8294-3c34-4357" name="Configuration" hidden="false" targetId="fb89-efb1-54e4-59c5" primary="false"/>
+        <categoryLink id="799b-3840-59e9-9f6e" name="Leader" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f90b-5e5c-9a19-ffd6" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e77-53e8-4e97-5fb0" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="00a6-6584-bbb1-a69c" name="Operative" hidden="false" targetId="f98b-0289-0f1f-b233" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="11" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="66bd-5f86-3f4a-5182" type="max"/>
+            <constraint field="selections" scope="parent" value="11" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25c7-0be3-6a72-6e62" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="47a6-cf12-123d-805e" name="Gunner" hidden="false" targetId="ee8c-cc44-acc3-40f0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2eaa-8b26-33ae-0b42" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="f13d-1085-02f7-bcfb" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="f09f-f6e8-2458-01e4" name="Navis Sergeant-at-Arms" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="605f-6f85-5971-a975" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="605f-6f85-5971-a975" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c9fb-0848-7d10-6da8" name="Sergeant-at-Arms" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <modifiers>
+            <modifier type="increment" field="db11-738c-048c-759e" value="1">
+              <conditions>
+                <condition field="selections" scope="f09f-f6e8-2458-01e4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb7b-8b0a-ca40-4d37" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b08d-a50a-be3a-3e26" name="Command Breach" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">At the start of the first Strategy phase, select the Attack Order or Defence Order Strategic Ploy. Until the end of the battle, while this operative is in the killzone, you can use that Strategic Ploy without spending any Command points.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f87b-d3c8-81f2-c4b5" name="Void Armour" hidden="false" targetId="20e9-c99f-f80f-1587" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="96c3-ec31-0cf9-6d49" name="Leader" hidden="false" targetId="3198-c1ce-dfd0-fb4f" primary="true"/>
+        <categoryLink id="78c8-d9cc-c08d-3806" name="IMPERIAL NAVY BREACHER" hidden="false" targetId="c60b-9288-289f-0fd4" primary="false"/>
+        <categoryLink id="ee90-2ee0-fc1a-cd0e" name="Imperium" hidden="false" targetId="15ae-553e-01d1-23a9" primary="false"/>
+        <categoryLink id="5e25-e24f-f816-1868" name="Navis" hidden="false" targetId="94cc-693a-2fe6-9fc6" primary="false"/>
+        <categoryLink id="26da-8464-d1cc-8d57" name="Sergeant-at-Arms" hidden="false" targetId="8da6-6c16-1a48-58c6" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="25e9-9182-246c-d86b" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfd4-3f0b-c1dd-900b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a83-4f60-78af-2e95" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a976-be43-87f0-d990" name="Bolt pistol and chainsword" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="c4c1-4101-3262-026e" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="b9cd-3b63-0310-365d" type="selectionEntry"/>
+                <entryLink id="afbf-1a9d-9bc2-48e9" name="Chainsword" hidden="false" collective="false" import="true" targetId="1032-19da-f47a-7bbf" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5231-f0f6-5889-f43a" name="Bolt pistol and power weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="81b1-3aba-2d73-1130" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="b9cd-3b63-0310-365d" type="selectionEntry"/>
+                <entryLink id="4c97-0421-d6b8-a63f" name="Power weapon" hidden="false" collective="false" import="true" targetId="cd9f-6aad-fa62-e7af" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="59aa-40c2-4aa6-ed1d" name="Autopistol and chainsword" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="c182-f92b-2b57-a331" name="Heirloom autopistol" hidden="false" collective="false" import="true" targetId="798e-84ef-bb18-ddb3" type="selectionEntry"/>
+                <entryLink id="bcfd-8246-8505-0634" name="Chainsword" hidden="false" collective="false" import="true" targetId="1032-19da-f47a-7bbf" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7074-bb7e-00c6-a273" name="Autopistol and power weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="eff5-0ce6-3e45-23f6" name="Heirloom autopistol" hidden="false" collective="false" import="true" targetId="798e-84ef-bb18-ddb3" type="selectionEntry"/>
+                <entryLink id="bdbc-33e7-4ddd-c05e" name="Power weapon" hidden="false" collective="false" import="true" targetId="cd9f-6aad-fa62-e7af" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="06c5-7031-b2cd-fa3b" name="Hatchet and shotgun" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="18fa-955f-805f-25ae" name="Navis shotgun" hidden="false" collective="false" import="true" targetId="8b4c-a944-2e85-3355" type="selectionEntry"/>
+                <entryLink id="f030-d598-89b7-da07" name="Navis hatchet" hidden="false" collective="false" import="true" targetId="2be7-7bef-06f5-3e4d" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7d1b-b878-e870-b24c" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="0a24-c24b-96b2-0873" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="cc76-5213-f7a5-c217" name="Equipment" hidden="false" collective="false" import="true" targetId="efa7-56bb-516a-d89a" type="selectionEntryGroup"/>
+        <entryLink id="f3f3-0d9b-b7a6-d48b" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+        <entryLink id="7ee8-4f05-c5b1-f250" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="6197-bad5-67d2-7c1b" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="2ad2-d68c-c167-fbce" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="5b8f-fbc1-0c4c-c733" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="71d3-a327-6d72-5a19" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="1bf2-b736-893f-afb8" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="8288-8074-9766-1361" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="fb1a-96f3-48f3-dba3" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9f6b-e137-e41f-7a38" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="dd79-e596-c466-0b78" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="de73-0c1b-590a-90cb" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="79dc-e49e-6403-dc16" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="79df-db08-aedb-e53f" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="0085-c30e-6cf9-709b" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="77d7-595b-cadd-1b9d" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="4a70-d22c-a31b-bef0" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="abdc-215f-5b87-a823" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="8966-2dc3-9a6d-2bfa" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="ba53-35b9-dc04-12f2" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="2ab1-6dd9-2ed3-1e77" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="d38b-37c6-31cc-7c59" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="8b4c-a944-2e85-3355" name="Navis shotgun" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="284e-dbda-006e-3f64" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f198-07c1-312a-f1d1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="83aa-b35a-4f3e-d27a" name="⌖ Navis shotgun - close range" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="2+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8da6-6c16-1a48-58c6" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/3</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e72e-a540-8a99-5934" name="⌖ Navis shotgun - long range" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="4+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8da6-6c16-1a48-58c6" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">5+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">1/2</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6e1d-e2be-8c6f-ebb6" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="798e-84ef-bb18-ddb3" name="Heirloom autopistol" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cfb-0c8f-d31c-239a" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6d9-24b8-b15c-7284" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="36cc-4e7a-e073-dd78" name="⌖ Heirloom autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Balanced, Lethal 5+</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a27a-5af5-5075-4969" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+        <infoLink id="526d-69a6-4045-9cfa" name="Balanced" hidden="false" targetId="547c-e6e5-64d4-a519" type="rule"/>
+        <infoLink id="4f83-b55d-a764-0458" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2be7-7bef-06f5-3e4d" name="Navis hatchet" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e720-c956-e4a5-2e8a" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a2a-64f3-7637-a38e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ef8d-7af3-fc1f-1705" name="⚔ Navis hatchet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8da6-6c16-1a48-58c6" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b9cd-3b63-0310-365d" name="Bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d81-30e3-c5e2-5c68" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23c9-ffcb-3a85-bbaf" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6b8c-3fc6-aeb7-0165" name="⌖ Bolt pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cb88-1c0b-109e-9d4b" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cd9f-6aad-fa62-e7af" name="Power weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd3a-3a42-c51c-98f3" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6edd-37fd-9df5-2616" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a1e9-df93-cb48-b9b4" name="⚔ Power weapon" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3c20-f99d-976e-0969" name="Lethal x" hidden="false" targetId="be29-25db-e215-b3b0" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1032-19da-f47a-7bbf" name="Chainsword" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e35-0094-52cb-5b2f" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bed-f9b9-43e0-1b57" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1fa7-cb63-ebb7-8016" name="⚔ Chainsword" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Ceaseless</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a3dc-c29a-b38b-b589" name="Ceaseless" hidden="false" targetId="ce9a-aa0d-7b46-3d04" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a46d-06c2-0aa0-c44e" name="Autopistol" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="402f-d2f8-43f0-2306" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8aa-2e4f-78c7-8c3f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="82b9-7fbe-ac9b-7bba" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="dad9-6526-549b-752f" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8d6a-1b5f-b66c-bef1" name="Frag Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1253-4010-5a33-fdc3" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca36-bb4e-8f75-5ff8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="13ea-d7d3-bd45-c229" name="⌖ Frag grenade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Blast ⬤, Indirect, Limited</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b86b-8297-3ffe-9175" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+        <infoLink id="2bc3-07c5-de8b-ba48" name="Blast x" hidden="false" targetId="d848-be09-6d6d-4708" type="rule"/>
+        <infoLink id="6d76-f97d-610a-9a0c" name="Limited" hidden="false" targetId="1eb0-6ad3-3e5a-d8ec" type="rule"/>
+        <infoLink id="6c63-35ac-3c56-5398" name="Indirect" hidden="false" targetId="653d-16a5-eefb-8b71" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c9f8-ebc6-5e5a-d9a5" name="Krak Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c00f-cd52-b0ab-7ca3" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e4b5-e57f-058d-4bbc" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="84cf-d869-edc8-8a5a" name="⌖ Krak grenade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1, Indirect, Limited</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5b8c-f2be-b751-6619" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+        <infoLink id="e59c-b230-4cfb-eb08" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+        <infoLink id="6607-7ef1-50eb-7fd2" name="Limited" hidden="false" targetId="1eb0-6ad3-3e5a-d8ec" type="rule"/>
+        <infoLink id="abf4-aa80-fe8d-6ecf" name="Indirect" hidden="false" targetId="653d-16a5-eefb-8b71" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9e72-7090-bf69-c6c3" name="Stun Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b24e-7047-f8cd-2c0d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f52b-678a-fb8a-cc0f" name="Stun Grenade (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one point on the killzone within ⬟ of this operative. Roll one D6 for each operative within ⬤ of that point, subtracting 1 from the result if that operative is not Visible to this operative. On a 4+, subtract 1 from that operative&apos;s APL. This operative can only perform this action once, and cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="992e-a83e-a19b-3e2a" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc6a-5fc1-70d4-7876" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9800-160b-b465-b6bd" name="Gutsy" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">This operative always treats the Close Assault Strategic Ploy as having been used.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="53f5-a0fa-8eb8-c571" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4819-f679-d859-4320" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4ef0-59c2-7d23-d944" name="Assured" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">Each time a shooting attack is made against this operative, if this operative is within range of an objective marker or one of your Tac Ops tokens, or is carrying an objective marker or one of your Tac Ops tokens, in the Roll Defence Dice step of that shooting attack, before rolling your defence dice, you can retain one of them as a successful normal save without rolling it.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d9b4-fd6c-8ef4-a07b" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01cd-bd6d-36a8-42ad" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="024f-b2b8-ae5e-cf38" name="Deckhand" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">Each time this operative performs the Operate Hatch action, roll one D6: on a 3+, the action point subtracted to perform that action is refunded.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2201-9a6e-1dee-6a8c" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4916-795e-133b-21c8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1ea7-29a5-1f30-6e23" name="Bruiser" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">Each time this operative fights in combat, if it is the active operative, its melee weapons have the Brutal special rule for that combat.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e5ea-0052-0ca8-f9a7" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c07-dbcb-13ac-411a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a1d2-5e03-30b4-e41b" name="Scrapper" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">Improve the Weapon Skill characteristic of melee weapons this operative is equipped with by 1 (to a maximum of 2+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="624c-074c-6fda-1ed7" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84c9-4c08-06c5-b683" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a10f-911b-b8a0-e519" name="Gallant" hidden="false" typeId="5237-8077-f013-a2cc" typeName="Battle Honours">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">Each time this operative fights in combat or makes a shooting attack, if it is within ⬟ of your opponent&apos;s drop zone or killzone edge, in the Roll Attack Dice step of that combat or shooting attack, you can re-roll one of your attack dice.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="410c-8e84-46ae-b30c" name="Navis Armsman" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="1f5b-f35a-2beb-a24e" name="Armsman" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <modifiers>
+            <modifier type="increment" field="db11-738c-048c-759e" value="1">
+              <conditions>
+                <condition field="selections" scope="410c-8e84-46ae-b30c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb7b-8b0a-ca40-4d37" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b50b-37c9-cffc-728a" name="Void Armour" hidden="false" targetId="20e9-c99f-f80f-1587" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="23d6-6f09-c1b-5462" name="Navis hatchet" hidden="false" collective="false" import="true" targetId="2be7-7bef-06f5-3e4d" type="selectionEntry"/>
+        <entryLink id="96cd-8fbe-1c82-f707" name="Navis shotgun" hidden="false" collective="false" import="true" targetId="8b4c-a944-2e85-3355" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a8cd-4ab5-349e-64c9" name="Navis Axejack" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="5bb1-7fd1-56bd-d0a6" name="Axejack" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <modifiers>
+            <modifier type="increment" field="db11-738c-048c-759e" value="1">
+              <conditions>
+                <condition field="selections" scope="a8cd-4ab5-349e-64c9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb7b-8b0a-ca40-4d37" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8734-5934-7fc-bf61" name="Emboldened" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">If this operative performs a Charge action, it is emboldened until the end of the Turning Point. While this operative is emboldened, each time it would lose a wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a7d3-fa43-dd9-873a" name="Wade In (2AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Perform a free Charge action with this operative. Then perform a free Fight action with this operative. If this operative performs both actions, its power weapon gains the Reap 2 critical hit rule for that combat.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="dcb9-dd36-dc31-b9b8" name="Void Armour" hidden="false" targetId="20e9-c99f-f80f-1587" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="501c-8328-117a-b08" name="Autopistol" hidden="false" collective="false" import="true" targetId="a46d-06c2-0aa0-c44e" type="selectionEntry"/>
+        <entryLink id="32d8-3972-f2a1-ea22" name="Power weapon" hidden="false" collective="false" import="true" targetId="cd9f-6aad-fa62-e7af" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b5ca-71eb-b0d8-7d37" name="Navis C.A.T. Unit" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="a4c2-7c5c-b78c-4d78" name="C.A.T. Unit" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">4⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">1</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">2</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="84a1-696a-c0b0-12e1" name="Recon" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">In the Scouting step, after resolving your selection, you can perform a free Dash action with this operative if it is wholly within your drop zone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="25d5-23d8-8dda-e874" name="Machine" hidden="false" targetId="d7e1-5cf8-c770-f4ed" type="profile"/>
+        <infoLink id="36e-b3b0-1756-34c7" name="Support Unit" hidden="false" targetId="58ab-8549-13cc-5969" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="-" hidden="false" id="7276-fa9d-6282-c662">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a57-2a0d-5605-a31f"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95ed-daa-5724-c8e4"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="1799-4a24-eee8-29f3" name="Navis Endurant" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="15ea-954d-562a-86f9" name="Endurant" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <modifiers>
+            <modifier type="increment" field="db11-738c-048c-759e" value="1">
+              <conditions>
+                <condition field="selections" scope="1799-4a24-eee8-29f3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb7b-8b0a-ca40-4d37" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">2⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">2+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c5f2-41f8-a4d6-cf24" name="Breachwall" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time another friendly IMPERIAL NAVY BREACHER operative finishes an action in which it moved and ended that move with its base touching this operative&apos;s, if this operative has an Engage order, and is not already shielding a friendly operative, it can shield that friendly operative until their bases are no longer touching or this operative no longer has an Engage order. While a friendly operative is shielded, it is not in an enemy operative&apos;s Line of Sight if a Cover line drawn to it crosses this operative&apos;s base, unless the enemy operative is at least ⬤ higher than it.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dc16-f03c-9f90-34f8" name="Disengage (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Perform a free Fall Back action with this operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="96ff-2aa5-9c17-63d1" name="Void Armour" hidden="false" targetId="20e9-c99f-f80f-1587" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="53cc-eeec-5556-6d7d" name="Navis heavy shotgun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6a0-b454-400a-767" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95d3-b359-51d5-6171" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="dd9d-e08-457-c453" name="⌖ Navis heavy shotgun - close range" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Relentless</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="af64-57d5-4ad4-cc7d" name="⌖ Navis heavy shotgun - long range" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">5+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">1/2</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Relentless</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="8334-989d-325-140f" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+            <infoLink id="cca-f6a2-ff6b-6e" name="Relentless" hidden="false" targetId="1875-9b07-2a07-aacc" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3d06-a32d-3e23-2513" name="Shield bash" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2a5-7447-c728-47a1" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="945e-996-5fe4-8109" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4a2a-7369-f1d0-b96e" name="⚔ Shield bash" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">1/1</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Brutal, Shield*</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="9906-a235-cada-bff8" name="*Shield" hidden="false">
+              <description>Each time this operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, each time it parries, two of your opponent&apos;s successful hits are discarded (instead of one).</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="addb-a5a5-abee-61e" name="Brutal" hidden="false" targetId="16e9-a975-03a1-91c0" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ad3-90d5-49ad-f8c1" name="Navis Gheistskull" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9207-5522-898d-5eca" name="Gheistskull" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">4⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">1</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">2</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e466-ae15-9f94-ac64" name="Boost (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select a point in the killzone that is Visible to this operative (treat that point as an intended target). Perform a free Normal Move action with this operative, moving in a single straight line with an unlimited Movement. It must finish that move within ▲ of the selected point. This operative can only perform this action once, and cannot perform it during the first Turning Point.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2ec2-305d-4481-9dbf" name="Machine" hidden="false" targetId="d7e1-5cf8-c770-f4ed" type="profile"/>
+        <infoLink id="fc69-ac41-391a-ef35" name="Support Unit" hidden="false" targetId="58ab-8549-13cc-5969" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="-" hidden="false" id="2557-dca8-3faa-a0b0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="357c-3149-9b6c-10d9"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12ae-1cee-8995-6bd9"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="3f9c-cd32-d405-bebd" name="Navis Grenadier" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="cb5-f653-1ae4-4f7f" name="Grenadier" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <modifiers>
+            <modifier type="increment" field="db11-738c-048c-759e" value="1">
+              <conditions>
+                <condition field="selections" scope="3f9c-cd32-d405-bebd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb7b-8b0a-ca40-4d37" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="100b-e9ac-bc07-304a" name="Grenadier" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative is equipped with frag, krak and stun grenades and they do not cost any equipment points.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8bc5-9670-6073-400e" name="Void Armour" hidden="false" targetId="20e9-c99f-f80f-1587" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="c207-4ea0-dd6e-8150" name="Demolition charge" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eba-f4b7-4df8-3436" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ea4-9b02-e66d-6ddb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8d47-e82d-2bc5-452e" name="⌖ Demolition charge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng 2⬤, Blast ⬤, AP1, Indirect, Limited</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="5348-b257-9d77-cb5c" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+            <infoLink id="3a0e-41cc-4522-8c29" name="Blast x" hidden="false" targetId="d848-be09-6d6d-4708" type="rule"/>
+            <infoLink id="68a-9081-b71e-a819" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+            <infoLink id="acae-a80d-eb67-1e61" name="Limited" hidden="false" targetId="1eb0-6ad3-3e5a-d8ec" type="rule"/>
+            <infoLink id="8ac1-9e42-26ff-a5b6" name="Indirect" hidden="false" targetId="653d-16a5-eefb-8b71" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="b5ce-d0d4-9c62-c598" name="Navis shotgun" hidden="false" collective="false" import="true" targetId="8b4c-a944-2e85-3355" type="selectionEntry"/>
+        <entryLink id="c4e7-f689-d0a0-5a1c" name="Navis hatchet" hidden="false" collective="false" import="true" targetId="2be7-7bef-06f5-3e4d" type="selectionEntry"/>
+        <entryLink id="64ac-eee7-7120-cb5b" name="Frag Grenade" hidden="false" collective="false" import="true" targetId="8d6a-1b5f-b66c-bef1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7c0-b5bd-3535-572f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="72ef-202b-d4b2-13a3" name="Krak Grenade" hidden="false" collective="false" import="true" targetId="c9f8-ebc6-5e5a-d9a5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe38-79e3-4307-2e14" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fb20-6590-d559-3397" name="Stun Grenade" hidden="false" collective="false" import="true" targetId="9e72-7090-bf69-c6c3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9410-673d-3764-ba48" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="df46-6db0-cc6a-5bf8" name="Navis Gunner w/ las-volley" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="83b-36af-b18c-f7d5" name="Gunner" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <modifiers>
+            <modifier type="increment" field="db11-738c-048c-759e" value="1">
+              <conditions>
+                <condition field="selections" scope="df46-6db0-cc6a-5bf8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb7b-8b0a-ca40-4d37" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5173-b138-a7fb-e0eb" name="Void Armour" hidden="false" targetId="20e9-c99f-f80f-1587" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="fecf-ab94-469b-71a3" name="Gun butt" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f0e-ab87-87b0-4912" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63f-7135-afc9-1e7d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f35e-a0c6-f4b2-69da" name="⚔ Gun butt" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="903e-74fc-91e3-38cd" name="Navis las-volley" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abc4-be9d-5131-d74e" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddb4-62ef-4b0c-b6c6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5ac1-52a5-faf4-6378" name="⌖ Navis las-volley" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">6</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Fusillade, Heavy, Relentless</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="252b-45f3-5097-e3db" name="Fusillade" hidden="false" targetId="e2ae-574a-94ab-3550" type="rule"/>
+            <infoLink id="d416-1247-c058-cd8b" name="Heavy" hidden="false" targetId="1e77-6974-cf90-6008" type="rule"/>
+            <infoLink id="8836-b7cb-ebd9-7b6a" name="Relentless" hidden="false" targetId="1875-9b07-2a07-aacc" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fe98-5d47-2000-f842" name="Navis Gunner w/ meltagun" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="31cd-721b-bfa4-bccc" name="Gunner" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <modifiers>
+            <modifier type="increment" field="db11-738c-048c-759e" value="1">
+              <conditions>
+                <condition field="selections" scope="fe98-5d47-2000-f842" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb7b-8b0a-ca40-4d37" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9471-fa9-3c43-f37" name="Void Armour" hidden="false" targetId="20e9-c99f-f80f-1587" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="868f-3289-206a-b998" name="Gun butt" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="494b-f67b-d577-dbd6" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a4a-435-3f2c-73b4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2117-951f-65cb-1b47" name="⚔ Gun butt" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6ad8-f393-1911-f15b" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0c2-35a3-1735-c841" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="507d-bf46-314b-1a38" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e3f9-1fe3-cd26-8d3e" name="⌖ Meltagun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">6/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP2</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="2538-196b-9ea9-d154" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+            <infoLink id="946-cb46-1b97-d6cb" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+            <infoLink id="dc77-91c9-88a2-cffe" name="MWx" hidden="false" targetId="0d4b-7a76-d266-bcc1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="443f-d3a6-6955-265a" name="Navis Gunner w/ plasma gun" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9677-f65c-9b74-f86f" name="Gunner" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <modifiers>
+            <modifier type="increment" field="db11-738c-048c-759e" value="1">
+              <conditions>
+                <condition field="selections" scope="443f-d3a6-6955-265a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb7b-8b0a-ca40-4d37" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9caa-6feb-db7b-5029" name="Void Armour" hidden="false" targetId="20e9-c99f-f80f-1587" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="1a89-d6b3-5c6c-d21d" name="Gun butt" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3703-2a89-4773-5691" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4636-63b3-f6bf-85e4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c0f3-f683-a8f0-fc47" name="⚔ Gun butt" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="70b3-ddeb-fa65-fda0" name="Plasma gun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38b-36af-f6a5-4fe3" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59f1-6ac9-e48d-e03" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="540-526c-3699-51a6" name="⌖ Plasma gun - Standard" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="1e6e-add2-a21a-895a" name="⌖ Plasma gun - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP2, Hot</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="778f-d511-92cc-156" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+            <infoLink id="e316-2db8-d3ae-14aa" name="Hot" hidden="false" targetId="83c3-fce7-8ac1-9872" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b9a4-e740-bfc2-2789" name="Navis Hatchcutter" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b059-8896-75e9-518e" name="Hatchcutter" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <modifiers>
+            <modifier type="increment" field="db11-738c-048c-759e" value="1">
+              <conditions>
+                <condition field="selections" scope="b9a4-e740-bfc2-2789" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb7b-8b0a-ca40-4d37" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="120a-25f-189-cfc5" name="Hatchcutter" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative would perform the Operate Hatch action, no more than one action point needs to be subtracted.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b400-7a40-d67d-4ae8" name="Weld Shut (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">This operative can perform this action while within ▲ of a closed Hatchway. Until it is opened, that Hatchway is welded shut. While a Hatchway is welded shut, operatives must subtract one additional action point to perform the Operate Hatch action on that Hatchway. This operative cannot perform this action while witihn Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="34c5-b801-b00-2037" name="Breach Point (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Place your Breach Point token so it is within ▲ of this operative and a terrain feature no more than ▲ thick. Friendly IMPERIAL NAVY BREACHER operatives can move through parts of that terrain feature that are no more than ▲ wide as if they were not there, so long as they do so within ▲ of that token.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ec92-8cf1-cafe-4576" name="Void Armour" hidden="false" targetId="20e9-c99f-f80f-1587" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="3e5d-33cf-baee-5ed5" name="Chainfist" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e074-b381-6125-c76f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="990f-856a-909-2019" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="46f2-ec01-6888-1aec" name="⚔ Chainfist" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Brutal</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9d8a-553-716f-a456" name="Brutal" hidden="false" targetId="16e9-a975-03a1-91c0" type="rule"/>
+            <infoLink id="36ac-497f-d55f-e7c7" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="f39a-6678-812-4ef" name="Autopistol" hidden="false" collective="false" import="true" targetId="a46d-06c2-0aa0-c44e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d67c-bf89-e0f6-f6dd" name="Navis Surveyor" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="84ac-ecc1-d1e3-f084" name="Surveyor" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <modifiers>
+            <modifier type="increment" field="db11-738c-048c-759e" value="1">
+              <conditions>
+                <condition field="selections" scope="d67c-bf89-e0f6-f6dd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb7b-8b0a-ca40-4d37" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="777d-b016-19b4-9d02" name="Wayfind (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly IMPERIAL NAVY BREACHER operative within ⬟ of either this operative or a friendly NAVIS C.A.T. UNIT operative. Add 1 to its APL. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="704-eb6b-1862-b59d" name="Surveillance (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Place your Surveillance token within ⬟ of a friendly NAVIS C.A.T. UNIT operative. Until the end of the Turning Point, while an enemy operative is Visible to a friendly NAVIS C.A.T. UNIT operative and within ⬛ of that token, that enemy operative is under surveillance. Each time a friendly IMPERIAL NAVY BREACHER operative makes a shooting attack, enemy operatives under surveillance are treated as having an Engage order for that shooting attack. This operative cannot perform this action while within Engagement Range of an enemy operative or if a friendly NAVIS C.A.T. UNIT operative is not in the killzone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d7b8-56a9-5025-3977" name="Void Armour" hidden="false" targetId="20e9-c99f-f80f-1587" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="524-8a17-1a4c-348a" name="Navis hatchet" hidden="false" collective="false" import="true" targetId="2be7-7bef-06f5-3e4d" type="selectionEntry"/>
+        <entryLink id="141b-ce77-848d-3e38" name="Navis shotgun" hidden="false" collective="false" import="true" targetId="8b4c-a944-2e85-3355" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e516-b0e6-7a66-11f" name="Navis Void-jammer" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="5d09-c36-28c0-a427" name="Void-jammer" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+          <modifiers>
+            <modifier type="increment" field="db11-738c-048c-759e" value="1">
+              <conditions>
+                <condition field="selections" scope="e516-b0e6-7a66-11f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb7b-8b0a-ca40-4d37" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1a44-583c-ae97-64c6" name="Interference Pulse (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one enemy operative Visible to and within ⬟ of a friendly NAVIS GHEISTSKULL operative. Roll one D6, adding 1 to the result if that enemy operative is in that  friendly NAVIS GHEISTSKULL operative&apos;s Line of Sight. On a 3+, subtract 1 from that enemy operative&apos;s APL. This operative cannot perform this action while within Engagement Range of an enemy operative or if a friendly NAVIS GHEISTSKULL operative is not in the killzone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="17c0-372a-6151-b8e0" name="Void Armour" hidden="false" targetId="20e9-c99f-f80f-1587" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="ee04-714f-659f-a2a7" name="Gheistskull detonator" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec01-49ce-1ce3-28ce" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6482-c926-28dc-400" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9000-5c8d-bf48-ff01" name="⌖ Gheistskull detonator" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Detonate*, EMP*, Silent</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="96a2-30ca-d894-8d04" name="*Detonate" hidden="false">
+              <description>Each time this operative performs a Shoot action with this weapon, make a shooting attack against each operative within ⬤ of a friendly NAVIS GHEISTSKULL operative (they are all valid targets). After all of those shooting attacks have been made, that friendly NAVIS GHEISTSKULL operative is incapacitated. This operative cannot make a shooting attack with this weapon by performing an Overwatch action or if a friendly NAVIS GHEISTSKULL operative is not in the killzone.</description>
+            </rule>
+            <rule id="cff8-84c5-6683-9dc" name="*EMP" hidden="false">
+              <description>Each time a friendly operative makes a shooting attack with this weapon, this weapon has the Lethal X special rule for that shooting attack. X is the target&apos;s unmodified Save characteristic.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="5923-e131-2899-b623" name="Silent" hidden="false" targetId="ce60-8109-69c9-3908" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="4186-91aa-de91-27c5" name="Navis hatchet" hidden="false" collective="false" import="true" targetId="2be7-7bef-06f5-3e4d" type="selectionEntry"/>
+        <entryLink id="ac2b-2993-1f13-1bf" name="Navis shotgun" hidden="false" collective="false" import="true" targetId="8b4c-a944-2e85-3355" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="efa7-56bb-516a-d89a" name="Equipment" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="c61a-51a3-370d-bf55" scope="force" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eb9e-7e20-cd9e-d73f" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="8d3e-225a-e43b-4ca5" name="Rebreather" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c25-4d60-8c0f-343b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5ec4-2213-9213-8f5f" name="Rebreather" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">You can ignore any or all modifiers to this operative&apos;s APL, and it is not affected by the Stun critical hit rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="48fc-b971-1717-2e98" name="Slugs" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b4c-a944-2e85-3355" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d07-b47c-4d3f-c193" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d857-d332-318b-c27c" name="Slugs" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">In the Set Up Operatives step, select a type of ammunition for this operative to have loaded into its Navis shotgun for the battle: cartridges or slugs. If it has loaded cartridges, it uses either profile of the Navis shotgun as normal. If it has loaded slugs, it can only use the long range profile of the Navis shotgun, but add 1 to both Damage characteristics of that profile and improve its Ballistic Skill characteristic by 1 for that operative.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ab10-7e5c-ce4c-46d1" name="Load Shotgun (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Change the type of ammunition loaded into the Navis shotgun this operative is equipped with.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="695b-57ca-19db-26a2" name="⌖ Navis shotgun - slugs" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <modifiers>
+                <modifier type="set" field="32b4-9a0e-e740-6031" value="3+">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8da6-6c16-1a48-58c6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="eb7b-8b0a-ca40-4d37" name="Stimm" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f17c-f209-80dc-64ff" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fb4d-5ff7-2821-49f8" name="Stimm" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Add 1 to this operative&apos;s Wounds characteristic for the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8285-2cac-f3da-d39e" name="System Override Device*" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e381-acc9-fec2-aa46" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d79-da79-e46c-b3c3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="97fc-ba98-f3ab-2dc5" name="System Override Device" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">In the Scouting step, after resolving your selection, you can open one Hatchway. If both players have this or a similar ability, the Defender resolves this ability first.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="050c-5b1b-30da-c2b4" name="Relic Cutlass [RARE]" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8da6-6c16-1a48-58c6" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd9f-6aad-fa62-e7af" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a97-879f-034b-bc90" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="57e3-2bf2-8b68-e730" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="edf2-592d-d6bd-c657" name="Relic Cutlass" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Select one power weapon the operative is equipped with. That weapon gains the Balanced special rule for the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cd23-5aa4-5c5b-cd91" name="Navis Cuirass [RARE]" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8da6-6c16-1a48-58c6" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="193f-b2ff-14ea-64ec" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1855-342f-69a6-4929" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="716f-0aea-a38f-ec66" name="Navis Cuirass" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Each time an enemy operative fights in combat or makes a shooting attack against this operative, subtract 1 from both Damage characteristics of weapons that enemy operative is equipped with for that combat or shooting attack (to a minimum of 2). This is not cumulative with the Brace for Counter-attack Strategic Ploy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2b71-4ba4-387a-b2b9" name="Enhanced Energy Cell [RARE]" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee8c-cc44-acc3-40f0" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d950-2cc2-55e7-e36d" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2301-9dd8-c3dc-18a0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5de8-bf31-b1c5-26b6" name="Enhanced Energy Cell [RARE]" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Select a Navis las-volley the operative is equipped with. That weapon gains the Rending special rule for the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9ada-1ebd-c274-0579" name="Rending" hidden="false" targetId="0550-3332-7a93-ab5b" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6e34-7c4d-9822-a8fd" name="Remote Access Device [RARE]" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bfc-7f80-781e-65cd" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8a2c-b40d-a063-1930" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c313-2977-e7d9-2168" name="Remote Access Device" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative can perform the Operate Hatch action while within ⬟ of a Hatchway&apos;s access point (instead of ▲) and can do so even if that Hatchway is open and an enemy operative is within ▲ of its access point. An operative cannot use this ability and the Deckhand Battle Honour and/or Hatchcutter ability at the same time.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0146-c7b0-8b68-a673" name="Auspicator [RARE]" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9de0-4d46-832f-e59b" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7bf6-68d6-80ae-7201" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="dddb-7abf-cfec-5f7b" name="Auspicator" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, during this operative&apos;s activation, it can perform a mission action for one less action point (to a minimum of 0AP).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2200-e11c-68d0-d37c" name="Auto-Medicae Unit [RARE]" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a2e-f735-e528-5440" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eee2-f1f0-2520-89b4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="17e6-b1b8-cc8d-0458" name="Auto-Medicae Unit" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">After the battle, in the Update Dataslates step, if this operative was not incapacitated during the battle, you can re-roll one Casualty test.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="8278-0214-7107-2afd" name="Frag Grenade" hidden="false" collective="false" import="true" targetId="8d6a-1b5f-b66c-bef1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2566-5a1d-9809-905b" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
+          </costs>
+        </entryLink>
+        <entryLink id="9e3e-d560-a4a0-9a9e" name="Krak Grenade" hidden="false" collective="false" import="true" targetId="c9f8-ebc6-5e5a-d9a5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2566-5a1d-9809-905b" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
+          </costs>
+        </entryLink>
+        <entryLink id="7b9f-3b19-3787-8295" name="Stun Grenade" hidden="false" collective="false" import="true" targetId="9e72-7090-bf69-c6c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2566-5a1d-9809-905b" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
+          </costs>
+        </entryLink>
+        <entryLink id="4973-b7d0-f1b1-cc81" name="Melee Weapons Rare Equipment" hidden="false" collective="false" import="true" targetId="d419-7a47-04c4-e1d9" type="selectionEntryGroup"/>
+        <entryLink id="f568-079b-dcd8-bd64" name="Ranged Weapons Rare Equipment" hidden="false" collective="false" import="true" targetId="aaad-f73a-1e28-248c" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e205-4d1b-b3e6-253a" name="Specialism" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82af-b9b8-518f-aaf1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b20a-ac2f-a781-47a2" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="f8e8-86b1-1511-c3ef" name="Combat" hidden="false" collective="false" import="true" targetId="97d8-19ec-143d-8aad" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb42-dd3b-99fd-bbe4" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="171c-145e-76c8-4290" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8da6-6c16-1a48-58c6" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4513-1d4e-03df-eb39" name="Marksman" hidden="false" collective="false" import="true" targetId="715c-810e-df05-01ad" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8da6-6c16-1a48-58c6" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="480b-a8ee-4331-41cc" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee8c-cc44-acc3-40f0" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="03fd-ae15-d849-dde0" name="Scout" hidden="false" collective="false" import="true" targetId="9118-a98b-0ffe-9e3d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="530c-c734-c629-05a1" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c1a-d8cb-bedd-1130" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="1982-8c71-f1ba-4e0a" name="Staunch" hidden="false" collective="false" import="true" targetId="eb50-055a-4cd2-e1d5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="530c-c734-c629-05a1" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c1a-d8cb-bedd-1130" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="20e9-c99f-f80f-1587" name="Void Armour" hidden="false">
+      <description>- This operative is unaffected by the Splash critical rule unless it is the target of the shooting attack.
+- Each time a shooting attack is made against this operative if the ranged weapon has the Blast x or Torrent x special rule, or makes a shooting attack against each operative within range of a specified point (e.g. Detonate), in the Roll Defence Dice step of that shooting attack, you can re-roll one of your defence dice (or up to two of your defence dice if this operative has the NAVIS GRENADIER keyword).</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="47a9-cbe8-2e80-3782" name="⚔ Shape Reference" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+      <characteristics>
+        <characteristic name="M" typeId="c36f-3952-a91d-5a06">▲</characteristic>
+        <characteristic name="APL" typeId="c84a-a042-6fe6-519b">⬤</characteristic>
+        <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">⬛</characteristic>
+        <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">⬟</characteristic>
+        <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">⌖</characteristic>
+        <characteristic name="W" typeId="db11-738c-048c-759e">⚔</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="58ab-8549-13cc-5969" name="Support Unit" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative cannot:
+- Perform any actions other than Dash, Fall Back, Normal Move or Pass.
+- Climb, jump or traverse.
+- Make shooting attacks, fight in combat (do not select a weapon or roll any attack dice for it) or provide combat support.
+- Be equipped with equipment or carry anything.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d7e1-5cf8-c770-f4ed" name="Machine" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">- When drawing a Visibility line from this operative, draw it from any part of the miniature.
+- This operative cannot earn (or lose) experience points and automatically passes Casualty tests.
+- This operative&apos;s APL cannot be modified.
+- This operative can perform the Fall Back action for one less action point (to a minimum of 1AP).</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Navis Armsman" hidden="false" type="selectionEntry" id="65dd-8159-a1ce-d830" targetId="410c-8e84-46ae-b30c">
+      <entryLinks>
+        <entryLink id="5e60-1ee2-a3e3-c82a" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="523b-9602-74e-42e6" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="277e-9a6f-c7a0-468f" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="8905-1449-5379-41cf" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="7bd7-1d92-8c08-eaaa" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="3cc0-b6a8-3802-799d" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="530a-48ba-ecb7-7b30" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="2d33-7924-9d12-1cd1" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="1b49-2ea7-3583-a77f" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="1617-3fec-8b0f-f694" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="7af1-2063-6d9b-fc44" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="d2c4-845a-c6f4-21fb" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="3cde-80a1-9d67-c860" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="7b19-baa-73b9-27a2" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="6db7-76db-ccf4-d62c" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="bec2-8ea9-dfcd-f132" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="7a45-ffdb-d459-d193" name="Equipment" hidden="false" collective="false" import="true" targetId="efa7-56bb-516a-d89a" type="selectionEntryGroup"/>
+        <entryLink id="c267-67c-4894-78de" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="90a9-7e7a-7ce3-2273" primary="false" name="Imperium"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="ca2a-765a-5337-69e" primary="true" name="Operative"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="357e-3ca-216c-8873" primary="false" name="Navis"/>
+        <categoryLink targetId="480b-a8ee-4331-41cc" id="4fb7-f564-200d-c0bb" primary="false" name="Armsman"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Axejack" hidden="false" type="selectionEntry" id="38e0-f531-89e0-ebb1" targetId="a8cd-4ab5-349e-64c9">
+      <entryLinks>
+        <entryLink id="ef5d-aebc-184d-9dd3" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="9b42-5f66-6294-2779" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="ebd7-89d0-15e5-40d5" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="4850-63ee-86a8-8dfc" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="f952-95cf-a742-c4b9" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="1299-e366-b27f-4ec6" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="3450-e62e-6660-9299" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="9012-8149-e1c9-39a3" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="7164-9cdf-f846-edec" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e349-b9e5-2468-fb1c" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="bd98-f504-3c0e-d1aa" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="357e-b921-1e77-ea9a" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="5f86-a11f-79d9-3318" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="28be-402e-2cb8-7b60" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="3795-ab05-b406-31de" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="c0a5-207a-684a-ccf5" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="d3f2-aa9b-8b-60eb" name="Equipment" hidden="false" collective="false" import="true" targetId="efa7-56bb-516a-d89a" type="selectionEntryGroup"/>
+        <entryLink id="caab-5c08-a382-9275" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b48-2730-7da4-8399" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="8b48-2730-7da4-8399" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="a6fd-610c-434a-d95d" primary="false" name="Imperium"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="10c4-5970-2d7e-37f9" primary="true" name="Operative"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="7fa0-d9cb-f356-e34f" primary="false" name="Navis"/>
+        <categoryLink targetId="171c-145e-76c8-4290" id="8d79-dfae-92-8aed" primary="false" name="Axejack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis C.A.T. Unit" hidden="false" type="selectionEntry" id="8d8c-43f3-69ae-e006" targetId="b5ca-71eb-b0d8-7d37">
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7703-e290-e3b6-d1b9" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="7703-e290-e3b6-d1b9" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="7703-e290-e3b6-d1b9" value="0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-d8cb-bedd-1130" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="f4e4-fd7a-62da-504b" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="5b6-f18-6fcf-ee9" primary="false" name="Imperium"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="1613-18c7-16ea-8058" primary="false" name="Navis"/>
+        <categoryLink targetId="7773-1668-cee3-324e" id="e902-3f9a-a5fe-251f" primary="false" name="C.A.T. Unit"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Endurant" hidden="false" type="selectionEntry" id="20ab-10ef-19ba-e037" targetId="1799-4a24-eee8-29f3">
+      <entryLinks>
+        <entryLink id="3a0c-c919-a971-bd2c" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="e753-db0-c692-8b18" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="cf4-dd6-ee69-77c6" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="71b1-9ac5-433b-5e7f" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="c364-d231-2472-eb8f" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="6dc6-89c0-8098-d0e8" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="eb35-44d4-a689-c7b2" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="46e-2945-c95a-762c" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="cc39-d194-1f32-a70c" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="b4fe-77f0-8a39-721b" name="Equipment" hidden="false" collective="false" import="true" targetId="efa7-56bb-516a-d89a" type="selectionEntryGroup"/>
+        <entryLink id="e768-6c2-d745-7df1" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cee-16e5-88c8-d077" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="7cee-16e5-88c8-d077" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="e730-1e98-36c1-d272" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="1731-fa31-5ccf-6eaa" primary="false" name="Imperium"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="ee6a-c038-e911-b444" primary="false" name="Navis"/>
+        <categoryLink targetId="a89c-3c25-ab9c-2c78" id="552a-86e-7c89-9a37" primary="false" name="Endurant"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Gheistskull" hidden="false" type="selectionEntry" id="fa1f-ab8-7555-daa6" targetId="ad3-90d5-49ad-f8c1">
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75b7-949-6185-dd96" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="75b7-949-6185-dd96" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="75b7-949-6185-dd96" value="0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="530c-c734-c629-05a1" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="57c9-ddab-855-62c8" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="4846-bd66-692-dafa" primary="false" name="Imperium"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="bdc9-eeb9-edc8-2594" primary="false" name="Navis"/>
+        <categoryLink targetId="02d3-a1e6-0a99-e114" id="bd15-d1-3f18-ff22" primary="false" name="Gheistskull"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Grenadier" hidden="false" type="selectionEntry" id="12d9-be18-8735-ad24" targetId="3f9c-cd32-d405-bebd">
+      <entryLinks>
+        <entryLink id="5dc2-5522-dbe-68f8" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="92e0-881a-67bf-bb5e" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="5e2-2a60-f6f3-8683" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="74a0-9206-55b7-3c1" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="1bc9-cc67-c2c7-bdba" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="91b0-5cd8-ea7e-801a" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="bb17-dba3-7770-9ee7" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="f697-2ee2-6430-769d" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="150e-46d-3c61-e35b" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="baa4-8a0b-7d23-d398" name="Equipment" hidden="false" collective="false" import="true" targetId="efa7-56bb-516a-d89a" type="selectionEntryGroup"/>
+        <entryLink id="e76a-5fe6-eeda-44bd" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9f3e-7aaf-c1a2-14c4" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="9f3e-7aaf-c1a2-14c4" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="f4bd-9929-1f55-5ca7" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="20ab-84b9-790d-10c3" primary="false" name="Imperium"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="cf36-89c6-4826-e69" primary="false" name="Navis"/>
+        <categoryLink targetId="2566-5a1d-9809-905b" id="fe84-fea2-4e5-c330" primary="false" name="Grenadier"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Gunner w/ las-volley" hidden="false" type="selectionEntry" id="d1a1-d76c-fb12-141e" targetId="df46-6db0-cc6a-5bf8">
+      <entryLinks>
+        <entryLink id="36ac-d7a-f434-39a3" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="b5ca-ee71-1087-cb94" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="d40f-bac2-7334-5f79" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="d30c-d06-38f9-56ed" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="cba5-507e-79ce-8dcf" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="284c-7db7-2de9-76ff" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="32ad-1285-3f7f-41b8" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="41a5-4acd-2637-b87c" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="f1d9-4df9-2838-5503" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="647e-f4b0-e725-57ed" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="50bc-d56f-c49-8bb4" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="e7c0-2c9b-8da3-13e" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="8561-ef66-838f-1d75" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="688c-224a-9a1-1554" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="928d-2480-6e96-7e5f" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="1acc-1fef-55a6-d8b6" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="e947-cdec-fa4d-8060" name="Equipment" hidden="false" collective="false" import="true" targetId="efa7-56bb-516a-d89a" type="selectionEntryGroup"/>
+        <entryLink id="1445-5432-23e-bfe3" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b74e-ebd7-699a-79d9" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="b74e-ebd7-699a-79d9" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="331f-6066-115d-3418" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="2178-9efb-2a5f-2533" primary="false" name="Imperium"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="d962-80d5-5841-301d" primary="false" name="Navis"/>
+        <categoryLink targetId="ee8c-cc44-acc3-40f0" id="7b8c-3de7-faf2-8aa1" primary="false" name="Gunner"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Gunner w/ meltagun" hidden="false" type="selectionEntry" id="e72d-db70-46d3-28bc" targetId="fe98-5d47-2000-f842">
+      <entryLinks>
+        <entryLink id="911d-d651-cafa-1005" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="c82c-b553-7f74-46bf" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9412-a490-5b6a-80bf" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="6c7d-789-9ed8-20e0" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="b72b-32d6-9817-b8cf" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="f5db-1ba3-2689-1247" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="aed7-15db-d0f9-54d6" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="d70f-a0ee-9a1e-7e1d" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="fe66-aff7-658-9118" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="ad-2fc8-6331-dede" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="1aa0-57d9-fc15-8ef2" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="9c18-1a14-f8c0-f69d" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="35a1-28c3-9dbf-c284" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="2610-652a-64ba-25bc" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="fe07-65b1-4d0b-4540" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="3363-e054-1e34-262c" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="261e-6187-ad1a-68dd" name="Equipment" hidden="false" collective="false" import="true" targetId="efa7-56bb-516a-d89a" type="selectionEntryGroup"/>
+        <entryLink id="3e2c-ab33-d208-25e3" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a58b-419e-a178-40f" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="a58b-419e-a178-40f" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="2407-976-bd18-1342" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="9994-264-807-acef" primary="false" name="Imperium"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="feba-ac49-1fd3-3f17" primary="false" name="Navis"/>
+        <categoryLink targetId="ee8c-cc44-acc3-40f0" id="f8b0-374-6766-c6a3" primary="false" name="Gunner"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Gunner w/ plasma gun" hidden="false" type="selectionEntry" id="1507-8d5b-ec22-59fd" targetId="443f-d3a6-6955-265a">
+      <entryLinks>
+        <entryLink id="382-1c90-b5c7-ed91" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="2424-8c05-73d3-a38c" name="Battle Honours - Marksman" hidden="false" collective="false" import="true" targetId="e84e-ae34-82a8-57b0" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e3f1-d806-cabb-d482" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="3279-237d-354e-f4b4" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="f934-22ba-699c-855e" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="15d3-13a0-2a8e-a272" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="9ca9-703a-e00f-f62e" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="a8cc-a9c4-26b0-77e3" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="26fe-bea8-a72a-13cd" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="ad4f-1644-fe42-ccb0" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="7c4a-fd82-347b-cc24" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="4830-405f-85e3-ec68" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="b452-b9c8-538d-9355" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="7de0-71af-c59c-9fef" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="5e40-ab12-2733-7b57" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="a8d6-a07a-951-1d5d" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="2930-b8f1-6392-44cb" name="Equipment" hidden="false" collective="false" import="true" targetId="efa7-56bb-516a-d89a" type="selectionEntryGroup"/>
+        <entryLink id="d49b-5140-74be-8da7" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="851e-fbfc-b303-f9ce" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="851e-fbfc-b303-f9ce" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="88c9-8a55-f89d-bbd0" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="b56d-a875-c29-b1e1" primary="false" name="Imperium"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="6584-324d-475b-e7c6" primary="false" name="Navis"/>
+        <categoryLink targetId="ee8c-cc44-acc3-40f0" id="20ba-1975-f15e-3415" primary="false" name="Gunner"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Hatchcutter" hidden="false" type="selectionEntry" id="8bd2-d584-7c18-fbe4" targetId="b9a4-e740-bfc2-2789">
+      <entryLinks>
+        <entryLink id="995a-a944-1b9f-13d" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="9c37-ec6-1974-3324" name="Battle Honours - Combat" hidden="false" collective="false" import="true" targetId="ae2f-d9f3-a27c-cca6" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="aeca-b906-1240-e2d3" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="134-6cee-b5ee-295b" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="4c35-ce12-b7ff-f59e" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="b7d3-32a-c944-3f21" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="8ee5-516d-48f5-1d55" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="52a0-24a0-400b-bdcf" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="c2fd-6e1d-4449-1e07" name="Battle Honours - Staunch" hidden="false" collective="false" import="true" targetId="93ec-2874-675e-b46e" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="a27-a0d-a408-4101" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="5711-d24a-5f61-4d43" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="7d6a-b870-96ad-86d6" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="8503-1b9d-51d6-97d2" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="5e99-89e-ad83-f755" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="17d2-ea33-507c-85c1" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="416b-91a0-fce3-4048" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="2ee4-aa3-9483-7ae4" name="Equipment" hidden="false" collective="false" import="true" targetId="efa7-56bb-516a-d89a" type="selectionEntryGroup"/>
+        <entryLink id="eca-4a5a-1577-cdba" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ea9b-ae29-b8ea-fd1a" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="ea9b-ae29-b8ea-fd1a" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="af11-e93c-4689-92dc" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="4391-d6a1-ee8a-259d" primary="false" name="Imperium"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="7c75-d38d-73cd-cafb" primary="false" name="Navis"/>
+        <categoryLink targetId="cb42-dd3b-99fd-bbe4" id="a2bc-9a7-8552-7292" primary="false" name="Hatchcutter"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Surveyor" hidden="false" type="selectionEntry" id="5ea9-c69e-3c27-c793" targetId="d67c-bf89-e0f6-f6dd">
+      <entryLinks>
+        <entryLink id="70da-8fb2-4bcb-ff34" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="a6b7-1156-a6ba-c1cb" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="65e3-975c-aabd-65c4" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="9c47-3849-63e6-9b07" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="1663-aa0f-ef53-c91" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="e31a-5f75-f8a4-b3d9" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="a200-2e5b-6bfd-1d3e" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="c15f-db42-eb3e-1f3b" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="859f-c76e-d8dd-78b0" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="a51c-c8bf-454e-8498" name="Equipment" hidden="false" collective="false" import="true" targetId="efa7-56bb-516a-d89a" type="selectionEntryGroup"/>
+        <entryLink id="d6f0-1d00-2b34-2752" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8e0a-e6c-94dd-7b5d" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="8e0a-e6c-94dd-7b5d" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="5914-c04e-4904-fbe7" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="6a4-25e5-35c9-94f0" primary="false" name="Imperium"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="a22-994d-188f-b16" primary="false" name="Navis"/>
+        <categoryLink targetId="1c1a-d8cb-bedd-1130" id="11bf-cb0a-70f0-cf93" primary="false" name="Surveyor"/>
+        <categoryLink targetId="530c-c734-c629-05a1" id="e028-cc6-e331-bec5" primary="false" name="Void-jammer"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Navis Void-jammer" hidden="false" type="selectionEntry" id="1994-88f3-9ffd-3046" targetId="e516-b0e6-7a66-11f">
+      <entryLinks>
+        <entryLink id="afb5-56ba-569f-9176" name="XP" hidden="false" collective="false" import="true" targetId="82af-b9b8-518f-aaf1" type="selectionEntry"/>
+        <entryLink id="b18c-c24c-9a7e-3e1a" name="Battle Honours - Scout" hidden="false" collective="false" import="true" targetId="94bd-d409-fda3-9f9f" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="9591-36da-5bec-89c0" name="Breacher 1 - Gutsy" hidden="false" collective="false" import="true" targetId="992e-a83e-a19b-3e2a" type="selectionEntry"/>
+            <entryLink id="17d1-203a-8e9d-d0c8" name="Breacher 3 - Deckhand" hidden="false" collective="false" import="true" targetId="d9b4-fd6c-8ef4-a07b" type="selectionEntry"/>
+            <entryLink id="3294-6a52-9a17-e64b" name="Breacher 4 - Bruiser" hidden="false" collective="false" import="true" targetId="2201-9a6e-1dee-6a8c" type="selectionEntry"/>
+            <entryLink id="f317-11ce-a389-cbf4" name="Breacher 5 - Scrapper" hidden="false" collective="false" import="true" targetId="e5ea-0052-0ca8-f9a7" type="selectionEntry"/>
+            <entryLink id="901f-1478-d499-55d7" name="Breacher 6 - Gallant" hidden="false" collective="false" import="true" targetId="624c-074c-6fda-1ed7" type="selectionEntry"/>
+            <entryLink id="7e6b-23eb-ed26-b1a9" name="Breacher 2 - Assured" hidden="false" collective="false" import="true" targetId="53f5-a0fa-8eb8-c571" type="selectionEntry"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="38b5-7e1a-71aa-736c" name="Battle Scars" hidden="false" collective="false" import="true" targetId="d5ae-a34b-acc2-dfe7" type="selectionEntryGroup"/>
+        <entryLink id="aaed-ad57-88fe-2362" name="Equipment" hidden="false" collective="false" import="true" targetId="efa7-56bb-516a-d89a" type="selectionEntryGroup"/>
+        <entryLink id="9150-bd20-7158-7bba" name="Specialism" hidden="false" collective="false" import="true" targetId="e205-4d1b-b3e6-253a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8935-4edb-3d5b-d714" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="8935-4edb-3d5b-d714" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d5b4-0049-6664-3ab5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="d7d2-3787-3bf4-995" primary="true" name="Operative"/>
+        <categoryLink targetId="15ae-553e-01d1-23a9" id="914b-d15a-64d4-e198" primary="false" name="Imperium"/>
+        <categoryLink targetId="94cc-693a-2fe6-9fc6" id="aa66-7a11-b5d2-97fa" primary="false" name="Navis"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>

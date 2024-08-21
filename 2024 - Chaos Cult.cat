@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="ffe8-3458-e886-e647" name="Chaos Cult" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="CHAOS CULT" hidden="false" id="e46b-36ed-7952-7323"/>
+    <categoryEntry name="Dark Commune" hidden="false" id="3b98-6793-b4e5-c927"/>
+    <categoryEntry name="Cult Demagogue" hidden="false" id="555c-431d-a420-d308"/>
+    <categoryEntry name="Blessed Blade" hidden="false" id="d181-9b55-119b-a4e8"/>
+    <categoryEntry name="Iconarch" hidden="false" id="19c9-3971-6a4-2587"/>
+    <categoryEntry name="Mindwitch" hidden="false" id="ba46-fb84-f18e-40e4"/>
+    <categoryEntry name="Devotee" hidden="false" id="5b30-d16c-e335-7560"/>
+    <categoryEntry name="Mutant" hidden="false" id="5381-b2b1-adf5-9d86"/>
+    <categoryEntry name="Torment" hidden="false" id="f63a-94e6-7100-60c5"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry name="Chaos Cult Kill Team" hidden="false" id="8749-1e3-5f1b-5f7">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="716a-ff96-cace-bde8" targetId="fb89-efb1-54e4-59c5"/>
+        <categoryLink name="Reference" hidden="false" id="fd34-dcfa-7d76-b9b9" targetId="322e-38ea-bf3e-c785"/>
+        <categoryLink name="Leader" hidden="false" id="ce36-de3b-4c69-8a9c" targetId="3198-c1ce-dfd0-fb4f"/>
+        <categoryLink name="Operative" hidden="false" id="f34b-a94b-bd7d-3b6b" targetId="f98b-0289-0f1f-b233"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="e29d-d615-1e19-296e" name="Specialism" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82af-b9b8-518f-aaf1" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64a7-b86f-8889-c21f" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="ac51-f40a-2b84-4d7d" name="Combat" hidden="false" collective="false" import="true" targetId="97d8-19ec-143d-8aad" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d181-9b55-119b-a4e8" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b30-d16c-e335-7560" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="9169-bbc2-4d44-8328" name="Scout" hidden="false" collective="false" import="true" targetId="9118-a98b-0ffe-9e3d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="555c-431d-a420-d308" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b30-d16c-e335-7560" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="cd86-4c57-7944-1f9e" name="Staunch" hidden="false" collective="false" import="true" targetId="eb50-055a-4cd2-e1d5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="555c-431d-a420-d308" type="notInstanceOf"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="19c9-3971-6a4-2587" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ba46-fb84-f18e-40e4" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Equipment" hidden="false" id="c728-d68a-3626-53e">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Noxious Ichor [RARE]" hidden="false" id="3f9a-fea2-30c8-ba5d">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b04-4f7-ed0-1811"/>
+          </constraints>
+          <profiles>
+            <profile name="Noxious Ichor" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="dfc1-3d29-5d45-5f2b">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time an attack dice inflicts damage on this operative, roll one D6 separately for each enemy operative within its Engagement Range: on a 3+, that enemy operative suffers 1 mortal wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Paralysing Sting [RARE]" hidden="false" id="8554-1aa2-ce9e-3a94">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b04-4f7-ed0-1811"/>
+          </constraints>
+          <profiles>
+            <profile name="Paralysing Sting" typeId="ef4d-f12f-036e-9f14" typeName="Equipment" hidden="false" id="2a94-2472-94e2-ca96">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">The operative’s melee weapons gain the Stun critical hit rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Vicious Claw [RARE]" hidden="false" id="c972-c347-6d5f-9852">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b04-4f7-ed0-1811"/>
+          </constraints>
+          <profiles>
+            <profile name="Vicious Claw" typeId="ef4d-f12f-036e-9f14" typeName="Equipment" hidden="false" id="cd06-3599-4ee8-f83f">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Add 1 to both Damage characteristics of the operative’s melee weapons.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mutating Flames [RARE]" hidden="false" id="f8c-4b74-1247-edf9">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="19c9-3971-6a4-2587" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b04-4f7-ed0-1811"/>
+          </constraints>
+          <profiles>
+            <profile name="Mutating Flames" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="880c-ae17-527f-354">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Add ⬤ to the distance of this operative’s Ruinous Deterioration and Ruinous Invigoration abilities.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="4"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Abhorrent Sceptre [RARE]" hidden="false" id="90bf-4083-bc83-eeaa">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="555c-431d-a420-d308" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ba46-fb84-f18e-40e4" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b04-4f7-ed0-1811"/>
+          </constraints>
+          <profiles>
+            <profile name="Abhorrent Sceptre" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="d6c9-982-2c0b-3188">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative is activated, it can perform one free unique action during its activation.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Accursed Consecration [RARE]" hidden="false" id="f672-285b-640b-9fac">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b888-71c3-b9f6-b49d" type="equalTo"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3b98-6793-b4e5-c927" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b04-4f7-ed0-1811"/>
+          </constraints>
+          <profiles>
+            <profile name="Accursed Consecration" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="9f72-e068-ca45-cd94">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">When this item of equipment is revealed, select one Accursed Gift for this operative to gain.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aec1-fbf5-ac-47c4" name="Frag Grenade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="071f-f6ac-27ba-29a4" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f163-ef1-af63-e4a9" includeChildSelections="true"/>
+          </constraints>
+          <profiles>
+            <profile id="ea39-f186-124f-f31c" name="⌖ Frag grenade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Blast ⬤, Indirect, Limited</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="f2e9-ce62-4ec1-214e" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+            <infoLink id="882d-c821-ab4b-5c27" name="Blast x" hidden="false" targetId="d848-be09-6d6d-4708" type="rule"/>
+            <infoLink id="6589-452-64b7-cb4f" name="Indirect" hidden="false" targetId="653d-16a5-eefb-8b71" type="rule"/>
+            <infoLink id="e9af-3eed-4179-b3a9" name="Limited" hidden="false" targetId="1eb0-6ad3-3e5a-d8ec" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9dbc-8f74-8df1-2eaf" name="Krak Grenade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d28f-9b41-7f09-e9d8" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="14a8-af75-ae72-661b" includeChildSelections="true"/>
+          </constraints>
+          <profiles>
+            <profile id="30e8-2b2d-b80d-6e16" name="⌖ Krak grenade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1, Indirect, Limited</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="385d-56e3-f469-2890" name="Limited" hidden="false" targetId="1eb0-6ad3-3e5a-d8ec" type="rule"/>
+            <infoLink id="eff1-5192-5f5a-e2d" name="Indirect" hidden="false" targetId="653d-16a5-eefb-8b71" type="rule"/>
+            <infoLink id="556-414a-c3d3-6755" name="Rng x" hidden="false" targetId="92de-2ad3-3554-0b3e" type="rule"/>
+            <infoLink id="4885-3a9c-3910-dcd7" name="APx" hidden="false" targetId="db98-339e-d0a2-e042" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Trophy Weapon*" hidden="false" id="cb9a-cdde-b946-b9f0">
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="1"/>
+          </costs>
+          <profiles>
+            <profile name="Trophy Weapon*" typeId="ef4d-f12f-036e-9f14" typeName="Equipment" hidden="false" id="c8a9-435c-b047-1fa1">
+              <characteristics>
+                <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Select a crude melee weapon or pistol the operative is equipped with. Add 1 to both Damage characteristics of that weapon for the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a46-a5b9-177e-f006"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a01f-2149-6a5c-18a5" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="5b30-d16c-e335-7560" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Covert Guise" hidden="false" id="2f75-8be9-9586-44fd">
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
+          </costs>
+          <profiles>
+            <profile name="Covert Guise" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="2630-1742-27fc-bd11">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">At the end of the Scouting step, if this operative is wholly within your drop zone, it can perform a free Dash action.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="5b30-d16c-e335-7560" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65a5-6d8d-8d22-ad6f"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Chaos Sigil" hidden="false" id="ec6f-22db-2c0d-f388">
+          <profiles>
+            <profile name="Chaos Sigil" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="c9a2-e597-cb30-4609">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="2"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e3f-f894-7d08-7149"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Vile Blessing*" hidden="false" id="f7d6-d818-8575-c6f7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d34-ce6-6e5d-1e3"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="80b5-dd6c-eaeb-cd16" includeChildSelections="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Vile Blessing" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="74c3-edaa-a6d8-7d04">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per battle, in the Resolve Successful Hits step of a combat or shooting attack, you can ignore the damage inflicted on this operative from one attack dice. This must be done before rolling to ignore lost wounds (e.g. the Unnatural Regeneration ability, see Chaos Mutant and Chaos Torment datacards).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="EP" typeId="c61a-51a3-370d-bf55" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint field="c61a-51a3-370d-bf55" scope="force" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2df-16d0-7b04-f2b" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8749-1e3-5f1b-5f7" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="2f96-a35a-4072-2d28">
+      <profiles>
+        <profile name="⌖ Pistol" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="9cc-1249-a268-7e18">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rng x" hidden="false" type="rule" id="d4f3-fab7-8a5b-2d7b" targetId="92de-2ad3-3554-0b3e"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d501-6941-fd61-3be6"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Crude melee weapon" hidden="false" id="fbb0-79df-5743-641d">
+      <profiles>
+        <profile name="⚔ Crude melee weapon" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="cd88-aabc-9f73-dc62">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="3" field="5f37-25bb-661b-5c9c">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="19c9-3971-6a4-2587" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aada-c2f2-4c0d-41cf"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" id="d037-f531-ad5-82aa">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea7-826b-bbe9-20e9"/>
+      </constraints>
+      <profiles>
+        <profile name="Violent Rampage" typeId="5237-8077-f013-a2cc" typeName="Battle Honours" hidden="false" id="dd26-3a8b-9de8-9150">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">This operative can perform the Charge action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" id="d19a-98d6-56fe-7d44">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea7-826b-bbe9-20e9"/>
+      </constraints>
+      <profiles>
+        <profile name="Tainted Resilience" typeId="5237-8077-f013-a2cc" typeName="Battle Honours" hidden="false" id="58c3-8c93-7d70-78e1">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">This operative cannot be injured.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" id="5e45-d8a8-1888-db64">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea7-826b-bbe9-20e9"/>
+      </constraints>
+      <profiles>
+        <profile name="Thirst for Slaughter" typeId="5237-8077-f013-a2cc" typeName="Battle Honours" hidden="false" id="ae71-af30-98bc-e39d">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">Each time this operative performs a Charge action, improve the Weapon Skill characteristic of its melee weapons by 1 until the end of the activation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" id="6d78-d5c3-7571-cf6b">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea7-826b-bbe9-20e9"/>
+      </constraints>
+      <profiles>
+        <profile name="Dark Blessing" typeId="5237-8077-f013-a2cc" typeName="Battle Honours" hidden="false" id="e533-3bd3-b5d5-4625">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">The first time you select an Accursed Gift for your kill team, also select a different Accursed Gift to be the dark blessing. Each time an operative with this ability would gain an Accursed Gift, they can gain the dark blessing instead (max once per operative).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" id="5ff6-a9d-f8d-f910">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea7-826b-bbe9-20e9"/>
+      </constraints>
+      <profiles>
+        <profile name="Pain Metamorphosis" typeId="5237-8077-f013-a2cc" typeName="Battle Honours" hidden="false" id="21c9-a6d2-2a8a-fdc2">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">While this operative is not a MUTANT or TORMENT, at the end of each combat or shooting attack in which it lost wounds but was not incapacitated, it can mutate.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" id="a466-5db8-62cc-59a9">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea7-826b-bbe9-20e9"/>
+      </constraints>
+      <profiles>
+        <profile name="Dark Communion" typeId="5237-8077-f013-a2cc" typeName="Battle Honours" hidden="false" id="5ccf-9edc-aee9-873e">
+          <characteristics>
+            <characteristic name="Battle Honour" typeId="0ca9-09c1-318a-cc7b">This operative does not have to be within ⬟ of a CULT DEMAGOGUE for the purposes of that operative’s unique actions.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="Unnatural Regeneration" hidden="false" id="84d7-f31e-9ca4-aa5a" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative would lose a wound, roll one D6: on a 6, that wound is not lost.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <rules>
+    <rule name="Accursed Gifts" hidden="false" id="d8f0-df67-4d3f-dec4">
+      <description>Accursed Gifts are abilities that friendly CHAOS CULT operatives gain when they mutate into other operative types. The first time a friendly DEVOTEE operative mutates into a MUTANT operative during the battle, select your first Accursed Gift. The first time a friendly MUTANT operative mutates into a TORMENT operative during the battle, select your second Accursed Gift. All friendly MUTANT operatives have your first Accursed Gift and all friendly TORMENT operatives have your first and second Accursed Gifts.
+
+You can select Accursed Gifts from those presented below. You cannot select the same Accursed Gift more than once per battle. All Accursed Gifts are removed at the end of the battle.
+
+1. Winged
+Each time this operative performs an action in which it moves:
+- Ignore the first distance of ⬤ it travels for a climb, drop or traverse.
+
+2. Fleet
+Add ▲ to this operative’s Movement characteristic.
+
+3. Chitinous
+Improve this operative’s Save characteristic by 1.
+
+4. Horned
+Each time this operative finishes a Charge action, you can select one enemy operative within its Engagement Range to suffer 1 mortal wound, or D3 mortal wounds if this operative is a TORMENT.
+
+5. Sinewed
+- You can ignore any or all modifiers to the Weapon Skill characteristic of this operative’s melee weapons.
+- This operative’s melee weapons gain the Brutal special rule.
+
+6. Barbed
+This operative’s melee weapons gain the Reap 1 critical hit rule, or Reap 2 if this operative is a TORMENT.</description>
+    </rule>
+    <rule name="Mutation" hidden="false" id="ba65-79ef-1caf-39db">
+      <description>During the battle, friendly CHAOS CULT operatives can ‘mutate’. Each time they do, choose one of the following:
+- If it’s a DEVOTEE operative, turn it into a MUTANT operative.
+- If it’s a MUTANT operative, turn it into a TORMENT operative.
+- It can regain D3+1 lost wounds.
+
+
+If the operative was mutated into a new operative, the new operative has the same wounds remaining as the preceding operative but then regains D3+1 wounds if it’s now a MUTANT operative or D3+3 if it’s now a TORMENT operative; in either case, it cannot go above its maximum wounds.
+
+An operative cannot mutate more than once per Turning Point. In addition, you can never have more than five MUTANT operatives and three TORMENT operatives at once.
+When an operative mutates into another operative, it’s still the same DEVOTEE operative on your roster/dataslate, so has the same Battle Honours and is the same operative for any Tac Ops it has already been selected for, etc. The operative is simply a new operative type and will use that new type’s miniature and datacard rules. It will revert back to its original DEVOTEE miniature and datacard after the battle.
+
+You can mutate friendly operatives as follows:
+- Once in each Strategy phase, when it is your turn to use a Strategic Ploy or pass, you can instead mutate a number of friendly CHAOS CULT operatives equal to the Turning Point number.
+- At the end of a combat in which a friendly DEVOTEE operative incapacitated an enemy operative and was not incapacitated.
+- When a friendly CULT DEMAGOGUE operative performs the Accursed Benediction action (see Cult Demagogue datacard).
+
+When a friendly operative mutates into a new operative:
+- Swap the miniatures, ensuring the centre of the new miniature’s base is as close as possible to that of the old miniature. This can put it within Engagement Range of enemy operatives, and if the old miniature was, the new miniature must return there if possible.
+- Any wounds it lost are ignored - the new operative type has its full wounds remaining.</description>
+    </rule>
+  </rules>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Cult Demagogue" hidden="false" id="3fa4-cb8-e7d-ba1b">
+      <categoryLinks>
+        <categoryLink targetId="3198-c1ce-dfd0-fb4f" id="fb48-1194-4e7b-f982" primary="true" name="Leader"/>
+        <categoryLink targetId="ba61-d304-9352-ec15" id="d1c5-d40-db2d-493f" primary="false" name="Chaos"/>
+        <categoryLink targetId="e46b-36ed-7952-7323" id="2a4b-8dad-373a-6045" primary="false" name="CHAOS CULT"/>
+        <categoryLink targetId="3b98-6793-b4e5-c927" id="840a-7541-29ad-1b9" primary="false" name="Dark Commune"/>
+        <categoryLink targetId="555c-431d-a420-d308" id="4698-20b-fa08-d911" primary="false" name="Cult Demagogue"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cult Demagogue" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="546e-2f39-da62-f216">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Accursed Benediction (1AP)" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions" hidden="false" id="2efe-b62b-47ae-8e82">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">One friendly CHAOS CULT operative Visible to and within ⬟ of this operative can mutate. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Incite Urgency (1AP)" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions" hidden="false" id="80c9-6dc2-6198-6448">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">One friendly CHAOS CULT operative Visible to and within ⬟ of this operative can immediately perform a free Dash or Charge action (for the latter, it can move no more than ⬛). This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Induce Slaughter (1AP)" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions" hidden="false" id="5fbd-275f-1825-79c">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">One friendly CHAOS CULT operative Visible to and within ⬟ of this operative can immediately perform a free Fight action. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="1c8-30d5-5819-7d6" targetId="82af-b9b8-518f-aaf1"/>
+        <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="5ae7-47e7-247e-e593" targetId="d5ae-a34b-acc2-dfe7"/>
+        <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="8ce6-9a0e-6c08-f08d" targetId="c728-d68a-3626-53e"/>
+        <entryLink import="true" name="Specialism" hidden="false" type="selectionEntryGroup" id="17c0-dc69-2aca-497f" targetId="e29d-d615-1e19-296e"/>
+        <entryLink import="true" name="Pistol" hidden="false" type="selectionEntry" id="39d5-246d-66c6-f553" targetId="2f96-a35a-4072-2d28">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d965-f3dc-50b-ed4b"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Battle Honours - Staunch" hidden="false" type="selectionEntryGroup" id="d504-5295-f698-5556" targetId="93ec-2874-675e-b46e">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" type="selectionEntry" id="4290-ee24-afc7-88cd" targetId="d037-f531-ad5-82aa"/>
+            <entryLink import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" type="selectionEntry" id="ed77-b186-28f-f1cf" targetId="d19a-98d6-56fe-7d44"/>
+            <entryLink import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" type="selectionEntry" id="b937-3f8b-567c-1f77" targetId="5e45-d8a8-1888-db64"/>
+            <entryLink import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" type="selectionEntry" id="ad78-c971-2c05-cd07" targetId="a466-5db8-62cc-59a9"/>
+            <entryLink import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" type="selectionEntry" id="414d-e721-766b-1947" targetId="5ff6-a9d-f8d-f910"/>
+            <entryLink import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" type="selectionEntry" id="928-837d-37a-a9f9" targetId="6d78-d5c3-7571-cf6b"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Battle Honours - Scout" hidden="false" type="selectionEntryGroup" id="10e4-84b2-2f8a-30b7" targetId="94bd-d409-fda3-9f9f">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" type="selectionEntry" id="7b0a-a9d8-55b1-9e5e" targetId="d037-f531-ad5-82aa"/>
+            <entryLink import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" type="selectionEntry" id="9abf-a10b-c5b8-637c" targetId="d19a-98d6-56fe-7d44"/>
+            <entryLink import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" type="selectionEntry" id="9ed-36b2-ce77-6171" targetId="5e45-d8a8-1888-db64"/>
+            <entryLink import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" type="selectionEntry" id="5185-e164-bcae-981d" targetId="a466-5db8-62cc-59a9"/>
+            <entryLink import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" type="selectionEntry" id="a08b-579e-54e2-953e" targetId="5ff6-a9d-f8d-f910"/>
+            <entryLink import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" type="selectionEntry" id="b677-d3bb-6b50-c3ca" targetId="6d78-d5c3-7571-cf6b"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Diabolical stave" hidden="false" id="4d8b-8f53-c587-7d61">
+          <profiles>
+            <profile name="⚔ Diabolical stave" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="fda6-45d2-d34-17a2">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Stun</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Diabolical stave" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="b9d2-3254-1684-b562">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬤</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Stun</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Stun" hidden="false" type="rule" id="2e33-fc66-2e30-8ed3" targetId="a1e3-4e0b-f7c2-eb59"/>
+            <infoLink name="Rng x" hidden="false" type="rule" id="1cba-7ba-328e-7678" targetId="92de-2ad3-3554-0b3e"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9b5-e29b-8244-794d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff39-5751-2bb9-a338"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e46-1975-a0bc-3057"/>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="83aa-ba10-abb7-4173"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="2e46-1975-a0bc-3057">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8749-1e3-5f1b-5f7" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="83aa-ba10-abb7-4173">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8749-1e3-5f1b-5f7" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Blessed Blade" hidden="false" id="cb6-e074-8c86-f088">
+      <profiles>
+        <profile name="Blessed Blade" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="9aa3-cd79-ffe3-f896">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cut Them Down" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="431f-b020-7a20-9984">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time an enemy operative starts a Fall Back action while within Engagement Range of this operative, you can use this ability. If you do so, that enemy operative suffers D3+1 mortal wounds (before it moves).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Attuned In Purpose" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="81ee-8846-1baf-5724">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative is activated, you can also activate another ready friendly BLESSED BLADE operative within ⬟ of it at the same time. Complete their actions in any order.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="ebeb-db01-a7f-573e" primary="true" name="Operative"/>
+        <categoryLink targetId="ba61-d304-9352-ec15" id="1960-5142-1927-8302" primary="false" name="Chaos"/>
+        <categoryLink targetId="e46b-36ed-7952-7323" id="32e8-8a61-5ce-6108" primary="false" name="CHAOS CULT"/>
+        <categoryLink targetId="3b98-6793-b4e5-c927" id="f909-e205-a772-8418" primary="false" name="Dark Commune"/>
+        <categoryLink targetId="d181-9b55-119b-a4e8" id="bd02-e3a9-24c6-4714" primary="false" name="Blessed Blade"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="cd48-4d16-dfd2-7865" targetId="82af-b9b8-518f-aaf1"/>
+        <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="bc70-602c-3b05-76a7" targetId="d5ae-a34b-acc2-dfe7"/>
+        <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="60aa-f5d0-611a-29ed" targetId="c728-d68a-3626-53e"/>
+        <entryLink import="true" name="Specialism" hidden="false" type="selectionEntryGroup" id="a270-a373-a7b2-dd62" targetId="e29d-d615-1e19-296e"/>
+        <entryLink import="true" name="Battle Honours - Combat" hidden="false" type="selectionEntryGroup" id="b65a-357c-59b1-5103" targetId="ae2f-d9f3-a27c-cca6">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" type="selectionEntry" id="a83e-b5ae-9b10-cce9" targetId="d037-f531-ad5-82aa"/>
+            <entryLink import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" type="selectionEntry" id="ed1e-e910-d3eb-52b8" targetId="d19a-98d6-56fe-7d44"/>
+            <entryLink import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" type="selectionEntry" id="a417-5c51-479f-11b4" targetId="5e45-d8a8-1888-db64"/>
+            <entryLink import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" type="selectionEntry" id="a7fe-5fd1-794c-beb5" targetId="a466-5db8-62cc-59a9"/>
+            <entryLink import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" type="selectionEntry" id="95c7-6e58-6884-471a" targetId="5ff6-a9d-f8d-f910"/>
+            <entryLink import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" type="selectionEntry" id="caef-4c2c-5bc2-8c93" targetId="6d78-d5c3-7571-cf6b"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Commune blade" hidden="false" id="a5f9-7615-df2e-2270">
+          <profiles>
+            <profile name="⚔ Commune blade" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="3c4a-d6e5-8069-89fc">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x" hidden="false" type="rule" id="5049-1153-e9ee-a020" targetId="be29-25db-e215-b3b0"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d7-d6c9-be65-b664"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92b5-7b84-dcf6-4756"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7c6c-593-47bb-ff86"/>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4831-4490-a4de-921f"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="7c6c-593-47bb-ff86">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8749-1e3-5f1b-5f7" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="4831-4490-a4de-921f">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8749-1e3-5f1b-5f7" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Iconarch" hidden="false" id="ab55-b01c-fffb-fc4e">
+      <categoryLinks>
+        <categoryLink targetId="ba61-d304-9352-ec15" id="fa20-7194-5844-955d" primary="false" name="Chaos"/>
+        <categoryLink targetId="e46b-36ed-7952-7323" id="2495-2a2-faff-aebc" primary="false" name="CHAOS CULT"/>
+        <categoryLink targetId="3b98-6793-b4e5-c927" id="4d79-a273-f56-6531" primary="false" name="Dark Commune"/>
+        <categoryLink targetId="19c9-3971-6a4-2587" id="c6a8-db36-acc4-fe61" primary="false" name="Iconarch"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="9799-c97a-b108-904e" primary="true" name="Operative"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Iconarch" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="a418-5ab6-71d4-51a1">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Icon Bearer" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="114e-8389-95a4-6799">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">When determining control of an objective marker, treat this operative’s APL characteristic as being 1 higher. Note that this is not a modifier. In narrative play, this is cumulative with the Focused Battle Honour (see the Kill Team Core Book).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ruinous Deterioration (1AP)" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions" hidden="false" id="4d2c-8bcd-a192-d3eb">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Until the start of that operative’s next activation, each time an attack dice would inflict damage on an enemy operative within 2⬤ of this operative, add 1 to the damage inflicted from that attack dice.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ruinous Invigoration (1AP)" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions" hidden="false" id="4075-9ff4-732d-ab07">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Until the start of that operative’s next activation, each time an attack dice would inflict damage on a friendly CHAOS CULT operative within 2⬤ of this operative, subtract 1 from the damage inflicted from that attack dice (to a minimum of 3).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="5e02-627f-953c-1e3f" targetId="82af-b9b8-518f-aaf1"/>
+        <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="b422-9eaf-1d43-4068" targetId="d5ae-a34b-acc2-dfe7"/>
+        <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="d0f0-7be9-6600-2c6d" targetId="c728-d68a-3626-53e"/>
+        <entryLink import="true" name="Specialism" hidden="false" type="selectionEntryGroup" id="22bb-f543-8160-6ea0" targetId="e29d-d615-1e19-296e"/>
+        <entryLink import="true" name="Pistol" hidden="false" type="selectionEntry" id="79aa-369b-1ae-b709" targetId="2f96-a35a-4072-2d28">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="544-b3e8-97ca-225a"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Crude melee weapon" hidden="false" type="selectionEntry" id="e297-42d2-12f7-615" targetId="fbb0-79df-5743-641d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff06-cb42-6e36-26f0"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Battle Honours - Staunch" hidden="false" type="selectionEntryGroup" id="f80b-8102-f9f0-3318" targetId="93ec-2874-675e-b46e">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" type="selectionEntry" id="4138-e414-ef9e-28a0" targetId="d037-f531-ad5-82aa"/>
+            <entryLink import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" type="selectionEntry" id="10f7-e01c-41c3-d5cf" targetId="d19a-98d6-56fe-7d44"/>
+            <entryLink import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" type="selectionEntry" id="42fb-f54e-7b97-2fc" targetId="5e45-d8a8-1888-db64"/>
+            <entryLink import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" type="selectionEntry" id="789-8d88-b98-df6e" targetId="a466-5db8-62cc-59a9"/>
+            <entryLink import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" type="selectionEntry" id="e910-63a7-174c-3be" targetId="5ff6-a9d-f8d-f910"/>
+            <entryLink import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" type="selectionEntry" id="46ec-2810-e163-d1d7" targetId="6d78-d5c3-7571-cf6b"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Burning censer" hidden="false" id="d46f-48f5-6a97-2916">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1c5-b0e4-b5af-23dd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22d2-f15b-14e4-5837"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Burning censer" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="a861-c282-6acb-7886">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">6</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Torrent ⬛</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rng x" hidden="false" type="rule" id="42cb-8d5d-dda1-b77d" targetId="92de-2ad3-3554-0b3e"/>
+            <infoLink name="Torrent x" hidden="false" type="rule" id="fa64-5d2a-7253-de5c" targetId="ec4b-2d70-51a7-5653"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2957-b271-7f8d-6c38"/>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="e855-88cd-b216-88c1"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="2957-b271-7f8d-6c38">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8749-1e3-5f1b-5f7" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="e855-88cd-b216-88c1">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8749-1e3-5f1b-5f7" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mindwitch" hidden="false" id="d20f-900f-16bc-f031">
+      <categoryLinks>
+        <categoryLink targetId="ba61-d304-9352-ec15" id="76d8-ce08-681a-bca0" primary="false" name="Chaos"/>
+        <categoryLink targetId="e46b-36ed-7952-7323" id="ffee-451-aa00-2377" primary="false" name="CHAOS CULT"/>
+        <categoryLink targetId="3b98-6793-b4e5-c927" id="c8a2-e82d-bfa-5a5e" primary="false" name="Dark Commune"/>
+        <categoryLink targetId="ba46-fb84-f18e-40e4" id="9b69-70ab-5029-57e5" primary="false" name="Mindwitch"/>
+        <categoryLink targetId="55b9-413d-e975-492a" id="d4e2-d654-ae9a-e3d6" primary="false" name="Psyker"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="cc90-417a-736e-981f" primary="true" name="Operative"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Mindwitch" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="3eae-bb15-5abc-336">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heinous Deluge (1AP)" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions" hidden="false" id="a1f2-a3b3-a175-1ef5">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Psychic action. Select one enemy operative in this operative’s Line of Sight. Subtract 1 from its APL. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Malefic Vortex (1AP)" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions" hidden="false" id="3ee0-bc1-c79-9edd">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Psychic action. Remove your Malefic Vortex token (if any). Then place a Malefic Vortex token in a location that is Visible to this operative, or on a Vantage Point of a terrain feature that is Visible to this operative (treat it as an intended target for the purposes of the Visibility line). Each enemy operative within ⬤ of that token suffers 1 mortal wound. In addition, at the end of each Turning Point, each enemy operative within ⬤ of that token suffers 1 mortal wound. This operative cannot perform this action while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Gaze (1AP)" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions" hidden="false" id="e6c1-4773-3745-a9c0">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Psychic action. Select one enemy operative within ⬟ of this operative and in its Line of Sight. That enemy operative suffers a number of mortal wounds based on the closest distance it is from this operative. Note that these are not cumulative.
+- Within ⬤ - D3+5 mortal wounds
+- Within 2⬤ - D3+3 mortal wounds
+- Within ⬟ - 3 mortal wounds
+
+
+This operative cannot perform this action while it has a Conceal order or while within Engagement Range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="c2a8-ebc-dbc8-47a0" targetId="82af-b9b8-518f-aaf1"/>
+        <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="6c7a-f8cc-c1a5-62e3" targetId="d5ae-a34b-acc2-dfe7"/>
+        <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="c175-d996-f41c-8716" targetId="c728-d68a-3626-53e"/>
+        <entryLink import="true" name="Specialism" hidden="false" type="selectionEntryGroup" id="cfc1-f2f3-70ea-f70a" targetId="e29d-d615-1e19-296e"/>
+        <entryLink import="true" name="Battle Honours - Staunch" hidden="false" type="selectionEntryGroup" id="108e-a52-9ec9-da98" targetId="93ec-2874-675e-b46e">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" type="selectionEntry" id="46a-60c-53ac-1a0e" targetId="d037-f531-ad5-82aa"/>
+            <entryLink import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" type="selectionEntry" id="8e02-8de4-dbc2-9bba" targetId="d19a-98d6-56fe-7d44"/>
+            <entryLink import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" type="selectionEntry" id="20d-f49f-33b2-3fff" targetId="5e45-d8a8-1888-db64"/>
+            <entryLink import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" type="selectionEntry" id="44b8-f619-a642-1ee6" targetId="a466-5db8-62cc-59a9"/>
+            <entryLink import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" type="selectionEntry" id="52dd-47ad-200e-cae7" targetId="5ff6-a9d-f8d-f910"/>
+            <entryLink import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" type="selectionEntry" id="e7fb-f0b4-7d61-aec4" targetId="6d78-d5c3-7571-cf6b"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="51c9-e74c-521-4c2d">
+          <profiles>
+            <profile name="⚔ Fists" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="1edb-9b6a-aa8d-76dc">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">5+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">1/2</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db8-6db0-965e-9011"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22b4-ced4-e418-a8cd"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e7f-6a34-36ed-166b"/>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="53d5-948e-c0dc-2cc9"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="6e7f-6a34-36ed-166b">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8749-1e3-5f1b-5f7" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="53d5-948e-c0dc-2cc9">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8749-1e3-5f1b-5f7" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chaos Devotee" hidden="false" id="41eb-cbad-d559-919e">
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="53fa-613a-d10f-f7e5" primary="true" name="Operative"/>
+        <categoryLink targetId="ba61-d304-9352-ec15" id="256d-ceb3-cd30-2287" primary="false" name="Chaos"/>
+        <categoryLink targetId="e46b-36ed-7952-7323" id="1279-1052-ec84-426e" primary="false" name="CHAOS CULT"/>
+        <categoryLink targetId="5b30-d16c-e335-7560" id="7279-b1cc-b968-fd37" primary="false" name="Devotee"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Chaos Devotee" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="a009-312a-63aa-bf2d">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="c50-9872-4b36-33ad" targetId="82af-b9b8-518f-aaf1"/>
+        <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="6972-1128-cc41-5229" targetId="d5ae-a34b-acc2-dfe7"/>
+        <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="d512-42e4-dfc3-61ac" targetId="c728-d68a-3626-53e"/>
+        <entryLink import="true" name="Specialism" hidden="false" type="selectionEntryGroup" id="3af8-61fb-3de2-7dc9" targetId="e29d-d615-1e19-296e"/>
+        <entryLink import="true" name="Pistol" hidden="false" type="selectionEntry" id="a3a9-7c1-ecc-db1d" targetId="2f96-a35a-4072-2d28">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8cd6-ab31-7431-c980"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Crude melee weapon" hidden="false" type="selectionEntry" id="ba03-eab6-997a-f336" targetId="fbb0-79df-5743-641d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbd4-9528-3de7-3309"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Battle Honours - Combat" hidden="false" type="selectionEntryGroup" id="1352-a7f5-e7e3-69c0" targetId="ae2f-d9f3-a27c-cca6">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" type="selectionEntry" id="6396-7d5b-be07-e9c5" targetId="d037-f531-ad5-82aa"/>
+            <entryLink import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" type="selectionEntry" id="cdeb-17ce-f847-595e" targetId="d19a-98d6-56fe-7d44"/>
+            <entryLink import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" type="selectionEntry" id="aba5-35ed-ecab-da55" targetId="5e45-d8a8-1888-db64"/>
+            <entryLink import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" type="selectionEntry" id="feb1-c778-4d35-e240" targetId="a466-5db8-62cc-59a9"/>
+            <entryLink import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" type="selectionEntry" id="2869-2b7d-722d-5827" targetId="5ff6-a9d-f8d-f910"/>
+            <entryLink import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" type="selectionEntry" id="1a7b-21b8-e757-605a" targetId="6d78-d5c3-7571-cf6b"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Battle Honours - Scout" hidden="false" type="selectionEntryGroup" id="a31a-30f3-c6e6-ff16" targetId="94bd-d409-fda3-9f9f">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" type="selectionEntry" id="9795-925f-b198-53e2" targetId="d037-f531-ad5-82aa"/>
+            <entryLink import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" type="selectionEntry" id="b647-fac3-940d-53cf" targetId="d19a-98d6-56fe-7d44"/>
+            <entryLink import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" type="selectionEntry" id="ff4f-6fe0-f620-f2b7" targetId="5e45-d8a8-1888-db64"/>
+            <entryLink import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" type="selectionEntry" id="787c-ef01-3ad3-177d" targetId="a466-5db8-62cc-59a9"/>
+            <entryLink import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" type="selectionEntry" id="cc08-f553-23a3-5dec" targetId="5ff6-a9d-f8d-f910"/>
+            <entryLink import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" type="selectionEntry" id="6672-abf5-1b8c-6897" targetId="6d78-d5c3-7571-cf6b"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="d8df-2731-7bd8-7f23"/>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="97c4-d3c0-5a13-9ca"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="d8df-2731-7bd8-7f23">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8749-1e3-5f1b-5f7" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="9" field="97c4-d3c0-5a13-9ca">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8749-1e3-5f1b-5f7" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chaos Torment" hidden="false" id="53dc-3f67-e09e-b914">
+      <categoryLinks>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="d179-3c43-ec89-aa07" primary="true" name="Operative"/>
+        <categoryLink targetId="e46b-36ed-7952-7323" id="c886-a07c-838c-a750" primary="false" name="CHAOS CULT"/>
+        <categoryLink targetId="ba61-d304-9352-ec15" id="a529-8a21-3f07-996d" primary="false" name="Chaos"/>
+        <categoryLink targetId="f63a-94e6-7100-60c5" id="3128-8343-9b06-a9ce" primary="false" name="Torment"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Chaos Torment" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="4cb2-706d-660b-6e5b">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">13</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Accursed Torment" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="fe60-b5bc-cea0-e3b0">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">- This operative cannot perform mission actions or the Pick Up action (when it’s set up, it must drop all objective markers or tokens its former operative type was carrying).
+- Light terrain and operatives with a Wounds characteristic of 11 or less do not provide Cover for this operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="c511-a3f2-7286-93d4" targetId="82af-b9b8-518f-aaf1"/>
+        <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="91b7-5278-b26c-7112" targetId="d5ae-a34b-acc2-dfe7"/>
+        <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="ce9f-221a-95b-c53c" targetId="c728-d68a-3626-53e"/>
+        <entryLink import="true" name="Specialism" hidden="false" type="selectionEntryGroup" id="4149-b2cb-33e2-249e" targetId="e29d-d615-1e19-296e"/>
+        <entryLink import="true" name="Battle Honours - Combat" hidden="false" type="selectionEntryGroup" id="1e7-c5b1-d0ad-d424" targetId="ae2f-d9f3-a27c-cca6">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" type="selectionEntry" id="51c2-1baf-9923-ad0c" targetId="d037-f531-ad5-82aa"/>
+            <entryLink import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" type="selectionEntry" id="8bcb-3853-facb-3873" targetId="d19a-98d6-56fe-7d44"/>
+            <entryLink import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" type="selectionEntry" id="8ee9-c0d8-6ee2-ba81" targetId="5e45-d8a8-1888-db64"/>
+            <entryLink import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" type="selectionEntry" id="d9a7-6b27-dfca-dd1c" targetId="a466-5db8-62cc-59a9"/>
+            <entryLink import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" type="selectionEntry" id="c07-30e2-5b-4f14" targetId="5ff6-a9d-f8d-f910"/>
+            <entryLink import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" type="selectionEntry" id="fa97-74fc-e4c4-75a8" targetId="6d78-d5c3-7571-cf6b"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Battle Honours - Scout" hidden="false" type="selectionEntryGroup" id="fdf5-a188-f43e-2ec7" targetId="94bd-d409-fda3-9f9f">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" type="selectionEntry" id="7e02-6f3a-f746-f277" targetId="d037-f531-ad5-82aa"/>
+            <entryLink import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" type="selectionEntry" id="121-5067-d36d-c647" targetId="d19a-98d6-56fe-7d44"/>
+            <entryLink import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" type="selectionEntry" id="ab00-6a00-7beb-871d" targetId="5e45-d8a8-1888-db64"/>
+            <entryLink import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" type="selectionEntry" id="8596-8c3f-b8cc-3f19" targetId="a466-5db8-62cc-59a9"/>
+            <entryLink import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" type="selectionEntry" id="a521-adee-3e1f-f040" targetId="5ff6-a9d-f8d-f910"/>
+            <entryLink import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" type="selectionEntry" id="f1f3-14ed-afdc-5a11" targetId="6d78-d5c3-7571-cf6b"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Unnatural Regeneration" hidden="false" type="profile" id="3ef8-9f36-301d-5c66" targetId="84d7-f31e-9ca4-aa5a"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hideous mutations" hidden="false" id="8fcd-9fe4-e173-eb11">
+          <profiles>
+            <profile name="⚔ Hideous mutations" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="fe70-d0e-f106-fad">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Relentless</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Relentless" hidden="false" type="rule" id="b7c3-bd77-372b-985a" targetId="1875-9b07-2a07-aacc"/>
+            <infoLink name="Rending" hidden="false" type="rule" id="dfa9-9de8-c490-2e20" targetId="0550-3332-7a93-ab5b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f811-c7b3-b858-e047"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2b2-89cc-243-a96c"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chaos Mutant" hidden="false" id="93df-6e58-f508-916b">
+      <categoryLinks>
+        <categoryLink targetId="ba61-d304-9352-ec15" id="e19-58aa-3017-fd97" primary="false" name="Chaos"/>
+        <categoryLink targetId="e46b-36ed-7952-7323" id="cd0f-20d0-e8a3-3220" primary="false" name="CHAOS CULT"/>
+        <categoryLink targetId="f98b-0289-0f1f-b233" id="5747-1d7f-6c2-759d" primary="true" name="Operative"/>
+        <categoryLink targetId="5381-b2b1-adf5-9d86" id="9345-5036-bfcc-1026" primary="false" name="Mutant"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Chaos Mutant" typeId="350c-2ddd-8a24-377b" typeName="Operative" hidden="false" id="a432-c2d5-9ea7-d9e1">
+          <characteristics>
+            <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+            <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+            <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+            <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+            <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+            <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Accursed Mutant" typeId="f52d-76ec-b279-093b" typeName="Abilities" hidden="false" id="48e4-fe23-8892-c868">
+          <characteristics>
+            <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative would perform a mission action or the Pick Up action, you must subtract one additional action point to do so.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="XP" hidden="false" type="selectionEntry" id="4898-79a-e0c6-1ab5" targetId="82af-b9b8-518f-aaf1"/>
+        <entryLink import="true" name="Battle Scars" hidden="false" type="selectionEntryGroup" id="1e3e-b0a9-2646-8010" targetId="d5ae-a34b-acc2-dfe7"/>
+        <entryLink import="true" name="Equipment" hidden="false" type="selectionEntryGroup" id="3754-9263-f80f-4138" targetId="c728-d68a-3626-53e"/>
+        <entryLink import="true" name="Specialism" hidden="false" type="selectionEntryGroup" id="7279-c3be-ef14-86e7" targetId="e29d-d615-1e19-296e"/>
+        <entryLink import="true" name="Battle Honours - Combat" hidden="false" type="selectionEntryGroup" id="24e7-49b6-a212-250d" targetId="ae2f-d9f3-a27c-cca6">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" type="selectionEntry" id="90e3-95fe-2178-b64a" targetId="d037-f531-ad5-82aa"/>
+            <entryLink import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" type="selectionEntry" id="699d-dc5d-14fc-a608" targetId="d19a-98d6-56fe-7d44"/>
+            <entryLink import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" type="selectionEntry" id="dc19-19bf-59bf-218f" targetId="5e45-d8a8-1888-db64"/>
+            <entryLink import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" type="selectionEntry" id="eead-4d8c-438a-520" targetId="a466-5db8-62cc-59a9"/>
+            <entryLink import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" type="selectionEntry" id="67fb-86af-6ce0-fd9f" targetId="5ff6-a9d-f8d-f910"/>
+            <entryLink import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" type="selectionEntry" id="783e-19ea-b060-82e4" targetId="6d78-d5c3-7571-cf6b"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Battle Honours - Scout" hidden="false" type="selectionEntryGroup" id="5a68-4025-fc50-ce3" targetId="94bd-d409-fda3-9f9f">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Cult 1 - Violent Rampage" hidden="false" type="selectionEntry" id="faa7-9b6b-108b-d27c" targetId="d037-f531-ad5-82aa"/>
+            <entryLink import="true" name="Chaos Cult 2 - Tainted Resilience" hidden="false" type="selectionEntry" id="3546-eca3-35f4-6c59" targetId="d19a-98d6-56fe-7d44"/>
+            <entryLink import="true" name="Chaos Cult 3 - Thirst for Slaughter" hidden="false" type="selectionEntry" id="d26d-21d6-d55c-6045" targetId="5e45-d8a8-1888-db64"/>
+            <entryLink import="true" name="Chaos Cult 4 - Dark Communion" hidden="false" type="selectionEntry" id="b338-2d89-b303-9e2b" targetId="a466-5db8-62cc-59a9"/>
+            <entryLink import="true" name="Chaos Cult 5 - Pain Metamorphosis" hidden="false" type="selectionEntry" id="4ded-98ae-f3d6-cb11" targetId="5ff6-a9d-f8d-f910"/>
+            <entryLink import="true" name="Chaos Cult 6 - Dark Blessing" hidden="false" type="selectionEntry" id="1a51-dc29-bd1f-2f80" targetId="6d78-d5c3-7571-cf6b"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Unnatural Regeneration" hidden="false" type="profile" id="c3f4-5ca5-8a5f-28d3" targetId="84d7-f31e-9ca4-aa5a"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blasphemous appendages" hidden="false" id="2b43-4967-7f6-89cd">
+          <profiles>
+            <profile name="⚔ Blasphemous appendages" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="79f-f0b-7c20-7897">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Ceaseless</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" hidden="false" type="rule" id="4988-a256-c163-8dd3" targetId="ce9a-aa0d-7b46-3d04"/>
+            <infoLink name="Rending" hidden="false" type="rule" id="1b59-ccea-fc8c-7d4a" targetId="0550-3332-7a93-ab5b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85c9-1c24-cd53-2312"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a372-7b9b-c229-fcf8"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
