@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="22" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="21" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="INQUISITORIAL AGENT" hidden="false" id="762e-9a1c-ad3a-3424"/>
     <categoryEntry name="Inquisition" hidden="false" id="307-ad5e-52b1-3bcd"/>
@@ -1072,9 +1072,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink name="Reap x" id="4f2b-58e5-1765-56ca" hidden="false" type="rule" targetId="bed1-0d23-de84-30a1"/>
-          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -2091,8 +2088,30 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </selectionEntry>
           </selectionEntries>
         </entryLink>
-        <entryLink import="true" name="Mystic Agent Autopistol" hidden="false" id="10a2-96a5-fb33-793b" type="selectionEntry" targetId="d40a-5bcd-1fd8-35eb"/>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="d40a-5bcd-1fd8-35eb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a1-cd2d-833b-ff73"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8b3-da3b-2ab2-5648"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Autopistol" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="2564-529c-7de6-dc6d">
+              <characteristics>
+                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Indirect</characteristic>
+                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rng x" id="c61c-83f9-b85-8f01" hidden="false" type="rule" targetId="92de-2ad3-3554-0b3e"/>
+            <infoLink name="Indirect" id="cf0f-3ede-2b63-743d" hidden="false" type="rule" targetId="653d-16a5-eefb-8b71"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Penal Legionnaire Agent" hidden="false" id="e903-c1ad-184-e0ae">
       <categoryLinks>
@@ -4393,27 +4412,6 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mystic Agent Autopistol" hidden="false" id="d40a-5bcd-1fd8-35eb">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a1-cd2d-833b-ff73"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8b3-da3b-2ab2-5648"/>
-      </constraints>
-      <profiles>
-        <profile name="⌖ Autopistol" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="2564-529c-7de6-dc6d">
-          <characteristics>
-            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
-            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
-            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Indirect</characteristic>
-            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Rng x" id="c61c-83f9-b85-8f01" hidden="false" type="rule" targetId="92de-2ad3-3554-0b3e"/>
-        <infoLink name="Indirect" id="cf0f-3ede-2b63-743d" hidden="false" type="rule" targetId="653d-16a5-eefb-8b71"/>
-      </infoLinks>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup name="Consecrated Tome" hidden="false" id="419e-327e-7c3d-60a9">
@@ -4875,8 +4873,7 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="2e62-be27-42f9-2aee" shared="true" id="c314-16ff-4984-ba37" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="229f-afbb-85fa-751" shared="true" id="892e-3bb4-e2f-119e" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="d40a-5bcd-1fd8-35eb" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="229f-afbb-85fa-751" shared="true" id="892e-3bb4-e2f-119e"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5288,7 +5285,6 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="a7df-0dbc-9cb7-3bcf" id="8cb1-80c6-f36e-835e" primary="false" name="Kasrkin Demo-Trooper"/>
         <categoryLink targetId="f98b-0289-0f1f-b233" id="cb55-f183-5286-5145" primary="false" name="Operative"/>
         <categoryLink targetId="21f1-9708-dcc8-d36c" id="1c9b-5520-99f0-a542" primary="true" name="Kasrkin"/>
-        <categoryLink name="AP2" hidden="false" id="b17a-2a53-5acf-e642" targetId="da3c-a927-ef4f-5c9b" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dcbf-dee1-f6e5-8235" type="max"/>
@@ -5433,7 +5429,6 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="305f-96fb-eac9-fcc7" id="1136-7afc-b624-1341" primary="false" name="Kasrkin Gunner"/>
         <categoryLink targetId="f98b-0289-0f1f-b233" id="a45d-a9a5-9f91-55de" primary="false" name="Operative"/>
         <categoryLink targetId="21f1-9708-dcc8-d36c" id="2fbd-213a-4731-2b3" primary="true" name="Kasrkin"/>
-        <categoryLink name="AP2" hidden="false" id="06a1-6326-56c1-d2b7" targetId="da3c-a927-ef4f-5c9b" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e85b-b4d9-da1d-47cb" type="max"/>
@@ -5470,7 +5465,6 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="305f-96fb-eac9-fcc7" id="ff6c-a6f0-7c07-616d" primary="false" name="Kasrkin Gunner"/>
         <categoryLink targetId="f98b-0289-0f1f-b233" id="ddaa-c624-f750-991d" primary="false" name="Operative"/>
         <categoryLink targetId="21f1-9708-dcc8-d36c" id="d162-e23e-f637-a4cd" primary="true" name="Kasrkin"/>
-        <categoryLink name="AP2" hidden="false" id="9fd4-80d9-d938-a501" targetId="da3c-a927-ef4f-5c9b" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd6a-e926-868d-308b" type="max"/>
@@ -5957,7 +5951,6 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="9efd-bca6-3b50-80b7" primary="false" name="Navis"/>
         <categoryLink targetId="f98b-0289-0f1f-b233" id="ebd2-4e5f-2060-c3c0" primary="false" name="Operative"/>
         <categoryLink targetId="5eb9-3063-33ee-fc3" id="ddeb-7ce4-c68c-5e4d" primary="true" name="Imperial Navy Breachers"/>
-        <categoryLink name="AP2" hidden="false" id="356d-7218-ecfc-ba14" targetId="da3c-a927-ef4f-5c9b" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Navis Gunner w/ plasma gun" hidden="false" type="selectionEntry" id="15a4-3eb3-c65e-6cf8" targetId="443f-d3a6-6955-265a">
@@ -6004,7 +5997,6 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         <categoryLink targetId="94cc-693a-2fe6-9fc6" id="cac7-a6dc-37e9-77b7" primary="false" name="Navis"/>
         <categoryLink targetId="f98b-0289-0f1f-b233" id="7472-39a0-7130-5673" primary="false" name="Operative"/>
         <categoryLink targetId="5eb9-3063-33ee-fc3" id="88a-d03c-5be9-4897" primary="true" name="Imperial Navy Breachers"/>
-        <categoryLink name="AP2" hidden="false" id="62d1-8862-3c92-972e" targetId="da3c-a927-ef4f-5c9b" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Navis Hatchcutter" hidden="false" type="selectionEntry" id="73aa-7261-a728-301d" targetId="b9a4-e740-bfc2-2789">
