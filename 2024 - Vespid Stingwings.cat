@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="c31e-b272-42a3-51b7" name="Vespid Stingwings" gameSystemId="sys-c521-ad27-44df-f959" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Vespid Skyblast" hidden="false" id="a792-0315-37d1-8efa">
+      <categoryLinks>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="7dcd-58c7-0d27-0aa5" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="VESPID STINGWING" hidden="false" id="affc-4938-92bc-703e" targetId="af34-52dc-5007-9d1a" primary="false"/>
+        <categoryLink name="Skyblast" hidden="false" id="e21e-81c5-b4c9-3fe0" targetId="8933-4653-c8cb-cf8c" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="8ae6-1d15-a5d4-9942" targetId="default-category" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Neutron grenade launcher" hidden="false" id="8041-ca9a-4519-c6bb">
+          <profiles>
+            <profile name="Neutron grenade launcher" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7303-c946-972b-0bfa">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;, Devastating 2, Neutron Bombardment*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1533-2d91-59d6-46fe-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1533-2d91-59d6-46fe-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blast x" id="819f-d888-4f0f-06e3" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Devastating x" id="57cf-0f8f-4602-afb3" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+          </infoLinks>
+          <rules>
+            <rule name="*Neutron Bombardment" id="d8e2-77a6-bb77-3fe0" hidden="false">
+              <description>Place one of your Neutron Fallout markers within the primary target&apos;s control range.</description>
+            </rule>
+            <rule name="Neutron Fallout" id="dc46-3eb3-b851-398a" hidden="false">
+              <description>Once during each enemy operative&apos;s activation, as soon as it&apos;s within 2&quot; of one of your Neutron Fallout markers, inflict D3 damage on it (multiple markers are not cumulative).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Vespid Skyblast" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="472f-c171-0bee-e985">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Claws" hidden="false" id="c64e-caac-df9a-621c" type="selectionEntry" targetId="4ea2-ea1e-0cec-10d1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a31-025a-de3b-af71-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a31-025a-de3b-af71-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <categoryEntries>
+    <categoryEntry name="VESPID STINGWING" id="af34-52dc-5007-9d1a" hidden="false"/>
+    <categoryEntry name="Skyblast" id="8933-4653-c8cb-cf8c" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Claws" hidden="false" id="4ea2-ea1e-0cec-10d1">
+      <profiles>
+        <profile name="Claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e85e-7097-8bcd-7c7d">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <forceEntries>
+    <forceEntry name="Vespid Stingwings Kill Team" id="bbc7-3b8c-b2cc-29d3" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="71a0-5396-3850-1b25" targetId="874b-0390-e5e2-1daa" type="category"/>
+        <categoryLink name="Operative" hidden="false" id="ca03-5848-26c2-f7bf" targetId="default-category" type="category"/>
+        <categoryLink name="Leader" hidden="false" id="71b2-5000-69ee-97d5" targetId="d999-8cad-8145-4efe" type="category"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+</catalogue>
