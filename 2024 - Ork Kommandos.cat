@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="0d41-a809-1fff-b8b1" name="Ork Kommandos" gameSystemId="sys-c521-ad27-44df-f959" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Kommando Dakka Boy" hidden="false" id="6e3a-e27d-6af9-a068">
+      <categoryLinks>
+        <categoryLink name="Ork" hidden="false" id="50c6-9d89-7b7a-d49d" targetId="c459-8b6a-74b6-9329" primary="false"/>
+        <categoryLink name="Dakka Boy" hidden="false" id="ac2d-ca6f-1ffd-fb06" targetId="18e1-ce84-9d92-86ee" primary="false"/>
+        <categoryLink name="KOMMANDO" hidden="false" id="bf7f-ccbc-3acc-20e1" targetId="adac-44bf-e1d4-1e4e" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="5df9-3fe8-47f8-140f" targetId="default-category" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Kommando Dakka Boy" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="903a-55fa-2389-6f54">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dakka Dash (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="30cf-f288-cbf5-b4ff">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">Perform a free **Dash** action and a free **Shoot** action with this operative in any order. You can only select a dakka shoota for that **Shoot** action.
+This operative cannot perform this action while within control range of an enemy operative, or while it has a Conceal order.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dakka shoota" hidden="false" id="7306-0792-b838-ab76">
+          <profiles>
+            <profile name="Dakka shoota (short range)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="bb80-fcdc-59ee-8af0">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Ceaseless</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Dakka shoota (long range)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1a5c-822c-566f-6ee7">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2948-33de-ed33-6093-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2948-33de-ed33-6093-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Range x" id="81dc-1e04-c907-71b7" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Ceaseless" id="5b5f-1097-0f75-e4ba" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="0d42-b76a-f210-9fc6" type="selectionEntry" targetId="5333-ef05-230e-9cb7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57df-aa42-2185-323d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57df-aa42-2185-323d-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Dakka Boy" id="18e1-ce84-9d92-86ee" hidden="false"/>
+    <categoryEntry name="KOMMANDO" id="adac-44bf-e1d4-1e4e" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="5333-ef05-230e-9cb7">
+      <profiles>
+        <profile name="Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b21d-3178-f59e-5782">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <forceEntries>
+    <forceEntry name="Ork Kommandos Kill Team" id="2f7a-48f9-f636-fffc" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="c4d1-8218-800f-b16f" targetId="874b-0390-e5e2-1daa" type="category"/>
+        <categoryLink name="Operative" hidden="false" id="bb66-a334-d34e-5374" targetId="default-category" type="category"/>
+        <categoryLink name="Leader" hidden="false" id="18f5-41c3-d17e-05fd" targetId="d999-8cad-8145-4efe" type="category"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+</catalogue>
