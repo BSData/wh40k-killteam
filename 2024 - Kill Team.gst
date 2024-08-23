@@ -16,17 +16,17 @@
   <forceEntries>
     <forceEntry name="Roster" hidden="false" id="default-force">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="5041-7c63-3fcc-ec3a" targetId="874b-0390-e5e2-1daa" type="category"/>
-        <categoryLink name="Reference" hidden="false" id="e7e5-aba7-e523-ef50" targetId="b318-a8d7-2d38-99a3" type="category"/>
-        <categoryLink name="Leader" hidden="false" id="0f6c-6170-279e-f788" targetId="d999-8cad-8145-4efe" type="category"/>
-        <categoryLink name="Default Category" hidden="false" id="default-force-category-link" targetId="default-category">
+        <categoryLink name="Configuration" hidden="false" id="5041-7c63-3fcc-ec3a" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="e7e5-aba7-e523-ef50" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Leader" hidden="false" id="0f6c-6170-279e-f788" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Operative" hidden="false" id="default-force-category-link" targetId="default-category">
           <constraints>
-            <constraint type="max" value="20" field="selections" scope="roster" shared="true" id="3bf5-9bfe-930c-25f7" includeChildSelections="true"/>
+            <constraint type="max" value="20" field="selections" scope="roster" shared="true" id="f9df-3e4b-6c7d-4c5f" includeChildSelections="true"/>
           </constraints>
           <modifiers>
-            <modifier type="decrement" value="1" field="3bf5-9bfe-930c-25f7">
+            <modifier type="decrement" value="1" field="f9df-3e4b-6c7d-4c5f">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="roster" childId="d999-8cad-8145-4efe" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="default-force" childId="d999-8cad-8145-4efe" shared="true" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -76,31 +76,26 @@
     </profileType>
   </profileTypes>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Game Type" hidden="false" id="e5c2-0021-6a76-b0d1" collective="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ea2b-52da-2d24-ff59"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="8efd-8688-874a-626c" targetId="874b-0390-e5e2-1daa" primary="true"/>
-      </categoryLinks>
+    <selectionEntry type="upgrade" import="true" name="Game Type" hidden="false" id="d123-e60a-6dd3-e833">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Game Type" id="87db-3109-9777-000e" hidden="false" collective="false" import="true" defaultSelectionEntryId="d576-59ea-7df7-cf3e">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3f6-1d04-a3eb-5350-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3f6-1d04-a3eb-5350-max"/>
-          </constraints>
+        <selectionEntryGroup name="Game Type" id="8b43-4cea-03ae-92d2" hidden="false" defaultSelectionEntryId="cd89-4b8e-4365-ac65">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Matched" hidden="false" id="cd4f-dfc1-5228-1e92" collective="false">
-              <costs>
-                <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-              </costs>
-            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Matched" hidden="false" id="cd89-4b8e-4365-ac65"/>
+            <selectionEntry type="upgrade" import="true" name="Joint Ops" hidden="false" id="1bf8-6040-c108-a189"/>
+            <selectionEntry type="upgrade" import="true" name="Narrative" hidden="false" id="6c0c-33ca-17a4-6516"/>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cca3-4da5-b213-bd3a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cca3-4da5-b213-bd3a-max"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <costs>
-        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
-      </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="016c-c3cd-6a66-0929"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="3797-a874-5eb6-1878" targetId="874b-0390-e5e2-1daa" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -111,6 +106,6 @@
     <rule name="Range x" id="a528-829e-8268-c005" hidden="false"/>
   </sharedRules>
   <entryLinks>
-    <entryLink import="true" name="Game Type" hidden="false" id="990c-eba1-6627-d699" type="selectionEntry" targetId="e5c2-0021-6a76-b0d1"/>
+    <entryLink import="true" name="Test" hidden="false" id="df77-17f0-9e2b-67a4" type="selectionEntry" targetId="d123-e60a-6dd3-e833"/>
   </entryLinks>
 </gameSystem>
