@@ -104,8 +104,19 @@
     <rule name="Blast x" id="0d74-0977-b481-bd13" hidden="false"/>
     <rule name="Ceaseless" id="752d-ce38-c325-4b8a" hidden="false"/>
     <rule name="Range x" id="a528-829e-8268-c005" hidden="false"/>
+    <rule name="Balanced x" id="28f7-0d96-d1fc-f75b" hidden="false"/>
   </sharedRules>
   <entryLinks>
-    <entryLink import="true" name="Test" hidden="false" id="df77-17f0-9e2b-67a4" type="selectionEntry" targetId="d123-e60a-6dd3-e833"/>
+    <entryLink import="true" name="Game Type" hidden="false" id="df77-17f0-9e2b-67a4" type="selectionEntry" targetId="d123-e60a-6dd3-e833"/>
   </entryLinks>
+  <sharedProfiles>
+    <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="31f0-6eb0-29da-8ba8">
+      <characteristics>
+        <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">⌖</characteristic>
+        <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">⚔</characteristic>
+        <characteristic name="Save" typeId="3241-5548-12d6-f103"/>
+        <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </gameSystem>

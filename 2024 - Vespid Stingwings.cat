@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="c31e-b272-42a3-51b7" name="Vespid Stingwings" gameSystemId="sys-c521-ad27-44df-f959" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Vespid Skyblast" hidden="false" id="a792-0315-37d1-8efa">
+    <selectionEntry type="model" import="true" name="Vespid Skyblast" hidden="false" id="a792-0315-37d1-8efa">
       <categoryLinks>
         <categoryLink name="T&apos;au Empire" hidden="false" id="7dcd-58c7-0d27-0aa5" targetId="20d3-6a95-40e4-de61" primary="false"/>
         <categoryLink name="VESPID STINGWING" hidden="false" id="affc-4938-92bc-703e" targetId="af34-52dc-5007-9d1a" primary="false"/>
@@ -11,7 +11,7 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Neutron grenade launcher" hidden="false" id="8041-ca9a-4519-c6bb">
           <profiles>
-            <profile name="Neutron grenade launcher" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7303-c946-972b-0bfa">
+            <profile name="⌖ Neutron grenade launcher" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7303-c946-972b-0bfa">
               <characteristics>
                 <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
                 <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
@@ -65,7 +65,7 @@
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Claws" hidden="false" id="4ea2-ea1e-0cec-10d1">
       <profiles>
-        <profile name="Claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e85e-7097-8bcd-7c7d">
+        <profile name="⚔ Claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e85e-7097-8bcd-7c7d">
           <characteristics>
             <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
             <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
@@ -82,7 +82,45 @@
         <categoryLink name="Configuration" hidden="false" id="71a0-5396-3850-1b25" targetId="874b-0390-e5e2-1daa"/>
         <categoryLink name="Operative" hidden="false" id="ca03-5848-26c2-f7bf" targetId="default-category"/>
         <categoryLink name="Leader" hidden="false" id="71b2-5000-69ee-97d5" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Reference" hidden="false" id="8880-da3b-fb34-d046" targetId="b318-a8d7-2d38-99a3"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Equipment" id="4b6a-a4ac-93ef-2a09" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Convergence Stimulant" hidden="false" id="6d59-2598-c288-7c38">
+          <profiles>
+            <profile name="Convergence Stimulant" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="c803-bec7-cbb5-af4e">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, a friendly **VESPID STINGWING** operative can perform the **Pick Up Marker** or a mission action without you spending a Communion point.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Neurostimulant" hidden="false" id="b75b-1d31-ad42-b445">
+          <profiles>
+            <profile name="Neurostimulant" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="9c67-dc6b-0183-1cc2">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">In the Ready step of each Strategy phase, when determining how many Communion points to gain, you can roll two D3 and select one D3 to use.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="4" field="selections" scope="force" shared="true" id="53dd-26c0-4f05-5ca5"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="44f4-ed9d-45fa-a20e">
+      <characteristics>
+        <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">⌖</characteristic>
+        <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">⚔</characteristic>
+        <characteristic name="Save" typeId="3241-5548-12d6-f103"/>
+        <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
