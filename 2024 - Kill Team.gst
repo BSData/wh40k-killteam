@@ -105,6 +105,7 @@
     <rule name="Ceaseless" id="752d-ce38-c325-4b8a" hidden="false"/>
     <rule name="Range x" id="a528-829e-8268-c005" hidden="false"/>
     <rule name="Balanced x" id="28f7-0d96-d1fc-f75b" hidden="false"/>
+    <rule name="Saturate" id="3c10-2d52-d1ac-b0f6" hidden="false"/>
   </sharedRules>
   <entryLinks>
     <entryLink import="true" name="Game Type" hidden="false" id="df77-17f0-9e2b-67a4" type="selectionEntry" targetId="d123-e60a-6dd3-e833"/>
