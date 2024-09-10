@@ -12,6 +12,7 @@
     <categoryEntry name="Ork" id="c459-8b6a-74b6-9329" hidden="false"/>
     <categoryEntry name="T&apos;au Empire" id="20d3-6a95-40e4-de61" hidden="false"/>
     <categoryEntry name="Tyranid" id="879f-4903-ae72-473e" hidden="false"/>
+    <categoryEntry name="Gunner" id="3033-7558-d28f-53cf" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Roster" hidden="false" id="default-force">
@@ -19,7 +20,7 @@
         <categoryLink name="Configuration" hidden="false" id="5041-7c63-3fcc-ec3a" targetId="874b-0390-e5e2-1daa"/>
         <categoryLink name="Reference" hidden="false" id="e7e5-aba7-e523-ef50" targetId="b318-a8d7-2d38-99a3"/>
         <categoryLink name="Leader" hidden="false" id="0f6c-6170-279e-f788" targetId="d999-8cad-8145-4efe"/>
-        <categoryLink name="Operative" hidden="false" id="default-force-category-link" targetId="cf83-4496-b58e-ac82" type="category">
+        <categoryLink name="Operative" hidden="false" id="default-force-category-link" targetId="cf83-4496-b58e-ac82">
           <constraints>
             <constraint type="max" value="20" field="selections" scope="roster" shared="true" id="f9df-3e4b-6c7d-4c5f" includeChildSelections="true"/>
           </constraints>
