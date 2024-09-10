@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="sys-c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
-    <categoryEntry name="Operative" id="default-category"/>
+    <categoryEntry name="Operative" id="cf83-4496-b58e-ac82"/>
     <categoryEntry name="Configuration" id="874b-0390-e5e2-1daa" hidden="false"/>
     <categoryEntry name="Reference" id="b318-a8d7-2d38-99a3" hidden="false"/>
     <categoryEntry name="Leader" id="d999-8cad-8145-4efe" hidden="false"/>
@@ -19,7 +19,7 @@
         <categoryLink name="Configuration" hidden="false" id="5041-7c63-3fcc-ec3a" targetId="874b-0390-e5e2-1daa"/>
         <categoryLink name="Reference" hidden="false" id="e7e5-aba7-e523-ef50" targetId="b318-a8d7-2d38-99a3"/>
         <categoryLink name="Leader" hidden="false" id="0f6c-6170-279e-f788" targetId="d999-8cad-8145-4efe"/>
-        <categoryLink name="Operative" hidden="false" id="default-force-category-link" targetId="default-category">
+        <categoryLink name="Operative" hidden="false" id="default-force-category-link" targetId="cf83-4496-b58e-ac82" type="category">
           <constraints>
             <constraint type="max" value="20" field="selections" scope="roster" shared="true" id="f9df-3e4b-6c7d-4c5f" includeChildSelections="true"/>
           </constraints>
