@@ -95,10 +95,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Equipment" id="8d2c-f7a6-4ab2-77a1" hidden="false">
-      <constraints>
-        <constraint type="max" value="4" field="selections" scope="force" shared="true" id="ae73-817c-f645-7e19"/>
-      </constraints>
+    <selectionEntryGroup name="Faction Equipment" id="3759-a15e-a7a8-bea0" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Drop Augury" hidden="false" id="9b15-d79b-a744-f9df">
           <profiles>
@@ -108,6 +105,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07bc-4dea-1f8a-652a"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Remote Overseer" hidden="false" id="049e-9efa-53f1-5c34">
           <profiles>
@@ -117,8 +117,18 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99ba-13f9-46ac-0596"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="7183-574c-cf48-dbbf" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <entryLinks>
+        <entryLink import="true" name="Faction Equipment" hidden="false" id="0de4-2a07-25d4-7966" type="selectionEntryGroup" targetId="3759-a15e-a7a8-bea0"/>
+      </entryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>
