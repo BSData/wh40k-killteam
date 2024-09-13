@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="21" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="580b-d492-eeb7-515d" name="Inquisitorial Agents" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemRevision="7" revision="22" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="INQUISITORIAL AGENT" hidden="false" id="762e-9a1c-ad3a-3424"/>
     <categoryEntry name="Inquisition" hidden="false" id="307-ad5e-52b1-3bcd"/>
@@ -1072,6 +1072,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink name="Reap x" id="4f2b-58e5-1765-56ca" hidden="false" type="rule" targetId="bed1-0d23-de84-30a1"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -2088,30 +2091,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
             </selectionEntry>
           </selectionEntries>
         </entryLink>
+        <entryLink import="true" name="Mystic Agent Autopistol" hidden="false" id="10a2-96a5-fb33-793b" type="selectionEntry" targetId="d40a-5bcd-1fd8-35eb"/>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="d40a-5bcd-1fd8-35eb">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a1-cd2d-833b-ff73"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8b3-da3b-2ab2-5648"/>
-          </constraints>
-          <profiles>
-            <profile name="⌖ Autopistol" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="2564-529c-7de6-dc6d">
-              <characteristics>
-                <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
-                <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
-                <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
-                <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Indirect</characteristic>
-                <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Rng x" id="c61c-83f9-b85-8f01" hidden="false" type="rule" targetId="92de-2ad3-3554-0b3e"/>
-            <infoLink name="Indirect" id="cf0f-3ede-2b63-743d" hidden="false" type="rule" targetId="653d-16a5-eefb-8b71"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Penal Legionnaire Agent" hidden="false" id="e903-c1ad-184-e0ae">
       <categoryLinks>
@@ -4412,6 +4393,27 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mystic Agent Autopistol" hidden="false" id="d40a-5bcd-1fd8-35eb">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a1-cd2d-833b-ff73"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8b3-da3b-2ab2-5648"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Autopistol" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons" hidden="false" id="2564-529c-7de6-dc6d">
+          <characteristics>
+            <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+            <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+            <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+            <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Indirect</characteristic>
+            <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rng x" id="c61c-83f9-b85-8f01" hidden="false" type="rule" targetId="92de-2ad3-3554-0b3e"/>
+        <infoLink name="Indirect" id="cf0f-3ede-2b63-743d" hidden="false" type="rule" targetId="653d-16a5-eefb-8b71"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedInfoGroups>
     <infoGroup name="Consecrated Tome" hidden="false" id="419e-327e-7c3d-60a9">
@@ -4873,7 +4875,8 @@ the end of the battle (regardless of any rules that say it cannot be injured).<
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="2e62-be27-42f9-2aee" shared="true" id="c314-16ff-4984-ba37" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="229f-afbb-85fa-751" shared="true" id="892e-3bb4-e2f-119e"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="229f-afbb-85fa-751" shared="true" id="892e-3bb4-e2f-119e" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="d40a-5bcd-1fd8-35eb" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
