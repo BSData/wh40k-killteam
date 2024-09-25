@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="8" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="3b7e-7dab-f79f-2e74" name="Warhammer 40,000: Kill Team (2021)" revision="9" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
     <costType id="c61a-51a3-370d-bf55" name="EP" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
@@ -92,6 +92,11 @@
                 <repeat field="selections" scope="7138-2b60-74ce-a90b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3198-c1ce-dfd0-fb4f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="set" value="30" field="2125-5680-e8b9-6f9c">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="580b-d492-eeb7-515d" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="20" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2125-5680-e8b9-6f9c" type="max"/>
@@ -99,12 +104,12 @@
         </categoryLink>
         <categoryLink id="adfa-b821-d9f9-04db" name="Drone" hidden="false" targetId="c5c1-db85-5269-3c3c" primary="false"/>
         <categoryLink id="b6b4-8178-6092-bdff" name="Mutoid Vermin" hidden="false" targetId="5378-18da-9409-091a" primary="false"/>
-        <categoryLink name="Exaction Squad" hidden="false" id="ba8f-9d13-e857-513d" targetId="5750-52c0-127a-fa5b" type="category"/>
-        <categoryLink name="Imperial Navy Breachers" hidden="false" id="ed65-528b-1b6e-83f" targetId="5eb9-3063-33ee-fc3" type="category"/>
-        <categoryLink name="Kasrkin" hidden="false" id="1b4c-f880-8642-2c55" targetId="21f1-9708-dcc8-d36c" type="category"/>
-        <categoryLink name="Sister of Silence" hidden="false" id="1753-cdc3-42b9-278" targetId="ddb1-20b1-eebf-aa4a" type="category"/>
-        <categoryLink name="Tempestus Scion" hidden="false" id="b0a-6a2c-c8a7-a72c" targetId="5d21-66e8-b1eb-209f" type="category"/>
-        <categoryLink name="Veteran Guardsmen" hidden="false" id="6c20-7d5c-b853-538" targetId="dfb3-bfe0-549d-be8" type="category"/>
+        <categoryLink name="Exaction Squad" hidden="false" id="ba8f-9d13-e857-513d" targetId="5750-52c0-127a-fa5b"/>
+        <categoryLink name="Imperial Navy Breachers" hidden="false" id="ed65-528b-1b6e-83f" targetId="5eb9-3063-33ee-fc3"/>
+        <categoryLink name="Kasrkin" hidden="false" id="1b4c-f880-8642-2c55" targetId="21f1-9708-dcc8-d36c"/>
+        <categoryLink name="Sister of Silence" hidden="false" id="1753-cdc3-42b9-278" targetId="ddb1-20b1-eebf-aa4a"/>
+        <categoryLink name="Tempestus Scion" hidden="false" id="b0a-6a2c-c8a7-a72c" targetId="5d21-66e8-b1eb-209f"/>
+        <categoryLink name="Veteran Guardsmen" hidden="false" id="6c20-7d5c-b853-538" targetId="dfb3-bfe0-549d-be8"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -137,7 +142,7 @@
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe30-9a58-451c-a638" type="min"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="6d14-f46b-3429-5786" name="New CategoryLink" hidden="false" targetId="fb89-efb1-54e4-59c5" primary="true"/>
+        <categoryLink id="6d14-f46b-3429-5786" name="Configuration" hidden="false" targetId="fb89-efb1-54e4-59c5" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="66d7-369b-5646-9bfe" name="Game Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="d576-59ea-7df7-cf3e">
