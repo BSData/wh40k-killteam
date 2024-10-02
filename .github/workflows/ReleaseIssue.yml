@@ -12,21 +12,26 @@ jobs:
 
 # Repo code checkout required if `template` is used
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
 # Get current month for issue title
     - name: get-date
       id: date
-      run: echo "::set-output name=date::$(date +'%B %Y')"
+      run: echo "date=$(date +'%B %Y')" >> $GITHUB_OUTPUT
 
 # Create, pin, label, and assign release issue
     - name: create-issue
+      id: extract
+      uses: imjohnbo/extract-issue-template-fields@v1
+      with:
+        path: ".github/RELEASE_TEMPLATE.md"
+
+    - name: create-issue
       id: issue
-      uses: imjohnbo/issue-bot@v2
+      uses: imjohnbo/issue-bot@v3
       with:
         pinned: true
         close-previous: true
         title: "RELEASE THREAD: ${{ steps.date.outputs.date }}"
-        template: ".github/RELEASE_TEMPLATE.md"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
