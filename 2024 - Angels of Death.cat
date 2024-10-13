@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="4f46-f795-734e-6076" name="Angels of Death" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Angels of Death Kill Team" id="29d1-6036-644f-488a" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="7a26-0efd-74b7-0c61" targetId="874b-0390-e5e2-1daa" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="7adf-1568-5063-b972" targetId="d999-8cad-8145-4efe" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8bd4-b3ae-dfd5-ef3b-min"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8bd4-b3ae-dfd5-ef3b-max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Operative" hidden="false" id="c9e2-799c-6351-cfa1" targetId="cf83-4496-b58e-ac82" primary="false">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="force" shared="true" id="0bc7-3e67-ecb8-9d21-min"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="0bc7-3e67-ecb8-9d21-max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Grenadier" hidden="false" id="6a5a-3eb2-c7c2-821d" targetId="4ba2-c27d-580b-8d12" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4c17-e69c-5460-f991" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Gunner" hidden="false" id="8a82-1ca5-5806-4979" targetId="3033-7558-d28f-53cf" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1fc4-3562-bfde-ecd3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Eliminator" hidden="false" id="5929-0c19-5b2d-c6d7" targetId="0fd9-820c-1e60-543d" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69a0-cf6c-c545-3d9e"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="69a0-cf6c-c545-3d9e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="644f-3bcf-b20d-f2d5" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Heavy Intercessor" hidden="false" id="804b-7e20-94f8-247d" targetId="644f-3bcf-b20d-f2d5" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="257f-38df-8a29-961a"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="257f-38df-8a29-961a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="0fd9-820c-1e60-543d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <categoryEntries>
+    <categoryEntry name="Grenadier" id="4ba2-c27d-580b-8d12" hidden="false"/>
+    <categoryEntry name="ANGEL OF DEATH" id="19cd-bbe7-d090-a8b2" hidden="false"/>
+    <categoryEntry name="Adeptus Astartes" id="079a-866e-9bbe-9ce9" hidden="false"/>
+    <categoryEntry name="Space Marine Captain" id="e8b2-55db-2b67-08fa" hidden="false"/>
+    <categoryEntry name="Assault Intercessor" id="e891-2a42-a8f7-e221" hidden="false"/>
+    <categoryEntry name="Sergeant" id="8665-f616-d147-73ce" hidden="false"/>
+    <categoryEntry name="Intercessor" id="87dd-c2c4-3f75-bb94" hidden="false"/>
+    <categoryEntry name="Warrior" id="e8f0-5647-7b70-319c" hidden="false"/>
+    <categoryEntry name="Eliminator" id="0fd9-820c-1e60-543d" hidden="false"/>
+    <categoryEntry name="Sniper" id="3da5-5c73-28e0-947d" hidden="false"/>
+    <categoryEntry name="Heavy Intercessor" id="644f-3bcf-b20d-f2d5" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Chapter Tactics" hidden="false" id="7a6b-0526-fe3f-eff2" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="a95f-0c24-c10e-ffcb-min"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a95f-0c24-c10e-ffcb-max"/>
+      </constraints>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="f2c5-a19b-59d6-95e4" type="selectionEntryGroup" targetId="8887-ab48-1794-cdbf"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="187a-3d95-c7db-7496">
+      <profiles>
+        <profile name="⌖ Plasma pistol (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ee9a-41e7-13fe-5b0c">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Piercing 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="⌖ Plasma pistol (supercharge)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7888-dfdf-ecc2-9032">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Hot, Lethal 5+, Piercing 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec29-fddf-a0ad-6b2b"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Range x" id="fc78-3699-29b3-b881" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+        <infoLink name="Piercing x" id="1ecb-1b1d-bad7-f640" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+        <infoLink name="Hot" id="71f0-7566-f7d5-2553" hidden="false" type="rule" targetId="ec63-40e6-6282-8420"/>
+        <infoLink name="Lethal x+" id="c8b2-5e29-3e8e-0314" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="5262-3a19-0a9b-5632">
+      <profiles>
+        <profile name="⚔ Power fist" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="fe27-204c-ff2d-ce83">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/7</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="8044-2517-4ef7-33de">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1e8f-a57f-d418-402d" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="6056-b741-7cf3-5b43">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3b04-997f-5370-c1f2" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Brutal" id="ad2b-74db-7b80-1a0a" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f41-9274-730d-335a"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="c81d-2f29-2203-ce5b" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02b5-5969-9c17-f1df"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Chainsword" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4fb3-6463-34dc-5435">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="4" field="6056-b741-7cf3-5b43" affects="">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3b04-997f-5370-c1f2" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="f5d5-d08e-c46a-0cb0">
+      <profiles>
+        <profile name="⚔ Power weapon" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a7f3-9998-964a-4eae">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="4" field="6056-b741-7cf3-5b43">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3b04-997f-5370-c1f2" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lethal x+" id="1098-e6be-7fa0-b25c" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d449-ce54-57ef-3167"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Thunder hammer" hidden="false" id="fa5e-b9ee-fb03-feac">
+      <profiles>
+        <profile name="⚔ Thunder hammer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5636-6697-6274-8d78">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Shock, Stun</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="4" field="6056-b741-7cf3-5b43">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3b04-997f-5370-c1f2" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shock" id="a031-bc84-f589-5448" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+        <infoLink name="Stun" id="4c01-a111-3f20-68a5" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d69-4ee6-bd35-b084"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy bolt pistol" hidden="false" id="71a7-b048-40fe-bf6d">
+      <profiles>
+        <profile name="⌖Heavy bolt pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="9c21-5611-9d14-2c03">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Piercing Crits 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="9776-fe61-f96a-76a3" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+        <infoLink name="Piercing x" id="d1a3-0449-799e-32e0" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dcd-80df-30ee-4ef5"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="9978-a207-ea52-2f88">
+      <profiles>
+        <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="cc3e-be03-2ab2-4bf4">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a42-b202-0309-43b4"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bolt rifle" hidden="false" id="d60d-1f8c-2519-f78e">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03da-175b-7dfa-5edf"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Bolt rifle" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="03b3-a89e-f806-c0bf">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing Crits 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Piercing x" id="10d4-51b5-a6c1-912a" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auto bolt rifle" hidden="false" id="6fba-f8c3-3999-284b">
+      <profiles>
+        <profile name="⌖ Auto bolt rifle" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c5ac-f862-a87d-7262">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Torrent 1&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Torrent x" id="2ebb-a6cc-7cba-3d60" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8b1-dc42-6533-b1fd"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stalker bolt rifle" hidden="false" id="e583-f949-effe-fc87">
+      <profiles>
+        <profile name="⌖ Stalker bolt rifle (heavy)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c4b4-410e-1af2-f48c">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (**Dash** only), Lethal 5+, Piercing Crits 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="⌖ Stalker bolt rifle (mobile)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="68e3-a6f2-0b08-177f">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy" id="4cb8-ce5e-9e53-3caf" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+        <infoLink name="Lethal x+" id="f2b3-73cf-a7dc-b1c1" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+        <infoLink name="Piercing x" id="5dbb-db40-5a95-d6b4" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feed-3b50-9843-7ac0"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <profileTypes>
+    <profileType name="Chapter Tactics" id="49c2-836f-18b5-07ec" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Chapter Tactic" id="43ba-53ad-f728-bacf"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <sharedProfiles>
+    <profile name="Aggressive" typeId="49c2-836f-18b5-07ec" typeName="Chapter Tactics" hidden="false" id="be68-a409-dba3-c4a3">
+      <characteristics>
+        <characteristic name="Chapter Tactic" typeId="43ba-53ad-f728-bacf"/>
+      </characteristics>
+    </profile>
+    <profile name="Sharpshooter" typeId="49c2-836f-18b5-07ec" typeName="Chapter Tactics" hidden="false" id="2dcf-673c-7ca5-2e22">
+      <characteristics>
+        <characteristic name="Chapter Tactic" typeId="43ba-53ad-f728-bacf"/>
+      </characteristics>
+    </profile>
+    <profile name="Dueller" typeId="49c2-836f-18b5-07ec" typeName="Chapter Tactics" hidden="false" id="4e8a-40d6-cd41-a8cf">
+      <characteristics>
+        <characteristic name="Chapter Tactic" typeId="43ba-53ad-f728-bacf"/>
+      </characteristics>
+    </profile>
+    <profile name="Mobile" typeId="49c2-836f-18b5-07ec" typeName="Chapter Tactics" hidden="false" id="1b4e-2f28-9c65-62dd">
+      <characteristics>
+        <characteristic name="Chapter Tactic" typeId="43ba-53ad-f728-bacf"/>
+      </characteristics>
+    </profile>
+    <profile name="Stealthy" typeId="49c2-836f-18b5-07ec" typeName="Chapter Tactics" hidden="false" id="dcf1-ebee-6e54-f64f">
+      <characteristics>
+        <characteristic name="Chapter Tactic" typeId="43ba-53ad-f728-bacf"/>
+      </characteristics>
+    </profile>
+    <profile name="Resolute" typeId="49c2-836f-18b5-07ec" typeName="Chapter Tactics" hidden="false" id="0bf5-117e-df33-17d0">
+      <characteristics>
+        <characteristic name="Chapter Tactic" typeId="43ba-53ad-f728-bacf"/>
+      </characteristics>
+    </profile>
+    <profile name="Hardy" typeId="49c2-836f-18b5-07ec" typeName="Chapter Tactics" hidden="false" id="653b-59d7-4cc5-21ac">
+      <characteristics>
+        <characteristic name="Chapter Tactic" typeId="43ba-53ad-f728-bacf"/>
+      </characteristics>
+    </profile>
+    <profile name="Siege Specialist" typeId="49c2-836f-18b5-07ec" typeName="Chapter Tactics" hidden="false" id="7a52-f018-db34-63b1">
+      <characteristics>
+        <characteristic name="Chapter Tactic" typeId="43ba-53ad-f728-bacf"/>
+      </characteristics>
+    </profile>
+    <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="a3b1-1bd2-cdfc-dac1">
+      <characteristics>
+        <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">⌖</characteristic>
+        <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">⚔</characteristic>
+        <characteristic name="Save" typeId="3241-5548-12d6-f103">▶</characteristic>
+        <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">◆</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Space Marine Captain" hidden="false" id="1e8f-a57f-d418-402d">
+      <profiles>
+        <profile name="Space Marine Captain" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1442-6f07-4e87-3b7a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heroic Leader" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="f6ac-319a-f15c-ffae">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, you can use a firefight ploy for 0CP if this is the specified ANGEL OF DEATH operative (excluding Command Re-roll), or the Adjust Doctrine firefight ploy for 0CP if this operative is in the killzone and not within control range of enemy operatives.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Iron Halo" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="4386-9eb8-143a-3776">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per battle, when an attack dice inflicts Normal Dmg on this operative, you can ignore that inflicted damage.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="ANGEL OF DEATH" hidden="false" id="b41e-5cd5-ffd1-1ddd" targetId="19cd-bbe7-d090-a8b2" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="496f-bb69-5743-3f2c" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="cdd3-61b9-bb9f-be71" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="2e7d-71a7-d21b-15dc" targetId="079a-866e-9bbe-9ce9" primary="false"/>
+        <categoryLink name="Space Marine Captain" hidden="false" id="f4e7-449b-2bb2-e400" targetId="e8b2-55db-2b67-08fa" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Plasma pistol" hidden="false" id="db9d-43b3-3201-ff2d" type="selectionEntry" targetId="187a-3d95-c7db-7496">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d43-95e6-aeae-d257"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Power fist" hidden="false" id="bddb-4ec4-4ed1-8eb5" type="selectionEntry" targetId="5262-3a19-0a9b-5632">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c374-e52d-4673-08bb"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Assault Intercessor Sergeant" hidden="false" id="c809-3374-c7f7-facd">
+      <categoryLinks>
+        <categoryLink name="Leader" hidden="false" id="1a6d-53d1-a6bb-9dd8" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="506b-f64e-7348-81cb" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="ANGEL OF DEATH" hidden="false" id="0eaf-6069-fb0a-511b" targetId="19cd-bbe7-d090-a8b2" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="6a39-08e0-1453-fb9a" targetId="079a-866e-9bbe-9ce9" primary="false"/>
+        <categoryLink name="Assault Intercessor" hidden="false" id="a4b2-a1ba-cc2d-d9f4" targetId="e891-2a42-a8f7-e221" primary="false"/>
+        <categoryLink name="Sergeant" hidden="false" id="d695-6ddf-bdad-aa54" targetId="8665-f616-d147-73ce" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Assault Intercessor Sergeant" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="b5ce-d628-e9ef-208a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Doctrine Warfare" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="42bd-e2a7-e8f2-1d75">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever you would use the Combat Doctrine strategic ploy and then select Assault or Tactical, if this operative is in the killzone, it costs you 0CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chapter Veteran" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="6c1f-395e-178c-f074">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">At the end of the Select Operatives step, if this operative is selected for deployment, select one additional **CHAPTER TACTIC** for it to have for the battle. Unlike primary and secondary **CHAPTER TACTICS**, you don’t have to select the same one for each battle in a campaign or tournament.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" id="7a4a-06c2-3535-80e7" hidden="false" defaultSelectionEntryId="none">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="a697-d225-c20a-0465" type="selectionEntry" targetId="c81d-2f29-2203-ce5b">
+              <modifiers>
+                <modifier type="set" value="1" field="f9d4-019c-5894-b0c2">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="187a-3d95-c7db-7496" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f9d4-019c-5894-b0c2"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power fist" hidden="false" id="6286-f471-63fe-d29a" type="selectionEntry" targetId="5262-3a19-0a9b-5632">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e96-ce8d-b172-f105"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power weapon" hidden="false" id="800a-9313-601c-5571" type="selectionEntry" targetId="f5d5-d08e-c46a-0cb0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="689b-32bc-51ef-af32"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Thunder hammer" hidden="false" id="1fbb-eebd-4899-7ae7" type="selectionEntry" targetId="fa5e-b9ee-fb03-feac"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27bd-e696-cf5c-f88e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27bd-e696-cf5c-f88e-max"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Ranged Weapon" id="9b80-c979-3037-101b" hidden="false" defaultSelectionEntryId="none">
+          <entryLinks>
+            <entryLink import="true" name="Plasma pistol" hidden="false" id="7ce9-ae11-f8b9-5a52" type="selectionEntry" targetId="187a-3d95-c7db-7496"/>
+            <entryLink import="true" name="Heavy bolt pistol" hidden="false" id="6398-10de-3bfe-3000" type="selectionEntry" targetId="71a7-b048-40fe-bf6d"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e589-627b-9d8c-85d1-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e589-627b-9d8c-85d1-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="⌖ Hand Flamer" hidden="false" id="b015-6af3-3bea-7be8">
+              <profiles>
+                <profile name="Hand Flamer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e45a-6bf2-b623-438e">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Saturate, Torrent 1&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Range x" id="798b-d06d-21b0-1116" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                <infoLink name="Saturate" id="374b-0b29-a854-f31d" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+                <infoLink name="Torrent x" id="84e4-6c0d-4e80-26b2" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="616e-d377-b830-a75d"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Intercessor Sergeant" hidden="false" id="3b04-997f-5370-c1f2">
+      <profiles>
+        <profile name="Intercessor Sergeant" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="c7d0-7c89-8f63-c4c3">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Doctrine Warfare" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="b32f-5a76-356e-68cb">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever you would use the Combat Doctrine strategic ploy and then select Devastator or Tactical, if this operative is in the killzone, it costs you 0CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chapter Veteran" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8a42-b55e-dea7-6baf">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">At the end of the Select Operatives step, if this operative is selected for deployment, select one additional **CHAPTER TACTIC** for it to have for the battle. Unlike primary and secondary **CHAPTER TACTICS**, you don’t have to select the same one for each battle in a campaign or tournament.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" id="0c0f-0765-3057-4e9e" hidden="false" defaultSelectionEntryId="none">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="6116-2c0e-870d-d80f" type="selectionEntry" targetId="c81d-2f29-2203-ce5b"/>
+            <entryLink import="true" name="Power fist" hidden="false" id="daf5-4a08-4367-63e5" type="selectionEntry" targetId="5262-3a19-0a9b-5632">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6fa-7dd2-06a6-04cf"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power weapon" hidden="false" id="7447-4aff-5a2c-0de1" type="selectionEntry" targetId="f5d5-d08e-c46a-0cb0"/>
+            <entryLink import="true" name="Thunder hammer" hidden="false" id="f8c5-c632-0553-33ba" type="selectionEntry" targetId="fa5e-b9ee-fb03-feac"/>
+            <entryLink import="true" name="Fists" hidden="false" id="3354-9b78-8e53-33e3" type="selectionEntry" targetId="9978-a207-ea52-2f88"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4938-7202-2d48-17aa-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4938-7202-2d48-17aa-max"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Ranged Weapon" id="bf66-c19b-2d2e-12d2" hidden="false" defaultSelectionEntryId="none">
+          <entryLinks>
+            <entryLink import="true" name="Auto bolt rifle" hidden="false" id="13f5-38a7-cf48-c070" type="selectionEntry" targetId="6fba-f8c3-3999-284b"/>
+            <entryLink import="true" name="Bolt rifle" hidden="false" id="0e1c-3efe-40bb-29f6" type="selectionEntry" targetId="d60d-1f8c-2519-f78e"/>
+            <entryLink import="true" name="Stalker bolt rifle" hidden="false" id="ee63-09b5-0579-6fd4" type="selectionEntry" targetId="e583-f949-effe-fc87"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4adb-c2ff-1e1b-547c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4adb-c2ff-1e1b-547c-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="ANGEL OF DEATH" hidden="false" id="6d36-8667-65ed-cebb" targetId="19cd-bbe7-d090-a8b2" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="c9d4-348a-477d-bd72" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="ff58-ffde-0be6-80f5" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="f736-c762-c616-b2e3" targetId="079a-866e-9bbe-9ce9" primary="false"/>
+        <categoryLink name="Intercessor" hidden="false" id="45c3-ef12-ff16-718f" targetId="87dd-c2c4-3f75-bb94" primary="false"/>
+        <categoryLink name="Sergeant" hidden="false" id="5187-9382-0fd5-2c3e" targetId="8665-f616-d147-73ce" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Assault Intercessor Grenadier" hidden="false" id="51c4-b5bd-2b17-b3d8">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="4aa0-7d1c-f649-978c" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="ANGEL OF DEATH" hidden="false" id="81c1-06ce-f544-ee1e" targetId="19cd-bbe7-d090-a8b2" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="0d4f-732e-afdc-c61a" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="4735-a040-bf56-bec8" targetId="079a-866e-9bbe-9ce9" primary="false"/>
+        <categoryLink name="Assault Intercessor" hidden="false" id="d6e4-19d9-c341-0654" targetId="e891-2a42-a8f7-e221" primary="false"/>
+        <categoryLink name="Grenadier" hidden="false" id="a1d8-3be6-b4ae-ec87" targetId="4ba2-c27d-580b-8d12" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Chainsword" hidden="false" id="b98d-0310-617c-be4b" type="selectionEntry" targetId="c81d-2f29-2203-ce5b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6120-c20b-3d21-2d96"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heavy bolt pistol" hidden="false" id="40d0-a869-3276-29ff" type="selectionEntry" targetId="71a7-b048-40fe-bf6d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd4d-227b-a541-93c7"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Assault Intercessor Grenadier" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="5151-994f-cffe-e35d">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grenadier" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="a86f-e1cc-1044-d60c">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can use frag and krak grenades (see universal equipment). Doing so doesn’t count towards any limited uses you have (i.e. if you also select those grenades from equipment for other operatives). Whenever it’s doing so, improve the Hit stat of that weapon by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Assault Intercessor Warrior" hidden="false" id="b38c-5705-740e-ecf1">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="29e8-eb86-cef7-cdbf" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="ANGEL OF DEATH" hidden="false" id="428c-3148-5d88-c2b4" targetId="19cd-bbe7-d090-a8b2" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="b5d9-c59b-9ffa-2f6d" targetId="079a-866e-9bbe-9ce9" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="5acd-74c9-48d3-3300" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Assault Intercessor" hidden="false" id="a195-c524-917d-c675" targetId="e891-2a42-a8f7-e221" primary="false"/>
+        <categoryLink name="Warrior" hidden="false" id="0760-eafe-1660-024a" targetId="e8f0-5647-7b70-319c" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Assault Intercessor Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="0652-1670-afdf-6d96">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Heavy bolt pistol" hidden="false" id="7c13-ec0e-2347-0711" type="selectionEntry" targetId="71a7-b048-40fe-bf6d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0a0-3a6e-da72-eb42"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Chainsword" hidden="false" id="83cb-d492-5155-7042" type="selectionEntry" targetId="c81d-2f29-2203-ce5b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a185-9270-6709-702e"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Eliminator Sniper" hidden="false" id="cdfb-b861-3871-5e22">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="33fd-3821-102e-341a" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="ANGEL OF DEATH" hidden="false" id="6ccb-7cc6-8166-f519" targetId="19cd-bbe7-d090-a8b2" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="72bb-fc94-8c90-70fc" targetId="079a-866e-9bbe-9ce9" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="f0a1-17bc-20c9-2cc9" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Eliminator" hidden="false" id="0c56-da1a-9108-1129" targetId="0fd9-820c-1e60-543d" primary="false"/>
+        <categoryLink name="Sniper" hidden="false" id="9db3-8800-1d2e-4ae4" targetId="3da5-5c73-28e0-947d" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Eliminator Sniper" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7d60-cfb0-1deb-1bdf">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Camo Cloak" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="743d-93f2-ab4d-f4fc">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an operative is shooting this operative, ignore the Saturate weapon rule. This operative has the Stealthy **CHAPTER TACTIC**. If you selected that **CHAPTER TACTIC**, you can do both of its options (i.e. retain two cover saves – one normal and one critical success).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Optics (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="ddfc-ca67-0311-6a6a">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation, whenever it’s shooting, enemy operatives cannot be obscured.
+
+
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="476c-7e1e-f00c-f179" type="selectionEntry" targetId="9978-a207-ea52-2f88">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c5b-1fb8-7b5c-4da4"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="5be0-7dc0-1359-1803">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c53-ba9a-4ebe-d158-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c53-ba9a-4ebe-d158-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Bolt pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ca05-d910-c889-f639">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="180f-9e40-a58d-a986" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bolt sniper rifle" hidden="false" id="f99f-5908-3fbc-6226">
+          <profiles>
+            <profile name="⌖ Bolt sniper rifle (hyperfrag)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b367-7dc9-8aac-5d6c">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 1, Heavy (**Dash** only), Silent</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Bolt sniper rifle (executioner)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="bdf5-9c75-c074-63f5">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (**Dash** only), Saturate, Seek Light, Silent</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Bolt sniper rifle (mortis)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b073-3838-8b34-f138">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 3, Heavy (**Dash** only), Piercing 1, Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3742-b8c5-4d33-f999-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3742-b8c5-4d33-f999-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Heavy" id="add2-f963-1916-04b9" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+            <infoLink name="Saturate" id="5101-f0a2-2a73-09b2" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+            <infoLink name="Seek" id="93d7-9e7d-0604-1b9f" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
+            <infoLink name="Silent" id="2905-1d64-7319-439a" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+            <infoLink name="Blast x" id="54d0-4000-be9d-3011" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Devastating x" id="37d7-ce07-c874-1533" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Piercing x" id="a096-72fe-d16c-3fa7" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Heavy Intercessor Gunner" hidden="false" id="7b15-0824-ac8d-8144">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="84c3-26ed-9d24-8e06" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="ANGEL OF DEATH" hidden="false" id="9c1a-420e-aece-cac4" targetId="19cd-bbe7-d090-a8b2" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="36b7-e350-5e93-a174" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="99cc-9a86-f8d9-f2d5" targetId="079a-866e-9bbe-9ce9" primary="false"/>
+        <categoryLink name="Heavy Intercessor" hidden="false" id="3286-2f37-ec41-0ac8" targetId="644f-3bcf-b20d-f2d5" primary="false"/>
+        <categoryLink name="Gunner" hidden="false" id="f6ea-8a0a-5199-4f30" targetId="3033-7558-d28f-53cf" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="cbe6-5617-ef36-0a55" type="selectionEntry" targetId="9978-a207-ea52-2f88">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44e9-f825-0346-43bb"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="8ad6-5ec4-0c2e-9a34">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36e2-2501-2cf1-682d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36e2-2501-2cf1-682d-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Heavy bolter (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7c1d-793e-dd64-7821">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing Crits 1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Heavy bolter (sweeping)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="71d2-7463-55b8-7c95">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing Crits 1, Torrent 1&quot;</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Piercing x" id="7a61-de35-cb5d-330f" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+            <infoLink name="Torrent x" id="0abb-911a-b032-db1f" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Heavy Intercessor Gunner" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="f0e6-6648-0433-66a7">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">4&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">18</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Intercessor Gunner" hidden="false" id="d2f1-a009-e449-14e0">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="c05e-06cc-6802-53ba" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="ANGEL OF DEATH" hidden="false" id="54bf-54cc-05da-a151" targetId="19cd-bbe7-d090-a8b2" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="eabc-e6be-41d2-50b4" targetId="079a-866e-9bbe-9ce9" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="3633-4bd0-d758-71f4" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Intercessor" hidden="false" id="f484-53c7-9621-8722" targetId="87dd-c2c4-3f75-bb94" primary="false"/>
+        <categoryLink name="Gunner" hidden="false" id="c8fc-9690-4052-530b" targetId="3033-7558-d28f-53cf" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Intercessor Gunner" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="8106-79c7-cb32-6338">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="a0aa-2c6d-b990-0d42" type="selectionEntry" targetId="9978-a207-ea52-2f88">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6799-8ea6-68a7-ab5d"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Auxiliary grenade launcher" hidden="false" id="31c4-eebf-2d11-ed8e">
+          <profiles>
+            <profile name="⌖ Auxiliary grenade launcher (frag)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2dcd-56c8-a27e-a84f">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Auxiliary grenade launcher (krak)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b5f1-b73c-4b8f-f99d">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="693c-37d1-5277-b91a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="693c-37d1-5277-b91a-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blast x" id="d955-2750-0565-1060" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Piercing x" id="72f2-7577-1d7e-bee4" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="9d2d-6649-17d0-7ee1" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae3a-599f-daec-2077-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae3a-599f-daec-2077-max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Bolt rifle" hidden="false" id="08b6-e00c-6cf6-baed" type="selectionEntry" targetId="d60d-1f8c-2519-f78e"/>
+            <entryLink import="true" name="Auto bolt rifle" hidden="false" id="03e2-7927-2f70-c366" type="selectionEntry" targetId="6fba-f8c3-3999-284b"/>
+            <entryLink import="true" name="Stalker bolt rifle" hidden="false" id="7278-f5e7-33d3-f459" type="selectionEntry" targetId="e583-f949-effe-fc87"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Intercessor Warrior" hidden="false" id="c52b-22b8-1452-3b9f">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="2a9e-7f38-bea5-18c6" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="ANGEL OF DEATH" hidden="false" id="6fc0-6c09-bf76-d101" targetId="19cd-bbe7-d090-a8b2" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="d297-94b0-bac0-b05c" targetId="079a-866e-9bbe-9ce9" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="16f1-8a83-f8cf-e5bd" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Intercessor" hidden="false" id="4dd4-d6b2-e385-0f96" targetId="87dd-c2c4-3f75-bb94" primary="false"/>
+        <categoryLink name="Warrior" hidden="false" id="338a-d051-cb44-8588" targetId="e8f0-5647-7b70-319c" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Intercessor Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="6b29-977a-4fc1-79a0">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="7880-b7f9-c163-a714" type="selectionEntry" page="" targetId="9978-a207-ea52-2f88">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf8b-2ded-6a2c-1dd6"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="bb3b-4643-3cd7-987e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Bolt rifle" hidden="false" id="bfa7-a95b-1a86-5e3a" type="selectionEntry" targetId="d60d-1f8c-2519-f78e"/>
+            <entryLink import="true" name="Auto bolt rifle" hidden="false" id="18f9-aba1-8719-981f" type="selectionEntry" targetId="6fba-f8c3-3999-284b"/>
+            <entryLink import="true" name="Stalker bolt rifle" hidden="false" id="a264-9d11-1039-73a4" type="selectionEntry" targetId="e583-f949-effe-fc87"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04c3-67c3-3dcf-4ebd-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04c3-67c3-3dcf-4ebd-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Chapter Tactics" hidden="false" id="8ca8-8e38-312c-12c1" type="selectionEntry" targetId="7a6b-0526-fe3f-eff2">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="1ee8-7cdd-b4ea-22c0" targetId="874b-0390-e5e2-1daa" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="8066-f305-51dc-7a64" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <entryLinks>
+        <entryLink import="true" name="Faction Equipment" hidden="false" id="402c-f368-ad37-819a" type="selectionEntryGroup" targetId="9b64-0627-e3f4-d29b"/>
+      </entryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Chapter Tactics" id="8887-ab48-1794-cdbf" hidden="false" defaultSelectionEntryId="none">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Aggressive" hidden="false" id="0419-5f81-2f2e-c20c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10cb-7406-dba7-c927"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Aggressive" id="eeeb-458b-bd07-88d6" hidden="false" type="profile" targetId="be68-a409-dba3-c4a3"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dueller" hidden="false" id="ada5-b954-dc11-2229">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2533-e4b7-5e6f-2816"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dueller" id="39e8-f1eb-ead0-ff1b" hidden="false" type="profile" targetId="4e8a-40d6-cd41-a8cf"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hardy" hidden="false" id="f969-3bed-feb6-472b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f65-46b6-e16f-1e73"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Hardy" id="f299-5ce0-e42c-9a97" hidden="false" type="profile" targetId="653b-59d7-4cc5-21ac"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mobile" hidden="false" id="f4ab-6b4a-5bad-a753">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4aa-f220-0cf9-cb16"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Mobile" id="c3ef-0a2b-7f36-7be8" hidden="false" type="profile" targetId="1b4e-2f28-9c65-62dd"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Resolute" hidden="false" id="95f2-83ad-1286-25cd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53cc-eb29-aceb-4c61"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Resolute" id="ccae-cafe-cedc-f696" hidden="false" type="profile" targetId="0bf5-117e-df33-17d0"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sharpshooter" hidden="false" id="061b-bfef-f5cd-78a8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e13-b8be-e424-f764"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Sharpshooter" id="8ea9-9ac4-c9c0-8192" hidden="false" type="profile" targetId="2dcf-673c-7ca5-2e22"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Siege Specialist" hidden="false" id="8c51-8ca5-971e-c314">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e9b-c94d-2838-5896"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Siege Specialist" id="a4ad-9ff6-1f65-d207" hidden="false" type="profile" targetId="7a52-f018-db34-63b1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stealthy" hidden="false" id="99bf-fbf9-b6bd-e400">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="249d-d7df-56fb-71d6"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Stealthy" id="590a-def3-701b-d645" hidden="false" type="profile" targetId="dcf1-ebee-6e54-f64f"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0413-963e-8f14-d9c8-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0413-963e-8f14-d9c8-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Faction Equipment" id="9b64-0627-e3f4-d29b" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Purity Seals" hidden="false" id="873b-6422-1d59-0447">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="476b-68d8-5d54-2b80"/>
+          </constraints>
+          <profiles>
+            <profile name="Purity Seals" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="5549-4bd5-cced-c015">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly **ANGEL OF DEATH** operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Chapter Reliquaries" hidden="false" id="8553-c762-a6ae-cd0d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bfc-90dc-3fce-da5d"/>
+          </constraints>
+          <profiles>
+            <profile name="Chapter Reliquaries" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="d9d3-4c39-f57d-70b6">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">You can use the Wrath of Vengeance firefight ploy for 0CP if the specified friendly operative has an Engage order.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tilting Shields" hidden="false" id="8d00-4709-7207-ff6b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db7d-7a5e-2f1f-95aa"/>
+          </constraints>
+          <profiles>
+            <profile name="Tilting Shields" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="98d6-cbb7-ed24-e508">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly **ANGEL OF DEATH** operative is fighting or retaliating, after your opponent rolls their attack dice, you can use this rule. If you do, your opponent cannot retain attack dice results of less than 6 as critical successes during that sequence (e.g. as a result of the Lethal, Rending or Severe weapon rules).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Auspex" hidden="false" id="45e4-ca6f-8f6f-92fc">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf4d-d54d-ce1f-020e"/>
+          </constraints>
+          <profiles>
+            <profile name="Auspex" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="76b2-4348-b635-1954">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly **ANGEL OF DEATH** operative performs the Shoot action and you’re selecting a valid target, you can use this rule. If you do, until the end of the activation/counteraction, enemy operatives within 8&quot; of that friendly operative cannot be obscured.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>

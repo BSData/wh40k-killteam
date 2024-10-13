@@ -20,18 +20,7 @@
         <categoryLink name="Configuration" hidden="false" id="5041-7c63-3fcc-ec3a" targetId="874b-0390-e5e2-1daa"/>
         <categoryLink name="Reference" hidden="false" id="e7e5-aba7-e523-ef50" targetId="b318-a8d7-2d38-99a3"/>
         <categoryLink name="Leader" hidden="false" id="0f6c-6170-279e-f788" targetId="d999-8cad-8145-4efe"/>
-        <categoryLink name="Operative" hidden="false" id="default-force-category-link" targetId="cf83-4496-b58e-ac82">
-          <constraints>
-            <constraint type="max" value="20" field="selections" scope="roster" shared="true" id="f9df-3e4b-6c7d-4c5f" includeChildSelections="true"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="f9df-3e4b-6c7d-4c5f">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="default-force" childId="d999-8cad-8145-4efe" shared="true" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </categoryLink>
+        <categoryLink name="Operative" hidden="false" id="default-force-category-link" targetId="cf83-4496-b58e-ac82"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -175,9 +164,6 @@
       <description>Select a valid target as normal as the primary target, then select any number of other valid targets within *x* of the first valid target as secondary targets, e.g. Torrent 2&quot;. Shoot with this weapon against all of them in an order of your choice (roll each sequence separately).</description>
     </rule>
   </sharedRules>
-  <entryLinks>
-    <entryLink import="true" name="Game Type" hidden="false" id="df77-17f0-9e2b-67a4" type="selectionEntry" targetId="d123-e60a-6dd3-e833"/>
-  </entryLinks>
   <sharedProfiles>
     <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="31f0-6eb0-29da-8ba8">
       <characteristics>
