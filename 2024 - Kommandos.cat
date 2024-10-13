@@ -19,8 +19,8 @@
         </profile>
         <profile name="Dakka Dash (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="30cf-f288-cbf5-b4ff">
           <characteristics>
-            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">Perform a free **Dash** action and a free **Shoot** action with this operative in any order. You can only select a dakka shoota for that **Shoot** action.
-This operative cannot perform this action while within control range of an enemy operative, or while it has a Conceal order.</characteristic>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Perform a free **Dash** action and a free **Shoot** action with this operative in any order. You can only select a dakka shoota for that **Shoot** action.
+◆ This operative cannot perform this action while within control range of an enemy operative, or while it has a Conceal order.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -58,15 +58,641 @@ This operative cannot perform this action while within control range of an enemy
         <entryLink import="true" name="Fists" hidden="false" id="0d42-b76a-f210-9fc6" type="selectionEntry" targetId="5333-ef05-230e-9cb7">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57df-aa42-2185-323d-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57df-aa42-2185-323d-max"/>
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kommando Boss Nob" hidden="false" id="adc2-6bb4-f392-6e98">
+      <profiles>
+        <profile name="Kommando Boss Nob" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="04be-a907-4556-d8a3">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Get It Dun! (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="6975-995d-fca4-8285">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one other friendly **KOMMANDO** operative (excluding **BOMB SQUIG**) visible to and within 6&quot; of this operative. Until the end of that operative’s next activation, add 1 to its APL stat.
+◆ This operative cannot perform this action while within control range of an enemy operative, or while counteracting.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" id="fa64-de80-2748-650b" hidden="false" defaultSelectionEntryId="none">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Big Choppa" hidden="false" id="4fb4-7d26-dae3-1d23">
+              <profiles>
+                <profile name="⚔ Big Choppa" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1a54-6d1b-e38e-5578">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Punishing</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Punishing" id="09ce-6823-8fa4-9e24" hidden="false" type="rule" targetId="4805-d37d-3ff2-5c9e"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f61-f673-98cd-9784"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Power klaw" hidden="false" id="73aa-d9fe-08df-4e70">
+              <profiles>
+                <profile name="⚔ Power klaw" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b1ff-c8f4-15b9-950c">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/7</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b2d-6552-9d25-5bac"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Brutal" id="c1c4-263d-7290-862d" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df7b-d2f8-d606-b595-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df7b-d2f8-d606-b595-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="KOMMANDO" hidden="false" id="e2a4-5be2-fd5c-3492" targetId="adac-44bf-e1d4-1e4e" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="429b-87a1-2382-93ed" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Ork" hidden="false" id="30c2-4790-51fb-156e" targetId="c459-8b6a-74b6-9329" primary="false"/>
+        <categoryLink name="Boss Nob" hidden="false" id="8071-0fba-e3c4-db53" targetId="493a-b3bd-43dd-53cf" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Slugga" hidden="false" id="ca6e-5fd2-cfb8-5478" type="selectionEntry" targetId="f030-5edc-2988-8092">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="006b-bfa7-6b18-0d0b"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Bomb Squig" hidden="false" id="0b84-f65f-7a38-822e">
+      <categoryLinks>
+        <categoryLink name="KOMMANDO" hidden="false" id="4338-092e-6224-bba8" targetId="adac-44bf-e1d4-1e4e" primary="false"/>
+        <categoryLink name="Ork" hidden="false" id="9bcf-5605-0d56-9015" targetId="c459-8b6a-74b6-9329" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="a878-c7f0-3a6d-f698" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Bomb Squig" hidden="false" id="bb92-e205-0741-4ed3" targetId="52fa-87e5-9a2f-42af" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Bomb Squig" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="c131-ea2f-ee2d-8db6">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Boom!" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="33cf-89fb-ad27-1f9c">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">If this operative is incapacitated during a battle in which it hasn’t used its explosives, roll one D6, or two D6 if you wish. If any result is a 4+, this operative performs a free **Shoot** action with its explosives before it’s removed from the killzone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stoopid" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="1e34-927b-e87f-360e">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">In the Firefight phase, whenever you determine this operative’s order, you cannot select Conceal. This operative cannot perform any actions other than **Charge**, **Dash**, **Fight**, **Reposition** and **Shoot**. It cannot use any weapons that aren’t on its datacard.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Expendable" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2150-8394-9234-0704">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative is ignored for your opponent’s kill/elimination op (when it’s incapacitated, and when determining your starting number of operatives). It’s also ignored for victory conditions that require operatives to ‘escape’, ‘survive’ or be incapacitated (if it escapes/survives/is incapacitated, determining how many operatives must escape/survive/be incapacitated, etc.).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Explosives" hidden="false" id="d763-46a9-8cfd-5481">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da92-1b73-f3fc-c337-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da92-1b73-f3fc-c337-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Explosives" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c8d4-96f9-4f20-bf3d">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">6</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 1&quot;, Limited 1, Explosive*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Blast x" id="4f21-05a3-e378-ee4c" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Limited x" id="6584-2727-c276-56e1" hidden="false" type="rule" targetId="bf37-3388-40d5-eb72"/>
+          </infoLinks>
+          <rules>
+            <rule name="*Explosive" id="3af0-74e9-a987-0546" hidden="false">
+              <description>This operative can perform the **Shoot** action with this weapon while within control range of an enemy operative. Don&apos;t select a valid target. Instead, this operative is always the primary target and cannot be in cover or obscured.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bite" hidden="false" id="aedd-fd06-aefe-ee99">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37e4-2088-f2c3-6275-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37e4-2088-f2c3-6275-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Bite" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2628-2a1e-c0ec-6d78">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kommando Boy" hidden="false" id="6a4e-135c-9d73-8b0f">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="adef-9885-2858-198c" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Ork" hidden="false" id="1bb6-599d-cb0a-bb65" targetId="c459-8b6a-74b6-9329" primary="false"/>
+        <categoryLink name="KOMMANDO" hidden="false" id="c8f6-b3b6-cb02-bfd9" targetId="adac-44bf-e1d4-1e4e" primary="false"/>
+        <categoryLink name="Boy" hidden="false" id="1ae4-f42c-7a46-aa8b" targetId="426a-41ac-5945-a72c" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Kommando Boy" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="5445-2135-3771-f18f">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Taktical Wot-notz" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="5650-536b-d8a3-c092">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">You can do each of the following once per turning point:
+- One friendly **KOMMANDO BOY** operative can perform the **Smoke
+Grenade** action.
+- One friendly **KOMMANDO BOY** operative can perform the **Stun
+Grenade** action.
+The rules for these actions are found in universal equipment. Performing these actions using this rule doesn’t count towards their action limits (i.e. if you also select those grenades from equipment).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Slugga" hidden="false" id="432c-6de7-cf33-9802" type="selectionEntry" targetId="f030-5edc-2988-8092">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5fd8-3b5e-2f1b-74f4"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Choppa" hidden="false" id="a28d-9305-5c77-2914">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ec9-32f1-7be5-9f76-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ec9-32f1-7be5-9f76-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Choppa" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="caa9-7e5c-3249-335a">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kommando Breacha Boy" hidden="false" id="8585-9fbe-c813-ad55">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="8113-84ae-59fe-bc39" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Ork" hidden="false" id="09bc-27b4-7270-3c85" targetId="c459-8b6a-74b6-9329" primary="false"/>
+        <categoryLink name="KOMMANDO" hidden="false" id="6606-4920-5dad-de2f" targetId="adac-44bf-e1d4-1e4e" primary="false"/>
+        <categoryLink name="Breacha Boy" hidden="false" id="151b-7511-4bec-67ec" targetId="cd75-2f87-248c-a238" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Kommando Breacha Boy" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="3955-bc58-974f-16cb">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Breach (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="5ace-ecf5-58c6-e32b">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Place one of your Breach markers within this operative’s control range as close as possible to a terrain feature within control range of it. Whenever an operative is within 1&quot; of that marker, it treats parts of that terrain feature that are no more than 1&quot; thick as Accessible terrain.
+▶ This operative can perform this action during the **Charge** or **Reposition** action, and it can do so for 1 less AP during those actions. Any remaining move distance can be used after it does so.
+◆ This operative cannot perform this action while within control range of an enemy operative, or if a terrain feature isn’t within its control range.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Slugga" hidden="false" id="7ef3-6b59-4662-8ab7" type="selectionEntry" targetId="f030-5edc-2988-8092">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81c5-a70b-3869-6ef9"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Breacha ram" hidden="false" id="0f25-a568-cfa1-f518">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b84-3721-0705-0477-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b84-3721-0705-0477-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Breacha ram" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="dd1a-94da-6588-9c08">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal, Severe, Shock</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Brutal" id="f839-50c4-c6bd-da2a" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+            <infoLink name="Severe" id="b312-ebf8-8e2e-ef19" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+            <infoLink name="Shock" id="14cb-d279-d8c1-b00f" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kommando Burna Boy" hidden="false" id="b4f4-ad15-1a40-c2f2">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="c009-ab5e-f6d6-b451" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Ork" hidden="false" id="01a8-079f-a31b-d7fa" targetId="c459-8b6a-74b6-9329" primary="false"/>
+        <categoryLink name="KOMMANDO" hidden="false" id="123f-182e-abd6-fc62" targetId="adac-44bf-e1d4-1e4e" primary="false"/>
+        <categoryLink name="Burna Boy" hidden="false" id="a93f-a5c5-d1c4-d65e" targetId="3205-08a7-ec53-950f" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Kommando Burna Boy" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1f02-3fcf-d0cf-ac69">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Burna" hidden="false" id="2fb9-6764-552e-2a32">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2899-e906-7976-b445-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2899-e906-7976-b445-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Burna (deluge)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7563-6b53-ec5e-2eb6">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 4&quot;, Saturate, Seek Light</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Burna (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4f51-6529-b7ab-42f9">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Saturate, Torrent 2&quot;</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="8b43-9c03-7362-9898" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Saturate" id="9060-4191-fe27-7e27" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+            <infoLink name="Torrent x" id="880b-d807-b6fe-c70f" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+            <infoLink name="Seek" id="f130-a2f4-f2d1-3d2e" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="9144-9077-2feb-d673" type="selectionEntry" targetId="5333-ef05-230e-9cb7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ea4-a197-e564-e674"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kommando Comms Boy" hidden="false" id="4d18-ef5b-b233-c45f">
+      <categoryLinks>
+        <categoryLink name="KOMMANDO" hidden="false" id="bd2b-d93f-dca3-5a47" targetId="adac-44bf-e1d4-1e4e" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="5008-034b-499d-b257" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Ork" hidden="false" id="3950-ace7-2685-d684" targetId="c459-8b6a-74b6-9329" primary="false"/>
+        <categoryLink name="Comms Boy" hidden="false" id="4309-6ca9-b5ad-9118" targetId="0b70-50a1-b690-30bc" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="0155-401a-37f0-5fe1" type="selectionEntry" targetId="5333-ef05-230e-9cb7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac59-748a-4006-a54e"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Kommando Comms Boy" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="b2da-cfb4-7831-fe98">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="I Got a Plan, Ladz" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="ff85-8b76-e761-9a41">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once during each of this operative’s activations, it can perform the **Pick Up Marker**, **Place Marker** or a mission action for 1 less AP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Listen In (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="cf79-43b1-280e-7831">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one other friendly **KOMMANDO** operative (excluding **BOMB SQUIG**) visible to and within 6&quot; of this operative. Until the end of that operative’s next activation, add 1 to its APL stat.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Shokka pistol" hidden="false" id="c765-f0e3-2cf9-ccd1">
+          <profiles>
+            <profile name="⌖ Shokka pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0853-e428-3156-1d24">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">6</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/0</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Devastating 2, Severe, Stun</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="5a65-4c18-4a5b-9d9f" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Devastating x" id="2af5-1d23-18aa-e91e" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Severe" id="13c6-3cc9-20c8-69f8" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+            <infoLink name="Stun" id="fc6a-c403-94e8-e777" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8838-7195-0aa0-ac35-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8838-7195-0aa0-ac35-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kommando Grot" hidden="false" id="70f1-6ee8-556b-da85">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="a95a-0086-5f58-654c" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Ork" hidden="false" id="3016-8a54-329c-6816" targetId="c459-8b6a-74b6-9329" primary="false"/>
+        <categoryLink name="KOMMANDO" hidden="false" id="b9f4-fb3b-0c7f-3fcf" targetId="adac-44bf-e1d4-1e4e" primary="false"/>
+        <categoryLink name="Grot" hidden="false" id="ae4d-da90-99e6-9e38" targetId="5cbc-b684-93f5-56a2" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Kommando Grot" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="27d5-b2c2-dddc-2fd4">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sneaky Zogger" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="e77c-a9ca-fd29-1df8">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative cannot have an Engage order. Whenever this operative is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Vantage terrain).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grappling Hook (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="d703-a65e-df80-0651">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select a visible point on a terrain feature for this operative. Remove this operative from the killzone and set it back up within 1&quot; horizontally of that point in a location it can be placed, not within control range of enemy operatives, and with that point visible to it. This operative cannot perform the **Operate Hatch** action during this action.
+◆ This action is treated as a **Reposition** action. This operative cannot perform this action while within control range of an enemy operative, or during an activation in which it performed the **Charge** or **Fall Back** action (or vice versa).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Grot choppa" hidden="false" id="d67a-1049-2a91-6799">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1350-d20a-8f8a-a930-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1350-d20a-8f8a-a930-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Grot choppa" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="cfb1-1d7a-d3f7-5e0f">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kommando Rokkit Boy" hidden="false" id="1cb9-4b8e-7b11-3113">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="b575-58d0-32a1-f277" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Ork" hidden="false" id="65af-be35-3365-e4b2" targetId="c459-8b6a-74b6-9329" primary="false"/>
+        <categoryLink name="KOMMANDO" hidden="false" id="0d17-f631-db6a-cbe7" targetId="adac-44bf-e1d4-1e4e" primary="false"/>
+        <categoryLink name="Rokkit Boy" hidden="false" id="2a73-63c8-839f-ad21" targetId="7ea3-51fd-00e7-61ec" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="befc-a88e-821d-bc52" type="selectionEntry" targetId="5333-ef05-230e-9cb7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c490-5627-4325-8de0"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rokkit Launcha" hidden="false" id="c7e7-afc5-4c6f-7d81">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a8b1-572a-d211-048b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8b1-572a-d211-048b-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Rokkit Launcha (aimed)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="33d0-f1c6-bf42-331a">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">6</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 1&quot;, Ceaseless, Heavy (**Dash** only)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Rokkit Launcha (mobile)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3d6a-52be-b9dc-7307">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">6</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 1&quot;</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Blast x" id="f534-aa6b-2f78-db58" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Ceaseless" id="5411-a2d3-a831-7a05" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Heavy" id="9f15-23b1-3fbd-3729" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Kommando Rokkit Boy" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="0b0e-4fb1-5a2c-f64a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kommando Slasha Boy" hidden="false" id="fc5d-85c6-da3e-d814">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="506a-791d-bf57-896c" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="KOMMANDO" hidden="false" id="fa33-5e7d-7715-d26e" targetId="adac-44bf-e1d4-1e4e" primary="false"/>
+        <categoryLink name="Ork" hidden="false" id="aec8-e00c-94f0-4d9a" targetId="c459-8b6a-74b6-9329" primary="false"/>
+        <categoryLink name="Slasha Boy" hidden="false" id="0f58-5ba2-9bf8-ecf5" targetId="3c4a-22d2-cf91-0f57" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Kommando Slasha Boy" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="4575-39db-1f77-957c">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dat All You Got?" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="258b-2d79-729c-1050">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">After this operative fights or retaliates, if it wasn’t incapacitated, you can inflict D3 damage on the enemy operative in that sequence.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Throwing knives" hidden="false" id="54cc-895e-a8be-6465">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d395-9d15-aed6-05f8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d395-9d15-aed6-05f8-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Throwing knives" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ecc2-8f61-213f-eddf">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="7c96-acaa-77b2-0ea3" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Silent" id="b9ed-ea80-d653-aee3" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin choppas" hidden="false" id="8d64-9e52-2470-4a95">
+          <profiles>
+            <profile name="⚔ Twin choppas" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a576-3133-b53e-7210">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e673-9c42-cab3-0762-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e673-9c42-cab3-0762-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="23d2-cb25-0c1b-a602" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Lethal x+" id="bb7e-53a6-a455-3862" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kommando Snipa Boy" hidden="false" id="5946-e084-84e8-fcfe">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="f611-5e2d-f5d3-31c6" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="KOMMANDO" hidden="false" id="8409-9d5f-befb-e604" targetId="adac-44bf-e1d4-1e4e" primary="false"/>
+        <categoryLink name="Ork" hidden="false" id="d184-d9c6-32cf-43ea" targetId="c459-8b6a-74b6-9329" primary="false"/>
+        <categoryLink name="Snipa Boy" hidden="false" id="c4f8-9b41-1ce3-d7ba" targetId="2a04-19ba-b18f-880b" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Kommando Snipa Boy" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="de5f-4e95-f4df-d8ff">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;
+</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="4d1e-c1fa-8849-307c" type="selectionEntry" targetId="5333-ef05-230e-9cb7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e1b-b2a6-1272-7efa"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Scoped big shoota" hidden="false" id="1259-b2bb-f420-49c9">
+          <profiles>
+            <profile name="⌖ Scoped big shoota (stationary)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="cffa-bdab-e0d6-737b">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 2, Heavy</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Scoped big shoota (concealed)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ba38-cdf0-6141-bce3">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 2, Heavy, Silent, Concealed Position*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Scoped big shoota (sweeping)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="89fa-8ca8-927c-781b">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (**Dash** only), Torrent 1&quot;</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="453b-f759-ea0d-666a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="453b-f759-ea0d-666a-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Devastating x" id="9b3e-3074-e042-8317" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Heavy" id="935c-dbb8-72ea-7b77" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+            <infoLink name="Silent" id="e9bb-e28a-4c6b-0058" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+            <infoLink name="Torrent x" id="5118-0d6f-3bba-628d" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+          </infoLinks>
+          <rules>
+            <rule name="*Concealed Position" id="d266-007b-cf51-f657" hidden="false">
+              <description>This operative can only use this weapon the first time it’s performing the **Shoot** action during the battle.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
   <categoryEntries>
     <categoryEntry name="Dakka Boy" id="18e1-ce84-9d92-86ee" hidden="false"/>
     <categoryEntry name="KOMMANDO" id="adac-44bf-e1d4-1e4e" hidden="false"/>
+    <categoryEntry name="Bomb Squig" id="52fa-87e5-9a2f-42af" hidden="false"/>
+    <categoryEntry name="Grot" id="5cbc-b684-93f5-56a2" hidden="false"/>
+    <categoryEntry name="Boss Nob" id="493a-b3bd-43dd-53cf" hidden="false"/>
+    <categoryEntry name="Boy" id="426a-41ac-5945-a72c" hidden="false"/>
+    <categoryEntry name="Breacha Boy" id="cd75-2f87-248c-a238" hidden="false"/>
+    <categoryEntry name="Burna Boy" id="3205-08a7-ec53-950f" hidden="false"/>
+    <categoryEntry name="Comms Boy" id="0b70-50a1-b690-30bc" hidden="false"/>
+    <categoryEntry name="Rokkit Boy" id="7ea3-51fd-00e7-61ec" hidden="false"/>
+    <categoryEntry name="Slasha Boy" id="3c4a-22d2-cf91-0f57" hidden="false"/>
+    <categoryEntry name="Snipa Boy" id="2a04-19ba-b18f-880b" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="5333-ef05-230e-9cb7">
@@ -80,15 +706,113 @@ This operative cannot perform this action while within control range of an enemy
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8df4-78f5-3a41-d321"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Slugga" hidden="false" id="f030-5edc-2988-8092">
+      <profiles>
+        <profile name="⌖ Slugga" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0827-2640-89ad-3365">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="3412-ac46-a3cd-9a2c" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca96-fbd5-32f8-00e2"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
     <forceEntry name="Kommandos Kill Team" id="2f7a-48f9-f636-fffc" hidden="false">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="c4d1-8218-800f-b16f" targetId="874b-0390-e5e2-1daa"/>
-        <categoryLink name="Operative" hidden="false" id="bb66-a334-d34e-5374" targetId="cf83-4496-b58e-ac82"/>
-        <categoryLink name="Leader" hidden="false" id="18f5-41c3-d17e-05fd" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Operative" hidden="false" id="bb66-a334-d34e-5374" targetId="cf83-4496-b58e-ac82">
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="force" shared="true" id="42c3-6205-b785-f5fc-min"/>
+            <constraint type="max" value="9" field="selections" scope="force" shared="true" id="42c3-6205-b785-f5fc-max"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="42c3-6205-b785-f5fc-min">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="5cbc-b684-93f5-56a2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="52fa-87e5-9a2f-42af" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="42c3-6205-b785-f5fc-max">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="5cbc-b684-93f5-56a2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="52fa-87e5-9a2f-42af" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Leader" hidden="false" id="18f5-41c3-d17e-05fd" targetId="d999-8cad-8145-4efe">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="29c0-f0f2-df8e-97a9-min"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="29c0-f0f2-df8e-97a9-max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink name="Reference" hidden="false" id="3cfb-1b3a-4783-2d96" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Bomb Squig" hidden="false" id="d2bc-2154-2bf6-10cb" targetId="52fa-87e5-9a2f-42af" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e30f-1e47-da09-d78c"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Grot" hidden="false" id="5577-7b75-e921-aa2d" targetId="5cbc-b684-93f5-56a2" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ada1-ea2c-203b-bd69"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Breacha Boy" hidden="false" id="3fdc-9c55-ccd8-c1d9" targetId="cd75-2f87-248c-a238" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ba5a-beff-0c98-7ef1"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Burna Boy" hidden="false" id="d8d7-e24d-0467-1de3" targetId="3205-08a7-ec53-950f" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fc03-3b80-83d4-4b3e"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Comms Boy" hidden="false" id="8f6e-9576-59bc-32c4" targetId="0b70-50a1-b690-30bc" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="046e-e96f-21aa-374d"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Rokkit Boy" hidden="false" id="2abf-b987-fb6f-5e42" targetId="7ea3-51fd-00e7-61ec" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2137-5e99-53a7-404e"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Dakka Boy" hidden="false" id="547a-b5c9-86a7-c273" targetId="18e1-ce84-9d92-86ee" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1ad5-1bd2-4240-72a4"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Slasha Boy" hidden="false" id="e6c7-c979-68d9-a73f" targetId="3c4a-22d2-cf91-0f57" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c958-7fd8-ee37-e05b"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Snipa Boy" hidden="false" id="9383-2315-964c-fb9e" targetId="2a04-19ba-b18f-880b" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6895-68ad-6c33-6d0d"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -102,4 +826,108 @@ This operative cannot perform this action while within control range of an enemy
       </characteristics>
     </profile>
   </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="aa42-f3fc-ad50-4267" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <entryLinks>
+        <entryLink import="true" name="Faction Equipment" hidden="false" id="a1e5-59e0-0e23-d2a1" type="selectionEntryGroup" targetId="ddd2-81c8-9515-b017"/>
+      </entryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Faction Equipment" id="ddd2-81c8-9515-b017" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Choppas" hidden="false" id="6ccd-f3e0-f5d8-25a9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d94-fffc-8fd5-2df6"/>
+          </constraints>
+          <profiles>
+            <profile name="Choppas" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="8bbc-40aa-e4fa-5b8b">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Friendly **KOMMANDO** operatives (excluding **BOMB SQUIG** and **GROT**) have the following melee weapon. Note that some operatives already have this weapon but with better stats; in that instance, use the better version.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⚔ Choppa" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="9155-42a3-db13-ef9c">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Harpoon" hidden="false" id="0ffc-5733-f550-83cb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf1a-82de-6baa-9e21"/>
+          </constraints>
+          <profiles>
+            <profile name="Harpoon" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="0540-b969-070a-cbd2">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, a friendly **KOMMANDO** operative (excluding **BOMB SQUIG** and **GROT**) can use the following ranged weapon:</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Harpoon" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="85ae-7c90-4996-3f70">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Lethal 5+, Stun</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="f590-848d-314f-cf1a" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Lethal x+" id="6f85-1655-e6d9-7a93" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Stun" id="2b96-1de2-af4a-7982" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dynamite" hidden="false" id="6f8d-dc9c-2834-d9fd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e30f-c2d8-db45-f5e3"/>
+          </constraints>
+          <profiles>
+            <profile name="Dynamite" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="2213-dc0b-8a3a-fe3e">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per battle, a friendly **KOMMANDO** operative (excluding **BOMB SQUIG** and **GROT**) can use the following ranged weapon:</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Dynamite" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4973-fc1b-e787-8a4f">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 4&quot;, Blast 1&quot;, Heavy (**Reposition** only), Saturate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="d2b2-1d0b-b4d3-894c" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Blast x" id="dd59-772c-38ec-eebf" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Heavy" id="ed5d-42f7-f628-fec7" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+            <infoLink name="Saturate" id="4add-c1ac-0d04-79b3" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Collapsible Stocks" hidden="false" id="0a93-8ae6-e6b3-6d1f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2980-06e9-eeb2-7214"/>
+          </constraints>
+          <profiles>
+            <profile name="Collapsible Stocks" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="2686-11e6-861d-baa5">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Add 4&quot; to the Range weapon rule of the following ranged weapons that friendly **KOMMANDO** operatives have:
+- Dakka shoota (short range)
+- Shokka pistol
+- Slugga</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <rules>
+    <rule name="Throat Slittas" id="6b99-3402-e950-a5c1" hidden="false">
+      <description>Each friendly **KOMMANDO** operative (excluding **BOMB SQUIG**) can perform the **Charge** action while it has a Conceal order.</description>
+    </rule>
+  </rules>
 </catalogue>
