@@ -13,6 +13,11 @@
     <categoryEntry name="T&apos;au Empire" id="20d3-6a95-40e4-de61" hidden="false"/>
     <categoryEntry name="Tyranid" id="879f-4903-ae72-473e" hidden="false"/>
     <categoryEntry name="Gunner" id="3033-7558-d28f-53cf" hidden="false"/>
+    <categoryEntry name="Adeptus Astartes" id="ad17-a237-65f9-a559" hidden="false"/>
+    <categoryEntry name="Heavy Gunner" id="73b9-55cd-a334-d65c" hidden="false"/>
+    <categoryEntry name="Psyker" id="6f95-9b94-d661-3243" hidden="false"/>
+    <categoryEntry name="Medic" id="8200-47a2-61fb-5137" hidden="false"/>
+    <categoryEntry name="Warrior" id="2b69-f2aa-bd5c-70b2" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Roster" hidden="false" id="default-force">
