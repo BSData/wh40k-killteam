@@ -9,14 +9,6 @@
         <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">◆</characteristic>
       </characteristics>
     </profile>
-    <profile name="Aquilon Gunner" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="9240-2053-cfeb-5c62">
-      <characteristics>
-        <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
-        <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
-        <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
-        <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
-      </characteristics>
-    </profile>
   </sharedProfiles>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Aquilon Trooper" hidden="false" id="b42b-2995-8d42-16ad">
@@ -316,7 +308,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Aquilon Gunner with melta carbine" hidden="false" id="7299-5664-9d06-3ee9">
+    <selectionEntry type="model" import="true" name="Aquilon Gunner" hidden="false" id="7299-5664-9d06-3ee9">
       <categoryLinks>
         <categoryLink name="Operative" hidden="false" id="8232-1916-f460-3e76" targetId="cf83-4496-b58e-ac82" primary="true"/>
         <categoryLink name="Gunner" hidden="false" id="c3f9-391a-c50e-727c" targetId="3033-7558-d28f-53cf" primary="false"/>
@@ -331,78 +323,88 @@
           </constraints>
         </entryLink>
       </entryLinks>
-      <infoLinks>
-        <infoLink name="Aquilon Gunner" id="1777-45f1-1b0c-c82a" hidden="false" type="profile" targetId="9240-2053-cfeb-5c62"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Melta carbine" hidden="false" id="1c3a-98de-b541-fbd5">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapon" id="d801-ba26-a317-970f" hidden="false" defaultSelectionEntryId="none">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9ce-1ef2-9f48-a82f-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9ce-1ef2-9f48-a82f-max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0643-5427-ffe4-2050-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0643-5427-ffe4-2050-max"/>
           </constraints>
-          <profiles>
-            <profile name="⌖ Melta carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ce20-9413-89c5-1284">
-              <characteristics>
-                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
-                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
-                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">6/3</characteristic>
-                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Devastating 4, Piercing 2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Range x" id="28e9-4f0d-0c76-44a4" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
-            <infoLink name="Devastating x" id="1892-d4a3-1481-fe15" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
-            <infoLink name="Piercing x" id="e7c2-4a24-53d2-41bf" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Aquilon Gunner with plasma carbine" hidden="false" id="f014-8d08-99b3-04ba">
-      <categoryLinks>
-        <categoryLink name="Operative" hidden="false" id="1faf-dc12-8c63-ecf0" targetId="cf83-4496-b58e-ac82" primary="true"/>
-        <categoryLink name="Gunner" hidden="false" id="23b6-5d4c-0b2a-3e5e" targetId="3033-7558-d28f-53cf" primary="false"/>
-        <categoryLink name="Imperium" hidden="false" id="747a-101e-11a3-8ac8" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
-        <categoryLink name="Three of" hidden="false" id="ea71-cb4f-dd68-f079" targetId="eaf6-517a-9908-4906" primary="false"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Aquilon Gunner" id="aa40-ad45-84ac-7352" hidden="false" type="profile" targetId="9240-2053-cfeb-5c62"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Fists" hidden="false" id="4303-4d31-237d-2888" type="selectionEntry" targetId="39d0-26b8-391f-bba8">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78a2-7349-7bf5-f343-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78a2-7349-7bf5-f343-max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Plasma carbine" hidden="false" id="70f4-b431-73a6-a2b5">
-          <profiles>
-            <profile name="⌖ Plasma carbine (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7d86-e3c5-847b-52e6">
-              <characteristics>
-                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
-                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
-                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
-                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="⌖ Plasma carbine (supercharge)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4ad2-5c4b-77f0-a497">
-              <characteristics>
-                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
-                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
-                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
-                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Hot, Lethal 5+, Piercing 1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Piercing x" id="8a1c-df32-e95c-3be2" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
-            <infoLink name="Hot" id="c731-93e6-437e-4a44" hidden="false" type="rule" targetId="ec63-40e6-6282-8420"/>
-            <infoLink name="Lethal x+" id="a74b-1512-89fa-ef19" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Melta carbine" hidden="false" id="1c3a-98de-b541-fbd5">
+              <constraints>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="92bf-2fda-56ce-3206" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Melta carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ce20-9413-89c5-1284">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">6/3</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Devastating 4, Piercing 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Range x" id="28e9-4f0d-0c76-44a4" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                <infoLink name="Devastating x" id="1892-d4a3-1481-fe15" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+                <infoLink name="Piercing x" id="e7c2-4a24-53d2-41bf" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="1" field="92bf-2fda-56ce-3206">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="a17d-0146-6022-19d9" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma carbine" hidden="false" id="70f4-b431-73a6-a2b5">
+              <profiles>
+                <profile name="⌖ Plasma carbine (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7d86-e3c5-847b-52e6">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Plasma carbine (supercharge)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4ad2-5c4b-77f0-a497">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Hot, Lethal 5+, Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Piercing x" id="8a1c-df32-e95c-3be2" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                <infoLink name="Hot" id="c731-93e6-437e-4a44" hidden="false" type="rule" targetId="ec63-40e6-6282-8420"/>
+                <infoLink name="Lethal x+" id="a74b-1512-89fa-ef19" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5a02-859a-f691-7f9d" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="5a02-859a-f691-7f9d">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="a17d-0146-6022-19d9" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Aquilon Gunner" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="9240-2053-cfeb-5c62">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Aquilon Marksman" hidden="false" id="345f-8a78-9425-9d75">
       <categoryLinks>
@@ -464,6 +466,22 @@
               <description>This operative can only use this weapon the first time it&apos;s performing the **Shoot** action during the battle.</description>
             </rule>
           </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sniper&apos;s Vantage" hidden="false" id="deba-7e2c-8e73-3d33">
+          <profiles>
+            <profile name="Sniper&apos;s Vantage" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="83ef-d9cd-de6a-865f">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is on Vantage terrain and is shooting an operative that has an Engage order and is at least 2&quot; lower than it, all profiles of its hot‑shot long‑las have the Severe weapon rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Severe" id="ae5f-7f98-b03b-77b7" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac76-038d-bcd9-4c93-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac76-038d-bcd9-4c93-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -546,6 +564,16 @@
             <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4&quot;</characteristic>
             <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3+</characteristic>
             <characteristic name="WR" typeId="05b8-00a1-69af-14b6">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Machine" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="6c2e-765f-51e6-efe8">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative cannot perform any actions other than **Dash**, **Fall Back**, **Reposition** and **Shoot**. It cannot retaliate, assist in a fight or use any weapons that aren’t on its datacard.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Turret" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="fce0-718c-8f7c-97fb">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform two **Shoot** actions during its activation.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -671,6 +699,11 @@
         <categoryLink name="Three of" hidden="false" id="d984-7032-8ee5-59d2" targetId="eaf6-517a-9908-4906">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="356e-1413-6854-6dab"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Gunner" hidden="false" id="5e08-e548-1bed-ce66" targetId="3033-7558-d28f-53cf" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3f9f-d470-09c5-8b9e"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -799,4 +832,21 @@
       </entryLinks>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule name="Drop Insertion" id="ac2f-8be3-f8e8-2c16" hidden="false">
+      <description>When setting up a **TEMPESTUS AQUILON** kill team before the battle, the first third of your kill team must be set up as normal. Each third thereafter can be set up above: place them to one side instead of in the killzone. For each third that’s set up above, you must set up the whole third in this way (not some of them), then place one of your Drop markers wholly within your drop zone.
+As a **STRATEGIC GAMBIT** in the first and second turning point, you can move your Drop markers up to 4&quot;, measuring the horizontal distance only. In a killzone that uses the close quarters rules (e.g. Killzone: Gallowdark), this can be measured and moved through Wall terrain.
+During the Firefight phase, friendly **TEMPESTUS AQUILON** operatives set up above are activated as normal. When you do, you can either expend or land that operative. If it lands, set it up in the killzone in a location it can be placed as follows (it’s no longer set up above):
+- Within 3&quot; of one of your Drop markers, measuring the horizontal distance only, or wholly within your drop zone.
+- Not within control range of enemy operatives (unless you’re setting up a **PRECURSOR** operative, which can be set up within control range of an enemy operative).
+- With no part of its base underneath Vantage terrain.
+- With an order of your choice.
+The operative is treated as performing the **Reposition** action (spend the AP accordingly), then continue its activation as normal. It’s obscured until the end of the next activation or the end of the turning point (whichever comes first).
+Less than half of your operatives can be set up above by the end of the first turning point. In other words, by the end of the first turning point, more than half of your operatives must have been set up in the killzone during the battle.
+When readying your operatives during the second and third turning points, remove one of your Drop markers. This means operatives still set up above are incapacitated at the end of the second turning point.</description>
+    </rule>
+    <rule name="Grav-Chute" id="740a-a0a0-aed1-d2a4" hidden="false">
+      <description>Whenever a friendly **TEMPESTUS AQUILON** operative is dropping, ignore the vertical distance.</description>
+    </rule>
+  </rules>
 </catalogue>
