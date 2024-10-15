@@ -100,6 +100,13 @@
         <entryLink import="true" name="Universal Equipment" hidden="false" id="759e-df30-b63f-b204" type="selectionEntryGroup" targetId="e087-a8e2-4761-ad11"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="-" hidden="true" id="816f-d700-2068-2271">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="273e-97c5-54d0-2ce2-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="273e-97c5-54d0-2ce2-max"/>
+      </constraints>
+      <comment>Some tools expect at least one selection entry to exist, so this acts as a placeholder on operatives without any weapons</comment>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Devastating x" id="a8ba-6e3a-76b3-f05c" hidden="false" noindex="true">
