@@ -307,6 +307,47 @@ CRYPTEK unique action per turning point.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Arcane conduit" hidden="false" id="77d9-a505-7013-da5b">
+          <profiles>
+            <profile name="⌖ Arcane conduit" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8c71-4b26-d835-9e16">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1, Magnify*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⚔ Arcane conduit" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="bf16-086d-6bf0-7e10">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Magnify*" id="9f8d-24ae-87d5-cf24" hidden="false" type="rule" targetId="23bb-5711-b332-a399"/>
+            <infoLink name="Piercing x" id="19a0-6961-7061-6b57" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a4d-01f2-f173-6dcf" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79be-cb28-ede7-5414" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Chronomancer" hidden="true" id="dd0c-401e-5d40-190c" type="selectionEntry" targetId="5c3b-2fe3-ce25-4407">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="2b7a-318c-4ac8-965b" childId="1ae0-f2b9-fa05-00ca" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Technomancer" hidden="false" id="b341-327b-d651-1e45">
       <categoryLinks>
@@ -397,7 +438,7 @@ enemy operative.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Chronomancer" hidden="false" id="5c3b-2fe3-ce25-4407">
+      <selectionEntry type="model" import="true" name="Chronomancer" hidden="false" id="5c3b-2fe3-ce25-4407">
       <categoryLinks>
         <categoryLink name="Operative" hidden="false" id="3bfd-ed62-9ea8-48de" targetId="cf83-4496-b58e-ac82" primary="true"/>
         <categoryLink name="HIEROTEK CIRCLE" hidden="false" id="a729-649e-f11c-e298" targetId="740c-5dcf-902f-9bb3" primary="false"/>
