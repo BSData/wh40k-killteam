@@ -15,10 +15,7 @@
         <categoryLink name="Psychomancer" hidden="false" id="e3dd-2c7f-0341-78e4" targetId="c952-4e68-ac4b-80e8" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Harbinger of Despair (1 AP)" id="0ed0-d5f2-e9c9-4739" hidden="false" type="profile" targetId="ac17-1273-5c36-d1ce"/>
         <infoLink name="Interstitial Command (1 AP)" id="f9ad-156e-ce21-99b5" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
-        <infoLink name="Nightmare Shroud (1 AP)" id="ae01-a94a-8693-aa5b" hidden="false" type="profile" targetId="def3-e7df-12a3-14ce"/>
-        <infoLink name="Vision of Madness (1 AP)" id="005a-ea3c-3c89-c4da" hidden="false" type="profile" targetId="9084-3c70-9ffd-c5d2"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Abyssal lance" hidden="false" id="734d-bb48-7743-c95c">
@@ -52,6 +49,41 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <profiles>
+        <profile name="Harbinger of Despair (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b100-8936-f06d-b309">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Place your Despair marker visible to this operative, or on Vantage terrain of a terrain feature that’s visible to this operative. When this operative
+is next activated, is incapacitated or this action is performed again by a friendly operative (whichever comes first), remove that marker.
+
+▶ Whenever an enemy operative is within 2&quot; of your Despair marker, your opponent must spend 1 additional AP for that enemy operative to perform the **Pick Up Marker** and mission actions. Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 2&quot; of your Despair marker. Note this isn’t a change to the APL stat, so any
+changes are cumulative with this.
+
+◆This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Nightmare Shroud (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="31d6-cddb-255b-bf61">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever
+comes first), whenever an enemy operative within 8&quot; of this operative is shooting, fighting or retaliating, your opponent cannot re-roll their
+attack dice and cannot retain attack dice as, or change attack dice to, critical successes (critical successes must be retained as normal
+successes instead).
+
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vision of Madness (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="6e86-2855-e492-cf72">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. Until the start of this operative’s next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), that selected operative gains one of your Madness tokens
+
+▶ Whenever your opponent would activate an enemy operative that has one of your Madness tokens, you can roll one D6: if the result is equal to or
+higher than that enemy operative’s APL, they cannot activate it during this activation. If that operative is successfully activated, or there are no other
+enemy operatives eligible to be activated, remove its Madness token. 
+
+◆ This operative cannot perform this action while within control range of an
+enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Apprentek" hidden="false" id="4c0c-030e-bd5e-6f41">
       <categoryLinks>
@@ -124,12 +156,37 @@
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
           </characteristics>
         </profile>
+        <profile name="Augment Weapon (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="bd5a-2c6d-a8c1-bd46">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Until the start of this operative’s next
+activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), select two of the following
+weapon rules for one weapon from that selected operative’s datacard to have: Lethal 5+, Rending, Saturate, Severe.
+
+◆ This operative cannot perform this action while within control range of an
+enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Canoptek Repair (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="bc53-626c-74ea-b465">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative to regain up to 3D3 lost wounds.
+
+◆ This operative cannot perform this action while within control range of an enemy operative, or if a friendly operative has already performed this
+action during this turning point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Reinforce Metal (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="5304-f337-01b4-4a4f">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Until the start of this operative’s
+next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), whenever an attack
+dice inflicts damage of 3 or more on that operative, subtract 1 from that inflicted damage.
+
+◆ This operative cannot perform this action while within control range of an
+enemy operative.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Augment Weapon (1 AP)" id="61c2-2d35-fa4f-f930" hidden="false" type="profile" targetId="bd5a-2c6d-a8c1-bd46"/>
-        <infoLink name="Canoptek Repair (1 AP)" id="5627-6e28-47af-0f4d" hidden="false" type="profile" targetId="bc53-626c-74ea-b465"/>
-        <infoLink name="Interstitial Command (1 AP)" id="0f8a-2170-2284-2849" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
-        <infoLink name="Reinforce Metal (1 AP)" id="5539-3a71-d45a-646d" hidden="false" type="profile" targetId="5304-f337-01b4-4a4f"/>
+        <infoLink name="Interstitial Command (1 AP)" id="a96b-73c7-96b0-98ed" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Staff of light" hidden="false" id="eb87-07f7-c289-caa7">
@@ -241,12 +298,31 @@
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
           </characteristics>
         </profile>
+        <profile name="Chronometron (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b0be-050d-4b7d-65e2">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Until the start of this operative’s next activation, until this operative is incapacitated or until this action is performed again by a friendly operative (whichever comes first), subtract 1 from the Atk stat of an operative’s weapons whenever it’s shooting against, fighting against or retaliating against that selected operative.
+
+◆This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Countertemporal Nanomine (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="2b72-35b8-e4d6-3e8c">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Place your Countertemporal Nanomine marker visible to this operative, or on Vantage terrain of a terrain feature that’s visible to this operative. Whenever an enemy operative is within 6&quot; of your Countertemporal Nanomine marker, subtract 2&quot; from its Move stat. When this operative is next activated, is incapacitated or this action is performed again by a friendly operative (whichever comes first), remove that marker.
+
+◆This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Timesplinter (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="282f-ed2a-0d02-5c5f">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one expended friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Remove it from the killzone and set it back up visible to and within 6&quot; of this operative, measuring the horizontal distance only, in a location it can be placed. Each friendly operative can only be selected for this rule once per turning point.
+
+◆This operative cannot perform this action while within control range of an
+enemy operative.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Chronometron (1 AP)" id="d30f-2098-f17d-55ee" hidden="false" type="profile" targetId="b0be-050d-4b7d-65e2"/>
-        <infoLink name="Countertemporal Nanomine (1 AP)" id="f66f-9a68-8f89-9a79" hidden="false" type="profile" targetId="2b72-35b8-e4d6-3e8c"/>
-        <infoLink name="Interstitial Command (1 AP)" id="894d-6aad-1680-ec18" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
-        <infoLink name="Timesplinter (1 AP)" id="130b-06bd-f72d-962d" hidden="false" type="profile" targetId="282f-ed2a-0d02-5c5f"/>
+        <infoLink name="Interstitial Command (1 AP)" id="23f8-226e-c36f-2436" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Plasmacyte Accelerator" hidden="false" id="0259-bcba-026d-9aac">
@@ -753,89 +829,6 @@ operative within its control range.</characteristic>
     <profile name="Steadfast" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="161c-2774-4203-ba54">
       <characteristics>
         <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever determining control of a marker, you can treat this operative’s APL stat as 3. If you do, this takes precedence over all other rules, meaning any changes to its APL stat are ignored for this.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Harbinger of Despair (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="ac17-1273-5c36-d1ce">
-      <characteristics>
-        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Place your Despair marker visible to this operative, or on Vantage terrain of a terrain feature that’s visible to this operative. When this operative
-is next activated, is incapacitated or this action is performed again by a friendly operative (whichever comes first), remove that marker.
-
-▶ Whenever an enemy operative is within 2&quot; of your Despair marker, your opponent must spend 1 additional AP for that enemy operative to perform the **Pick Up Marker** and mission actions. Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 2&quot; of your Despair marker. Note this isn’t a change to the APL stat, so any
-changes are cumulative with this.
-
-◆This operative cannot perform this action while within control range of an enemy operative.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Nightmare Shroud (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="def3-e7df-12a3-14ce">
-      <characteristics>
-        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever
-comes first), whenever an enemy operative within 8&quot; of this operative is shooting, fighting or retaliating, your opponent cannot re-roll their
-attack dice and cannot retain attack dice as, or change attack dice to, critical successes (critical successes must be retained as normal
-successes instead).
-
-◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Vision of Madness (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="9084-3c70-9ffd-c5d2">
-      <characteristics>
-        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. Until the start of this operative’s next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), that selected operative gains one of your Madness tokens
-
-▶ Whenever your opponent would activate an enemy operative that has one of your Madness tokens, you can roll one D6: if the result is equal to or
-higher than that enemy operative’s APL, they cannot activate it during this activation. If that operative is successfully activated, or there are no other
-enemy operatives eligible to be activated, remove its Madness token. 
-
-◆ This operative cannot perform this action while within control range of an
-enemy operative.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Augment Weapon (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="bd5a-2c6d-a8c1-bd46">
-      <characteristics>
-        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Until the start of this operative’s next
-activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), select two of the following
-weapon rules for one weapon from that selected operative’s datacard to have: Lethal 5+, Rending, Saturate, Severe.
-
-◆ This operative cannot perform this action while within control range of an
-enemy operative.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Canoptek Repair (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="bc53-626c-74ea-b465">
-      <characteristics>
-        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative to regain up to 3D3 lost wounds.
-
-◆ This operative cannot perform this action while within control range of an enemy operative, or if a friendly operative has already performed this
-action during this turning point.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Reinforce Metal (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="5304-f337-01b4-4a4f">
-      <characteristics>
-        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Until the start of this operative’s
-next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), whenever an attack
-dice inflicts damage of 3 or more on that operative, subtract 1 from that inflicted damage.
-
-◆ This operative cannot perform this action while within control range of an
-enemy operative.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Chronometron (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b0be-050d-4b7d-65e2">
-      <characteristics>
-        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Until the start of this operative’s next activation, until this operative is incapacitated or until this action is performed again by a friendly operative (whichever comes first), subtract 1 from the Atk stat of an operative’s weapons whenever it’s shooting against, fighting against or retaliating against that selected operative.
-
-◆This operative cannot perform this action while within control range of an enemy operative.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Countertemporal Nanomine (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="2b72-35b8-e4d6-3e8c">
-      <characteristics>
-        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Place your Countertemporal Nanomine marker visible to this operative, or on Vantage terrain of a terrain feature that’s visible to this operative. Whenever an enemy operative is within 6&quot; of your Countertemporal Nanomine marker, subtract 2&quot; from its Move stat. When this operative is next activated, is incapacitated or this action is performed again by a friendly operative (whichever comes first), remove that marker.
-
-◆This operative cannot perform this action while within control range of an enemy operative.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Timesplinter (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="282f-ed2a-0d02-5c5f">
-      <characteristics>
-        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one expended friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Remove it from the killzone and set it back up visible to and within 6&quot; of this operative, measuring the horizontal distance only, in a location it can be placed. Each friendly operative can only be selected for this rule once per turning point.
-
-◆This operative cannot perform this action while within control range of an
-enemy operative.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
