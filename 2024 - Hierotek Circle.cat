@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="f32e-c4e5-72a3-dd71" name="Hierotek Circle" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="*Magnify" id="23bb-5711-b332-a399" hidden="false">
+      <description>Whenever this operative is performing the **Shoot** action with this weapon, if another friendly **HIEROTEK CIRCLE APPRENTEK** or **HIEROTEK CIRCLE CRYPTEK** operative has an Engage order and is visible to this operative, you can treat that operative as the active operative for the purposes of determining a valid target. If you do, this weapon has the Ceaseless weapon rule until the end of that action.</description>
+    </rule>
+  </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Psychomancer" hidden="false" id="1178-6403-0db4-d987">
+      <categoryLinks>
+        <categoryLink name="HIEROTEK CIRCLE" hidden="false" id="e7c3-2346-7dc5-2879" targetId="740c-5dcf-902f-9bb3" primary="false"/>
+        <categoryLink name="Necron" hidden="false" id="4ced-5127-a20f-2cd3" targetId="fc74-e773-dbb4-df7f" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="a824-5167-0b2c-fd06" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Cryptek" hidden="false" id="bcbd-c6cb-5c2f-a92f" targetId="41ef-fc40-4ee1-b2c5" primary="false"/>
+        <categoryLink name="Psychomancer" hidden="false" id="e3dd-2c7f-0341-78e4" targetId="c952-4e68-ac4b-80e8" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Interstitial Command (1 AP)" id="f9ad-156e-ce21-99b5" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Abyssal lance" hidden="false" id="734d-bb48-7743-c95c">
+          <profiles>
+            <profile name="⌖ Abyssal lance (ranged)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c98f-0a22-0d99-10e7">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/2</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;, 2&quot; Devastating 1, Piercing 2, Magnify*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⚔ Abyssal lance (melee)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="29e2-6fdb-cd5e-0108">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastating x" id="36bb-250f-f269-b2f3" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="*Magnify" id="21ad-8c83-8bea-35e7" hidden="false" type="rule" targetId="23bb-5711-b332-a399"/>
+            <infoLink name="Blast x" id="486c-27c7-1be1-566d" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Piercing x" id="1f66-ee2c-6d9f-17bd" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7be0-f319-b974-d3e1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c3d-c7c0-219c-f716" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Harbinger of Despair (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b100-8936-f06d-b309">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Place your Despair marker visible to this operative, or on Vantage terrain of a terrain feature that’s visible to this operative. When this operative
+is next activated, is incapacitated or this action is performed again by a friendly operative (whichever comes first), remove that marker.
+
+▶ Whenever an enemy operative is within 2&quot; of your Despair marker, your opponent must spend 1 additional AP for that enemy operative to perform the **Pick Up Marker** and mission actions. Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 2&quot; of your Despair marker. Note this isn’t a change to the APL stat, so any
+changes are cumulative with this.
+
+◆This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Nightmare Shroud (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="31d6-cddb-255b-bf61">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever
+comes first), whenever an enemy operative within 8&quot; of this operative is shooting, fighting or retaliating, your opponent cannot re-roll their
+attack dice and cannot retain attack dice as, or change attack dice to, critical successes (critical successes must be retained as normal
+successes instead).
+
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vision of Madness (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="6e86-2855-e492-cf72">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. Until the start of this operative’s next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), that selected operative gains one of your Madness tokens
+
+▶ Whenever your opponent would activate an enemy operative that has one of your Madness tokens, you can roll one D6: if the result is equal to or
+higher than that enemy operative’s APL, they cannot activate it during this activation. If that operative is successfully activated, or there are no other
+enemy operatives eligible to be activated, remove its Madness token. 
+
+◆ This operative cannot perform this action while within control range of an
+enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Apprentek" hidden="false" id="4c0c-030e-bd5e-6f41">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="5474-2f06-0571-3344" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="HIEROTEK CIRCLE" hidden="false" id="6f22-f75c-252c-b4b4" targetId="740c-5dcf-902f-9bb3" primary="false"/>
+        <categoryLink name="Necron" hidden="false" id="81d5-088f-5b05-c93a" targetId="fc74-e773-dbb4-df7f" primary="false"/>
+        <categoryLink targetId="8200-47a2-61fb-5137" id="4ede-5fe7-2ff8-6129" primary="false" name="Medic"/>
+        <categoryLink targetId="cdf9-25b4-e844-3eea" id="6f76-d69e-b718-831e" primary="false" name="Apprentek"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Apprentek" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="6d6f-384c-b89a-1c06">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">11</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Apprentek Assistance" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="76d4-a47b-3f21-4685">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative has the same unique actions as your **CRYPTEK** operative selected for the battle, but can only perform one **CRYPTEK** unique action per turning point.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Arcane conduit" hidden="false" id="77d9-a505-7013-da5b">
+          <profiles>
+            <profile name="⌖ Arcane conduit (ranged)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8c71-4b26-d835-9e16">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1, Magnify*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⚔ Arcane conduit (melee)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="bf16-086d-6bf0-7e10">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="*Magnify" id="9f8d-24ae-87d5-cf24" hidden="false" type="rule" targetId="23bb-5711-b332-a399"/>
+            <infoLink name="Piercing x" id="19a0-6961-7061-6b57" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a4d-01f2-f173-6dcf" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79be-cb28-ede7-5414" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Technomancer" hidden="false" id="b341-327b-d651-1e45">
+      <categoryLinks>
+        <categoryLink name="HIEROTEK CIRCLE" hidden="false" id="0667-6ace-4dd2-ba4e" targetId="740c-5dcf-902f-9bb3" primary="false"/>
+        <categoryLink name="Necron" hidden="false" id="b12d-f20e-b672-f970" targetId="fc74-e773-dbb4-df7f" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="1ab5-d3f5-f2b4-d339" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Cryptek" hidden="false" id="cb0a-51c5-02a3-76bb" targetId="41ef-fc40-4ee1-b2c5" primary="false"/>
+        <categoryLink name="Technomancer" hidden="false" id="b95e-7dd3-6298-4b83" targetId="8f22-ff0d-7cd2-e53c" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Technomancer" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="30c8-1154-f649-f52a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Augment Weapon (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="bd5a-2c6d-a8c1-bd46">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Until the start of this operative’s next
+activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), select two of the following
+weapon rules for one weapon from that selected operative’s datacard to have: Lethal 5+, Rending, Saturate, Severe.
+
+◆ This operative cannot perform this action while within control range of an
+enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Canoptek Repair (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="bc53-626c-74ea-b465">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative to regain up to 3D3 lost wounds.
+
+◆ This operative cannot perform this action while within control range of an enemy operative, or if a friendly operative has already performed this
+action during this turning point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Reinforce Metal (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="5304-f337-01b4-4a4f">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Until the start of this operative’s
+next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), whenever an attack
+dice inflicts damage of 3 or more on that operative, subtract 1 from that inflicted damage.
+
+◆ This operative cannot perform this action while within control range of an
+enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Interstitial Command (1 AP)" id="a96b-73c7-96b0-98ed" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Staff of light" hidden="false" id="eb87-07f7-c289-caa7">
+          <profiles>
+            <profile name="⌖ Staff of light (ranged)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="cecc-1b4c-fa51-a406">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">6</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rending, Magnify*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⚔ Staff of light (melee)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c4c2-3f9a-6236-f180">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="*Magnify" id="112e-c246-1131-c433" hidden="false" type="rule" targetId="23bb-5711-b332-a399"/>
+            <infoLink name="Rending" id="e293-4901-e191-42b5" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="efd9-14b2-d45c-ae90" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70ef-21c5-010d-dda9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chronomancer" hidden="false" id="5c3b-2fe3-ce25-4407">
+      <categoryLinks>
+        <categoryLink name="HIEROTEK CIRCLE" hidden="false" id="a729-649e-f11c-e298" targetId="740c-5dcf-902f-9bb3" primary="false"/>
+        <categoryLink name="Necron" hidden="false" id="286f-55da-5e59-b273" targetId="fc74-e773-dbb4-df7f" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="ff21-d987-9ce9-7020" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Cryptek" hidden="false" id="df8d-ef75-7902-e3db" targetId="41ef-fc40-4ee1-b2c5" primary="false"/>
+        <categoryLink name="Chronomancer" hidden="false" id="4cda-021f-7bb0-f0c5" targetId="1ae0-f2b9-fa05-00ca" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="138b-4a21-6c48-bc2e" hidden="false" defaultSelectionEntryId="none">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Entropic lance" hidden="false" id="f874-493b-d20a-7346">
+              <profiles>
+                <profile name="⌖ Entropic lance (ranged)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ee46-6eae-806e-0f33">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/3</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 3, Piercing 1, Magnify*</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⚔ Entropic lance (melee)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8522-134c-8740-a9c9">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/6</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Piercing x" id="0d9e-ce29-a956-c747" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                <infoLink name="*Magnify" id="4c0e-28e1-36ee-c928" hidden="false" type="rule" targetId="23bb-5711-b332-a399"/>
+                <infoLink name="Devastating x" id="84cf-7448-5617-bc08" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Aeonstave" hidden="false" id="4f0a-7d7d-67f5-2565">
+              <profiles>
+                <profile name="⌖ Aeonstave (ranged)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="aff0-1429-22ab-b984">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;, Lethal 5+, Stun, Magnify*</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⚔ Aeonstave (melee)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="23fb-c5eb-7622-2531">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Shock</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Lethal x+" id="41f1-8023-270a-450c" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                <infoLink name="Stun" id="438c-1980-c3c4-a010" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
+                <infoLink name="*Magnify" id="79b4-861a-f2f1-dc7a" hidden="false" type="rule" targetId="23bb-5711-b332-a399"/>
+                <infoLink name="Shock" id="1a7e-36cb-d452-99c3" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+                <infoLink name="Blast x" id="4fa6-cf11-b63c-ae2d" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c905-e0e7-f49b-d718" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f94-96a1-3762-b855" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Chronomancer" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="644f-2789-e4df-228f">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chronometron (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b0be-050d-4b7d-65e2">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Until the start of this operative’s next activation, until this operative is incapacitated or until this action is performed again by a friendly operative (whichever comes first), subtract 1 from the Atk stat of an operative’s weapons whenever it’s shooting against, fighting against or retaliating against that selected operative.
+
+◆This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Countertemporal Nanomine (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="2b72-35b8-e4d6-3e8c">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Place your Countertemporal Nanomine marker visible to this operative, or on Vantage terrain of a terrain feature that’s visible to this operative. Whenever an enemy operative is within 6&quot; of your Countertemporal Nanomine marker, subtract 2&quot; from its Move stat. When this operative is next activated, is incapacitated or this action is performed again by a friendly operative (whichever comes first), remove that marker.
+
+◆This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Timesplinter (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="282f-ed2a-0d02-5c5f">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one expended friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Remove it from the killzone and set it back up visible to and within 6&quot; of this operative, measuring the horizontal distance only, in a location it can be placed. Each friendly operative can only be selected for this rule once per turning point.
+
+◆This operative cannot perform this action while within control range of an
+enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Interstitial Command (1 AP)" id="23f8-226e-c36f-2436" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Plasmacyte Accelerator" hidden="false" id="0259-bcba-026d-9aac">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="9707-9efc-c34a-d3ac" targetId="cf83-4496-b58e-ac82" primary="false"/>
+        <categoryLink name="HIEROTEK CIRCLE" hidden="false" id="3f31-17c1-a0c9-6e61" targetId="740c-5dcf-902f-9bb3" primary="false"/>
+        <categoryLink name="Necron" hidden="false" id="5bcd-8413-cebb-8b32" targetId="fc74-e773-dbb4-df7f" primary="false"/>
+        <categoryLink name="Plasmacyte" hidden="false" id="8eef-088c-8f5c-cc99" targetId="75b2-eddf-b2c2-8a54" primary="false"/>
+        <categoryLink name="Accelerator" hidden="false" id="1034-940b-b585-8bb7" targetId="52de-e84b-b0bc-72d7" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Plasmacyte Accelerator" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="3fa4-03a6-450a-3ab7">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Accelerate (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="da50-3f90-17f9-323f">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly **DEATHMARK** or **IMMORTAL** operative visible
+to and within 6&quot; of this operative. Until the end of that operative’s next
+activation, add 1 to its APL stat.
+
+◆ This operative cannot perform this action while within control range of an
+enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scuttler" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="249a-a381-15f7-6a6e">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">- Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Vantage terrain).
+- This operative can perform the **Fall Back** action for 1 less AP.
+- This operative cannot use any weapons that aren’t on its datacard, or perform unique actions other than **Accelerate**.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Spark" hidden="false" id="3878-d975-727b-faa0" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Spark" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0801-af92-665e-d866">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 4&quot;, Piercing 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="48fd-f1e6-8002-2ae0" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6773-f1df-fc16-d5ce" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Range x" id="9d63-ce00-ed22-f833" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Piercing x" id="0589-f2a6-f039-76f3" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Claws" hidden="false" id="0b84-a466-5e8f-fb22" type="selectionEntry" targetId="b252-4732-783a-1e6c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb8f-d599-cb3e-7b4d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7baf-b347-7eae-5f45" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ff7a-38ff-f0e0-e88c-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ff7a-38ff-f0e0-e88c-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Plasmacyte Reanimator" hidden="false" id="603f-8065-f7fd-5c19">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="55cd-8113-93e6-818a" targetId="cf83-4496-b58e-ac82" primary="false"/>
+        <categoryLink name="HIEROTEK CIRCLE" hidden="false" id="3d69-25f1-d9bb-4b93" targetId="740c-5dcf-902f-9bb3" primary="false"/>
+        <categoryLink name="Necron" hidden="false" id="2b05-8377-3c47-aa20" targetId="fc74-e773-dbb4-df7f" primary="false"/>
+        <categoryLink name="Plasmacyte" hidden="false" id="a5a5-bff3-01ab-0d13" targetId="75b2-eddf-b2c2-8a54" primary="false"/>
+        <categoryLink name="Reanimator" hidden="false" id="4b03-fb75-0389-d1e4" targetId="9057-ca5c-0feb-d727" primary="true"/>
+        <categoryLink name="Medic" hidden="false" id="2b19-183d-0597-75e2" targetId="8200-47a2-61fb-5137" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Plasmacyte Reanimator" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="a307-a6d0-6f59-bd25">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scuttler" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="35fe-9c9f-a992-f18f">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">- Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Vantage terrain).
+- This operative can perform the **Fall Back** action for 1 less AP.
+- This operative cannot use any weapons that aren’t on its datacard, or
+perform unique actions other than **Reanimate**.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Reanimate (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="6162-7dd8-5430-4cc3">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one of your Reanimation markers visible to and within 6&quot; of this operative. Roll one D6: on a 3+, a friendly operative is **REANIMATED**;
+if you spent 1 additional AP, a friendly operative is automatically **REANIMATED** (you don’t need to roll one D6). An operative that’s
+**REANIMATED** from this unique action is set up expended if it was already expended during this turning point.
+
+◆ This operative cannot perform this action while within control range of an
+enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Atomizer beam" hidden="false" id="3fa3-0fe3-6c4b-2ef1" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Atomizer beam" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="9cb5-535d-a41b-4042">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26dd-e275-435a-814b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e44-03fc-cd1c-34f7" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Range x" id="e275-3ac7-bc94-e473" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Lethal x+" id="8113-962b-fe6e-4b7c" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Claws" hidden="false" id="7052-5979-7a8f-ba3c" type="selectionEntry" targetId="b252-4732-783a-1e6c" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="682b-f3e3-5d93-16b4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1920-577f-b703-f4e3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c428-32a3-f913-95e3-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c428-32a3-f913-95e3-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Immortal Guardian" hidden="false" id="523f-419b-9124-03eb">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="9db4-7858-c8fc-c278" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="HIEROTEK CIRCLE" hidden="false" id="c799-9776-b5bc-28f5" targetId="740c-5dcf-902f-9bb3" primary="false"/>
+        <categoryLink name="Necron" hidden="false" id="b269-be98-d427-b72b" targetId="fc74-e773-dbb4-df7f" primary="false"/>
+        <categoryLink targetId="f70f-a3c0-808e-ca88" id="33e5-4f61-e5fd-baec" primary="false" name="Immortal"/>
+        <categoryLink targetId="c376-fbb7-7a89-38a2" id="c74e-49f2-e281-4103" primary="false" name="Guardian"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Immortal Guardian" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="63d3-dc0f-58c9-c8aa">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Bayonet" hidden="false" id="7d98-e8e2-e1c0-6396" type="selectionEntry" targetId="4d9c-3f3a-6a4c-004a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c99c-e81f-35a5-86e7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8058-2ba5-40cb-8626" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="4bf5-e610-3cc5-43cd" hidden="false" defaultSelectionEntryId="none" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e7fc-2020-0e4f-eb81" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d39-4543-2a65-ff75" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Guass Blaster" hidden="false" id="f00e-4de2-c46c-dc23" type="selectionEntry" targetId="3f05-c7d4-5411-545c"/>
+            <entryLink import="true" name="Tesla Carbine" hidden="false" id="a33f-f564-da02-4c11" type="selectionEntry" targetId="6afb-9df3-ea24-bc38"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Steadfast" id="93f3-b0c9-1a67-893c" hidden="false" type="profile" targetId="161c-2774-4203-ba54"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Deathmark" hidden="false" id="9dc1-b3fe-1cdb-fb04">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="efd8-b96b-b21e-d289" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="HIEROTEK CIRCLE" hidden="false" id="ce67-a392-6d3a-8740" targetId="740c-5dcf-902f-9bb3" primary="false"/>
+        <categoryLink name="Necron" hidden="false" id="030b-2085-8d4d-32e5" targetId="fc74-e773-dbb4-df7f" primary="false"/>
+        <categoryLink name="Deathmark" hidden="false" id="bd1c-0120-962e-59f2" targetId="7db2-a7d5-2813-ee97" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Deathmark" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="8876-2e5c-eb01-a34a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Multi-dimensional vision (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="9870-7957-798e-e5e4">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation, whenever it’s shooting, enemy operatives cannot be obscured.
+
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="5955-ab27-5a9e-3263" sortIndex="2">
+          <profiles>
+            <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3bce-fbd0-12f3-ed86">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="789b-7bda-5c01-6185" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c851-d80d-81c8-ed3e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Synaptic disintegrator" hidden="false" id="97da-554a-a27f-9e31" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Synaptic disintegrator" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e8a8-a556-d84e-885b">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 2, Heavy (Dash only), Piercing 1, Severe</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ba7-6f14-0167-8f1a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0774-04db-8bd9-f3cb" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Devastating x" id="ffd9-6181-dccb-698c" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Severe" id="6d5d-f029-58d6-d2cb" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+            <infoLink name="Heavy" id="0f2a-7613-4eaa-77d7" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+            <infoLink name="Piercing x" id="9c53-d4d7-6886-690b" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Deathmarked" hidden="false" id="f600-98fe-ccd2-927f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43fb-04d2-6432-fcd5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43fb-04d2-6432-fcd5-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Deathmarked" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="eb87-98cf-23f5-87e6">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative ends the **Shoot** action, the target gains one of your Deathmarked tokens if it wasn’t incapacitated (the primary target, if relevant). Whenever a friendly **HIEROTEK CIRCLE DEATHMARK** operative is shooting an enemy operative that has one of
+your Deathmarked tokens, that friendly operative’s ranged weapons have the Seek weapon rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Immortal Despotek" hidden="false" id="71c5-3024-9637-00a8">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="de12-87d6-5342-cb2f" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="HIEROTEK CIRCLE" hidden="false" id="17a6-3841-7232-ee53" targetId="740c-5dcf-902f-9bb3" primary="false"/>
+        <categoryLink name="Necron" hidden="false" id="cd56-e319-361e-4ba4" targetId="fc74-e773-dbb4-df7f" primary="false"/>
+        <categoryLink name="Immortal" hidden="false" id="69ac-f630-9381-cb1f" targetId="f70f-a3c0-808e-ca88" primary="false"/>
+        <categoryLink name="Despotek" hidden="false" id="b6b5-5b64-d835-eeab" targetId="252d-8c0a-bb4b-0dc1" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Immortal Despotek" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="d251-386c-ad71-f88a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">11</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Bayonet" hidden="false" id="fb81-6f43-6f52-5bf5" type="selectionEntry" targetId="4d9c-3f3a-6a4c-004a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ea8-32e6-4cb9-8031" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6220-92c9-63d8-3d6e" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="1854-8c4b-7bf7-a4c8" hidden="false" defaultSelectionEntryId="none" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="824a-469e-6018-a084" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2597-fbc6-4194-79fe" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Guass Blaster" hidden="false" id="c67d-e5fa-89e5-6609" type="selectionEntry" targetId="3f05-c7d4-5411-545c"/>
+            <entryLink import="true" name="Tesla Carbine" hidden="false" id="6f9d-a0b6-ace7-66d1" type="selectionEntry" targetId="6afb-9df3-ea24-bc38"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Steadfast" id="1484-1b48-9ee9-5ec4" hidden="false" type="profile" targetId="161c-2774-4203-ba54"/>
+        <infoLink name="Interstitial Command (1 AP)" id="36c0-0c4f-29fe-ea8e" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
+      </infoLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <categoryEntries>
+    <categoryEntry name="HIEROTEK CIRCLE" id="740c-5dcf-902f-9bb3" hidden="false"/>
+    <categoryEntry name="Necron" id="fc74-e773-dbb4-df7f" hidden="false"/>
+    <categoryEntry name="Cryptek" id="41ef-fc40-4ee1-b2c5" hidden="false"/>
+    <categoryEntry name="Chronomancer" id="1ae0-f2b9-fa05-00ca" hidden="false"/>
+    <categoryEntry name="Psychomancer" id="c952-4e68-ac4b-80e8" hidden="false"/>
+    <categoryEntry name="Technomancer" id="8f22-ff0d-7cd2-e53c" hidden="false"/>
+    <categoryEntry name="Plasmacyte" id="75b2-eddf-b2c2-8a54" hidden="false"/>
+    <categoryEntry name="Immortal" id="f70f-a3c0-808e-ca88" hidden="false"/>
+    <categoryEntry name="Reanimator" id="9057-ca5c-0feb-d727" hidden="false"/>
+    <categoryEntry name="Apprentek" id="cdf9-25b4-e844-3eea" hidden="false"/>
+    <categoryEntry name="Despotek" id="252d-8c0a-bb4b-0dc1" hidden="false"/>
+    <categoryEntry name="Deathmark" id="7db2-a7d5-2813-ee97" hidden="false"/>
+    <categoryEntry name="Accelerator" id="52de-e84b-b0bc-72d7" hidden="false"/>
+    <categoryEntry name="Guardian" id="c376-fbb7-7a89-38a2" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="2b7a-318c-4ac8-965b" name="Hierotek Circle Kill Team" hidden="false">
+      <categoryLinks>
+        <categoryLink id="ba14-657a-b980-fbb4" name="Configuration" hidden="false" targetId="874b-0390-e5e2-1daa" primary="false"/>
+        <categoryLink id="cd6f-c433-24b7-ffe7" name="Leader" hidden="false" targetId="d999-8cad-8145-4efe" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="2499-d9c5-8c5f-798e"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c2f6-a703-e771-91f4"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f8da-5e4b-0d91-6c11" name="Apprentek" hidden="false" targetId="cdf9-25b4-e844-3eea" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e922-7bda-ec4f-467c"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="fdc3-afec-cb15-cab7" name="Accelerator" hidden="false" targetId="52de-e84b-b0bc-72d7" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="64b5-ceb6-e6ca-40fe-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="64b5-ceb6-e6ca-40fe-max" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="32ed-1a50-963a-df6e" name="Reanimator" hidden="false" targetId="9057-ca5c-0feb-d727" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="a3dc-3c9c-b59a-f625-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a3dc-3c9c-b59a-f625-max" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="82c5-18f3-c96d-a1d3" name="Despotek" hidden="false" targetId="252d-8c0a-bb4b-0dc1" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8125-a9d2-418d-4cca" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7ce0-de85-589a-a1e1" name="Operative" hidden="false" targetId="cf83-4496-b58e-ac82" primary="false">
+          <constraints>
+            <constraint type="max" value="7" field="selections" scope="force" shared="true" id="5481-b0fc-7a27-80dd" includeChildSelections="false"/>
+            <constraint type="min" value="7" field="selections" scope="force" shared="true" id="21db-646b-70e7-5e3b" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b7eb-d8b3-5da9-6b04" name="Reference" hidden="false" targetId="b318-a8d7-2d38-99a3" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="4d9c-3f3a-6a4c-004a" name="Bayonet" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="⚔ Bayonet" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a2ab-f2fe-1f96-df85">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="b252-4732-783a-1e6c" name="Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="⚔ Claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="902f-5c95-55f1-1156">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/2</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="3f05-c7d4-5411-545c" name="Guass Blaster" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="⌖ Guass Blaster" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7211-9f28-0806-dfeb">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Piercing x" id="a180-aa29-fd77-38ed" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="6afb-9df3-ea24-bc38" name="Tesla Carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="⌖ Tesla carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5961-887d-1f42-57c8">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">2&quot; Devastating 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Devastating x" id="e2e2-9598-634a-dc16" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="ab28-0d12-6ef5-076b" name="Faction Equipment" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
+      <selectionEntries>
+        <selectionEntry id="8c5a-134b-e274-25e4" name="Magnification Conduits" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4ec-5e95-bd9b-b0df" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7d91-36f2-b240-5e98" name="Magnification Conduits" hidden="false" typeId="0d20-7175-9ecb-8bde" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly **HIEROTEK CIRCLE APPRENTEK** or **HIEROTEK CIRCLE CRYPTEK** operative is
+performing the **Shoot** action, you can use this rule. If you
+do, select one other friendly **HIEROTEK CIRCLE** operative
+(excluding **PLASMACYTE**) that has an Engage order and is
+visible to that friendly operative. Until the end of that action,
+that other friendly operative can be treated as the active
+operative for the Magnify weapon rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="a24c-5c9e-db1f-81d5" name="Phase Shifter" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75d3-3f42-fc6a-fe50" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d82c-bbd7-65fc-61d3" name="Phase Shifter" hidden="false" typeId="0d20-7175-9ecb-8bde" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when an operative is shooting a
+friendly **CRYPTEK** operative, at the start of the Roll Defence
+Dice step, you can use this rule. If you do, worsen the x of
+the Piercing weapon rule by 1 (if any) until the end of that
+sequence. Note that Piercing 1 would therefore be ignored.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="5b52-6760-7c84-20f5" name="Tesseract Cube" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1929-383d-cf52-9f37" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0205-5981-e992-c5d1" name="Tesseract Cube" hidden="false" typeId="0d20-7175-9ecb-8bde" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">In the Ready step of each Strategy phase, when you gain
+CP, if a friendly **CRYPTEK** operative isn’t incapacitated, isn’t
+within control range of enemy operatives and hasn’t been
+**REANIMATED** this turning point, you can use this rule. If you
+do, roll one D6: on a 1, you cannot use this rule for the rest of
+the battle; on a 4+, you gain 1CP. Once you have gained 2CP
+from this rule, you cannot use it for the rest of the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="acd5-5cea-6467-af1d" name="Tesla Weave" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5704-934d-c41a-c5bb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="94fc-4a7e-aab9-0a88" name="Tesla Weave" hidden="false" typeId="0d20-7175-9ecb-8bde" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever an enemy operative ends the **Charge** action,
+inflict D3 damage on it for each friendly **HIEROTEK CIRCLE**
+operative within its control range.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile name="Interstitial Command (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="38df-274a-fa2c-f840">
+      <characteristics>
+        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one other friendly **HIEROTEK CIRCLE** operative (excluding **APPRENTEK** and **CRYPTEK**) visible to and within 6&quot; of this operative, or within 6&quot; of a friendly **DESPOTEK** operative that is visible to this operative. That selected operative can immediately perform a 1AP action for free; it cannot move more than 2&quot; during that action, perform an action it has already performed during this turning point, or perform that action again during this turning point.
+
+◆This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Steadfast" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="161c-2774-4203-ba54">
+      <characteristics>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever determining control of a marker, you can treat this operative’s APL stat as 3. If you do, this takes precedence over all other rules, meaning any changes to its APL stat are ignored for this.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <rules>
+    <rule name="Living Metal" id="c80c-e0f9-d76f-104e" hidden="false">
+      <description>In the Ready step of each Strategy phase, after resolving all other rules in this step (e.g. Reanimation Protocols faction rule), each friendly **HIEROTEK CIRCLE** operative regains D3+1 lost wounds (roll separately for each).</description>
+    </rule>
+    <rule name="Reanimation Protocols" id="ff73-15b7-72a0-c62e" hidden="false">
+      <description>The first time each friendly **HIEROTEK CIRCLE** operative is incapacitated, before it’s removed from the killzone, place one of your Reanimation markers within its control range. Then remove it as incapacitated, also removing any tokens and rules effects it had (e.g. **CHRONOMANCER** operative’s Chronometron action, Poison tokens, APL stat changes, being implanted, etc.).
+
+In the Ready step of each Strategy phase, select one of your Reanimation markers and roll one D6: on a 1-2, leave that Reanimation marker in the killzone and repeat this process with a different one of your Reanimation markers (if any); on a 3+, an operative is **REANIMATED**.
+
+You can only select each of your Reanimation markers once
+per turning point, and once you roll a 3+, you don’t select
+any more for that turning point. Whenever an operative
+is **REANIMATED**:
+
+- Set up the operative that Reanimation marker was placed for (it’s no longer incapacitated). It must be placed within 3&quot; of that Reanimation marker and not within control range of enemy operatives (if you cannot do so, treat the roll as 1-2 instead).
+- It has D3+1 wounds remaining.
+- It has an order of your choice and is ready.
+- Remove that Reanimation marker. 
+
+
+As **REANIMATED** operatives are no longer incapacitated, for the purposes of the kill op, this means your opponent’s kill grade can go down during the battle (they lose VP accordingly). However, it won’t retroactively change any other VPs your opponent has scored, e.g. from tac ops.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink name="Interstitial Command (1 AP)" id="8985-1c57-584c-d4e6" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
+    <infoLink name="Interstitial Command (1 AP)" id="730d-8876-79c7-31f3" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
+    <infoLink name="Interstitial Command (1 AP)" id="a2b0-bd55-57f6-72e5" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
+    <infoLink name="Interstitial Command (1 AP)" id="a5c3-a8a2-5248-c9ba" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
+    <infoLink name="Interstitial Command (1 AP)" id="8ca9-51bd-a5a1-0e08" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
+    <infoLink name="Interstitial Command (1 AP)" id="495c-48d5-7c0c-4a84" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
+  </infoLinks>
+</catalogue>
