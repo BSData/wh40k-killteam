@@ -224,7 +224,7 @@
           <profiles>
             <profile name="1x Razor Wire" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="9054-805e-9dcb-9075">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Razor wire is Expose and Obstructing terrain. Before the battle, you can set it up wholly within your territory, on the killzone floor and more than 2&quot; from other equipment terrain features.</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Razor wire is Exposed and Obstructing terrain. Before the battle, you can set it up wholly within your territory, on the killzone floor and more than 2&quot; from other equipment terrain features.</characteristic>
               </characteristics>
             </profile>
           </profiles>
