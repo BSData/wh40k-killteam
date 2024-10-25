@@ -29,6 +29,7 @@
     <categoryEntry name="Psyker" id="6f95-9b94-d661-3243" hidden="false"/>
     <categoryEntry name="Medic" id="8200-47a2-61fb-5137" hidden="false"/>
     <categoryEntry name="Warrior" id="2b69-f2aa-bd5c-70b2" hidden="false"/>
+    <categoryEntry name="Leagues of Votann" id="a016-36a7-fbed-5668" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Roster" hidden="false" id="default-force">
