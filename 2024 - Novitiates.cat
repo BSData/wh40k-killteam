@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="083c-072e-01c0-5f45" name="Novitiates" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <rules>
+    <rule name="Act of Faith" id="7482-b87e-071c-5bb3" hidden="false">
+      <description>In the Ready step of each Strategy phase, you gain a number of Faith points equal to half the number of friendly **NOVITIATE** operatives that haven’t been incapacitated (rounding up). Whenever a friendly **NOVITIATE** operative is shooting, fighting or retaliating, or an operative is shooting it, in the Roll Attack Dice (or Roll Defence Dice step if an operative is shooting it), you can spend your Faith points to use one ACT OF FAITH. You cannot use more than one ACT OF FAITH per sequence, and their costs and effects are as follows: 
+
+
+GUIDANCE  - 1 FAITH POINT - You can re-roll one of your dice. 
+BLESSING - 2 FAITH POINTS - You can retain one of your normal successes as a critical success instead. 
+INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal success instead of discarding it.</description>
+    </rule>
+  </rules>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Superior" hidden="false" id="f37c-a974-69d0-10fd">
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="7ebc-7a3f-72ef-6e17" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="88a7-708d-af8a-8da2" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="2652-7a84-2677-b5fb" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="28b9-105b-1529-07bd" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Superior" hidden="false" id="b90b-a036-71d3-13ac" targetId="7578-9b9e-4e3c-abf9" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="2539-1d39-cacd-d20e" hidden="false" defaultSelectionEntryId="none">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Plasma pistol; power weapon" hidden="false" id="444b-f303-1541-b064">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="d124-8fc4-923f-4b7c">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87e3-5cea-a655-84d5-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87e3-5cea-a655-84d5-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⌖ Plasma pistol (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="df7d-8e02-6e0e-c796">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Piercing 1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="⌖ Plasma pistol (supercharge)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5428-0506-6630-6216">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Hot, Lethal 5+, Piercing 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Lethal x+" id="fb1e-0dbd-5a47-8472" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                    <infoLink name="Range x" id="2830-b950-a4fd-45d4" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                    <infoLink name="Piercing x" id="23b9-e17c-8759-66d3" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                    <infoLink name="Hot" id="6420-6d77-6a18-414f" hidden="false" type="rule" targetId="ec63-40e6-6282-8420"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Power weapon" hidden="false" id="ab7b-49d9-7ca8-1466" type="selectionEntry" targetId="091b-3b27-c0cf-c29a"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Relic boltgun; gun butt" hidden="false" id="c36f-c910-8a80-6cb3">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Relic boltgun" hidden="false" id="e79b-f0b6-7afc-aeaa">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5fe-183a-0178-0c94-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5fe-183a-0178-0c94-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⌖ Relic boltgun" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6b4d-cb0c-2b5d-fc42">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Lethal x+" id="0d46-ef23-b57e-49b0" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                    <infoLink name="Range x" id="7611-f732-954b-de7a" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Gun butt" hidden="false" id="d7b5-4602-8f67-af1d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6aa-faa4-de63-f22b-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6aa-faa4-de63-f22b-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Gun butt" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d7b2-4231-7394-6358">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Relic bolt pistol; power weapon" hidden="false" id="332b-2e85-1207-7209">
+              <entryLinks>
+                <entryLink import="true" name="Power weapon" hidden="false" id="c5d5-2a1e-6095-83b7" type="selectionEntry" targetId="091b-3b27-c0cf-c29a"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Relic bolt pistol" hidden="false" id="ce21-ee2e-255c-13e6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fb0-2d6c-257d-d6d6-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fb0-2d6c-257d-d6d6-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⌖ Relic bolt pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d269-0fca-2260-4b8d">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Lethal 5+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Lethal x+" id="59d8-7247-ff75-99d0" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                    <infoLink name="Range x" id="f036-44db-9a26-72dc" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36cb-a749-d384-08aa-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36cb-a749-d384-08aa-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Novitiate Superior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="9a2a-5484-7a2c-7172">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Inspirational Example" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2720-20a6-d907-dc74">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative incapacitates an enemy operative, you gain 1 Faith point, or 2 Faith points if that enemy operative had a Wounds stat of 12 or more. This rule has no effect when using the Glorious Martyrdom firefight ploy.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Condemnor" hidden="false" id="d2be-4659-e541-b58d">
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="95ba-7917-9819-6e7b" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="771d-410c-77de-5765" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="636e-bdd4-4cf9-7616" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Condemnor" hidden="false" id="8047-256a-c41d-df2c" targetId="cfa4-5cc8-d6ce-a5f2" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="50cc-4275-9d2c-269c" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Condemnor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="f2d0-cd80-31dc-28c0">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Condemnor stake thrower" hidden="false" id="6c4a-18ce-1e63-6f1c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a0e-9efa-524c-8a3c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a0e-9efa-524c-8a3c-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Condemnor stake thrower" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c66d-5b0b-307e-ee6d">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 2, Piercing Crits 1, Silent, Anti-PSYKER*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastating x" id="f769-ef9d-e63c-f96e" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Piercing x" id="b519-46a7-85c9-6186" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+            <infoLink name="Silent" id="3ad9-5c2b-785d-7fb9" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+            <infoLink name="*Anti-PSYKER" id="de93-478f-cb4d-1803" hidden="false" type="profile" targetId="8179-a985-6a80-524b"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Null rod" hidden="false" id="29b4-7714-2471-e411">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa5e-80aa-72ae-6910-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa5e-80aa-72ae-6910-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Null rod" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ddb1-d69a-248a-dac7">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Shock, Anti-PSYKER*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="*Anti-PSYKER" id="0ad5-374c-bd66-f6b3" hidden="false" type="profile" targetId="8179-a985-6a80-524b"/>
+            <infoLink name="Shock" id="1406-e5c7-83fa-345d" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="dd83-e819-3b41-d8f9" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="dd83-e819-3b41-d8f9">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Dialogus" hidden="false" id="9faa-f9c4-5e5f-21e7">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="a530-e42e-b4af-ca70" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="a530-e42e-b4af-ca70">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Dialogus" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2830-4914-3e24-acd6">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stirring Rhetoric (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="1351-d9c6-1c8a-11b2">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ SUPPORT. Select one other friendly **NOVITIATE** operative visible to and within 6&quot; of this operative, or within 6&quot; of your Auto-broadcaster marker. Until the end of that operative’s next activation, add 1 to its APL stat (to a maximum of 3 after all APL stat changes have been totalled). 
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Auto-broadcaster (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="d258-7c31-65f7-138a">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ If your Auto-broadcaster marker isn’t in the killzone, place it within 8&quot; horizontally of this operative; otherwise, move your Auto-broadcaster marker up to 8&quot; horizontally. If this operative is removed from the killzone, remove your Auto-broadcaster marker from the killzone. 
+▶ Whenever an enemy operative within 3&quot; of your Auto-broadcaster marker is shooting, fighting or retaliating, your opponent cannot re-roll their attack dice.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="8af8-ee46-1569-2e91" type="selectionEntry" targetId="8bfb-53ba-eac4-852f"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dialogus stave" hidden="false" id="e982-2d23-d16c-6b48">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03ac-5799-a898-f800-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03ac-5799-a898-f800-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Dialogus stave" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1d0b-8b92-23c3-c996">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Shock</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shock" id="07ad-3396-0907-e378" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="4b83-a495-9753-1bf4" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="dc40-c2ad-47ee-b008" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="55bd-6cd5-45e0-e4b3" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Dialogus" hidden="false" id="7b30-0385-472d-4701" targetId="107d-1185-1186-ff8e" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="0234-2c89-e5b9-6e51" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Duellist" hidden="false" id="9d76-a868-c63d-05f3">
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="ca87-dd25-7f78-5468" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="526d-4afe-8c58-b02b" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="d957-4c2a-4e69-fd8a" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Duellist" hidden="false" id="1646-678a-c246-ee82" targetId="beef-ee58-e6fa-3511" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="5c27-757f-9cce-3bcd" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Duellist" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="c152-9972-f642-a1c4">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="5a47-9803-9655-2b2b" type="selectionEntry" targetId="8bfb-53ba-eac4-852f"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Duelling blades" hidden="false" id="04cb-6003-a56c-acdb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa7e-8a44-323a-cb53-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa7e-8a44-323a-cb53-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Duelling blades" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ffe3-f3a1-48f4-3440">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Riposte*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="*Riposte" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="1501-e84f-ff0f-a8be">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever you block with a critical success, you can also inflict damage equal to the weapon’s Critical Dmg stat on the enemy operative in that sequence.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="6257-d65a-28c1-b8c8" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="9355-c0b5-845a-2381" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="9355-c0b5-845a-2381">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Exactor" hidden="false" id="8d0b-105d-9384-7a43">
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="9dcc-f7ba-8e24-b621" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="6325-a72c-6b0a-d702" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="83d7-9808-54a0-4948" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Exactor" hidden="false" id="7c6f-8a65-2f95-f62a" targetId="905b-21d1-7f3d-f3fa" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="e59f-5103-15f7-9f5b" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="0fa1-6e57-05f1-d7a7" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="0fa1-6e57-05f1-d7a7">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Exactor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1e09-71b0-1e78-2762">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Whip Into Frenzy (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="725f-b9ae-e94e-d041">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one other friendly **NOVITIATE** operative (excluding **SUPERIOR**) visible to and within 3&quot; of this operative that isn’t currently benefitting from the effects of this action. Until the end of that operative’s next activation, add 1&quot; to its Move stat, it can perform two Fight actions during its next activation, and one of them can be free. 
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Neural whips" hidden="false" id="9f44-80cc-907c-61c5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9ab-7c07-2367-0618-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9ab-7c07-2367-0618-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Neural whips (ranged)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="447d-94bf-cc35-4940">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 3&quot;, Lethal 5+, Stun</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Neural whips (melee)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d6b8-6911-4cb5-c2ab">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Shock</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="a1df-9273-f358-14ce" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Lethal x+" id="032f-d0c3-560a-90fa" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Stun" id="ed90-d884-2f1b-6d8f" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
+            <infoLink name="Shock" id="2352-059a-083e-e977" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Hospitaller" hidden="false" id="1e8f-9c9a-50a0-ad50">
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="1092-701f-15cb-704d" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="7c5b-0558-5698-2b91" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="83d9-a558-c947-c187" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Medic" hidden="false" id="8d21-784d-5b27-9b6c" targetId="8200-47a2-61fb-5137" primary="false"/>
+        <categoryLink name="Hospitaller" hidden="false" id="2ef4-395e-3e49-bd8d" targetId="bf7f-16fe-b466-04a1" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="6c29-66c8-48c8-fb81" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Hospitaller" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="b474-2139-9433-40e7">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chirurgeon&apos;s Tools (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="a597-7c6b-1057-7e3a">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly **NOVITIATE** operative within this operative’s control range to regain up to 2D3 lost wounds. It cannot be an operative that the Medic! rule was used on during this turning point. 
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Medic!" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="6b37-80c3-64b7-056b">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">The first time during each turning point that another friendly **NOVITIATE** operative would be removed from the killzone as incapacitated while visible to and within 3&quot; of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn’t incapacitated and has 1 wound remaining. That friendly operative can then immediately perform a free **Dash** action, but must end that move within this operative’s control range. Subtract 1 from this and that operative’s APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative’s activation, that activation ends. You cannot use this rule if this operative is incapacitated.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="1" field="371d-79c5-1a41-66c9">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="371d-79c5-1a41-66c9" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="fe3e-de19-8738-0855" type="selectionEntry" targetId="8bfb-53ba-eac4-852f"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Surgical saw" hidden="false" id="213d-0dd3-94cb-18dc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f2f3-1d42-b45b-75a4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2f3-1d42-b45b-75a4-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Surgical saw" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="39d4-87c9-66e8-1339">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="3916-949f-ac81-aaaf" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Rending" id="2072-7356-920c-ac33" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Penitent" hidden="false" id="bc1f-42c5-781d-e67f">
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="df9f-bdeb-4a72-c825" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="450f-d9cb-d3c5-33a2" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="f38d-492b-0586-8c95" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Penitent" hidden="false" id="044c-6562-3b45-5168" targetId="8e95-ab20-d7b3-3457" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="4f2f-9733-c348-f013" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Penitent" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="3fcb-98a8-b117-14d1">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Absolution Through Destruction" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="bcfb-8dfa-4374-65ac">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative performs the **Fight** action, if it isn’t incapacitated, it can immediately perform a free Fight action afterwards. This takes precedence over action restrictions, and you cannot perform more than two **Fight** actions in succession as a result of this rule. If this operative is benefitting from the effects of the **Whip Into Frenzy** action (see **EXACTOR**), this applies to each of the **Fight** actions from those effects.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="b557-eb6e-9c2e-ffa4" type="selectionEntry" targetId="8bfb-53ba-eac4-852f"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Penitent eviscerator" hidden="false" id="8f0e-56b8-014d-5601">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c689-6739-d127-cd81-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c689-6739-d127-cd81-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Penitent eviscerator" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="88be-1d37-a1d7-40c8">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal, Zealous Rage*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="*Zealous Rage" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="9417-a129-9425-070a">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is fighting with this weapon, it has the Ceaseless weapon rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Brutal" id="e89c-d0b8-c93e-8046" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+            <infoLink name="Ceaseless" id="d814-6de3-95ad-468d" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="fa24-dab1-13dd-b41e" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="fa24-dab1-13dd-b41e">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Preceptor" hidden="false" id="9d8f-189b-da59-4776">
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="6365-8787-f229-5d8b" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="fc51-6f88-3706-b115" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="996d-1c49-46e5-3cc2" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Preceptor" hidden="false" id="c904-d79e-aeee-230c" targetId="b5c9-f688-5605-6ccc" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="cd1a-fc95-4555-5aff" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mace of the Righteous" hidden="false" id="2b0c-583b-f41d-8bf5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e986-9038-95af-b47c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e986-9038-95af-b47c-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mace of the Righteous" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ecc4-7dac-61ad-aac8">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal, Severe</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Brutal" id="35ac-dab0-bb04-251c" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+            <infoLink name="Severe" id="45df-6e0a-3d73-470b" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Unflinching Example" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="02d7-4b39-5537-b626">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative incapacitates a ready enemy operative within its control range, you gain 1 Faith point, or 2 Faith points if that enemy operative had a Wounds stat of 12 or more.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Glorious Hymnal" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="73ec-60fc-41a0-9ef9">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">**SUPPORT**. Whenever a friendly **NOVITIATE** operative is within 3&quot; of this operative, that friendly operative’s weapons have the Severe weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Preceptor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="f249-f511-ae9b-6cdd">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5581-6b20-ff18-dd78" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="5581-6b20-ff18-dd78">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pronatus" hidden="false" id="7ad5-e2e3-c03e-9941">
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="5c90-34e2-b7d9-08aa" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="9fa0-9354-a8b3-1ac0" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="b0ee-bc6e-e177-ac3d" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Pronatus" hidden="false" id="d44e-4500-94e1-46d8" targetId="27e2-95a3-d51c-50ae" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="4aa0-8178-807e-1e1a" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Pronatus" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1ee0-3658-6678-c515">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Relic Seeker" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="f263-0a8f-0336-abb4">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once during each of this operative’s activations, it can perform the **Pick Up Marker**, **Place Marker** or a mission action for 1 less AP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Divine Acquisition" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2205-ced9-50b4-1510">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, when this operative performs a mission action that requires it to control an objective or mission marker, you gain a number of Faith points equal to the turning point number.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="b2b1-8710-8ab0-6d5e" type="selectionEntry" targetId="8bfb-53ba-eac4-852f"/>
+        <entryLink import="true" name="Gun butt" hidden="false" id="f9df-90b1-aa0f-ceba" type="selectionEntry" targetId="f9c9-b63c-f213-5967"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="3ce1-1f68-0d11-0f6e" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="3ce1-1f68-0d11-0f6e">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Purgatus" hidden="false" id="b511-0dd2-e61a-51ae">
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="95f8-3eba-6597-044c" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="d0e0-23da-3481-4699" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="4b10-0be4-365c-828f" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Purgatus" hidden="false" id="c4a3-bf5b-1331-4963" targetId="82cf-445e-abdc-9b65" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="cfea-2bcd-d447-4aa1" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="0f7f-569c-f146-a0c9" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="0f7f-569c-f146-a0c9">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Purgatus" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="fe72-e69c-6a0f-9ea0">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Purge with Flame" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="6fa0-3bbe-91c1-1f2a">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, you can use the Inferno firefight ploy for 0CP if this is the specified friendly **NOVITIATE** operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gun butt" hidden="false" id="e949-1841-24bd-697e" type="selectionEntry" targetId="f9c9-b63c-f213-5967"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ministorum flamer" hidden="false" id="5d72-e57d-92f2-5ea9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95dc-0e66-c62a-094b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95dc-0e66-c62a-094b-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ministorum flamer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c2dc-02d8-6ee8-59bc">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Saturate, Torrent 2&quot;</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Saturate" id="b380-24ab-5ab9-ce63" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+            <infoLink name="Range x" id="d73e-83c0-3080-be6a" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Torrent x" id="ccae-26ff-a394-c4ff" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Reliquarius" hidden="false" id="b660-1bb6-615b-6d34">
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="ec37-4e7c-8f33-cfe5" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="eee3-8cc7-1547-af22" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="8410-5e36-2e4c-465b" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Reliquarius" hidden="false" id="4670-7c4c-3191-6942" targetId="5b2e-367b-3686-831b" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="1e73-85d8-cb9f-64f6" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Reliquarius" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2f38-47f9-c4f3-c60d">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Icon Bearer" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8064-ef63-c6ff-5a14">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever determining control of a marker, treat this operative’s APL stat as 1 higher. Note this isn’t a change to its APL stat, so any changes are cumulative with this.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Raise Icon (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="edb3-91a0-f34c-877d">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ You gain 1 Faith point. If this operative controls an objective marker, you also gain a number of Faith points equal to the turning point number.
+◆ This operative can only perform this action once per turning point, and cannot perform it while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="f4e2-181a-e4d3-40c4" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="f4e2-181a-e4d3-40c4">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="2ec3-4b34-9caf-f6cf" type="selectionEntry" targetId="8bfb-53ba-eac4-852f"/>
+        <entryLink import="true" name="Gun butt" hidden="false" id="005d-3eeb-9f27-456f" type="selectionEntry" targetId="f9c9-b63c-f213-5967"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Militant" hidden="false" id="a6a8-2500-76d4-5bbc">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="81cb-ebed-6b3f-430f" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="9" field="81cb-ebed-6b3f-430f">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="c615-8e44-fdf5-c070" hidden="false" defaultSelectionEntryId="none">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Autopistol; Novitiate blade" hidden="false" id="5520-dea5-0eb8-3f2c">
+              <entryLinks>
+                <entryLink import="true" name="Autopistol" hidden="false" id="1277-f825-0dd5-87e1" type="selectionEntry" targetId="8bfb-53ba-eac4-852f"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Novitiate blade" hidden="false" id="e0ab-7846-84d6-ca47">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b71-4b9c-11c7-8946-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b71-4b9c-11c7-8946-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⚔ Novitiate blade" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6ea4-6ef4-437e-cdb4">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Autogun; gun butt" hidden="false" id="868e-556b-fce7-23df">
+              <entryLinks>
+                <entryLink import="true" name="Gun butt" hidden="false" id="218e-936a-169f-7b11" type="selectionEntry" targetId="f9c9-b63c-f213-5967"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Autogun" hidden="false" id="644c-1d3c-7fea-de91">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a819-f76c-c7a4-9780-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a819-f76c-c7a4-9780-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⌖ Autogun" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="819e-d857-7c68-7bde">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a488-f96f-200d-c1c2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a488-f96f-200d-c1c2-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Militant Faith" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="ee9e-d872-bb4e-29de">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is shooting, fighting or retaliating, if you use an ACT OF FAITH during that sequence and an enemy operative is incapacitated, the Faith points spent on that ACT OF FAITH are refunded. If you use the Icon of Faith equipment, Faith points are only refunded for one of those ACTS OF FAITH (your choice).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Novitiate" hidden="false" id="bec0-71cb-06da-7b84" targetId="7477-9e9b-b690-a35c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="a762-50ac-9dae-1552" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adepta Sororitas" hidden="false" id="c79e-4626-7ce7-2345" targetId="9d50-2b57-680c-b8bd" primary="false"/>
+        <categoryLink name="Militant" hidden="false" id="5f41-68cb-41f9-8d8e" targetId="1c01-0a40-477e-722f" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="fcd9-b53a-04bb-cbe6" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Novitiate" id="7477-9e9b-b690-a35c" hidden="false"/>
+    <categoryEntry name="Adepta Sororitas" id="9d50-2b57-680c-b8bd" hidden="false"/>
+    <categoryEntry name="Superior" id="7578-9b9e-4e3c-abf9" hidden="false"/>
+    <categoryEntry name="Condemnor" id="cfa4-5cc8-d6ce-a5f2" hidden="false"/>
+    <categoryEntry name="Dialogus" id="107d-1185-1186-ff8e" hidden="false"/>
+    <categoryEntry name="Duellist" id="beef-ee58-e6fa-3511" hidden="false"/>
+    <categoryEntry name="Exactor" id="905b-21d1-7f3d-f3fa" hidden="false"/>
+    <categoryEntry name="Hospitaller" id="bf7f-16fe-b466-04a1" hidden="false"/>
+    <categoryEntry name="Penitent" id="8e95-ab20-d7b3-3457" hidden="false"/>
+    <categoryEntry name="Preceptor" id="b5c9-f688-5605-6ccc" hidden="false"/>
+    <categoryEntry name="Pronatus" id="27e2-95a3-d51c-50ae" hidden="false"/>
+    <categoryEntry name="Purgatus" id="82cf-445e-abdc-9b65" hidden="false"/>
+    <categoryEntry name="Reliquarius" id="5b2e-367b-3686-831b" hidden="false"/>
+    <categoryEntry name="Militant" id="1c01-0a40-477e-722f" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="091b-3b27-c0cf-c29a">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50be-ddc1-289c-4fdb-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50be-ddc1-289c-4fdb-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Power weapon" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6a1e-0340-ade7-2267">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lethal x+" id="8559-80ad-b76b-ad9e" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="8bfb-53ba-eac4-852f">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="188b-4b08-c6f3-3b8d-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="188b-4b08-c6f3-3b8d-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Autopistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="252e-1b84-d7e5-2e67">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="4855-c948-dc75-a925" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gun butt" hidden="false" id="f9c9-b63c-f213-5967">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bfd1-5987-0663-d1f7-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfd1-5987-0663-d1f7-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Gun butt" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="31e8-d6cb-678a-6214">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <forceEntries>
+    <forceEntry name="Novitiate Kill Team" id="b536-36d1-bca2-7f56" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="72e3-bab7-b2df-e90c" targetId="874b-0390-e5e2-1daa" type="category"/>
+        <categoryLink name="Reference" hidden="false" id="c460-606f-2c04-843f" targetId="b318-a8d7-2d38-99a3" type="category"/>
+        <categoryLink name="Leader" hidden="false" id="d9c0-efb6-5990-ba5d" targetId="d999-8cad-8145-4efe" type="category"/>
+        <categoryLink name="Operative" hidden="false" id="c490-1df2-c710-02c0" targetId="cf83-4496-b58e-ac82" type="category">
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="force" shared="true" id="e171-5c04-216c-fa3c-min" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="force" shared="true" id="e171-5c04-216c-fa3c-max" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedProfiles>
+    <profile name="*Anti-PSYKER" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8179-a985-6a80-524b">
+      <characteristics>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this weapon is being used against an operative that has the **PSYKER** keyword, add 1 to both Dmg stats of this weapon and it has the Lethal 5+ weapon rule.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="8737-5b71-4951-1ca8" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Faction Equipment" id="a3fc-1e3b-b8ac-d74e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Icon of Faith" hidden="false" id="d4e9-fe58-4484-ef0a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1166-a0c1-ef8f-627b" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Icon of Faith" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="97bc-26cc-2172-557f">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, you can use up to two ACTS OF FAITH during a sequence, but each one must be different. This takes precedence over the normal ACTS OF FAITH rules.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sanctified Rounds" hidden="false" id="fec8-a704-1d4e-1787">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eba0-6659-704e-d08d" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sanctified Rounds" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="d19a-0f52-5437-2d65">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever a friendly **NOVITIATE** operative is shooting with an autogun, autopistol, relic bolt pistol or relic boltgun, if you spend a Faith point, that weapon has the Piercing Crits 1 weapon rule until the end of that sequence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Auto-chastisers" hidden="false" id="a027-3ed4-ca15-e027">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5080-dd80-f1aa-e4f4" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Auto-chastisers" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="485f-f94c-506f-3aaf">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly NOVITIATE operative is shooting, fighting or retaliating, in the Roll Attack Dice step, you can inflict 1-3 damage on that friendly operative (but not enough to incapacitate it). If you do, you can use one ACT OF FAITH for free during that sequence with a Faith points cost no more than the damage you inflicted from this rule.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Holy Embrocations" hidden="false" id="4673-128f-1569-0af6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccda-3b80-eded-8ed4" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Holy Embrocations" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="ec8a-9faa-8be7-8e2b">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">You can ignore any changes to the Move stat of friendly NOVITIATE operatives from being injured.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+  </entryLinks>
+</catalogue>
