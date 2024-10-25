@@ -4,7 +4,18 @@
     <categoryEntry name="Operative" id="cf83-4496-b58e-ac82"/>
     <categoryEntry name="Configuration" id="874b-0390-e5e2-1daa" hidden="false"/>
     <categoryEntry name="Reference" id="b318-a8d7-2d38-99a3" hidden="false"/>
-    <categoryEntry name="Leader" id="d999-8cad-8145-4efe" hidden="false"/>
+    <categoryEntry name="Leader" id="d999-8cad-8145-4efe" hidden="false">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8ad5-5962-2fcc-4b72" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="8ad5-5962-2fcc-4b72">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry name="Aeldari" id="25a4-f061-4504-4920" hidden="false"/>
     <categoryEntry name="Astra Militarum" id="6361-ec46-c5e5-cbe9" hidden="false"/>
     <categoryEntry name="Chaos" id="13fe-a54f-f2f2-f034" hidden="false"/>
