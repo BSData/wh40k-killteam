@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="899f-9e21-612d-19d2" name="Hand of the Archon" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Kill Team" id="b010-aaaa-9f6d-e7c6" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="4629-cd4d-0141-2841" targetId="874b-0390-e5e2-1daa" type="category"/>
+        <categoryLink name="Reference" hidden="false" id="b328-e288-f839-f426" targetId="b318-a8d7-2d38-99a3" type="category"/>
+        <categoryLink name="Leader" hidden="false" id="201f-8d31-c06a-3bfc" targetId="d999-8cad-8145-4efe" type="category"/>
+        <categoryLink name="Operative" hidden="false" id="3e28-a717-c4ed-8f34" targetId="cf83-4496-b58e-ac82" type="category">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="fb1d-e060-c4f2-e7c6-min" includeChildSelections="false"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="fb1d-e060-c4f2-e7c6-max" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <rules>
+    <rule name="Power from Pain" id="2bfb-60f9-baae-5f31" hidden="false">
+      <description>After a friendly HAND OF THE ARCHON operative performs an action, it gains one of your Pain tokens if: 
+- An enemy operative was injured during that action, but was not incapacitated.
+- An enemy operative was incapacitated during that action. If that enemy operative had a Wounds stat of 12 or more, that friendly operative gains two of your Pain tokens instead. 
+
+
+You can spend friendly operatives’ Pain tokens on the invigorations below when the ‘when’ condition is met. You cannot use more than one invigoration per activation or counteraction, except Stimulated Senses, which can be used in addition to other invigorations. 
+
+
+**Dark Animus**
+When: During the operative’s activation, before or after it performs an action.
+Effect: Until the start of the operative’s next activation, add 1 to its APL stat. 
+
+
+**Accelerated Rejuvenation**
+When: During the operative’s activation or counteraction, before or after it performs an action. 
+Effect: The operative regains D3+1 lost wounds. 
+
+
+**Vitalised Surge**
+When: After the operative incapacitates an enemy operative and that enemy operative is removed from the killzone. 
+Effect: The operative can immediately perform a free **Dash** action, even if it’s performed an action that prevents it from performing the **Dash** action.
+
+
+**Stimulated Senses**
+When: After rolling your attack or defence dice for the operative.
+Effect: You can re-roll any of your dice results of one result (e.g. results of 2).</description>
+    </rule>
+  </rules>
+  <sharedRules>
+    <rule name="Rifles" id="d0cb-323f-d80a-39bb" hidden="false">
+      <description>Whenever a friendly HAND OF THE ARCHON operative is shooting with a splinter rifle during an activation in which it hasn’t performed the **Charge**, **Fall Back** or **Reposition** action, that weapon has the Accurate 1 weapon rule. Note that operative isn’t restricted from performing those actions after shooting.</description>
+    </rule>
+  </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Archsybarite" hidden="false" id="b5b6-1c97-d93e-133f">
+      <categoryLinks>
+        <categoryLink name="Hand of the Archon" hidden="false" id="5750-5b2d-7598-5268" targetId="90c5-a2ce-8ac6-40f9" primary="false"/>
+        <categoryLink name="Aeldari" hidden="false" id="ed54-cd0b-6604-a125" targetId="25a4-f061-4504-4920" primary="false"/>
+        <categoryLink name="drukhari" hidden="false" id="351e-8e54-321e-57be" targetId="f319-8e52-b6aa-066e" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="a91c-bdb5-ad71-35cb" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Archsybarite" hidden="false" id="c7ed-3faf-ae1c-4d03" targetId="2760-39f9-a016-8882" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="1ad4-6e6d-8eed-6b52" hidden="false" defaultSelectionEntryId="none">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="adb3-a3f8-f5ee-d3f6-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adb3-a3f8-f5ee-d3f6-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blast pistol; venom blade" hidden="false" id="ea20-fcc6-0c3d-8199">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Blast pistol" hidden="false" id="5041-b105-cf81-acfb">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0818-b1e8-1020-48f1-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0818-b1e8-1020-48f1-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⌖ Blast pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="60af-b46a-f455-1099">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Piercing 2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Range x" id="8998-ef68-6c85-9691" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                    <infoLink name="Piercing x" id="8b28-b1c6-115b-4661" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink name="Darklight weapons" hidden="false" id="4c89-68ee-7e79-55bb" targetId="5e3b-9d73-77c8-78a4" primary="false"/>
+                  </categoryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Venom blade" hidden="false" id="29e0-0176-6c15-2a9e" type="selectionEntry" targetId="2dde-8dc4-f378-bcd4"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Splinter pistol; venom blade" hidden="false" id="5be3-98ad-9caf-338a">
+              <entryLinks>
+                <entryLink import="true" name="Venom blade" hidden="false" id="0312-b930-8e98-5ed4" type="selectionEntry" targetId="2dde-8dc4-f378-bcd4"/>
+                <entryLink import="true" name="Splinter pistol" hidden="false" id="194c-bcfe-5f54-64a2" type="selectionEntry" targetId="f698-f1ac-f021-8cfa"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Splinter pistol; agoniser" hidden="false" id="2b99-b7cb-ab3c-0864">
+              <entryLinks>
+                <entryLink import="true" name="Splinter pistol" hidden="false" id="af74-37ef-52d5-bdc1" type="selectionEntry" targetId="f698-f1ac-f021-8cfa"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Agoniser" hidden="false" id="4010-05ae-1402-8b29">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30fb-b811-6af7-e36e-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30fb-b811-6af7-e36e-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⚔ Agoniser" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="74ea-fbae-9d0e-bbac">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal, Lethal 5+, Shock</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Brutal" id="6baa-8275-6475-f916" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+                    <infoLink name="Shock" id="49d1-e5c2-6693-a303" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+                    <infoLink name="Lethal x+" id="d8d5-782c-725a-0d2f" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Splinter pistol; power weapon" hidden="false" id="6fde-22ac-ab8c-7245">
+              <entryLinks>
+                <entryLink import="true" name="Splinter pistol" hidden="false" id="7766-d4a6-7745-4332" type="selectionEntry" targetId="f698-f1ac-f021-8cfa"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="d976-eb10-a5c4-5d89">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d2f-eba3-701d-b03d-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d2f-eba3-701d-b03d-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⚔ Power weapon" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e5e5-cc11-0557-a575">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Lethal x+" id="3467-9d63-513c-f48d" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Splinter rifle; array of blades" hidden="false" id="3253-4c28-7d19-a230">
+              <infoLinks>
+                <infoLink name="Rifles" id="9a0b-eef9-61db-a431" hidden="false" type="rule" targetId="d0cb-323f-d80a-39bb"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Splinter rifle" hidden="false" id="979b-035b-1971-1ac3" type="selectionEntry" targetId="908e-e93b-13a9-868a"/>
+                <entryLink import="true" name="Array of blades" hidden="false" id="d0f2-be58-ca07-9d0a" type="selectionEntry" targetId="9da3-c0f5-202b-9926"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Cunning" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8b2f-8d92-8edd-69c4">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">In the Gambit step of each Strategy phase, if you pass at the first opportunity, you gain 1CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Archsybarite" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="0177-395a-e0a0-2037">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="e909-f0a4-8016-f1af" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="e909-f0a4-8016-f1af">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b010-aaaa-9f6d-e7c6" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Agent" hidden="false" id="9438-6920-3cec-5704">
+      <categoryLinks>
+        <categoryLink name="Hand of the Archon" hidden="false" id="6a66-9927-6123-00cc" targetId="90c5-a2ce-8ac6-40f9" primary="false"/>
+        <categoryLink name="Aeldari" hidden="false" id="456e-1df2-40ec-87af" targetId="25a4-f061-4504-4920" primary="false"/>
+        <categoryLink name="Drukhari" hidden="false" id="9885-f789-1225-4ba2" targetId="f319-8e52-b6aa-066e" primary="false"/>
+        <categoryLink name="Agent" hidden="false" id="7748-208f-627c-7baf" targetId="aa3c-b8f0-1aee-4c0c" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="6d64-63c4-6614-d98c" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="662f-0a1e-f612-5594" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="8" field="662f-0a1e-f612-5594">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b010-aaaa-9f6d-e7c6" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Agent" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="211e-7cad-63af-014c">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sadistic Competition" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="b57b-a58a-73ff-27cb">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, when a friendly HAND OF THE ARCHON operative gains one of your Pain tokens, one friendly HAND OF THE ARCHON **AGENT** operative that doesn’t have one of your Pain tokens can also gain one.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Splinter rifle" hidden="false" id="940f-0b4f-7549-c8b8" type="selectionEntry" targetId="908e-e93b-13a9-868a"/>
+        <entryLink import="true" name="Array of blades" hidden="false" id="360f-8fe9-a664-d7a2" type="selectionEntry" targetId="9da3-c0f5-202b-9926"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Disciple of Yaelindra" hidden="false" id="ca23-4866-7621-3003">
+      <profiles>
+        <profile name="Disciple of Yaelindra" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="8937-1988-5884-4410">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="*Stinger" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="c0e9-ae66-b9ad-edd9">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an enemy operative is incapacitated by this weapon, before it’s removed from the killzone, inflict D3 damage on each other operative visible to and within 2&quot; of it. Each operative subsequently incapacitated as a result of this weapon rule will cause this to happen again</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Torment Grenade (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="8b17-3a2f-940f-3dc1">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to and within 6&quot; of this operative. That operative and each other operative within 1&quot; of it takes a poison test. For an operative to take a poison test, roll one D6, adding 1 to the result if that operative has a Save stat of 4+ or worse: on a 3+, inflict D3 damage on that operative and it gains one of your Poison tokens (if it doesn’t already have one).
+▶ Whenever an operative that has one of your Poison tokens is activated, inflict D3 damage on it.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="875b-1301-fa2f-3fcf" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="875b-1301-fa2f-3fcf">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b010-aaaa-9f6d-e7c6" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Stinger pistol" hidden="false" id="85d5-086f-1593-75c6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8820-5bcc-749d-98d1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8820-5bcc-749d-98d1-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Stinger pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3ec7-150f-f29e-7a5b">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Lethal 5+, Stinger*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="*Stinger" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="b7cb-b667-8c20-e9c8">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an enemy operative is incapacitated by this weapon, before it’s removed from the killzone, inflict D3 damage on each other operative visible to and within 2&quot; of it. Each operative subsequently incapacitated as a result of this weapon rule will cause this to happen again</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="fab6-7f7f-0d8f-aca7" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Lethal x+" id="aabe-8f24-d65e-eb4e" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Array of blades" hidden="false" id="f17a-47fe-9bab-ecf8" type="selectionEntry" targetId="9da3-c0f5-202b-9926"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Hand of the Archon" hidden="false" id="cafe-04ee-c6d7-a938" targetId="90c5-a2ce-8ac6-40f9" primary="false"/>
+        <categoryLink name="Aeldari" hidden="false" id="0dad-e530-80bb-b005" targetId="25a4-f061-4504-4920" primary="false"/>
+        <categoryLink name="Drukhari" hidden="false" id="0d1e-344e-1bf8-e95f" targetId="f319-8e52-b6aa-066e" primary="false"/>
+        <categoryLink name="Disciple of Yaelindra" hidden="false" id="b84b-3de5-0538-f135" targetId="a50a-702d-53b5-a0b1" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="91e8-aa94-349d-9464" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Crimson Duellist" hidden="false" id="a9f2-8edd-c5b7-6c89">
+      <categoryLinks>
+        <categoryLink name="Hand of the Archon" hidden="false" id="902c-5284-e15d-999b" targetId="90c5-a2ce-8ac6-40f9" primary="false"/>
+        <categoryLink name="Aeldari" hidden="false" id="6e7e-8d0c-69cc-7d49" targetId="25a4-f061-4504-4920" primary="false"/>
+        <categoryLink name="Drukhari" hidden="false" id="7836-68ed-853f-8a27" targetId="f319-8e52-b6aa-066e" primary="false"/>
+        <categoryLink name="Crimson Duellist" hidden="false" id="fee2-3706-7e85-19ef" targetId="c2c8-41ce-fa3d-b1cf" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="5549-5017-26cc-41f9" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Splinter pistol" hidden="false" id="517c-2cd3-3651-4c04" type="selectionEntry" targetId="f698-f1ac-f021-8cfa"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Crimson Duellist" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="b4e5-03b1-91b2-3d92">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Brutal Display" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="e200-4034-8411-423f">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, when this operative incapacitates an enemy operative within its control range, you can select one other enemy operative visible to and within 6&quot; of either this operative or the incapacitated enemy operative. Until the start of the next turning point, that other enemy operative cannot control markers or perform the Pick Up Marker or mission actions.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Crimson Duellist" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="e350-823a-97be-f364">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">The first time this operative performs the **Fight** action during each of its activations, if neither it nor the enemy operative in that sequence is incapacitated, this operative can immediately perform a free **Fight** action afterwards, but it can only fight against that enemy operative (and only if it’s still valid to fight against). This takes precedence over action restrictions.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Razorflail" hidden="false" id="9b4a-82d9-ed3b-f819">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf75-e4ef-4709-64b5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf75-e4ef-4709-64b5-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Razorflail" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6e8d-4219-a8f9-da52">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal, Tangle*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="*Tangle" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="c222-1348-e00e-77d5">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is fighting or retaliating with this weapon, each of your blocks can be allocated to block two unresolved successes (instead of one).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="8924-65fe-72ff-1d03" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="8924-65fe-72ff-1d03">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b010-aaaa-9f6d-e7c6" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Elixicant" hidden="false" id="0ccb-78dc-8941-d6bf">
+      <categoryLinks>
+        <categoryLink name="Hand of the Archon" hidden="false" id="0aa3-1cd2-5b26-8cb9" targetId="90c5-a2ce-8ac6-40f9" primary="false"/>
+        <categoryLink name="Aeldari" hidden="false" id="a286-5df5-f936-5f81" targetId="25a4-f061-4504-4920" primary="false"/>
+        <categoryLink name="Drukhari" hidden="false" id="c2fa-8963-4a56-a0fe" targetId="f319-8e52-b6aa-066e" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="b30e-a8a4-b779-1f52" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Elixicant" hidden="false" id="5dc7-9153-5b5e-b90b" targetId="2e2e-1473-e9c0-933d" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="2199-d905-b239-590f" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="2199-d905-b239-590f">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b010-aaaa-9f6d-e7c6" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Elixicant" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7a55-1d7e-f2bf-8a9e">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Combat Drugs" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="cd48-503d-632f-c4cc">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">At the end of the Select Operatives step, if this operative is selected for deployment, select one of the following COMBAT DRUG rules for friendly HAND OF THE ARCHON operatives to have for the battle: 
+
+
+- Painbringer: Whenever an attack dice inflicts damage of 3 or more on this operative, roll one D6: on a 6, subtract 1 from that inflicted damage. 
+- Adrenalight: STRATEGIC GAMBIT. Select one friendly operative that has this COMBAT DRUG to gain one of your Pain tokens.
+- Hypex: You can ignore any changes to this operative’s Move stat from being injured.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Administer Drug (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="7d3c-2612-e0e5-7321">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly HAND OF THE ARCHON operative visible to and within 3&quot; of this operative, then select one of the following for that friendly operative:
+- It regains 2D3 lost wounds. 
+- Select a different COMBAT DRUG rule for it to have for the battle (this replaces its previous one).
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Splinter rifle" hidden="false" id="dc6d-3d03-79da-6761" type="selectionEntry" targetId="908e-e93b-13a9-868a"/>
+        <entryLink import="true" name="Array of blades" hidden="false" id="cd05-13f1-f3d0-27cf" type="selectionEntry" targetId="9da3-c0f5-202b-9926"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Stim-needler" hidden="false" id="0f00-a660-48ec-847a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3dd-46ab-572f-0f57-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3dd-46ab-572f-0f57-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Stim-needler" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="9703-9f05-5c48-72a0">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">0/0</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 3&quot;, Lethal 3+, Stun</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="a642-4062-ccf5-8808" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Stun" id="b31c-122e-5426-a7e9" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
+            <infoLink name="Lethal x+" id="5fc6-2d59-c03e-cb72" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Flayer" hidden="false" id="9388-c0f8-7ca2-db35">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="7f58-07a9-59e6-2178" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="7f58-07a9-59e6-2178">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b010-aaaa-9f6d-e7c6" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Flayer" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2863-41a5-890b-44a0">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Pain sculptors" hidden="false" id="9f75-9489-6a8c-6613">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2c0-d04c-1e43-471f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2c0-d04c-1e43-471f-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Pain sculptors" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4274-7c5e-ec4d-d11a">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Flay*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="*Flay" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="f0dd-6c76-2a05-f688">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is using this weapon, the first time you strike with a critical success during that sequence, you can select one friendly HAND OF THE ARCHON operative within 6&quot; of it to gain one of your Pain tokens.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="c640-82de-02b8-0982" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Hand of the Archon" hidden="false" id="a7f0-7655-bca5-d86b" targetId="90c5-a2ce-8ac6-40f9" primary="false"/>
+        <categoryLink name="Aeldari" hidden="false" id="54f6-954e-91b4-2b85" targetId="25a4-f061-4504-4920" primary="false"/>
+        <categoryLink name="Drukhari" hidden="false" id="c194-e25f-8a09-5448" targetId="f319-8e52-b6aa-066e" primary="false"/>
+        <categoryLink name="Flayer" hidden="false" id="ff5b-5ffd-4ece-addd" targetId="151c-a05e-fdc2-ab0d" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="ddef-3410-1f19-719d" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gunner" hidden="false" id="f829-4376-f37a-8ddd">
+      <categoryLinks>
+        <categoryLink name="Hand of the Archon" hidden="false" id="6d52-b19f-fc35-35f7" targetId="90c5-a2ce-8ac6-40f9" primary="false"/>
+        <categoryLink name="Aeldari" hidden="false" id="888a-297c-0264-32bc" targetId="25a4-f061-4504-4920" primary="false"/>
+        <categoryLink name="Drukhari" hidden="false" id="c810-e955-c43d-f868" targetId="f319-8e52-b6aa-066e" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="f41c-d77e-25c0-fb97" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Gunner" hidden="false" id="88b6-0b18-60e8-308a" targetId="3033-7558-d28f-53cf" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="e61a-ae7f-0ca3-51a0" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="e61a-ae7f-0ca3-51a0">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b010-aaaa-9f6d-e7c6" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Agent" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="b2b7-246c-e34a-1388">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Array of blades" hidden="false" id="506f-9c39-ac16-13de" type="selectionEntry" targetId="9da3-c0f5-202b-9926"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="d511-c081-a366-f5d3" hidden="false" defaultSelectionEntryId="none">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec24-a0ee-27b8-edfe-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec24-a0ee-27b8-edfe-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shredder" hidden="false" id="208a-dcd4-6826-8267">
+              <profiles>
+                <profile name="⌖ Shredder" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7115-e439-7337-8c15">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rending, Torrent 2&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rending" id="d4d7-9f01-9dbf-71a0" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+                <infoLink name="Torrent x" id="90ad-7c2a-914f-fe29" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blaster" hidden="false" id="af71-97c5-9ae6-a1cc">
+              <profiles>
+                <profile name="⌖ Blaster" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="bf1b-5e37-45fd-d188">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Piercing x" id="7797-43ab-c746-810d" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Darklight weapons" hidden="false" id="c1c4-48ec-a986-5493" targetId="5e3b-9d73-77c8-78a4" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Heavy Gunner" hidden="false" id="a057-82d3-f339-f124">
+      <categoryLinks>
+        <categoryLink name="Hand of the Archon" hidden="false" id="50d7-02ab-86fb-6c1c" targetId="90c5-a2ce-8ac6-40f9" primary="false"/>
+        <categoryLink name="Aeldari" hidden="false" id="9c0f-9091-89ba-35ed" targetId="25a4-f061-4504-4920" primary="false"/>
+        <categoryLink name="Drukhari" hidden="false" id="27f6-1a0d-2449-5e6c" targetId="f319-8e52-b6aa-066e" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="9364-9392-8e20-5373" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Heavy Gunner" hidden="false" id="acd7-d9df-ddf1-2cd4" targetId="73b9-55cd-a334-d65c" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="e06d-ec7e-797a-0344" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="e06d-ec7e-797a-0344">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b010-aaaa-9f6d-e7c6" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Agent" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="92dc-d4e1-c4eb-4bcf">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Array of blades" hidden="false" id="815c-f384-0321-844c" type="selectionEntry" targetId="9da3-c0f5-202b-9926"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="f308-0046-a427-9c23" hidden="false" defaultSelectionEntryId="none">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2406-bb22-74d8-f72e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2406-bb22-74d8-f72e-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Splinter cannon" hidden="false" id="26e5-1854-ed22-9754">
+              <profiles>
+                <profile name="⌖ Splinter cannon (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5a94-2701-3673-33a7">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Lethal 5+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Splinter cannon (sweeping)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0a28-0161-8bdf-c31a">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Lethal 5+, Torrent 1&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Heavy" id="bf9c-a349-073d-8aec" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+                <infoLink name="Torrent x" id="a8cc-5955-b564-5ae1" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+                <infoLink name="Lethal x+" id="ab61-2c6c-6d2c-fc96" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dark lance" hidden="false" id="38f5-c739-c488-f7d1">
+              <profiles>
+                <profile name="⌖ Dark lance" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0b2a-b7f3-a1ef-09f0">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">6/7</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Piercing 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Piercing x" id="812a-bba3-70fc-4399" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                <infoLink name="Heavy" id="8baf-ed27-6427-2e4c" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Darklight weapons" hidden="false" id="65be-ccb5-92ad-c6ef" targetId="5e3b-9d73-77c8-78a4" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Skysplinter Assassin" hidden="false" id="45dc-bfd5-b7da-dd6c">
+      <categoryLinks>
+        <categoryLink name="Hand of the Archon" hidden="false" id="2e18-7c96-854f-e1dc" targetId="90c5-a2ce-8ac6-40f9" primary="false"/>
+        <categoryLink name="Aeldari" hidden="false" id="0b74-008f-79e9-faf0" targetId="25a4-f061-4504-4920" primary="false"/>
+        <categoryLink name="Drukhari" hidden="false" id="773d-0a02-4fb6-6200" targetId="f319-8e52-b6aa-066e" primary="false"/>
+        <categoryLink name="Skysplinter Assassin" hidden="false" id="d7ea-051a-b411-4056" targetId="a010-24c8-a0e8-2631" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="f4f8-79b4-cde5-f6d7" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Array of blades" hidden="false" id="7019-2c66-6406-ebf8" type="selectionEntry" targetId="9da3-c0f5-202b-9926"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Shardcarbine" hidden="false" id="b64c-171e-3472-1c69">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f77-ef56-8de4-f5fb-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f77-ef56-8de4-f5fb-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Shardcarbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8d92-a11e-cdd0-73f5">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/2</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 2, Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastating x" id="5845-af32-2138-b9cf" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Lethal x+" id="1b69-bdb9-2b1a-43b9" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Razorwing" hidden="false" id="9664-182e-955d-4330">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f756-1e4b-e72b-1467-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f756-1e4b-e72b-1467-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Razorwing" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3319-3219-237c-00fb">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/2</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Saturate, Seek, Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Seek" id="01ac-fe4a-4501-a2f9" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
+            <infoLink name="Silent" id="5bf3-6300-a99e-1df0" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+            <infoLink name="Saturate" id="3b1b-9b38-428b-55f6" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Omen" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8fa9-bd18-b765-4cdf">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">In the Select Operatives step, when you’re selecting equipment, you can select one enemy operative or one other friendly HAND OF THE ARCHON operative (reveal your selection when you reveal equipment). Whenever attack or defence dice are rolled for that operative:
+- If it’s an enemy operative, your opponent must re-roll their dice results of 6. 
+- If it’s a friendly operative, you can re-roll any of your dice results of 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Merciless Hunter" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="e19d-3443-612f-beb6">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">If this operative doesn’t perform the **Mark** unique action (see right) during its activation, it can perform two **Shoot** actions during its activation, but a razorwing must be selected for one (and only one) of those actions.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Skysplinter Assassin" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="c559-3f2b-d57c-7d6a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mark (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="1742-d7a4-be92-5ff1">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. Until the end of the turning point, whenever this operative is shooting that enemy operative you can use this effect. If you do: 
+- This operative’s ranged weapons have the Seek Light weapon rule.
+- That enemy operative cannot be obscured.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="538c-a761-5b6c-c3a3" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="538c-a761-5b6c-c3a3">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b010-aaaa-9f6d-e7c6" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+  </selectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Hand of the Archon" id="90c5-a2ce-8ac6-40f9" hidden="false"/>
+    <categoryEntry name="Drukhari" id="f319-8e52-b6aa-066e" hidden="false"/>
+    <categoryEntry name="Archsybarite" id="2760-39f9-a016-8882" hidden="false"/>
+    <categoryEntry name="Agent" id="aa3c-b8f0-1aee-4c0c" hidden="false"/>
+    <categoryEntry name="Disciple of Yaelindra" id="a50a-702d-53b5-a0b1" hidden="false"/>
+    <categoryEntry name="Crimson Duellist" id="c2c8-41ce-fa3d-b1cf" hidden="false"/>
+    <categoryEntry name="Elixicant" id="2e2e-1473-e9c0-933d" hidden="false"/>
+    <categoryEntry name="Flayer" id="151c-a05e-fdc2-ab0d" hidden="false"/>
+    <categoryEntry name="Skysplinter Assassin" id="a010-24c8-a0e8-2631" hidden="false"/>
+    <categoryEntry name="Darklight weapons" id="5e3b-9d73-77c8-78a4" hidden="true">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="25fc-0226-aac7-1be2" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="25fc-0226-aac7-1be2">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b010-aaaa-9f6d-e7c6" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Venom blade" hidden="false" id="2dde-8dc4-f378-bcd4">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="876b-e738-1012-dc62-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="876b-e738-1012-dc62-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Venom blade" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a2be-1c7d-6906-4397">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lethal x+" id="ff87-afda-820b-2ad2" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Splinter pistol" hidden="false" id="f698-f1ac-f021-8cfa">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1aa5-731b-d13f-e425-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1aa5-731b-d13f-e425-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Splinter pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2587-563b-9f80-2b47">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Lethal 5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="455f-4327-5d31-9aba" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+        <infoLink name="Lethal x+" id="12d9-e407-40dd-45ea" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Splinter rifle" hidden="false" id="908e-e93b-13a9-868a">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd8a-d476-a3c7-ffd1-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd8a-d476-a3c7-ffd1-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Splinter rifle" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1f9a-948e-d9d4-56f6">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lethal x+" id="b70e-315b-8a40-6556" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Array of blades" hidden="false" id="9da3-c0f5-202b-9926">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="352f-e383-c683-6d76-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="352f-e383-c683-6d76-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Array of blades" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7b4a-331f-5f48-8e2e">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
