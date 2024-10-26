@@ -4,7 +4,18 @@
     <categoryEntry name="Operative" id="cf83-4496-b58e-ac82"/>
     <categoryEntry name="Configuration" id="874b-0390-e5e2-1daa" hidden="false"/>
     <categoryEntry name="Reference" id="b318-a8d7-2d38-99a3" hidden="false"/>
-    <categoryEntry name="Leader" id="d999-8cad-8145-4efe" hidden="false"/>
+    <categoryEntry name="Leader" id="d999-8cad-8145-4efe" hidden="false">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8ad5-5962-2fcc-4b72" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="8ad5-5962-2fcc-4b72">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry name="Aeldari" id="25a4-f061-4504-4920" hidden="false"/>
     <categoryEntry name="Astra Militarum" id="6361-ec46-c5e5-cbe9" hidden="false"/>
     <categoryEntry name="Chaos" id="13fe-a54f-f2f2-f034" hidden="false"/>
@@ -18,6 +29,7 @@
     <categoryEntry name="Psyker" id="6f95-9b94-d661-3243" hidden="false"/>
     <categoryEntry name="Medic" id="8200-47a2-61fb-5137" hidden="false"/>
     <categoryEntry name="Warrior" id="2b69-f2aa-bd5c-70b2" hidden="false"/>
+    <categoryEntry name="Leagues of Votann" id="a016-36a7-fbed-5668" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Roster" hidden="false" id="default-force">
@@ -212,7 +224,7 @@
           <profiles>
             <profile name="1x Razor Wire" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="9054-805e-9dcb-9075">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Razor wire is Expose and Obstructing terrain. Before the battle, you can set it up wholly within your territory, on the killzone floor and more than 2&quot; from other equipment terrain features.</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Razor wire is Exposed and Obstructing terrain. Before the battle, you can set it up wholly within your territory, on the killzone floor and more than 2&quot; from other equipment terrain features.</characteristic>
               </characteristics>
             </profile>
           </profiles>
