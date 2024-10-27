@@ -3,10 +3,10 @@
   <forceEntries>
     <forceEntry name="Kill Team" id="b010-aaaa-9f6d-e7c6" hidden="false">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="4629-cd4d-0141-2841" targetId="874b-0390-e5e2-1daa" type="category"/>
-        <categoryLink name="Reference" hidden="false" id="b328-e288-f839-f426" targetId="b318-a8d7-2d38-99a3" type="category"/>
-        <categoryLink name="Leader" hidden="false" id="201f-8d31-c06a-3bfc" targetId="d999-8cad-8145-4efe" type="category"/>
-        <categoryLink name="Operative" hidden="false" id="3e28-a717-c4ed-8f34" targetId="cf83-4496-b58e-ac82" type="category">
+        <categoryLink name="Configuration" hidden="false" id="4629-cd4d-0141-2841" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="b328-e288-f839-f426" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Leader" hidden="false" id="201f-8d31-c06a-3bfc" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Operative" hidden="false" id="3e28-a717-c4ed-8f34" targetId="cf83-4496-b58e-ac82">
           <constraints>
             <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="fb1d-e060-c4f2-e7c6-min" includeChildSelections="false"/>
             <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="fb1d-e060-c4f2-e7c6-max" includeChildSelections="false"/>
@@ -55,7 +55,7 @@ Effect: You can re-roll any of your dice results of one result (e.g. results of 
       <categoryLinks>
         <categoryLink name="Hand of the Archon" hidden="false" id="5750-5b2d-7598-5268" targetId="90c5-a2ce-8ac6-40f9" primary="false"/>
         <categoryLink name="Aeldari" hidden="false" id="ed54-cd0b-6604-a125" targetId="25a4-f061-4504-4920" primary="false"/>
-        <categoryLink name="drukhari" hidden="false" id="351e-8e54-321e-57be" targetId="f319-8e52-b6aa-066e" primary="false"/>
+        <categoryLink name="Drukhari" hidden="false" id="351e-8e54-321e-57be" targetId="f319-8e52-b6aa-066e" primary="false"/>
         <categoryLink name="Leader" hidden="false" id="a91c-bdb5-ad71-35cb" targetId="d999-8cad-8145-4efe" primary="true"/>
         <categoryLink name="Archsybarite" hidden="false" id="c7ed-3faf-ae1c-4d03" targetId="2760-39f9-a016-8882" primary="false"/>
       </categoryLinks>
@@ -854,4 +854,62 @@ Effect: You can re-roll any of your dice results of one result (e.g. results of 
       </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="d506-6ce5-0a53-2063" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Faction Equipment" id="31eb-6a25-99f5-bf95" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chain Snare" hidden="false" id="9a71-2718-b58c-160c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f07-7f1c-4577-cf44" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Chain Snare" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="df36-f1c6-fa3f-3364">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever an enemy operative would perform the **Fall Back** action while within control range of a friendly HAND OF THE ARCHON operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation or counteraction (no AP are spent on it).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wicked Blades" hidden="false" id="31de-d190-9395-4652">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e408-1740-cd6d-422c" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Wicked Blades" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="f854-ac35-2744-fcda">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Add 1 to the Atk stat of friendly HAND OF THE ARCHON operatives’ array of blades.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Toxin Coating" hidden="false" id="8513-6aac-f85a-ea31">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58f2-c42b-1246-57cb" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Toxin Coating" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="64a8-bdc2-2668-1e2d">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Up to twice per turning point, whenever a friendly HAND OF THE ARCHON operative is fighting or retaliating and you’re selecting a melee weapon, you can use this rule. If you do, until the end of that sequence, that operative’s melee weapon has the Lethal 5+ weapon rule.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Refined Poison" hidden="false" id="af22-3a42-0b8b-7b71">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0eea-d63e-b4d2-a44d" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Refined Poison" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="8174-dafb-5cff-6605">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Up to twice per turning point, whenever a friendly HAND OF THE ARCHON operative is performing the Shoot action and you select a shardcarbine, splinter cannon, splinter pistol, splinter rifle or stinger pistol, you can use this rule. If you do, until the end of that action, add 1 to the Normal Dmg stat of that weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+  </entryLinks>
 </catalogue>
