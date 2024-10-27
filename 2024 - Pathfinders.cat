@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="2099-65f1-56cf-d9c0" name="Pathfinders" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <profileTypes>
+    <profileType name="Markerlight Tokens" id="3394-cf2d-5727-164a" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Benefit" id="2847-4422-7864-de3a"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <categoryEntries>
+    <categoryEntry name="Assault Grenadier" id="6b2a-729a-d0c7-6e07" hidden="false"/>
+    <categoryEntry name="Blooded" id="397e-ce2d-6add-9e7a" hidden="false"/>
+    <categoryEntry name="Comms Specialist" id="746d-205b-b5e2-b09b" hidden="false"/>
+    <categoryEntry name="Drone Controller" id="11a4-0e45-640a-6376" hidden="false"/>
+    <categoryEntry name="Marksman" id="7707-b0da-22a2-c0aa" hidden="false"/>
+    <categoryEntry name="MB3 Recon" id="b44f-3991-99c6-f72b" hidden="false"/>
+    <categoryEntry name="Medical Technician" id="fdfa-b47d-d74e-e874" hidden="false"/>
+    <categoryEntry name="MV1 Gun" id="2be6-45e6-393e-3756" hidden="false"/>
+    <categoryEntry name="MV4 Shield" id="40f4-3de2-0602-62d7" hidden="false"/>
+    <categoryEntry name="MV7 Marker" id="e9c1-e605-4ab9-2205" hidden="false"/>
+    <categoryEntry name="MV31 Pulse Accelerator" id="ea6f-c852-b66f-a45a" hidden="false"/>
+    <categoryEntry name="MV33 Grav-inhibitor" id="009b-539b-3f18-bdcb" hidden="false"/>
+    <categoryEntry name="PATHFINDER" id="2264-7983-2036-f5aa" hidden="false"/>
+    <categoryEntry name="Shas&apos;la" id="0018-186d-a0f2-cd57" hidden="false"/>
+    <categoryEntry name="Shas&apos;ui" id="8bd2-268c-8eec-fdf6" hidden="false"/>
+    <categoryEntry name="Transpectral Interference" id="6723-e2e2-45c5-22d8" hidden="false"/>
+    <categoryEntry name="Weapons Expert" id="3c95-fe6f-7405-6b46" hidden="false"/>
+    <categoryEntry name="Drone" id="d561-5c77-1fcc-4d1c" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry name="Pathfinder Kill Team" id="360b-4ca9-276e-9e08" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="7e48-0fa9-062b-02b1" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="2fae-e186-733c-791c" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Leader" hidden="false" id="d73e-d3ca-3ad8-9e0d" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Operative" hidden="false" id="2441-7f1d-ea2e-f214" targetId="cf83-4496-b58e-ac82">
+          <constraints>
+            <constraint type="min" value="11" field="selections" scope="force" shared="true" id="0cd7-d06b-f486-c078" includeChildSelections="false"/>
+            <constraint type="max" value="11" field="selections" scope="force" shared="true" id="abd7-0da3-4021-e5e9" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="0cd7-d06b-f486-c078">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="b44f-3991-99c6-f72b" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <rules>
+    <rule name="Markerlights" id="32e0-ef48-9571-c250" hidden="false">
+      <description>Some **PATHFINDER** operatives (indicated on their datacard) can perform the **Markerlight** unique action:
+
+Once during each of their activations, whenever an enemy operative that has any of your Markerlight tokens performs the **Dash**, **Charge**, **Fall Back** or **Reposition** action, remove one of those tokens.
+
+While only some **PATHFINDER** operatives can perform the *Markerlight** action, all **PATHFINDER** operatives can benefit from its effects. Whenever a friendly **PATHFINDER** operative is shooting with a weapon from its datacard (excluding **ASSAULT GRENADIER’S** fusion grenade), it has additional rules determined by the number of your Markerlight tokens the target has. These are cumulative, so if an enemy operative has two of your  Markerlight tokens, the friendly operative shooting it has the rules for 1 and 2 tokens during that sequence.</description>
+    </rule>
+  </rules>
+  <entryLinks>
+    <entryLink import="true" name="Reference - Markerlights" hidden="false" id="f857-246b-c478-9193" type="selectionEntry" targetId="c5c3-520a-01a8-0793">
+      <categoryLinks>
+        <categoryLink name="Reference" hidden="false" id="ce33-1035-df77-764c" targetId="b318-a8d7-2d38-99a3" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d229-777a-710e-4961-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d229-777a-710e-4961-max" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="bd4d-8b55-59b9-66f1" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Faction Equipment" id="7b3e-68e6-9f04-f609" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Target Analysis Optic" hidden="false" id="cd25-a772-796d-c3e2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e29-dbc5-9942-1757" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Target Analysis Optic" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="79c3-aca2-d478-efac">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly **PATHFINDER** operative (excluding **DRONE**) is performing the **Shoot** action and you’re selecting a valid target, you can use this rule. If you do, until the end of that action, if the target has at least one of your Markerlight tokens, it&apos;s treated as having one more. If the ranged weapon has the Blast or Torrent weapon rule, only the primary target is affected.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Torrent x" id="2e7a-b8a2-123f-11fd" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+                <infoLink name="Blast x" id="fca5-b7e5-235c-51e9" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Orbital Survey Uplink" hidden="false" id="2c96-b00a-f07f-4646">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e0a-d458-2b8a-215a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Orbital Survey Uplink" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="4e79-17d1-df6d-880e">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly **PATHFINDER** operative performs the **Markerlight** action, you can use this rule. If you do, you can select one enemy operative in the killzone to gain one of your Markerlight tokens instead (it doesn’t need to be visible). This isn’t cumulative with the High-intensity Markerlight or Analyse rules.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="High-Intensity Markerlight" hidden="false" id="1b0b-5ebf-e137-5984">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad2c-8a38-b8b2-e80e" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="High-Intensity Markerlight" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="d2d1-8a7d-d422-26d2">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly **PATHFINDER operative (excluding **MV7 MARKER DRONE**) performs the Markerlight action, you can use this rule. If you do, the enemy operative you select gains two of your Markerlight tokens (instead of one).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Photon Grenade" hidden="false" id="7d0b-d334-fbd0-1ff8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94a2-01c4-1dff-1879" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Photon Grenade" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="be44-aba3-8d41-fbec">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, a friendly PATHFINDER operative that has the **Markerlight** action on their datacard (excluding **DRONE**) can perform the following unique action:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Photon Grenade (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="2b3c-b456-6efc-5614">
+                  <characteristics>
+                    <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select a valid target for this operative and roll one D6: on a 3+, until the end of that operative’s next activation, subtract 2&quot; from its Move stat and it cannot perform the **Dash** action.
+◆ An operative cannot perform this action while within control range of an enemy operative.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+  </entryLinks>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Shas&apos;Ui Pathfinder" hidden="false" id="2b35-078c-c691-b99e" defaultAmount="2">
+      <constraints>
+        <constraint type="min" value="-1" field="selections" scope="force" shared="true" id="f38d-34eb-5e8e-53c8-min" includeChildSelections="false"/>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="f38d-34eb-5e8e-53c8-max" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="f38d-34eb-5e8e-53c8-min">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="f38d-34eb-5e8e-53c8-max">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Leader" hidden="false" id="27ba-2c8e-f83f-5d32" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="9b0d-edf5-2c0b-a133" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Shas&apos;ui" hidden="false" id="5edd-8ece-54f5-9c25" targetId="8bd2-268c-8eec-fdf6" primary="false"/>
+        <categoryLink name="PATHFINDER" hidden="false" id="9f0c-b0ee-059a-e0de" targetId="2264-7983-2036-f5aa" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Markerlight" id="19b4-3820-247f-1955" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Pulse carbine" hidden="false" id="f3ad-6550-0ac6-ea98" type="selectionEntry" targetId="3f8b-12ab-5576-1a85" sortIndex="1"/>
+        <entryLink import="true" name="Gun butt" hidden="false" id="6cdc-b1d8-53ab-9c46" type="selectionEntry" targetId="569d-be02-1fb7-04a6" sortIndex="2"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Shas&apos;ui Pathfinder" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="6afa-a0bb-c248-ac06">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">**Art of War**: Once per battle **STRATEGIC GAMBIT**. Select one of the following and apply its rules until the end of the turning point: 
+- **Mont’ka**: Add 1&quot; to the Move stat of friendly **PATHFINDER** operatives. 
+- **Kauyon**: Friendly **PATHFINDER** operatives can perform a free **Markerlight** action during their activation if they have a Conceal order.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shas&apos;ui Pathfinder" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7bd5-a980-bbc4-74d9">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Blooded Pathfinder" hidden="false" id="2dfb-94eb-cedc-2352">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="b957-05a4-cf38-23bd" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="b957-05a4-cf38-23bd">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Suppressed pulse carbine" hidden="false" id="cc96-a4db-de75-e368" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Suppressed pulse carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="161d-d9c8-83e3-6c7f">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Silent" id="9478-7cb7-28e3-dc02" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb94-593d-760a-7d20" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d6f-c68f-b0ba-401d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bionic arm" hidden="false" id="8574-ad2e-cf42-e86a" sortIndex="2">
+          <profiles>
+            <profile name="⚔ Bionic arm" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="fa0a-02fa-427e-ed16">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8be-9572-e398-de5a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8924-81e9-71ba-932a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Veteran" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2699-17a6-2ae9-2301">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">During a turning point in which you have used a friendly **SHAS’UI** operative’s Art of War **STRATEGIC GAMBIT** and you selected Mont’ka, this operative can use Kauyon instead during its activation (and vice versa).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blooded Pathfinder" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="3877-1a53-67c9-38ed">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Markerlight" id="0c55-1bb8-871c-e5a0" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="PATHFINDER" hidden="false" id="050f-f135-0317-7fbd" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="ac7d-6b5b-49f8-3f2e" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="b3e2-9e4a-e115-631e" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Blooded" hidden="false" id="f7d7-28a7-48cc-5f2f" targetId="397e-ce2d-6add-9e7a" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Transpectral Interference Pathfinder" hidden="false" id="2a06-4de4-961e-6464">
+      <categoryLinks>
+        <categoryLink name="PATHFINDER" hidden="false" id="09b1-2f85-e749-c98b" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="e897-4448-e482-5a24" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="eff6-4a76-eb3a-855f" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Transpectral Interference" hidden="false" id="8a99-414f-3f51-c770" targetId="6723-e2e2-45c5-22d8" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="aa09-27b2-435d-2828" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="aa09-27b2-435d-2828">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Transpectral Interference Pathfinder" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="aaeb-c1c6-62ba-5475">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Multi-Dimensional Vision (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b5a3-7bca-f268-1acb">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation, whenever it’s shooting, enemy operatives cannot be obscured.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="System Jam (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="6c44-9069-cf4b-3848">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. Until the end of that operative’s next activation, subtract 1 from its APL stat.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Markerlight" id="a5a2-fd13-05dd-08bb" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Pulse carbine" hidden="false" id="08bf-e8e8-8500-13da" type="selectionEntry" targetId="3f8b-12ab-5576-1a85" sortIndex="1"/>
+        <entryLink import="true" name="Gun butt" hidden="false" id="0f17-aa9b-0ecd-6344" type="selectionEntry" targetId="569d-be02-1fb7-04a6" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Weapons Expert Pathfinder" hidden="false" id="1f68-cea5-d360-6a65" flatten="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="9611-0e7f-b126-b71c" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="9611-0e7f-b126-b71c">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="829d-8214-cb28-1590" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="2dc3-639a-3205-ae3d" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Weapons Expert" hidden="false" id="9789-ed3e-dbfa-cdd5" targetId="3c95-fe6f-7405-6b46" primary="false"/>
+        <categoryLink name="PATHFINDER" hidden="false" id="2361-c1c4-e1b6-9af1" targetId="2264-7983-2036-f5aa" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Weapons Expert Pathfinder" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="411a-7cbe-b580-454c">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="46ce-d4e9-6339-dfd4" hidden="false" defaultSelectionEntryId="none" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rail rifle" hidden="false" id="377a-3576-b212-5297" sortIndex="2">
+              <profiles>
+                <profile name="⌖ Rail rifle" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4491-2060-fc0a-1eaa">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 2, Lethal 5+, Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Devastating x" id="99e1-5333-4a26-d4a3" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+                <infoLink name="Lethal x+" id="1842-71f9-4eb9-e50d" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                <infoLink name="Piercing x" id="ff10-76a4-58ed-bc50" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ion rifle" hidden="false" id="7625-c346-85f7-f6a5" sortIndex="1">
+              <profiles>
+                <profile name="⌖ Ion rifle (overcharge)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="74ad-7373-ad44-cf51">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Hot, Lethal 5+, Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Ion rifle (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="80e4-54a9-3175-fd43">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing Crits 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Hot" id="5947-be67-678b-4ecb" hidden="false" type="rule" targetId="ec63-40e6-6282-8420"/>
+                <infoLink name="Lethal x+" id="83de-691c-705c-4a7a" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                <infoLink name="Piercing x" id="57e4-048c-d72c-4252" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4c9-ccc0-1041-ff24" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a301-95f4-d50e-7655" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Gun butt" hidden="false" id="a763-3d34-2066-4203" type="selectionEntry" targetId="569d-be02-1fb7-04a6" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Assault Grenadier Pathfinder" hidden="false" id="b983-6a8c-6760-c053">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="1fd7-185f-ad6d-77e9" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="1fd7-185f-ad6d-77e9">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Pulse carbine" hidden="false" id="d26d-6216-48a9-57ee" type="selectionEntry" targetId="3f8b-12ab-5576-1a85" sortIndex="2"/>
+        <entryLink import="true" name="Gun butt" hidden="false" id="4641-d415-7680-c5df" type="selectionEntry" targetId="569d-be02-1fb7-04a6" sortIndex="3"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fusion grenade" hidden="false" id="b68e-0c42-ef74-b286" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Fusion grenade" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="dde4-2228-051d-4a83">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Devastating 2, Limited 1, Piercing 2, Saturate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="7a70-0ab4-ec93-70ac" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Devastating x" id="dd56-1a4a-fbee-4506" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Limited x" id="b86f-27a5-9d7a-3b0d" hidden="false" type="rule" targetId="bf37-3388-40d5-eb72"/>
+            <infoLink name="Piercing x" id="ac46-3949-7daf-3f6e" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+            <infoLink name="Saturate" id="d469-7759-a384-df51" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="486d-cb0f-14bc-fb90" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5be5-443d-02c9-f56e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Grenadier Specialist" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="52e0-6172-f1c8-a9a8">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can use frag and krak grenades (see universal equipment). Doing so doesn’t count towards any limited uses you have (i.e. if you also select those grenades from equipment for other operatives). Whenever it’s doing so, improve the Hit stat of that weapon by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Assault Grenadier Pathfinder" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="ba12-664f-5d94-6c16">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Markerlight" id="f74f-6e15-2c34-45f2" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="5543-5348-f18b-04a7" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PATHFINDER" hidden="false" id="c1e4-a82f-95f7-16ef" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="Assault Grenadier" hidden="false" id="b19d-6688-be2f-a992" targetId="6b2a-729a-d0c7-6e07" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Marksman Pathfinder" hidden="false" id="a32c-320c-e816-42dd">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="04c5-086c-c6ad-f85f" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="04c5-086c-c6ad-f85f">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Gun butt" hidden="false" id="a638-9397-2902-2b09" type="selectionEntry" targetId="569d-be02-1fb7-04a6" sortIndex="3"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Marksman rail rifle (standard)" hidden="false" id="e190-ff76-9e91-19aa" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Marksman rail rifle (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="dd8b-e132-90b1-f93a">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 2, Lethal 5+, Piercing 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3958-9b63-0002-942d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bd5-877a-c3ef-30c1" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Devastating x" id="a5ba-b48d-47bb-8282" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Lethal x+" id="9b36-831d-82ee-b02e" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Piercing x" id="530b-75cc-b276-f2cf" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Marksman rail rifle (dart round)" hidden="false" id="bfd0-12d1-3fdb-5e1d" sortIndex="2">
+          <profiles>
+            <profile name="⌖ Marksman rail rifle (dart round)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="23a4-636f-e35b-4caf">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1, Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8031-bbd5-52b2-eec6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e46c-bcd0-6628-86d9" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Piercing x" id="d8d3-052c-c208-1986" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+            <infoLink name="Silent" id="8c3c-2a60-706d-b00e" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Marksman Pathfinder" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="81e9-91ea-e811-7b71">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Inertial Dampener" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="108a-555a-3251-464f">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">You can ignore any changes to the Hit stat of this operative’s marksman rail rifle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="PATHFINDER" hidden="false" id="282c-b6c2-a6f5-9b57" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="bc71-392a-4a66-3edb" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="b8d7-8f64-bcec-327e" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Marksman" hidden="false" id="9981-5bdd-8f41-477a" targetId="7707-b0da-22a2-c0aa" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Comms Specialist Pathfinder" hidden="false" id="a12d-d1b4-b155-9ffc">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="a155-a3a5-b182-cf3c" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="a155-a3a5-b182-cf3c">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Pulse carbine" hidden="false" id="2ca1-94f4-d7a0-8d42" type="selectionEntry" targetId="3f8b-12ab-5576-1a85" sortIndex="1"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="b9bf-d378-3a8d-80b7" sortIndex="2">
+          <profiles>
+            <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6ad7-4dca-89d7-8e8b">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7665-332d-aecb-2718" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c94-15a5-7b08-2163" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Comms Specialist Pathfinder" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="bc98-9956-1abc-c687">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Signal" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b695-e637-518a-3176">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one other friendly **PATHFINDER** operative visible to and within 6&quot; of this operative. Until the end of that operative’s next activation, add 1 to its APL stat.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Markerlight" id="d8b3-7336-9d5a-393e" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="PATHFINDER" hidden="false" id="9de8-b6f1-3579-2d5c" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="40fb-8d91-ebbb-020d" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="df69-d89c-24ae-80e1" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Comms Specialist" hidden="false" id="9300-bdd8-eca3-f559" targetId="746d-205b-b5e2-b09b" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Medical Technician Pathfinder" hidden="false" id="e0be-3b7a-e6ef-1b66">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="10c6-3b39-0609-4f85" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="10c6-3b39-0609-4f85">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Pulse carbine" hidden="false" id="e71d-a6ce-66e3-b75a" type="selectionEntry" targetId="3f8b-12ab-5576-1a85" sortIndex="1"/>
+        <entryLink import="true" name="Gun butt" hidden="false" id="4061-c62e-33c7-3854" type="selectionEntry" targetId="569d-be02-1fb7-04a6" sortIndex="2"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Medical Technician Pathfinder" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7815-4ed9-854f-dbde">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Medikit" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b8e2-57c1-71fe-2342">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly **PATHFINDER** operative (excluding **DRONE**) within this operative’s control range to regain up to 2D3 lost wounds. It cannot be an operative that the Medic! rule was used on during this turning point.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Medic!" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="5155-1ea4-bfbc-ebf4">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">The first time during each turning point that another friendly **PATHFINDER** operative (excluding **DRONE**) would be removed from the killzone as incapacitated while visible to and within 3&quot; of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn’t incapacitated and has 1 wound remaining. That friendly operative can then immediately perform a free **Dash** action, but must end that move within this operative’s control range. Subtract 1 from this and that operative’s APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative’s activation, that activation ends. You cannot use this rule if this operative is incapacitated.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Markerlight" id="d118-a9fe-feea-f304" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="PATHFINDER" hidden="false" id="d093-4845-f7ee-23d8" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="e9b2-674c-e918-fb14" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="3472-673c-a674-456c" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Medic" hidden="false" id="1e7e-7a06-a2aa-8c02" targetId="8200-47a2-61fb-5137" primary="false"/>
+        <categoryLink name="Medical Technician" hidden="false" id="8b4d-0efc-a2e4-156a" targetId="fdfa-b47d-d74e-e874" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Drone Controller Pathfinder" hidden="false" id="3d29-9f47-0adf-f5cf">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5bc1-54b6-c031-08db" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="5bc1-54b6-c031-08db">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Pulse carbine" hidden="false" id="47b3-c119-94a2-d959" type="selectionEntry" targetId="3f8b-12ab-5576-1a85" sortIndex="1"/>
+        <entryLink import="true" name="Gun butt" hidden="false" id="e8c7-f80e-e43f-18b2" type="selectionEntry" targetId="569d-be02-1fb7-04a6" sortIndex="2"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Drone Controller Pathfinder" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="21d2-74a1-2c2a-0c2d">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Remote Pilot" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="99d3-c5c6-05da-8c0c">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ One friendly **PATHFINDER DRONE** operative can immediately perform one free action, but it cannot move more than 2&quot; during that action. That action can be one that’s normally restricted by its drone rule (this takes precedence over that rule). 
+◆ This operative cannot perform this action while within control range of an enemy operative. This operative can perform this action more than once during its activation, but if it does, the same **DRONE** operative cannot perform the same free action more than once per activation.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Drone Controller" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="4977-a86b-772f-2467">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is in the killzone:
+- Add 2&quot; to the Move stat of friendly **PATHFINDER DRONE** operatives.
+- The Saviour Protocols firefight ploy costs you 0CP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Markerlight" id="cb3c-5f47-9736-d91c" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="PATHFINDER" hidden="false" id="ff26-72b2-ccad-acaf" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="692d-ed5f-796c-ab91" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="b8d0-fc04-ff49-db4f" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Drone Controller" hidden="false" id="41c2-94c0-2d50-c2f0" targetId="11a4-0e45-640a-6376" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Shas&apos;La Pathfinder" hidden="false" id="4361-80d7-c838-5efd">
+      <categoryLinks>
+        <categoryLink name="PATHFINDER" hidden="false" id="fa58-35c1-8f30-ca59" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="0cab-75eb-8f95-b9e4" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Shas&apos;la" hidden="false" id="c809-a997-a44c-d89a" targetId="0018-186d-a0f2-cd57" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="006c-a184-ddfd-9614" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="33c6-6455-6866-14f3" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="33c6-6455-6866-14f3">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Shas&apos;La Pathfinder" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="6bde-c927-2479-924a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fearless on the Frontline" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="e39a-f0b3-5989-826a">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform the **Markerlight** action while within control range of an enemy operative (taking precedence over the **Markerlight** action’s normal conditions). In addition, this operative can perform the **Fall Back** action for 1 less AP</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Group Activation" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0550-a75a-8cf0-78ee">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is expended, you must then activate one other ready friendly **PATHFINDER SHAS’LA** operative (if able) before your opponent activates. When that other operative is expended, your opponent then activates as normal (in other words, you cannot activate more than two operatives in succession with this rule).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Markerlight" id="013c-7da5-6544-719c" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Pulse carbine" hidden="false" id="cb67-a72b-2ae5-6a97" type="selectionEntry" targetId="3f8b-12ab-5576-1a85" sortIndex="1"/>
+        <entryLink import="true" name="Gun butt" hidden="false" id="e9a4-559b-784a-e85e" type="selectionEntry" targetId="569d-be02-1fb7-04a6" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="MB3 Recon Drone" hidden="false" id="5657-7f2c-023b-b23c" defaultAmount="">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="380a-d853-d90b-fb25" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PATHFINDER" hidden="false" id="ee2d-b028-6ab1-928a" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="6df6-7aa0-832f-b232" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="MB3 Recon Drone" hidden="false" id="8ee5-e313-4430-b1ca" targetId="b44f-3991-99c6-f72b" primary="false"/>
+        <categoryLink name="Drone" hidden="false" id="80fe-492f-2944-16c4" targetId="d561-5c77-1fcc-4d1c" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="7c0f-2071-5cb7-24a8" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="7c0f-2071-5cb7-24a8">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="MB3 Recon Drone" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="fd1a-31a5-ddbb-1bed">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Analyse" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="10f7-ff4e-6076-8080">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative performs the **Markerlight** action, each other enemy operative that’s both visible to this operative and within 3&quot; of the enemy operative you selected for that action also gains one of your Markerlight tokens.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Burst cannon (focused)" hidden="false" id="2469-bd7d-34fb-01ba" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bce-0140-498e-a09c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a86c-d941-18cb-7d36" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Burst cannon (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f788-45d8-bda9-6cde">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Heavy (Reposition only), Punishing</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="02ce-c057-55d5-8422" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Punishing" id="de6d-ed73-b494-0f13" hidden="false" type="rule" targetId="4805-d37d-3ff2-5c9e"/>
+            <infoLink name="Heavy" id="b982-e6a1-fc56-9b3a" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Burst cannon (sweeping)" hidden="false" id="335e-aadc-3719-f8f8" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd9f-fb2f-cca5-8aca" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5312-97fe-9087-e555" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Burst cannon (sweeping)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="17c4-2129-7e38-0c8f">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Heavy (Reposition only), Punishing, Torrent 1&quot;</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="0a5f-3698-2ed7-7485" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Punishing" id="deaf-9ccc-e027-7968" hidden="false" type="rule" targetId="4805-d37d-3ff2-5c9e"/>
+            <infoLink name="Heavy" id="b6bd-4792-0d71-fb13" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+            <infoLink name="Torrent x" id="e74f-ec2b-3681-f159" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Drone" id="5d6e-6a6b-3db4-8e36" hidden="false" type="profile" targetId="9a22-1ad9-b8c4-cd10"/>
+        <infoLink name="Markerlight" id="ba79-5d77-2e64-8c19" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ram" hidden="false" id="a823-0b66-c309-0615" type="selectionEntry" targetId="0e74-b5ab-cd62-c086" sortIndex="3"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="MV1 Gun Drone" hidden="false" id="2def-e47e-9e3a-2079">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="904e-93a2-7d4d-b228" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PATHFINDER" hidden="false" id="65e4-3446-4d1b-9db4" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="271f-e371-689d-1f5f" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="MV1 Gun Drone" hidden="false" id="8ae1-d111-2a1a-337a" targetId="2be6-45e6-393e-3756" primary="false"/>
+        <categoryLink name="Drone" hidden="false" id="6274-8107-3cc9-3082" targetId="d561-5c77-1fcc-4d1c" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="4285-5ccc-fcb4-9890" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="4285-5ccc-fcb4-9890">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="MV1 Gun Drone" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="af67-53dc-c302-ed76">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Twin pulse carbine" hidden="false" id="3c95-a35d-5cda-c776" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Twin pulse carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="77bc-a47b-72b8-057b">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="7cf2-aee3-62b2-9549" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Drone" id="d595-29f8-1d64-d72f" hidden="false" type="profile" targetId="9a22-1ad9-b8c4-cd10"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ram" hidden="false" id="6fe9-9407-2714-9254" type="selectionEntry" targetId="0e74-b5ab-cd62-c086" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="MV4 Shield Drone" hidden="false" id="7a3a-a214-7641-96f3">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="a4ff-4ba8-3b1d-0518" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PATHFINDER" hidden="false" id="1a20-823c-73af-71db" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="6080-7c24-8c4f-36e0" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="MV4 Shield Drone" hidden="false" id="8d1d-300e-2679-2999" targetId="40f4-3de2-0602-62d7" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d776-f0db-3f1c-2080" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="d776-f0db-3f1c-2080">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="MV4 Shield Drone" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="5a9b-31f9-1409-a836">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Shield Generator" hidden="false" id="2985-e866-28a4-589d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9aa-01cf-f7fa-0580-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9aa-01cf-f7fa-0580-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Shield Generator" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="7bbe-3efc-25ab-0f20">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">- This operative ignores the Piercing weapon rule.
+- Once per turning point, when an attack dice inflicts Normal Dmg on this operative, you can ignore that inflicted damage.
+- You can use the Saviour Protocols firefight ploy for 0CP if this is the
+specified **DRONE** operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Piercing x" id="abbc-eecd-1b86-52a8" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Drone" id="17e8-b971-c587-d2d7" hidden="false" type="profile" targetId="9a22-1ad9-b8c4-cd10"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ram" hidden="false" id="ab90-34cd-fa14-383a" type="selectionEntry" targetId="0e74-b5ab-cd62-c086"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="MV7 Marker Drone" hidden="false" id="dd0b-81ff-d6cd-9d90">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="67b6-8a97-f69a-a237" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PATHFINDER" hidden="false" id="0129-9003-12fe-24d7" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="b79d-60a9-dea9-3404" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="MV7 Marker" hidden="false" id="8300-d73d-e6be-f3ff" targetId="e9c1-e605-4ab9-2205" primary="false"/>
+        <categoryLink name="Drone" hidden="false" id="5eb7-06a8-7796-83d3" targetId="d561-5c77-1fcc-4d1c" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5f85-381b-d9e0-87a8" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="5f85-381b-d9e0-87a8">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="MV7 Shield Drone" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="cd6c-942b-adf3-d293">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="High-intensity Markerlight" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2582-6dc9-0ffe-0d86">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative performs the **Markerlight** action, the selected enemy operative gains two of your Markerlight tokens (instead of one).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Drone" id="59fb-d520-51d6-5525" hidden="false" type="profile" targetId="9a22-1ad9-b8c4-cd10"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ram" hidden="false" id="6eae-0809-8d0d-5e46" type="selectionEntry" targetId="0e74-b5ab-cd62-c086"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="MV31 Pulse Accelerator Drone" hidden="false" id="3afd-7208-c30e-4ecb">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="4c63-35c2-cb74-9f75" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PATHFINDER" hidden="false" id="a413-70bd-f24e-57d9" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="d892-005c-5f6e-6403" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="MV31 Pulse Accelerator" hidden="false" id="3bad-8d07-18ef-f463" targetId="ea6f-c852-b66f-a45a" primary="false"/>
+        <categoryLink name="Drone" hidden="false" id="edcd-a95b-68fc-7815" targetId="d561-5c77-1fcc-4d1c" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="fccf-e802-1637-31b6" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="fccf-e802-1637-31b6">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="MV31 Pulse Accelerator Drone" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1a8d-1c87-552c-d7f4">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Pulse Accelerator" hidden="false" id="94d2-ab18-929f-bfca">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c772-cf81-3621-175c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c772-cf81-3621-175c-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Pulse Accelerator (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="f47b-ad9d-bdc8-19c9">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation or until it&apos;s incapacitated (whichever comes first), whenever another friendly PATHFINDER operative is shooting with a pulse weapon within 3&quot; of this operative, that weapon has the Lethal 5+ and Severe weapon rules.
+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="120a-81d8-bb4a-57ef" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Severe" id="c16a-68d6-7c20-cc3e" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Drone" id="5398-447c-dcb6-9bdc" hidden="false" type="profile" targetId="9a22-1ad9-b8c4-cd10"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ram" hidden="false" id="10e7-b38d-3227-b13c" type="selectionEntry" targetId="0e74-b5ab-cd62-c086"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="MV33 Grav-Inhibiter Drone" hidden="false" id="9d96-2ab0-0f1e-b65a">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="8a8c-34ef-5f4b-1481" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PATHFINDER" hidden="false" id="04a0-b0b8-e037-302d" targetId="2264-7983-2036-f5aa" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="938e-1ea1-259d-e3e3" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Drone" hidden="false" id="3a56-b075-5bc9-277e" targetId="d561-5c77-1fcc-4d1c" primary="false"/>
+        <categoryLink name="MV33 Grav-inhibitor" hidden="false" id="0c8d-c1f1-06d6-8916" targetId="009b-539b-3f18-bdcb" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="79cc-8874-f309-4ab7" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="79cc-8874-f309-4ab7">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="MV33 Grav-Inhibitor Drone" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="8a4b-14a5-1bf0-5fda">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grav-inhibiter" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="9cd2-805a-5cd6-1ab6">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">- Whenever an enemy operative performs an action in which it moves, if it would move visible to and within 6&quot; of this operative, subtract 2&quot; from the total distance it can move during that action (to a minimum of 2&quot;). Note this isn’t a change to the Move stat. 
+- Whenever an enemy operative is fighting or retaliating while visible to and within 6&quot; of this operative, worsen the Hit stat of that enemy operative’s melee weapons by 1. This is cumulative with being injured.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Drone" id="5094-4e5c-6b97-bc46" hidden="false" type="profile" targetId="9a22-1ad9-b8c4-cd10"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ram" hidden="false" id="ba08-eb7a-7388-d45d" type="selectionEntry" targetId="0e74-b5ab-cd62-c086"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedProfiles>
+    <profile name="Markerlight (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="3272-d6fb-b345-1baf">
+      <characteristics>
+        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. That enemy operative gains one of your Markerlight tokens (to a maximum of four).
+◆ An operative cannot perform this action while within control range of an enemy operative. If an operative (excluding **MB3 RECON**) would perform the **Shoot** action(excluding **Guard**) and this action during the same activation, only the target of that **Shoot** action can be selected for this action (and vice versa).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Drone" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="9a22-1ad9-b8c4-cd10">
+      <characteristics>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">
+</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Reference - Markerlights" hidden="false" id="c5c3-520a-01a8-0793">
+      <infoLinks>
+        <infoLink name="Seek" id="fcff-ac1b-daab-65b1" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
+        <infoLink name="Balanced" id="9d3c-a558-8acb-b0db" hidden="false" type="rule" targetId="28f7-0d96-d1fc-f75b"/>
+        <infoLink name="Saturate" id="b977-03e9-e330-d910" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+      </infoLinks>
+      <profiles>
+        <profile name="1+" typeId="3394-cf2d-5727-164a" typeName="Markerlight Tokens" hidden="false" id="3421-8c71-5fca-d631">
+          <characteristics>
+            <characteristic name="Benefit" typeId="2847-4422-7864-de3a">Saturate weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="2+" typeId="3394-cf2d-5727-164a" typeName="Markerlight Tokens" hidden="false" id="6628-9273-5897-efa4">
+          <characteristics>
+            <characteristic name="Benefit" typeId="2847-4422-7864-de3a">Balanced weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3+" typeId="3394-cf2d-5727-164a" typeName="Markerlight Tokens" hidden="false" id="530e-c904-30ea-7049">
+          <characteristics>
+            <characteristic name="Benefit" typeId="2847-4422-7864-de3a">The target cannot be obscured.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="4+" typeId="3394-cf2d-5727-164a" typeName="Markerlight Tokens" hidden="false" id="c9cd-0dad-d9e7-d71e">
+          <characteristics>
+            <characteristic name="Benefit" typeId="2847-4422-7864-de3a">Seek Light weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pulse carbine" hidden="false" id="3f8b-12ab-5576-1a85">
+      <profiles>
+        <profile name="⌖ Pulse carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6073-48fb-5a7e-8a83">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8fb-87ad-6be0-13c8" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaa3-ff3e-ae23-467f" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gun butt" hidden="false" id="569d-be02-1fb7-04a6">
+      <profiles>
+        <profile name="⚔ Gun butt" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="032a-8153-9863-89c4">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1226-4248-55c4-93f8" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ec5-e07b-d3fc-990e" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ram" hidden="false" id="0e74-b5ab-cd62-c086">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ecd-8848-bdf0-645d" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2df-b073-4ce9-a37c" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Ram" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f41b-f164-2f39-5843">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
