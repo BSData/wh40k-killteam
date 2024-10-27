@@ -51,11 +51,12 @@
   </forceEntries>
   <rules>
     <rule name="Markerlights" id="32e0-ef48-9571-c250" hidden="false">
-      <description>Some **PATHFINDER** operatives (indicated on their datacard) can perform the **Markerlight** unique action:
+      <description>Some PATHFINDER operatives (indicated on their datacard) can perform the **Markerlight** unique action.
+
 
 Once during each of their activations, whenever an enemy operative that has any of your Markerlight tokens performs the **Dash**, **Charge**, **Fall Back** or **Reposition** action, remove one of those tokens.
 
-While only some **PATHFINDER** operatives can perform the *Markerlight** action, all **PATHFINDER** operatives can benefit from its effects. Whenever a friendly **PATHFINDER** operative is shooting with a weapon from its datacard (excluding **ASSAULT GRENADIER’S** fusion grenade), it has additional rules determined by the number of your Markerlight tokens the target has. These are cumulative, so if an enemy operative has two of your  Markerlight tokens, the friendly operative shooting it has the rules for 1 and 2 tokens during that sequence.</description>
+While only some **PATHFINDER** operatives can perform the **Markerlight** action, all **PATHFINDER** operatives can benefit from its effects. Whenever a friendly **PATHFINDER** operative is shooting with a weapon from its datacard (excluding **ASSAULT GRENADIER’S** fusion grenade), it has additional rules determined by the number of your Markerlight tokens the target has. These are cumulative, so if an enemy operative has two of your  Markerlight tokens, the friendly operative shooting it has the rules for 1 and 2 tokens during that sequence.</description>
     </rule>
   </rules>
   <entryLinks>
@@ -136,23 +137,11 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
     </entryLink>
   </entryLinks>
   <selectionEntries>
-    <selectionEntry type="model" import="true" name="Shas&apos;Ui Pathfinder" hidden="false" id="2b35-078c-c691-b99e" defaultAmount="2">
+    <selectionEntry type="model" import="true" name="Shas&apos;Ui Pathfinder" hidden="false" id="2b35-078c-c691-b99e" defaultAmount="">
       <constraints>
-        <constraint type="min" value="-1" field="selections" scope="force" shared="true" id="f38d-34eb-5e8e-53c8-min" includeChildSelections="false"/>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="f38d-34eb-5e8e-53c8-max" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3cc5-7ebb-aaf4-a914-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3cc5-7ebb-aaf4-a914-max" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="f38d-34eb-5e8e-53c8-min">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="1" field="f38d-34eb-5e8e-53c8-max">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="360b-4ca9-276e-9e08" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="27ba-2c8e-f83f-5d32" targetId="d999-8cad-8145-4efe" primary="true"/>
         <categoryLink name="T&apos;au Empire" hidden="false" id="9b0d-edf5-2c0b-a133" targetId="20d3-6a95-40e4-de61" primary="false"/>
@@ -160,10 +149,9 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
         <categoryLink name="PATHFINDER" hidden="false" id="9f0c-b0ee-059a-e0de" targetId="2264-7983-2036-f5aa" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Markerlight" id="19b4-3820-247f-1955" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+        <infoLink name="Markerlight (1 AP)" id="19b4-3820-247f-1955" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Pulse carbine" hidden="false" id="f3ad-6550-0ac6-ea98" type="selectionEntry" targetId="3f8b-12ab-5576-1a85" sortIndex="1"/>
         <entryLink import="true" name="Gun butt" hidden="false" id="6cdc-b1d8-53ab-9c46" type="selectionEntry" targetId="569d-be02-1fb7-04a6" sortIndex="2"/>
       </entryLinks>
       <profiles>
@@ -183,6 +171,24 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Pulse carbine" hidden="false" id="5322-5b81-29ce-9950" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Pulse carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="326b-7ec4-c369-76ab">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="373b-527b-ca29-584f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8884-28f7-18e9-6ed8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Blooded Pathfinder" hidden="false" id="2dfb-94eb-cedc-2352">
       <constraints>
@@ -248,7 +254,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Markerlight" id="0c55-1bb8-871c-e5a0" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+        <infoLink name="Markerlight (1 AP)" id="0c55-1bb8-871c-e5a0" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="PATHFINDER" hidden="false" id="050f-f135-0317-7fbd" targetId="2264-7983-2036-f5aa" primary="false"/>
@@ -297,7 +303,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Markerlight" id="a5a2-fd13-05dd-08bb" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+        <infoLink name="Markerlight (1 AP)" id="a5a2-fd13-05dd-08bb" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Pulse carbine" hidden="false" id="08bf-e8e8-8500-13da" type="selectionEntry" targetId="3f8b-12ab-5576-1a85" sortIndex="1"/>
@@ -338,9 +344,9 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
               <profiles>
                 <profile name="⌖ Rail rifle" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4491-2060-fc0a-1eaa">
                   <characteristics>
-                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
                     <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
-                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
                     <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 2, Lethal 5+, Piercing 1</characteristic>
                   </characteristics>
                 </profile>
@@ -400,7 +406,6 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Pulse carbine" hidden="false" id="d26d-6216-48a9-57ee" type="selectionEntry" targetId="3f8b-12ab-5576-1a85" sortIndex="2"/>
-        <entryLink import="true" name="Gun butt" hidden="false" id="4641-d415-7680-c5df" type="selectionEntry" targetId="569d-be02-1fb7-04a6" sortIndex="3"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Fusion grenade" hidden="false" id="b68e-0c42-ef74-b286" sortIndex="1">
@@ -426,6 +431,22 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5be5-443d-02c9-f56e" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gun butt" hidden="false" id="2be1-9ac8-0404-03d4">
+          <profiles>
+            <profile name="⚔ Gun butt" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3895-af09-70fc-e386">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6dba-aa09-a57c-9746" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce27-7d16-11e2-9a9c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <profiles>
         <profile name="Grenadier Specialist" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="52e0-6172-f1c8-a9a8">
@@ -443,7 +464,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Markerlight" id="f74f-6e15-2c34-45f2" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+        <infoLink name="Markerlight (1 AP)" id="f74f-6e15-2c34-45f2" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Operative" hidden="false" id="5543-5348-f18b-04a7" targetId="cf83-4496-b58e-ac82" primary="true"/>
@@ -571,7 +592,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
           </characteristics>
         </profile>
-        <profile name="Signal" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b695-e637-518a-3176">
+        <profile name="Signal (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b695-e637-518a-3176">
           <characteristics>
             <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one other friendly **PATHFINDER** operative visible to and within 6&quot; of this operative. Until the end of that operative’s next activation, add 1 to its APL stat.
 ◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
@@ -579,7 +600,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Markerlight" id="d8b3-7336-9d5a-393e" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+        <infoLink name="Markerlight (1 AP)" id="d8b3-7336-9d5a-393e" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="PATHFINDER" hidden="false" id="9de8-b6f1-3579-2d5c" targetId="2264-7983-2036-f5aa" primary="false"/>
@@ -612,7 +633,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
           </characteristics>
         </profile>
-        <profile name="Medikit" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b8e2-57c1-71fe-2342">
+        <profile name="Medikit (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b8e2-57c1-71fe-2342">
           <characteristics>
             <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly **PATHFINDER** operative (excluding **DRONE**) within this operative’s control range to regain up to 2D3 lost wounds. It cannot be an operative that the Medic! rule was used on during this turning point.
 ◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
@@ -625,7 +646,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Markerlight" id="d118-a9fe-feea-f304" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+        <infoLink name="Markerlight (1 AP)" id="d118-a9fe-feea-f304" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="PATHFINDER" hidden="false" id="d093-4845-f7ee-23d8" targetId="2264-7983-2036-f5aa" primary="false"/>
@@ -659,7 +680,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
           </characteristics>
         </profile>
-        <profile name="Remote Pilot" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="99d3-c5c6-05da-8c0c">
+        <profile name="Remote Pilot (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="99d3-c5c6-05da-8c0c">
           <characteristics>
             <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ One friendly **PATHFINDER DRONE** operative can immediately perform one free action, but it cannot move more than 2&quot; during that action. That action can be one that’s normally restricted by its drone rule (this takes precedence over that rule). 
 ◆ This operative cannot perform this action while within control range of an enemy operative. This operative can perform this action more than once during its activation, but if it does, the same **DRONE** operative cannot perform the same free action more than once per activation.</characteristic>
@@ -674,7 +695,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Markerlight" id="cb3c-5f47-9736-d91c" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+        <infoLink name="Markerlight (1 AP)" id="cb3c-5f47-9736-d91c" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="PATHFINDER" hidden="false" id="ff26-72b2-ccad-acaf" targetId="2264-7983-2036-f5aa" primary="false"/>
@@ -721,7 +742,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Markerlight" id="013c-7da5-6544-719c" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+        <infoLink name="Markerlight (1 AP)" id="013c-7da5-6544-719c" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Pulse carbine" hidden="false" id="cb67-a72b-2ae5-6a97" type="selectionEntry" targetId="3f8b-12ab-5576-1a85" sortIndex="1"/>
@@ -733,7 +754,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
         <categoryLink name="Operative" hidden="false" id="380a-d853-d90b-fb25" targetId="cf83-4496-b58e-ac82" primary="true"/>
         <categoryLink name="PATHFINDER" hidden="false" id="ee2d-b028-6ab1-928a" targetId="2264-7983-2036-f5aa" primary="false"/>
         <categoryLink name="T&apos;au Empire" hidden="false" id="6df6-7aa0-832f-b232" targetId="20d3-6a95-40e4-de61" primary="false"/>
-        <categoryLink name="MB3 Recon Drone" hidden="false" id="8ee5-e313-4430-b1ca" targetId="b44f-3991-99c6-f72b" primary="false"/>
+        <categoryLink name="MB3 Recon" hidden="false" id="8ee5-e313-4430-b1ca" targetId="b44f-3991-99c6-f72b" primary="false"/>
         <categoryLink name="Drone" hidden="false" id="80fe-492f-2944-16c4" targetId="d561-5c77-1fcc-4d1c" primary="false"/>
       </categoryLinks>
       <constraints>
@@ -808,7 +829,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
       </selectionEntries>
       <infoLinks>
         <infoLink name="Drone" id="5d6e-6a6b-3db4-8e36" hidden="false" type="profile" targetId="9a22-1ad9-b8c4-cd10"/>
-        <infoLink name="Markerlight" id="ba79-5d77-2e64-8c19" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+        <infoLink name="Markerlight (1 AP)" id="ba79-5d77-2e64-8c19" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Ram" hidden="false" id="a823-0b66-c309-0615" type="selectionEntry" targetId="0e74-b5ab-cd62-c086" sortIndex="3"/>
@@ -819,7 +840,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
         <categoryLink name="Operative" hidden="false" id="904e-93a2-7d4d-b228" targetId="cf83-4496-b58e-ac82" primary="true"/>
         <categoryLink name="PATHFINDER" hidden="false" id="65e4-3446-4d1b-9db4" targetId="2264-7983-2036-f5aa" primary="false"/>
         <categoryLink name="T&apos;au Empire" hidden="false" id="271f-e371-689d-1f5f" targetId="20d3-6a95-40e4-de61" primary="false"/>
-        <categoryLink name="MV1 Gun Drone" hidden="false" id="8ae1-d111-2a1a-337a" targetId="2be6-45e6-393e-3756" primary="false"/>
+        <categoryLink name="MV1 Gun" hidden="false" id="8ae1-d111-2a1a-337a" targetId="2be6-45e6-393e-3756" primary="false"/>
         <categoryLink name="Drone" hidden="false" id="6274-8107-3cc9-3082" targetId="d561-5c77-1fcc-4d1c" primary="false"/>
       </categoryLinks>
       <constraints>
@@ -871,7 +892,7 @@ While only some **PATHFINDER** operatives can perform the *Markerlight** action
         <categoryLink name="Operative" hidden="false" id="a4ff-4ba8-3b1d-0518" targetId="cf83-4496-b58e-ac82" primary="true"/>
         <categoryLink name="PATHFINDER" hidden="false" id="1a20-823c-73af-71db" targetId="2264-7983-2036-f5aa" primary="false"/>
         <categoryLink name="T&apos;au Empire" hidden="false" id="6080-7c24-8c4f-36e0" targetId="20d3-6a95-40e4-de61" primary="false"/>
-        <categoryLink name="MV4 Shield Drone" hidden="false" id="8d1d-300e-2679-2999" targetId="40f4-3de2-0602-62d7" primary="false"/>
+        <categoryLink name="MV4 Shield" hidden="false" id="8d1d-300e-2679-2999" targetId="40f4-3de2-0602-62d7" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d776-f0db-3f1c-2080" includeChildSelections="false"/>
@@ -998,8 +1019,7 @@ specified **DRONE** operative.</characteristic>
           <profiles>
             <profile name="Pulse Accelerator (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="f47b-ad9d-bdc8-19c9">
               <characteristics>
-                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation or until it&apos;s incapacitated (whichever comes first), whenever another friendly PATHFINDER operative is shooting with a pulse weapon within 3&quot; of this operative, that weapon has the Lethal 5+ and Severe weapon rules.
-</characteristic>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation or until it&apos;s incapacitated (whichever comes first), whenever another friendly PATHFINDER operative is shooting with a pulse weapon within 3&quot; of this operative, that weapon has the Lethal 5+ and Severe weapon rules.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1067,8 +1087,9 @@ specified **DRONE** operative.</characteristic>
     </profile>
     <profile name="Drone" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="9a22-1ad9-b8c4-cd10">
       <characteristics>
-        <characteristic name="Ability" typeId="3467-0678-083e-eb50">
-</characteristic>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">- This operative cannot perform any actions other than **Charge, Dash, Fall Back, Fight, Markerlight, Reposition** and **Shoot**. It cannot use any weapons that aren’t on its datacard. 
+- Whenever determining control of an objective marker, treat this operative’s APL stat as 1 lower. 
+- Whenever determining what’s visible to this operative, the round disc at the top of the miniature is its head.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -1106,9 +1127,9 @@ specified **DRONE** operative.</characteristic>
       <profiles>
         <profile name="⌖ Pulse carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6073-48fb-5a7e-8a83">
           <characteristics>
-            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
-            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
-            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
             <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
           </characteristics>
         </profile>
@@ -1123,7 +1144,7 @@ specified **DRONE** operative.</characteristic>
         <profile name="⚔ Gun butt" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="032a-8153-9863-89c4">
           <characteristics>
             <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
-            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
             <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
             <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
           </characteristics>
@@ -1151,4 +1172,7 @@ specified **DRONE** operative.</characteristic>
       </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
+  <infoLinks>
+    <infoLink name="Markerlight (1 AP)" id="2115-7f9a-14f2-b302" hidden="false" type="profile" targetId="3272-d6fb-b345-1baf"/>
+  </infoLinks>
 </catalogue>
