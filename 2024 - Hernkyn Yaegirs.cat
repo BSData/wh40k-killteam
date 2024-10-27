@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="8b76-6335-308e-7ddb" name="Hernkyn Yaegirs" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Kill Team" id="8952-0e52-8b53-e1d8" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="5fe6-24c6-e76a-de54" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="a94d-c52b-ab52-6899" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Leader" hidden="false" id="1b38-5711-a491-0ade" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Operative" hidden="false" id="5179-42e2-9f93-cc5e" targetId="cf83-4496-b58e-ac82">
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="force" shared="true" id="65e9-edfe-49de-6e12-min" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="force" shared="true" id="65e9-edfe-49de-6e12-max" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Theyn" hidden="false" id="ceed-dd03-fe6b-8828">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="4a5d-7245-db01-4b30" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="4a5d-7245-db01-4b30">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8952-0e52-8b53-e1d8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Theyn" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="b8a1-a418-d88e-7a68">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Veteran Adventurer" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="63f9-7d2a-d9c0-111a">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">In the Ready step of each Strategy phase after the first, if this operative isn’t within control range of enemy operatives, you gain 1 Resourceful point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Outright Conviction" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="7904-f102-08b6-102d">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">The first time this operative would be incapacitated during the battle, it’s not incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. All remaining attack dice are discarded (including yours if this operative is fighting or retaliating).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Hernkyn Yaegirs" hidden="false" id="ec72-f587-7826-6b9c" targetId="f5d1-5f43-1cce-0d8c" primary="false"/>
+        <categoryLink name="Leagues of Votann" hidden="false" id="4d0b-4440-7251-bce3" targetId="a016-36a7-fbed-5668" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="c9d2-ea40-dfa0-0362" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Theyn" hidden="false" id="979b-12de-6225-4a50" targetId="6142-b3bd-87c7-3192" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bolt revolver" hidden="false" id="7868-ada2-75ba-31e0" type="selectionEntry" targetId="509a-35a9-44ec-f560"/>
+        <entryLink import="true" name="Bolt shotgun" hidden="false" id="f344-d362-0747-7e7c" type="selectionEntry" targetId="0edd-bb06-6ea0-1240"/>
+        <entryLink import="true" name="Plasma knife" hidden="false" id="f918-bf59-865c-0819" type="selectionEntry" targetId="5439-919e-f9e2-cfdb"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Bladekyn" hidden="false" id="2fdf-7edd-f436-e4b8">
+      <profiles>
+        <profile name="Bladekyn" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="240f-ee82-e42b-bedc">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stalker" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="88ef-7331-1ac1-d2c6">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform the **Charge** action while it has a Conceal order.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Irrepressible Hardiness" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="af67-62fd-b98f-d744">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">If this operative is incapacitated during the Fight action, you can strike the enemy operative in that sequence with one of your unresolved successes before this operative is removed from the killzone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Throwing plasma knife" hidden="false" id="925f-9162-30b5-eb4d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4184-f08c-cf8b-c406-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4184-f08c-cf8b-c406-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Throwing plasma knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7a84-f615-a145-4873">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Lethal 5+, Limited 1, Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Limited x" id="7162-0c61-fbc1-7c2d" hidden="false" type="rule" targetId="bf37-3388-40d5-eb72"/>
+            <infoLink name="Lethal x+" id="d0a8-149b-e451-e3a4" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Silent" id="27a5-7c38-1c8f-3601" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+            <infoLink name="Range x" id="c656-418a-208f-99c9" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dual plasma knives" hidden="false" id="3918-b467-c2a6-1d9d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0270-69eb-60b0-c4c2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0270-69eb-60b0-c4c2-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Dual plasma knives" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d34a-8bfb-96cb-bdfd">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="d8d5-6058-e72a-6157" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Lethal x+" id="b7e8-6762-5cce-efa0" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Hernkyn Yaegirs" hidden="false" id="08ee-743b-3621-040e" targetId="f5d1-5f43-1cce-0d8c" primary="false"/>
+        <categoryLink name="Leagues of Votann" hidden="false" id="2f1d-282f-3c7b-bb28" targetId="a016-36a7-fbed-5668" primary="false"/>
+        <categoryLink name="Bladekyn" hidden="false" id="0660-a041-5589-ea35" targetId="33d0-5456-ff2f-837f" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="7d53-b45e-ff45-e2db" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="6bad-c41b-e15e-481a" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="6bad-c41b-e15e-481a">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8952-0e52-8b53-e1d8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Bombast" hidden="false" id="a2af-3379-3c30-4657">
+      <categoryLinks>
+        <categoryLink name="Hernkyn Yaegirs" hidden="false" id="64d6-5022-a1e8-1e3e" targetId="f5d1-5f43-1cce-0d8c" primary="false"/>
+        <categoryLink name="Leagues of Votann" hidden="false" id="c97c-ab2f-3993-fa30" targetId="a016-36a7-fbed-5668" primary="false"/>
+        <categoryLink name="Bombast" hidden="false" id="6078-14df-902a-db6d" targetId="5dd0-3dbf-6fac-c78a" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="9160-4ad8-2adc-b542" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="54a8-5dde-5355-2e1e" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="54a8-5dde-5355-2e1e">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8952-0e52-8b53-e1d8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Bombast" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="a66b-036b-c6e8-f6ec">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wroughtlock Negotiation" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="aa6e-b4e5-7ea3-c290">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">STRATEGIC GAMBIT. This operative can immediately perform a free **Shoot** action (you can change its order to Engage to do so).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Brazen Killer" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2720-a083-0e70-e979">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative incapacitates an enemy operative with its wroughtlock revolvers, roll one D6 separately for each other enemy operative visible to and within 2&quot; of that enemy operative: if the result is higher than that other enemy operative’s APL stat, subtract 1 from its APL stat until the end of its next activation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Wroughtlock revolvers" hidden="false" id="d09c-854b-d608-c491">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75be-9886-ec47-a119-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75be-9886-ec47-a119-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Wroughtlock revolvers" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2968-bd8e-cd6c-9fc1">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 9&quot;, Ceaseless, Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="4ddf-b34b-3b47-7784" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Ceaseless" id="1502-7885-579e-7531" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Lethal x+" id="0f0e-8e2f-20e7-cf2a" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="2dd6-02a5-d4f0-8e69" type="selectionEntry" targetId="6bc6-99e9-2a25-fe4b"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gunner" hidden="false" id="a566-86ad-2dfa-0b97">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="df70-316e-8a28-b358" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="df70-316e-8a28-b358">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8952-0e52-8b53-e1d8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Gunner" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2de6-d22b-b9dc-7d46">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="APM launcher" hidden="false" id="7452-88d5-4693-d21c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d14d-9db3-6b80-5893-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d14d-9db3-6b80-5893-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ APM launcher (armour piercing)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="9986-a89e-3d78-7955">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Reposition only), Piercing 1, Bipod*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="*Bipod" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="58a8-d238-bdd7-6fd8">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is shooting with this weapon, if it hasn’t moved during the activation, or if it’s a counteraction, this weapon has the Ceaseless weapon rule. Note this operative isn’t restricted from moving after shooting.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ APM launcher (breaching)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="aae7-e16a-f5d8-d9f5">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;, Heavy (Reposition only), Bipod*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ APM launcher (high explosive)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="96d7-48b0-9d96-856f">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 3&quot;, Heavy (Reposition only), Bipod*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Piercing x" id="8431-ab6b-7a36-0de5" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+            <infoLink name="Heavy" id="beaa-f081-9361-139a" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+            <infoLink name="Blast x" id="5ebe-cbf2-2f47-faf8" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Ceaseless" id="8360-cc04-598e-d3eb" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="cb9f-d1df-89d9-f1de" type="selectionEntry" targetId="6bc6-99e9-2a25-fe4b"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Hernkyn Yaegirs" hidden="false" id="a5ba-5aa4-8634-dbe3" targetId="f5d1-5f43-1cce-0d8c" primary="false"/>
+        <categoryLink name="Leagues of Votann" hidden="false" id="7498-f229-2402-fa22" targetId="a016-36a7-fbed-5668" primary="false"/>
+        <categoryLink name="Gunner" hidden="false" id="b64c-5019-e9d5-8155" targetId="3033-7558-d28f-53cf" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="90c1-0df8-755b-98b7" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ironbraek" hidden="false" id="9f1b-5c8e-d31a-07fb">
+      <categoryLinks>
+        <categoryLink name="Hernkyn Yaegirs" hidden="false" id="4fc2-b754-6e0e-e0bd" targetId="f5d1-5f43-1cce-0d8c" primary="false"/>
+        <categoryLink name="Leagues of Votann" hidden="false" id="0fe7-e6a7-ae79-0649" targetId="a016-36a7-fbed-5668" primary="false"/>
+        <categoryLink name="Ironbraek" hidden="false" id="70c8-85f0-1704-81c9" targetId="d30f-18f2-d870-1d33" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="bbfd-4340-6195-0c67" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Ironbraek" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="f18d-f675-c8c1-5fce">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Minefield" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="c66b-9c6d-abcb-962c">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">You have five Minefield markers for the battle. On the reverse side, three of them are HY-Pex mines (see right) and two are blank. Set up all your Minefield markers as if they were one item of equipment. Each must be set up reverse-side down (their specifics aren’t revealed), more than 2&quot; from other markers and access points, and more than 6&quot; from your opponent’s drop zone and your other Minefield markers. Whenever this operative is readied, if it’s not within control range of enemy operatives, you can reset one of your flipped Minefield markers that’s within its control range (flip the marker back over again).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="HY-Pex Mines" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="e1a2-c370-68e5-d081">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever one of your reverse-side down Minefield markers is both within an enemy operative’s control range and not within a friendly HERNKYN YAEGIR operative’s control range, flip the marker over. If it’s a blank, there’s no effect. If it’s a HY-Pex mine, inflict 3 damage on that enemy operative and roll one D6: if the result is less than that enemy operative’s Save stat, inflict additional damage on it equal to the dice result; regardless of the result, if it isn’t incapacitated, end its action (if any), even if that action’s effects aren’t fulfilled. If it cannot be placed, move it the minimum amount to do so. Regardless, that marker isn’t removed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="3cbf-707c-58ee-6aed" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="3cbf-707c-58ee-6aed">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8952-0e52-8b53-e1d8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Bolt revolver" hidden="false" id="77bd-f293-cebc-ad93" type="selectionEntry" targetId="509a-35a9-44ec-f560"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Entrencher" hidden="false" id="dece-a4a5-0622-a1c5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e39a-bc0e-8a9c-1029-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e39a-bc0e-8a9c-1029-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Entrencher" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d003-0a3c-ccbf-0403">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Riflekyn" hidden="false" id="3fa9-3deb-58a5-b3ab">
+      <categoryLinks>
+        <categoryLink name="Hernkyn Yaegirs" hidden="false" id="9950-bf3e-91cc-41c1" targetId="f5d1-5f43-1cce-0d8c" primary="false"/>
+        <categoryLink name="Leagues of Votann" hidden="false" id="1a57-2acb-3d52-b5f0" targetId="a016-36a7-fbed-5668" primary="false"/>
+        <categoryLink name="Riflekyn" hidden="false" id="2df6-4fcf-4465-74ec" targetId="6f21-5cfa-1d34-8ebd" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="b678-5f33-e8f3-2c1f" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5b95-7183-1201-a16c" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="5b95-7183-1201-a16c">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8952-0e52-8b53-e1d8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Riflekyn" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="0cd2-ec34-3b13-c019">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weavewërke Cloak" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="e835-4f93-df59-787f">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an operative is shooting this operative:
+- Ignore the Saturate weapon rule. 
+- If you can retain any cover saves, you can retain one additional cover save, or you can retain one cover save as a critical success instead. This isn’t cumulative with improved cover saves from Vantage terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="878f-2af7-a6e8-e828" type="selectionEntry" targetId="6bc6-99e9-2a25-fe4b"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Magna-coil rifle" hidden="false" id="91ca-e9e9-6594-f246">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="550f-3bde-253c-f6f7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="550f-3bde-253c-f6f7-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Magna-coil rifle (concealed)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6863-9bb9-e7e7-6985">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 3, Heavy, Piercing 1, Silent, Concealed Position*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Magna-coil rifle (mobile)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7231-0066-e6bc-f90a">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Reposition only), Piercing 1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Magna-coil rifle (stationary)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2cad-0aa4-fc48-6f74">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 3, Heavy, Piercing 1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="*Concealed Position" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="7e05-90cc-d17b-0ea1">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can only use this weapon the first time it’s performing the **Shoot** action during the battle</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastating x" id="6faa-798f-45ed-5bb9" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Piercing x" id="fe4a-f7c5-1fb8-1f08" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+            <infoLink name="Heavy" id="7e96-98c1-3d15-d79f" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+            <infoLink name="Silent" id="df24-4ceb-ea2a-afc9" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tracker" hidden="false" id="e5de-8175-1b53-2c68">
+      <categoryLinks>
+        <categoryLink name="Hernkyn Yaegirs" hidden="false" id="5c58-9634-bde6-eaa4" targetId="f5d1-5f43-1cce-0d8c" primary="false"/>
+        <categoryLink name="Leagues of Votann" hidden="false" id="9711-912d-22f8-ea87" targetId="a016-36a7-fbed-5668" primary="false"/>
+        <categoryLink name="Tracker" hidden="false" id="f9ec-1f87-2e77-becd" targetId="8a5e-70fa-2121-e4ed" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="5281-cd37-c133-055b" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tracker" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="de46-3893-f9f6-7a8b">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pan Spectral Visor" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="68f7-088a-62b9-6224">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is shooting an operative within 6&quot; of it:
+- This operative’s weapons have the Seek Light weapon rule.
+- That operative cannot be obscured.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tracker" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="d5aa-0fed-0af8-96a5">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is shooting against or fighting against an expended operative within 6&quot; of it, this operative’s weapons have the Punishing weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="7105-0cbd-f06a-7c90" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="7105-0cbd-f06a-7c90">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8952-0e52-8b53-e1d8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="SiNR handbow" hidden="false" id="d5ff-0bc7-e0ea-1c8b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4968-374c-d0ec-de1b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4968-374c-d0ec-de1b-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ SiNR handbow" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1570-d278-f609-0cae">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Silent" id="fe1b-1a13-d22a-375e" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Throwing hatchet" hidden="false" id="1733-b4f5-094f-3866">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a7b-5cc0-63de-26fd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a7b-5cc0-63de-26fd-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Throwing hatchet" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2fbc-c978-0fa4-e1e8">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Limited 1, Rending, Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Limited x" id="9248-0a5d-4975-b10e" hidden="false" type="rule" targetId="bf37-3388-40d5-eb72"/>
+            <infoLink name="Rending" id="8bb4-dc57-2cbf-7ab1" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+            <infoLink name="Range x" id="56b7-0799-90e1-61b4" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Silent" id="4e44-0879-2f99-72d6" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hatchet" hidden="false" id="aa28-4a9b-a81b-64bd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce3c-7921-9877-333f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce3c-7921-9877-333f-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Hatchet" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b325-438a-5be4-505d">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warrior" hidden="false" id="05ab-eae3-4c84-5f83">
+      <categoryLinks>
+        <categoryLink name="Hernkyn Yaegirs" hidden="false" id="1712-e8bf-169f-e4d3" targetId="f5d1-5f43-1cce-0d8c" primary="false"/>
+        <categoryLink name="Leagues of Votann" hidden="false" id="0654-1974-76f0-91f3" targetId="a016-36a7-fbed-5668" primary="false"/>
+        <categoryLink name="Warrior" hidden="false" id="38b8-4f39-c399-acdc" targetId="2b69-f2aa-bd5c-70b2" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="178f-406d-3f37-feaa" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="9df8-a7a2-17fe-5791">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Intrepid" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="175e-ffb4-4973-14e2">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever you spend a Resourceful point for this operative, the following take precedence: 
+- If you add 1 to its APL stat, it lasts until the start of its next activation instead. 
+- If it regains lost wounds, it regains 4 instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="7788-ce46-e9cc-86af" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="9" field="7788-ce46-e9cc-86af">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8952-0e52-8b53-e1d8" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Warrior with bolt revolver; plasma knife" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="e671-a099-d41e-8153" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Warrior with bolt shotgun; fists" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="afab-eea6-caa7-c552" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="de2c-7cbd-a0e6-d8eb" hidden="false" defaultSelectionEntryId="none">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="63a3-dead-35b3-7d57-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63a3-dead-35b3-7d57-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bolt revolver; plasma knife" hidden="false" id="e671-a099-d41e-8153">
+              <entryLinks>
+                <entryLink import="true" name="Bolt revolver" hidden="false" id="00eb-d687-577b-6bcf" type="selectionEntry" targetId="509a-35a9-44ec-f560"/>
+                <entryLink import="true" name="Plasma knife" hidden="false" id="54fd-6ffc-55ef-59ec" type="selectionEntry" targetId="5439-919e-f9e2-cfdb"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolt shotgun; fists" hidden="false" id="afab-eea6-caa7-c552">
+              <entryLinks>
+                <entryLink import="true" name="Bolt shotgun" hidden="false" id="bd2f-0d36-af30-c74b" type="selectionEntry" targetId="0edd-bb06-6ea0-1240"/>
+                <entryLink import="true" name="Fists" hidden="false" id="93ec-6b67-321f-1134" type="selectionEntry" targetId="6bc6-99e9-2a25-fe4b"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Bolt revolver" hidden="false" id="509a-35a9-44ec-f560">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d88a-9f3d-4810-d82f-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d88a-9f3d-4810-d82f-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Bolt revolver" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3f4d-609d-1c36-ad41">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="0115-d21e-c362-f103" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bolt shotgun" hidden="false" id="0edd-bb06-6ea0-1240">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae0c-10ca-8ca9-02cf-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae0c-10ca-8ca9-02cf-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Bolt shotgun (short range)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7f2e-63f1-d6ab-db46">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="⌖ Bolt shotgun (long range)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e338-734c-ccc4-03c1">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/2</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="f718-4658-1a28-00e1" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+        <infoLink name="Range x" id="370d-695c-9fd4-a7d6" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma knife" hidden="false" id="5439-919e-f9e2-cfdb">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13c2-4aa6-729b-5053-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13c2-4aa6-729b-5053-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Plasma knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="502e-4e3a-1fab-bc28">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="8044-2517-4ef7-33de">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ceed-dd03-fe6b-8828" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lethal x+" id="26f5-b452-648f-c304" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="6bc6-99e9-2a25-fe4b">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65a0-1013-6cce-cc28-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65a0-1013-6cce-cc28-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e731-8c23-d837-3aad">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Hernkyn Yaegirs" id="f5d1-5f43-1cce-0d8c" hidden="false"/>
+    <categoryEntry name="Theyn" id="6142-b3bd-87c7-3192" hidden="false"/>
+    <categoryEntry name="Bladekyn" id="33d0-5456-ff2f-837f" hidden="false"/>
+    <categoryEntry name="Bombast" id="5dd0-3dbf-6fac-c78a" hidden="false"/>
+    <categoryEntry name="Ironbraek" id="d30f-18f2-d870-1d33" hidden="false"/>
+    <categoryEntry name="Riflekyn" id="6f21-5cfa-1d34-8ebd" hidden="false"/>
+    <categoryEntry name="Tracker" id="8a5e-70fa-2121-e4ed" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="4a3d-bfd7-4082-3e05" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Faction Equipment" id="fd89-c7b5-f045-b3bf" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Plasma knives" hidden="false" id="ff2b-d3cd-6a81-9caa">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be77-b9e8-4ea2-9cbc" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Plasma knives" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="6db9-daf3-96e4-3739">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Friendly HERNKYN YAEGIR operatives have the following melee weapon. Note that some operatives already have this weapon but with better stats; in that instance, use the better version.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Plasma knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="74af-32f3-8daf-af53">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Lethal x+" id="a230-a6c0-f2df-a971" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Stabilised bolt shells" hidden="false" id="d96d-5efe-5fbe-9ff3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cd4-83cf-bc90-33af" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Stabilised bolt shells" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="df33-f32f-f54f-2a33">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Up to twice per turning point, whenever a friendly HERNKYN YAEGIR operative is performing the **Shoot** action and you select a bolt shotgun (long range), you can use this rule. If you do, until the end of that action, improve the Hit stat of that weapon by 1 and add 1 to both of its Dmg stats.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Firestorm bolt shells" hidden="false" id="629c-bb71-68cb-b078">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd97-e20f-330f-57d3" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Firestorm bolt shells" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="53b1-1626-3f49-39cf">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly HERNKYN YAEGIR operative is performing the Shoot action and you select a bolt shotgun (short range), you can use this rule. If you do, until the end of that action, that weapon has the Blast 1&quot; weapon rule.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ky-ceramide undersuit" hidden="false" id="0a10-bbe0-859e-e4fa">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc5f-808c-e720-0cbf" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Ky-ceramide undersuit" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="2538-6ec5-04bd-1e99">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever an operative is shooting a friendly HERNKYN YAEGIR operative, if the ranged weapon in that sequence has the Blast or Torrent weapon rule, you can re-roll one of your defence dice. In addition, friendly HERNKYN YAEGIR operatives aren’t affected by the x&quot; Devastating x weapon rule (i.e. Devastating with a distance) unless they are the target during that sequence.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule name="Resourceful" id="ab2c-1fbc-90f8-488c" hidden="false">
+      <description>In the Ready step of each Strategy phase after the first, you gain Resourceful points determined by the number of friendly HERNKYN YAEGIR operatives in the killzone that aren’t within control range of enemy operatives. At the end of each turning point, discard your Resourceful points. 
+
+
+6+ Operatives - 2 Resourceful Points
+3-5 Operatives - 1 Resourceful Points
+0-2 Operatives - 0 Resourceful Points
+
+
+Whenever a friendly HERNKYN YAEGIR operative that isn’t within control range of enemy operatives is activated, you can spend 1 of your Resourceful points to do one of the following:
+- Until the end of its activation, add 1 to its APL stat.
+- It regains D3+1 lost wounds</description>
+    </rule>
+    <rule name="Dauntless Explorers" id="c85c-60fc-8ea9-d296" hidden="false">
+      <description>STRATEGIC GAMBIT in the first turning point. Each friendly HERNKYN YAEGIR operative wholly within your drop zone can immediately perform a free Reposition action. Each that does so must end that move wholly within 4&quot; of your drop zone.</description>
+    </rule>
+  </rules>
+</catalogue>
