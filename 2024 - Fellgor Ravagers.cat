@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="1831-b3f5-0709-1a99" name="Fellgor Ravagers" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Kill Team" id="d9fd-9344-019d-a4b0" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="8ede-7f6b-4063-f8d9" targetId="874b-0390-e5e2-1daa" type="category"/>
+        <categoryLink name="Reference" hidden="false" id="15d4-b5e5-dcd2-85f4" targetId="b318-a8d7-2d38-99a3" type="category"/>
+        <categoryLink name="Leader" hidden="false" id="8352-f147-1993-aae0" targetId="d999-8cad-8145-4efe" type="category"/>
+        <categoryLink name="Operative" hidden="false" id="5d32-3ee7-1671-6c3e" targetId="cf83-4496-b58e-ac82" type="category">
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="5c87-6b04-0f90-6809-min" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5c87-6b04-0f90-6809-max" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Ironhorn" hidden="false" id="7fe3-9c72-34d3-8505">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="dd8d-08c5-65dc-affa" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="dd8d-08c5-65dc-affa">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Ironhorn" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="bc46-fa69-f525-682f">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">11</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Call the Attack" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="d509-5206-1044-025a">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">STRATEGIC GAMBIT. Select one friendly FELLGOR RAVAGER operative visible to and within 6&quot; of this operative. That selected operative, and each other friendly FELLGOR RAVAGER operative visible to and within 2&quot; of it, can immediately perform a free **Dash** action in an order of your choice.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="d9df-2814-add6-2fa5" hidden="false" defaultSelectionEntryId="none">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78bf-cc74-0173-3918-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78bf-cc74-0173-3918-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Corrupted pistol; corrupted chainsword" hidden="false" id="01b3-0401-c128-86ba">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Corrupted pistol" hidden="false" id="e5c9-cecd-a3c7-b056">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="70f0-dac7-e162-f31a-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70f0-dac7-e162-f31a-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⌖ Corrupted pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="057f-0d91-10ee-b194">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Rending</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Range x" id="38a2-590e-8c60-1fec" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                    <infoLink name="Rending" id="c8da-9750-226c-5b3b" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Corrupted chainsword" hidden="false" id="2969-5d15-563b-6ef9">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbcc-7820-c982-d4f4-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbcc-7820-c982-d4f4-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⚔ Corrupted chainsword" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="76d7-791e-1a3a-8f16">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rending</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Range x" id="17ed-2887-4d19-fd64" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                    <infoLink name="Rending" id="4e09-eec6-1196-84c7" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma pistol; bludgeon" hidden="false" id="cb4e-1486-1cc2-9b61">
+              <entryLinks>
+                <entryLink import="true" name="Bludgeon" hidden="false" id="025f-ad6a-e7c0-5e86" type="selectionEntry" targetId="3805-d175-2a6a-2178"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="ef1c-c59b-01c8-59d0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1901-699c-23ad-9200" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f35f-110a-796d-5080" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⌖ Plasma pistol (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2eda-aa3b-3d01-f1b5">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Piercing 1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="⌖ Plasma pistol (supercharge)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="29d0-4066-382c-e60f">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Hot, Lethal 5+, Piercing 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Hot" id="5274-890b-5227-2517" hidden="false" type="rule" targetId="ec63-40e6-6282-8420"/>
+                    <infoLink name="Piercing x" id="b0c5-8aab-a90c-999f" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                    <infoLink name="Lethal x+" id="15db-5ab8-64d3-c5e5" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                    <infoLink name="Range x" id="8684-276c-05dc-96d8" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="5fdc-3112-03ca-9a8e" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="0259-3917-76b7-1deb" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="f08e-e70a-14f9-fb1c" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Ironhorn" hidden="false" id="c041-6ef3-76de-6f5a" targetId="f001-f2d2-2aff-978f" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Frenzy" id="7bc8-82e4-80e6-4a54" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gnarlscar" hidden="false" id="66cb-3112-fd9b-94bd">
+      <modifiers>
+        <modifier type="set" value="1" field="9216-d448-e6ea-58b2">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="9216-d448-e6ea-58b2" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Gnarlscar" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="eefe-40f2-7aaf-eec8">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">11</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sagacious" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="f775-2e63-81c3-828e">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">At the end of this operative’s activation, you can change its order.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="War Gong" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="07d9-cbb7-cf01-6686">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an attack dice would inflict Critical Dmg on a friendly FELLGOR RAVAGER operative within 3&quot; of this operative, if this operative doesn’t have one of your Frenzy tokens, you can choose for that attack dice to inflict Normal Dmg instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Uncompromising Attack (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="aa50-f3bd-3544-5960">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Perform a free **Fight** action with this operative, then perform a free **Shoot** action with this operative (or vice versa). This operative can perform that Shoot action while within control range of an enemy operative, but if it does, it can and must target an enemy operative within its control range (even if other friendly operatives are within that enemy operative’s control range). You can only select an autopistol for that **Shoot** action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="293b-10c2-48c8-c0d3" type="selectionEntry" targetId="57ce-f16d-dd4f-4f15"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="ee2a-8775-aef6-1c3b" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="e320-5e9d-3ad1-f501" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="7975-383a-755c-5d8a" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Gnarlscar" hidden="false" id="80e3-3eb7-fda0-55ce" targetId="a016-5654-77e1-f171" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bionic fist" hidden="false" id="5f75-be78-40ef-552e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cd3-3aed-bdc9-c272-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cd3-3aed-bdc9-c272-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Bionic fist" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7aab-b5a0-eb44-0f5e">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Brutal" id="5216-fd08-496b-8ee2" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Frenzy" id="99d5-6adf-5fee-edb1" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fluxbray" hidden="false" id="027c-12d9-1494-ba76">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="fced-6e02-2ad8-cb31" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="fced-6e02-2ad8-cb31">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Fluxbray" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="c071-e3df-194d-7e4a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blade Whirl" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="5948-e815-f81b-69aa">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is fighting or retaliating, if it doesn’t have one of your Frenzy tokens, you can resolve one of your successes before the normal order. If you do, that success must be used to block.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cleaver Flurry (2AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="472e-a51a-7d9f-ae1a">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Perform a free **Reposition** action with this operative. During that action, it can move an additional 2&quot;, and can move within control range of enemy operatives (it cannot begin or end the move there). Inflict D3+1 damage on each enemy operative it moved within control range of (roll separately for each after it’s moved, in the order it moved within control range of them).
+◆ This operative cannot perform this action while it has a Conceal order.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Triple cleavers" hidden="false" id="7822-f060-e81b-d765">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69e6-3590-f14b-069c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69e6-3590-f14b-069c-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Triple cleavers" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1d6f-cb32-4916-9367">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="4f34-2e3f-ee3d-27ef" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="eae1-7a79-1f8b-149e" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="e7cd-0c6e-84fa-b19a" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="2931-b768-bedc-776c" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Fluxbray" hidden="false" id="19cf-ae4f-e1e3-d5ee" targetId="e174-d30c-b00a-de94" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Frenzy" id="d7da-a5d2-5440-3343" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Herd-goad" hidden="false" id="e8ab-d568-6c9d-e8c3">
+      <modifiers>
+        <modifier type="set" value="1" field="be1e-ea12-5333-e54e">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="be1e-ea12-5333-e54e" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Herd-goad" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="0094-7a50-f027-82fe">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Whip Control" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="eca1-ae0b-0363-45c8">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an enemy operative is visible to and within 3&quot; of this operative, if this operative isn’t within control range of any other enemy operatives: 
+- Subtract 1 from the Atk stat of that enemy operative’s melee weapons (to a minimum of 1).
+- Your opponent must spend 1 additional AP for that enemy operative to perform the Fall Back action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Incite Fury (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="930d-0fa3-e992-1eab">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ SUPPORT. Select one other friendly FELLGOR RAVAGER operative (excluding SHAMAN and IRONHORN) visible to and within 3&quot; of this operative. Until the end of that operative’s next activation, add 1 to its APL stat.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="8842-16cb-0a46-435f" type="selectionEntry" targetId="57ce-f16d-dd4f-4f15"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="0457-5457-6cda-6464" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="90c5-d1dc-ea1f-0d61" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="93a2-16e6-f994-fc0c" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Herd-goad" hidden="false" id="0978-0b1d-2c23-4160" targetId="5c91-04fd-fdd5-a348" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Crackthorn whip" hidden="false" id="a0c1-c1b1-95f4-cdde">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81c1-1916-6084-180e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81c1-1916-6084-180e-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Crackthorn whip (ranged)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="bc36-50da-75e8-c424">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 3&quot;, Lethal 4+, Stun</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⚔ Crackthorn whip (melee)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="9052-ea61-36b4-c3e2">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 4+, Stun</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Stun" id="e2cc-aeb2-74f2-4f67" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
+            <infoLink name="Range x" id="cac8-b0ce-1291-5006" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Lethal x+" id="4472-a990-05fd-dbb9" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Frenzy" id="96dc-5961-ba33-c00e" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Warrior with bludgeon" hidden="false" id="be8b-068d-eb73-c6fb">
+      <modifiers>
+        <modifier type="set" value="9" field="4ac5-fe42-4d50-10b6">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="4ac5-fe42-4d50-10b6" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="8226-1311-99bc-cc95">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Warrior Frenzy" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="befb-49fb-6bdc-1d49">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative has one of your Frenzy tokens, it cannot be injured. This takes precedence over the normal Frenzy rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Bludgeon" hidden="false" id="c807-8864-0671-4c15" type="selectionEntry" targetId="3805-d175-2a6a-2178"/>
+        <entryLink import="true" name="Autopistol" hidden="false" id="2cba-194f-a1a1-f5d2" type="selectionEntry" targetId="57ce-f16d-dd4f-4f15"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="fe11-52a9-49f3-5c1d" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="1d53-b355-5d27-979c" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Deathknell" hidden="false" id="bd1d-1d09-a8a0-89f7" targetId="441e-a540-c390-c294" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="a28f-49bb-561e-fdf6" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Frenzy" id="344e-5787-0490-9694" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gorehorn" hidden="false" id="4e20-4cc5-7050-c39f">
+      <modifiers>
+        <modifier type="set" value="1" field="db7b-03aa-1d0b-a051">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="db7b-03aa-1d0b-a051" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Gorehorn" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="d1b6-2e2e-891e-7c99">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Champion" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="d879-425c-3c41-0b53">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform two Fight actions during its activation.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="*Headtaker" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8fb3-30fa-5342-dec1">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative incapacitates an operative with this weapon, roll one D3: 
+- This operative regains a number of lost wounds equal to the result (unless it has one of your Frenzy tokens).
+- Until the end of the battle, add the result to the Critical Dmg stat of this operative’s skullcleaver (to a maximum of 8).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="47c5-9917-8785-7855" type="selectionEntry" targetId="57ce-f16d-dd4f-4f15"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="b7a5-732a-7d74-e176" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="812e-822e-7544-e86a" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="922b-99f3-c67b-5de9" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Gorehorn" hidden="false" id="6367-58fb-1bbf-f618" targetId="2816-0054-0b14-f597" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Skullcleaver" hidden="false" id="2c5c-aa0b-a1d1-9f10">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9b3-0274-afc1-bca6-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9b3-0274-afc1-bca6-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Skullcleaver" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="91dc-fd21-0210-ca4b">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Headtaker*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="397b-4031-a6bf-4c4c" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Frenzy" id="7e73-127c-9839-e851" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mangler" hidden="false" id="4ac6-5137-a4d4-2cd4">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d109-58dd-b774-da4a" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="d109-58dd-b774-da4a">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Mangler" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="c629-501c-bf7c-1579">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">11</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="*Tactual Hunter" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="6c93-c6a6-f585-d1c0">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is fighting with this weapon against an expended operative, the first time you strike with a critical success during that sequence, you can immediately resolve another of your successes as a strike (before your opponent).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Berserker" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="a277-0b66-6703-bbbd">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative cannot perform the **Shoot** action (other than **Guard**, but cannot then perform a free **Shoot** action during the interruption). You must spend 1 additional AP for this operative to perform the **Pick Up Marker** and mission actions (excluding **Operate Hatch**).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Savage" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="6e6c-22e6-12b3-3bd6">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">The first time this operative performs the **Fight** action during each of its activations, if it isn’t incapacitated, it can immediately perform a free **Fight** action afterwards (you don’t have to select the same enemy operative to fight against). This takes precedence over action restrictions, and you cannot use the Ruthless Rampage firefight ploy between those two **Fight** actions.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Vicious claws" hidden="false" id="e0e4-0565-0697-e349">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c823-4b2f-e009-3d0a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c823-4b2f-e009-3d0a-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Vicious claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="fd37-7d7f-2701-fde8">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Tactual Hunter*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="99e7-228c-a051-8407" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="9be1-4c47-51dc-b7ef" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="824b-1b38-bc58-18d2" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="bcac-077d-532a-3d7e" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Fluxbray" hidden="false" id="2f92-2782-922f-78f9" targetId="e174-d30c-b00a-de94" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Frenzy" id="877d-0d30-a975-4d89" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Shaman" hidden="false" id="8a5d-9080-38b7-e233">
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="8b3f-b71c-dc55-b311" type="selectionEntry" targetId="57ce-f16d-dd4f-4f15"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Shaman" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="b4e3-6a30-808c-ad80">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mantle of Darkness (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="1b85-c73e-74d8-6425">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ PSYCHIC. Until the start of this operative’s next activation or until it’s incapacitated (whichever comes first), whenever a friendly FELLGOR RAVAGER operative is within 3&quot; of this operative, has a Conceal order and is in cover, that friendly operative cannot be selected as a valid target, taking precedence over all other rules (e.g. Vantage terrain).
+◆ This operative cannot perform this action while it has a Conceal order.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Apoplectic Rejuvenation (2AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="1dac-349b-1725-c64c">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly FELLGOR RAVAGER operative that doesn’t have one of your Frenzy tokens and is visible to and within 6&quot; of this operative. That friendly operative regains 2D3 lost wounds; if that operative has incapacitated an enemy operative while fighting or retaliating during the battle, it regains 6 lost wounds instead.
+◆ This operative cannot perform this action while it has a Conceal order.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Tech-curse" hidden="false" id="185f-bc02-76a6-e06c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff51-b8a1-cb91-f9c5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff51-b8a1-cb91-f9c5-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Tech-curse" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="774d-376d-933c-c0dc">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">PSYCHIC, Rending, Saturate, Seek</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Saturate" id="5453-fccf-bbfa-902d" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+            <infoLink name="Rending" id="5d04-525f-e948-7b23" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+            <infoLink name="Seek" id="80f4-713d-6780-5fde" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Braystave" hidden="false" id="9c6d-4f47-e12e-6093">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1eb-6c7e-37d9-5c02-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1eb-6c7e-37d9-5c02-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Braystave" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7d5c-0760-1feb-0069">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Shock</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shock" id="4381-52af-26e8-4e8b" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="c01a-1791-6efc-68ab" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="a44b-0226-7edd-6c02" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Psyker" hidden="false" id="8a1f-8410-8219-2b53" targetId="6f95-9b94-d661-3243" primary="false"/>
+        <categoryLink name="Shaman" hidden="false" id="cb52-828a-33f8-aa43" targetId="bc10-4a0d-d98a-fd7b" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="69e4-1523-2305-d1fd" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="81e1-5b61-02c4-e32f" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="81e1-5b61-02c4-e32f">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Frenzy" id="ae3c-db01-fe62-7b7b" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Toxhorn" hidden="false" id="8b8a-4dd3-4ed9-7bbf">
+      <modifiers>
+        <modifier type="set" value="1" field="ddbf-7a9a-0e18-73f6">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="ddbf-7a9a-0e18-73f6" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Toxhorn" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="8d5a-7730-1ae8-203c">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Toxic Blessings" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="4a64-707c-ef55-13ee">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">You can ignore any changes to this operative’s APL stat and it’s not affected by enemy operatives’ Shock weapon rule. Whenever an attack dice inflicts Normal Dmg of 3 or more on this operative, roll one D6: on a 5+, subtract 1 from that inflicted damage.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pox Bomb" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="ec63-00bc-ca08-f57a">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can use stun grenades (see universal equipment). Doing so doesn’t count towards any limited uses you have (i.e. if you also select that grenade from equipment for other operatives). Whenever an enemy operative takes a stun test as a result of this operative performing the **Stun Grenade** action, if the result is a 3+, also inflict damage on that enemy operative equal to the D6 result halved (rounding up).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="5634-4040-851c-2374" type="selectionEntry" targetId="57ce-f16d-dd4f-4f15"/>
+        <entryLink import="true" name="Cleaver" hidden="false" id="0b27-cefc-62f1-1f46" type="selectionEntry" targetId="16ec-03a2-6459-8b67"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="5195-a083-ef4c-6727" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="3de4-3f20-135a-188d" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="53ab-291e-d60b-2d08" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Toxhorn" hidden="false" id="4ee9-5386-0e02-0798" targetId="7bad-b5ae-ef92-a559" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Frenzy" id="0d69-4bc9-541c-6217" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vandal" hidden="false" id="e140-5009-6d7c-98ee">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="dd30-db85-83eb-2622" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="dd30-db85-83eb-2622">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Vandal" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="a9a7-de9e-562c-e830">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="*Vicious Blows" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="d50a-b27c-8853-9954">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is fighting, this weapon has the Ceaseless weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sweeping Blow (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="4f9d-e44a-1bd4-6a54">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Inflict D3+1 damage on each other operative visible to and within 2&quot; of this operative.
+◆ This operative cannot perform this action while it has a Conceal order.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mancrusher" hidden="false" id="0fdf-2ee0-406b-c2ec">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eea2-23cc-cbd2-d104-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea2-23cc-cbd2-d104-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Mancrusher" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4cf1-d620-58cd-637e">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal, Vicious Blows*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Brutal" id="c4c8-7681-be03-267c" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="835e-c879-267a-d729" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="4d58-8503-8bbc-37d4" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="ebf8-bb4b-f08f-6918" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Vandal" hidden="false" id="d0a4-6e6f-6b06-e29e" targetId="0857-155e-30cd-ee06" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Frenzy" id="e198-b8f3-9c4e-c007" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Deathknell" hidden="false" id="4091-0cdd-2df0-3026">
+      <modifiers>
+        <modifier type="set" value="1" field="5dd5-578b-3202-4e8d">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5dd5-578b-3202-4e8d" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Deathknell" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="4196-eb2e-0cf9-8ec1">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Icon Bearer" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="7469-28ff-e713-fa9f">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative isn’t affected by the marker control bullet point of the Frenzy faction rule. Whenever determining control of a marker, treat this operative’s APL stat as 1 higher. Note this isn’t a change to its APL stat, so any changes are cumulative with this.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="War Gong" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="643b-e715-1f06-33e5">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an attack dice would inflict Critical Dmg on a friendly FELLGOR RAVAGER operative within 3&quot; of this operative, if this operative doesn’t have one of your Frenzy tokens, you can choose for that attack dice to inflict Normal Dmg instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gong Knell (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b1bf-a7b6-2460-7104">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation or until this operative is incapacitated (whichever comes first), whenever an operative is shooting this operative, improve this operative’s Save stat by 1 and ignore the Piercing weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Bludgeon" hidden="false" id="8822-2f51-519b-bdcd" type="selectionEntry" targetId="3805-d175-2a6a-2178"/>
+        <entryLink import="true" name="Autopistol" hidden="false" id="3271-c870-af9e-158d" type="selectionEntry" targetId="57ce-f16d-dd4f-4f15"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="d305-b339-4248-7196" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="b289-8d66-8558-ac17" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Deathknell" hidden="false" id="3ccf-ce11-232a-d66f" targetId="441e-a540-c390-c294" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="5b0a-c2ea-6cdf-980b" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Frenzy" id="c55c-e1e6-9975-204d" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Warrior with cleaver" hidden="false" id="dac3-3839-5e44-3bea">
+      <modifiers>
+        <modifier type="set" value="9" field="b977-65be-9b05-8a13">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d9fd-9344-019d-a4b0" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="b977-65be-9b05-8a13" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7973-ec7c-ba32-7b30">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Warrior Frenzy" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="c0ff-11b3-8bd8-d56b">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative has one of your Frenzy tokens, it cannot be injured. This takes precedence over the normal Frenzy rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Cleaver" hidden="false" id="0885-9107-18e9-bc08" type="selectionEntry" targetId="16ec-03a2-6459-8b67"/>
+        <entryLink import="true" name="Autopistol" hidden="false" id="f05a-3425-d196-1e20" type="selectionEntry" targetId="57ce-f16d-dd4f-4f15"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Fellgor Ravagers" hidden="false" id="5ace-ce5d-ae5c-f084" targetId="827d-3e9d-bab3-e84c" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="d4a6-9648-008f-128b" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Deathknell" hidden="false" id="e6ed-e81f-98ef-f582" targetId="441e-a540-c390-c294" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="ee77-240f-0583-fa37" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Frenzy" id="caa2-905a-91e7-4890" hidden="false" type="rule" targetId="b6c5-3ef4-1a3f-7012"/>
+      </infoLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedRules>
+    <rule name="Frenzy" id="b6c5-3ef4-1a3f-7012" hidden="false">
+      <description>Whenever a friendly FELLGOR RAVAGER operative that doesn’t have one of your Frenzy tokens would be incapacitated during the battle, it’s not incapacitated and it gains one of your Frenzy tokens. All remaining attack dice are discarded (including yours if this operative is fighting or retaliating). If it has a Conceal order, change it to Engage.
+
+
+Whenever a friendly FELLGOR RAVAGER operative has one of your Frenzy tokens: 
+- It’s only incapacitated as detailed below.
+- It cannot have a Conceal order.
+- It’s injured.
+- It cannot perform the **Pick Up Marker** or mission actions (excluding **Operate Hatch**).
+- For the purpose of determining control of markers, treat its APL stat as 1. This takes precedence over any stat changes.
+
+
+A friendly FELLGOR RAVAGER operative that has one of your Frenzy tokens is incapacitated when one of the following is met: 
+- Its activation ends.
+- An enemy operative is fighting against or retaliating against it and your opponent strikes with a critical success.
+- An enemy operative is fighting against or retaliating against it and your opponent strikes it for a second time with a normal success. Note this can be strikes from two different **Fight** actions.
+- An enemy operative is shooting it and Critical Dmg is inflicted on it.
+- The battle ends (resolve this before any victory conditions that resolve at the end of the battle). 
+
+
+Your opponent treats a FELLGOR RAVAGER operative as being incapacitated (instead of when it would be incapacitated normally) when it gains one of your Frenzy tokens for the purposes of scoring VPs (e.g. kill op) and faction rules that require it to be incapacitated (e.g. HAND OF THE ARCHON Power From Pain, CHAOS CULT Mutation, etc.).</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Bludgeon" hidden="false" id="3805-d175-2a6a-2178">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a00-6198-0883-36da-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a00-6198-0883-36da-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Bludgeon" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6127-931d-6fab-fd2e">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Brutal" id="b419-a9f8-0a71-d042" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="57ce-f16d-dd4f-4f15">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d8e-8656-fa8b-9223-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d8e-8656-fa8b-9223-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Autopistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b9de-fc4e-432d-9e54">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="dc6d-27b5-7ed1-3331" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cleaver" hidden="false" id="16ec-03a2-6459-8b67">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c4e-30e7-f530-4b72-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c4e-30e7-f530-4b72-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Cleaver" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4ace-b132-b1c4-a698">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Fellgor Ravagers" id="827d-3e9d-bab3-e84c" hidden="false"/>
+    <categoryEntry name="Ironhorn" id="f001-f2d2-2aff-978f" hidden="false"/>
+    <categoryEntry name="Deathknell" id="441e-a540-c390-c294" hidden="false"/>
+    <categoryEntry name="Gnarlscar" id="a016-5654-77e1-f171" hidden="false"/>
+    <categoryEntry name="Fluxbray" id="e174-d30c-b00a-de94" hidden="false"/>
+    <categoryEntry name="Gorehorn" id="2816-0054-0b14-f597" hidden="false"/>
+    <categoryEntry name="Herd-goad" id="5c91-04fd-fdd5-a348" hidden="false"/>
+    <categoryEntry name="Shaman" id="bc10-4a0d-d98a-fd7b" hidden="false"/>
+    <categoryEntry name="Toxhorn" id="7bad-b5ae-ef92-a559" hidden="false"/>
+    <categoryEntry name="Vandal" id="0857-155e-30cd-ee06" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="5a28-bea1-dfaa-7168" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Faction Equipment" id="2af6-d774-c0ed-748e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Brass Adornments" hidden="false" id="acb3-434b-7789-adb2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ca5-1c14-1071-a228" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Brass Adornments" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="cdb0-a739-139c-a80b">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per battle, you can use the Animalistic Fury and Wild Rage firefight ploys for 0CP each.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gore Marks" hidden="false" id="398a-c9b0-14f8-8236">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcfd-620a-ae19-d4e5" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Gore Marks" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="0225-d22e-9e2f-7c5d">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly FELLGOR RAVAGER operative is fighting or retaliating, you can use this rule. If you do, inflict 1 damage on that friendly operative and re-roll one of your attack dice. If the result is a fail, inflict 1 additional damage on that friendly operative.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chaos Sigil" hidden="false" id="6dcb-8be3-20c7-a033">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0853-567a-bae6-d894" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Chaos Sigil" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="5dd9-2b76-b533-5127">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when an operative is shooting a friendly FELLGOR RAVAGER operative, at the start of the Roll Defence Dice step, you can use this rule. If you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="War Paint" hidden="false" id="b4e2-f24a-f209-de4e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8162-9c68-a806-ac84" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="War Paint" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="dca2-4512-dc5b-b701">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">You can ignore any changes to the Move stat of friendly FELLGOR RAVAGER operatives from being injured.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+  </entryLinks>
+</catalogue>
