@@ -125,18 +125,32 @@
   <sharedRules>
     <rule name="Devastating x" id="a8ba-6e3a-76b3-f05c" hidden="false" noindex="true">
       <description>Each retained critical success immediately inflicts *x* damage on the operative this weapon is being used against, e.g. Devastating 3. If the rule starts with a distance (e.g. 1&quot; Devastating *x*), inflict *x* damage on that operative and each other operative visible to and within that distance of it. Note that success isn&apos;t discarded after doing so — it can still be resolved later in the sequence.</description>
+      <alias>Devastating 1</alias>
+      <alias>Devastating 2</alias>
+      <alias>Devastating 3</alias>
     </rule>
     <rule name="Piercing x" id="4c07-2cb3-1417-cbb7" hidden="false" noindex="true">
       <description>The defender collects *x* less defence dice, e.g. Piercing 1. If the rule is Piercing Crits *x*, this only comes into effect if you retain any critical successes.</description>
+      <alias>Piercing 1</alias>
+      <alias>Piercing 2</alias>
+      <alias>Piercing Crits 1</alias>
     </rule>
     <rule name="Blast x" id="0d74-0977-b481-bd13" hidden="false" noindex="true">
       <description>The target you select is the primary target. After shooting the primary target, shoot with this weapon against each secondary target in an order of your choice (roll each sequence separately). Secondary targets are other operatives visible to and within *x* of the primary target, e.g. Blast 2&quot; (they are all valid targets, regardless of a conceal order). Secondary targets are in cover and obscured if the primary target was.</description>
+      <alias>Blast 1&quot;</alias>
+      <alias>Blast 2&quot;</alias>
+      <alias>Blast 3&quot;</alias>
     </rule>
     <rule name="Ceaseless" id="752d-ce38-c325-4b8a" hidden="false">
       <description>You can re-roll any of your attack dice results of one result (e.g. results of 2).</description>
     </rule>
     <rule name="Range x" id="a528-829e-8268-c005" hidden="false" noindex="true">
       <description>Only operatives within *x* of the active operative can be valid targets, e.g. Range 9&quot;.</description>
+      <alias>Range 1&quot;</alias>
+      <alias>Range 3&quot;</alias>
+      <alias>Range 6&quot;</alias>
+      <alias>Range 8&quot;</alias>
+      <alias>Range 9&quot;</alias>
     </rule>
     <rule name="Balanced" id="28f7-0d96-d1fc-f75b" hidden="false">
       <description>You can re-roll one of your attack dice.</description>
@@ -146,18 +160,27 @@
     </rule>
     <rule name="Accurate x" id="ba48-6452-4bf6-e9fa" hidden="false" noindex="true">
       <description>You can retain up to *x* attack dice as normal successes without rolling them. If a weapon has more than one instance of Accurate *x*, you can treat it as one instance of Accurate 2 instead (this takes precedence over *x* rules above).</description>
+      <alias>Accurate 1</alias>
+      <alias>Accurate 2</alias>
     </rule>
     <rule name="Brutal" id="5151-5449-ca81-70ed" hidden="false">
       <description>Your opponent can only block with critical successes.</description>
     </rule>
     <rule name="Heavy" id="816e-44a2-6be4-6a9a" hidden="false">
       <description>An operative cannot use this weapon in an activation in which it moved, and it cannot move in an activation in which it used this weapon. If the rule is Heavy (***x*** only), where ***x*** is a move action, only that move is allowed, e.g. Heavy (**Dash** only). This weapon rule has no effect on preventing the **Guard** action.</description>
+      <alias>Heavy (Reposition only)</alias>
+      <alias>Heavy (Dash only)</alias>
+      <alias>Heavy (**Reposition** only)</alias>
+      <alias>Heavy (**Dash** only)</alias>
     </rule>
     <rule name="Hot" id="ec63-40e6-6282-8420" hidden="false">
       <description>After an operative uses this weapon, roll one D6. If the result is less than the weapon&apos;s Hit stat, inflict damage on that operative equal to the result multiplied by two. If it&apos;s used multiple times in one action (e.g. Blast), still only roll one D6.</description>
     </rule>
     <rule name="Lethal x+" id="8b97-e3e3-2857-817a" hidden="false" noindex="true">
       <description>Your successes equal to or greater than *x* are critical successes, e.g. Lethal 5+.</description>
+      <alias>Lethal 3+</alias>
+      <alias>Lethal 4+</alias>
+      <alias>Lethal 5+</alias>
     </rule>
     <rule name="Limited x" id="bf37-3388-40d5-eb72" hidden="false" noindex="true">
       <description>After an operative uses this weapon a number of times in the battle equal to *x*, they no longer have it. If it&apos;s used multiple times in one action (e.g. Blast), treat this as one use.</description>
@@ -173,6 +196,7 @@
     </rule>
     <rule name="Seek" id="a33d-4e90-5794-6e20" hidden="false">
       <description>When selecting a valid target, operatives cannot use terrain for cover. If the rule is Seek Light, operatives cannot use Light terrain for cover. Whist this can allow such operatives to be targeted (assuming they&apos;re visible), it doesn&apos;t remove their cover save (if any).</description>
+      <alias>Seek Light</alias>
     </rule>
     <rule name="Severe" id="721c-65bf-dfb7-8fa2" hidden="false">
       <description>If you don&apos;t retain any critical successes, you can change one of your normal successes to a critical success. Any rules that take effect as a result of retaining a critical success (e.g. Devastating, Piercing Crits, etc.) still do.</description>
@@ -188,6 +212,8 @@
     </rule>
     <rule name="Torrent x" id="ad45-b4bb-1345-e4f9" hidden="false">
       <description>Select a valid target as normal as the primary target, then select any number of other valid targets within *x* of the first valid target as secondary targets, e.g. Torrent 2&quot;. Shoot with this weapon against all of them in an order of your choice (roll each sequence separately).</description>
+      <alias>Torrent 1&quot;</alias>
+      <alias>Torrent 2&quot;</alias>
     </rule>
   </sharedRules>
   <sharedProfiles>
