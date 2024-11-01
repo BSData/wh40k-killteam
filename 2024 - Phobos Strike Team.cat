@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="deb4-15a0-8800-eecb" name="Phobos Strike Team" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Phobos Strike Team Kill Team" id="ffd4-9cab-9157-03ee" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="a703-028a-2b62-7427" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="abdc-efca-41a2-b05f" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Leader" hidden="false" id="a093-55ce-48bb-c456" targetId="d999-8cad-8145-4efe">
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="c4f0-305a-c42e-f73d"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="c4f0-305a-c42e-f73d">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Operative" hidden="false" id="3270-995a-4762-d858" targetId="cf83-4496-b58e-ac82">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="824c-47a7-5f9f-df84-min"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="824c-47a7-5f9f-df84-max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <rules>
+    <rule name="Omni-Scrambler" id="f9f0-81ae-b47d-0767" hidden="false">
+      <description>STRATEGIC GAMBIT if a friendly INFILTRATOR operative is in the killzone. Select one enemy operative visible to a friendly INFILTRATOR operative, or within 6&quot; of a friendly VOXBREAKER operative. In the following Firefight phase, that enemy operative cannot be activated or perform actions until one of the following is true:
+- Your opponent has activated a number of enemy operatives equal to the number of friendly INFILTRATOR operatives in the killzone when this STRATEGIC GAMBIT was used.
+- It’s the last enemy operative to be activated.</description>
+    </rule>
+    <rule name="Terror" id="8687-1349-4993-2d57" hidden="false">
+      <description>Whenever an enemy operative is within 3&quot; of friendly REIVER operatives, your opponent must spend 1 additional AP for that enemy operative to perform the Pick Up Marker and mission actions.
+Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 3&quot; of friendly REIVER operatives. Note this isn’t a change to the APL stat, so any changes are cumulative with this.</description>
+    </rule>
+    <rule name="Astartes" id="0796-1b29-e776-8de5" hidden="false">
+      <description>During each friendly PHOBOS STRIKE TEAM operative’s activation, it can perform either two **Shoot** actions or two **Fight** actions. If it’s two **Shoot** actions, a bolt weapon must be selected for at least one of them. A bolt weapon is any ranged weapon that includes ‘bolt’ in its name, e.g. marksman bolt carbine, special issue bolt pistol, etc.</description>
+    </rule>
+    <rule name="Multi-Spectrum Array" id="1c25-972d-c222-8f4c" hidden="false">
+      <description>Whenever a friendly INCURSOR operative is shooting, enemy operatives cannot be obscured.</description>
+    </rule>
+  </rules>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Infiltrator Veteran" hidden="false" id="2648-7601-1bf4-0fc0">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="01ed-89eb-2707-ab84" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="12a6-702a-a68a-1258" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="5650-3e93-854e-125b" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="ac14-dc9f-a9b1-77ea" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Infiltrator" hidden="false" id="c850-9e65-00ae-4147" targetId="8421-679b-025c-c1ab" primary="false"/>
+        <categoryLink name="Veteran" hidden="false" id="25ae-8768-18ec-41fa" targetId="4f7a-1544-e10d-f695" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infiltrator Veteran" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="01e9-a7f7-a349-6a4a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="bc3d-c994-0088-e75c" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="bc3d-c994-0088-e75c">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="446c-f344-b4dd-6bd2" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db3d-9452-4f6b-3c34-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db3d-9452-4f6b-3c34-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Custom bolt carbine" hidden="false" id="f5f1-95f0-cc2b-df11">
+          <profiles>
+            <profile name="⌖ Custom bolt carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7e0b-4cb9-b445-e753">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Custom*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="*Custom" id="c7af-6bd9-0a03-7688" hidden="false">
+              <description>At the end of the Select Operatives step, if this operative is selected for deployment, select up to two of the following weapon rules for this weapon to have for the battle: Balanced, Lethal 5+, Piercing Crits 1, Rending, Saturate.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Infiltrator Sergeant" hidden="false" id="d4cc-b32d-bb11-c5d9">
+      <categoryLinks>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="b6b5-4df5-95e3-0148" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="a0bd-fd3e-38cb-3908" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="62e6-cd28-5f3d-8e1b" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Sergeant" hidden="false" id="08cb-892f-0a14-6995" targetId="7e44-3fe8-9cd2-0b2e" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="6dab-9956-3b81-95a7" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Infiltrator" hidden="false" id="9d3f-b372-ac53-3ce6" targetId="8421-679b-025c-c1ab" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infiltrator Sergeant" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="80fd-f2f0-1e1b-dd5b">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">13</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="7529-cb19-a7e2-4d30" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="7529-cb19-a7e2-4d30">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="9e06-867f-adad-df44" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a16-d430-6739-f0c9-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a16-d430-6739-f0c9-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Marksman bolt carbine" hidden="false" id="f7b0-7dbd-9780-8677" type="selectionEntry" targetId="c76d-6a29-29e4-beff">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6dee-8081-8c88-a7bb-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dee-8081-8c88-a7bb-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Tactical Advantage" id="351d-2e85-bfc8-934e" hidden="false" type="profile" targetId="94d1-e9e8-fb28-5dee"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Reiver Sergeant" hidden="false" id="5b3c-ef0e-73a3-b8e4">
+      <categoryLinks>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="d8b9-8636-ac19-e1d4" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="65e9-da70-e306-3831" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="5556-fdea-a98c-641b" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Sergeant" hidden="false" id="b011-5258-8949-e26f" targetId="7e44-3fe8-9cd2-0b2e" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="0542-f75d-c4f5-3a49" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Reiver" hidden="false" id="048d-e2e4-6d63-7613" targetId="c1c8-1f42-dd25-78ff" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Reiver Sergeant" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="46c9-5479-2c58-2c3c">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">13</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="32b5-01de-65ba-0a7d" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="32b5-01de-65ba-0a7d">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Tactical Advantage" id="a765-b35b-cb43-7baa" hidden="false" type="profile" targetId="94d1-e9e8-fb28-5dee"/>
+        <infoLink name="Grav-chute and Grapnel Launcher" id="7f77-ce1e-5ffd-913b" hidden="false" type="profile" targetId="f842-b103-1e75-b0fc"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="b989-d28b-a989-0ac1" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be82-6a42-9f19-7d6f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be82-6a42-9f19-7d6f-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Special issue bolt pistol; combat knife" hidden="false" id="88cd-c0d4-0e77-8b7a">
+              <entryLinks>
+                <entryLink import="true" name="Combat knife" hidden="false" id="ea8e-0372-0d6e-d3f3" type="selectionEntry" targetId="2be2-28ef-21d3-4bbf">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a09d-3440-07b9-e1d0-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a09d-3440-07b9-e1d0-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Special issue bolt pistol" hidden="false" id="9245-0712-ca0a-48ab" type="selectionEntry" targetId="a166-7d71-0845-7e2c">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8e3-8277-ce90-ba5a-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8e3-8277-ce90-ba5a-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolt carbine; fists" hidden="false" id="b519-1386-c152-cf94">
+              <entryLinks>
+                <entryLink import="true" name="Bolt carbine" hidden="false" id="9921-a30c-7e99-883c" type="selectionEntry" targetId="8cce-b98a-b6b0-16f8">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac39-8a3f-cd7a-a8f0-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac39-8a3f-cd7a-a8f0-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fists" hidden="false" id="1c5f-399c-eba3-2986" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b14e-6cd5-779a-dea7-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b14e-6cd5-779a-dea7-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Incursor Sergeant" hidden="false" id="0289-e2d0-2271-1ae8">
+      <categoryLinks>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="0d3f-0b62-55d1-8195" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="a294-a031-cbbb-5f65" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="6b52-0646-aeed-8e71" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Sergeant" hidden="false" id="2c1e-47d2-b4e9-f48c" targetId="7e44-3fe8-9cd2-0b2e" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="c7d8-6a57-579a-edbd" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Incursor" hidden="false" id="8f8d-9f68-e5c5-e7e4" targetId="98af-cdc1-bcdc-a53c" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Incursor Sergeant" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7a33-f5ab-ac2b-e752">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">13</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="aca3-2b1b-6114-655a" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="aca3-2b1b-6114-655a">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="35a2-0a05-6d3b-b0ea" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7882-39b3-e968-d148-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7882-39b3-e968-d148-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Oculus bolt carbine" hidden="false" id="be65-efe7-b988-338f" type="selectionEntry" targetId="569b-914d-dd8f-9f76">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b6f-d268-b351-95e3-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b6f-d268-b351-95e3-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Tactical Advantage" id="c4ab-0b1f-0e0d-866a" hidden="false" type="profile" targetId="94d1-e9e8-fb28-5dee"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Infiltrator Helix Adept" hidden="false" id="d90a-f9a6-a7ce-326c">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="1b09-1220-a85b-26ec" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="f247-c396-c4c7-1219" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="1ec5-5d5c-ecf7-9b87" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="37d3-ebd0-5f71-b2a0" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Infiltrator" hidden="false" id="9879-0fff-fd28-b450" targetId="8421-679b-025c-c1ab" primary="false"/>
+        <categoryLink name="Medic" hidden="false" id="5267-fdaa-b0c4-4379" targetId="8200-47a2-61fb-5137" primary="false"/>
+        <categoryLink name="Helix Adept" hidden="false" id="04c1-078c-c7c0-08f9" targetId="7dee-b23c-8525-cef9" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infiltrator Helix Adept" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="ffa2-bbdd-525b-4493">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Medic!" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="dd0a-cebd-8092-59b1">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">The first time during each turning point that another friendly PHOBOS STRIKE TEAM operative would be removed from the killzone as incapacitated while visible to and within 3&quot; of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn’t incapacitated and has D3 wounds remaining. That friendly operative can then immediately perform a free **Dash** action, but must end that move with this operative’s control range. Subtract 1 from this and that operative’s APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative’s activation, that activation ends. You cannot use this rule if this operative is incapacitated.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Helix Gauntlet (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="3108-7508-4c90-b653">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly PHOBOS STRIKE TEAM operative within this operative’s control range to regain up to D3+3 lost wounds. It cannot be an operative that the Medic! rule was used on during this turning point.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="0085-bdcc-aa05-3676" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="0085-bdcc-aa05-3676">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="34f3-f130-6a6e-e128" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a900-8267-bbf6-7b0d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a900-8267-bbf6-7b0d-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Marksman bolt carbine" hidden="false" id="f435-0a70-c59d-2d81" type="selectionEntry" targetId="c76d-6a29-29e4-beff">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aabb-8ae0-ba02-1197-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aabb-8ae0-ba02-1197-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Infiltrator Warrior" hidden="false" id="e20f-7690-389b-e50b">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="0d45-09d7-39e3-6cd6" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="4dc1-7422-8253-7b0f" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="83f3-9c4e-13a6-cd33" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="e8c5-4daa-fca1-b881" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Infiltrator" hidden="false" id="55e5-1a04-40cc-2d0a" targetId="8421-679b-025c-c1ab" primary="false"/>
+        <categoryLink name="Warrior" hidden="false" id="e0e5-3688-ca1a-37e8" targetId="2b69-f2aa-bd5c-70b2" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infiltrator Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="edce-20f0-42d2-6345">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="bf41-e05c-3c0c-75bb" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16a2-fd11-3df8-b5d8-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16a2-fd11-3df8-b5d8-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Marksman bolt carbine" hidden="false" id="6ec2-7834-2c6e-9000" type="selectionEntry" targetId="c76d-6a29-29e4-beff">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56ed-53b5-5669-4465-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56ed-53b5-5669-4465-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Vanguard" id="9c6b-feb9-76a0-71f2" hidden="false" type="profile" targetId="5e48-fb12-e850-6c6e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Infiltrator Voxbreaker" hidden="false" id="0562-6de4-4a6d-cb30">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="daf2-64d1-a830-0d72" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="64f9-a605-5c0b-ec27" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="182c-a5c6-9d48-352b" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="2c00-1391-9733-4297" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Infiltrator" hidden="false" id="e63e-47d3-bba7-c5be" targetId="8421-679b-025c-c1ab" primary="false"/>
+        <categoryLink name="Voxbreaker" hidden="false" id="f55d-12c1-0571-3a91" targetId="425e-05e5-1f4e-49ab" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infiltrator Voxbreaker" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="abb1-0702-d83a-aca0">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Voxbreak" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0439-5083-251b-ca2b">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an enemy operative is within 6&quot; of this operative, your opponent cannot re-roll their attack or defence dice for that operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="130d-6d03-e6bd-fa3e" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="130d-6d03-e6bd-fa3e">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="d023-f5e2-9e26-67a9" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1836-d571-072a-348b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1836-d571-072a-348b-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Marksman bolt carbine" hidden="false" id="0b20-363b-52b9-c99f" type="selectionEntry" targetId="c76d-6a29-29e4-beff">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9dc5-f5c8-29e4-6303-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dc5-f5c8-29e4-6303-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Auspex Scan" hidden="false" id="8974-a595-321c-ab7b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f8d-9ab1-379f-70cc-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f8d-9ab1-379f-70cc-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Auspex Scan (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="8bc9-070e-bcfb-e9b2">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">Until the start of this operative’s next activation or until it’s incapacitated (whichever comes first), whenever a friendly PHOBOS STRIKE TEAM operative is shooting an enemy operative within 8&quot; of this operative, that enemy operative cannot be obscured; if that friendly operative is an INCURSOR, its ranged weapons also have the Seek Light weapon rule.
+This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Seek" id="c4bf-2528-de97-1a56" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Infiltrator Saboteur" hidden="false" id="594b-1a71-fcc0-ebfc">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="1297-1a19-624d-5186" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="7e86-ce09-2b2b-5ca5" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="450a-8ae4-e1ce-b93b" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="69c2-acf6-a200-7972" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Saboteur" hidden="false" id="412f-6c85-664b-f8f2" targetId="f724-78a3-6262-cd04" primary="false"/>
+        <categoryLink name="Infiltrator" hidden="false" id="d61d-53fa-ab78-f9fb" targetId="8421-679b-025c-c1ab" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infiltrator Saboteur" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="4ea8-f690-e601-29df">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Plant Explosives" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="3d8e-0302-d790-c1d6">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative is carrying your Explosives marker. It can perform the **Pick Up Marker** action on that marker, and whenever it performs the **Place Marker** action on that marker, it can immediately perform a free **Dash** action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="b50d-b818-59f5-c606" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="b50d-b818-59f5-c606">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="406a-cac1-e37d-966e" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df94-c431-ee9e-d414-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df94-c431-ee9e-d414-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Marksman bolt carbine" hidden="false" id="f075-e8ed-41eb-7895" type="selectionEntry" targetId="c76d-6a29-29e4-beff">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81f4-2d1d-4922-984e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81f4-2d1d-4922-984e-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Remote detonator" hidden="false" id="8de7-d155-eb4a-e649">
+          <profiles>
+            <profile name="⌖ Remote detonator" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5d3f-b293-d968-cc4c">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Limited 1, Piercing 1, Silent, Detonate*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="*Detonate" id="87a5-ccf8-a19b-ee13" hidden="false">
+              <description>Don’t select a valid target. Instead, shoot against each operative within 2&quot; of your Explosives marker, unless Heavy terrain is wholly intervening between that operative and that marker. Each of those operatives cannot be in cover or obscured. Roll each sequence separately in an order of your choice. This weapon cannot be selected if your Explosives marker isn’t in the killzone. At the end of the action, remove your Explosives marker from the killzone.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7952-cd25-94c4-5495-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7952-cd25-94c4-5495-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Infiltrator Commsman" hidden="false" id="dfb2-e61b-d617-e3d2">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="3f1a-30a8-43d5-1458" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="b60b-c5de-980b-adcc" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="5a51-bbcb-7466-6b82" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="3cad-9779-e2de-d270" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Infiltrator" hidden="false" id="2eaf-e4f3-d4c2-0244" targetId="8421-679b-025c-c1ab" primary="false"/>
+        <categoryLink name="Commsman" hidden="false" id="8db8-30d2-97ef-3885" targetId="ca2f-77a8-8009-6bb3" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infiltrator Commsman" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7259-b486-ab6c-a59e">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Strategic Oversight" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2aa7-3e9b-2f92-2d89">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">In the Ready step of each Strategy phase, when you gain CP, if this operative is in the killzone and not within control range of enemy operatives, you can use this rule. If you do, roll one D6: on a 4+, you gain one additional CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Comms Array" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="c013-8966-1331-65e1">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, during a friendly PHOBOS STRIKE TEAM operative’s activation or counteraction, before or after it performs an action, if this operative is in the killzone, you can change one strategy ploy you’ve used this turning point (it doesn’t cost you any CP to do so).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5d38-2dd9-a58f-6831" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="5d38-2dd9-a58f-6831">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="b380-7e27-3c45-57eb" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f970-efa8-e00d-4b0a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f970-efa8-e00d-4b0a-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Marksman bolt carbine" hidden="false" id="d4c5-5087-d00a-64d6" type="selectionEntry" targetId="c76d-6a29-29e4-beff">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6303-4f25-51ea-d22e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6303-4f25-51ea-d22e-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Incursor Warrior" hidden="false" id="7ef8-d99b-7f2e-9153">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="45e4-b423-673b-b3cf" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="910f-75e7-6723-6de0" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="3dc9-287d-4af1-ce9b" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="37a8-d0a1-3892-bc61" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Incursor" hidden="false" id="ce6b-883b-3350-88cc" targetId="98af-cdc1-bcdc-a53c" primary="false"/>
+        <categoryLink name="Warrior" hidden="false" id="da99-df8b-e584-5ed6" targetId="2b69-f2aa-bd5c-70b2" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Incursor Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="bd24-53aa-c2d2-d8a9">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="2ff3-3578-0a48-5e10" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8092-2539-99d0-e7f3-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8092-2539-99d0-e7f3-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Oculus bolt carbine" hidden="false" id="3024-50ce-743b-faf0" type="selectionEntry" targetId="569b-914d-dd8f-9f76">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcbd-4f89-0ae8-821b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcbd-4f89-0ae8-821b-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Vanguard" id="97a3-5069-3524-90aa" hidden="false" type="profile" targetId="5e48-fb12-e850-6c6e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Incursor Marksman" hidden="false" id="d3bd-1d09-17eb-3db5">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="fa4d-f652-6f12-eef7" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="cc9a-ab19-6109-04a7" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="0abc-cbd9-9c48-ce48" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="2d9a-dd04-8ef0-daa0" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Incursor" hidden="false" id="f668-9cfc-7c10-80f4" targetId="98af-cdc1-bcdc-a53c" primary="false"/>
+        <categoryLink name="Marksman" hidden="false" id="81f6-969a-6a00-1c63" targetId="d2bf-5ccb-7000-921c" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Incursor Marksman" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="75fc-21e0-c624-b008">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Track Target" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="b712-3e0b-a98b-2298">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform the **Guard** action (see close quarters rules, Kill Team Core Book) in any killzone. It can perform the **Guard** action while it has a Conceal order, but when you perform the free **Shoot** or **Fight** action during the interruption, you must change its order to Engage.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="9a74-4843-e910-76dd" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="9a74-4843-e910-76dd">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="c038-2999-61b2-6f71" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="331a-86ef-9465-0ecd-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="331a-86ef-9465-0ecd-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Stalker marksman bolt carbine" hidden="false" id="9f5d-4357-baba-2a72">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47ff-ee7d-decc-0924-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47ff-ee7d-decc-0924-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Stalker marksman bolt carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="687c-2a21-16ad-76a8">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Piercing 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="626a-0145-e98a-5e19" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Piercing x" id="b704-9dc9-eb33-c771" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Incursor Minelayer" hidden="false" id="68b4-da4f-388a-4cbe">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="2a5c-f10f-a88e-0899" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="9384-a185-8f94-72ee" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="fd2e-6b7f-b670-62a2" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="db4f-ac0b-7d07-9743" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Incursor" hidden="false" id="920d-f3f5-278e-8233" targetId="98af-cdc1-bcdc-a53c" primary="false"/>
+        <categoryLink name="Minelayer" hidden="false" id="f421-4b39-519c-8726" targetId="e622-62ca-668d-c5b9" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Incursor Minelayer" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="9cba-80ff-9d6b-c768">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Haywire Mine" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0f45-3f91-b7cd-74a7">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative is carrying your Haywire Mine marker. It can perform the **Pick Up Marker** action on that marker, but that marker cannot be placed within an enemy operative’s control range (if this operative is incapacitated while carrying that marker and that marker cannot be placed, it’s removed with this operative).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Proximity Mine" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8376-1426-f4dc-4132">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">The first time your Haywire Mine marker is within another operative’s control range, remove that marker, subtract 1 from that operative’s APL stat until the end of its next activation, and inflict 2D3+3 damage on it; if it isn’t incapacitated, end its action (if any), even if that action’s effects aren’t fulfilled. If it cannot be placed, move it the minimum amount to do so. Note that this operative is ignored for these effects (i.e. it cannot set it off or take damage from that marker).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="135b-1d38-6001-612c" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="135b-1d38-6001-612c">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="8012-55c4-6ca2-f8b2" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f6a-e301-baf1-0b42-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f6a-e301-baf1-0b42-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Oculus bolt carbine" hidden="false" id="67eb-889b-f292-034e" type="selectionEntry" targetId="569b-914d-dd8f-9f76">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b304-dca6-b9b4-a747-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b304-dca6-b9b4-a747-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Reiver Warrior" hidden="false" id="48ca-1be3-862c-6bcc">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="49f6-d732-e706-4875" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="PHOBOS STRIKE TEAM" hidden="false" id="0f5a-fc3a-f775-cca3" targetId="9930-8201-82db-980b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="ec13-0bea-68e2-0009" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="ac4c-02f5-b1bf-a2d9" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Reiver" hidden="false" id="2aa2-628c-449d-c752" targetId="c1c8-1f42-dd25-78ff" primary="false"/>
+        <categoryLink name="Warrior" hidden="false" id="e2ce-5ef2-246c-c929" targetId="2b69-f2aa-bd5c-70b2" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Reiver Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="5ea8-cbf1-2ff4-dfe6">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Vanguard" id="6f2c-27f8-0d22-749f" hidden="false" type="profile" targetId="5e48-fb12-e850-6c6e"/>
+        <infoLink name="Grav-chute and Grapnel Launcher" id="e5c9-1ba2-8c24-d212" hidden="false" type="profile" targetId="f842-b103-1e75-b0fc"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="429f-8704-9cc3-fefb" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a4e-92ba-20f4-90b4-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a4e-92ba-20f4-90b4-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Special issue bolt pistol; combat knife" hidden="false" id="1410-177f-6986-b1bf">
+              <entryLinks>
+                <entryLink import="true" name="Combat knife" hidden="false" id="4288-f67d-0340-e011" type="selectionEntry" targetId="2be2-28ef-21d3-4bbf">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf46-d032-e628-b78d-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf46-d032-e628-b78d-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Special issue bolt pistol" hidden="false" id="b101-9c9e-04b8-4500" type="selectionEntry" targetId="a166-7d71-0845-7e2c">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4454-05e6-d28c-6dc6-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4454-05e6-d28c-6dc6-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolt carbine; fists" hidden="false" id="aec7-fd80-d301-435d">
+              <entryLinks>
+                <entryLink import="true" name="Bolt carbine" hidden="false" id="44d8-595c-a091-4396" type="selectionEntry" targetId="8cce-b98a-b6b0-16f8">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6da-2079-9f5d-5910-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6da-2079-9f5d-5910-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fists" hidden="false" id="77e2-5e8e-8c7a-7cf9" type="selectionEntry" targetId="c7c4-dfbe-67ae-bdb1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6ba-eafa-0dbb-2586-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6ba-eafa-0dbb-2586-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <categoryEntries>
+    <categoryEntry name="PHOBOS STRIKE TEAM" id="9930-8201-82db-980b" hidden="false"/>
+    <categoryEntry name="Sergeant" id="7e44-3fe8-9cd2-0b2e" hidden="false"/>
+    <categoryEntry name="Infiltrator" id="8421-679b-025c-c1ab" hidden="false"/>
+    <categoryEntry name="Veteran" id="4f7a-1544-e10d-f695" hidden="false"/>
+    <categoryEntry name="Commsman" id="ca2f-77a8-8009-6bb3" hidden="false"/>
+    <categoryEntry name="Helix Adept" id="7dee-b23c-8525-cef9" hidden="false"/>
+    <categoryEntry name="Saboteur" id="f724-78a3-6262-cd04" hidden="false"/>
+    <categoryEntry name="Voxbreaker" id="425e-05e5-1f4e-49ab" hidden="false"/>
+    <categoryEntry name="Incursor" id="98af-cdc1-bcdc-a53c" hidden="false"/>
+    <categoryEntry name="Marksman" id="d2bf-5ccb-7000-921c" hidden="false"/>
+    <categoryEntry name="Minelayer" id="e622-62ca-668d-c5b9" hidden="false"/>
+    <categoryEntry name="Reiver" id="c1c8-1f42-dd25-78ff" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Marksman bolt carbine" hidden="false" id="c76d-6a29-29e4-beff">
+      <profiles>
+        <profile name="⌖ Marksman bolt carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="eb36-d877-b61a-9205">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lethal x+" id="b8a2-6e49-b7f9-7e23" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Oculus bolt carbine" hidden="false" id="569b-914d-dd8f-9f76">
+      <profiles>
+        <profile name="⌖ Oculus bolt carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7cbb-a24b-760b-ce28">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Saturate</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Saturate" id="92b5-da56-1ecd-c895" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bolt carbine" hidden="false" id="8cce-b98a-b6b0-16f8">
+      <profiles>
+        <profile name="⌖ Bolt carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7629-41db-95e6-92a6">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Accurate 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Accurate x" id="3a83-6b0f-2cf9-bdae" hidden="false" type="rule" targetId="ba48-6452-4bf6-e9fa"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Combat knife" hidden="false" id="2be2-28ef-21d3-4bbf">
+      <profiles>
+        <profile name="⚔ Combat knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="404f-5a7e-29a8-13a1">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="c7c4-dfbe-67ae-bdb1">
+      <profiles>
+        <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="99f1-bd17-ac8a-fc5d">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Special issue bolt pistol" hidden="false" id="a166-7d71-0845-7e2c">
+      <profiles>
+        <profile name="⌖ Special issue bolt pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7ffb-039a-41de-2d39">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Piercing 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="5c77-9d5e-4eba-05ba" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+        <infoLink name="Piercing x" id="7648-5757-47e8-7f5a" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="cf7b-17fb-9a89-388a" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <entryLinks>
+        <entryLink import="true" name="Faction Equipment" hidden="false" id="5fec-e7ab-2219-7610" type="selectionEntryGroup" targetId="e41c-060c-0908-b1cb"/>
+      </entryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Faction Equipment" id="e41c-060c-0908-b1cb" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Combat blades" hidden="false" id="4885-c8c8-12d6-1119">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f30c-cd12-9a76-697b"/>
+          </constraints>
+          <profiles>
+            <profile name="Combat blades" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="a0a2-c346-b7ee-dd9a">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Friendly PHOBOS STRIKE TEAM operatives have the Combat blade melee weapon.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Combat blade" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b036-696f-31a6-2e2f">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Issue Ammunition" hidden="false" id="3756-5d27-71ea-cec4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eec6-afca-3a73-0e6c"/>
+          </constraints>
+          <profiles>
+            <profile name="Special Issue Ammunition" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="ecb7-7e8a-3d63-f466">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly PHOBOS STRIKE TEAM operative is performing the **Shoot** action and you select a bolt carbine, marksman bolt carbine or occulus bolt carbine, you can use this rule. If you do, until the end of the turning point, that weapon has the Piercing 1 weapon rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Piercing x" id="b5d6-0eba-8150-e7e5" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Additional Utility Grenades" hidden="false" id="60ee-839a-170c-4f89">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bd7-f125-14cd-5baf"/>
+          </constraints>
+          <profiles>
+            <profile name="Additional Utility Grenades" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="e769-39dd-c306-ad4f">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">This equipment allows you to select four utility grenades from the utility grenades equipment (see universal equipment). You cannot also select that equipment as normal (i.e. to give you six).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Purity Seals" hidden="false" id="8f7f-8f3b-58e9-f0ba">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a16-52a0-95e7-26a3"/>
+          </constraints>
+          <profiles>
+            <profile name="Purity Seals" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="a04c-6c10-a249-28f5">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly PHOBOS STRIKE TEAM operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile name="Vanguard" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="5e48-fb12-e850-6c6e">
+      <characteristics>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, one friendly PHOBOS STRIKE TEAM operative with this rule can perform the **Pick Up Marker** or a mission action for 1 less AP.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tactical Advantage" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="94d1-e9e8-fb28-5dee">
+      <characteristics>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">You can do each of the following once per battle:
+- When rolling-off to decide initiative, if this operative is in the killzone, you can re-roll your D6.
+- You can use a firefight ploy for 0CP if this is the specified PHOBOS STRIKE TEAM operative (including Command Re-roll if the attack or defence dice was rolled for this operative), or the Patient Ambush firefight ploy for 0CP if this operative is ready and not within control range of enemy operatives.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Grav-chute and Grapnel Launcher" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="f842-b103-1e75-b0fc">
+      <characteristics>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is climbing, treat the vertical distance as 2&quot; (regardless of how far the operative actually moves vertically). Whenever this operative is dropping, ignore the vertical distance.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
