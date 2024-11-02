@@ -65,15 +65,6 @@ While only some **PATHFINDER** operatives can perform the **Markerlight** actio
     </rule>
   </rules>
   <entryLinks>
-    <entryLink import="true" name="Reference - Markerlights" hidden="false" id="f857-246b-c478-9193" type="selectionEntry" targetId="c5c3-520a-01a8-0793">
-      <categoryLinks>
-        <categoryLink name="Reference" hidden="false" id="ce33-1035-df77-764c" targetId="b318-a8d7-2d38-99a3" primary="true"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d229-777a-710e-4961-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d229-777a-710e-4961-max" includeChildSelections="false"/>
-      </constraints>
-    </entryLink>
     <entryLink import="true" name="Equipment Reference" hidden="false" id="bd4d-8b55-59b9-66f1" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
       <selectionEntryGroups>
         <selectionEntryGroup name="Faction Equipment" id="7b3e-68e6-9f04-f609" hidden="false">
@@ -1082,23 +1073,6 @@ specified **DRONE** operative.</characteristic>
         <entryLink import="true" name="Ram" hidden="false" id="ba08-eb7a-7388-d45d" type="selectionEntry" targetId="0e74-b5ab-cd62-c086"/>
       </entryLinks>
     </selectionEntry>
-  </selectionEntries>
-  <sharedProfiles>
-    <profile name="Markerlight (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="3272-d6fb-b345-1baf">
-      <characteristics>
-        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. That enemy operative gains one of your Markerlight tokens (to a maximum of four).
-◆ An operative cannot perform this action while within control range of an enemy operative. If an operative (excluding **MB3 RECON**) would perform the **Shoot** action(excluding **Guard**) and this action during the same activation, only the target of that **Shoot** action can be selected for this action (and vice versa).</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Drone" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="9a22-1ad9-b8c4-cd10">
-      <characteristics>
-        <characteristic name="Ability" typeId="3467-0678-083e-eb50">- This operative cannot perform any actions other than **Charge, Dash, Fall Back, Fight, Markerlight, Reposition** and **Shoot**. It cannot use any weapons that aren’t on its datacard. 
-- Whenever determining control of an objective marker, treat this operative’s APL stat as 1 lower. 
-- Whenever determining what’s visible to this operative, the round disc at the top of the miniature is its head.</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
-  <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Reference - Markerlights" hidden="false" id="c5c3-520a-01a8-0793">
       <infoLinks>
         <infoLink name="Seek" id="fcff-ac1b-daab-65b1" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
@@ -1127,7 +1101,31 @@ specified **DRONE** operative.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16ac-695a-d69e-51aa-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16ac-695a-d69e-51aa-max" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Reference" hidden="false" id="6a20-d565-1f59-7bb4" targetId="b318-a8d7-2d38-99a3" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
+  </selectionEntries>
+  <sharedProfiles>
+    <profile name="Markerlight (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="3272-d6fb-b345-1baf">
+      <characteristics>
+        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. That enemy operative gains one of your Markerlight tokens (to a maximum of four).
+◆ An operative cannot perform this action while within control range of an enemy operative. If an operative (excluding **MB3 RECON**) would perform the **Shoot** action(excluding **Guard**) and this action during the same activation, only the target of that **Shoot** action can be selected for this action (and vice versa).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Drone" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="9a22-1ad9-b8c4-cd10">
+      <characteristics>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">- This operative cannot perform any actions other than **Charge, Dash, Fall Back, Fight, Markerlight, Reposition** and **Shoot**. It cannot use any weapons that aren’t on its datacard. 
+- Whenever determining control of an objective marker, treat this operative’s APL stat as 1 lower. 
+- Whenever determining what’s visible to this operative, the round disc at the top of the miniature is its head.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Pulse carbine" hidden="false" id="3f8b-12ab-5576-1a85">
       <profiles>
         <profile name="⌖ Pulse carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6073-48fb-5a7e-8a83">
