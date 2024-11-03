@@ -6,49 +6,21 @@
         <categoryLink name="Configuration" hidden="false" id="7a26-0efd-74b7-0c61" targetId="874b-0390-e5e2-1daa" primary="false"/>
         <categoryLink name="Leader" hidden="false" id="7adf-1568-5063-b972" targetId="d999-8cad-8145-4efe" primary="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8bd4-b3ae-dfd5-ef3b-min"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8bd4-b3ae-dfd5-ef3b-max"/>
+            <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="8bd4-b3ae-dfd5-ef3b-max" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="8bd4-b3ae-dfd5-ef3b-max">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink name="Operative" hidden="false" id="c9e2-799c-6351-cfa1" targetId="cf83-4496-b58e-ac82" primary="false">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="force" shared="true" id="0bc7-3e67-ecb8-9d21-min"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="0bc7-3e67-ecb8-9d21-max"/>
           </constraints>
-        </categoryLink>
-        <categoryLink name="Grenadier" hidden="false" id="6a5a-3eb2-c7c2-821d" targetId="4ba2-c27d-580b-8d12" primary="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4c17-e69c-5460-f991" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Gunner" hidden="false" id="8a82-1ca5-5806-4979" targetId="3033-7558-d28f-53cf" primary="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1fc4-3562-bfde-ecd3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Eliminator" hidden="false" id="5929-0c19-5b2d-c6d7" targetId="0fd9-820c-1e60-543d">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="69a0-cf6c-c545-3d9e"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="69a0-cf6c-c545-3d9e">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="644f-3bcf-b20d-f2d5" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Heavy Intercessor" hidden="false" id="804b-7e20-94f8-247d" targetId="644f-3bcf-b20d-f2d5">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="257f-38df-8a29-961a"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="257f-38df-8a29-961a">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="0fd9-820c-1e60-543d" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </categoryLink>
         <categoryLink name="Reference" hidden="false" id="cda7-dece-8615-5086" targetId="b318-a8d7-2d38-99a3"/>
       </categoryLinks>
@@ -565,6 +537,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="f668-1d53-04a8-469d"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="f668-1d53-04a8-469d">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Assault Intercessor Warrior" hidden="false" id="b38c-5705-740e-ecf1">
       <categoryLinks>
@@ -700,6 +682,26 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="0888-b41b-0259-5cdb"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="0888-b41b-0259-5cdb">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="0888-b41b-0259-5cdb">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b15-0824-ac8d-8144" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heavy Intercessor Gunner" hidden="false" id="7b15-0824-ac8d-8144">
       <categoryLinks>
@@ -758,6 +760,26 @@
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="82d1-1da6-1898-1a2c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="82d1-1da6-1898-1a2c">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="82d1-1da6-1898-1a2c">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="cdfb-b861-3871-5e22" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Intercessor Gunner" hidden="false" id="d2f1-a009-e449-14e0">
       <categoryLinks>
@@ -829,6 +851,16 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d609-9ea4-05fb-4971"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="d609-9ea4-05fb-4971">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Intercessor Warrior" hidden="false" id="c52b-22b8-1452-3b9f">
       <categoryLinks>
