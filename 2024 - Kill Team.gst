@@ -128,6 +128,7 @@
       <alias>Devastating 1</alias>
       <alias>Devastating 2</alias>
       <alias>Devastating 3</alias>
+      <alias>Devastating 4</alias>
     </rule>
     <rule name="Piercing x" id="4c07-2cb3-1417-cbb7" hidden="false" noindex="true">
       <description>The defender collects *x* less defence dice, e.g. Piercing 1. If the rule is Piercing Crits *x*, this only comes into effect if you retain any critical successes.</description>
@@ -151,6 +152,7 @@
       <alias>Range 6&quot;</alias>
       <alias>Range 8&quot;</alias>
       <alias>Range 9&quot;</alias>
+      <alias>Range 12&quot;</alias>
     </rule>
     <rule name="Balanced" id="28f7-0d96-d1fc-f75b" hidden="false">
       <description>You can re-roll one of your attack dice.</description>
