@@ -11,8 +11,8 @@ jobs:
     steps:
 
 # Repo code checkout required if `template` is used
-    - name: Checkout
-      uses: actions/checkout@v4
+    # - name: Checkout
+    #   uses: actions/checkout@v4
 
 # Get current month for issue title
     - name: get-date
@@ -20,7 +20,7 @@ jobs:
       run: echo "date=$(date +'%B %Y')" >> $GITHUB_OUTPUT
 
 # Create, pin, label, and assign release issue
-    - name: create-issue
+    - name: extract-template
       id: extract
       uses: imjohnbo/extract-issue-template-fields@v1
       with:
@@ -33,5 +33,6 @@ jobs:
         pinned: true
         close-previous: true
         title: "RELEASE THREAD: ${{ steps.date.outputs.date }}"
+        body: ${{ steps.extract.output.body }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

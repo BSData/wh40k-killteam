@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="5db8-793c-2184-a8d9" name="Scout Squad" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Scout Squad Kill Team" id="6da8-ca21-c39a-9890" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="25b5-6983-ddcd-92b4" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="85b2-1008-55ce-0e7f" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Leader" hidden="false" id="5df1-a4d5-5ee9-330a" targetId="d999-8cad-8145-4efe">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e423-4f9b-13d5-4431-min"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e423-4f9b-13d5-4431-max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Operative" hidden="false" id="247a-7c66-bbf2-8c5d" targetId="cf83-4496-b58e-ac82">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="force" shared="true" id="daa9-aa42-cd6c-c281-min"/>
+            <constraint type="max" value="8" field="selections" scope="force" shared="true" id="daa9-aa42-cd6c-c281-max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Gunner" hidden="false" id="b7cd-3ea1-d771-8b72" targetId="73b9-55cd-a334-d65c">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="f559-cc90-1b6c-af8f"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Hunter" hidden="false" id="a2b7-3b1e-dfcc-1b79" targetId="83b5-bc59-b3fc-469a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5bf5-2bcf-91d5-bd2b"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Sniper" hidden="false" id="505a-b8f3-317e-62b8" targetId="c00b-304f-4b5f-284f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3d86-f9be-92e1-3253"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Tracker" hidden="false" id="f4e1-5440-ff2c-2e55" targetId="c14f-2479-b39d-3719">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2079-6d95-d307-f694"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedProfiles>
+    <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="3291-de1b-50e0-105b">
+      <characteristics>
+        <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">⌖</characteristic>
+        <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">⚔</characteristic>
+        <characteristic name="Save" typeId="3241-5548-12d6-f103">▶</characteristic>
+        <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">◆</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Faction Equipment" id="48f6-1101-e491-cc99" hidden="false" defaultSelectionEntryId="none">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Camo Cloak" hidden="false" id="a785-a76b-17d4-604a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cb8-d32c-f078-50fa"/>
+          </constraints>
+          <profiles>
+            <profile name="Camo Cloak" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="09ea-26c6-0757-54a1">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an operative is shooting a friendly **SCOUT SQUAD** operative (excluding **SNIPER**), if you can retain any cover saves, you can retain one additional cover save. This isn’t cumulative with improved cover saves from Vantage terrain.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Combat Blades and Knives" hidden="false" id="5631-7f9e-f296-2257">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1b0-b899-d83b-4610"/>
+          </constraints>
+          <profiles>
+            <profile name="Combat blade" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7017-60d0-dc38-0560">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Combat knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3019-a57e-2f16-dc55">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Weapon Bipod" hidden="false" id="8c0f-f364-10a4-7c33">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5850-7282-9cc3-0dbf"/>
+          </constraints>
+          <profiles>
+            <profile name="Heavy Weapon Bipod" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="73c6-a78f-81c9-34f5">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever a friendly **SCOUT SQUAD HEAVY GUNNER** operative is shooting with a heavy bolter or missile launcher, if it hasn’t moved during the activation, or if it’s a counteraction, that weapon has the Ceaseless weapon rule; if the weapon already has that weapon rule, it has the Relentless weapon rule. Note that operative isn’t restricted from moving after shooting.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="351e-351c-ae0d-ebea" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Relentless" id="9f23-3389-7fd0-35b1" hidden="false" type="rule" targetId="1bc8-9f8d-d899-64ed"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Targeting Oculars" hidden="false" id="55e3-2fd2-4161-005c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a9c-5e7b-58a3-9a8e"/>
+          </constraints>
+          <profiles>
+            <profile name="Targeting Oculars" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="7d5b-7897-bf16-5d85">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly **SCOUT SQUAD** operative is performing the **Shoot** action and you’re selecting a valid target, you can use this rule. If you do, until the end of that action, that friendly operative’s ranged weapons have the Saturate weapon rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Saturate" id="4ac2-a251-cac9-60d7" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="b427-40e4-820e-e5d4">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98e1-ee2c-8b24-8c43"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b1cd-9ced-99cf-7d75">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="4" field="6056-b741-7cf3-5b43">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="c38f-c869-52b2-0fb9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="f5f1-34d2-e4cb-9860">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc78-64d7-ae77-38d2"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Boltgun" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c600-8308-d848-44a2">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="2c0e-2896-6b26-cbae">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd83-e794-c408-e1ee"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Bolt pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="cbe7-1869-3247-6748">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="bbd6-432b-e465-20f7" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Astartes shotgun" hidden="false" id="9603-0b02-a653-7426">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2acd-693d-e3e9-6e61"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Astartes shotgun" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="716a-c453-e306-c189">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="d301-556c-a92d-a087" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Combat blade" hidden="false" id="517f-5359-a113-cc3c">
+      <profiles>
+        <profile name="⚔ Combat blade" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c8bf-4af3-e5ae-d4cf">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0146-e45d-fcf9-be54"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Sergeant" id="c38f-c869-52b2-0fb9" hidden="false"/>
+    <categoryEntry name="SCOUT SQUAD" id="868d-f8ea-ffa5-ede4" hidden="false"/>
+    <categoryEntry name="Hunter" id="83b5-bc59-b3fc-469a" hidden="false"/>
+    <categoryEntry name="Sniper" id="c00b-304f-4b5f-284f" hidden="false"/>
+    <categoryEntry name="Tracker" id="c14f-2479-b39d-3719" hidden="false"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Scout Sergeant" hidden="false" id="e1a2-0952-313c-a4d2">
+      <categoryLinks>
+        <categoryLink name="Leader" hidden="false" id="993d-66af-3ef8-dd75" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="c725-c003-9d2e-644b" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="SCOUT SQUAD" hidden="false" id="6171-773c-e746-96e7" targetId="868d-f8ea-ffa5-ede4" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="ee1d-3344-171d-90eb" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Sergeant" hidden="false" id="f032-70d2-d1da-5a6f" targetId="c38f-c869-52b2-0fb9" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="dee9-1b90-86be-7c4d" hidden="false" defaultSelectionEntryId="none">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Astartes shotgun; fists" hidden="false" id="5251-d1b1-3ad1-9c0f">
+              <entryLinks>
+                <entryLink import="true" name="Fists" hidden="false" id="d3ea-3e4c-0434-7e9e" type="selectionEntry" targetId="b427-40e4-820e-e5d4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f395-6712-4d05-bf74"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Astartes shotgun" hidden="false" id="b079-8aa9-3efa-9150" type="selectionEntry" targetId="9603-0b02-a653-7426">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db7a-30b6-4de5-ca00"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Boltgun; fists" hidden="false" id="f4f1-43de-8e1f-e42c">
+              <entryLinks>
+                <entryLink import="true" name="Boltgun" hidden="false" id="8faf-6928-f9da-60ff" type="selectionEntry" targetId="f5f1-34d2-e4cb-9860">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5a5-787d-2030-f930"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fists" hidden="false" id="01e2-6fbb-a1ec-f0e3" type="selectionEntry" targetId="b427-40e4-820e-e5d4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a5b-951d-ea08-c241"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolt pistol; chainsword" hidden="false" id="fbe3-7039-e019-fa8c">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="9052-5b54-5596-5f71" type="selectionEntry" targetId="2c0e-2896-6b26-cbae">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5b2-9698-29ec-07d8"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="164e-79ec-7ce2-de93">
+                  <profiles>
+                    <profile name="⚔ Chainsword" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4516-cf6a-7f72-0391">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc42-152c-48f4-43a4-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc42-152c-48f4-43a4-max"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d21a-9a1c-726b-b89f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d21a-9a1c-726b-b89f-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Scout Sergeant" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="37c9-8829-5a21-54f3">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">11</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Guidance and Experience" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="99ab-a611-a548-f526">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once during each of this operative’s activations, you can select one other friendly **SCOUT SQUAD** operative visible to it. Until the end of that operative’s next activation, add 1 to its APL stat.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Astartes" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="9d6e-9734-5978-a617">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">During this operative’s activation, it can perform either two **Shoot** actions or two **Fight** actions. If it’s two **Shoot** actions, an Astartes shotgun, bolt pistol or boltgun must be selected for at least one of them. This operative can counteract regardless of its order.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scout Heavy Gunner" hidden="false" id="9e7e-101d-aa59-0f21">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="9a1f-9d55-0a5a-d878" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="55c6-f3ea-7eca-a618" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="cb94-7f80-38ce-77e5" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Heavy Gunner" hidden="false" id="2a8a-39b8-51db-b9ca" targetId="73b9-55cd-a334-d65c" primary="false"/>
+        <categoryLink name="SCOUT SQUAD" hidden="false" id="5c03-5381-08e1-eac6" targetId="868d-f8ea-ffa5-ede4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Fists" hidden="false" id="ecd4-2ba4-97da-7f32" type="selectionEntry" targetId="b427-40e4-820e-e5d4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09ac-8bd5-d71a-956b"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="3efb-d439-cacb-45cc" type="selectionEntry" targetId="2c0e-2896-6b26-cbae">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d868-b706-a048-9bd6"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="13bc-e779-0f3e-e501" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="9ca5-acc4-872e-5c49">
+              <constraints>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="ae7f-0fc7-55a6-8f03" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Heavy bolter (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8883-5342-2116-bfe9">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Piercing Crits 1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Heavy bolter (sweeping)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="180b-4ba5-cbc0-8e77">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Piercing Crits 1, Torrent 1&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Heavy" id="365d-0853-7cd6-31ad" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+                <infoLink name="Piercing x" id="7b16-6a81-81e3-e7bc" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                <infoLink name="Torrent x" id="77a0-8042-d212-d750" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="1" field="ae7f-0fc7-55a6-8f03">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6da8-ca21-c39a-9890" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Missile launcher" hidden="false" id="eae2-fcfd-1350-8170">
+              <constraints>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="62a5-88d7-a15e-c682" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Missile launcher (frag)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0158-b2e9-c608-23ae">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;, Heavy (Dash only)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Missile launcher (krak)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="07a4-9ec3-4ef6-b75d">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/7</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Blast x" id="137f-c462-84f4-45da" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+                <infoLink name="Heavy" id="7752-b496-f807-dbf3" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+                <infoLink name="Piercing x" id="dfa5-a53a-6e44-9ccd" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="1" field="62a5-88d7-a15e-c682">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6da8-ca21-c39a-9890" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ffe-c718-ce93-f681-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ffe-c718-ce93-f681-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Scout Heavy Gunner" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1458-d2e9-d2cc-2a07">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scout Hunter" hidden="false" id="a61f-1ce6-91f9-c13e">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="a60a-52c1-576b-defc" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SCOUT SQUAD" hidden="false" id="4f88-90cd-1e03-ec38" targetId="868d-f8ea-ffa5-ede4" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="5176-e93d-c529-13b0" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Hunter" hidden="false" id="bfde-b022-59c7-e48b" targetId="83b5-bc59-b3fc-469a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="85b8-c7c1-9873-132e" type="selectionEntry" targetId="2c0e-2896-6b26-cbae">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24de-eb1d-a536-258c"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Combat blade" hidden="false" id="497a-38f1-79ae-1f18" type="selectionEntry" targetId="517f-5359-a113-cc3c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3af5-606d-d030-597e"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Scout Hunter" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="e716-f8a3-3770-8dfc">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grapnel Launcher" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="b756-d52b-7c7a-b66b">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is climbing, treat the vertical distance as 2&quot; (regardless of how far the operative actually moves vertically).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Grapnel Assault" hidden="false" id="7731-4f31-bfcd-1661">
+          <profiles>
+            <profile name="Grapnel Assault" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="ef43-b872-d8b0-ad26">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative performs the **Charge** action during its activation, if it climbs, drops, jumps or its base moves underneath Vantage terrain during that action, its melee weapons have the Lethal 3+ weapon rule until the end of that activation.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="0982-6f6f-1a47-8a06" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scout Sniper" hidden="false" id="f70e-7e15-bc61-e202">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="8d10-3975-06a0-4487" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SCOUT SQUAD" hidden="false" id="9340-41b0-7754-3c7b" targetId="868d-f8ea-ffa5-ede4" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="aac2-b169-ea08-23e2" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="b4f3-9c3d-e231-6b2d" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Sniper" hidden="false" id="b195-a939-d196-bf8e" targetId="c00b-304f-4b5f-284f" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Scout Sniper" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2d5d-a228-e4dd-88ba">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Camo Cloak" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0a88-7cb6-7edd-322f">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an operative is shooting this operative:
+- Ignore the Saturate weapon rule.
+- If you can retain any cover saves, you can retain one additional cover save, or you can retain one cover save as a critical success instead. This isn’t cumulative with improved cover saves from Vantage terrain.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Optics (AP1)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="0dfc-84ad-ecf4-b03d">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation, whenever it’s shooting, enemy operatives cannot be obscured.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="249e-6283-0d19-138d" type="selectionEntry" targetId="2c0e-2896-6b26-cbae">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad9e-5a55-51de-6afa"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fists" hidden="false" id="fee6-c618-b9f6-4ecb" type="selectionEntry" targetId="b427-40e4-820e-e5d4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bf9-03a8-66f2-db58"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sniper rifle" hidden="false" id="df9a-f26e-7fa6-e7d9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1fb-cbc8-e82d-6352-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1fb-cbc8-e82d-6352-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Sniper rifle (mobile)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="fee5-29a1-0bb3-60b2">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Sniper rifle (stationary)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5cd4-e8a4-8124-a8cf">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 3, Heavy, Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastating x" id="80a4-ca69-bd94-e6ca" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Heavy" id="14ad-664f-f2b6-602d" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+            <infoLink name="Silent" id="e406-962e-8ce4-1af6" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scout Tracker" hidden="false" id="ac15-86a6-7f3f-0f27">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="130c-5436-7d21-60ec" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SCOUT SQUAD" hidden="false" id="46b5-1740-80ff-22cf" targetId="868d-f8ea-ffa5-ede4" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="4416-7556-2c9a-5156" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="73a7-e33f-bf4e-ea70" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Tracker" hidden="false" id="097c-057c-ec05-cb80" targetId="c14f-2479-b39d-3719" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Boltgun" hidden="false" id="b3ac-36e1-9bec-fb67" type="selectionEntry" targetId="f5f1-34d2-e4cb-9860">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a17b-84df-1c8b-cfd6"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fists" hidden="false" id="8edb-c300-ecc2-9f0e" type="selectionEntry" targetId="b427-40e4-820e-e5d4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e5e-42cf-8ff6-8687"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Scout Tracker" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="44da-13c2-eac0-9a09">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Track Enemy" hidden="false" id="9660-8021-6357-9e49">
+          <profiles>
+            <profile name="Track Enemy (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="8730-7f30-eba5-191f">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one expended enemy operative within 8&quot; of this operative. Until the end of the turning point, whenever a friendly **SCOUT SQUAD** operative is shooting that enemy operative, that friendly operative’s ranged weapons have the Seek Light weapon rule.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c34-cd84-8ce3-22e4-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c34-cd84-8ce3-22e4-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Seek" id="447f-5fe5-7537-2d00" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Auspex Scan" hidden="false" id="3000-6179-6430-0f29">
+          <profiles>
+            <profile name="Auspex Scan (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="8fe4-e469-f415-8867">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative’s next activation or until it’s incapacitated (whichever comes first), whenever a friendly **SCOUT SQUAD** operative is shooting an enemy operative within 8&quot; of this operative, that enemy operative cannot be obscured; if that friendly operative is a **SNIPER** that’s currently benefitting from the effects of its **Optics** action, its ranged weapons also have the Seek Light weapon rule.
+◆ This operative cannot perform this action while within control range of an
+enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Seek" id="8869-3588-74da-bc03" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8cd1-b98d-ee10-7824-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cd1-b98d-ee10-7824-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scout Warrior" hidden="false" id="3a13-0c87-1310-d9b5">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="de50-fd5c-8816-bd68" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="a17f-0073-68d3-486c" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="SCOUT SQUAD" hidden="false" id="61be-979b-ffa4-fd4a" targetId="868d-f8ea-ffa5-ede4" primary="false"/>
+        <categoryLink name="Adeptus Astartes" hidden="false" id="e6f3-a647-03b8-07fd" targetId="ad17-a237-65f9-a559" primary="false"/>
+        <categoryLink name="Warrior" hidden="false" id="456b-a29f-bc2d-17a1" targetId="2b69-f2aa-bd5c-70b2" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="a319-3636-c530-315f" hidden="false" defaultSelectionEntryId="none">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Astartes shotgun; fists" hidden="false" id="2a28-9f42-a330-7786">
+              <entryLinks>
+                <entryLink import="true" name="Fists" hidden="false" id="4471-e824-7507-4d56" type="selectionEntry" targetId="b427-40e4-820e-e5d4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b179-caf5-6ca8-36ec"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Astartes shotgun" hidden="false" id="ee8a-2312-03b9-5713" type="selectionEntry" targetId="9603-0b02-a653-7426">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e1d-97fd-e294-939c"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Boltgun; fists" hidden="false" id="28e4-2c42-8d2c-0ab1">
+              <entryLinks>
+                <entryLink import="true" name="Boltgun" hidden="false" id="5f59-0833-31d3-87e3" type="selectionEntry" targetId="f5f1-34d2-e4cb-9860">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3556-1234-c515-561f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fists" hidden="false" id="f930-8dcc-48fc-148c" type="selectionEntry" targetId="b427-40e4-820e-e5d4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ac8-fc77-72e6-77c4"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolt pistol; combat blade" hidden="false" id="c446-3182-e042-3158">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="d3fa-dd46-2252-5557" type="selectionEntry" targetId="2c0e-2896-6b26-cbae">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b49-1f26-f61a-395b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Combat blade" hidden="false" id="411f-22e7-dc7f-b8c2" type="selectionEntry" targetId="517f-5359-a113-cc3c">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed7e-8f2c-5f4a-4841"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="160d-d44a-b2e2-ad9d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="160d-d44a-b2e2-ad9d-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Scout Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="c489-1094-f870-bb3d">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scout Warrior" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="d9cc-7978-eedc-755a">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">You can do each of the following once per turning point:
+- One friendly **SCOUT SQUAD WARRIOR** operative can perform the **Smoke Grenade** action.
+- One friendly **SCOUT SQUAD WARRIOR** operative can perform the **Stun Grenade** action.
+The rules for these actions are found in universal equipment. Performing these actions using this rule doesn’t count towards their action limits (i.e. if you also select those grenades from equipment).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule name="Forward Scouting" id="571f-99ed-98cc-5482" hidden="false">
+      <description>At the end of the Set Up Operatives step, you can select and resolve up to five Forward Scouting options. Each option has a number in brackets, which is the maximum number of times you can select and resolve it for the battle. For example, your five selections could be Reposition (2), Trip Alarm (1), Booby Trap (1) and Diversion (1). If both players have this rule, alternate resolving selection by selection, starting with the player that has initiative.</description>
+    </rule>
+  </rules>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="bb9e-1d95-8ea9-9dd1" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <entryLinks>
+        <entryLink import="true" name="Faction Equipment" hidden="false" id="c170-bbd8-3ff7-7bc2" type="selectionEntryGroup" targetId="48f6-1101-e491-cc99"/>
+      </entryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>

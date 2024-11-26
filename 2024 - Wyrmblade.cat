@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="d953-a8cd-d581-475e" name="Wyrmblade" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Wyrmblade Kill Team" id="79f0-45ba-02bd-6637" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="25c4-9a64-3e6e-5781" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="4ccc-25f3-8c71-c425" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Leader" hidden="false" id="e9f5-d3ea-7cd7-dedf" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Operative" hidden="false" id="21cf-2176-e98f-2003" targetId="cf83-4496-b58e-ac82">
+          <constraints>
+            <constraint type="min" value="13" field="selections" scope="force" shared="true" id="465a-2c76-913f-01b5-min-min" includeChildSelections="true"/>
+            <constraint type="max" value="13" field="selections" scope="force" shared="true" id="465a-2c76-913f-01b5-min-max" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="465a-2c76-913f-01b5-min-min">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="ff88-04d0-68ff-b02b" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="465a-2c76-913f-01b5-min-max">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="ff88-04d0-68ff-b02b" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <rules>
+    <rule name="Familiar Territory" id="59ab-50e8-f8c1-f5d1" hidden="false">
+      <description>When setting up a WYRMBLADE kill team before the battle, one third of your kill team can be set up in HIDING: place them to one side instead of in the killzone. CULT AGENT operatives cannot be set up in HIDING.
+In the Firefight phase, friendly WYRMBLADE operatives setup in HIDING are activated as normal. When you do, you can either expend that operative or have it emerge. If it emerges, set it up in the killzone in a location it can be placed as follows (it’s no longer set up in HIDING):
+- Wholly within 6&quot; of your drop zone.
+- More than 6&quot; from enemy operatives.
+- With an order of your choice.
+The operative is treated as performing the Reposition action (spend the AP accordingly), then continue its activation as normal. If the operative is a WARRIOR, ignore its **Group Activation** rule. Friendly operatives still in HIDING at the end of the second turning point are incapacitated.</description>
+    </rule>
+    <rule name="Cult Agent" id="43f5-ba9d-9c01-7f50" hidden="false">
+      <description>Whenever an operative is shooting a friendly WYRMBLADE CULT AGENT operative:
+- Ignore the Piercing and Saturate weapon rules.
+- If you can retain any cover saves, you can retain one additional cover save, or you can retain one cover save as a critical success instead. This isn’t cumulative with improved cover saves from Vantage terrain.</description>
+    </rule>
+    <rule name="Cult Ambush" id="6517-4b64-2dd2-7573" hidden="false">
+      <description>Whenever a friendly WYRMBLADE operative is shooting or fighting during its activation, if its order was changed from Conceal to Engage at the start of that activation, or it wasn’t visible to enemy operatives at the start of that activation, that friendly operative&apos;s weapons have the Ceaseless weapon rule.</description>
+    </rule>
+  </rules>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Neophyte Warrior" hidden="false" id="d9b7-a59e-f6fd-e02e">
+      <profiles>
+        <profile name="Neophyte Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="9755-b9ab-63d7-2c84">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Group Activation" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="bc5a-4278-e9b5-0084">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is expended, you must then activate one other ready friendly WYRMBLADE WARRIOR operative (if able) before your opponent activates. When that other operative is expended, your opponent then activates as normal (in other words, you cannot activate more than two operatives in succession with this rule).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="WYRMBLADE" hidden="false" id="979b-5af4-e7ff-076e" targetId="6127-545f-c590-4ff6" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="e436-6a4a-9784-5e9a" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Genestealer Cults" hidden="false" id="4be5-cb94-f3ed-425e" targetId="1b89-f288-fcb6-6f97" primary="false"/>
+        <categoryLink name="Neophyte" hidden="false" id="ca49-91fd-0a28-39c4" targetId="7d20-a2de-37b6-c61e" primary="false"/>
+        <categoryLink name="Warrior" hidden="false" id="fc1b-28b4-b1d9-81e1" targetId="2b69-f2aa-bd5c-70b2" primary="false"/>
+        <categoryLink name="Tyranids" hidden="false" id="b6a6-9622-7149-efbb" targetId="871e-8e59-202a-5530" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Gun butt" hidden="false" id="e645-78df-6f39-6b37" type="selectionEntry" targetId="4eae-d550-166e-e297">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba9a-8928-15c1-7ead-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba9a-8928-15c1-7ead-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapon" id="cf44-f298-e8bc-54da" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3dd7-f8c4-2e5e-1c2e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dd7-f8c4-2e5e-1c2e-max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Autogun" hidden="false" id="57b3-b6c9-582b-f8e0" type="selectionEntry" targetId="ec51-f820-acd0-5fdc"/>
+            <entryLink import="true" name="Shotgun" hidden="false" id="cc76-c378-c2a7-1377" type="selectionEntry" targetId="70d3-b838-9307-68fb"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kelermorph" hidden="false" id="74fd-ba22-7782-d436">
+      <profiles>
+        <profile name="Kelermorph" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="3076-3400-c667-bfe1">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Expert Gunslinger" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="389f-15fc-a1ef-514d">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform two **Shoot** actions during its activation.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heroic Inspiration" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="4b05-41be-8e2b-051d">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever a friendly WYRMBLADE NEOPHYTE operative visible to and within 3&quot; of this operative is shooting, fighting or retaliating, if this operative has incapacitated an enemy operative during this turning point, that friendly operative’s weapons have the Severe weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="61b2-c583-f443-89b6" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="61b2-c583-f443-89b6">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="WYRMBLADE" hidden="false" id="33d3-0f92-6530-391d" targetId="6127-545f-c590-4ff6" primary="false"/>
+        <categoryLink name="Genestealer Cults" hidden="false" id="bc6b-2192-a266-4845" targetId="1b89-f288-fcb6-6f97" primary="false"/>
+        <categoryLink name="Tyranids" hidden="false" id="aa5a-0418-2b73-6a51" targetId="871e-8e59-202a-5530" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="2538-2983-5de9-1aa5" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Cult Agent" hidden="false" id="5d40-787a-0895-0a1c" targetId="ff88-04d0-68ff-b02b" primary="false"/>
+        <categoryLink name="Kelermorph" hidden="false" id="d2c4-8d69-2efc-5558" targetId="99f5-952a-51b6-056e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Liberator autostubs" hidden="false" id="8cfd-4d5c-a66a-3a61">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4161-a9ca-71cb-ff6f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4161-a9ca-71cb-ff6f-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Liberator autostubs (hypersense)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a7c6-3415-d745-8c70">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Saturate, Seek Light, Hypersense*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Liberator autostubs (long range)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="fe0a-e902-6fc4-17ef">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing Crits 1, Rending</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Liberator autostubs (short range)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d2db-e3f6-dce0-2c2f">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Piercing 1, Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="bef8-e743-bf46-5a49" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Piercing x" id="1860-0ff1-4b67-716f" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+            <infoLink name="Rending" id="8375-1114-f11a-0c4a" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+            <infoLink name="Saturate" id="f81d-bf32-641b-a541" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+            <infoLink name="Seek" id="7455-a7f8-79a4-a8ab" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
+          </infoLinks>
+          <rules>
+            <rule name="*Hypersense" id="9e5a-4fe4-4939-51c6" hidden="false">
+              <description>Whenever this operative is shooting with this weapon profile, enemy operatives cannot be obscured.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kelermorph knife" hidden="false" id="72c8-c31c-2586-c8a5">
+          <profiles>
+            <profile name="⚔ Kelermorph knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f5b4-af1c-8d27-4318">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95fe-c83b-005a-c2b3-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95fe-c83b-005a-c2b3-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Rending" id="7a37-99e0-fd0a-44c5" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heroic Inspiration" hidden="false" id="c3d5-d55a-819f-0078">
+          <profiles>
+            <profile name="Heroic Inspiration" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="e430-0d4a-9570-d08e">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever a friendly WYRMBLADE NEOPHYTE operative visible to and within 3&quot; of this operative is shooting, fighting or retaliating, if this operative has incapacitated an enemy operative during this turning point, that friendly operative’s weapons have the Severe weapon rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d80-f4ff-6675-2327-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d80-f4ff-6675-2327-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Severe" id="29ce-5dac-c14a-cc2e" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Neophyte Leader" hidden="false" id="e2e6-525d-4ef2-b5ad">
+      <profiles>
+        <profile name="Neophyte Leader" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7fb8-f429-e097-2c79">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shadow Vector" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="040a-a262-5f5b-879e">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, you can use the Slink Into Darkness or Coiled Serpent firefight ploy for 0CP if the specified friendly WYRMBLADE operative is a NEOPHYTE visible to this operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="b74c-9116-bd24-69d6" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="b74c-9116-bd24-69d6">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="WYRMBLADE" hidden="false" id="ef6b-8d9c-9e65-e376" targetId="6127-545f-c590-4ff6" primary="false"/>
+        <categoryLink name="Genestealer Cults" hidden="false" id="2e26-2566-d4b8-8d55" targetId="1b89-f288-fcb6-6f97" primary="false"/>
+        <categoryLink name="Tyranids" hidden="false" id="0f1d-46da-0369-53d6" targetId="871e-8e59-202a-5530" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="808c-eb88-a7d9-072b" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Neophyte" hidden="false" id="9ae6-9298-64f7-a6b5" targetId="7d20-a2de-37b6-c61e" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="e0df-c442-5ee4-9ffb" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ranged Weapon" hidden="false" id="f83b-5639-ef0d-a8f5">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Ranged Weapon" id="1820-bf01-bb19-2df3" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Autogun" hidden="false" id="0af5-0b16-1f14-004e" type="selectionEntry" targetId="ec51-f820-acd0-5fdc"/>
+                    <entryLink import="true" name="Shotgun" hidden="false" id="dc0a-f0ab-9e9e-78ae" type="selectionEntry" targetId="70d3-b838-9307-68fb"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4161-8d5c-d257-564a-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4161-8d5c-d257-564a-max"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Gun butt" hidden="false" id="6bfc-a9a6-002b-5126" type="selectionEntry" targetId="4eae-d550-166e-e297">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e974-226c-da52-379b-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e974-226c-da52-379b-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol and Melee Weapon" hidden="false" id="5ad7-e4fa-1dd0-271b">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Pistol" id="6b21-1030-2e19-4ec5" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92be-52d6-9aaf-ac19-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92be-52d6-9aaf-ac19-max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="e555-4f46-c662-d7a7">
+                      <profiles>
+                        <profile name="⌖ Bolt pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d4f4-ef68-e863-6728">
+                          <characteristics>
+                            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Range x" id="c471-d655-1119-2705" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Master-crafted autopistol" hidden="false" id="5281-3b65-cdcf-f3e9">
+                      <profiles>
+                        <profile name="⌖ Master-crafted autopistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2762-3672-88f9-c0ec">
+                          <characteristics>
+                            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/4</characteristic>
+                            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rang 8&quot;, Lethal 5+</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Range x" id="ddb3-c0f2-e2d6-7b66" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                        <infoLink name="Lethal x+" id="5fbe-3c74-7f7a-206a" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Web pistol" hidden="false" id="5ce5-772c-d810-d9bf">
+                      <profiles>
+                        <profile name="⌖ Web pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4d81-2158-9383-fbe7">
+                          <characteristics>
+                            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Severe, Stun</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Range x" id="d2be-51d1-209a-5d97" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                        <infoLink name="Severe" id="b120-3b07-bd02-a3c0" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+                        <infoLink name="Stun" id="fb78-4157-01f5-947e" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee Weapon" id="7a66-8d82-566a-ce78" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2a3-d358-b7de-7a4b-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a3-d358-b7de-7a4b-max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="5386-40ec-71dd-e140">
+                      <profiles>
+                        <profile name="⚔ Chainsword" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ecda-ed8c-6d3b-884a">
+                          <characteristics>
+                            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Power maul" hidden="false" id="444c-3c87-c9fb-45cf">
+                      <profiles>
+                        <profile name="⚔ Power maul" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6a6c-dd3e-e463-2380">
+                          <characteristics>
+                            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Shock</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Shock" id="7a2b-70d8-e68c-2043" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Power pick" hidden="false" id="6384-302d-06b5-48dd">
+                      <profiles>
+                        <profile name="⚔ Power pick" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4bd1-ccba-7221-c23c">
+                          <characteristics>
+                            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rending</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Rending" id="6d85-9259-d425-e8d1" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0898-1447-5ba3-0f8d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0898-1447-5ba3-0f8d-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Neophyte Gunner" hidden="false" id="8d84-f1bc-08f1-9b10">
+      <profiles>
+        <profile name="Neophyte Gunner" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="4d07-8afc-b72b-92b1">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="f80f-8177-dd71-f0e3" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="f80f-8177-dd71-f0e3">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="WYRMBLADE" hidden="false" id="faa7-b0c4-8a35-cf99" targetId="6127-545f-c590-4ff6" primary="false"/>
+        <categoryLink name="Genestealer Cults" hidden="false" id="e0bb-acf2-a35d-0f32" targetId="1b89-f288-fcb6-6f97" primary="false"/>
+        <categoryLink name="Tyranids" hidden="false" id="9ff4-db35-56b8-669e" targetId="871e-8e59-202a-5530" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="9889-bbe4-de90-82a0" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Neophyte" hidden="false" id="6669-109a-2103-b1ee" targetId="7d20-a2de-37b6-c61e" primary="false"/>
+        <categoryLink name="Gunner" hidden="false" id="5908-bb47-d3d4-46df" targetId="3033-7558-d28f-53cf" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Gun butt" hidden="false" id="3df3-3cf0-7f47-cbe2" type="selectionEntry" targetId="4eae-d550-166e-e297">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f9c-44e1-6044-4a78-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f9c-44e1-6044-4a78-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapon" id="5cee-193a-2007-8232" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ecb1-8af5-7c89-4a05-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecb1-8af5-7c89-4a05-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="83ca-2ccd-24e1-be34">
+              <constraints>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="b9bc-f813-1eda-d161" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="b9bc-f813-1eda-d161">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="⌖ Flamer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="bb6e-3c12-6172-f777">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Saturate, Torrent 2&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Saturate" id="e39c-d0f5-40f6-e9f9" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+                <infoLink name="Range x" id="60ed-845d-0e9b-dcb2" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                <infoLink name="Torrent x" id="5420-86e3-abfe-5122" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grenade launcher" hidden="false" id="1916-d344-6793-a823">
+              <constraints>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5ae0-4d66-7dff-6c6a" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="5ae0-4d66-7dff-6c6a">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="⌖ Grenade launcher (frag)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3192-73f2-e6e2-0dbb">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Grenade launcher (krak)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c2cd-311b-629f-fb32">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Blast x" id="acee-a9b6-3a30-bbf6" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+                <infoLink name="Piercing x" id="78fa-bc3d-276f-0fd5" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Webber" hidden="false" id="940b-34a0-1447-028b">
+              <constraints>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="98a9-dd05-78ce-99ed" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="98a9-dd05-78ce-99ed">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="⌖ Webber" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8749-eb0a-8d95-8f56">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 12&quot;, Severe, Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Severe" id="5d86-7482-ef9d-3b72" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+                <infoLink name="Stun" id="c4d9-346e-d48c-3f22" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
+                <infoLink name="Range x" id="f5e9-f4eb-fc12-527f" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Neophyte Heavy Gunner" hidden="false" id="2a3a-ceaa-9ed3-431b">
+      <profiles>
+        <profile name="Neophyte Heavy Gunner" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="fc86-4e55-58aa-bf3c">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="ad09-8822-b6c2-62f3" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="ad09-8822-b6c2-62f3">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="WYRMBLADE" hidden="false" id="2898-5fe3-8936-8686" targetId="6127-545f-c590-4ff6" primary="false"/>
+        <categoryLink name="Genestealer Cults" hidden="false" id="612f-7e2a-4941-0a72" targetId="1b89-f288-fcb6-6f97" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="0e8e-e789-78df-7d79" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Tyranids" hidden="false" id="3730-f7db-4b7b-94d8" targetId="871e-8e59-202a-5530" primary="false"/>
+        <categoryLink name="Neophyte" hidden="false" id="c745-2270-65f8-b462" targetId="7d20-a2de-37b6-c61e" primary="false"/>
+        <categoryLink name="Heavy Gunner" hidden="false" id="3d44-f9ab-1d92-8f8a" targetId="73b9-55cd-a334-d65c" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Heavy Weapon" id="5639-fb8e-5255-04f6" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b68-6c17-b0fe-da5e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b68-6c17-b0fe-da5e-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy stubber" hidden="false" id="9d12-9ccb-b1de-155f">
+              <constraints>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="7e1a-58e6-ba78-a091" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="7e1a-58e6-ba78-a091">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="⌖ Heavy stubber (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c238-7361-0d2d-7789">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Heavy stubber (sweeping)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="06cc-7cd9-aa17-414c">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Torrent 1&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Heavy" id="6ebf-5f1a-2a51-61c1" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+                <infoLink name="Torrent x" id="2f32-0192-0ad2-83ab" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mining laser" hidden="false" id="c140-4c82-8bd1-2f82">
+              <constraints>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="e6b9-0fbe-abb4-c997" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="e6b9-0fbe-abb4-c997">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="⌖ Mining laser" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a0ae-8127-0d08-f472">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Heavy" id="cbdd-ff3c-c83c-ed8f" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+                <infoLink name="Piercing x" id="787e-0f37-d012-9e32" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Seismic cannon" hidden="false" id="4ce9-c4af-6e65-7dcf">
+              <constraints>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="c00e-e65d-b4c0-8a17" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="c00e-e65d-b4c0-8a17">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="⌖ Seismic cannon (long-wave)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="21f3-5864-62a4-2f30">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">6</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/2</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 1&quot;, Heavy (Dash only), Stun</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Seismic cannon (short-wave)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ca2c-7f24-bf92-9bbb">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Heavy (Dash only), Piercing Crits 1, Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Heavy" id="fc14-c130-e829-b864" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+                <infoLink name="Range x" id="f1d5-ac66-8a5c-4365" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                <infoLink name="Stun" id="1ae1-79ec-a2b6-8a46" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
+                <infoLink name="Piercing x" id="6856-f3fc-dc58-4a4c" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Gun butt" hidden="false" id="cc94-c63f-664c-bd1e" type="selectionEntry" targetId="4eae-d550-166e-e297">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f040-f7eb-860a-379a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f040-f7eb-860a-379a-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Neophyte Icon Bearer" hidden="false" id="3c50-709e-8dd7-bd22">
+      <profiles>
+        <profile name="Neophyte Icon Bearer" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="70e8-acdf-d491-71a4">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Icon Bearer" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="753d-5f95-5887-7e30">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever determining control of a marker, treat this operative’s APL stat as 1 higher. Note this isn&apos;t a change to its APL stat, so any changes are cumulative with this</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Overthrow the Oppressors" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0175-64cb-6bca-e160">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, when a ready friendly WYRMBLADE NEOPHYTE operative is incapacitated while visible to and within 6&quot; of this operative, you can use this rule. If you do, before that operative is removed from the killzone, it can either perform one free **Shoot** action (you can change its order to do so), or you can use the A Plan Generations in the Making firefight ploy for 0CP if that incapacitated operative is the specified friendly WYRMBLADE NEOPHYTE operative. It&apos;s then removed from the killzone as normal.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="4748-1d14-2cdb-ec7b" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="4748-1d14-2cdb-ec7b">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="WYRMBLADE" hidden="false" id="c955-95c0-3371-d81f" targetId="6127-545f-c590-4ff6" primary="false"/>
+        <categoryLink name="Genestealer Cults" hidden="false" id="ef00-a365-87a6-794b" targetId="1b89-f288-fcb6-6f97" primary="false"/>
+        <categoryLink name="Tyranids" hidden="false" id="6824-d3c3-4e87-f0b2" targetId="871e-8e59-202a-5530" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="6b37-a9b3-c3cc-0167" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Neophyte" hidden="false" id="2e35-df3b-347a-2bea" targetId="7d20-a2de-37b6-c61e" primary="false"/>
+        <categoryLink name="Icon Bearer" hidden="false" id="9285-1ea9-692f-b177" targetId="7b77-173b-41b1-f14c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Gun butt" hidden="false" id="707a-8729-4131-065e" type="selectionEntry" targetId="4eae-d550-166e-e297">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c4a-583e-aecf-bc1f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c4a-583e-aecf-bc1f-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapon" id="47fe-b01c-1bbe-e43d" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d46d-42a1-e092-8994-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d46d-42a1-e092-8994-max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Autogun" hidden="false" id="59ee-4d9f-7621-16ef" type="selectionEntry" targetId="ec51-f820-acd0-5fdc"/>
+            <entryLink import="true" name="Shotgun" hidden="false" id="0163-5909-009b-6183" type="selectionEntry" targetId="70d3-b838-9307-68fb"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Locus" hidden="false" id="0e62-ab53-b4b5-3d14">
+      <profiles>
+        <profile name="Locus" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="276c-c350-818f-a16e">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Expert Swordsman" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="88d5-585d-09d8-24a4">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform two **Fight** actions during its activation. Whenever this operative ends the **Fight** action, if it’s no longer within control range of enemy operatives, it can immediately perform a free **Charge** action (even if it’s already performed the **Charge** action during that activation), but it cannot move more than 3&quot; during that action. Doing so doesn’t prevent it from performing the **Dash** action afterwards during that activation.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bladed Stance" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8688-0007-9733-6805">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is fighting or retaliating, you can resolve one of your successes before the normal order. If you do, that success must be used to block.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Quicksilver Strike" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="9c8a-0541-8e48-fa8d">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, after an enemy operative performs an action in which it moves or is set up, you can interrupt that activation/ counteraction to use this rule. If you do, this operative can immediately perform a free **Charge** action (you can change its order to do so), but it cannot move more than 3&quot;, and it must end that move within control range of that enemy operative. If this isn’t possible, the interruption is cancelled and this rule hasn’t been used.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="7c59-09f9-15b2-91cf" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="7c59-09f9-15b2-91cf">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="WYRMBLADE" hidden="false" id="d304-18a8-29d8-07ad" targetId="6127-545f-c590-4ff6" primary="false"/>
+        <categoryLink name="Genestealer Cults" hidden="false" id="7c46-f88b-4761-085b" targetId="1b89-f288-fcb6-6f97" primary="false"/>
+        <categoryLink name="Tyranids" hidden="false" id="3fdf-46c8-6fd7-d887" targetId="871e-8e59-202a-5530" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="1458-1383-9601-a1c1" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Cult Agent" hidden="false" id="e417-1749-8330-e6fd" targetId="ff88-04d0-68ff-b02b" primary="false"/>
+        <categoryLink name="Locus" hidden="false" id="4269-a9b5-84ca-edf3" targetId="d0fe-6071-6223-58ae" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Barbed tail" hidden="false" id="384d-1833-c455-8374">
+          <profiles>
+            <profile name="⌖ Barbed tail" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="64a2-b638-c036-a51c">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 3&quot;, Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="dcf0-d04f-5852-bdb7" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Silent" id="b4ee-994e-189d-70d7" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Locus blades" hidden="false" id="0e14-b059-c8ae-74ae">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aebc-535b-cb7e-f17e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aebc-535b-cb7e-f17e-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Locus blades" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b7ac-8d13-fa2d-d416">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="123d-9170-d5b4-77f3" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sanctus Sniper" hidden="false" id="d862-63f6-4967-51b4">
+      <profiles>
+        <profile name="Santus Sniper" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="de4b-4382-88ab-b88d">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="4204-bcb7-5671-d8ab" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="4204-bcb7-5671-d8ab">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="WYRMBLADE" hidden="false" id="37f6-04ef-a711-c271" targetId="6127-545f-c590-4ff6" primary="false"/>
+        <categoryLink name="Genestealer Cults" hidden="false" id="aaa8-c4f1-8899-9aa1" targetId="1b89-f288-fcb6-6f97" primary="false"/>
+        <categoryLink name="Tyranids" hidden="false" id="6d48-79fb-603c-020f" targetId="871e-8e59-202a-5530" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="2185-bcad-b564-2dbd" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Cult Agent" hidden="false" id="f4a6-189e-8da4-483a" targetId="ff88-04d0-68ff-b02b" primary="false"/>
+        <categoryLink name="Sanctus" hidden="false" id="20a0-7386-09b8-eb1b" targetId="54e5-cd67-9a1b-8f2b" primary="false"/>
+        <categoryLink name="Sniper" hidden="false" id="ac45-4449-be13-f9d4" targetId="85d2-6c48-5e21-8e0a" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="e600-19f2-cab0-ace9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d175-cb27-61d1-2f8f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d175-cb27-61d1-2f8f-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="27ea-ed2c-2978-15da">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sanctus sniper rifle" hidden="false" id="bea4-fb2b-0f69-3a6a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="592c-8cd2-0ea2-305a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="592c-8cd2-0ea2-305a-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Sanctus sniper rifle (mobile)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="26e5-852c-86ba-1bda">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Sanctus sniper rifle (stationary)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7f2c-4410-243b-363f">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 3, Heavy (Dash only), Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastating x" id="c025-9697-0c53-fd44" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Heavy" id="ddc5-95f4-675e-c09c" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+            <infoLink name="Silent" id="9adb-7c59-0b32-2b9f" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Target Vulnerability" hidden="false" id="794d-5e72-f425-4f6d">
+          <profiles>
+            <profile name="Target Vulnerability (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b215-f53d-d408-5e3b">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the end of this operative’s activation, the stationary profile of its Sanctus sniper rifle has the Lethal 5+ weapon rule.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="440d-96c7-df1b-f903-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="440d-96c7-df1b-f903-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="3b1f-f132-4390-2baa" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Familiar&apos;s Soulsight" hidden="false" id="0fd1-7650-9318-7041">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1cc-faae-c541-51ba-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1cc-faae-c541-51ba-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Familiar&apos;s Soulsight (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="2b1e-a763-b2e3-fca4">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. Until the end of the battle, or until this action is performed again by a friendly operative (whichever comes first), that enemy operative gains one of your Soulsight tokens. Whenever this operative is shooting an enemy operative that has one of your Soulsight tokens, all profiles of this operative&apos;s Sanctus sniper rifle have the Saturate weapon rule and that enemy operative cannot be obscured.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Saturate" id="9c13-9c22-d96b-f0f8" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sanctus Talon" hidden="false" id="b52b-581a-314e-34fe">
+      <profiles>
+        <profile name="Sanctus Talon" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="041a-63d0-0d44-8295">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Creeping Shadow" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="9bd7-ccca-4589-19ab">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform the **Charge** action while it has a **Conceal** order. Whenever this operative performs the **Fight** action, it can immediately perform a free **Dash** or **Fall Back** action afterwards (for the latter, it cannot move more than 3&quot;), even if it’s performed an action that prevents it from performing those actions.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Assassinate (2AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="8ba8-07f3-f900-df27">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative this operative isn’t visible to. Perform a free **Charge** action with this operative, but don&apos;t exceed its Move stat (i.e. don&apos;t add 2&quot;), and it must end that move within control range of that enemy operative. Then immediately perform a free **Fight** action with this operative against that enemy operative. The first time you strike during that action, you can immediately resolve another of your successes as a strike (before your opponent).
+◆ This operative cannot perform this action while it has an Engage order, or while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="8f84-9955-c420-03f7" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="8f84-9955-c420-03f7">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="WYRMBLADE" hidden="false" id="06dc-e3f2-14df-666d" targetId="6127-545f-c590-4ff6" primary="false"/>
+        <categoryLink name="Genestealer Cults" hidden="false" id="4bcd-f3cd-1835-d6f6" targetId="1b89-f288-fcb6-6f97" primary="false"/>
+        <categoryLink name="Tyranids" hidden="false" id="8265-c9c5-1323-2240" targetId="871e-8e59-202a-5530" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="1f50-0330-7810-d05b" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Sanctus" hidden="false" id="1777-5b62-84c7-a38a" targetId="54e5-cd67-9a1b-8f2b" primary="false"/>
+        <categoryLink name="Talon" hidden="false" id="e3d4-5c6f-3053-f00a" targetId="7b78-5389-e63c-8e6b" primary="false"/>
+        <categoryLink name="Cult Agent" hidden="false" id="d6d7-92a6-0c94-9dec" targetId="ff88-04d0-68ff-b02b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sanctus bio-dagger" hidden="false" id="d46d-6d9d-86fb-5c84">
+          <profiles>
+            <profile name=" ⚔ Sanctus bio-dagger" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4e5b-2d8a-38b1-0f7b">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 4+, Shock</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8644-0020-c72b-450c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8644-0020-c72b-450c-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="1e3b-3587-f111-5a58" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Shock" id="0150-bd26-76a0-0e6e" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Familiar&apos;s Soulsight" hidden="false" id="426e-80db-8a82-85f3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abe6-b0a4-b1f6-40f7-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abe6-b0a4-b1f6-40f7-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Familiar&apos;s Soulsight (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="cbd1-f360-e256-3971">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. Until the end of the battle, or until this action is performed again by a friendly operative (whichever comes first), that enemy operative gains one of your Soulsight tokens. Whenever this operative is fighting or retaliating against an enemy operative that has one of your Soulsight tokens,its Sanctus bio-dagger has the Brutal and Balanced weapon rules.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Brutal" id="fe2d-3221-9fee-b2dc" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+            <infoLink name="Balanced" id="4e86-8103-7872-6ce5" hidden="false" type="rule" targetId="28f7-0d96-d1fc-f75b"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+  <categoryEntries>
+    <categoryEntry name="WYRMBLADE" id="6127-545f-c590-4ff6" hidden="false"/>
+    <categoryEntry name="Genestealer Cults" id="1b89-f288-fcb6-6f97" hidden="false"/>
+    <categoryEntry name="Neophyte" id="7d20-a2de-37b6-c61e" hidden="false"/>
+    <categoryEntry name="Tyranids" id="871e-8e59-202a-5530" hidden="false"/>
+    <categoryEntry name="Cult Agent" id="ff88-04d0-68ff-b02b" hidden="false"/>
+    <categoryEntry name="Kelermorph" id="99f5-952a-51b6-056e" hidden="false"/>
+    <categoryEntry name="Locus" id="d0fe-6071-6223-58ae" hidden="false"/>
+    <categoryEntry name="Icon Bearer" id="7b77-173b-41b1-f14c" hidden="false"/>
+    <categoryEntry name="Sanctus" id="54e5-cd67-9a1b-8f2b" hidden="false"/>
+    <categoryEntry name="Sniper" id="85d2-6c48-5e21-8e0a" hidden="false"/>
+    <categoryEntry name="Talon" id="7b78-5389-e63c-8e6b" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Gun butt" hidden="false" id="4eae-d550-166e-e297">
+      <profiles>
+        <profile name="⚔ Gun butt" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2540-436b-de6a-eec7">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Autogun" hidden="false" id="ec51-f820-acd0-5fdc">
+      <profiles>
+        <profile name="⌖ Autogun" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="9d0b-f3e9-357b-7c12">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="8044-2517-4ef7-33de">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="d999-8cad-8145-4efe" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="70d3-b838-9307-68fb">
+      <profiles>
+        <profile name="⌖ Shotgun" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="337a-ded9-be97-25c6">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="2+" field="8044-2517-4ef7-33de">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="d999-8cad-8145-4efe" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="a0e7-06b2-9b88-8ca3" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <entryLinks>
+        <entryLink import="true" name="Faction Equipment" hidden="false" id="db41-609a-1e45-4539" type="selectionEntryGroup" targetId="f9a2-181d-6362-7615"/>
+      </entryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Faction Equipment" id="f9a2-181d-6362-7615" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blasting Charges" hidden="false" id="6f81-53ca-897b-f8e8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ee8-87c1-1b89-3035"/>
+          </constraints>
+          <profiles>
+            <profile name="Blasting Charges" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="7ed4-6fd5-21a0-2077">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, a friendly WYRMBLADE NEOPHYTE operative can use the Blasting charge ranged weapon.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Blasting Charge" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5b85-043f-2662-5ab2">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 4&quot;, Blast 1&quot;, Saturate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="2907-e71a-3d1b-5cfd" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Blast x" id="2e37-5024-be35-44fd" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Saturate" id="2928-6b98-6375-70fe" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cult Knives" hidden="false" id="a066-868c-bf23-a6a8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ae9-1ba2-3da8-250c"/>
+          </constraints>
+          <profiles>
+            <profile name="Cult Knives" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="6f6f-4a8e-22d7-7a0f">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Friendly WYRMBLADE NEOPHYTE operatives have the Cult knife melee weapon.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⚔ Cult Knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7518-3346-b6a7-297b">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Explosive Traps" hidden="false" id="7fcf-872d-28a1-2f7b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27e2-9644-0c27-6a92"/>
+          </constraints>
+          <profiles>
+            <profile name="Explosive Traps" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="b2c3-3eab-f934-ed23">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">This equipment allows you to select two mines (see universal equipment). You cannot also select that equipment as normal (i.e. to give you three), and friendly WYRMBLADE operatives are ignored for your mines’ effects (i.e. they cannot trigger or take damage from them). This takes precedence over the normal mines rules.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Spotlights" hidden="false" id="2a09-b709-2834-f3f2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b6a-81a5-c256-454b"/>
+          </constraints>
+          <profiles>
+            <profile name="Spotlights" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="31dd-4541-82fc-029c">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever a friendly WYRMBLADE operative is shooting, the target cannot be obscured if it&apos;s visible to and within 6&quot; of a friendly WYRMBLADE NEOPHYTE operative that isn&apos;t within control range of enemy operatives.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
