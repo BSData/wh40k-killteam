@@ -114,7 +114,7 @@
         <entryLink import="true" name="Universal Equipment" hidden="false" id="759e-df30-b63f-b204" type="selectionEntryGroup" targetId="e087-a8e2-4761-ad11"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="-" hidden="true" id="816f-d700-2068-2271">
+    <selectionEntry type="upgrade" import="true" name="-" hidden="false" id="816f-d700-2068-2271">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="273e-97c5-54d0-2ce2-min"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="273e-97c5-54d0-2ce2-max"/>
