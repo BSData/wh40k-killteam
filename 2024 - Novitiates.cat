@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="083c-072e-01c0-5f45" name="Novitiates" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="083c-072e-01c0-5f45" name="Novitiates" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Act of Faith" id="7482-b87e-071c-5bb3" hidden="false">
       <description>In the Ready step of each Strategy phase, you gain a number of Faith points equal to half the number of friendly **NOVITIATE** operatives that haven’t been incapacitated (rounding up). Whenever a friendly **NOVITIATE** operative is shooting, fighting or retaliating, or an operative is shooting it, in the Roll Attack Dice (or Roll Defence Dice step if an operative is shooting it), you can spend your Faith points to use one ACT OF FAITH. You cannot use more than one ACT OF FAITH per sequence, and their costs and effects are as follows: 
@@ -148,6 +148,9 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="b536-36d1-bca2-7f56" shared="true" id="ae04-c581-3373-2e49" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Condemnor" hidden="false" id="d2be-4659-e541-b58d">
       <categoryLinks>
@@ -212,27 +215,13 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="dd83-e819-3b41-d8f9" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="b536-36d1-bca2-7f56" shared="true" id="dd83-e819-3b41-d8f9" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="dd83-e819-3b41-d8f9">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Dialogus" hidden="false" id="9faa-f9c4-5e5f-21e7">
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="a530-e42e-b4af-ca70" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="b536-36d1-bca2-7f56" shared="true" id="cf99-0191-8e57-4503" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="a530-e42e-b4af-ca70">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Dialogus" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2830-4914-3e24-acd6">
           <characteristics>
@@ -336,15 +325,8 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="9355-c0b5-845a-2381" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="b536-36d1-bca2-7f56" shared="true" id="20b9-a334-6113-21bd" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="9355-c0b5-845a-2381">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Exactor" hidden="false" id="8d0b-105d-9384-7a43">
       <categoryLinks>
@@ -355,15 +337,8 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
         <categoryLink name="Operative" hidden="false" id="e59f-5103-15f7-9f5b" targetId="cf83-4496-b58e-ac82" primary="true"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="0fa1-6e57-05f1-d7a7" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="b536-36d1-bca2-7f56" shared="true" id="9152-5db1-a16a-cfad" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="0fa1-6e57-05f1-d7a7">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Exactor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1e09-71b0-1e78-2762">
           <characteristics>
@@ -443,15 +418,8 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
           </characteristics>
         </profile>
       </profiles>
-      <modifiers>
-        <modifier type="set" value="1" field="371d-79c5-1a41-66c9">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="371d-79c5-1a41-66c9" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="b536-36d1-bca2-7f56" shared="true" id="e1f2-5682-3922-3386" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Autopistol" hidden="false" id="fe3e-de19-8738-0855" type="selectionEntry" targetId="8bfb-53ba-eac4-852f"/>
@@ -533,15 +501,8 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="fa24-dab1-13dd-b41e" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="b536-36d1-bca2-7f56" shared="true" id="ed6c-b6b7-31bb-d103" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="fa24-dab1-13dd-b41e">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Preceptor" hidden="false" id="9d8f-189b-da59-4776">
       <categoryLinks>
@@ -594,15 +555,8 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
         </profile>
       </profiles>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5581-6b20-ff18-dd78" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="b536-36d1-bca2-7f56" shared="true" id="4e16-a7c7-a14b-3183" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="5581-6b20-ff18-dd78">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Pronatus" hidden="false" id="7ad5-e2e3-c03e-9941">
       <categoryLinks>
@@ -637,15 +591,8 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
         <entryLink import="true" name="Gun butt" hidden="false" id="f9df-90b1-aa0f-ceba" type="selectionEntry" targetId="f9c9-b63c-f213-5967"/>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="3ce1-1f68-0d11-0f6e" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="b536-36d1-bca2-7f56" shared="true" id="1f9c-2a9b-5c04-ae35" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="3ce1-1f68-0d11-0f6e">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Purgatus" hidden="false" id="b511-0dd2-e61a-51ae">
       <categoryLinks>
@@ -656,15 +603,8 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
         <categoryLink name="Operative" hidden="false" id="cfea-2bcd-d447-4aa1" targetId="cf83-4496-b58e-ac82" primary="true"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="0f7f-569c-f146-a0c9" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="b536-36d1-bca2-7f56" shared="true" id="5eb5-4a44-90ed-7037" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="2" field="0f7f-569c-f146-a0c9">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Purgatus" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="fe72-e69c-6a0f-9ea0">
           <characteristics>
@@ -737,31 +677,14 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
         </profile>
       </profiles>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="f4e2-181a-e4d3-40c4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="b536-36d1-bca2-7f56" shared="true" id="6ce2-3eab-f25f-d47d" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="f4e2-181a-e4d3-40c4">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Autopistol" hidden="false" id="2ec3-4b34-9caf-f6cf" type="selectionEntry" targetId="8bfb-53ba-eac4-852f"/>
         <entryLink import="true" name="Gun butt" hidden="false" id="005d-3eeb-9f27-456f" type="selectionEntry" targetId="f9c9-b63c-f213-5967"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Militant" hidden="false" id="a6a8-2500-76d4-5bbc">
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="81cb-ebed-6b3f-430f" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="9" field="81cb-ebed-6b3f-430f">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b536-36d1-bca2-7f56" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="c615-8e44-fdf5-c070" hidden="false" defaultSelectionEntryId="none">
           <selectionEntries>
@@ -822,6 +745,14 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
         <profile name="Militant Faith" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="ee9e-d872-bb4e-29de">
           <characteristics>
             <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is shooting, fighting or retaliating, if you use an ACT OF FAITH during that sequence and an enemy operative is incapacitated, the Faith points spent on that ACT OF FAITH are refunded. If you use the Icon of Faith equipment, Faith points are only refunded for one of those ACTS OF FAITH (your choice).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Militant" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1c71-73d4-620b-0df4">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -909,10 +840,10 @@ INTERVENTION - 3 FAITH POINTS - You can retain one of your fails as a normal suc
   <forceEntries>
     <forceEntry name="Novitiate Kill Team" id="b536-36d1-bca2-7f56" hidden="false">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="72e3-bab7-b2df-e90c" targetId="874b-0390-e5e2-1daa" type="category"/>
-        <categoryLink name="Reference" hidden="false" id="c460-606f-2c04-843f" targetId="b318-a8d7-2d38-99a3" type="category"/>
-        <categoryLink name="Leader" hidden="false" id="d9c0-efb6-5990-ba5d" targetId="d999-8cad-8145-4efe" type="category"/>
-        <categoryLink name="Operative" hidden="false" id="c490-1df2-c710-02c0" targetId="cf83-4496-b58e-ac82" type="category">
+        <categoryLink name="Configuration" hidden="false" id="72e3-bab7-b2df-e90c" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="c460-606f-2c04-843f" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Leader" hidden="false" id="d9c0-efb6-5990-ba5d" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Operative" hidden="false" id="c490-1df2-c710-02c0" targetId="cf83-4496-b58e-ac82">
           <constraints>
             <constraint type="min" value="9" field="selections" scope="force" shared="true" id="e171-5c04-216c-fa3c-min" includeChildSelections="false"/>
             <constraint type="max" value="9" field="selections" scope="force" shared="true" id="e171-5c04-216c-fa3c-max" includeChildSelections="false"/>
