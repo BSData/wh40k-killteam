@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2c48-0a38-f96d-2fbf" name="Warpcoven" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2c48-0a38-f96d-2fbf" name="Warpcoven" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Warpcoven Kill Team" id="19b5-fd1f-a9b5-2c94" hidden="false">
       <categoryLinks>
@@ -23,7 +23,11 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Leader" hidden="false" id="b21d-db65-f719-b76a" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Leader" hidden="false" id="b21d-db65-f719-b76a" targetId="d999-8cad-8145-4efe">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2604-8e1a-b1ba-de90" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1155,15 +1159,15 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="14ec-764a-b53f-ab46">
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="6af6-c27f-1770-5f21" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7981-c8f8-6d6f-b076"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="3c06-28d6-165c-9879" targetId="d999-8cad-8145-4efe" primary="false"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="1" field="6af6-c27f-1770-5f21">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="19b5-fd1f-a9b5-2c94" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
