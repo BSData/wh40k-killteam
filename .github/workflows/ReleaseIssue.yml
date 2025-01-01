@@ -10,10 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-# Repo code checkout required if `template` is used
-    # - name: Checkout
-    #   uses: actions/checkout@v4
-
 # Get current month for issue title
     - name: get-date
       id: date
@@ -32,6 +28,7 @@ jobs:
       with:
         pinned: true
         close-previous: true
+        labels: ${{ steps.extract.outputs.labels }}
         title: "RELEASE THREAD: ${{ steps.date.outputs.date }}"
         body: ${{ steps.extract.outputs.body }}
       env:
