@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Operative" id="cf83-4496-b58e-ac82"/>
     <categoryEntry name="Configuration" id="874b-0390-e5e2-1daa" hidden="false"/>
@@ -254,13 +254,13 @@
           <profiles>
             <profile name="1x Razor Wire" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="9054-805e-9dcb-9075">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Razor wire is Exposed and Obstructing terrain. Before the battle, you can set it up wholly within your territory, on the killzone floor and more than 2&quot; from other equipment terrain features.</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Razor wire is Exposed and Obstructing terrain. Before the battle, you can set it up wholly within your territory, on the killzone floor and more than 2&quot; from other equipment terrain features, access points and Accessible terrain.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
             <rule name="Obstructing terrain" id="2c40-49e9-1e20-f5f8" hidden="false">
-              <description>Whenever an operative would cross this terrain feature within 1&quot; of it, treat the distance as an additional 2&quot;.</description>
+              <description>Whenever an operative would cross over this terrain feature within 1&quot; of it, treat the distance as an additional 1&quot;.</description>
             </rule>
           </rules>
           <constraints>
@@ -283,7 +283,7 @@
           <profiles>
             <profile name="1x Mines" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="3a44-e3ef-b95b-adbb">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Before the battle, you can set up one of your Mines markers wholly within your territory and more than 2&quot; from other markers and access points. The first time that marker is within an operative&apos;s control range, remove that marker and inflict D3+3 damage on that operative.</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Before the battle, you can set up one of your Mines markers wholly within your territory and more than 2&quot; from other markers, access points and Accessible terrain. The first time that marker is within an operative&apos;s control range, remove that marker and inflict D3+3 damage on that operative.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -295,7 +295,7 @@
           <profiles>
             <profile name="2x Light Barricades" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="da5b-f441-a8b7-1d6d">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Light barricades are Light terrain. Before the battle, you can set up any of them wholly within your territory, on the killzone floor and more than 2&quot; from other equipment terrain features.</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Light barricades are Light terrain, except the feet, which are Insignificant and Exposed. Before the battle, you can set up any of them wholly within your territory, on the killzone floor and more than 2&quot; from other equipment terrain features, access points and Accessible terrain.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -307,7 +307,7 @@
           <profiles>
             <profile name="1x Heavy Barricade" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="96e7-b3bf-fafa-8892">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">A heavy barricade is Heavy terrain. Before the battle, you can set it up wholly within 2&quot; of your drop zone, on the killzone floor and more than 2&quot; from other equipment terrain features.</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">A heavy barricade is Heavy terrain. Before the battle, you can set it up wholly within 4&quot; of your drop zone, on the killzone floor and more than 2&quot; from other equipment terrain features, access points and Accessible terrain.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -336,12 +336,12 @@ In addition, an operative can either move through ladders as if they aren&apos;t
           <profiles>
             <profile name="1x Portable Barricade" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="a5bf-fa2a-cee9-7e43">
               <characteristics>
-                <characteristic name="Ability" typeId="3467-0678-083e-eb50">A portable barricade is Light, Protective and Portable terrain. Before the battle, you can set it up wholly within your territory, on the killzone floor, and more than 2&quot; from other equipment terrain features.</characteristic>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">A portable barricade is Light, Protective and Portable terrain. Before the battle, you can set it up wholly within your territory, on the killzone floor, and more than 2&quot; from other equipment terrain features, access points and Accessible terrain.</characteristic>
               </characteristics>
             </profile>
             <profile name="Move with Barricade (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b0e0-b5d4-d82f-9b18">
               <characteristics>
-                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ The same as the **Reposition** action, except the active operative can move no more than its Move stat minus 2&quot; and cannot climb, drop or jump.
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ The same as the **Reposition** action, except the active operative can move no more than its Move stat minus 2&quot; and cannot climb, drop, jump or use any kill team&apos;s rules that remove it and set it back up again (e.g. HEARTHKYN SALVAGER FLY, MANDRAKE SHADOW PASSAGE).
 ▶ Before this operative moves, remove the portable barricade it&apos;s connected to. After it moves, set up the portable barricade so it&apos;s connected again.
 ◆ This action is treated as a **Reposition** action. An operative cannot perform this action while within control range of an enemy operative, or in the same activation in which it performed the **Fall Back** or **Charge** action.</characteristic>
               </characteristics>
@@ -352,7 +352,7 @@ In addition, an operative can either move through ladders as if they aren&apos;t
               <description>While an operative is in cover from this terrain feature, improve its Save stat by 1 (to a maximum of 2+).</description>
             </rule>
             <rule name="Portable" id="a70e-fbaf-5636-b761" hidden="false">
-              <description>This terrain feature only provides cover while an operative is connected to it and if the shield is intervening (ignore its feet). Operatives connected to the inside of it can perform the &quot;Move with Barricade&quot; action during the battle.</description>
+              <description>This terrain feature only provides cover while an operative is connected to it and if the shield is intervening (ignore its feet). Operatives connected to the inside of it can perform the &quot;Move with Barricade&quot; unique action during the battle.</description>
             </rule>
           </rules>
           <constraints>

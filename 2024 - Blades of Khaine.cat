@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4df5-2e8e-b772-6f0e" name="Blades of Khaine" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4df5-2e8e-b772-6f0e" name="Blades of Khaine" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Exarch" id="dcd5-8731-33c6-988e" hidden="false"/>
     <categoryEntry name="Blades of Khaine" id="945d-a2c0-5fc2-1a49" hidden="false"/>
@@ -21,7 +21,6 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Defence Tactics" id="4f61-2081-8905-52cf" hidden="false" type="profile" targetId="89f8-08e3-f220-70e7"/>
         <infoLink name="Exarch" id="2d1f-0046-0bfe-1475" hidden="false" type="profile" targetId="2499-994b-bfa2-2f71"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -153,6 +152,14 @@
         <categoryLink name="Dire Avenger" hidden="false" id="6f07-41ba-b0bc-7a4c" targetId="d223-652d-33cc-f1b3" primary="false"/>
         <categoryLink name="Exarch" hidden="false" id="1554-6f24-cae7-a743" targetId="dcd5-8731-33c6-988e" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Defense Tactics" hidden="false" id="7892-9b07-29ed-ef03" type="selectionEntry" targetId="ee01-a5be-4345-e9ff">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="455b-02e9-c5c8-1b99-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="455b-02e9-c5c8-1b99-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shuriken catapult" hidden="false" id="e0cd-12e6-bffc-0bf1">
       <constraints>
@@ -198,9 +205,6 @@
         <categoryLink name="Warrior" hidden="false" id="ffed-42aa-aacf-adec" targetId="2b69-f2aa-bd5c-70b2" primary="false"/>
         <categoryLink name="Operative" hidden="false" id="f8f6-6641-d904-a31a" targetId="cf83-4496-b58e-ac82" primary="true"/>
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Defence Tactics" id="16b6-4de6-c8e8-4675" hidden="false" type="profile" targetId="89f8-08e3-f220-70e7"/>
-      </infoLinks>
       <profiles>
         <profile name="Dire Avenger" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="9669-0ab7-288f-612e">
           <characteristics>
@@ -214,6 +218,12 @@
       <entryLinks>
         <entryLink import="true" name="Shuriken catapult" hidden="false" id="15fe-ce74-1276-0294" type="selectionEntry" targetId="e0cd-12e6-bffc-0bf1"/>
         <entryLink import="true" name="Fists" hidden="false" id="1645-7d71-8c9b-c340" type="selectionEntry" targetId="2543-15c8-ea71-98ca"/>
+        <entryLink import="true" name="Defense Tactics" hidden="false" id="5aee-cb4a-0e91-77c3" type="selectionEntry" targetId="ee01-a5be-4345-e9ff">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59b0-552b-cb39-634b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59b0-552b-cb39-634b-max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Striking Scorpion Exarch" hidden="false" id="822e-4eef-2fc8-c2c4">
@@ -656,11 +666,17 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bb5-43f7-cd20-6d37-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Defence Tactics" hidden="false" id="ee01-a5be-4345-e9ff">
+      <infoLinks>
+        <infoLink name="Defence Tactics" id="9fb0-2eec-4086-bed0" hidden="false" type="profile" targetId="89f8-08e3-f220-70e7"/>
+        <infoLink name="Balanced" id="3cbf-47b1-62f9-f975" hidden="false" type="rule" targetId="28f7-0d96-d1fc-f75b"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Defence Tactics" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="89f8-08e3-f220-70e7">
       <characteristics>
-        <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative contests an objective marker or one of your mission markers, or whenever it’s shooting an enemy operative that does, this operative’s weapons have the Accurate 1 weapon rule.</characteristic>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative contests an objective marker or one of your mission markers, or whenever it’s shooting an enemy operative that does, this operative’s weapons have the Balanced weapon rule.</characteristic>
       </characteristics>
     </profile>
     <profile name="Exarch" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2499-994b-bfa2-2f71">

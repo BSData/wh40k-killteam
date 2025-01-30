@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2c48-0a38-f96d-2fbf" name="Warpcoven" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2c48-0a38-f96d-2fbf" name="Warpcoven" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Warpcoven Kill Team" id="19b5-fd1f-a9b5-2c94" hidden="false">
       <categoryLinks>
@@ -103,7 +103,7 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
           <profiles>
             <profile name="Master of the Immaterium" typeId="acaf-9256-537b-6722" typeName="Boons of Tzeentch" hidden="false" id="5be2-b2cf-0600-2fd2">
               <characteristics>
-                <characteristic name="Boon of Tzeentch" typeId="5ca3-2211-8869-5740">Add 3&quot; to the distance requirements of this operative’s **PSYCHIC** actions that have a distance requirement.</characteristic>
+                <characteristic name="Boon of Tzeentch" typeId="5ca3-2211-8869-5740">Add 3&quot; to the distance requirements of this operative’s **PSYCHIC** actions that have a distance requirement. Note that for the SORCERER OF TEMPYRION’s Temporal Flux action, this boon only affects the distance in the first effect of that rule.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -129,12 +129,13 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
           <profiles>
             <profile name="Astral Bombardment" typeId="acaf-9256-537b-6722" typeName="Boons of Tzeentch" hidden="false" id="7f11-385a-e2a9-480d">
               <characteristics>
-                <characteristic name="Boon of Tzeentch" typeId="5ca3-2211-8869-5740">Select one of this operative&apos;s **PSYCHIC** ranged weapons. That weapon has the Devastating 1 weapon rule. If you select a doombolt, it has the 2&quot; Devastating 2 weapon rule instead of Devastating 2.</characteristic>
+                <characteristic name="Boon of Tzeentch" typeId="5ca3-2211-8869-5740">Select one of this operative&apos;s **PSYCHIC** ranged weapons. That weapon has the Devastating 1 weapon rule. If you select a doombolt, it has the 2&quot; Devastating 2 weapon rule instead of Devastating 2. If you select firestorm or mindburn (SORCERER OF WARPFIRE), whenever that operative performs the **Shoot** action, select the Seek Light or Devastating 1 weapon rule for that weapon to have until the end of the action (it cannot have both).</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Devastating x" id="d7cb-a25f-1f0d-38cd" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Seek" id="3cae-f7aa-32ab-818f" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Twist of Fate" hidden="false" id="7832-d98a-e2a3-4d29">
@@ -207,7 +208,7 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
           <profiles>
             <profile name="Arcane Robes" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="ca6b-b6ae-e491-12e5">
               <characteristics>
-                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an attack dice would inflict Critical Dmg on a friendly **WARPCOVEN SORCERER** operative, you can choose for that attack dice to inflict Normal Dmg instead. You cannot use this rule for each friendly **WARPCOVEN SORCERER** operative more than once per turning point.</characteristic>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, whenever an attack dice would inflict Critical Dmg on a friendly **WARPCOVEN SORCERER** operative, you can use this rule. If you do, that attack dice inflicts Normal Dmg instead.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -219,7 +220,7 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
           <profiles>
             <profile name="Sorcerous Scrolls" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0516-27e2-b959-148e">
               <characteristics>
-                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per battle, when a friendly **WARPCOVEN SORCERER** operative is activated or counteracts, you can select one additional **BOON OF TZEENTCH** for it to have until the end of the turning point, but it cannot be the same **BOON OF TZEENTCH** that it or any other friendly operative has. This takes precedence over the normal Boons of Tzeentch rules. Note that if you use this rule when a friendly operative counteracts and you select Echoes from the Warp, it can be used immediately to change the operative’s order and perform a free action during that counteraction.</characteristic>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per battle, when a friendly **WARPCOVEN SORCERER** operative is activated or counteracts, you can select a different **BOON OF TZEENTCH** for it to have until the end of the battle (it loses any it previously had). It cannot be the same **BOON OF TZEENTCH** any other friendly operative has. Note that if you use this rule when a friendly operative counteracts and you select Echoes from the Warp, it can be used immediately to change the operative’s order and perform a free action during that counteraction.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -331,7 +332,7 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
               <characteristics>
                 <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
                 <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
-                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/2</characteristic>
                 <characteristic name="WR" typeId="05b8-00a1-69af-14b6">PSYCHIC, Devastating 2, Lethal 5+</characteristic>
               </characteristics>
             </profile>
@@ -502,7 +503,7 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
         </profile>
         <profile name="Alight (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="942b-d0ad-3df7-f254">
           <characteristics>
-            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **PSYCHIC**. Select one enemy operative visible to this operative. Until the start of this operative’s next activation, until it&apos;s incapacitated or until this action is performed again by a friendly operative (whichever comes first), that enemy operative gains one of your Alight tokens (if it doesn’t already have one). Whenever a friendly **WARPCOVEN** operative is shooting against, fighting against or retaliating against an enemy operative that has one of your Alight tokens, that friendly operative’s weapons have the Relentless weapon rule.
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **PSYCHIC**. Select one enemy operative visible to this operative. Until the start of this operative’s next activation, until it&apos;s incapacitated or until this action is performed again by a friendly operative (whichever comes first), that enemy operative gains one of your Alight tokens (if it doesn’t already have one). Whenever a friendly **WARPCOVEN** operative is shooting against, fighting against or retaliating against an enemy operative that has one of your Alight tokens, that friendly operative’s weapons have the Ceaseless weapon rule.
 ◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
           </characteristics>
         </profile>
@@ -540,7 +541,7 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
                 <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
                 <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
                 <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/1</characteristic>
-                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">PSYCHIC, Lethal 5+, Saturate, Seek, Mindburn*</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">PSYCHIC, Lethal 5+, Saturate, Seek Light, Mindburn*</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -573,7 +574,7 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
           <characteristics>
             <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
             <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
-            <characteristic name="Save" typeId="3241-5548-12d6-f103">2+</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
           </characteristics>
         </profile>
@@ -684,7 +685,7 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
           <characteristics>
             <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
             <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
-            <characteristic name="Save" typeId="3241-5548-12d6-f103">2+</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
           </characteristics>
         </profile>
@@ -739,7 +740,7 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
           <characteristics>
             <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
             <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
-            <characteristic name="Save" typeId="3241-5548-12d6-f103">2+</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
           </characteristics>
         </profile>
@@ -915,7 +916,7 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
         </profile>
         <profile name="Herd Banner" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="ffc7-8f07-cbe5-32f0">
           <characteristics>
-            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an attack dice inflicts damage of 3 or more on a friendly **WARPCOVEN TZAANGOR** operative that’s visible to and within 3&quot; of this operative, subtract 1 from that inflicted damage.</characteristic>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an attack dice inflicts Normal Dmg of 3 or more on a friendly **WARPCOVEN TZAANGOR** operative that’s visible to and within 3&quot; of this operative, subtract 1 from that inflicted damage.</characteristic>
           </characteristics>
         </profile>
         <profile name="Icon Bearer" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8ee4-46fc-e9d2-5bd0">
@@ -958,6 +959,11 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
             <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
             <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Relic Hunters" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="7458-d235-bccb-6399">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per battle, one friendly WARPCOVEN TZAANGOR WARRIOR can perform the Pick Up Marker, Place Marker or a mission action for 1 less AP if that friendly operative is within your opponent&apos;s territory.</characteristic>
           </characteristics>
         </profile>
       </profiles>

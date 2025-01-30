@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6df0-7fd2-fdf4-865e" name="Gellerpox Infected" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6df0-7fd2-fdf4-865e" name="Gellerpox Infected" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Equipment Reference" hidden="false" id="d9ef-d87a-74b1-29c3" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
       <selectionEntryGroups>
@@ -36,7 +36,7 @@
               <profiles>
                 <profile name="Mutated Symptoms" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="82b7-7227-4903-fc21">
                   <characteristics>
-                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per battle, when you activate a friendly GELLERPOX INFECTED operative, you can select one additional **TECHNO-CURSE** for that operative to gain until the end of the turning point (it must be different from your existing **TECHNO-CURSE**). Note that if a rule refers to an enemy operative being affected by your selected **TECHNO-CURSE** rule (e.g. Plague Bellows faction equipment), it is affected by your additional **TECHNO-CURSE** rule too.</characteristic>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per battle, when you activate a friendly GELLERPOX INFECTED operative, you can select one additional **TECHNO-CURSE** for that operative to gain until the end of the turning point (it must be different from your existing **TECHNO-CURSE**). Note that if a rule refers to an enemy operative being affected by your selected **TECHNO-CURSE** rule (e.g. VULGRAR THRICE-CURSED operative’s Spread the Glorious Gifts rule), it is affected by your additional **TECHNO-CURSE** rule too.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -48,7 +48,7 @@
               <profiles>
                 <profile name="Plague Bellows" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="3b57-3a3b-e685-d5ef">
                   <characteristics>
-                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever an enemy operative is within 2&quot; of friendly GELLERPOX INFECTED **NIGHTMARE HULK** operatives, that enemy operative is affected by your selected **TECHNO-CURSE** rule.</characteristic>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever an operative is shooting a friendly GELLERPOX INFECTED NIGHTMARE HULK operative that’s more than 6&quot; from it, you can retain one of your defence dice results of 3 as a normal success instead of discarding it.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -798,18 +798,21 @@
   </sharedProfiles>
   <sharedRules>
     <rule name="Revoltingly Resilient" id="18d7-d014-3d08-8711" hidden="false">
-      <description>Whenever an attack dice inflicts damage of 3 or more on a friendly **GELLERPOX INFECTED NIGHTMARE HULK** or **GELLERPOX INFECTED MUTANT** operative, roll one D6: on a 5+, subtract 1 from that inflicted damage.</description>
+      <description>Whenever an attack dice inflicts damage of 3 or more on a friendly **GELLERPOX INFECTED NIGHTMARE HULK** or **GELLERPOX INFECTED MUTANT** operative, roll one D6: on a 4+, subtract 1 from that inflicted damage.</description>
     </rule>
     <rule name="Techno-curse" id="c644-2661-613e-0d20" hidden="false">
-      <description>At the end of the Select Operatives step, select one TECHNO-CURSE for friendly GELLERPOX INFECTED operatives to gain for the battle. Whenever an enemy operative is within control range of a friendly GELLERPOX INFECTED operative (excluding MUTOID VERMIN), or within 3&quot; of a friendly GELLERPOX INFECTED GLITCHLING operative, that enemy operative is affected by the selected TECHNO-CURSE rule. Each TECHNO-CURSE is listed below: 
+      <description>At the end of the Select Operatives step, select one TECHNO-CURSE for friendly GELLERPOX INFECTED operatives to gain for the battle. Whenever an enemy operative is within your selected TECHNO-CURSE&apos;s infection range, that enemy operative is affected by the symptom of the selected TECHNO-CURSE. Each TECHNO-CURSE, its infection range and its symptom is listed below: 
 
 
 **Barrelwarp**
-As the Gellerpox infects ranged weapons, it warps barrels and corrodes rifling, reducing the effectiveness of such weapons. Subtract 1 from the Atk stat of that enemy operative’s ranged weapons.
+Infection Range: Within 2&quot; of a friendly GELLERPOX INFECTED operative (excluding MUTOID VERMIN), or within 3&quot; of a friendly GELLERPOX INFECTED GLITCHLING operative.
+Symptom: As the Gellerpox infects ranged weapons, it warps barrels and corrodes rifling, reducing the effectiveness of such weapons. Subtract 1 from the Atk stat of that enemy operative’s ranged weapons.
 **Screaming Rustspikes**
-Blades equipped by the enemy become strange and twisted, with spikes bursting from sword grips to pierce the flesh of the wielder. Whenever that enemy operative is fighting or retaliating against a friendly GELLERPOX INFECTED operative, if your opponent discards any attack dice as a fail, inflict 1 damage on that enemy operative. 
+Infection Range: Within control range of a friendly GELLERPOX INFECTED operative (excluding MUTOID VERMIN).
+Symptom: Blades equipped by the enemy become strange and twisted, with spikes bursting from sword grips to pierce the flesh of the wielder. Whenever that enemy operative is fighting or retaliating against a friendly GELLERPOX INFECTED operative, if your opponent discards any attack dice as a fail, inflict 1 damage on that enemy operative. 
 **Viral Vox-static**
-Discordant static noise and ear-piercing screams blare over vox-channels, disrupting the enemy&apos;s communications, breaking their chain of command and sowing fear within their ranks. That enemy operative’s APL stat cannot be added to (remove all positive APL stat changes it has).</description>
+Infection Range: Within 3&quot; of a friendly GELLERPOX INFECTED operative (excluding MUTOID VERMIN), or within 4&quot; of a friendly GELLERPOX INFECTED GLITCHLING operative.
+Symptom: Discordant static noise and ear-piercing screams blare over vox-channels, disrupting the enemy&apos;s communications, breaking their chain of command and sowing fear within their ranks. That enemy operative’s APL stat cannot be added to (remove all positive APL stat changes it has).</description>
     </rule>
     <rule name="Mutoid Vermin" id="0360-d144-0d29-0b3f" hidden="false">
       <description>**MUTOID VERMIN** operatives cannot perform any actions other than **Charge**, **Dash**, **Fall Back**, **Fight**, **Reposition** and **Shoot**, or use any weapons that aren’t on their datacard. They can perform the **Fall Back** action for 1 less AP. 
