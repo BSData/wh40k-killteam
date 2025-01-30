@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a018-5b5c-33fa-f85b" name="Inquisitorial Agents" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a018-5b5c-33fa-f85b" name="Inquisitorial Agents" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Kill Team" id="40bd-d31d-7da3-bc4c" hidden="false">
       <categoryLinks>
@@ -36,6 +36,18 @@
         </categoryLink>
         <categoryLink name="Requisitioned Operatives" hidden="false" id="0f96-87ff-ccf8-3c5c" targetId="1420-40fd-1151-dd74"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="Your kill team (including any REQUISITIONED operatives) cannot include more than one weapon with the Piercing 2 weapon rule." field="error">
+          <conditions>
+            <condition type="greaterThan" value="1" field="selections" scope="force" childId="5ee5-bc3c-c41c-bf40" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Your kill team (including any REQUISITIONED operatives) cannot include more than three weapons with the Piercing x (excluding Piercing Crits x) weapon rule combined." field="error">
+          <conditions>
+            <condition type="greaterThan" value="3" field="selections" scope="force" childId="52fa-3add-7e15-f499" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
@@ -462,6 +474,9 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="40bd-d31d-7da3-bc4c" shared="true" id="b237-e77d-876b-9088" includeChildSelections="true"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="PiercingX" hidden="false" id="4273-470e-8998-9f6f" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="7a82-3e36-774e-2281">
               <profiles>
@@ -482,6 +497,10 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="40bd-d31d-7da3-bc4c" shared="true" id="9820-174e-80df-f565" includeChildSelections="true"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Piercing2" hidden="false" id="a301-ea89-f9d7-20d9" targetId="5ee5-bc3c-c41c-bf40" primary="false"/>
+                <categoryLink name="PiercingX" hidden="false" id="c459-7494-6282-6edc" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="a0ff-3ae1-e49d-19e4">
               <profiles>
@@ -512,6 +531,9 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="40bd-d31d-7da3-bc4c" shared="true" id="31a3-bb90-7b08-0b21" includeChildSelections="true"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="PiercingX" hidden="false" id="df56-3580-4b4c-549d" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -761,6 +783,9 @@
             <infoLink name="Lethal x+" id="b1ef-ed05-ab02-5664" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
             <infoLink name="Range x" id="c24e-cd04-0b32-a0ea" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink name="PiercingX" hidden="false" id="fb33-b150-bab9-9ce8" targetId="52fa-3add-7e15-f499" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Suppressed autopistol" hidden="false" id="b42a-afd1-d0d7-428e">
           <constraints>
@@ -976,7 +1001,7 @@
         <categoryLink name="Gunner" hidden="false" id="b37d-05ab-b517-d6fa" targetId="3033-7558-d28f-53cf" primary="false"/>
       </categoryLinks>
       <profiles>
-        <profile name="Tempestus Scion Trooper" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1ccc-c688-1454-b83b">
+        <profile name="Tempestus Scion Gunner" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1ccc-c688-1454-b83b">
           <characteristics>
             <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
             <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
@@ -1025,6 +1050,9 @@ The rules for these actions are found in universal equipment. Performing these a
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="40bd-d31d-7da3-bc4c" shared="true" id="a5f6-d2c8-077b-74cd" includeChildSelections="true"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="PiercingX" hidden="false" id="96de-5805-36a9-cdad" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="184f-5103-0a5b-96a6">
               <constraints>
@@ -1072,6 +1100,9 @@ The rules for these actions are found in universal equipment. Performing these a
                 <infoLink name="Piercing x" id="b64b-6bb6-7dbc-dc5c" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
                 <infoLink name="Torrent x" id="8e08-a5e5-742e-e743" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="PiercingX" hidden="false" id="8438-80dc-2f84-7087" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="7993-1a33-43d9-f17c">
               <profiles>
@@ -1092,6 +1123,10 @@ The rules for these actions are found in universal equipment. Performing these a
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="40bd-d31d-7da3-bc4c" shared="true" id="6e6b-d9ef-1806-b7b9" includeChildSelections="true"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Piercing2" hidden="false" id="ee0b-5d84-1ae2-abe9" targetId="5ee5-bc3c-c41c-bf40" primary="false"/>
+                <categoryLink name="PiercingX" hidden="false" id="fbfe-e4e2-3186-d028" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="cd78-103f-c0f1-7474">
               <profiles>
@@ -1120,6 +1155,9 @@ The rules for these actions are found in universal equipment. Performing these a
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="40bd-d31d-7da3-bc4c" shared="true" id="87f4-d4eb-3d76-86b7" includeChildSelections="true"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="PiercingX" hidden="false" id="a4ce-6290-5bd4-ceaa" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1560,6 +1598,9 @@ The rules for these actions are found in universal equipment. Performing these a
             <infoLink name="Piercing x" id="2fc9-20ea-48f2-eee7" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
             <infoLink name="Saturate" id="2ba7-b9ab-49d9-bae2" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink name="PiercingX" hidden="false" id="cafa-16af-3767-9852" targetId="52fa-3add-7e15-f499" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -1635,6 +1676,10 @@ The rules for these actions are found in universal equipment. Performing these a
                   </conditions>
                 </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink name="Piercing2" hidden="false" id="ffdb-ae43-2d06-fe5e" targetId="5ee5-bc3c-c41c-bf40" primary="false"/>
+                <categoryLink name="PiercingX" hidden="false" id="f80f-d01c-4182-c005" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Navis las-volley" hidden="false" id="e7e6-9668-0fab-77ca">
               <profiles>
@@ -1705,6 +1750,9 @@ The rules for these actions are found in universal equipment. Performing these a
                   </conditions>
                 </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink name="PiercingX" hidden="false" id="dad0-e155-66fc-b555" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2241,6 +2289,9 @@ The rules for these actions are found in universal equipment. Performing these a
                 <infoLink name="Blast x" id="1845-fb68-0d2d-42df" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
                 <infoLink name="Piercing x" id="c787-48cc-1c54-1439" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="PiercingX" hidden="false" id="a37c-9764-a4cc-f716" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hot-shot volley gun" hidden="false" id="b7c0-952c-4ad8-39eb">
               <constraints>
@@ -2268,6 +2319,9 @@ The rules for these actions are found in universal equipment. Performing these a
                 <infoLink name="Torrent x" id="7156-2997-2ed1-853a" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
                 <infoLink name="Piercing x" id="c8d9-a86a-e13d-a92c" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="PiercingX" hidden="false" id="ce4a-5995-1bb1-ce61" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="5ec2-ee91-7cd5-f12f">
               <constraints>
@@ -2288,6 +2342,10 @@ The rules for these actions are found in universal equipment. Performing these a
                 <infoLink name="Devastating x" id="e79a-613d-721d-56dc" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
                 <infoLink name="Piercing x" id="b2fe-1577-b9b6-597e" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Piercing2" hidden="false" id="bd2e-9378-3c99-f443" targetId="5ee5-bc3c-c41c-bf40" primary="false"/>
+                <categoryLink name="PiercingX" hidden="false" id="f1db-c652-daf7-3536" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="b55e-9985-6abf-cc19">
               <constraints>
@@ -2537,6 +2595,9 @@ The rules for these actions are found in universal equipment. Performing these a
                 <infoLink name="Piercing x" id="2a8e-6f8f-13f0-3bd7" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
                 <infoLink name="Blast x" id="19af-8a3d-4d5a-31b3" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="PiercingX" hidden="false" id="f15d-1675-3e1d-dc65" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="6b8e-b0ca-abc1-14af">
               <constraints>
@@ -2557,6 +2618,10 @@ The rules for these actions are found in universal equipment. Performing these a
                 <infoLink name="Devastating x" id="9981-9f68-3567-71a1" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
                 <infoLink name="Piercing x" id="d945-b0e4-19d6-139e" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Piercing2" hidden="false" id="02b2-ff6b-3a72-8ff4" targetId="5ee5-bc3c-c41c-bf40" primary="false"/>
+                <categoryLink name="PiercingX" hidden="false" id="07aa-db9a-2032-5318" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="54c3-0512-0b3c-3a26">
               <constraints>
@@ -2585,6 +2650,9 @@ The rules for these actions are found in universal equipment. Performing these a
                 <infoLink name="Lethal x+" id="f6d6-4c68-af36-5c4d" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
                 <infoLink name="Piercing x" id="e984-65d8-f7c4-7539" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="PiercingX" hidden="false" id="2520-0a80-42c3-f87c" targetId="52fa-3add-7e15-f499" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="6fa1-d02f-4b34-7dfc">
               <constraints>
@@ -2813,6 +2881,9 @@ The rules for these actions are found in universal equipment. Performing these a
               <description>Don’t select a valid target. Instead, shoot against each operative within 2&quot; of your Mine marker, unless Heavy terrain is wholly intervening between that operative and that marker. Each of those operatives cannot be in cover or obscured. Roll each sequence separately in an order of your choice. This weapon cannot be selected if your Mine marker isn’t in the killzone. At the end of the action, remove your Mine marker from the killzone.</description>
             </rule>
           </rules>
+          <categoryLinks>
+            <categoryLink name="PiercingX" hidden="false" id="d6f6-1f30-4479-86e9" targetId="52fa-3add-7e15-f499" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -3948,6 +4019,8 @@ The rules for these actions are found in universal equipment. Performing these a
         </modifier>
       </modifiers>
     </categoryEntry>
+    <categoryEntry name="Piercing2" id="5ee5-bc3c-c41c-bf40" hidden="false"/>
+    <categoryEntry name="PiercingX" id="52fa-3add-7e15-f499" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="9974-9ded-0358-41eb">
