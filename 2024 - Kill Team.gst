@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Operative" id="cf83-4496-b58e-ac82"/>
     <categoryEntry name="Configuration" id="874b-0390-e5e2-1daa" hidden="false"/>
@@ -342,7 +342,7 @@ In addition, an operative can either move through ladders as if they aren&apos;t
             <profile name="Move with Barricade (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b0e0-b5d4-d82f-9b18">
               <characteristics>
                 <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ The same as the **Reposition** action, except the active operative can move no more than its Move stat minus 2&quot; and cannot climb, drop, jump or use any kill team&apos;s rules that remove it and set it back up again (e.g. HEARTHKYN SALVAGER FLY, MANDRAKE SHADOW PASSAGE).
-▶ Before this operative moves, remove the portable barricade it&apos;s connected to. After it moves, set up the portable barricade so it&apos;s connected again.
+▶ Before this operative moves, remove the portable barricade it&apos;s connected to. After it moves, set up the portable barricade so it&apos;s connected again, but the portable barricade cannot be set up within 2&quot; of other equipment terrain features, access points, or Accessible terrain. If this is not possible, the portable barricade is not set up again.
 ◆ This action is treated as a **Reposition** action. An operative cannot perform this action while within control range of an enemy operative, or in the same activation in which it performed the **Fall Back** or **Charge** action.</characteristic>
               </characteristics>
             </profile>
