@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="111c-537d-5e9f-0180" name="Sanctifier" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="4" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Kill Team" id="0355-c064-aee0-c8a7" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="b55d-e0c2-76a5-8479" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="7edd-9b67-5421-de32" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Leader" hidden="false" id="1169-9c92-9184-5b6f" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Operative" hidden="false" id="5b53-87b1-9514-1dfd" targetId="cf83-4496-b58e-ac82">
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="8634-c622-a31b-98ec-min" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="8634-c622-a31b-98ec-max" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Faction Equipment" id="6e59-4225-3dad-0e7b" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sanctification Orbs" hidden="false" id="9743-f899-92a5-3cae">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd56-c656-db48-11b5"/>
+          </constraints>
+          <profiles>
+            <profile name="Sanctification Orbs" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="b545-8272-0752-e438">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, one friendly SANCTIFIER operative (excluding CHERUB, DEATH CULT ASSASSIN, and MIRACULIST) can perform the Sanctification Orb unique action.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Sanctification Orb" hidden="false" id="3baf-fcf1-acc2-0fba" type="selectionEntry" targetId="26a0-d356-2fc0-4008">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd95-3eed-42f7-a708-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd95-3eed-42f7-a708-max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Seek" id="914f-53ca-5f0e-b85d" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
+              </infoLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Purity Seals" hidden="false" id="2e51-370c-d8cb-d5a4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c19e-f372-c6e5-143e"/>
+          </constraints>
+          <profiles>
+            <profile name="Purity Seals" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="7461-f82c-3702-7524">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly SANCTIFIER operative is shooting or fighting, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ecclesiarchy Texts" hidden="false" id="5cd9-de67-ac96-edea">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9517-5ccf-7062-836e"/>
+          </constraints>
+          <profiles>
+            <profile name="Ecclesiarchy Texts" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="419d-4ece-6063-5d9e">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">In the Ready step of each Strategy phase, roll 2D6: if the result is less than the remaining wounds of a friendly ORATOR operative, you gain 1CP. Note that this is done before the Gambit step, so if there isn&apos;t a valid ORATOR operative, you cannot use this rule during that turning point (e.g. during the first turning point).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Imperial Cult Symbols" hidden="false" id="7ea6-fad5-7b67-7e3e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70ea-92fd-b46f-c741"/>
+          </constraints>
+          <profiles>
+            <profile name="Imperial Cult Symbols" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="8973-f92a-08a7-4569">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when an operative is shooting a friendly SANCTIFIER operative that&apos;s benefitting from the SERMON, when you collect your defense dice, you can use this rule. If you do, change one of the attacker&apos;s retained critical successes to a normal success (any weapon rules they&apos;ve already resolved aren&apos;t affected, e.g. Piercing Crits).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <rules>
+    <rule name="Ministorum Sermon" id="e877-e0ed-e44f-b2f2" hidden="false">
+      <description>**STRATEGIC GAMBIT**. Select one friendly SACTIFIER operative. If a friendly CONFESSOR operative hasn&apos;t been incapacitated, you must select it. Until you use this **STRATEGIC GAMBIT** again during the battle, that operative has the ORATOR keyword.
+
+Whenever a friendly SANCTIFIER operative is within 3&quot; of a friendly ORATOR operative (or 6&quot; if the ORATOR is a CONFESSOR), that friendly SANCTIFIER operative is benefitting from the SERMON.
+
+
+Whenever a friendly SANCTIFIER operative is activated within 3&quot; of a friendly ORATOR operative (or 6&quot; if the ORATOR is a CONFESSOR), that friendly SANCTIFIER operative is benefitting from the SERMON until the end of that activation (i.e. even if it then moves more than the distance requirement from the ORATOR operative).
+
+
+Whenever a friendly SANCTIFIER operative is benefitting from the SERMON, Normal and Critical Dmg of 3 or more inflicts 1 less damage on it.</description>
+    </rule>
+  </rules>
+  <categoryEntries>
+    <categoryEntry name="SANCTIFIER" id="324b-8544-00c4-9e7a" hidden="false"/>
+    <categoryEntry name="Adeptus Ministorum" id="0d2a-efa4-09e7-4964" hidden="false"/>
+    <categoryEntry name="Cherub" id="9cc5-08a2-7af3-86e1" hidden="false"/>
+    <categoryEntry name="Conflagrator" id="5b3a-c26b-e98e-bbeb" hidden="false"/>
+    <categoryEntry name="Death Cult Assassin" id="3e1f-ffe0-aa45-11df" hidden="false"/>
+    <categoryEntry name="Drill Abbot" id="670b-d98e-7893-970e" hidden="false"/>
+    <categoryEntry name="Miraculist" id="bb3d-2874-5cb2-386b" hidden="false"/>
+    <categoryEntry name="Missionary" id="741c-e231-a83a-d1c7" hidden="false"/>
+    <categoryEntry name="Persecutor" id="6bd7-21c6-8d61-dfaa" hidden="false"/>
+    <categoryEntry name="Preacher" id="92de-f88c-f806-4e17" hidden="false"/>
+    <categoryEntry name="Reliquant" id="dd9e-ea44-8aab-b6b6" hidden="false"/>
+    <categoryEntry name="Salvationist" id="41b2-e53a-466a-f5f7" hidden="false"/>
+  </categoryEntries>
+  <sharedRules>
+    <rule name="*Blaze" id="4135-8c4b-bcbc-e63e" hidden="false">
+      <description>If you retain any critical successes, the operative this weapon is being used against gains one of your Blaze tokens (if it doesn&apos;t already have one). Whenever an operative that has one of your Blaze tokens is activated, inflict D3 damage on it. Then that operative&apos;s controlling player selects one of the following:
+- Roll one D6: on a 3+, remove that token.
+- Subtract 1 from the operative&apos;s APL stat until the end of that activation to remove that token.</description>
+    </rule>
+  </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Confessor" hidden="false" id="251a-68ec-8877-8636">
+      <categoryLinks>
+        <categoryLink name="SANCTIFIER" hidden="false" id="6d0a-6cae-d090-5ac4" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="5f8f-f43c-99c1-c0df" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="f69d-7918-05e5-bb5c" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="daa6-e6b9-3e04-4f60" targetId="d999-8cad-8145-4efe" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="d1c9-4f69-ae9f-ff2c-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="d1c9-4f69-ae9f-ff2c-max" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mace of Censure" hidden="false" id="b6b3-22d2-2854-7c75">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c982-9f6e-ac50-afd1-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c982-9f6e-ac50-afd1-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Mace of Censure" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="916c-6cfd-2b82-ccc4">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal, Shock</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Brutal" id="1dfc-3f5b-2321-6052" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+            <infoLink name="Shock" id="24c0-51d5-4726-8974" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Lead the Procession" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2d2a-c450-87be-63a8">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is an ORATOR and performs the **Charge**, **Fall Back**, or **Reposition** action during its activation, you can use this rule before it moves. If you do, determine each other friendly SANCTIFIER operative that&apos;s benefitting from the SERMON. After this operative ends that action, each of those friendly SANCTIFIER operatives can immediately perform a free **Charge**, **Fall Back**, or **Reposition** action in an order of your choice, but each must end that move in a location where they are still benefitting from the SERMON. If this operative is incapacitated before this rule is fully resolved, e.g. from the **Guard** action&apos;s interruption, don&apos;t remove it from the killzone until this rule has been resolved.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Confessor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="13d4-e88a-0789-4f51">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Commanding Declamation" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="d165-d1a5-06e2-a23d">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever the enemy operative would perform an action during an activation or counteraction while visible to and within 6&quot; of this operative, you can use this rule. If you do, roll one D6: if the result is higher than that enemy operative&apos;s APL stat:
+- It cannot perform that action during that activation or counteraction (the AP spent on it isn&apos;t refunded). If it&apos;s a counteraction, that counteraction ends.
+- You cannot use this rule again during the battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cherub" hidden="false" id="4991-fdeb-4149-0d28">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="f55c-e602-0dc1-6e8f" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SANCTIFIER" hidden="false" id="44f6-8638-a9c0-0edc" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="44b6-7cca-ab50-e4c3" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="4795-8c0a-4523-528f" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Cherub" hidden="false" id="05b6-ba41-dc27-381c" targetId="9cc5-08a2-7af3-86e1" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="d7aa-02d2-990e-0d12-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="d7aa-02d2-990e-0d12-max" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Cherub" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="28dd-5b1a-8a07-b503">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cherub" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="b1d8-6748-7384-5926">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">- Whenever determining control of an objective marker, treat this operative&apos;s APL stat as 1 lower.
+- Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Vantage terrain).
+- This operative cannot use any weapons that aren&apos;t on its datacard, or perform unique actions other than Incentivise.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fly" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8f90-99e4-bcb6-03a1">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative performs the **Charge**, **Fall Back**, or **Reposition** action, it can fly. If it does, don&apos;t move it. Instead, remove it from the killzone and set it back up wholly within a distance equal to its Move stat of its original location, measuring the horizontal distance only (in a killzone that uses the close quarters rules, e.g. Killzone: Gallowdark, this distance cannot be measured over or through Wall terrain). Note that it gains no additional distance when performing the **Charge** action. It must be set up in a location it can be placed, and unless it&apos;s the **Charge** action, it cannot be set up within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Incentivise (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="1906-4958-b800-974f">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one other friendly SANCTIFIER operative (excluding CONFESSOR, DEATH CULT ASSASSIN, MIRACULIST and ORATOR) visible to and within 2&quot; of this operative. Until the end of that operative&apos;s next activation, add 1 to its APL stat.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Incentiviser" hidden="false" id="004c-6d71-55f2-53fa">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8be-f74a-7e71-97c1-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8be-f74a-7e71-97c1-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Incentiviser" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5e45-3cc1-bb6a-73c2">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Shock</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shock" id="0b3d-74f1-ccb5-9451" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Conflagrator" hidden="false" id="7a2e-341c-c2f9-0f43">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="ebb5-4ff9-6f83-49c6" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SANCTIFIER" hidden="false" id="f451-7e9f-b34d-039c" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="43e8-94dd-c566-0e55" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="651e-2c61-4cdf-f00c" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Conflagrator" hidden="false" id="434c-ec91-a629-b270" targetId="5b3a-c26b-e98e-bbeb" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="4eb5-00bd-b276-d452" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Conflagrator" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="5903-c365-b1e8-29b5">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sanctification Rack" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2d58-e6ff-0665-e39b">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform the **Sanctification Orb** action. Doing so in this manner doesn&apos;t count towards the once per turning point limit (i.e. if you also select that equipment for other operatives).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Twin hand flamers" hidden="false" id="ebce-f68c-52d0-4058">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ba4-2993-b7b4-3319-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ba4-2993-b7b4-3319-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Twin hand flamers (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="73db-7239-83b9-99f9">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Saturate, Torrent 2&quot;, Blaze*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Twin hand flamers (twin torrent)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="fb03-81dc-9d0b-95b8">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Saturate, Torrent 0&quot;, Twin Torrent&apos;, Blaze*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="&apos;Twin Torrent" id="2c89-0eb8-4a7a-a7a3" hidden="false">
+              <description>Select up to two valid targets. Shoot with this weapon against both of them in an order of your choice (roll each sequence separately). Torrent 0&quot; means you cannot select secondary targets, but this weapon still has the Torrent weapon rule for all other purposes, e.g. the Condensed Stronghold rule.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="*Blaze" id="c2b7-a67c-bcf1-6684" hidden="false" type="rule" targetId="4135-8c4b-bcbc-e63e"/>
+            <infoLink name="Range x" id="7e98-d421-008e-d1fd" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Saturate" id="f739-10ea-073c-d6aa" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+            <infoLink name="Torrent x" id="1c98-884a-5621-7b8c" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gun butts" hidden="false" id="8583-747a-4eac-d85d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d14f-a557-ca8a-2aa1-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d14f-a557-ca8a-2aa1-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Gun butts" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="17f9-be3a-b5df-16e0">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Death Cult Assassin" hidden="false" id="9b3c-6e1e-3d4b-a533">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="33d5-b0a3-5c52-51cf" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SANCTIFIER" hidden="false" id="78ce-423c-4975-b3c1" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="587e-e617-77bc-f888" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="93d5-36a3-8a1f-88ef" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Death Cult Assassin" hidden="false" id="e343-80c4-3d24-e060" targetId="3e1f-ffe0-aa45-11df" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="c1a6-fd17-9808-35e7" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Death Cult Assassin" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="bcd0-7916-1f7d-521d">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bladed Stance" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="7aad-26d5-77b6-ac1f">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is fighting or retaliating, you can resolve one of your successes before the normal order. If you do, that success must be used to block.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Trained Assassin (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="7ee4-b652-70d7-0340">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Change this operative&apos;s order.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Throwing knives" hidden="false" id="8103-21c1-4582-ddff">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8f3-a767-a4e1-2b55-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8f3-a767-a4e1-2b55-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Throwing knives" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="fdfb-efdc-ba5f-ac94">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Silent" id="c504-e608-1063-ccbd" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+            <infoLink name="Range x" id="e64e-3572-e410-aa27" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ritual blades" hidden="false" id="fd1f-1a91-59c2-5880">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa3c-8e5e-41a9-744f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa3c-8e5e-41a9-744f-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Ritual blades" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6514-1497-241f-6da3">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Drill Abbot" hidden="false" id="d597-4125-ae89-128f">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="a8f1-10bc-e487-03d2" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SANCTIFIER" hidden="false" id="120f-666c-198c-f822" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="8102-9b5f-fdbf-db3e" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="e8a9-32af-9c81-e0ac" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Drill Abbot" hidden="false" id="69ef-937c-f2f2-b104" targetId="670b-d98e-7893-970e" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="e280-8d5a-7609-7106" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Drill Abbot" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7026-06e5-b711-33c8">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Schola Progenium Disciplinarian" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="76bb-85fb-e56d-0adc">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever a friendly SANCTIFIER operative is within 6&quot; of this operative, you can ignore any changes to that operative&apos;s stats from being injured (including its weapons&apos; stats).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Null Skull" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="dab3-f1d6-1b88-d04c">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an enemy operative is within 6&quot; of this operative, that enemy operative&apos;s APL stat cannot be added to (remove all positive APL changes it has). If an enemy operative that&apos;s more than 6&quot; from this operative has a positive APL stat change and your opponent spends its final AP to move that operative within 6&quot; of this operative, this can cause your opponent to have spent more AP than its APL stat - this is permitted in this situation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Great hammer" hidden="false" id="8f4b-b0c2-e68a-62da">
+          <profiles>
+            <profile name="⚔ Great hammer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="74ba-c32b-5fb0-3ffb">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal, Shock</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="081e-d639-c59b-dede-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="081e-d639-c59b-dede-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Brutal" id="ad55-3cbc-6ea3-54e2" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+            <infoLink name="Shock" id="4043-6079-0b9b-6a43" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Miraculist" hidden="false" id="9db9-ef19-65ef-b8b7">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="345b-b427-13f3-837a" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SANCTIFIER" hidden="false" id="5971-01b3-a9cc-2f11" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="7d2b-cac5-5161-6ba7" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="4313-3fc5-f5df-93ce" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Miraculist" hidden="false" id="7cba-56b4-5b38-7475" targetId="bb3d-2874-5cb2-386b" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="970d-63dc-92f3-20d9" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Miraculist" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="4fcb-8043-7f17-d6d9">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Miracle" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="1750-d719-5f41-e50e">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">The first time this operative would be incapacitated during the battle, it&apos;s not incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. All remaining attack dice are discarded (including yours if this operative is fighting or retaliating), then this operative can immediately perform a free **Dash** or **Fall Back** action (for the latter, it cannot move more than 3&quot;), even if it&apos;s performed an action that prevents it from performing the **Dash** or **Fall Back** action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Holy light" hidden="false" id="9c61-cf70-84e1-7dec">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8559-92b6-410e-1fb3-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8559-92b6-410e-1fb3-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Holy light" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d3fb-c195-025a-dead">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Devastating 3, Limited 1, Piercing 1, Saturate, Blaze*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="*Blaze" id="63b6-1f52-52c8-a4c0" hidden="false" type="rule" targetId="4135-8c4b-bcbc-e63e"/>
+            <infoLink name="Range x" id="d9b7-a895-ec45-0553" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Saturate" id="aebe-9ebd-12bb-f3b8" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+            <infoLink name="Devastating x" id="91a5-8e82-95e8-3ab9" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Limited x" id="51ee-e54b-bacd-bb22" hidden="false" type="rule" targetId="bf37-3388-40d5-eb72"/>
+            <infoLink name="Piercing x" id="0477-be61-fed3-faa1" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wreathe in fire" hidden="false" id="f5c4-a5dd-54ff-940f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af27-2acf-462a-876a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af27-2acf-462a-876a-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Wreathe in fire" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="cd67-d2de-7a20-81c9">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 1&quot;, Limited 1, Wreathed&apos;, Blaze*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="*Blaze" id="ad2e-ac9e-d98b-436f" hidden="false" type="rule" targetId="4135-8c4b-bcbc-e63e"/>
+            <infoLink name="Blast x" id="ed1b-731b-9170-4381" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Limited x" id="7205-247f-f121-5ae2" hidden="false" type="rule" targetId="bf37-3388-40d5-eb72"/>
+          </infoLinks>
+          <rules>
+            <rule name="&apos;Wreathed" id="5447-a97f-723a-1be7" hidden="false">
+              <description>This operative can perform the **Shoot** action with this weapon while within control range of an enemy operative. Don&apos;t select a valid target. Instead, this operative is always the primary target, but only shoot against secondary targets and they cannot be in cover or obscured (in other words, determine Blast from this operative, but this operative isn&apos;t affected).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Burning hands" hidden="false" id="c9cf-646b-fc6c-2302">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22f9-84aa-5a0d-bee3-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22f9-84aa-5a0d-bee3-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Burning hands" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="eff2-8974-d06d-3dff">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">1</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">7/8</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal, Limited 1, Blaze*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Brutal" id="cf8d-e884-bbd2-b2be" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+            <infoLink name="Limited x" id="fcc4-476c-e746-77cf" hidden="false" type="rule" targetId="bf37-3388-40d5-eb72"/>
+            <infoLink name="*Blaze" id="f673-6625-e256-c0b0" hidden="false" type="rule" targetId="4135-8c4b-bcbc-e63e"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="961c-22c7-20f5-da19">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dccc-29f8-2f29-dd91-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dccc-29f8-2f29-dd91-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f97d-d1ec-2a1e-3f79">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">2</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/2</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Missionary" hidden="false" id="de2e-4cef-c495-686f">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="cb36-f95b-147f-2330" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SANCTIFIER" hidden="false" id="1ec9-adad-63bd-77d9" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="b537-3b6f-27c7-74da" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="e531-0462-77f6-69f8" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Missionary" hidden="false" id="619e-b583-bee6-f8d5" targetId="741c-e231-a83a-d1c7" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="b989-8400-67c7-e6e3" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Spread the Word of the God-Emperor" hidden="false" id="f669-4cee-57ab-facd" type="selectionEntry" targetId="c5c2-a94f-6319-75e5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4192-590d-e476-e098-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4192-590d-e476-e098-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Holy Relic" id="f917-1389-4df8-8acb" hidden="false" type="profile" targetId="4696-b9d7-402e-b26e"/>
+        <infoLink name="Missionary" id="ca31-51d1-e1ac-1ddb" hidden="false" type="profile" targetId="671b-9bbb-7365-aafc"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="3be6-bea0-1a12-23bc" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="808a-58be-c3ef-ba1c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="808a-58be-c3ef-ba1c-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Meltagun; chainsword; holy relic" hidden="false" id="b128-a1c1-3b93-92bb">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="5f6f-98f6-02b9-8575">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc42-5385-c85c-9d90-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc42-5385-c85c-9d90-max"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⌖ Meltagun" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="801d-9169-c0c7-cd67">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">6/3</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Devastating 4, Piercing 2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Devastating x" id="2e71-4e95-132d-e549" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+                    <infoLink name="Range x" id="5291-c46d-f82d-9f53" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                    <infoLink name="Piercing x" id="3fb0-587f-c6ca-4ece" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Holy relic" hidden="false" id="82d0-a29e-5899-cda8" type="selectionEntry" targetId="84ff-4b6e-ad1c-59a0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="620c-f45f-5f93-f2c4-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="620c-f45f-5f93-f2c4-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainsword" hidden="false" id="1c13-63b6-7e48-150e" type="selectionEntry" targetId="0166-3eaf-9daf-9f2d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="733d-3dfd-26d3-a7ef-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="733d-3dfd-26d3-a7ef-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma gun; chainsword; brazier of holy fire" hidden="false" id="f9ef-5bc9-18bc-2cba">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="3a75-9d0d-6ca0-9184">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f877-1bb5-7ced-5d92-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f877-1bb5-7ced-5d92-max"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="⌖ Plasma gun (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a9f1-f733-0f36-890b">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="⌖ Plasma gun (supercharge)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2aca-3828-6684-6b3d">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Hot, Lethal 5+, Piercing 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Hot" id="5c2a-c9ec-5d9f-e4ef" hidden="false" type="rule" targetId="ec63-40e6-6282-8420"/>
+                    <infoLink name="Lethal x+" id="d5a8-6924-4ee2-f821" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                    <infoLink name="Piercing x" id="ef39-48dd-51f2-08c5" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Brazier of holy fire" hidden="false" id="472b-e20e-150b-a7d7" type="selectionEntry" targetId="957e-3423-20bd-740a">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4524-540d-6616-396d-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4524-540d-6616-396d-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainsword" hidden="false" id="6ef3-7fc0-2afc-543c" type="selectionEntry" targetId="0166-3eaf-9daf-9f2d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a5c-5032-738f-bd09-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a5c-5032-738f-bd09-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Reliquant" hidden="false" id="78bc-e9b5-8dcb-0743">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="8287-0e88-4a63-9d3d" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SANCTIFIER" hidden="false" id="9422-b4e2-d93e-df99" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="98e5-5be4-39ca-0326" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="6291-2231-0a37-f075" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Reliquant" hidden="false" id="d1ba-ba66-50da-4021" targetId="dd9e-ea44-8aab-b6b6" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="cd78-c4d7-2f6d-ea2d" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Reliquant" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="6353-64ff-39fa-704d">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cult Icon" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="f42f-f099-0883-377b">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever determining control of a marker within 6&quot; of this operative, treat the total APL stat of friendly SANCTIFIER operatives that contest it as 1 higher if at least one friendly SANCTIFIER operative contests that marker. Note this isn&apos;t a change to the APL stat, so any changes are cumulative with this.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Imperial Cult Devotion" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="b9b1-1d82-3d95-d54a">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, when a ready friendly SANCTIFIER operative is incapacitated within 6&quot; of this operative, you can use this rule. If you do, before that operative is removed from the killzone, it can perform one free action (excluding **Fight**), and you can change its order to do so. It&apos;s then incapacitated as normal.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Hand flamer" hidden="false" id="0b41-7670-4cf9-5ad1" type="selectionEntry" targetId="d977-829c-6888-cf03">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c4e-0bb3-d6cc-0bce-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c4e-0bb3-d6cc-0bce-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gun butt" hidden="false" id="5376-c8df-f746-8b3c" type="selectionEntry" targetId="3a1a-a967-7d04-4c5d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61bd-8101-78ce-1663-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61bd-8101-78ce-1663-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Preacher" hidden="false" id="c588-1e5a-7514-8f0f">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="4ccc-e2a8-96f2-b629" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SANCTIFIER" hidden="false" id="5709-9897-7cbf-c655" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="7207-7930-15c8-924e" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="644e-9d9f-3d5b-4236" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Preacher" hidden="false" id="f1bf-57bb-1e47-373e" targetId="92de-f88c-f806-4e17" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="4" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="ee7d-38db-4587-0f23" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Preacher" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="8842-9970-5e24-4543">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Defend the Faith" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2103-aba6-4cfa-607b">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative contests an objective marker, it&apos;s benefitting from the SERMON.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Hand flamer" hidden="false" id="8bda-91f1-86ac-545b" type="selectionEntry" targetId="d977-829c-6888-cf03">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8457-92d6-1c09-a1af-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8457-92d6-1c09-a1af-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Chainsword" hidden="false" id="4eed-68a9-4cdb-630e" type="selectionEntry" targetId="0166-3eaf-9daf-9f2d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c285-40a2-5453-5dd9-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c285-40a2-5453-5dd9-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Persecutor" hidden="false" id="98de-6be6-cad6-9203">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="3717-5eb3-64c7-1f74" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SANCTIFIER" hidden="false" id="1426-d1d5-0e32-b996" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="e332-15d1-67b5-5397" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="75ad-fd74-c6ad-a1fc" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Persecutor" hidden="false" id="e9dd-bd0e-163f-ee07" targetId="6bd7-21c6-8d61-dfaa" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="ae25-c5ae-ef56-8fd7" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Persecutor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="8d79-0666-9e86-0c71">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Merciless Castigation" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="9c1d-97fe-2cbf-3ebd">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">The first time this operative performs the **Fight** action during each of its activations, if neither it nor the enemy operative in that sequence is incapacitated, this operative can immediately perform a free **Fight** action afterwards, but it can only fight against that enemy operative (and only if it&apos;s still valid to fight against). This takes precedence over action restrictions.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fanatical Retribution" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="91eb-7175-52e9-105b">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">If this operative is incapacitated during the **Fight** action, you can strike with one of your unresolved successes before it&apos;s removed from the killzone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Eviscerator" hidden="false" id="10ff-ecfb-5eb7-3796">
+          <profiles>
+            <profile name="⚔ Eviscerator" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3d47-5470-4c6e-205e">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6196-96de-d0f2-2d29-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6196-96de-d0f2-2d29-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Brutal" id="68d0-cad6-9e47-92cc" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Hand flamer" hidden="false" id="e654-1d6b-5a95-e47a" type="selectionEntry" targetId="d977-829c-6888-cf03">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9161-ede4-e771-590d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9161-ede4-e771-590d-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Missionary with flamer" hidden="false" id="637d-4538-0883-5a55">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="a333-cfcf-31e3-8f5b" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SANCTIFIER" hidden="false" id="7bd6-6341-d6dc-8fe2" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="ea5e-42ea-f8e4-0823" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="3beb-9218-719b-5616" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Missionary" hidden="false" id="e8ea-9269-5726-b56d" targetId="741c-e231-a83a-d1c7" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="86fb-4684-4f14-3015" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Spread the Word of the God-Emperor" hidden="false" id="2221-dc81-0576-ce3a" type="selectionEntry" targetId="c5c2-a94f-6319-75e5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c060-3e7e-86c9-2c34-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c060-3e7e-86c9-2c34-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Holy Relic" id="11b4-471a-a425-a0e8" hidden="false" type="profile" targetId="4696-b9d7-402e-b26e"/>
+        <infoLink name="Missionary" id="b6a7-3750-5ffb-4e43" hidden="false" type="profile" targetId="671b-9bbb-7365-aafc"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="1163-39e1-21f2-19ab" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe6a-4ffd-c80e-df16-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe6a-4ffd-c80e-df16-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ministorum flamer; brazier of holy fire" hidden="false" id="cb18-4972-06a9-6ed8">
+              <entryLinks>
+                <entryLink import="true" name="Ministorum flamer" hidden="false" id="b424-8ead-b62e-c489" type="selectionEntry" targetId="2a5c-0b30-fb60-d53e">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b78e-f973-48e7-6d81-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b78e-f973-48e7-6d81-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Brazier of holy fire" hidden="false" id="fadc-31b9-3c5b-6acd" type="selectionEntry" targetId="957e-3423-20bd-740a">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93f0-fe18-d7c0-f9e2-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93f0-fe18-d7c0-f9e2-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ministorum flamer; gun butt; holy relic" hidden="false" id="7283-8cc6-895c-7a54">
+              <entryLinks>
+                <entryLink import="true" name="Ministorum flamer" hidden="false" id="4860-e545-5054-9290" type="selectionEntry" targetId="2a5c-0b30-fb60-d53e">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c537-e1fe-1ebb-38d9-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c537-e1fe-1ebb-38d9-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Holy relic" hidden="false" id="8bdd-c74e-5497-01d4" type="selectionEntry" targetId="84ff-4b6e-ad1c-59a0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8dd-fc15-cf15-4d92-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8dd-fc15-cf15-4d92-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Gun butt" hidden="false" id="712e-50cc-1e63-eac4" type="selectionEntry" targetId="3a1a-a967-7d04-4c5d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a3b-b255-ef0e-0c80-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a3b-b255-ef0e-0c80-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Salvationist" hidden="false" id="34d1-1d3b-07a2-8679">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="d9d0-7ea6-c1af-651c" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="SANCTIFIER" hidden="false" id="da0c-5018-7409-bc44" targetId="324b-8544-00c4-9e7a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="9e7b-4c08-9d33-3e88" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Ministorum" hidden="false" id="6db4-ec43-b77e-ea40" targetId="0d2a-efa4-09e7-4964" primary="false"/>
+        <categoryLink name="Salvationist" hidden="false" id="2c93-74c7-1f3d-1ef9" targetId="41b2-e53a-466a-f5f7" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="d390-27c6-1fe2-46e6" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Salvationist" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="e78e-84db-0428-581b">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Conversion Field" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0143-7903-72cb-39cb">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an operative more than 6&quot; from this operative is shooting a friendly SANCTIFIER operative within 6&quot; of this operative, improve that friendly operative&apos;s Save stat by 1 and worsen the x of the Piercing weapon rule by 1 (if any). Note that Piercing 1 with therefore be ignored.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Medikit (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="f834-b649-b0b3-628a">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly SANCTIFIER operative within this operative&apos;s control range to regain 2D3 lost wounds.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Soulstave" hidden="false" id="a541-2a2a-7a94-e085">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cca9-7b8c-914c-e828-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cca9-7b8c-914c-e828-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Soulstave" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4ffb-c6ca-2a29-5719">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Brazier of holy fire" hidden="false" id="957e-3423-20bd-740a">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="0355-c064-aee0-c8a7" shared="true" id="44fb-240c-6c14-25b2" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="⚔ Brazier of holy fire" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a947-92c6-161d-9853">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 4&quot;, Saturate, Torrent 1&quot;, Blaze*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="012f-b521-822a-7c35" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+        <infoLink name="Saturate" id="ac2b-5367-7a7d-56f8" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+        <infoLink name="Torrent x" id="31df-241b-cdb5-c891" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+        <infoLink name="*Blaze" id="9d93-12d7-8c68-69c4" hidden="false" type="rule" targetId="4135-8c4b-bcbc-e63e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Holy relic" hidden="false" id="84ff-4b6e-ad1c-59a0"/>
+    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="0166-3eaf-9daf-9f2d">
+      <profiles>
+        <profile name="⚔ Chainsword" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="cade-d5f4-d6c9-3b33">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ministorum flamer" hidden="false" id="2a5c-0b30-fb60-d53e">
+      <profiles>
+        <profile name="⌖ Ministorum flamer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a42e-c6ff-d077-1231">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Saturate, Torrent 2&quot;, Blaze*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="c833-c7ba-9138-2602" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+        <infoLink name="Saturate" id="2e7d-46ca-7ee0-893b" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+        <infoLink name="Torrent x" id="551a-f196-e3bf-2f0f" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+        <infoLink name="*Blaze" id="aa8a-e960-e3fa-0634" hidden="false" type="rule" targetId="4135-8c4b-bcbc-e63e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spread the Word of the God-Emperor" hidden="false" id="c5c2-a94f-6319-75e5">
+      <profiles>
+        <profile name="Spread the Word of the God-Emperor" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="73d8-af3b-48e5-9048">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is more than 6&quot; from other friendly operatives, its weapons have the Severe weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Severe" id="c84b-c513-e6a0-034e" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hand flamer" hidden="false" id="d977-829c-6888-cf03">
+      <profiles>
+        <profile name="⌖ Hand flamer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="db9f-4d7a-024c-ae7a">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Saturate, Torrent 1&quot;, Blaze*</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="8044-2517-4ef7-33de">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6bd7-21c6-8d61-dfaa" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="94c5-cfcf-2fa4-0b7a" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+        <infoLink name="Saturate" id="1f7b-2204-35c0-866f" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+        <infoLink name="Torrent x" id="58f3-e8c8-488f-9689" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+        <infoLink name="*Blaze" id="3bcb-0ec4-ded0-853d" hidden="false" type="rule" targetId="4135-8c4b-bcbc-e63e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gun butt" hidden="false" id="3a1a-a967-7d04-4c5d">
+      <profiles>
+        <profile name="⚔ Gun butt" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e6b3-31c1-767e-bfd2">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sanctification Orb" hidden="false" id="26a0-d356-2fc0-4008">
+      <profiles>
+        <profile name="Sanctification Orb (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="5de7-5a9f-0032-ae29">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to and within 6&quot; of this operative. That operative and each other enemy operative within 1&quot; of it takes a doused test. For an operative to take a doused test, roll one D6: on a 3+, it gains one of your Doused tokens.
+▶ Whenever a friendly SANCTIFIER operative is shooting against an operative that has one of your Doused tokens with a weapon that has the Blaze weapon rule, that weapon also has the Seek weapon rule.
+▶ After a friendly SANCTIFIER operative uses a weapon that has the Blaze weapon rule against an enemy operative that has one of your Doused tokens, remove that token (even if the Seek weapon rule wasn&apos;t used).
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="Holy Relic" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="4696-b9d7-402e-b26e">
+      <characteristics>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">If this operative has a holy relic, it&apos;s always benefitting from the SERMON.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Missionary" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="671b-9bbb-7365-aafc">
+      <characteristics>
+        <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+        <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+        <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+        <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="260c-603f-d6d2-4e6a" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <entryLinks>
+        <entryLink import="true" name="Faction Equipment" hidden="false" id="6548-3fa9-0c7a-c617" type="selectionEntryGroup" targetId="6e59-4225-3dad-0e7b"/>
+      </entryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>
