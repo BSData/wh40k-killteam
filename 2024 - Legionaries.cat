@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5fa4-88e8-89fb-2e9c" name="Legionaries" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5fa4-88e8-89fb-2e9c" name="Legionaries" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Legionaries Kill Team" id="dde2-8bc4-3ccd-daf1" hidden="false">
       <categoryLinks>
@@ -428,7 +428,7 @@ Each friendly LEGIONARY operative can counteract regardless of its order.</desc
         </profile>
         <profile name="Soul Gorge" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0282-5e0e-59dc-bbc0">
           <characteristics>
-            <characteristic name="Ability" typeId="3467-0678-083e-eb50">After this operative fights or retaliates, if it isn’t incapacitated, but it incapacitated an enemy operative or inflicted Critical Dmg during that sequence, it regains D3+3 lost wounds.</characteristic>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">After this operative fights or retaliates, if it isn’t incapacitated, but it incapacitated an enemy operative during that sequence, it regains D3+3 lost wounds.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -538,7 +538,7 @@ Each friendly LEGIONARY operative can counteract regardless of its order.</desc
             <profile name="Unleash Daemon" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="c477-ad46-247d-6bc5">
               <characteristics>
                 <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per battle, when this operative is activated, you can use this rule. If you do, until the end of the battle:
-- This operative cannot perform the **Pick Up Marker** or mission actions (excluding **Operate Hatch**). If it’s carrying a marker, it must immediately perform the **Place Marker** action for 0AP (this takes precedence over all other rules).
+- This operative cannot perform the **Pick Up Marker** or mission actions (excluding **Operate Hatch**). If it’s carrying a marker, it must immediately perform the **Place Marker** action for 0AP (this takes precedence over all other rules). If this operative has the NURGLE keyword, you cannot reduce the damage of an attack dice by more than 1. In other words, you cannot use both rules to reduce Normal Dmg of 4 or more by 2.
 - Normal and Critical Dmg of 4 or more inflicts 1 less damage on this operative.
 - Its daemonic claw has the Ceaseless and Lethal 5+ weapon rules.</characteristic>
               </characteristics>
@@ -989,7 +989,7 @@ Each friendly LEGIONARY operative can counteract regardless of its order.</desc
         </profile>
         <profile name="Favoured of the Dark Gods" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="50f8-7f4f-e5c2-0add">
           <characteristics>
-            <characteristic name="Ability" typeId="3467-0678-083e-eb50">In the Ready step of each Strategy phase, if this operative isn’t incapacitated, you gain 1CP.</characteristic>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">In the Ready step of each Strategy phase, if this operative controls an objective marker that isn&apos;t tainted, that objective marker is tainted for the battle and you gain 1CP. Note that if any operative (including enemy operatives) has tainted an objective marker, you cannot taint that objective marker.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1148,7 +1148,7 @@ Each friendly LEGIONARY operative can counteract regardless of its order.</desc
         </profile>
         <profile name="Infernal Pact" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="7eea-f104-0ac3-a69c">
           <characteristics>
-            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is activated, you can change its Marks of Chaos keyword.</characteristic>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per battle, when a friendly LEGIONARY WARRIOR operative is activated, you can use this rule. If you do, change that operative&apos;s Marks of Chaos keyword.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1213,7 +1213,7 @@ Each friendly LEGIONARY operative can counteract regardless of its order.</desc
   </categoryEntries>
   <sharedRules>
     <rule name="*Siphon Life" id="d75f-6c44-3bd7-287a" hidden="false">
-      <description>Whenever this operative is using this weapon, at the start of the Resolve Attack Dice step, you can select one friendly LEGIONARY operative visible to and within 6&quot; of this operative. For each attack dice you resolve during that step that inflicts damage, that friendly operative regains 1 lost wound, or D3 lost wounds if it was a critical success.</description>
+      <description>When you select this weapon you can use this rule. If you do, at the start of the Resolve Attack Dice step, select one friendly LEGIONARY operative visible to and within 6&quot; of this operative. For each attack dice you resolve during that step that inflicts damage, that friendly operative regains 1 lost wound, or D3 lost wounds if it was a critical success. You cannot use this weapon rule more than once per turning point.</description>
     </rule>
   </sharedRules>
   <entryLinks>
@@ -1223,4 +1223,5 @@ Each friendly LEGIONARY operative can counteract regardless of its order.</desc
       </entryLinks>
     </entryLink>
   </entryLinks>
+  <comment>Update 1.0</comment>
 </catalogue>
