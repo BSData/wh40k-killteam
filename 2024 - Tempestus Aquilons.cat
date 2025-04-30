@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="70dd-e7c9-fef1-aa50" name="Tempestus Aquilons" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="70dd-e7c9-fef1-aa50" name="Tempestus Aquilons" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="37ee-b064-660c-8c17">
       <characteristics>
@@ -313,7 +313,6 @@
         <categoryLink name="Operative" hidden="false" id="8232-1916-f460-3e76" targetId="cf83-4496-b58e-ac82" primary="true"/>
         <categoryLink name="Gunner" hidden="false" id="c3f9-391a-c50e-727c" targetId="3033-7558-d28f-53cf" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="05ba-36d3-0eac-00ed" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
-        <categoryLink name="Three of" hidden="false" id="a320-a96a-e97d-4bc0" targetId="eaf6-517a-9908-4906" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Fists" hidden="false" id="032d-197b-6d12-43a1" type="selectionEntry" targetId="39d0-26b8-391f-bba8">
@@ -412,7 +411,6 @@
         <categoryLink name="Imperium" hidden="false" id="d413-619a-3bca-7c47" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
         <categoryLink name="TEMPESTUS AQUILON" hidden="false" id="0415-9572-6ecb-8d31" targetId="a5c7-6920-feea-4a8b" primary="false"/>
         <categoryLink name="Marksman" hidden="false" id="09b4-5ea3-632d-fe8a" targetId="60a8-d4d8-f9db-d4ab" primary="false"/>
-        <categoryLink name="Three of" hidden="false" id="643e-fe37-ed0d-4021" targetId="eaf6-517a-9908-4906" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Aquilon Marksman" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="3d54-8a1e-90ed-89d0">
@@ -536,12 +534,13 @@
                 <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
                 <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
                 <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
-                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Lethal 5+</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Lethal x+" id="1e1a-90c4-de86-7744" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Ceaseless" id="64db-1531-4833-5df5" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2eb-1a51-cecb-0a0b-min"/>
@@ -555,7 +554,6 @@
         <categoryLink name="Operative" hidden="false" id="b7b0-40fd-ae01-e670" targetId="cf83-4496-b58e-ac82" primary="true"/>
         <categoryLink name="TEMPESTUS AQUILON" hidden="false" id="81cb-a7c0-e000-8c40" targetId="a5c7-6920-feea-4a8b" primary="false"/>
         <categoryLink name="Servo-sentry" hidden="false" id="240f-50c0-3e22-d3c1" targetId="f678-d868-d2e5-be46" primary="false"/>
-        <categoryLink name="Three of" hidden="false" id="91e1-4872-5789-3257" targetId="eaf6-517a-9908-4906" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Machine" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="6c2e-765f-51e6-efe8">
@@ -696,11 +694,6 @@
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7dcc-18e8-1b8e-9a46"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Three of" hidden="false" id="d984-7032-8ee5-59d2" targetId="eaf6-517a-9908-4906">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="356e-1413-6854-6dab"/>
-          </constraints>
-        </categoryLink>
         <categoryLink name="Gunner" hidden="false" id="5e08-e548-1bed-ce66" targetId="3033-7558-d28f-53cf">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3f9f-d470-09c5-8b9e"/>
@@ -718,7 +711,6 @@
     <categoryEntry name="Marksman" id="60a8-d4d8-f9db-d4ab" hidden="false"/>
     <categoryEntry name="Precursor" id="3a7e-2ef3-af2e-c9bb" hidden="false"/>
     <categoryEntry name="Servo-sentry" id="f678-d868-d2e5-be46" hidden="false"/>
-    <categoryEntry name="Three of" id="eaf6-517a-9908-4906" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="39d0-26b8-391f-bba8">
@@ -849,5 +841,5 @@ When readying your operatives during the second and third turning points, remov
       <description>Whenever a friendly **TEMPESTUS AQUILON** operative is dropping, ignore the vertical distance.</description>
     </rule>
   </rules>
-  <comment>Update 1.0</comment>
+  <comment>Update 1.2</comment>
 </catalogue>

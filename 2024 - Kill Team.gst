@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Operative" id="cf83-4496-b58e-ac82"/>
     <categoryEntry name="Configuration" id="874b-0390-e5e2-1daa" hidden="false"/>
@@ -169,7 +169,7 @@
       <description>Your opponent can only block with critical successes.</description>
     </rule>
     <rule name="Heavy" id="816e-44a2-6be4-6a9a" hidden="false">
-      <description>An operative cannot use this weapon in an activation in which it moved, and it cannot move in an activation in which it used this weapon. If the rule is Heavy (***x*** only), where ***x*** is a move action, only that move is allowed, e.g. Heavy (**Dash** only). This weapon rule has no effect on preventing the **Guard** action.</description>
+      <description>An operative cannot use this weapon in an activation or counteraction in which it moved, and it cannot move in an activation or counteraction in which it used this weapon. If the rule is Heavy (***x*** only), where ***x*** is a move action, only that move is allowed, e.g. Heavy (**Dash** only). This weapon rule has no effect on preventing the **Guard** action.</description>
       <alias>Heavy (Reposition only)</alias>
       <alias>Heavy (Dash only)</alias>
       <alias>Heavy (**Reposition** only)</alias>
