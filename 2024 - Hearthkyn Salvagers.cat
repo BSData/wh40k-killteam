@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="58da-24b8-ca3c-2bf4" name="Hearthkyn Salvagers" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="58da-24b8-ca3c-2bf4" name="Hearthkyn Salvagers" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Hearthkyn Salvagers Kill Team" id="3b00-8c53-49bb-edf1" hidden="false">
       <categoryLinks>
@@ -506,7 +506,7 @@
               <profiles>
                 <profile name="⌖ Magna rail rifle" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3ea5-5c85-0ba5-1dc5">
                   <characteristics>
-                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
                     <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
                     <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/2</characteristic>
                     <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 3, Heavy (Dash only), Piercing 2</characteristic>
@@ -852,10 +852,17 @@
         <profile name="⌖ Autoch-pattern bolt pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8f48-04fa-beb6-1664">
           <characteristics>
             <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
-            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
             <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
             <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Accurate 1</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="8044-2517-4ef7-33de">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="7576-7e96-4361-a480" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -883,10 +890,17 @@
         <profile name="⌖ Bolt revolver" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f744-4eaf-df0e-1e27">
           <characteristics>
             <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
-            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
-            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
             <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="8044-2517-4ef7-33de">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="7576-7e96-4361-a480" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -898,7 +912,7 @@
         <profile name="⌖ Ion blaster" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="487d-cdb2-6405-a472">
           <characteristics>
             <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
-            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
             <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
             <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing Crits 1</characteristic>
           </characteristics>
@@ -1011,4 +1025,5 @@
       <description>Whenever an enemy operative incapacitates a friendly **HEARTHKYN SALVAGER** operative, that enemy operative gains one of your Grudge tokens for the battle. Whenever a friendly **HEARTHKYN SALVAGER** operative is shooting against, fighting against or retaliating against an enemy operative, for each of your Grudge tokens that enemy operative has, you can retain one of your normal successes as a critical success instead. Note that Grudge tokens aren’t removed when you do this.</description>
     </rule>
   </rules>
+  <comment>Update 1.1</comment>
 </catalogue>
