@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1806-03da-8d4c-a045" name="Death Korps" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1806-03da-8d4c-a045" name="Death Korps" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Death Korps Kill Team" id="b44c-21af-3821-fa69" hidden="false">
       <categoryLinks>
@@ -373,6 +373,31 @@ Whenever a friendly operative receives a **GUARDSMAN ORDER**, apply its rules un
       <categoryLinks>
         <categoryLink name="Reference" hidden="false" id="2064-b9c1-ea58-852d" targetId="b318-a8d7-2d38-99a3" primary="true"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Take Aim!" typeId="d4cc-853b-d897-c851" typeName="Guardsmen Orders" hidden="false" id="b4fd-0531-e2d3-75a3">
+          <characteristics>
+            <characteristic name="Guardsman Order" typeId="8387-82fd-cfcf-331f">Ranged weapons of operatives that received this order (excluding mortar barrage and remote detonator) have the Ceaseless weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fix Bayonets!" typeId="d4cc-853b-d897-c851" typeName="Guardsmen Orders" hidden="false" id="44a8-0bc3-70d7-da14">
+          <characteristics>
+            <characteristic name="Guardsman Order" typeId="8387-82fd-cfcf-331f">Melee weapons of operatives that received this order have the Ceaseless weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dig In!" typeId="d4cc-853b-d897-c851" typeName="Guardsmen Orders" hidden="false" id="14f2-dc42-9bdb-d56c">
+          <characteristics>
+            <characteristic name="Guardsman Order" typeId="8387-82fd-cfcf-331f">Whenever an operative is shooting a friendly operative that’s received this order, if you can retain any cover saves, you can re-roll any of your defence dice results of one result (e.g. results of 2).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Move! Move! Move!" typeId="d4cc-853b-d897-c851" typeName="Guardsmen Orders" hidden="false" id="e68b-6547-3216-ee5b">
+          <characteristics>
+            <characteristic name="Guardsman Order" typeId="8387-82fd-cfcf-331f">Whenever an operative that’s received this order is performing the **Reposition** action, add 1&quot; to its Move stat.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ceaseless" id="71b8-7c68-10d1-626d" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -1293,4 +1318,11 @@ Whenever a friendly operative receives a **GUARDSMAN ORDER**, apply its rules un
     </profile>
   </sharedProfiles>
   <comment>Update 1.2</comment>
+  <profileTypes>
+    <profileType name="Guardsmen Orders" id="d4cc-853b-d897-c851" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Guardsman Order" id="8387-82fd-cfcf-331f"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
 </catalogue>
