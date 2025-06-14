@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="67c0-a22d-585b-3425" name="Battleclade" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Kill Team" id="bf0e-f3bd-7407-1eca" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="a449-705d-b62c-0c81" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="86e1-29a3-6735-e105" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Leader" hidden="false" id="bf76-5357-ac0f-ee1c" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Operative" hidden="false" id="3882-1015-24f0-570a" targetId="cf83-4496-b58e-ac82">
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="7a7a-be1f-50b1-b415" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="40a2-a4d7-2a66-0254" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Servitor Underseer" hidden="false" id="1f6a-10b1-81e5-47e6" targetId="0fc5-b58d-230d-d3df">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a5e-8537-1cbd-894c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a5e-8537-1cbd-894c-max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <categoryEntries>
+    <categoryEntry name="Battleclade" id="545f-000d-0462-b690" hidden="false"/>
+    <categoryEntry name="Servitor Underseer" id="0fc5-b58d-230d-d3df" hidden="false"/>
+    <categoryEntry name="Adeptus Mechanicus" id="a573-4ea0-8513-8686" hidden="false"/>
+    <categoryEntry name="Tech-priest" id="f174-66a3-308a-4823" hidden="false"/>
+    <categoryEntry name="Technoarcheologist" id="76e3-b42b-227f-2fee" hidden="false"/>
+    <categoryEntry name="Auto-proxy" id="56ef-8579-65a2-cec2" hidden="false"/>
+    <categoryEntry name="Servitor" id="9d5f-00ab-0c46-e1ef" hidden="false"/>
+    <categoryEntry name="Breacher" id="47a4-16c3-2966-7005" hidden="false"/>
+    <categoryEntry name="Combat" id="aa9f-9d95-c0af-9800" hidden="false"/>
+    <categoryEntry name="Gun" id="5d15-8ceb-d2d5-ad61" hidden="false"/>
+    <categoryEntry name="Technomedic" id="e8d6-3d7c-83d5-74ab" hidden="false"/>
+  </categoryEntries>
+  <rules>
+    <rule name="Noospheric Network" id="61ca-86f8-fa9c-a067" hidden="false">
+      <description>Whenever a friendly BATTLECLADE SERVITOR operative is activated, you can TRANSFER POWER. If you do, subtract 1 from its APL stat until the end of that activation.
+After that activation, you can NETWORK COUNTERACT with one other friendly BATTLECLADE SERVITOR operative before your opponent activates. Whenever you NETWORK COUNTERACT with a friendly operative, first select its order. It can then perform a 1AP action for free, but cannot move. Once it&apos;s done so, your opponent then activates as normal.
+An operative cannot TRANSFER POWER or NETWORK COUNTERACT if it has an APL stat of less than 2 (e.g. if the stat has been changed to less than 2 by a rule). NETWORK COUNTERACT is a counteraction, but the operative doesn&apos;t need to be expended with an Engage order to do it. That means if they&apos;re ready when they NETWORK COUNTERACT, they can still be activated as normal later in the turning point. An operative that does NETWORK COUNTERACT cannot do so again, or counteract, during the same turning point.</description>
+    </rule>
+  </rules>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Technoarcheologist" hidden="false" id="69ac-1517-32aa-c2de">
+      <profiles>
+        <profile name="Technoarcheologist" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7e4d-b9c1-6e21-4411">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Seeker of Diving Arcana" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="84d7-fcb5-e418-7a17">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">STRATEGIC GAMBIT. You can immediately change this operative&apos;s order and/or it can immediately perform a free **Omniscanner**, **Fall Back**, **Place Marker**, **Pick Up Marker**, **Reposition** or mission action. If it&apos;s the **Fall Back** or **Reposition** action and this operative isn&apos;t carrying a marker, it must end that action either within your drop zone (if this isn&apos;t possible, then as close as possible to it), or with an objective marker or one of your mission markers within its control range.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Imperium" hidden="false" id="c64d-6a11-7210-fc71" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Mechanicus" hidden="false" id="fa2a-8b33-4331-0a46" targetId="a573-4ea0-8513-8686" primary="false"/>
+        <categoryLink name="Tech-priest" hidden="false" id="f032-3539-7665-6968" targetId="f174-66a3-308a-4823" primary="false"/>
+        <categoryLink name="Technoarcheologist" hidden="false" id="de1f-0df0-7eb6-eabb" targetId="76e3-b42b-227f-2fee" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="d9ac-6bfd-491a-c2dd" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Battleclade" hidden="false" id="00e0-ed34-46f2-e153" targetId="545f-000d-0462-b690" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Eradication pistol" hidden="false" id="2af1-7548-15c4-ddd7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24e6-fec8-1d95-366a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24e6-fec8-1d95-366a-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Eradication pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="62d4-fac4-5e66-93e4">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/2</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, 1&quot; Devastating 3, Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="9b6f-4240-d09f-e2fd" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Devastating x" id="9cd3-8823-e5bd-bfd9" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Lethal x+" id="9c29-bba7-5a11-e8a5" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Servo-arc claw" hidden="false" id="50b6-9c66-56dc-83eb">
+          <profiles>
+            <profile name="⚔ Servo-arc claw" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8fed-674f-7314-def5">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Severe, Shock</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e435-9233-b5fd-9315-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e435-9233-b5fd-9315-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Severe" id="280d-1a67-4f4d-727a" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+            <infoLink name="Shock" id="1c88-5120-9caf-703b" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Omniscanner" hidden="false" id="d47b-07fa-0ecd-5229">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02c9-1647-adb6-81ff-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02c9-1647-adb6-81ff-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Omniscanner (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="c2e7-e3cb-4a00-60fc">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to or within 8&quot; of this operative to gain one of your Omniscanner tokens. Whenever a friendly BATTLECLADE operative is shooting against, fighting against or retaliating against an enemy operative that has one of your Omniscanner tokens, that friendly operative&apos;s weapons have the Ceaseless weapon rule.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="1488-8795-6e52-6a3b" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="baac-b3bb-9f5f-b013-min"/>
+        <constraint type="max" value="1" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="baac-b3bb-9f5f-b013-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Auto-proxy Servitor" hidden="false" id="2b4f-43ad-52ff-3f2e">
+      <profiles>
+        <profile name="Auto-proxy Servitor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="010d-75d1-b241-4ca6">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="a6d1-d314-856a-f29e" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="b94b-9c32-8bf2-85ae" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Mechanicus" hidden="false" id="d889-b277-9ea1-57ff" targetId="a573-4ea0-8513-8686" primary="false"/>
+        <categoryLink name="Battleclade" hidden="false" id="631a-c538-c4a8-cf39" targetId="545f-000d-0462-b690" primary="false"/>
+        <categoryLink name="Auto-proxy" hidden="false" id="b5d0-d14c-f057-d93b" targetId="56ef-8579-65a2-cec2" primary="false"/>
+        <categoryLink name="Servitor" hidden="false" id="5dfe-cb78-e291-86f5" targetId="9d5f-00ab-0c46-e1ef" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="001d-dd7c-5a30-a14a"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Taser goad" hidden="false" id="6e8f-7c98-8cc2-66b2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b72a-1246-4543-56d8-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b72a-1246-4543-56d8-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Taser goad" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8ba8-da78-1df1-0fba">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Shock</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="4de9-388d-edcc-670b" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Shock" id="8a6a-c1ec-b87e-0e73" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Achillan Eye" hidden="false" id="d755-640f-b737-0fda">
+          <profiles>
+            <profile name="Achillan Eye" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="7cdf-3504-a957-d878">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever a friendly BATTLECLADE operative is shooting an enemy operative visible to this operative, that friendly operative&apos;s ranged weapons have the Saturate weapon rule. This rule has no effect if this operative is within control range of an enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1afe-09de-5da0-80a7-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1afe-09de-5da0-80a7-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Saturate" id="c65e-1e64-8457-dc18" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gaze of the Omnissiah" hidden="false" id="cc73-bcc1-1e5e-bb1c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="280a-0177-390a-2aba-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="280a-0177-390a-2aba-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Gaze of the Omnissiah (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="1883-ebd5-2ffe-bb4c">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly BATTLECLADE operative is shooting that enemy operative, you can use this effect. If you do:
+- That friendly operative&apos;s ranged weapons have the Seek Light weapon rule.
+- That enemy operative cannot be obscured.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Seek" id="e7e2-c072-329a-c17d" hidden="false" type="rule" targetId="a33d-4e90-5794-6e20"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Breacher Servitor" hidden="false" id="7d78-2982-be48-4fe2">
+      <profiles>
+        <profile name="Breacher Servitor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="0374-e66e-d171-9dd1">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Breach (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="c13e-01be-1500-4b58">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Place one of your Breach markers within this operative&apos;s control range as close as possible to a terrain feature within control range of it. Whenever an operative is within 1&quot; of that marker, it treats parts of that terrain feature that are no more than 1&quot; thick as Accessible terrain.
+◆ This operative cannot perform this action while within control range of an enemy operative, or if a terrain feature isn&apos;t within its control range.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="e2f7-8be9-ec1c-ccaf" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="e3dd-8e15-f889-85ae" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Mechanicus" hidden="false" id="3438-f12d-7449-ad46" targetId="a573-4ea0-8513-8686" primary="false"/>
+        <categoryLink name="Battleclade" hidden="false" id="71f2-9909-e65b-2fce" targetId="545f-000d-0462-b690" primary="false"/>
+        <categoryLink name="Servitor" hidden="false" id="31ea-5428-faae-9670" targetId="9d5f-00ab-0c46-e1ef" primary="false"/>
+        <categoryLink name="Breacher" hidden="false" id="f2b4-c48a-8bb3-c5d8" targetId="47a4-16c3-2966-7005" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="b623-5833-282f-58b8"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Lascutter" hidden="false" id="fb57-303b-2333-c698">
+          <profiles>
+            <profile name="⌖ Lascutter (close range)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="366b-b686-3221-af78">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 2&quot;, Lethal 5+, Piercing 2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Lascutter (short range)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e6c4-e093-bfb5-90ea">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25e8-969f-95ad-9d7b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25e8-969f-95ad-9d7b-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Range x" id="c432-88f8-53e0-1143" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Lethal x+" id="98b9-4c0e-996d-5efe" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Piercing x" id="cfb8-a561-8e24-2c1d" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hydraulic pincer and lascutter" hidden="false" id="7e7a-432e-5fc7-79bc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e173-ba9d-1d30-1c61-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e173-ba9d-1d30-1c61-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Hydraulic pincer and lascutter" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f5d0-339a-f1a9-4651">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="774d-a5a0-1a56-821e" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Combat Servitor" hidden="false" id="1966-7fdb-bed6-4e01">
+      <profiles>
+        <profile name="Combat Servitor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="8f25-a155-7eae-1a43">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="179f-b0b2-8707-0906" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="2483-61d1-8f8d-72b9" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Mechanicus" hidden="false" id="2a4a-d9b5-c643-f25a" targetId="a573-4ea0-8513-8686" primary="false"/>
+        <categoryLink name="Battleclade" hidden="false" id="d6d9-315d-a222-fc38" targetId="545f-000d-0462-b690" primary="false"/>
+        <categoryLink name="Servitor" hidden="false" id="2d7c-7318-f695-8012" targetId="9d5f-00ab-0c46-e1ef" primary="false"/>
+        <categoryLink name="Combat" hidden="false" id="aea9-6111-8ffb-54f9" targetId="aa9f-9d95-c0af-9800" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="8" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="e503-d218-99a9-e7d1"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Servo-claw" hidden="false" id="a379-4b9b-6379-6672">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4499-8aa6-a579-952f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4499-8aa6-a579-952f-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Servo-claw" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="565f-8348-545b-aa86">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapon" id="5285-5ab8-f871-5ddb" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67fb-1b24-0232-9514-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67fb-1b24-0232-9514-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="a3ea-b885-e7d1-26e2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="ff44-0342-1cd3-241f" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f69-5783-29ae-8220"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Meltagun" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1f48-cc54-48b3-50fa">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">6/3</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Devastating 4, Piercing 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Range x" id="034b-70d7-fbd9-78bf" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                <infoLink name="Devastating x" id="c89d-3ec4-2530-66d3" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+                <infoLink name="Piercing x" id="d98c-a9c4-4b97-061b" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Incendine igniter" hidden="false" id="fe90-cb05-d72f-0e2f">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="f5d5-cf99-5953-ee5b" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2db6-8986-9192-2e34"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Incendine igniter" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5207-02b8-e4df-c63e">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Saturate, Torrent 1&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Range x" id="99d8-a14c-1ace-424e" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                <infoLink name="Saturate" id="2050-dd4f-ef00-da3c" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+                <infoLink name="Torrent x" id="2716-6071-61db-bed7" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Phosphor blaster" hidden="false" id="a228-12b8-230f-f462">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94ac-846f-171f-e02d"/>
+              </constraints>
+              <profiles>
+                <profile name="Phosphor blaster" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b9dd-fd8e-3afc-87ef">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Severe</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Severe" id="85c7-6b2e-bb7a-76a1" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gun Servitor" hidden="false" id="2d01-9040-9cad-eb83">
+      <profiles>
+        <profile name="Gun Servitor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="b878-d9a3-6b2b-bb51">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">11</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="3a71-9c11-1dea-a6ad" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="3ba8-96eb-9216-dafa" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Mechanicus" hidden="false" id="aa3d-bc2b-b5e2-ffc0" targetId="a573-4ea0-8513-8686" primary="false"/>
+        <categoryLink name="Battleclade" hidden="false" id="f5a4-5578-c773-74b3" targetId="545f-000d-0462-b690" primary="false"/>
+        <categoryLink name="Gun" hidden="false" id="3ccf-3231-0ccb-eec2" targetId="5d15-8ceb-d2d5-ad61" primary="false"/>
+        <categoryLink name="Servitor" hidden="false" id="2d31-f917-9251-12ff" targetId="9d5f-00ab-0c46-e1ef" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="1b6c-be4a-99ad-ae08"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Augmetic claw" hidden="false" id="6161-c60a-25c0-82bb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeb0-e39a-0780-d4b2-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aeb0-e39a-0780-d4b2-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Augmetic claw" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4503-3c62-424b-0ce5">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Brutal" id="06ec-1f25-eecc-a4c9" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapon" id="281e-ced7-4315-3b6c" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d658-2acb-9407-1069-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d658-2acb-9407-1069-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy arc rifle" hidden="false" id="5d7e-5fbb-1873-fb24">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9284-2ffe-a0d6-e9e5"/>
+                <constraint type="max" value="1" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="1b57-b0d6-7c13-e266" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Heavy arc rifle" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c13c-e3ec-b4c2-a124">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Piercing 1, Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Heavy" id="9911-3259-6ab6-397e" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+                <infoLink name="Piercing x" id="583a-c907-e4e0-e92c" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                <infoLink name="Stun" id="7832-468e-044a-122f" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="ea53-9781-6e3c-66ca">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28f8-b97c-15ca-1080"/>
+                <constraint type="max" value="1" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="a005-d638-9a93-c962" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Heavy bolter (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f9ea-0e36-8c57-eb73">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Piercing Crits 1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Heavy bolter (sweeping)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="735d-d2a7-00da-cf76">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Dash only), Piercing Crits 1, Torrent 1&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Heavy" id="deaf-89be-3e05-ecbc" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+                <infoLink name="Piercing x" id="8e88-b8fe-0897-5894" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                <infoLink name="Torrent x" id="23a0-7b42-cc36-08be" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Technomedic Servitor" hidden="false" id="dce8-2df3-0d12-4aef">
+      <profiles>
+        <profile name="Technomedic Servitor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="11be-5a10-fc45-e49d">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Expedient Repair (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="47ac-0a00-3f8f-927e">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly BATTLECLADE operative within this operative&apos;s control range to regain D3+3 lost wounds. It cannot be an operative that the Mechanosuture Array rule was used on during this turning point.
+
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mechanosuture Array" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="bc19-717c-150f-fc57">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, when another friendly BATTLECLADE operative would be removed from the killzone as incapacitated while visible to and within 3&quot; of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn&apos;t incapacitated and has 1 wound remaining. That friendly operative can then immediately perform a free **Dash** action, but must end that move within this operative&apos;s control range. If this rule was used during that friendly operative&apos;s activation, that activation ends. You cannot use this rule if this operative is incapacitated.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="1da0-1192-3ace-c664" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="9f66-477d-9354-5790" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Mechanicus" hidden="false" id="8403-054c-6ec7-66d2" targetId="a573-4ea0-8513-8686" primary="false"/>
+        <categoryLink name="Battleclade" hidden="false" id="2757-bb84-9c37-44b7" targetId="545f-000d-0462-b690" primary="false"/>
+        <categoryLink name="Medic" hidden="false" id="77d0-1ba2-fc5a-233c" targetId="8200-47a2-61fb-5137" primary="false"/>
+        <categoryLink name="Technomedic" hidden="false" id="6812-972b-e5d1-172f" targetId="e8d6-3d7c-83d5-74ab" primary="false"/>
+        <categoryLink name="Servitor" hidden="false" id="a659-8625-e6ec-58d6" targetId="9d5f-00ab-0c46-e1ef" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="22da-4122-7240-3642"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Servo-chirurgic claw" hidden="false" id="f40d-5810-4f1c-76ff">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd66-0d58-6dd0-e194-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd66-0d58-6dd0-e194-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Servo-chirurgic claw" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0d0e-3735-e228-5390">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rending" id="c3d5-7dbb-20fa-614a" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Servitor Underseer" hidden="false" id="b1d5-78f6-1086-73f9">
+      <profiles>
+        <profile name="Servitor Underseer" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="668b-d717-3500-d39a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Noospheric Spur (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="0272-b170-04bc-d5fa">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ SUPPORT. Select one friendly BATTLECLADE SERVITOR operative within 6&quot; of either this operative or a friendly BATTLECLADE AUTO-PROXY operative to immediately perform a free **Dash** action. You cannot select each friendly SERVITOR operative for this rule more than once per turning point.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Network Override (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="a71c-76a8-054c-b456">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ SUPPORT. Select one friendly BATTLECLADE SERVITOR operative within 6&quot; of either this operative or a friendly BATTLECLADE AUTO-PROXY operative to immediately NETWORK COUNTERACT (you don&apos;t have to TRANSFER POWER to do so). Continue this operative&apos;s activation after doing so.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="c05b-f9b3-b7c9-7557" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="067d-1014-874b-b698" targetId="45a7-2d2f-ecfb-1d13" primary="false"/>
+        <categoryLink name="Adeptus Mechanicus" hidden="false" id="0404-0f44-1e1d-626f" targetId="a573-4ea0-8513-8686" primary="false"/>
+        <categoryLink name="Tech-priest" hidden="false" id="51c2-fea6-1358-b6dc" targetId="f174-66a3-308a-4823" primary="false"/>
+        <categoryLink name="Battleclade" hidden="false" id="21ef-e91f-bd51-8bbe" targetId="545f-000d-0462-b690" primary="false"/>
+        <categoryLink name="Servitor Underseer" hidden="false" id="2f2c-6692-8833-332b" targetId="0fc5-b58d-230d-d3df" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="8e2b-5547-7971-aa55-min"/>
+        <constraint type="max" value="1" field="selections" scope="bf0e-f3bd-7407-1eca" shared="true" id="8e2b-5547-7971-aa55-max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Master-crafted radium pistol" hidden="false" id="2685-97b7-860f-9169">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c4b-9d46-2be6-8e83-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c4b-9d46-2be6-8e83-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Master-crafted radium pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c4d5-99f6-27d4-9332">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Balanced, Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="6163-8dcc-60f7-6b31" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Balanced" id="924a-6221-fbef-5766" hidden="false" type="rule" targetId="28f7-0d96-d1fc-f75b"/>
+            <infoLink name="Rending" id="6f77-afa4-bad6-be9b" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dataspikes" hidden="false" id="dc56-2f3c-bc05-3cbf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c99a-f965-0fc9-7109-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c99a-f965-0fc9-7109-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Dataspikes" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="98e8-a91e-61ff-b4e3">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="a7fd-36c6-c26c-18a9" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <entryLinks>
+        <entryLink import="true" name="Faction Equipment" hidden="false" id="77bb-e3f4-4535-b871" type="selectionEntryGroup" targetId="b4e1-39af-9c43-59e3"/>
+      </entryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Faction Equipment" id="b4e1-39af-9c43-59e3" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Covert Guises" hidden="false" id="3dbd-4fec-f265-31df">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59a1-84a4-7bd1-c80a"/>
+          </constraints>
+          <profiles>
+            <profile name="Covert Guises" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="f239-64bc-e166-ea7c">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">After revealing this equipment option, roll one D3. As a STRATEGIC GAMBIT in the first turning point, a number of friendly BATTLECLADE operatives equal to the result that are wholly within your drop zone can immediately perform a free **Reposition** action, but must end that move wholly within 3&quot; of your drop zone. Your TECHNOARCHEOLOGIST operative cannot perform more than one **Reposition** action in the strategy phase of the first turning point (i.e. as a result of the Seeker of Divine Arcana rule as well).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Electromantic Capacitors" hidden="false" id="3d2e-5972-96df-5db2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2679-f887-08c1-5cc9"/>
+          </constraints>
+          <profiles>
+            <profile name="Electromantic Capacitors" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="3ebb-ac6e-15b1-8e17">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Friendly BATTLECLADE operatives&apos; melee weapons have the Shock weapon rule. Whenever a ready friendly BATTLECLADE operative is retaliating, its melee weapons also have the Severe weapon rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Severe" id="a0ce-b879-6189-37a2" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+            <infoLink name="Shock" id="90e7-2f6e-7342-5a00" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Concealed Apparatus" hidden="false" id="3306-5956-7908-c212">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b0c-60eb-481c-4517"/>
+          </constraints>
+          <profiles>
+            <profile name="Concealed Apparatus" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="fdbb-793d-11d5-ac95">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">STRATEGIC GAMBIT in the second turning point. You can swap the locations of any number of friendly BATTLECLADE SERVITOR operatives with each other (excluding GUN SERVITOR), and you can swap the locations of friendly BATTLECLADE GUN SERVITOR operatives with each other (remove them from the killzone and set them back up again). You cannot swap any operatives that have done any of the following during the battle:
+- Used any weapons on their datacard.
+- Performed any actions on their datacard.
+- Used the Mechanosuture Array rule (see TECHNOMEDIC).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Neurocyclic Reserve Cells" hidden="false" id="894d-c93d-cafc-21b9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27f4-2ed6-749c-903d"/>
+          </constraints>
+          <profiles>
+            <profile name="Neurocyclic Reserve Cells" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="81ef-5d18-fb18-8e99">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">After revealing this equipment option, roll one D3. A number of times during the battle equal to the result, whenever you TRANSFER POWER, you can use this rule. If you do, don&apos;t subtract 1 from the operative&apos;s APL stat, but it cannot perform **Fight** or **Shoot** actions during that activation (this takes precedence over the normal Noospheric Network rules).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
