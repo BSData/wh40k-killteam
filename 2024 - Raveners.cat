@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="4b1c-f3e1-5479-b7e2" name="Raveners" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Raveners Kill Team" id="b9c3-f06a-4cfe-483c" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="e466-11f1-d2d1-04a7" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="045c-c572-afa9-000c" targetId="b318-a8d7-2d38-99a3"/>
+        <categoryLink name="Leader" hidden="false" id="263a-3295-90da-cb3c" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Operative" hidden="false" id="f643-2958-f13d-6ab8" targetId="cf83-4496-b58e-ac82">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="force" shared="true" id="ab3e-723b-eae7-cfd0" includeChildSelections="true"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="0a4e-bd5a-7850-8aff" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <categoryEntries>
+    <categoryEntry name="Ravener" id="f354-7df1-7e09-a4a9" hidden="false"/>
+    <categoryEntry name="Great Devourer" id="15a2-3838-5603-1d77" hidden="false"/>
+    <categoryEntry name="Prime" id="b3c3-c62a-965a-5f8b" hidden="false"/>
+    <categoryEntry name="Felltalon" id="ac10-3288-4208-a9be" hidden="false"/>
+    <categoryEntry name="Venomspitter" id="2c26-cf8e-3133-596e" hidden="false"/>
+    <categoryEntry name="Wrecker" id="c19c-9603-a8b0-762b" hidden="false"/>
+    <categoryEntry name="Tremorscythe" id="bda4-f928-ff03-72d9" hidden="false"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Ravener Prime" hidden="false" id="4b95-32b3-1b4a-708d">
+      <categoryLinks>
+        <categoryLink name="Ravener" hidden="false" id="7c07-d310-8cea-a5b6" targetId="f354-7df1-7e09-a4a9" primary="false"/>
+        <categoryLink name="Tyranid" hidden="false" id="590f-0ba9-d13d-0d70" targetId="879f-4903-ae72-473e" primary="false"/>
+        <categoryLink name="Great Devourer" hidden="false" id="db92-f179-d449-ebc0" targetId="15a2-3838-5603-1d77" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="f9eb-5c82-1f5d-f440" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Prime" hidden="false" id="ef23-c072-c0bd-2f09" targetId="b3c3-c62a-965a-5f8b" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Ravener Prime" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="e1b4-0f7b-ab1f-ad2c">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">21</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Neuropredatory Crest" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="a7ba-9af7-d2d0-1156">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 3&quot; of this operative. Note this isn&apos;t a change to the APL stat, so any changes are cumulative with this. Whenever an enemy operative is within 3&quot; of this operative:
+- Your opponent must spend 1 additional AP for that enemy operative to perform the **Pick Up Marker** and mission actions.
+- Your opponent cannot re-roll their attack or defence dice for that operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Synaptic Link" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="1bfe-ec31-4197-0ced">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">STRATEGIC GAMBIT if this operative isn&apos;t incapacitated. Roll one D6 and compare the result to the number of the current turning point; if the result is:
+- Higher: you gain 1CP.
+- Equal: nothing happens.
+- Less: inflict damage on this operative equal to the result.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Tail blade" hidden="false" id="4aa3-bee5-a6c9-51ff">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b014-318e-c3c9-ddbd-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b014-318e-c3c9-ddbd-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Tail blade" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1e4f-f990-8038-8951">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 3&quot;, Rending, Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rending" id="ce62-9ea2-cb3a-08e0" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+            <infoLink name="Silent" id="4fb0-b331-f0d3-09f4" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+            <infoLink name="Range x" id="7b25-e6ae-043a-23c1" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scything talons and rending claws" hidden="false" id="3ab3-9d94-b864-9d70">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3420-f419-2ba7-8de9-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3420-f419-2ba7-8de9-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Scything talons and rending claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0a7b-5eed-da2b-fad9">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rending" id="b1b8-7ea5-ffae-6153" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Burrow (1AP)" id="0d39-dcde-a15c-0190" hidden="false" type="profile" targetId="2bb5-cd30-1845-7e06"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Felltalon" hidden="false" id="6a74-d96f-3b58-35c9">
+      <categoryLinks>
+        <categoryLink name="Ravener" hidden="false" id="204b-d7ca-aa5e-bca8" targetId="f354-7df1-7e09-a4a9" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="6b5a-be62-610d-e25e" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Tyranid" hidden="false" id="8c28-a458-9651-89af" targetId="879f-4903-ae72-473e" primary="false"/>
+        <categoryLink name="Great Devourer" hidden="false" id="050c-acca-441c-70bb" targetId="15a2-3838-5603-1d77" primary="false"/>
+        <categoryLink name="Felltalon" hidden="false" id="058d-b3a9-83c4-67b6" targetId="ac10-3288-4208-a9be" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Felltalon" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="d7b0-4c4e-eb39-5098">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Toxic lunge (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="5575-cfdf-d654-5516">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative within 2&quot; of this operative. Alternatively, if this operative is underground, select one enemy operative on your TUNNEL. Inflict D3+2 damage on that enemy operative and it gains one of your Poison tokens (if it doesn&apos;t already have one).
+◆ This operative can perform this action while underground (this takes precedence over the normal Burrow rules).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="b9c3-f06a-4cfe-483c" shared="true" id="af55-db62-9893-7002"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Toxic glands" hidden="false" id="c9f0-24e6-ccc9-d8bf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea15-0c4a-af62-2d22-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea15-0c4a-af62-2d22-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Toxic glands" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4072-b325-caea-b858">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Silent, Poison*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="*Poison" id="f5ef-c986-267b-fe87" hidden="false" type="rule" targetId="b5e8-0edb-d20f-f303"/>
+            <infoLink name="Range x" id="bd93-ff5d-b99e-5a95" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Silent" id="1ce2-9755-b6d1-8e0b" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Toxic scythes" hidden="false" id="0d5b-9018-67de-6e66">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef70-6cc2-87de-38c9-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef70-6cc2-87de-38c9-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Toxic scythes" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5ceb-0c2b-b02a-da21">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Shock, Poison*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="*Poison" id="6f20-4278-00c2-4c97" hidden="false" type="rule" targetId="b5e8-0edb-d20f-f303"/>
+            <infoLink name="Lethal x+" id="1456-9821-3a5f-acbf" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Shock" id="c4e0-66fb-f905-916f" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Pincer tail" hidden="false" id="adda-ed76-b629-3fac" type="selectionEntry" targetId="924e-41ff-7450-b626">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5a6-0a1b-d800-c6c4-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5a6-0a1b-d800-c6c4-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Burrow (1AP)" id="6175-6cf8-e748-b674" hidden="false" type="profile" targetId="2bb5-cd30-1845-7e06"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Venomspitter" hidden="false" id="68d7-4f1e-840a-7bb5">
+      <categoryLinks>
+        <categoryLink name="Ravener" hidden="false" id="e334-b170-6b7c-927e" targetId="f354-7df1-7e09-a4a9" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="b61d-5a53-8977-f658" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Tyranid" hidden="false" id="edb8-e88e-74a3-4105" targetId="879f-4903-ae72-473e" primary="false"/>
+        <categoryLink name="Great Devourer" hidden="false" id="e727-ffc8-59c3-3ac4" targetId="15a2-3838-5603-1d77" primary="false"/>
+        <categoryLink name="Venomspitter" hidden="false" id="9bcd-58be-53ed-96b8" targetId="2c26-cf8e-3133-596e" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="b9c3-f06a-4cfe-483c" shared="true" id="9b92-a59e-11e3-07ba"/>
+      </constraints>
+      <profiles>
+        <profile name="Venomspitter" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2e39-e16e-a27c-b059">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">20</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Pincer tail" hidden="false" id="174e-e626-f091-0ec6" type="selectionEntry" targetId="924e-41ff-7450-b626">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c61e-f407-8f96-1bc5-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c61e-f407-8f96-1bc5-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Scything talons" hidden="false" id="2b1a-2c3a-6bf7-1e54" type="selectionEntry" targetId="e76c-582f-e392-b5be">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa57-2494-b409-734c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa57-2494-b409-734c-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Venom bolt" hidden="false" id="0b8b-b557-9037-eefb">
+          <profiles>
+            <profile name="⌖ Venom bolt (blast)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4160-fd7f-df54-1394">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Blast 2&quot;, Poison*</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Venom bolt (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f929-4989-da66-5868">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Piercing1, Poison*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73b6-36ab-f443-ecc2-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73b6-36ab-f443-ecc2-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Range x" id="6429-78c4-cc87-265d" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Blast x" id="4637-1802-f284-0824" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="*Poison" id="e9af-7895-427e-9de4" hidden="false" type="rule" targetId="b5e8-0edb-d20f-f303"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Distend Dorsal Sac" hidden="false" id="bba9-2348-9c05-9bbe">
+          <profiles>
+            <profile name="Distend Dorsal Sac (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="111e-df78-bfae-a26f">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until this operative has shot with its venom bolt or until it performs the **Burrow** action (whichever comes first), all profiles of its venom bolt have the Lethal 5+ weapon rule, have 1 added to their Atk stat, and the Range 8&quot; weapon rule removed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86bb-b439-f5c7-a66c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86bb-b439-f5c7-a66c-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="c47a-fe05-345e-284e" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Burrow (1AP)" id="4391-29b2-d863-2975" hidden="false" type="profile" targetId="2bb5-cd30-1845-7e06"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Warrior" hidden="false" id="ca8a-7dd4-14bb-a072">
+      <categoryLinks>
+        <categoryLink name="Ravener" hidden="false" id="a11e-2ae5-1cad-9ef5" targetId="f354-7df1-7e09-a4a9" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="bb8f-262d-e5a8-514f" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Tyranid" hidden="false" id="8b09-1688-0122-47eb" targetId="879f-4903-ae72-473e" primary="false"/>
+        <categoryLink name="Great Devourer" hidden="false" id="d69a-52d5-f58f-5a99" targetId="15a2-3838-5603-1d77" primary="false"/>
+        <categoryLink name="Warrior" hidden="false" id="21d1-5a9a-8dc2-1dc6" targetId="2b69-f2aa-bd5c-70b2" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="4" field="selections" scope="b9c3-f06a-4cfe-483c" shared="true" id="cd7c-f6f2-bb0a-0059"/>
+      </constraints>
+      <profiles>
+        <profile name="Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1d44-8061-c166-5d42">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">20</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Pincer tail" hidden="false" id="0a26-b1da-6575-893d" type="selectionEntry" targetId="924e-41ff-7450-b626">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8bf5-5865-79ed-5c30-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bf5-5865-79ed-5c30-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Scything talons" hidden="false" id="0d4f-e878-83f5-e5a8" type="selectionEntry" targetId="e76c-582f-e392-b5be">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b085-d514-28a8-2d2f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b085-d514-28a8-2d2f-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Burrow (1AP)" id="e760-26a8-ebf3-b232" hidden="false" type="profile" targetId="2bb5-cd30-1845-7e06"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Wrecker" hidden="false" id="8ec1-33a5-62c4-fb56">
+      <categoryLinks>
+        <categoryLink name="Ravener" hidden="false" id="07b2-93c0-7296-4270" targetId="f354-7df1-7e09-a4a9" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="78e8-d831-c463-f64b" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Tyranid" hidden="false" id="c17e-dcea-0c24-76a7" targetId="879f-4903-ae72-473e" primary="false"/>
+        <categoryLink name="Great Devourer" hidden="false" id="4563-9077-fe66-c652" targetId="15a2-3838-5603-1d77" primary="false"/>
+        <categoryLink name="Wrecker" hidden="false" id="d007-c05c-0d09-756f" targetId="c19c-9603-a8b0-762b" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="b9c3-f06a-4cfe-483c" shared="true" id="5fb0-5d66-2504-ef47-min"/>
+        <constraint type="max" value="1" field="selections" scope="b9c3-f06a-4cfe-483c" shared="true" id="5fb0-5d66-2504-ef47-max"/>
+      </constraints>
+      <profiles>
+        <profile name="Wrecker" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="5444-3823-8f75-5fb4">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Reinforced Carapace" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="5e5a-9f5e-0701-719e">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Normal and Critical Dmg of 4 or more inflicts 1 less damage on this operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bone mace" hidden="false" id="bc4f-4c87-e279-59c4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="061e-fa12-db90-27cb-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="061e-fa12-db90-27cb-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Bone mace" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="aa77-5ec3-114e-3e90">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 3&quot;, Piercing 1, Silent</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="ee03-2750-f1ab-bf6a" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Piercing x" id="1aa6-bc07-e8fb-52af" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+            <infoLink name="Silent" id="f0a3-abfb-a5c4-411a" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scything talons and crushing claws" hidden="false" id="716d-2031-96a7-e844">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6584-83ad-0008-f586-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6584-83ad-0008-f586-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Scything talons and crushing claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d49e-dc8a-ed04-9bb8">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Crush*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="*Crush" id="fb28-518f-1988-3751" hidden="false">
+              <description>Whenever you strike, you and your opponent roll-off, adding 1 to your result if the operative this weapon is being used against has a Wounds stat of 9 or less. If you win, inflict additional damage on that operative equal to the difference between the dice results (to a maximum of 3 additional damage).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Burrow (1AP)" id="1d9d-5f78-46ed-a927" hidden="false" type="profile" targetId="2bb5-cd30-1845-7e06"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tremorscythe" hidden="false" id="f7a9-612b-8b0f-7daa">
+      <categoryLinks>
+        <categoryLink name="Ravener" hidden="false" id="4438-4943-3a1c-cb79" targetId="f354-7df1-7e09-a4a9" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="63ef-a7e7-4166-baba" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Tyranid" hidden="false" id="35fa-5243-56ca-bdaf" targetId="879f-4903-ae72-473e" primary="false"/>
+        <categoryLink name="Great Devourer" hidden="false" id="79b7-a7ac-99f7-fbf8" targetId="15a2-3838-5603-1d77" primary="false"/>
+        <categoryLink name="Tremorscythe" hidden="false" id="3fd0-6762-5ab2-e3ab" targetId="bda4-f928-ff03-72d9" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6549-a76b-8f76-f1ac-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6549-a76b-8f76-f1ac-max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Pincer tail" hidden="false" id="418c-c4f8-eda7-54f5" type="selectionEntry" targetId="924e-41ff-7450-b626">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c079-1bb6-77bc-4b78-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c079-1bb6-77bc-4b78-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Scything talons" hidden="false" id="9b01-8048-0151-8525" type="selectionEntry" targetId="e76c-582f-e392-b5be">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c460-e929-7541-caa4-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c460-e929-7541-caa4-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Tremorscythe" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="cc00-117c-e708-f4e0">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Subterranean Ambush" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="fc48-d1d0-25c7-fc24">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, after an enemy operative performs an action in which it moves more than 2&quot; and ends within 2&quot; of your TUNNEL, if this operative is underground and is either ready or hasn&apos;t counteracted during this turning point, you can interrupt that enemy operative&apos;s activation/counteraction to use this rule.
+If you do, activate or counteract with this operative (as appropriate), but during its activation/counteraction it must fight against or shoot against that enemy operative, and cannot do so against any other enemy operatives until it does (if this isn&apos;t possible, this operative&apos;s activation/counteraction is cancelled and this rule hasn&apos;t been used). After completing this operative&apos;s action/counteraction, continue that enemy operative&apos;s activation/counteraction (if possible).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hypersensory Hunter" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="1e82-e344-1035-00b0">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform the **Charge** action while it has a Conceal order if it performed the **Burrow** action during the same activation/counteraction.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Burrow (1AP)" id="037c-c192-99f1-4745" hidden="false" type="profile" targetId="2bb5-cd30-1845-7e06"/>
+      </infoLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule name="Burrow" id="73f8-e9f6-6d98-20cc" hidden="false">
+      <description>When setting up a RAVENER kill team before the battle, your first two operatives must be set up as normal. Each other friendly RAVENER operative thereafter can be set up underground: place it to one side instead of in the killzone.
+
+In the Firefight phase, friendly RAVENER operatives set up underground are activated and can counteract as normal. Whenever a friendly RAVENER operative is underground, it cannot perform any actions other than **Burrow**. At the end of the battle, each friendly RAVENER operative that&apos;s underground is incapacitated.
+
+Friendly RAVENER operatives can perform the **Burrow** unique action.</description>
+    </rule>
+    <rule name="Tunnel" id="db96-0a56-960d-c14b" hidden="false">
+      <description>At the end of the Set Up Operatives step, place your Tunnel marker number &apos;0&apos; on the killzone floor, wholly within your drop zone and touching your killzone edge. As a STRATEGIC GAMBIT in the first four turning points, you can place your next numbered Tunnel marker on the killzone floor wholly within 5&quot; of your preceding Tunnel marker (in Killzone: Gallowdark, this distance can be measured through walls). This means that, as the battle progresses, you can have a series of sequentially numbered Tunnel markers (0, 1, 2, 3 and 4). Once you have placed five tunnel markers, don&apos;t place any more (i.e. if your battle lasts more than four turning points).
+Your Tunnel markers and the area between your sequentially numbered markers (i.e. between 0 and 1, 1 and 2, etc.), create your TUNNEL.
+In a killzone that uses the hazardous area rules (e.g. Killzone Bheta Decima), for the purposes of the Restricted Movement rule, parts of a Tunnel marker that are touching a hazardous area are treated as a hazardous area.</description>
+    </rule>
+    <rule name="Predatory Instincts" id="8965-18c4-2ba3-1cc0" hidden="false">
+      <description>During each friendly RAVENER operative&apos;s activation, it can perform two **Fight** actions.
+Each friendly RAVENER operative can counteract regardless of its order. Whenever it does:
+- You can change its order first, or change its order instead of performing an action (for the latter, still treat it as having counteracted this turning point).
+- During that counteraction, if it doesn&apos;t perform a mission action it can perform a free **Burrow** action.</description>
+    </rule>
+  </rules>
+  <sharedProfiles>
+    <profile name="Burrow (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="2bb5-cd30-1845-7e06">
+      <characteristics>
+        <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ If this operative is underground, set it up on your TUNNEL in a location it can be placed (it&apos;s no longer underground and it can be set up within control range of enemy operatives). Until the end of the activation/counteraction, subtract 2&quot; from its Move stat.
+▶ Alternatively, instead of resolving the above effect, if this operative is in the killzone and on your TUNNEL, remove it from the killzone; it&apos;s now underground.
+◆ An operative cannot perform this action while carrying a marker.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="fd9b-85d6-cb3b-6543">
+      <characteristics>
+        <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">⌖</characteristic>
+        <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">⚔</characteristic>
+        <characteristic name="Save" typeId="3241-5548-12d6-f103">▶</characteristic>
+        <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">◆</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedRules>
+    <rule name="*Poison" id="b5e8-0edb-d20f-f303" hidden="false">
+      <description>In the Resolve Attack Dice step, if you inflict damage with any critical successes, the operative this weapon is being used against gains one of your Poison tokens (if it doesn&apos;t already have one). Whenever an operative that has one of your poison tokens is activated, inflict D3 damage on it.</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Scything talons" hidden="false" id="e76c-582f-e392-b5be">
+      <profiles>
+        <profile name="⚔ Scything talons" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="173d-1dc4-c828-5e45">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pincer tail" hidden="false" id="924e-41ff-7450-b626">
+      <profiles>
+        <profile name="⌖ Pincer tail" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="07b9-9982-0169-a23f">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 3&quot;, Silent</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="f39d-94c3-4d46-470d" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+        <infoLink name="Silent" id="6527-b0a4-82b2-5742" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Faction Equipment" id="e6a3-1223-d266-4715" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Chromatospore Camouflage" hidden="false" id="8498-92fc-f5e9-2cd6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5fa-84f6-1bfe-5889"/>
+          </constraints>
+          <profiles>
+            <profile name="Chromatospore Camouflage" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="cbeb-9648-0331-9c8a">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever an operative is shooting a friendly RAVENER operative, if you can retain any cover saves, you can retain one additional cover save. This isn&apos;t cumulative with improved cover saves from Vantage terrain.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Acid Blood" hidden="false" id="80a2-2f33-c6c9-8525">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3975-b4bd-008b-42b9"/>
+          </constraints>
+          <profiles>
+            <profile name="Acid Blood" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="0e73-e74d-2f67-9f4f">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever a friendly RAVENER operative is fighting or retaliating, whenever an attack dice inflicts damage on it, roll one D6; on a 5+, inflict 1 damage on the enemy operative in that sequence.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Metamorphic Flesh" hidden="false" id="c2c0-eb52-8d46-c471">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cab-984f-0e4d-e843"/>
+          </constraints>
+          <profiles>
+            <profile name="Metamorphic Flesh" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="a41a-d65a-b27d-c9cd">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever a friendly RAVENER operative is activated, it regains D3 lost wounds.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heightened Senses" hidden="false" id="a32b-d715-fdc7-ead9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a24c-d6b3-205d-418e"/>
+          </constraints>
+          <profiles>
+            <profile name="Heightened Senses" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="22a1-ccac-53a2-9978">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per battle, when rolling off to decide initiative, if a friendly RAVENER operative is underground and an enemy operative is within 5&quot; of your TUNNEL, you can re-roll your dice.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="9271-7b35-932a-95df" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <entryLinks>
+        <entryLink import="true" name="Faction Equipment" hidden="false" id="a670-8eaf-5c56-fdb8" type="selectionEntryGroup" targetId="e6a3-1223-d266-4715"/>
+      </entryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>
