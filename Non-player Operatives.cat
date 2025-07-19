@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="ffd6-f3ca-defa-f836" name="Non-player Operatives" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Trooper (Brawler)" hidden="false" id="f599-6934-5d14-a8fa">
+      <categoryLinks>
+        <categoryLink targetId="4304-17c6-5bb5-cf56" id="495a-338f-a18e-eafd" primary="false" name="NPO Brawler"/>
+        <categoryLink targetId="cf83-4496-b58e-ac82" id="7f73-38e7-64b0-b59d" primary="true" name="Operative"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Trooper (Brawler)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="afd6-080f-8c99-602a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blades" hidden="false" id="293a-0b14-0c05-155f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe2b-4479-0beb-c6ba" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10d8-31e4-ffa7-ea4c" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Blades" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8392-0462-62fb-addd">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="e210-8f92-7e72-c62e" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Trooper (Marksman)" hidden="false" id="47d6-bcfe-aafa-4ca4">
+      <categoryLinks>
+        <categoryLink targetId="42ac-1bda-6ac1-8220" id="cf2a-a76c-5d71-d621" primary="false" name="NPO Marksman"/>
+        <categoryLink targetId="cf83-4496-b58e-ac82" id="dde7-8002-7581-97cd" primary="true" name="Operative"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Firearm" hidden="false" id="7895-b023-c225-166a" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Firearm" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="9ca2-b544-ddd8-8044">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7508-8716-e88d-fdda" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24aa-feaf-a439-9cd1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special weapon" hidden="false" id="1ef3-a4f6-fa59-a01a" sortIndex="2">
+          <profiles>
+            <profile name="⌖ Special weapon" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b361-32fc-b0ae-5aa2">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Piercing x" id="f7ea-3594-556f-6e02" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+          <rules>
+            <rule name="Special weapon" id="ce79-a13e-6adf-02db" hidden="false">
+              <description>*Only 1 in 3 Trooper (Marksman) can have this weapon.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Knife" hidden="false" id="027e-0c8d-6998-9b0f" sortIndex="3">
+          <profiles>
+            <profile name="⚔ Knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f5ee-071a-e173-f7a3">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b10-fea1-3ff2-f957" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3576-b914-6a73-3a22" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Trooper (Marksman)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="d29d-fe06-fc08-8582">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tough (Brawler)" hidden="false" id="e0c5-a525-6da1-4099">
+      <categoryLinks>
+        <categoryLink targetId="4304-17c6-5bb5-cf56" id="87c1-76ef-839e-22c3" primary="false" name="NPO Brawler"/>
+        <categoryLink targetId="cf83-4496-b58e-ac82" id="d018-924d-afd7-0b0c" primary="true" name="Operative"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blades" hidden="false" id="1246-7a79-95d7-a5a9">
+          <profiles>
+            <profile name="⚔ Blades" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="92d1-7af2-2a91-52d9">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="cd50-bf45-049c-f411" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee6e-aa25-7884-4014" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d411-47b7-7c8b-7885" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Tough (Brawler)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="36a4-a096-6b51-d1a9">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Warrior (Marksman)" hidden="false" id="16a0-e2ba-d7f4-cbd9">
+      <profiles>
+        <profile name="Warrior (Marksman)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="ee13-2b46-158e-738c">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Firearm" hidden="false" id="3f21-6f91-baf1-a59f" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Firearm" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="dfec-b5d9-f9f7-61d8">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f558-cdf9-3e13-ed2a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfaa-9936-a6df-eeef" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Knife" hidden="false" id="f55d-8cfb-e594-f973" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="095d-4c81-076b-9b49" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f98-746b-1da9-c9c5" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="98c4-8a5a-2e18-9caf">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="cf83-4496-b58e-ac82" id="8bb0-b0fa-77e3-7bb7" primary="true" name="Operative"/>
+        <categoryLink targetId="42ac-1bda-6ac1-8220" id="e901-8eb9-cbec-b1fe" primary="false" name="NPO Marksman"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Heavy (Brawler)" hidden="false" id="4673-fc17-efd9-fb10">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blades" hidden="false" id="7eb3-102d-0a0c-596d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29f5-d6fe-b4ca-a3c0" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12bc-3cad-b0eb-b8b3" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Blades" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b365-08ea-36e6-a4fe">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="24d7-d10a-89ee-252b" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Heavy (Brawler)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="70d1-4b76-efb6-67b1">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Fight twice" id="1dc2-e372-56a3-6758" hidden="false">
+          <description>This operative can perform two **Fight** actions during its activation.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="cf83-4496-b58e-ac82" id="806a-2126-0fde-dc34" primary="true" name="Operative"/>
+        <categoryLink targetId="4304-17c6-5bb5-cf56" id="43d0-a57b-18df-0749" primary="false" name="NPO Brawler"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Heavy (Marksman)" hidden="false" id="f03c-e1e2-5b86-6d6b">
+      <categoryLinks>
+        <categoryLink targetId="42ac-1bda-6ac1-8220" id="f2cf-df30-8a70-9933" primary="false" name="NPO Marksman"/>
+        <categoryLink targetId="cf83-4496-b58e-ac82" id="ca04-7329-5f4d-ac47" primary="true" name="Operative"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Heavy (Marksman)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7407-826f-3aed-3642">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Firearm" hidden="false" id="da03-a4ac-4394-c66d" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Firearm" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4fdf-de71-9e2b-ad34">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1519-21c7-a5ed-f615" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2eb2-ab59-5f3c-1e66" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Knife" hidden="false" id="9a70-0c0c-344e-81b2" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad91-6994-22a1-823b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5803-8473-b4c1-4c66" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="352d-c2af-47cb-3e6f">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Shoot twice" id="c341-b6a1-a21a-6c2a" hidden="false">
+          <description>This operative can perform two **Shoot** actions during its activation. </description>
+        </rule>
+      </rules>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedProfiles>
+    <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="33ab-2508-5035-24df">
+      <characteristics>
+        <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">⌖</characteristic>
+        <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">⚔</characteristic>
+        <characteristic name="Save" typeId="3241-5548-12d6-f103">▶</characteristic>
+        <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">◆</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <categoryEntries>
+    <categoryEntry name="NPO Brawler" id="4304-17c6-5bb5-cf56" hidden="false">
+      <rules>
+        <rule name="Behavior" id="4127-9c29-a9f1-ea19" hidden="false">
+          <description>When activated, if this NPO can perform either of its first two actions (**Fight** or **Charge**) during that activation, give it an Engage order. If it cannot, give it a Conceal order.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Charge (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="167c-5990-5b8d-7414">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">**Charge** the closest player operative via the shortest possible route.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dash (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="470f-d521-b8e4-7874">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">**Dash** towards the closest player operative, to cover if possible.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fight (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="9acc-3dee-949e-e474">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">**Fight** with the active operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Reposition (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="aaf0-ce21-2bb3-0cbf">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">**Reposition** towards the closest player operative, to cover if possible (a subsequent **Dash** action can fulfil this, if able).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </categoryEntry>
+    <categoryEntry name="NPO Marksman" id="42ac-1bda-6ac1-8220" hidden="false">
+      <profiles>
+        <profile name="Fall Back (2AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="91c0-6ad6-c9a2-ec56">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">**Fall Back** to cover. If possible, to a location where there&apos;s a valid target that isn&apos;t obscured. If not, to a location where there&apos;s an objective marker visible to this NPO.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shoot (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="3649-4395-c086-baab">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">**Shoot** with the active operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Reposition (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="bcd3-4c8c-f2a3-11d3">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">**Reposition** to cover. If possible, to a location where there’s a valid target that isn’t obscured, if not, where there’s an objective marker visible to this NPO (a subsequent **Dash** action can fulfil these, if able).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dash (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="e5ba-395a-e866-6ba7">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">**Dash** to cover. If possible, to a location where there’s a valid target that isn’t obscured, if not, where there’s an objective marker visible to this NPO.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Behavior" id="7d05-a70c-5cfc-c129" hidden="false">
+          <description>When activated, if this NPO can perform the **Shoot** action during that activation, give it an Engage order. If it cannot, give it a Conceal order.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry name="Non-player Operatives" id="76b7-aa16-9af2-b176" hidden="false"/>
+  </forceEntries>
+</catalogue>
