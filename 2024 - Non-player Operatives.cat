@@ -3,7 +3,7 @@
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Trooper (Brawler)" hidden="false" id="f599-6934-5d14-a8fa">
       <categoryLinks>
-        <categoryLink targetId="4304-17c6-5bb5-cf56" id="495a-338f-a18e-eafd" primary="false" name="NPO Brawler"/>
+        <categoryLink targetId="4304-17c6-5bb5-cf56" id="495a-338f-a18e-eafd" primary="false" name="Brawler"/>
         <categoryLink targetId="cf83-4496-b58e-ac82" id="7f73-38e7-64b0-b59d" primary="true" name="Operative"/>
       </categoryLinks>
       <profiles>
@@ -40,7 +40,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Trooper (Marksman)" hidden="false" id="47d6-bcfe-aafa-4ca4">
       <categoryLinks>
-        <categoryLink targetId="42ac-1bda-6ac1-8220" id="cf2a-a76c-5d71-d621" primary="false" name="NPO Marksman"/>
+        <categoryLink targetId="42ac-1bda-6ac1-8220" id="cf2a-a76c-5d71-d621" primary="false" name="Marksman"/>
         <categoryLink targetId="cf83-4496-b58e-ac82" id="dde7-8002-7581-97cd" primary="true" name="Operative"/>
       </categoryLinks>
       <selectionEntries>
@@ -113,7 +113,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tough (Brawler)" hidden="false" id="e0c5-a525-6da1-4099">
       <categoryLinks>
-        <categoryLink targetId="4304-17c6-5bb5-cf56" id="87c1-76ef-839e-22c3" primary="false" name="NPO Brawler"/>
+        <categoryLink targetId="4304-17c6-5bb5-cf56" id="87c1-76ef-839e-22c3" primary="false" name="Brawler"/>
         <categoryLink targetId="cf83-4496-b58e-ac82" id="d018-924d-afd7-0b0c" primary="true" name="Operative"/>
       </categoryLinks>
       <selectionEntries>
@@ -195,7 +195,7 @@
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="cf83-4496-b58e-ac82" id="8bb0-b0fa-77e3-7bb7" primary="true" name="Operative"/>
-        <categoryLink targetId="42ac-1bda-6ac1-8220" id="e901-8eb9-cbec-b1fe" primary="false" name="NPO Marksman"/>
+        <categoryLink targetId="42ac-1bda-6ac1-8220" id="e901-8eb9-cbec-b1fe" primary="false" name="Marksman"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heavy (Brawler)" hidden="false" id="4673-fc17-efd9-fb10">
@@ -237,12 +237,12 @@
       </profiles>
       <categoryLinks>
         <categoryLink targetId="cf83-4496-b58e-ac82" id="806a-2126-0fde-dc34" primary="true" name="Operative"/>
-        <categoryLink targetId="4304-17c6-5bb5-cf56" id="43d0-a57b-18df-0749" primary="false" name="NPO Brawler"/>
+        <categoryLink targetId="4304-17c6-5bb5-cf56" id="43d0-a57b-18df-0749" primary="false" name="Brawler"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heavy (Marksman)" hidden="false" id="f03c-e1e2-5b86-6d6b">
       <categoryLinks>
-        <categoryLink targetId="42ac-1bda-6ac1-8220" id="f2cf-df30-8a70-9933" primary="false" name="NPO Marksman"/>
+        <categoryLink targetId="42ac-1bda-6ac1-8220" id="f2cf-df30-8a70-9933" primary="false" name="Marksman"/>
         <categoryLink targetId="cf83-4496-b58e-ac82" id="ca04-7329-5f4d-ac47" primary="true" name="Operative"/>
       </categoryLinks>
       <profiles>
@@ -256,7 +256,7 @@
         </profile>
         <profile name="Shoot Twice" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="b407-2ae0-728d-7244">
           <characteristics>
-            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform two **Shoot** actions during its activation. </characteristic>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform two **Shoot** actions during its activation.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -295,12 +295,11 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reference - Behaviour" hidden="false" id="9795-de8d-c05d-f8ba">
+    <selectionEntry type="upgrade" import="true" name="Behaviour Reference" hidden="false" id="9795-de8d-c05d-f8ba">
       <profiles>
         <profile name="Brawler" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="8119-7495-8063-6302">
           <characteristics>
             <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">When activated, if this NPO can perform either of its first two actions during that activation, give it an Engage order. If it cannot, give it a Conceal order.
-
 
 1. **Fight**.
 2. **Charge** the closest enemy operative via the shortest possible route.
@@ -312,8 +311,6 @@
           <characteristics>
             <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">When activated, if this NPO can perform the **Shoot** action during that activation, give it an Engage order. If it cannot, give it a Conceal order.
 
-
-
 1. **Fall Back** to cover. If possible, to a location where there’s a valid target that isn’t obscured. If not, where there’s an objective marker visible to this NPO.
 2. **Shoot**.
 3. **Reposition** to cover. If possible, to a location where there’s a valid target that isn’t obscured, if not, where there’s an objective marker visible to this NPO (a subsequent Dash action can fulfil these, if able).
@@ -322,9 +319,11 @@
         </profile>
       </profiles>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aacc-014b-9ad6-e20b" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fa4-32cd-e2dd-684e" includeChildSelections="false"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="b318-a8d7-2d38-99a3" id="1296-18c3-3150-f2b1" primary="true" name="Reference"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
