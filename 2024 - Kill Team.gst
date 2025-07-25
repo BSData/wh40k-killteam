@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Operative" id="cf83-4496-b58e-ac82"/>
     <categoryEntry name="Configuration" id="874b-0390-e5e2-1daa" hidden="false"/>
@@ -201,7 +201,7 @@
       <alias>Seek Light</alias>
     </rule>
     <rule name="Severe" id="721c-65bf-dfb7-8fa2" hidden="false">
-      <description>If you don&apos;t retain any critical successes, you can change one of your normal successes to a critical success. Any rules that take effect as a result of retaining a critical success (e.g. Devastating, Piercing Crits, etc.) still do.</description>
+      <description>If you don&apos;t retain any critical successes, you can change one of your normal successes to a critical success. The Devastating and Piercing Crits weapon rules still take effect, but Punishing and Rending don&apos;t.</description>
     </rule>
     <rule name="Shock" id="c544-8d4c-4109-4eec" hidden="false">
       <description>The first time you strike with a critical success in each sequence, also discard one of your opponent&apos;s unresolved normal successes (or a critical success if there are none).</description>

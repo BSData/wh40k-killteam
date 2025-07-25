@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4f46-f795-734e-6076" name="Angels of Death" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4f46-f795-734e-6076" name="Angels of Death" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Angels of Death Kill Team" id="29d1-6036-644f-488a" hidden="false">
       <categoryLinks>
@@ -113,7 +113,7 @@
             <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="4" field="6056-b741-7cf3-5b43" affects="">
+            <modifier type="set" value="4" field="6056-b741-7cf3-5b43">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3b04-997f-5370-c1f2" shared="true"/>
               </conditions>
@@ -274,9 +274,7 @@
     </profile>
     <profile name="Dueller" typeId="49c2-836f-18b5-07ec" typeName="Chapter Tactics" hidden="false" id="4e8a-40d6-cd41-a8cf">
       <characteristics>
-        <characteristic name="Chapter Tactic" typeId="43ba-53ad-f728-bacf">Once per sequence, whenever this operative is fighting or retaliating:
--  One of your normal successes can block one unresolved critical success (unless the enemy operative’s weapon has the Brutal weapon rule).
-- One of your critical successes can block two unresolved normal successes (instead of one critical success).</characteristic>
+        <characteristic name="Chapter Tactic" typeId="43ba-53ad-f728-bacf">Whenever this operative is fighting or retaliating, each of your normal successes can block one unresolved critical success (unless the enemy operative’s weapon has the Brutal weapon rule).</characteristic>
       </characteristics>
     </profile>
     <profile name="Mobile" typeId="49c2-836f-18b5-07ec" typeName="Chapter Tactics" hidden="false" id="1b4e-2f28-9c65-62dd">
@@ -378,7 +376,9 @@
         </profile>
         <profile name="Doctrine Warfare" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="42bd-e2a7-e8f2-1d75">
           <characteristics>
-            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever you would use the Combat Doctrine strategic ploy and then select Assault or Tactical, if this operative is in the killzone, it costs you 0CP.</characteristic>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">You can do each of the following once per battle:
+- Whenever you would use the Combat Doctrine strategy ploy and then select Devastator, if this operative is in the killzone, it costs you 0CP.
+- Whenever you would use the Combat Doctrine strategy ploy and then select Tactical, if this operative is in the killzone, it costs you 0CP.</characteristic>
           </characteristics>
         </profile>
         <profile name="Chapter Veteran" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="6c1f-395e-178c-f074">
@@ -757,7 +757,7 @@
         <profile name="Heavy Intercessor Gunner" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="f0e6-6648-0433-66a7">
           <characteristics>
             <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
-            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">4&quot;</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
             <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">18</characteristic>
           </characteristics>
@@ -885,7 +885,7 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Fists" hidden="false" id="7880-b7f9-c163-a714" type="selectionEntry" page="" targetId="9978-a207-ea52-2f88">
+        <entryLink import="true" name="Fists" hidden="false" id="7880-b7f9-c163-a714" type="selectionEntry" targetId="9978-a207-ea52-2f88">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf8b-2ded-6a2c-1dd6-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf8b-2ded-6a2c-1dd6-max"/>
@@ -1049,4 +1049,5 @@
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <comment>July &apos;25</comment>
 </catalogue>
