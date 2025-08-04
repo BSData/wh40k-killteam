@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ffd6-f3ca-defa-f836" name="Non-player Operatives" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ffd6-f3ca-defa-f836" name="Non-player Operatives" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Trooper (Brawler)" hidden="false" id="f599-6934-5d14-a8fa">
       <categoryLinks>
@@ -37,6 +37,9 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Brawler" id="5aa9-ad3b-3f89-c135" hidden="false" type="profile" targetId="8119-7495-8063-6302"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Trooper (Marksman)" hidden="false" id="47d6-bcfe-aafa-4ca4">
       <categoryLinks>
@@ -110,6 +113,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Marksman" id="be3e-cea2-17ac-974b" hidden="false" type="profile" targetId="a6db-a06f-71ee-1feb"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tough (Brawler)" hidden="false" id="e0c5-a525-6da1-4099">
       <categoryLinks>
@@ -147,6 +153,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Brawler" id="2433-e39c-aa0d-671b" hidden="false" type="profile" targetId="8119-7495-8063-6302"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warrior (Marksman)" hidden="false" id="16a0-e2ba-d7f4-cbd9">
       <profiles>
@@ -197,6 +206,9 @@
         <categoryLink targetId="cf83-4496-b58e-ac82" id="8bb0-b0fa-77e3-7bb7" primary="true" name="Operative"/>
         <categoryLink targetId="42ac-1bda-6ac1-8220" id="e901-8eb9-cbec-b1fe" primary="false" name="Marksman"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Marksman" id="08ab-832b-0284-de9f" hidden="false" type="profile" targetId="a6db-a06f-71ee-1feb"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heavy (Brawler)" hidden="false" id="4673-fc17-efd9-fb10">
       <selectionEntries>
@@ -239,6 +251,9 @@
         <categoryLink targetId="cf83-4496-b58e-ac82" id="806a-2126-0fde-dc34" primary="true" name="Operative"/>
         <categoryLink targetId="4304-17c6-5bb5-cf56" id="43d0-a57b-18df-0749" primary="false" name="Brawler"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Brawler" id="c436-8fc8-4c9e-c022" hidden="false" type="profile" targetId="8119-7495-8063-6302"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heavy (Marksman)" hidden="false" id="f03c-e1e2-5b86-6d6b">
       <categoryLinks>
@@ -294,36 +309,277 @@
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Marksman" id="1b55-65e3-a68b-2643" hidden="false" type="profile" targetId="a6db-a06f-71ee-1feb"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Behaviour Reference" hidden="false" id="9795-de8d-c05d-f8ba">
+    <selectionEntry type="model" import="true" name="Hormagaunt" hidden="false" id="c58a-49df-9f3c-a358">
       <profiles>
-        <profile name="Brawler" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="8119-7495-8063-6302">
+        <profile name="Hormagaunt" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="201c-59ce-d288-7c96">
           <characteristics>
-            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">When activated, if this NPO can perform either of its first two actions during that activation, give it an Engage order. If it cannot, give it a Conceal order.
-
-1. **Fight**.
-2. **Charge** the closest enemy operative via the shortest possible route.
-3. **Reposition** towards the closest enemy operative, to cover if possible (a subsequent **Dash** action can fulfil this, if able).
-4. **Dash** towards the closest enemy operative, to cover if possible.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Marksman" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="a6db-a06f-71ee-1feb">
-          <characteristics>
-            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">When activated, if this NPO can perform the **Shoot** action during that activation, give it an Engage order. If it cannot, give it a Conceal order.
-
-1. **Fall Back** to cover. If possible, to a location where there’s a valid target that isn’t obscured. If not, where there’s an objective marker visible to this NPO.
-2. **Shoot**.
-3. **Reposition** to cover. If possible, to a location where there’s a valid target that isn’t obscured, if not, where there’s an objective marker visible to this NPO (a subsequent Dash action can fulfil these, if able).
-4. **Dash** to cover. If possible, to a location where there’s a valid target that isn’t obscured, if not, where there’s an objective marker visible to this NPO.</characteristic>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fa4-32cd-e2dd-684e" includeChildSelections="false"/>
-      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Scything talons" hidden="false" id="2169-1ca6-ca61-6e18">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a37-9128-d5dd-864f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a37-9128-d5dd-864f-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Scything talons" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="144a-8955-9434-492a">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Brawler (Typhon)" id="26b3-48d8-7508-0a13" hidden="false" type="profile" targetId="a4e0-5748-f78d-c37a"/>
+      </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="b318-a8d7-2d38-99a3" id="1296-18c3-3150-f2b1" primary="true" name="Reference"/>
+        <categoryLink name="Operative" hidden="false" id="f64e-e0d7-bc1c-e521" targetId="cf83-4496-b58e-ac82" primary="true"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ripper Swarm" hidden="false" id="9d83-1aaf-36c1-a6ec">
+      <profiles>
+        <profile name="Ripper Swarm" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="e4f1-62e8-defb-0be4">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hidden Horrors" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="5868-75fa-4e42-b1af">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Vantage terrain).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Claws and teeth" hidden="false" id="92a5-a614-9d42-9929">
+          <profiles>
+            <profile name="⚔ Claws and teeth" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6d37-1c2c-99eb-29c7">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/2</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4611-7acc-f8a4-ee25-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4611-7acc-f8a4-ee25-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Brawler (Typhon)" id="e35e-db05-0a6d-2a5d" hidden="false" type="profile" targetId="a4e0-5748-f78d-c37a"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="aa32-1b34-cc14-2505" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Barbgaunt" hidden="false" id="a164-fc64-c9ff-541f">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="ba13-3599-c340-9c44" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Barbgaunt" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="d72c-0eb4-0d74-8da7">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Barblauncher" hidden="false" id="ce79-692d-e8b1-926d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a22-108b-7665-b892-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a22-108b-7665-b892-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Barblauncher (mobile)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ac1e-d66c-2458-01cd">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Barblauncher (stationary)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="051e-f948-3e1b-e271">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;, Ceaseless, Heavy</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="e17b-9fc8-4887-dfd3" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Blast x" id="615d-398a-c91a-0485" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Heavy" id="0104-5e59-afdf-7322" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Claws and teeth" hidden="false" id="faa6-7bd6-62c2-d142">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b17-3a78-c8e6-27f6-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b17-3a78-c8e6-27f6-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Claws and teeth" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0170-d52f-0e54-293b">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Marksman (Typhon)" id="e1ff-1992-4d93-c65b" hidden="false" type="profile" targetId="fdfb-9a72-f4de-726a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ravener" hidden="false" id="f7a2-e43c-1d11-dcb1">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="2ec0-f358-5495-aecb" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Ravener" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="fef2-0f69-da25-5f78">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">20</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Brawler (Typhon)" id="5611-31d8-7fad-b574" hidden="false" type="profile" targetId="a4e0-5748-f78d-c37a"/>
+        <infoLink name="Predatory Xenoform" id="761b-462b-9cc7-4db1" hidden="false" type="profile" targetId="1d9e-f150-148b-6a7d"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Scything talons" hidden="false" id="bf55-58e0-2875-5c58">
+          <profiles>
+            <profile name="⚔ Scything talons" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d09d-a4dc-c7e4-22ee">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a643-882a-b280-985e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a643-882a-b280-985e-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Termagant" hidden="false" id="d01b-4991-49ca-de90">
+      <infoLinks>
+        <infoLink name="Marksman (Typhon)" id="50df-104b-02f7-7626" hidden="false" type="profile" targetId="fdfb-9a72-f4de-726a"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Termagant" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1d6a-7a51-f16c-ba94">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fleshborer" hidden="false" id="609d-2b95-da68-9fc0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f68-f7db-f80c-2f43-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f68-f7db-f80c-2f43-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Fleshborer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ca30-588b-75f8-fe72">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Claws and teeth" hidden="false" id="e18a-50b9-4217-a3e7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c184-57bd-a916-8da9-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c184-57bd-a916-8da9-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Claws and teeth" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8daf-c912-ea38-c01f">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="e959-db1c-7011-58d9" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Von Ryan&apos;s Leaper" hidden="false" id="3e0c-0f0a-1a34-121e">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="8a2e-6092-c478-efee" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Brawler (Typhon)" id="e936-b9ac-bc5d-aaf3" hidden="false" type="profile" targetId="a4e0-5748-f78d-c37a"/>
+        <infoLink name="Predatory Xenoform" id="e35a-233b-b246-556a" hidden="false" type="profile" targetId="1d9e-f150-148b-6a7d"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Von Ryan&apos;s Leaper" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="c80b-4d65-71db-b418">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Scything talons" hidden="false" id="2128-6393-8741-be9d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0dc0-9f16-38c0-93cb-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dc0-9f16-38c0-93cb-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Scything talons" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="916d-db72-6a0b-f6b3">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
@@ -333,6 +589,51 @@
         <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">⚔</characteristic>
         <characteristic name="Save" typeId="3241-5548-12d6-f103">▶</characteristic>
         <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">◆</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Brawler" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="8119-7495-8063-6302">
+      <characteristics>
+        <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">When activated, if this NPO can perform either of its first two actions during that activation, give it an Engage order. If it cannot, give it a Conceal order.
+
+1. **Fight**.
+2. **Charge** the closest enemy operative via the shortest possible route.
+3. **Reposition** towards the closest enemy operative, to cover if possible (a subsequent **Dash** action can fulfil this, if able).
+4. **Dash** towards the closest enemy operative, to cover if possible.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Marksman" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="a6db-a06f-71ee-1feb">
+      <characteristics>
+        <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">When activated, if this NPO can perform the **Shoot** action during that activation, give it an Engage order. If it cannot, give it a Conceal order.
+
+1. **Fall Back** to cover. If possible, to a location where there’s a valid target that isn’t obscured. If not, where there’s an objective marker visible to this NPO.
+2. **Shoot**.
+3. **Reposition** to cover. If possible, to a location where there’s a valid target that isn’t obscured, if not, where there’s an objective marker visible to this NPO (a subsequent Dash action can fulfil these, if able).
+4. **Dash** to cover. If possible, to a location where there’s a valid target that isn’t obscured, if not, where there’s an objective marker visible to this NPO.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Brawler (Typhon)" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="a4e0-5748-f78d-c37a">
+      <characteristics>
+        <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO will move towards the enemy to fight them, but will seek cover on its way. When activated, if it can perform either of its first two actions during that activation, give it an Engage order. If it cannot, give it a Conceal order.
+
+1. **Fight**.
+2. **Charge** the closest player operative via the shortest possible route.
+3. **Reposition** towards the closest player operative, to cover if possible (a subsequent **Dash** action can fulfil this, if able).
+4. **Dash** towards the closest player operative, to cover if possible.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Marksman (Typhon)" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="fdfb-9a72-f4de-726a">
+      <characteristics>
+        <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO will move to an ideal position to shoot the enemy. When activated, if it can perform the **Shoot** action during that activation, give it an Engage order. If it cannot, give it a Conceal order.
+
+1. **Fall Back** to cover. If possible, to a location where there’s a valid target that isn’t obscured. If not, where there’s an objective marker visible to this NPO.
+2. **Shoot**.
+3. **Reposition** to cover. If possible, to a location where there’s a valid target that isn’t obscured, if not, to a location that&apos;s appropriate to better win the mission (a subsequent Dash action can fulfil these, if able).
+4. **Dash** to cover. If possible, to a location where there’s a valid target that isn’t obscured, if not, to a location that&apos;s appropriate to better win the mission.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Predatory Xenoform" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="1d9e-f150-148b-6a7d">
+      <characteristics>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform two **Fight** actions during its activation.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
