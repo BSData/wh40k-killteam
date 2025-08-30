@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4b1c-f3e1-5479-b7e2" name="Raveners" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4b1c-f3e1-5479-b7e2" name="Raveners" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Kill Team" id="b9c3-f06a-4cfe-483c" hidden="false">
       <categoryLinks>
@@ -80,29 +80,18 @@
             <infoLink name="Range x" id="7b25-e6ae-043a-23c1" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Scything talons and rending claws" hidden="false" id="3ab3-9d94-b864-9d70">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3420-f419-2ba7-8de9-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3420-f419-2ba7-8de9-max"/>
-          </constraints>
-          <profiles>
-            <profile name="⚔ Scything talons and rending claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0a7b-5eed-da2b-fad9">
-              <characteristics>
-                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
-                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
-                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
-                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rending</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Rending" id="b1b8-7ea5-ffae-6153" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
-          </infoLinks>
-        </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink name="Burrow (1AP)" id="0d39-dcde-a15c-0190" hidden="false" type="profile" targetId="2bb5-cd30-1845-7e06"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Scything talons &amp; rending claws" hidden="false" id="28fe-71fd-1ec3-7d81" type="selectionEntry" targetId="6294-77a9-86c9-a21f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3420-f419-2ba7-8de9-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3420-f419-2ba7-8de9-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Felltalon" hidden="false" id="6a74-d96f-3b58-35c9">
       <categoryLinks>
@@ -256,7 +245,7 @@
           <profiles>
             <profile name="Distend Dorsal Sac (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="111e-df78-bfae-a26f">
               <characteristics>
-                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until this operative has shot with its venom bolt or until it performs the **Burrow** action (whichever comes first), all profiles of its venom bolt have the Lethal 5+ weapon rule, have 1 added to their Atk stat, and the Range 8&quot; weapon rule removed.</characteristic>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until this operative has shot with its venom bolt, until it performs this action again or until it performs the **Burrow** action (whichever comes first), all profiles of its venom bolt have the Lethal 5+ weapon rule, have 1 added to their Atk stat, and the Range 8&quot; weapon rule removed.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -361,13 +350,13 @@
             <infoLink name="Silent" id="f0a3-abfb-a5c4-411a" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Scything talons and crushing claws" hidden="false" id="716d-2031-96a7-e844">
+        <selectionEntry type="upgrade" import="true" name="Scything talons &amp; crushing claws" hidden="false" id="716d-2031-96a7-e844">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6584-83ad-0008-f586-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6584-83ad-0008-f586-max"/>
           </constraints>
           <profiles>
-            <profile name="⚔ Scything talons and crushing claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d49e-dc8a-ed04-9bb8">
+            <profile name="⚔ Scything talons &amp; crushing claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d49e-dc8a-ed04-9bb8">
               <characteristics>
                 <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
                 <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
@@ -396,8 +385,7 @@
         <categoryLink name="Tremorscythe" hidden="false" id="3fd0-6762-5ab2-e3ab" targetId="bda4-f928-ff03-72d9" primary="false"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6549-a76b-8f76-f1ac-min"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6549-a76b-8f76-f1ac-max"/>
+        <constraint type="max" value="1" field="selections" scope="b9c3-f06a-4cfe-483c" shared="true" id="6549-a76b-8f76-f1ac-max"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Pincer tail" hidden="false" id="418c-c4f8-eda7-54f5" type="selectionEntry" targetId="924e-41ff-7450-b626">
@@ -406,10 +394,10 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c079-1bb6-77bc-4b78-max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Scything talons" hidden="false" id="9b01-8048-0151-8525" type="selectionEntry" targetId="e76c-582f-e392-b5be">
+        <entryLink import="true" name="Scything talons &amp; rending claws" hidden="false" id="5bde-7a3d-c1da-30e6" type="selectionEntry" targetId="6294-77a9-86c9-a21f">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c460-e929-7541-caa4-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c460-e929-7541-caa4-max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fb3-274f-3834-0828"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abf4-b745-984c-aca3"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -464,7 +452,7 @@ Each friendly RAVENER operative can counteract regardless of its order. Whenever
       <characteristics>
         <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ If this operative is underground, set it up on your TUNNEL in a location it can be placed (it&apos;s no longer underground and it can be set up within control range of enemy operatives). Until the end of the activation/counteraction, subtract 2&quot; from its Move stat.
 ▶ Alternatively, instead of resolving the above effect, if this operative is in the killzone and on your TUNNEL, remove it from the killzone; it&apos;s now underground.
-◆ An operative cannot perform this action while carrying a marker.</characteristic>
+◆ An operative cannot perform this action while carrying a marker, or if it isn&apos;t either underground or on your TUNNEL.</characteristic>
       </characteristics>
     </profile>
     <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="fd9b-85d6-cb3b-6543">
@@ -508,6 +496,21 @@ Each friendly RAVENER operative can counteract regardless of its order. Whenever
       <infoLinks>
         <infoLink name="Range x" id="f39d-94c3-4d46-470d" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
         <infoLink name="Silent" id="6527-b0a4-82b2-5742" hidden="false" type="rule" targetId="1e3c-23c9-c6e2-9f62"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scything talons &amp; rending claws" hidden="false" id="6294-77a9-86c9-a21f">
+      <profiles>
+        <profile name="⚔ Scything talons &amp; rending claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="48a9-7828-2987-6390">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rending</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending" id="7e7e-763f-239b-b377" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
