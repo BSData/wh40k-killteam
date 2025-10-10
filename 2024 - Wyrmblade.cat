@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d953-a8cd-d581-475e" name="Wyrmblade" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d953-a8cd-d581-475e" name="Wyrmblade" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Wyrmblade Kill Team" id="79f0-45ba-02bd-6637" hidden="false">
       <categoryLinks>
@@ -667,6 +667,25 @@ The operative is treated as performing the Reposition action (spend the AP acco
           </constraints>
         </entryLink>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy Weapon Bipod" hidden="false" id="0546-ca86-7d70-0a90">
+          <profiles>
+            <profile name="Heavy Weapon Bipod" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2039-70fb-edc1-8e5c">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is shooting with a weapon from its datacard, if it hasn’t moved during the activation, or if it’s a counteraction, that weapon has the Ceaseless weapon rule; if the weapon already has that weapon rule (i.e. from the Cult Ambush faction rule), it has the Relentless weapon rule. Note this operative isn’t restricted from moving after shooting.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0747-68aa-fd12-31b1-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0747-68aa-fd12-31b1-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="283b-5208-33b4-a774" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Relentless" id="0cbc-8a60-a92f-cc88" hidden="false" type="rule" targetId="1bc8-9f8d-d899-64ed"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Neophyte Icon Bearer" hidden="false" id="3c50-709e-8dd7-bd22">
       <profiles>
