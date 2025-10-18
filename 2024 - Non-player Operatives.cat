@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ffd6-f3ca-defa-f836" name="Non-player Operatives" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ffd6-f3ca-defa-f836" name="Non-player Operatives" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Trooper (Brawler)" hidden="false" id="f599-6934-5d14-a8fa">
       <categoryLinks>
@@ -581,6 +581,304 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Flayed One" hidden="false" id="f0b6-9d98-c409-5b85">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="6743-f06f-9db6-7d03" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Flayed One" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="61b1-40cf-a0a0-a710">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Horrifying Flaying" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="d808-c981-6733-df2e">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this NPO incapacitates a player operative while fighting or retaliating, select one other player operative visible to and within 3&quot; of either this NPO or the incapacitated player operative and roll one D6; on a 3+, subptract 1 from that other player operative&apos;s APL stat until the end of its next activation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Flayer claws" hidden="false" id="b9f4-42ab-b4de-fb60">
+          <profiles>
+            <profile name="⚔ Flayer claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d7ab-a13c-e3b1-2bc1">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43e8-a4c4-e4d6-061b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43e8-a4c4-e4d6-061b-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="1914-af23-d37c-1909" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Rending" id="06a2-65ce-42c0-73c4" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Brawler (Tomb World)" id="02e3-3fb1-7ccc-67e4" hidden="false" type="profile" targetId="fb95-1e56-85dc-f2d9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Skorpekh Destroyer" hidden="false" id="e0a8-9fc2-26a7-9d59">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="d08c-f00c-261e-a2fd" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Skorpekh Destroyer" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="c472-85c5-2a79-0011">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hulking" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="19d7-f0be-c0fc-3a23">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever player(s) are selecting a valid target, if this NPO has a Conceal order, it cannot use Light terrain for cover. While this can allow this NPO to be targeted (assuming it&apos;s visible), it doesn&apos;t remove its cover save (if any).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Skorpekh hyperphase weapons" hidden="false" id="9068-31fe-54d1-f4a4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e85-186a-1b39-3fdb-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e85-186a-1b39-3fdb-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Skorpekh hyperphase weapons" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1b96-f51d-fcac-7555">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Balanced, Lethal 5+, Whirling Onslaught*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Balanced" id="3d28-fb55-c6e3-e14f" hidden="false" type="rule" targetId="28f7-0d96-d1fc-f75b"/>
+            <infoLink name="Lethal x+" id="720d-6f7c-00e9-3176" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+          <rules>
+            <rule name="*Whirling Onslaught" id="298c-1ef7-5e8f-b00f" hidden="false">
+              <description>Whenever this NPO is fighting or retaliating with this weapon, each time it strikes with a critical success, also inflict D3 damage on each other player operative within this NPO&apos;s control range.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Brawler (Tomb World)" id="05a0-b3b0-fa93-be7a" hidden="false" type="profile" targetId="fb95-1e56-85dc-f2d9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Hexmark Destroyer" hidden="false" id="3aa5-04aa-5af8-d90c">
+      <infoLinks>
+        <infoLink name="Marksman (Tomb World)" id="4e44-141c-1590-e705" hidden="false" type="profile" targetId="4e3d-a41c-1a82-570d"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Hexmark Destroyer" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="01ae-4294-4e72-a959">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Multi-Threat Eliminator" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="3432-ed65-fe39-5f38">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever a player operative within 8&quot; of this NPO is shooting it, keep track of each attack dice that&apos;s discarded as a fail. After the action, before incapacitated operatives are removed (including this one, if relevant), this NPO can perform a free **Shoot** action (you can change its order to Engage to do so), but it can only target that player operative with its enmitic disintegrator pistols (focused), and you only roll a number of attack dice equal to the opponent&apos;s discarded attack dice plus one (to a maximum of four).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="c75a-7a19-160c-d627" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Enmitic disintegrator pistols" hidden="false" id="097d-eca7-a8e2-ab40">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a2a-5939-cbe1-a59b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a2a-5939-cbe1-a59b-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Enmitic disintegrator pistols (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4b1b-7b44-a479-f1aa">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/2</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 9&quot;, Ceaseless, Devastating 2, Piercing 1, Saturate</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⌖ Enmitic disintegrator pistols (sweeping)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b089-cd80-07e3-6f02">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/2</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 9&quot;, Devastating 2, Piercing 1, Saturate, Torrent 2&quot;</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⚔ Enmitic disintegrator pistols (point-blank)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4089-62c5-2ed1-92cb">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="8a6d-7a81-d295-328b" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Ceaseless" id="22ba-95da-06a7-f4dd" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Devastating x" id="ee7f-b34a-1b7e-dbd1" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Piercing x" id="588e-5b0e-e394-1213" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+            <infoLink name="Saturate" id="5336-35ac-3fb4-a9e5" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+            <infoLink name="Torrent x" id="6b1c-df2b-6b1c-56d0" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Royal Warden" hidden="false" id="1ab5-3e78-c0ca-9480">
+      <infoLinks>
+        <infoLink name="Marksman (Tomb World)" id="f0c4-d511-a785-09a0" hidden="false" type="profile" targetId="4e3d-a41c-1a82-570d"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Royal Warden" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="8b6a-753b-c6dc-8294">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Engrammatic Logic" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="6077-2dc4-c218-db09">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an NPO is within 6&quot; of this NPO, you can ignore any changes to that NPO&apos;s stats from being injured (including its weapons&apos; stats).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="376e-95be-98ad-3626" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Relic gauss blaster" hidden="false" id="be1f-deb3-5d10-1507">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27d2-31de-297b-be15-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27d2-31de-297b-be15-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Relic gauss blaster" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="cfd2-d97c-1647-d63e">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Piercing 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="442a-d20c-2303-e8e1" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Piercing x" id="e42f-f923-cb50-b8d0" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bayonet" hidden="false" id="fcca-6e9e-0cd9-dd43">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfc7-cf09-9af3-3616-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfc7-cf09-9af3-3616-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Bayonet" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3aff-2d42-f7a8-9b74">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lychguard" hidden="false" id="9cab-7121-b3e3-21aa">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="34db-d4a5-6800-6128" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lychguard Behaviour" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="97f5-19ce-d3c9-8c69">
+          <characteristics>
+            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO will stay close to the Royal Warden unless the enemy is close enough to charge or fight. If it can perform either of its first two actions during that activation, or if it can end the activation with a Royal Warden that has an Engage order within its control range, give it an Engage order. If it cannot, give it a Conceal order. It will perform the **Operate Hatch** action where necessary to fulfil its behaviour.
+
+
+1. **Fight**.
+2. **Charge** the closest player operative via the shortest possible route.
+3. **Reposition** towards the Royal Warden NPO, to cover if possible (a subsequent Dash action can fulfil this, if able). If the Royal Warden NPO isn&apos;t in the killzone, **Reposition** towards the closest player operative (following the same conditions).
+4. **Dash** towards the Royal Warden NPO, to cover if possible. If the Royal Warden NPO isn&apos;t in the killzone, Dash towards the closest player operative (following the same conditions).
+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lychguard" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="119b-5ee2-16e6-d9d6">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">13</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Guardian Protocols" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="c9ea-bfae-d2f4-ddd9">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever a player operative is performing a **Shoot** action, if this NPO has an Engage order, the player(s) cannot select a Royal Warden NPO within this NPO&apos;s control range as a valid target.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hyperphase sword" hidden="false" id="c572-f606-0255-190b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0800-c442-d346-b9e9-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0800-c442-d346-b9e9-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Hyperphase sword" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ac56-a5a0-61ed-2132">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Shield*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="d656-f379-690f-7043" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+          <rules>
+            <rule name="*Shield" id="dc63-dee0-2c84-b3ca" hidden="false">
+              <description>Whenever this operative is fighting or retaliating with this weapon, each of your blocks can be allocated to block two unresolved successes (instead of one).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warscythe" hidden="false" id="4430-c9a4-a301-0030">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdde-935d-ba15-3de7-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdde-935d-ba15-3de7-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Warscythe" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="bb7f-5218-0bf8-57b0">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/7</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="ebe3-24bd-1140-80a0" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
     <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="33ab-2508-5035-24df">
@@ -634,6 +932,28 @@
     <profile name="Predatory Xenoform" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="1d9e-f150-148b-6a7d">
       <characteristics>
         <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform two **Fight** actions during its activation.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Brawler (Tomb World)" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="fb95-1e56-85dc-f2d9">
+      <characteristics>
+        <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO will move towards the enemy to fight them, but will seek cover on its way. When activated, if it can perform either of its first two actions during that activation, give it an Engage order. If it cannot, give it a Conceal order. It will perform the **Operate Hatch** action where necessary to fulfil its behaviour.
+
+
+1. **Fight**.
+2. **Charge** the closest player operative via the shortest possible route.
+3. **Reposition** towards the closest player operative, to cover if possible (a subsequent **Dash** action can fulfil this, if able).
+4. **Dash** towards the closest player operative, to cover if possible.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Marksman (Tomb World)" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="4e3d-a41c-1a82-570d">
+      <characteristics>
+        <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO will move to an ideal position to shoot the enemy, but will fight if it can&apos;t do anything else. When activated, if it can perform the **Shoot** or **Fight** action during that activation, give it an Engage order. If it cannot, give it a Conceal order. It will perform the **Operate Hatch** action where necessary to fulfil its behaviour.
+
+1. **Fall Back**. If possible, to a location where there’s a valid target that isn’t obscured. If not, to a location that&apos;s appropriate for the NPOs to better win the mission.
+2. **Shoot**.
+3. **Reposition**. If possible, to a location where there’s a valid target that isn’t obscured. If not, to a location that&apos;s appropriate for the NPOs to better win the mission (a subsequent Dash action can fulfil these, if able).
+4. **Dash**. If possible, to a location where there’s a valid target that isn’t obscured. If not, to a location that&apos;s appropriate for the NPOs to better win the mission.
+5. **Fight**.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
