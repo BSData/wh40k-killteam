@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ffd6-f3ca-defa-f836" name="Non-player Operatives" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ffd6-f3ca-defa-f836" name="Non-player Operatives" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Trooper (Brawler)" hidden="false" id="f599-6934-5d14-a8fa">
       <categoryLinks>
@@ -807,7 +807,7 @@
         <categoryLink name="Operative" hidden="false" id="34db-d4a5-6800-6128" targetId="cf83-4496-b58e-ac82" primary="true"/>
       </categoryLinks>
       <profiles>
-        <profile name="Lychguard Behaviour" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="97f5-19ce-d3c9-8c69">
+        <profile name="Lychguard" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="97f5-19ce-d3c9-8c69">
           <characteristics>
             <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO will stay close to the Royal Warden unless the enemy is close enough to charge or fight. If it can perform either of its first two actions during that activation, or if it can end the activation with a Royal Warden that has an Engage order within its control range, give it an Engage order. If it cannot, give it a Conceal order. It will perform the **Operate Hatch** action where necessary to fulfil its behaviour.
 
@@ -815,8 +815,7 @@
 1. **Fight**.
 2. **Charge** the closest player operative via the shortest possible route.
 3. **Reposition** towards the Royal Warden NPO, to cover if possible (a subsequent Dash action can fulfil this, if able). If the Royal Warden NPO isn&apos;t in the killzone, **Reposition** towards the closest player operative (following the same conditions).
-4. **Dash** towards the Royal Warden NPO, to cover if possible. If the Royal Warden NPO isn&apos;t in the killzone, Dash towards the closest player operative (following the same conditions).
-</characteristic>
+4. **Dash** towards the Royal Warden NPO, to cover if possible. If the Royal Warden NPO isn&apos;t in the killzone, Dash towards the closest player operative (following the same conditions).</characteristic>
           </characteristics>
         </profile>
         <profile name="Lychguard" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="119b-5ee2-16e6-d9d6">
@@ -876,6 +875,343 @@
           <infoLinks>
             <infoLink name="Lethal x+" id="ebe3-24bd-1140-80a0" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
           </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Canoptek Scarab Swarm" hidden="false" id="8e39-f188-b121-1f36">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="cd2f-3bd0-4c89-9382" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Brawler (Tomb World)" id="23ee-0baf-5ea4-4911" hidden="false" type="profile" targetId="fb95-1e56-85dc-f2d9"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Canoptek Scarab Swarm" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="56d2-62a0-f1fa-b5c1">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Feeder mandibles" hidden="false" id="deb6-22f9-61e0-71e1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6899-0241-7a75-9e88-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6899-0241-7a75-9e88-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Feeder mandibles" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="4502-19b6-a0d0-3aba">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/2</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Necron Warrior" hidden="false" id="29a5-7b48-dec7-4ddc">
+      <infoLinks>
+        <infoLink name="Marksman (Tomb World)" id="1efb-5c02-6d64-447c" hidden="false" type="profile" targetId="4e3d-a41c-1a82-570d"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="85e1-0940-db7e-5814" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Necron Warrior" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="f1bf-94b6-7028-b2d0">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Combat attachment" hidden="false" id="91b5-74c9-7205-1cda">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec57-02a9-b8e5-b62b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec57-02a9-b8e5-b62b-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Combat attachment" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d285-a9c1-dcf9-e974">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged weapon" id="271b-d42c-85ba-6323" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gauss flayer" hidden="false" id="2b5b-f357-3a16-90ae">
+              <profiles>
+                <profile name="⌖ Gauss flayer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0ac6-e091-20b9-e9ab">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="151d-9df9-236b-37bc"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Piercing x" id="6f29-5eb4-ae19-c666" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gauss reaper" hidden="false" id="8630-385f-7c79-9287">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2025-3270-0ce8-9a67"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Gauss reaper" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1637-7295-08a2-1495">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Piercing x" id="07ef-db1a-35d7-4bbb" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                <infoLink name="Range x" id="5c9e-f6ff-4458-c8ad" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e18-455b-f116-dc65-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e18-455b-f116-dc65-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Canoptek Tomb Crawler" hidden="false" id="d288-45c4-e881-1edf">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="aa7e-72a2-ce98-b142" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Canoptek Tomb Crawler" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="bbc9-c34a-2a93-a52d">
+          <characteristics>
+            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO fight if necessary, but if it isn&apos;t within control range of an enemy operative it will move to an ideal position to shoot the enemy. When activated, if it will perform the **Fight** or **Shoot** action during that activation, give it an Engage order. If it cannot, give it a Conceal order. It will perform the **Operate Hatch** action where necessary to fulfil its behaviour. Finally, if it has twin gauss reapers, it will always use the sweeping profile if it would target more than one player operative.
+
+5. **Fight**.
+2. **Shoot**.
+3. **Reposition**. If possible, to a location where there’s a valid target that isn’t obscured. If not, to a location that&apos;s appropriate for the NPOs to better win the mission (a subsequent Dash action can fulfil these, if able).
+4. **Dash**. If possible, to a location where there’s a valid target that isn’t obscured, if not, to a location that&apos;s appropriate for the NPOs to better win the mission.
+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Canoptek Tomb Crawler" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="dba9-78c7-eee2-f57f">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">21</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Sentinel" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2ca9-0d14-5b24-1923">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever you&apos;re selecting a valid target, if this operative has a Conceal order, it cannot use Light terrain for cover. While this can allow this operative to be targeted (assuming it&apos;s visible), it doesn&apos;t remove its cover save (if any).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Steadfast" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8f11-efd6-358b-275a">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever determining control of a marker, you can treat this operative&apos;s APL stat as 3. If you do, this takes precedence over all other rules, meaning any changes to its APL stat are ignored for this.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Claws" hidden="false" id="38ea-ec27-f34f-ee4a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4986-eada-eeee-cf43-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4986-eada-eeee-cf43-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0d2f-d8df-04ec-efef">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Brutal" id="0fc4-7642-7bc3-9830" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged weapon" id="3ee8-143f-0a22-8e8d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Twin gauss reapers" hidden="false" id="0df8-7cfd-b19e-9462">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b1a-9798-c362-b637"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Twin gauss reapers (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5608-4603-9a37-53b4">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1, Punishing</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Twin gauss reapers (sweeping)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="586b-dc57-3829-2ac1">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1, Punishing, Torrent 1&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Piercing x" id="481e-64ac-ae60-30f0" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                <infoLink name="Punishing" id="7f21-1d17-a3c4-4eb2" hidden="false" type="rule" targetId="4805-d37d-3ff2-5c9e"/>
+                <infoLink name="Torrent x" id="ec95-2709-552a-df6a" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Transdimensional isolator" hidden="false" id="81e8-0283-8c57-38b9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4869-68fc-65ba-34f0"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Transdimensional isolator" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ca0a-29ea-5df4-0212">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Dimensional Banishment*</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="*Dimensional Banishment" id="6124-af3d-e9e5-872a" hidden="false">
+                  <description>After this operative uses this weapon, if you inflicted damage or retained any critical successes, if the target, wasn&apos;t incapacitated, roll 2D6; if the result is higher than the target&apos;s remaining wounds, the target is incapacitated.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="960a-1e67-173f-3972-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="960a-1e67-173f-3972-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Canoptek Macrocyte" hidden="false" id="dc11-8917-e6af-9215">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="15ea-e91d-af0d-6241" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged weapon" id="0692-aa6e-5845-0549" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38f9-b36c-f18b-04c6-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38f9-b36c-f18b-04c6-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gauss scalpel" hidden="false" id="eeb6-9d9b-0834-4c17">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd52-577f-d51e-6c8a"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Gauss scalpel" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="aae0-4d24-7c2f-b51e">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Piercing x" id="f3a2-dae9-e1db-c1fe" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tesla caster" hidden="false" id="4ae2-878c-5521-47b8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5a6-1dca-0696-1ede"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Tesla caster (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8ece-2c73-4f1a-2d2c">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Tesla caster (living lightning)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="106e-018d-e056-6801">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Blast x" id="be7f-c9e3-0051-a3c0" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Canoptek Macrocyte" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="363f-4432-ce71-e45d">
+          <characteristics>
+            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO fight if necessary, but if it isn&apos;t within control range of an enemy operative it will move to an ideal position to shoot the enemy. When activated, if it will perform the **Fight** or **Shoot** action during that activation, give it an Engage order. If it cannot, give it a Conceal order. It will perform the **Operate Hatch** action where necessary to fulfil its behaviour. Finally, if it has a tesla caster, it will always use the sweeping profile if it would target more than one player operative.
+
+5. **Fight**.
+2. **Shoot**.
+3. **Reposition**. If possible, to a location where there’s a valid target that isn’t obscured. If not, to a location that&apos;s appropriate for the NPOs to better win the mission (a subsequent Dash action can fulfil these, if able).
+4. **Dash**. If possible, to a location where there’s a valid target that isn’t obscured, if not, to a location that&apos;s appropriate for the NPOs to better win the mission.
+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Canoptek Macrocyte" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="eb6e-341a-9762-acf7">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">7&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aggressive Defence Construct" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="b492-e6cf-9a28-44ee">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">If this operative is incapacitated by an enemy operative within 2&quot; of it, roll one D3; on a 2+, inflict damage on that enemy operative equal to the result.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Claws &amp; tail" hidden="false" id="f93d-8de1-c82a-a373">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7aea-5c97-8360-cf89-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7aea-5c97-8360-cf89-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Claws &amp; tail" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d28c-542b-a358-1500">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
