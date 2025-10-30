@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0d41-a809-1fff-b8b1" name="Kommandos" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0d41-a809-1fff-b8b1" name="Kommandos" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Kommando Dakka Boy" hidden="false" id="6e3a-e27d-6af9-a068">
       <categoryLinks>
@@ -32,7 +32,7 @@
                 <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
                 <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
                 <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
-                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Ceaseless</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 9&quot;, Ceaseless</characteristic>
               </characteristics>
             </profile>
             <profile name="⌖ Dakka shoota (long range)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1a5c-822c-566f-6ee7">
@@ -78,6 +78,11 @@
 ◆ This operative cannot perform this action while within control range of an enemy operative, or while counteracting.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Krumpin&apos; Time" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="ac71-6cb6-ffac-daa3">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can perform two **Fight** actions during its activation.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Melee Weapon" id="fa64-de80-2748-650b" hidden="false" defaultSelectionEntryId="none">
@@ -86,16 +91,13 @@
               <profiles>
                 <profile name="⚔ Big Choppa" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1a54-6d1b-e38e-5578">
                   <characteristics>
-                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
                     <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
                     <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
-                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Punishing</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink name="Punishing" id="09ce-6823-8fa4-9e24" hidden="false" type="rule" targetId="4805-d37d-3ff2-5c9e"/>
-              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power klaw" hidden="false" id="73aa-d9fe-08df-4e70">
               <profiles>
@@ -104,12 +106,13 @@
                     <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
                     <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
                     <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/7</characteristic>
-                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal, Shock</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Brutal" id="c1c4-263d-7290-862d" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+                <infoLink name="Shock" id="bfd6-97b4-e457-4fce" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -897,8 +900,7 @@ The rules for these actions are found in universal equipment. Performing these 
           <profiles>
             <profile name="Collapsible Stocks" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="2686-11e6-861d-baa5">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Add 4&quot; to the Range weapon rule of the following ranged weapons that friendly **KOMMANDO** operatives have:
-- Dakka shoota (short range)
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Remove the Range weapon rule from the following ranged weapons that friendly **KOMMANDO** operatives have:
 - Shokka pistol
 - Slugga</characteristic>
               </characteristics>

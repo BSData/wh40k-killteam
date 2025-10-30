@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f32e-c4e5-72a3-dd71" name="Hierotek Circle" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f32e-c4e5-72a3-dd71" name="Hierotek Circle" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="*Magnify" id="23bb-5711-b332-a399" hidden="false">
-      <description>Whenever this operative is performing the **Shoot** action with this weapon, if another friendly **HIEROTEK CIRCLE APPRENTEK** or **HIEROTEK CIRCLE CRYPTEK** operative has an Engage order and is visible to this operative, you can use this rule. If you do, treat that operative as the active operative for the purposes of determining a valid target, cover and obscured. If you do, this weapon has the Ceaseless weapon rule until the end of that action.</description>
+      <description>Whenever this operative is performing the **Shoot** action with this weapon, if the target is visible to this operative, and another friendly **HIEROTEK CIRCLE APPRENTEK** or **HIEROTEK CIRCLE CRYPTEK** operative has an Engage order and is visible to this operative, you can use this rule. If you do, treat that operative as the active operative for the purposes of determining a valid target, that **Shoot** action&apos;s conditions, cover and obscured. If you do, this weapon has the Ceaseless weapon rule until the end of that action.</description>
     </rule>
   </sharedRules>
   <selectionEntries>
@@ -308,7 +308,7 @@
         </profile>
         <profile name="Chronometron (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b0be-050d-4b7d-65e2">
           <characteristics>
-            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Until the start of this operative’s next activation, until this operative is incapacitated or until this action is performed again by a friendly operative (whichever comes first), subtract 1 from the Atk stat of an operative’s weapons whenever it’s shooting against, fighting against or retaliating against that selected operative.
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly **HIEROTEK CIRCLE** operative visible to and within 6&quot; of this operative. Until the start of this operative’s next activation, until this operative is incapacitated or until this action is performed again by a friendly operative (whichever comes first), subtract 1 from the Atk stat of an operative’s weapons whenever it’s shooting that selected operative.
 ◆This operative cannot perform this action while within control range of an enemy operative.</characteristic>
           </characteristics>
         </profile>
@@ -597,6 +597,12 @@
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">11</characteristic>
           </characteristics>
         </profile>
+        <profile name="Interstitial Command (1 AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="69e1-8c52-f446-3a91">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one other friendly **HIEROTEK CIRCLE** operative (excluding **APPRENTEK** and **CRYPTEK**) visible to and within 6&quot; of this operative, or within 6&quot; of a friendly **DESPOTEK** operative that is visible to this operative. That selected operative can immediately perform a 1AP action for free (excluding **Accelerate**); it cannot move more than 2&quot; during that action, perform an action it has already performed during this turning point, or perform that action again during this turning point.
+◆This operative cannot perform this action while within control range of an enemy operative, or while counteracting.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Bayonet" hidden="false" id="fb81-6f43-6f52-5bf5" type="selectionEntry" targetId="4d9c-3f3a-6a4c-004a">
@@ -620,7 +626,6 @@
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Steadfast" id="1484-1b48-9ee9-5ec4" hidden="false" type="profile" targetId="161c-2774-4203-ba54"/>
-        <infoLink name="Interstitial Command (1 AP)" id="36c0-0c4f-29fe-ea8e" hidden="false" type="profile" targetId="38df-274a-fa2c-f840"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="2b7a-318c-4ac8-965b" shared="true" id="f9c0-f008-5780-0ebe"/>
@@ -750,7 +755,7 @@ You can only select each of your Reanimation markers once per turning point, and
 - It has 1 wound remaining.
 - It has an order of your choice and is ready.
 - Remove that Reanimation marker.
-As **REANIMATED** operatives are no longer incapacitated, for the purposes of the kill op, this means your opponent’s kill grade can go down during the battle (they lose VP accordingly). However, it won’t retroactively change any other VPs your opponent has scored, e.g. from tac ops.</description>
+For the purposes of the kill op, your opponent treats your starting number of HIEROTEK CIRCLE operatives as 5 (in other words, their kill grade goes up whenever a friendly HIEROTEK CIRCLE operative is incapacitated, to a maximum kill grade of 5). REANIMATED operatives don’t retroactively change any other VPs your opponent has scored, e.g. from tac ops.</description>
     </rule>
   </rules>
   <entryLinks>

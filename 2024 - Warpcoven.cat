@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2c48-0a38-f96d-2fbf" name="Warpcoven" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2c48-0a38-f96d-2fbf" name="Warpcoven" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Warpcoven Kill Team" id="19b5-fd1f-a9b5-2c94" hidden="false">
       <categoryLinks>
@@ -23,9 +23,9 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Leader" hidden="false" id="b21d-db65-f719-b76a" targetId="d999-8cad-8145-4efe">
+        <categoryLink name="Sorcerer" hidden="false" id="d014-d6f7-510f-3842" targetId="3f84-3552-5a1a-b966">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2604-8e1a-b1ba-de90" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d7d0-b9d5-2db6-e167" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -265,7 +265,6 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c53-ab0c-6f65-fc4f-max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Leader" hidden="false" id="ab2b-1efc-8239-048c" type="selectionEntry" targetId="14ec-764a-b53f-ab46"/>
         <entryLink import="true" name="Boons of Tzeentch" hidden="false" id="96ff-b66b-cbef-01e7" type="selectionEntryGroup" targetId="896d-1ac5-422f-82cb">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25c4-f389-a806-f12a-min"/>
@@ -287,30 +286,16 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="b332-2ef7-53c7-ba90"/>
+        <constraint type="max" value="1" field="selections" scope="19b5-fd1f-a9b5-2c94" shared="true" id="ac2a-3e16-d307-7394"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="b332-2ef7-53c7-ba90">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="19b5-fd1f-a9b5-2c94" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Sorcerer of Destiny" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="4a80-583e-dc05-108c">
           <characteristics>
             <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
             <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
             <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
-            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">15</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="increment" value="1" field="74f9-f91c-b8fd-89d9">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="ab2b-1efc-8239-048c" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Protected by Fate (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="a473-adb1-bda0-7911">
           <characteristics>
@@ -364,7 +349,6 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb3d-abab-8da5-b829-max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Leader" hidden="false" id="dcfc-6081-2bd4-55f5" type="selectionEntry" targetId="14ec-764a-b53f-ab46"/>
         <entryLink import="true" name="Boons of Tzeentch" hidden="false" id="6532-20a1-1012-d806" type="selectionEntryGroup" targetId="896d-1ac5-422f-82cb">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1714-afa3-c874-3948-min"/>
@@ -391,15 +375,8 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
             <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
             <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
             <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
-            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">15</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="15" field="74f9-f91c-b8fd-89d9">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d999-8cad-8145-4efe" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Temporal Flux (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="5a89-8299-e909-fd26">
           <characteristics>
@@ -438,15 +415,8 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="0c2f-ea20-8cfa-9ac7"/>
+        <constraint type="max" value="1" field="selections" scope="19b5-fd1f-a9b5-2c94" shared="true" id="6d13-2801-1b7f-6e15"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="0c2f-ea20-8cfa-9ac7">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="19b5-fd1f-a9b5-2c94" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sorcerer of Warpfire" hidden="false" id="ee08-5d83-2737-4a29">
       <categoryLinks>
@@ -464,7 +434,6 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdf7-f819-24ae-1cbc-max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Leader" hidden="false" id="6e8e-8e95-e4ee-248f" type="selectionEntry" targetId="14ec-764a-b53f-ab46"/>
         <entryLink import="true" name="Boons of Tzeentch" hidden="false" id="3135-96b0-9e20-74af" type="selectionEntryGroup" targetId="896d-1ac5-422f-82cb">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b5b-9bf9-5738-1c4d-min"/>
@@ -491,15 +460,8 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
             <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
             <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
             <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
-            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">15</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="15" field="74f9-f91c-b8fd-89d9">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d999-8cad-8145-4efe" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Alight (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="942b-d0ad-3df7-f254">
           <characteristics>
@@ -558,15 +520,8 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d6ed-19d9-e4a2-e139"/>
+        <constraint type="max" value="1" field="selections" scope="19b5-fd1f-a9b5-2c94" shared="true" id="760d-e2b4-5d12-1a97"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="d6ed-19d9-e4a2-e139">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="19b5-fd1f-a9b5-2c94" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rubric Marine Gunner" hidden="false" id="061a-f6e9-d087-fff9">
       <profiles>
@@ -588,15 +543,8 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
         <categoryLink name="Gunner" hidden="false" id="2fe0-f4a6-a0b0-4ec7" targetId="3033-7558-d28f-53cf" primary="false"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="22df-ae8c-7b83-caf7"/>
+        <constraint type="max" value="1" field="selections" scope="19b5-fd1f-a9b5-2c94" shared="true" id="5f6a-4cc7-912e-d53c"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="2" field="22df-ae8c-7b83-caf7">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="19b5-fd1f-a9b5-2c94" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Ranged Weapon" id="fa4b-e1d0-45ec-18d1" hidden="false">
           <selectionEntries>
@@ -695,15 +643,8 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
           </characteristics>
         </profile>
       </profiles>
-      <modifiers>
-        <modifier type="set" value="1" field="5916-6e99-ca9e-f556">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="19b5-fd1f-a9b5-2c94" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5916-6e99-ca9e-f556"/>
+        <constraint type="max" value="1" field="selections" scope="19b5-fd1f-a9b5-2c94" shared="true" id="4a45-4707-1c2f-5b2c"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Inferno boltgun" hidden="false" id="afc2-19f5-8d16-a2bd" type="selectionEntry" targetId="f004-a2da-61e1-0a69">
@@ -777,6 +718,9 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="19b5-fd1f-a9b5-2c94" shared="true" id="8ddb-08b6-17f1-60a5"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tzaangor Champion" hidden="false" id="4151-147b-d84e-c38f">
       <profiles>
@@ -844,15 +788,8 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
         <categoryLink name="Champion" hidden="false" id="cff3-c990-b93d-7903" targetId="80c8-335f-2294-bf5d" primary="false"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="18b5-80aa-0a1e-3311"/>
+        <constraint type="max" value="1" field="selections" scope="19b5-fd1f-a9b5-2c94" shared="true" id="d68c-8256-d316-2878"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="18b5-80aa-0a1e-3311">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="19b5-fd1f-a9b5-2c94" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tzaangor Horn Bearer" hidden="false" id="7f4f-3cde-450e-4186">
       <categoryLinks>
@@ -886,15 +823,8 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
           </constraints>
         </entryLink>
       </entryLinks>
-      <modifiers>
-        <modifier type="set" value="1" field="1eae-1136-2ff6-7d75">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="19b5-fd1f-a9b5-2c94" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="1eae-1136-2ff6-7d75"/>
+        <constraint type="max" value="1" field="selections" scope="19b5-fd1f-a9b5-2c94" shared="true" id="11f2-60b3-fce3-92d8"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tzaangor Icon Bearer" hidden="false" id="bd42-9b23-fafb-4d1b">
@@ -933,15 +863,8 @@ Each friendly **WARPCOVEN HERETIC ASTARTES** operative can counteract regardless
           </constraints>
         </entryLink>
       </entryLinks>
-      <modifiers>
-        <modifier type="set" value="1" field="7e65-a0c6-eb08-6ba5">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="19b5-fd1f-a9b5-2c94" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="7e65-a0c6-eb08-6ba5"/>
+        <constraint type="max" value="1" field="selections" scope="19b5-fd1f-a9b5-2c94" shared="true" id="0527-8b10-4ce7-4312"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tzaangor Warrior" hidden="false" id="b1d1-eefe-afaf-e191">

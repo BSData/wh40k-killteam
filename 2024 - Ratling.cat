@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e482-b469-a757-5368" name="Ratling" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e482-b469-a757-5368" name="Ratling" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Ratling Kill Team" id="e64f-c6b9-3d26-4b7c" hidden="false">
       <categoryLinks>
@@ -31,7 +31,7 @@
           <profiles>
             <profile name="Purloined Rations" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="3e4f-d2ff-91b1-0f56">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, whenever a friendly RATLING operative (excluding BATTLEMUTT, BULLGRYN, and OGRYN) is activated, you can use this rule. If you do, until the end of that activation, improve the Hit stat of its rifle (if any) by 1.</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly RATLING operative is shooting with a rifle and you’ve rolled your attack dice, you can use this rule if you haven’t used the Lucky Round equipment during this activation. If you do, improve the Hit stat of its rifle by 1 until the end of that sequence.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -111,7 +111,7 @@
   <rules>
     <rule name="Scarper" id="8dd9-d689-3eb2-85d7" hidden="false">
       <description>After each enemy operative&apos;s activation, before the next operative is activated, you can perform a free **Dash** action with one friendly RATLING operating (excluding BULLGRYN, OGRYN, and SNEAK), but it cannot finish that move within 3&quot; of an enemy operative unless it&apos;s not visible to every enemy operative when it finishes that move.
-Each friendly operative can only do this once per turning point, and cannot do so after the final activation of the turning point. You cannot use this rule after consecutive enemy activations during the same turning point (in other words, after using this rule, you must skip the next opportunity during that turning point before you can use it again).</description>
+Each friendly operative can only do this once per turning point, and cannot do so after the final activation of the turning point.</description>
     </rule>
   </rules>
   <selectionEntries>
@@ -579,7 +579,7 @@ Each friendly operative can only do this once per turning point, and cannot do s
         </profile>
         <profile name="Slingshot (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="565c-b5b1-0d6c-2d9c">
           <characteristics>
-            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select a point on a terrain feature that&apos;s visible to, horizontally within 6&quot; of and higher than this operative. Remove this operative from the killzone and set it back up wholly within x+1&quot; horizontally of that point, not within control range of an enemy operative, and with that point visible to it. X is that point&apos;s height, rounded to the nearest inch (to a maximum of 6&quot;).
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select a point on a terrain feature; that point must be visible to and within 6&quot; of this operative. Remove this operative from the killzone and set it back up wholly within 6&quot; horizontally of that point, not within control range of an enemy operative, and with that point visible to it.
 ◆ This action is treated as a **Reposition** action. This operative cannot perform this action while within control range of an enemy operative, or during an activation in which it performed the **Charge**, **Fall Back**, or **Shoot** action (or vice versa).</characteristic>
           </characteristics>
         </profile>
@@ -636,12 +636,6 @@ Each friendly operative can only do this once per turning point, and cannot do s
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">6</characteristic>
           </characteristics>
         </profile>
-        <profile name="Optics (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="c0c0-5208-b70d-e608">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative&apos;s next activation, whenever it&apos;s shooting, enemy operatives cannot be obscured.
-◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Evade" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="3321-f22b-68f6-c89f">
           <characteristics>
             <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, after an enemy operative performs an action, you can interrupt that activation (or counteraction) and perform a free **Dash** action with this operative. Note this operative cannot use the Scarper faction rule (it has this rule instead).</characteristic>
@@ -665,6 +659,25 @@ Each friendly operative can only do this once per turning point, and cannot do s
       <constraints>
         <constraint type="max" value="1" field="selections" scope="e64f-c6b9-3d26-4b7c" shared="true" id="0d93-8a25-a9fe-848f"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Optics" hidden="false" id="3f46-dc1c-1534-28a7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ce0-400c-940c-3583-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ce0-400c-940c-3583-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Optics (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="c0c0-5208-b70d-e608">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Until the start of this operative&apos;s next activation, whenever it&apos;s shooting, enemy operatives cannot be obscured and the stationary profile of this operative&apos;s suppressed sniper rifle has the Lethal 5+ weapon rule.
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="767d-8d2b-7402-a0e5" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ogryn" hidden="false" id="4321-c089-f210-4f34">
       <categoryLinks>
@@ -959,7 +972,7 @@ Each friendly operative can only do this once per turning point, and cannot do s
             <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
             <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
             <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
-            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 1, Heavy, Silent</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Devastating 2, Heavy, Silent</characteristic>
           </characteristics>
         </profile>
       </profiles>

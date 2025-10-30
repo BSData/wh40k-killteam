@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Operative" id="cf83-4496-b58e-ac82"/>
     <categoryEntry name="Configuration" id="874b-0390-e5e2-1daa" hidden="false"/>
@@ -319,12 +319,12 @@
           <profiles>
             <profile name="2x Ladders" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="6de6-a6dd-db72-95a3">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Ladders are Exposed terrain. Before the battle, you can set up any of them as follows:
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Ladders are Insignificant and Exposed terrain. Before the battle, you can set up any of them as follows:
 - Wholly within your territory.
 - Upright against terrain that&apos;s at least 2&quot; tall.
 - More than 2&quot; from other equipment terrain features.
 - More than 1&quot; from doors and access points.
-In addition, an operative can either move through ladders as if they aren&apos;t there (but cannot finish on them), or climb them. Once per action, whenever an operative is climbing this terrain feature, treat the vertical distance as 1&quot;. Note that if an operative then continues climbing another terrain feature during that action (including another ladder), that distance is determined as normal.</characteristic>
+Once per action, whenever an operative is climbing the terrain feature a ladder is placed against, treat the vertical distance as 1&quot; if the ladder is within that operative&apos;s control range during that entire climb.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -336,7 +336,7 @@ In addition, an operative can either move through ladders as if they aren&apos;t
           <profiles>
             <profile name="1x Portable Barricade" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="a5bf-fa2a-cee9-7e43">
               <characteristics>
-                <characteristic name="Ability" typeId="3467-0678-083e-eb50">A portable barricade is Light, Protective and Portable terrain. Before the battle, you can set it up wholly within your territory, on the killzone floor, and more than 2&quot; from other equipment terrain features, access points and Accessible terrain.</characteristic>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">A portable barricade is Light, Protective and Portable terrain, except the feet which are Insignificant and Exposed. Before the battle, you can set it up wholly within your territory, on the killzone floor, and more than 2&quot; from other equipment terrain features, access points and Accessible terrain.</characteristic>
               </characteristics>
             </profile>
             <profile name="Move with Barricade (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b0e0-b5d4-d82f-9b18">
@@ -369,7 +369,7 @@ In addition, an operative can either move through ladders as if they aren&apos;t
             <profile name="Smoke grenade (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="c25c-2a2b-9491-2b2a">
               <characteristics>
                 <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Place one of your Smoke Grenade markers within 6&quot; of this operative. It must be visible to this operative, or on Vantage terrain of a terrain feature that&apos;s visible to this operative. The marker creates an area of smoke 1&quot; horizontally and unlimited height vertically from (but not below) it.
-▶ While an operative is wholly within an area of smoke, it&apos;s obscured to operatives more than 2&quot; from it, and vice versa. In addition, whenever an operative is shooting an enemy operative wholly within an area of smoke, ignore the Piercing weapon rule unless they are within 2&quot; of each other.
+▶ While an operative is wholly within an area of smoke, it&apos;s obscured to operatives more than 2&quot; from it, and vice versa. In addition, whenever an operative is shooting an enemy operative wholly within an area of smoke, weapons with the Piercing 2 or Piercing Crits 2 weapon rule have the Piercing 1 or Piercing Crits 1 weapon rule (respectively) instead.
 ▶ In the Ready step of the next Strategy phase, roll one D3. Remove that Smoke Grenade marker after a number of activations equal to that D3 have been completed or at the end of the turning point (whichever comes first).
 ◆ An operative cannot perform this action while within control range of an enemy operative, or if you have reached the total number of times your kill team can perform it.</characteristic>
               </characteristics>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0e19-7ab2-c4a6-76e7" name="Canoptek Circle" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="6" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0e19-7ab2-c4a6-76e7" name="Canoptek Circle" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="6" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Kill Team" id="51a4-6a68-395e-cffe" hidden="false">
       <categoryLinks>
-        <categoryLink name="Leader" hidden="false" id="6150-0443-1a9f-4be1" targetId="d999-8cad-8145-4efe" type="categoryEntry"/>
-        <categoryLink name="Operative" hidden="false" id="dd42-e8e3-2bd1-7b2f" targetId="cf83-4496-b58e-ac82" type="categoryEntry">
+        <categoryLink name="Leader" hidden="false" id="6150-0443-1a9f-4be1" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Operative" hidden="false" id="dd42-e8e3-2bd1-7b2f" targetId="cf83-4496-b58e-ac82">
           <constraints>
             <constraint type="min" value="7" field="selections" scope="force" shared="true" id="bb63-484e-8d3f-2b14-min" includeChildSelections="true"/>
             <constraint type="max" value="7" field="selections" scope="force" shared="true" id="bb63-484e-8d3f-2b14-max" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Configuration" hidden="false" id="226b-f5bf-a0b3-9628" targetId="874b-0390-e5e2-1daa" type="categoryEntry"/>
-        <categoryLink name="Reference" hidden="false" id="7355-ab0e-376c-94e9" targetId="b318-a8d7-2d38-99a3" type="categoryEntry"/>
+        <categoryLink name="Configuration" hidden="false" id="226b-f5bf-a0b3-9628" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="7355-ab0e-376c-94e9" targetId="b318-a8d7-2d38-99a3"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -28,7 +28,7 @@ Whenever one of your **OBELISK NODE** markers is within 6&quot; horizontally of 
 
 Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATRIX**:
 - Weapons on its datacard have the Accurate 2 weapon rule.
-- Add 1 to its APL stat.</description>
+- Add 1 to its APL stat (to a maximum of 3).</description>
     </rule>
   </rules>
   <selectionEntries>
@@ -60,7 +60,7 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
             <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly CANOPTEK CIRCLE operative visible to and within 6&quot; of this operative. Alternatively, if this operative is within your **OBELISK NODE MATRIX**, you can select one other friendly CANOPTEK CIRCLE operative within your **OBELISK NODE MATRIX**. The selected operative regains up to 3D3 lost wounds. It cannot be an operative that the Reanimate rule was used on during this turning point.
 
 
-◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+◆ This operative cannot perform this action while within control range of an enemy operative, or more than once per turning point.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -197,7 +197,7 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
               </profiles>
               <rules>
                 <rule name="*Dimensional Banishment" id="dfd6-0666-e1ad-9b03" hidden="false">
-                  <description>After this operative uses this weapon, if you inflicted damage or retained any critical successes, if the target wasn&apos;t incapacitated, roll 2D6; if the result is higher than the target&apos;s remaining wounds, the target is incapacitated.</description>
+                  <description>After this operative uses this weapon, if you inflicted damage or retained any critical successes, if the target wasn&apos;t incapacitated, roll 2D6; if the result is higher than the target&apos;s remaining wounds, the target is incapacitated (taking precedence over rules that prevent incapacitation, e.g. Medic!, FELLGOR RAVAGER Frenzy) and your opponent cannot place a Reanimation marker (HIEROTEK CIRCLE) for that operative, if relevant.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -463,9 +463,9 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
             </profile>
             <profile name="⌖ Tremorglaive (quake)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a387-e1a8-8cf6-d61e">
               <characteristics>
-                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">6</characteristic>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
                 <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
-                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/3</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">1/2</characteristic>
                 <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;, Seek Light, Stun</characteristic>
               </characteristics>
             </profile>
@@ -571,7 +571,7 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
           <profiles>
             <profile name="Phase Shifter" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="40a7-85a9-50ba-cff0">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when an operative is shooting a friendly CANOPTEK CIRCLE GEOMANCER operative, at the start of the Roll Defence Dice step, you can use this rule. If you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Not that Piercing 1 would therefore be ignored.</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when an operative is shooting a friendly CANOPTEK CIRCLE GEOMANCER operative, at the start of the Roll Defence Dice step, you can use this rule. If you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.</characteristic>
               </characteristics>
             </profile>
           </profiles>
