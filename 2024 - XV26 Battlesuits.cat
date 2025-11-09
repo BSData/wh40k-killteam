@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="751c-3342-afdc-3814" name="XV26 Battlesuits" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="7" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Kill Team" id="5fc6-62d9-48fa-efa4" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Leader" hidden="false" id="19ec-0ee1-9b66-3fe0" targetId="d999-8cad-8145-4efe">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c8b2-801a-7296-92f1" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Operative" hidden="false" id="3d52-3fea-02d6-0c04" targetId="cf83-4496-b58e-ac82">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="force" shared="true" id="33b6-4bd7-4874-2700-min" includeChildSelections="true"/>
+            <constraint type="max" value="6" field="selections" scope="force" shared="true" id="33b6-4bd7-4874-2700-max" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedProfiles>
+    <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="4609-0a80-95e0-d78c">
+      <characteristics>
+        <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">⌖</characteristic>
+        <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">⚔</characteristic>
+        <characteristic name="Save" typeId="3241-5548-12d6-f103">▶</characteristic>
+        <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">◆</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Drone" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="a033-beb6-fe99-4c74">
+      <characteristics>
+        <characteristic name="Ability" typeId="3467-0678-083e-eb50">- This operative cannot perform any actions other than **Charge**, **Dash**, **Fall Back**, **Fight**, **Reposition** and **Shoot**.
+- Whenever determining control of an objective marker, treat this operative&apos;s APL stat as 1 lower. Note this isn&apos;t a change to its APL stat, so any changes are cumulative with this.
+- This operative cannot use any weapons that aren&apos;t on its datacard.
+- Whenever determining what&apos;s visible to this operative, the round disc at the top of the miniature is its head.
+- This operative is ignored for your opponent&apos;s kill/elimination op (when it&apos;s incapacitated, and when determining your starting number of operatives).</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <rules>
+    <rule name="Kauyon" id="f803-d412-9ec3-91f5" hidden="false">
+      <description>Whenever a friendly XV26 STEALTH BATTLESUIT operative is shooting an enemy operative, its ranged weapons have the Accurate X weapon rule. X is determined by that enemy operative&apos;s location.
+
+
+- Within 3&quot; of your territory - Accurate 1
+- Within your territory - Accurate 2
+- Within 3&quot; of your drop zone - Accurate 3</description>
+    </rule>
+    <rule name="Stealth Fields" id="39db-c45f-1898-117a" hidden="false">
+      <description>Whenever a friendly XV26 STEALTH BATTLESUIT operative has a Conceal order, it&apos;s not visible to enemy operatives more than 3&quot; from it (taking precedence over all other rules).
+
+
+Whenever a friendly XV26 STEALTH BATTLESUIT operative has a Conceal order, it can perform the **Fall Back** action for 1 less AP.</description>
+    </rule>
+  </rules>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="XV26 Shas&apos;vre" hidden="false" id="5b68-d730-03e0-1070">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="5fc6-62d9-48fa-efa4" shared="true" id="8ef4-a6bf-7fd9-5df0-min"/>
+        <constraint type="max" value="1" field="selections" scope="5fc6-62d9-48fa-efa4" shared="true" id="8ef4-a6bf-7fd9-5df0-max"/>
+      </constraints>
+      <profiles>
+        <profile name="XV26 Shas&apos;vre" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2989-b206-bc8b-b7b1">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">13</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="XV26 Drone Controller" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0fba-081b-1ab4-36c0">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">**STRATEGIC GAMBIT** whenever this operative is in the killzone. Select one friendly XV26 STEALTH BATTLESUIT DRONE operative in the killzone. Until the end of that operative&apos;s next activation, ignore the first two bullet points of its Drone rule (this takes precedence over that rule).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="For the Greater Good" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="4403-1751-f18a-48cd">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever determining the value of Accurate X for the Kauyon faction rule, if this operative is in the killzone, add 1 to the result if 2 or more friendly XV26 STEALTH BATTLESUIT operatives (excluding DRONE) are incapacitated (to a maximum of Accurate 3). Note that you must have a minimum of Accurate 1 to use this rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Pulse pistol" hidden="false" id="9339-9366-bbf1-291a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d63f-d6bc-f17a-ab70-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d63f-d6bc-f17a-ab70-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Pulse pistol (ranged)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c5f5-045b-32e4-069d">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="⚔ Pulse pistol (point-blank)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="685f-722e-096c-fb1d">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Accurate 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="4c85-71c4-92ba-a2fe" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Accurate x" id="4641-b3d1-ddd3-e17e" hidden="false" type="rule" targetId="ba48-6452-4bf6-e9fa"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Leader" hidden="false" id="ef62-f253-d9f5-dc64" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="XV26 Sealth Battlesuit" hidden="false" id="2f1f-8ce8-a4c5-4a48" targetId="6eec-a43b-bec6-0958" primary="false"/>
+        <categoryLink name="Shas&apos;vre" hidden="false" id="5296-a29c-c2da-4e0a" targetId="b1f3-b519-7b2f-1488" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="fbf6-c55c-ccad-8570" targetId="20d3-6a95-40e4-de61" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapon" hidden="false" id="5ab1-c28b-50bb-8e91" type="selectionEntryGroup" targetId="c762-019c-78a2-1db1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="20c8-f7c0-0250-b94a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20c8-f7c0-0250-b94a-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="XV26 Designator" hidden="false" id="3ce8-5142-eb92-5e77">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="1695-b50f-2fa2-c27c" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="XV26 STEALTH BATTLESUIT" hidden="false" id="09fe-cb41-0c27-ac5a" targetId="6eec-a43b-bec6-0958" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="37de-9ee7-a753-710d" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Designator" hidden="false" id="e2e5-b78c-2955-6939" targetId="c2fd-1fbb-219b-7d3c" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="XV26 Designator" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="68d8-e134-3dcb-2268">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Weapon" hidden="false" id="c703-30a4-9105-6d00" type="selectionEntryGroup" targetId="c762-019c-78a2-1db1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c64-506a-3770-8109-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c64-506a-3770-8109-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fists" hidden="false" id="cb3b-dfc1-b700-90dd" type="selectionEntry" targetId="21b1-72b6-dfbd-aecf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba93-f312-fd64-8820-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba93-f312-fd64-8820-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Markerlight" hidden="false" id="c75f-6f46-59d5-4c13" type="selectionEntry" targetId="4926-8f5c-1df3-64e9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d80b-a0ed-8543-bf32-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d80b-a0ed-8543-bf32-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="5fc6-62d9-48fa-efa4" shared="true" id="48f4-014e-e133-4cd3"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="XV26 Infiltrator" hidden="false" id="bdcf-0a0c-d0b6-5210">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="704e-0efe-8506-bcbe" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="XV26 STEALTH BATTLESUIT" hidden="false" id="ad00-9b2a-e109-e5a7" targetId="6eec-a43b-bec6-0958" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="a5db-5c88-f08f-46c8" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Infiltrator" hidden="false" id="2bb6-c1de-7ea1-c761" targetId="2e3c-aa47-2877-befa" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="XV26 Infiltrator" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="cb40-fe7e-888a-a167">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Covert Protocols" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="4e2f-b863-e893-2a79">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can counteract regardless of its order, but if it has a Conceal order during that counteraction, it cannot perform any actions other than **Pick Up Marker**, **Place Marker** or mission actions.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Weapon" hidden="false" id="207b-6c79-0028-7e18" type="selectionEntryGroup" targetId="c762-019c-78a2-1db1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9491-2162-f2b0-2d8f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9491-2162-f2b0-2d8f-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fists" hidden="false" id="0e72-f53a-bfc1-7534" type="selectionEntry" targetId="21b1-72b6-dfbd-aecf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87f1-361c-3bff-c270-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87f1-361c-3bff-c270-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="XV26 Neutraliser" hidden="false" id="c51a-9e4c-dc9c-84f5">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="a498-a22c-c75a-92e5" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="XV26 STEALTH BATTLESUIT" hidden="false" id="0ff0-91e7-aecf-51ed" targetId="6eec-a43b-bec6-0958" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="8119-6771-70e0-7910" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Neutraliser" hidden="false" id="6bd0-32ab-bde6-4d77" targetId="0f50-1682-ca5c-19a3" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="XV26 Neutraliser" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="9a04-f597-6aec-409d">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Multispectrum Sensor Package" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0d1b-d8b6-10ba-8b17">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">**SUPPORT**. Once per turning point, when an enemy operative visible to and within 8&quot; of this operative is activated, you can use this rule. If you do, each friendly XV26 STEALTH BATTLESUIT operative within 3&quot; of this operative can immediately do one of the following:
+- Perform a free **Dash** action (in an order of your choice).
+- Change its order.
+
+
+Each friendly operative that performs the **Dash** action cannot end that move within 3&quot; of an enemy operative. Note that a Comms Device from universal equipment only affects the second distance of this rule.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="System Jam (1/2AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="b814-4d3a-beca-9589">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative. Until the end of that operative&apos;s next activation, subtract 1 from its APL stat. Whenever this operative has a Conceal order, you must spend 1 additional AP to perform this action.
+
+
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Weapon" hidden="false" id="bb7b-a7b6-c7dd-1dda" type="selectionEntryGroup" targetId="c762-019c-78a2-1db1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c118-a16e-3627-af4b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c118-a16e-3627-af4b-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fists" hidden="false" id="b898-1587-894f-dc47" type="selectionEntry" targetId="21b1-72b6-dfbd-aecf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d93b-4f97-aa05-80d5-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d93b-4f97-aa05-80d5-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="5fc6-62d9-48fa-efa4" shared="true" id="2772-da9d-e0aa-689f"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="XV26 Lodestar" hidden="false" id="4a38-481b-f2bc-8eff">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="582d-43aa-b8fc-ba1a" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="XV26 STEALTH BATTLESUIT" hidden="false" id="6dd2-941a-cd25-5d3c" targetId="6eec-a43b-bec6-0958" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="8813-6093-a696-d399" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Lodestar" hidden="false" id="39e2-2a9b-a1af-d55a" targetId="ea98-12ab-5b4b-4c9b" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="XV26 Lodestar" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2409-903e-3f71-d9bc">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Electrochaff Launcher" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="3245-9843-7f0e-36c9">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Once per turning point, when an enemy operative is performing the **Shoot** action and your opponent selects a valid target (excluding DRONE), you can use this rule, providing this operative isn&apos;t within control range of enemy operatives. If you do, until the end of that action, whenever an enemy operative is shooting a friendly XV26 STEALTH BATTLESUIT operative that&apos;s both visible to and within 3&quot; of this operative and more than 2&quot; from that enemy operative:
+- Ignore the Piercing weapon rule.
+- That friendly operative is obscured.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Homing Beacon" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0e96-8d76-b678-d7a2">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative is carrying a Homing Beacon marker. Operatives (excluding DRONE) can perform the **Pick Up Marker** action on that marker. The first time an enemy operative performs the **Pick Up Marker** action on your Homing Beacon marker, discard that marker (remove it from the battle).
+
+
+In the Ready step of each Strategy phase, when you gain CP, if you Homing Beacon marker is in the killzone, roll one D6 if it&apos;s more than 6&quot; from your drop zone; roll two D6 instead of its within your opponent&apos;s territory; roll thee D6 instead if it&apos;s within 6&quot; of your opponent&apos;s drop zone. If any result is a 4+ you can one additional CP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Weapon" hidden="false" id="6b53-417a-d59b-7715" type="selectionEntryGroup" targetId="c762-019c-78a2-1db1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9859-9651-9b17-faf8-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9859-9651-9b17-faf8-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fists" hidden="false" id="f6ae-ac8d-8436-b578" type="selectionEntry" targetId="21b1-72b6-dfbd-aecf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f61b-3889-de64-7255-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f61b-3889-de64-7255-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="5fc6-62d9-48fa-efa4" shared="true" id="a627-43af-9436-fc5b"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="XV26 Liberator" hidden="false" id="9349-efc0-c42a-bf71">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="2766-a048-5bf9-cbe4" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="XV26 STEALTH BATTLESUIT" hidden="false" id="40d2-5a9b-8e65-c806" targetId="6eec-a43b-bec6-0958" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="53b2-6754-0f07-0196" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Liberator" hidden="false" id="74a6-12a6-489c-06b9" targetId="e2bc-e84a-6ae9-9e94" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="XV26 Liberator" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="4f23-ce05-a6e4-2b66">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">12</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grenadier" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2ced-a464-1e83-68cd">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can use frag, krak, smoke and stun grenades (see universal equipment). Doing so doesn&apos;t count towards any limited uses you have (i.e. if you also select those grenades from equipment for other operatives). Whenever this operative is using a frag or krak grenade, improve the Hit stat of that weapon by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Weapon" hidden="false" id="98ac-cae4-6a7c-e8a1" type="selectionEntryGroup" targetId="c762-019c-78a2-1db1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c6f-cb4a-afb4-b612-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c6f-cb4a-afb4-b612-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fists" hidden="false" id="fc9e-1196-425e-386a" type="selectionEntry" targetId="21b1-72b6-dfbd-aecf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed26-7923-0d19-dbb5-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed26-7923-0d19-dbb5-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="EMP Bomb" hidden="false" id="e165-ba55-dff4-910a">
+          <profiles>
+            <profile name="⌖ EMP Bomb" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="cc62-5a08-6424-6be8">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/2</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 4&quot;, Blast 2&quot;, Devastating 1, Heavy (Reposition only), Lethal 4+, Limited 1, Saturate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a531-7abe-c200-ab90-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a531-7abe-c200-ab90-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Range x" id="8428-d42f-a7e3-93d8" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+            <infoLink name="Blast x" id="a1b8-b095-cd2b-d50c" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+            <infoLink name="Devastating x" id="46a1-c155-b8aa-ee87" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Heavy" id="3898-dff5-c9ba-ebc6" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+            <infoLink name="Lethal x+" id="10ce-816e-8da4-f8c5" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Limited x" id="6139-41ff-cc5c-adfd" hidden="false" type="rule" targetId="bf37-3388-40d5-eb72"/>
+            <infoLink name="Saturate" id="ffd4-56d6-f330-0239" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="5fc6-62d9-48fa-efa4" shared="true" id="9d21-98a1-0124-765b"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="MV15 Gun Drone" hidden="false" id="d35c-6c55-ee8c-5061">
+      <profiles>
+        <profile name="MV15 Gun Drone" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="c907-4d69-2c0a-7f38">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Photon Grenade Launcher (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="4857-1d7b-e0fa-4648">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to this operative and roll one D6: on a 3+, until the end of that operative&apos;s next activation, subtract 2&quot; from its Move stat.
+
+
+◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="5fc6-62d9-48fa-efa4" shared="true" id="0146-14be-e99a-f0c6-min"/>
+        <constraint type="max" value="1" field="selections" scope="5fc6-62d9-48fa-efa4" shared="true" id="0146-14be-e99a-f0c6-max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Twin pulse carbine" hidden="false" id="2c9c-5623-7125-f1ad">
+          <profiles>
+            <profile name="⌖ Twin pulse carbine" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="c6f2-263d-9697-8f42">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f82-894f-979a-465a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f82-894f-979a-465a-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="866e-c6ed-6c68-9091" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Ram" hidden="false" id="55df-9de6-a92b-0e18" type="selectionEntry" targetId="febe-7b63-6c3e-c84c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1d7-c44f-9f3d-5691-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1d7-c44f-9f3d-5691-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Drone" id="5454-03a8-96bc-37eb" hidden="false" type="profile" targetId="a033-beb6-fe99-4c74"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="898f-f736-ca1e-6e16" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="XV26 STEALTH BATTLESUIT" hidden="false" id="e185-1d17-2b86-773a" targetId="6eec-a43b-bec6-0958" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="3ffe-c8b1-01a4-84ba" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="Drone" hidden="false" id="d749-c988-279e-3988" targetId="03f9-0b0a-3331-0867" primary="false"/>
+        <categoryLink name="MV15 Gun" hidden="false" id="89aa-5d19-4a1d-383c" targetId="101f-a899-7689-5fd2" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="MV75 Marker Drone" hidden="false" id="e5f9-cfdc-f846-d5aa">
+      <profiles>
+        <profile name="MV75 Marker Drone" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="990a-a46c-826e-6255">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="5fc6-62d9-48fa-efa4" shared="true" id="7703-e398-5c3b-b714-min"/>
+        <constraint type="max" value="1" field="selections" scope="5fc6-62d9-48fa-efa4" shared="true" id="7703-e398-5c3b-b714-max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Ram" hidden="false" id="1fc2-da72-fd85-a966" type="selectionEntry" targetId="febe-7b63-6c3e-c84c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad45-2fa0-69dd-b014-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad45-2fa0-69dd-b014-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Markerlight" hidden="false" id="faf3-5c00-bd1a-0c39" type="selectionEntry" targetId="4926-8f5c-1df3-64e9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="250a-d100-affe-ab9f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="250a-d100-affe-ab9f-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Drone" id="c612-398e-9ba8-7a92" hidden="false" type="profile" targetId="a033-beb6-fe99-4c74"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="ffa3-4125-afc1-f47d" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="XV26 STEALTH BATTLESUIT" hidden="false" id="efa3-185a-7ac3-e40e" targetId="6eec-a43b-bec6-0958" primary="false"/>
+        <categoryLink name="T&apos;au Empire" hidden="false" id="9374-0a05-8b08-a03c" targetId="20d3-6a95-40e4-de61" primary="false"/>
+        <categoryLink name="MV75 Marker" hidden="false" id="92df-aa6f-4c7b-929f" targetId="844b-afd7-bb6d-af0e" primary="false"/>
+        <categoryLink name="Drone" hidden="false" id="6349-06b0-9a27-cdfb" targetId="03f9-0b0a-3331-0867" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <infoLinks>
+    <infoLink name="Accurate x" id="77ff-7fd5-5a03-351e" hidden="false" type="rule" targetId="ba48-6452-4bf6-e9fa"/>
+  </infoLinks>
+  <categoryEntries>
+    <categoryEntry name="XV26 STEALTH BATTLESUIT" id="6eec-a43b-bec6-0958" hidden="false"/>
+    <categoryEntry name="Shas&apos;vre" id="b1f3-b519-7b2f-1488" hidden="false"/>
+    <categoryEntry name="Designator" id="c2fd-1fbb-219b-7d3c" hidden="false"/>
+    <categoryEntry name="Infiltrator" id="2e3c-aa47-2877-befa" hidden="false"/>
+    <categoryEntry name="Liberator" id="e2bc-e84a-6ae9-9e94" hidden="false"/>
+    <categoryEntry name="Lodestar" id="ea98-12ab-5b4b-4c9b" hidden="false"/>
+    <categoryEntry name="Neutraliser" id="0f50-1682-ca5c-19a3" hidden="false"/>
+    <categoryEntry name="MV75 Marker" id="844b-afd7-bb6d-af0e" hidden="false"/>
+    <categoryEntry name="Drone" id="03f9-0b0a-3331-0867" hidden="false"/>
+    <categoryEntry name="MV15 Gun" id="101f-a899-7689-5fd2" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Weapon" id="c762-019c-78a2-1db1" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Burst cannon" hidden="false" id="9d7f-2a64-88eb-1808" type="selectionEntry" page="burst" targetId="2795-8d20-915c-bf9d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3bd-651d-c711-960c"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fusion blaster" hidden="false" id="63df-7836-08c6-015d" type="selectionEntry" targetId="a2d7-bd6b-7f14-fd85">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12dc-ca9a-3154-09fd"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Faction Equipment" id="ce40-a43f-2abb-3429" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hardwired Target Locks" hidden="false" id="4ff5-05ae-ead4-8313">
+          <profiles>
+            <profile name="Hardwired Target Locks" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="7d70-76cf-f892-786c">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever you would counteract, you can do so with one friendly XV26 STEALTH BATTLESUIT operative that has a Conceal order and is more than 3&quot; from enemy operatives, but before it counteracts, you must change its order to Engage and it cannot perform any actions other than **Shoot** during that counteraction.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c260-eb21-c971-0b22"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="XV26 Multitrackers" hidden="false" id="08e1-a91b-3c8d-3515">
+          <profiles>
+            <profile name="XV26 Multitrackers" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="38e0-1438-0752-b508">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when a friendly XV26 STEALTH BATTLESUIT operative is performing the **Shoot** action and you select a burst cannon (sweeping), you can use this rule. If you do, until the end of that action, that weapon has the Torrent 2&quot; weapon rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d76-9d1f-8274-16dd"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Torrent x" id="cb50-2ed4-2c94-4ee1" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Counter-network Jammers" hidden="false" id="2bce-f6e4-edab-3ce8">
+          <profiles>
+            <profile name="Counter-network Jammers" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="c83c-0636-3c10-4053">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if only one XV26 STEALTH BATTLESUIT operative and only two enemy operatives context it. That friendly XV26 STEALTH BATTLESUIT operative cannot be a DRONE operative. Note this isn&apos;t a change to the APL stat, so any changes are cumulative with this.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38ba-7d25-eed7-0f59"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Advanced Blacksun Filters" hidden="false" id="7102-7998-0cc5-6ad5">
+          <profiles>
+            <profile name="Advanced Blacksun Filters" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="2bd8-e957-45a2-f1a6">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever a friendly XV26 STEALTH BATTLESUIT operative is shooting an operative that&apos;s obscured, you don&apos;t have to discard one success as a result of that rule. All other effects of obscured apply as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56f6-7eb8-e23a-68f5"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Burst cannon" hidden="false" id="2795-8d20-915c-bf9d">
+      <profiles>
+        <profile name="⌖ Burst cannon (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f50f-82a2-9df6-ae2e">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="⌖ Burst cannon (sweeping)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6c79-87ca-ac1b-6dc4">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Torrent 1&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ceaseless" id="cf96-6eb9-a8b7-6ca9" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+        <infoLink name="Torrent x" id="bbe8-8d16-00bc-24e2" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fusion blaster" hidden="false" id="a2d7-bd6b-7f14-fd85">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="5fc6-62d9-48fa-efa4" shared="true" id="7d2e-cd2c-261a-1d97" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="⌖ Fusion blaster (short range)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b880-a1f1-d916-4210">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">6/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Devastating 4, Piercing 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="⌖ Fusion blaster (long range)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="25e2-5563-9ea4-d66f">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 12&quot;, Piercing 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="fc3f-8431-4c9f-000a" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+        <infoLink name="Devastating x" id="9908-0e34-1c88-0e5c" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+        <infoLink name="Piercing x" id="cd51-61ab-fecf-6802" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="21b1-72b6-dfbd-aecf">
+      <profiles>
+        <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f847-4d26-3ee8-a1a2">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ram" hidden="false" id="febe-7b63-6c3e-c84c">
+      <profiles>
+        <profile name="⚔ Ram" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="9f55-9062-6aad-8689">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Markerlight" hidden="false" id="4926-8f5c-1df3-64e9">
+      <profiles>
+        <profile name="Markerlight" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="7d33-1b99-e682-5de1">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an enemy operative is a valid target for this operative, or is visible to this operative and within 2&quot; of your Ambush marker (Prepare Ambush, pg 33), it&apos;s marked. Whenever a friendly XV26 STEALTH BATTLESUIT operative is shooting an operative that&apos;s marked, that friendly operative&apos;s ranged weapons have the Severe weapon rule. Note that an operative can be a valid target for this operative even if this operative isn&apos;t the active operative.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Severe" id="0e07-0b5e-2235-3caf" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="1edd-8d27-2cc1-3fa1" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <entryLinks>
+        <entryLink import="true" name="Faction Equipment" hidden="false" id="6bb8-05c2-b4ed-ef82" type="selectionEntryGroup" targetId="ce40-a43f-2abb-3429"/>
+      </entryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>
