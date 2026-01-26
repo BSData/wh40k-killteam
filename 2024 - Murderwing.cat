@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="741a-e56f-b153-4161" name="Murderwing" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="8" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Kill Team" id="a333-c848-45c1-02f2" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="548d-0942-76b4-bc8a" targetId="cf83-4496-b58e-ac82">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="acb7-004c-16a0-f2c8"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="b84d-b7bc-a660-c5a1"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Leader" hidden="false" id="f237-ac92-e707-21ea" targetId="d999-8cad-8145-4efe"/>
+        <categoryLink name="Configuration" hidden="false" id="ff28-0561-0730-b346" targetId="874b-0390-e5e2-1daa"/>
+        <categoryLink name="Reference" hidden="false" id="7ab0-b6b1-62fd-8e32" targetId="b318-a8d7-2d38-99a3"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="{this} has too many selections of meltagun, plasma gun, and plasma pistol combined (max 2)" field="error">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="parent" childId="cd9b-78e8-feb8-c3c7" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Chaos Lord" hidden="false" id="2e6e-6a37-7c74-4977">
+      <categoryLinks>
+        <categoryLink name="MURDERWING" hidden="false" id="cd15-504f-e7da-3bb9" targetId="7dbe-0bf6-fe90-8b68" primary="false"/>
+        <categoryLink name="Heretic Astartes" hidden="false" id="4c94-523f-1024-f5fe" targetId="3873-6aee-38ef-34cd" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="cf3f-5f9a-8094-415c" targetId="d999-8cad-8145-4efe" primary="true"/>
+        <categoryLink name="Lord" hidden="false" id="be4b-81fc-00d9-6fe7" targetId="82a4-39a8-9930-9074" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="3ad8-6fc7-6947-694e" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="a333-c848-45c1-02f2" shared="true" id="2551-2b86-5d9d-6fd8-min"/>
+        <constraint type="max" value="1" field="selections" scope="a333-c848-45c1-02f2" shared="true" id="2551-2b86-5d9d-6fd8-max"/>
+      </constraints>
+      <profiles>
+        <profile name="Chaos Lord" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="4b8b-779c-0bfa-1d98">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Path to Damnation" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0e78-6b72-6b8a-a83d">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative starts the battle with 1 Damnation point. Once per action, you can attempt to use one Boon of Damnation when it specifies (see Boons of Damnation). If you do, roll one D6 and compare the result to the number of Damnation points this operative has; if the result is:
+- Higher: Resolve the rule, then this operative gains 1 Damnation point.
+- Equal: Do not resolve the rule.
+- Less: Inflict damage on this operative equal to its number of Damnation points and do not resolve the rule.
+
+
+If this operative as 6 Damnation points, resolve the rule without rolling. Note that you cannot make an attempt more than once per action, regardless of the D6 result.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Boons of Damnation" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2221-8d8f-aa8f-fc74">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Boons of Damnation are as follows (resolved with a D6 roll, see Path to Damnation):
+- When an attack dice inflicts damage of 3 or more on this operative, you can ignore an amount of damage equal to this operative&apos;s Damnation points.
+- When this operative is fighting or retaliating and you strike, you can inflict an amount of additional damage equal to this operative&apos;s Damnation points.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="59bd-1ec5-109d-125c" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3034-7c28-f74e-09ed-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3034-7c28-f74e-09ed-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Relic lightning claws" hidden="false" id="4cf9-7e89-6fcc-803e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a033-db30-2114-c4d8"/>
+              </constraints>
+              <profiles>
+                <profile name="Relic lightning claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="822a-ebb4-2dc7-dc46">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Lethal 5+, Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Ceaseless" id="5927-c1d8-5c46-ce03" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+                <infoLink name="Lethal x+" id="f2a7-bbae-f11b-b0b7" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                <infoLink name="Rending" id="ae68-24aa-9f8f-4a21" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Other Set" hidden="false" id="f13f-ddf5-7ab3-d596">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee" id="2953-a3cc-dbd3-4a8d" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ad4-67e8-1ce7-be62-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ad4-67e8-1ce7-be62-max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Power weapon" hidden="false" id="c9fa-d945-76c3-8742" type="selectionEntry" targetId="f62d-fa52-2043-1edd">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07f0-8849-3ff5-964f"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="a260-7bbb-1787-e2f4" type="selectionEntry" targetId="421e-4906-2f24-3c0b">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cea0-a0fe-2541-a256"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lightning claw" hidden="false" id="7500-8d50-7aa0-f7a8" type="selectionEntry" targetId="38cc-328b-2861-725b">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14ec-67cc-1ba3-4ec8"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Ranged" id="0757-043a-8dfb-379a" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79db-1d0b-6817-29d0-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79db-1d0b-6817-29d0-max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="0078-a994-63e3-a418" type="selectionEntry" targetId="555d-b822-a5b9-f5c9">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b1d-554b-3d5d-0964"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="71eb-921c-dad6-3fb1" type="selectionEntry" targetId="8268-61f7-7d6c-f7d0">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70d8-d045-63e1-2743"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="762d-4d7b-1482-063d"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Champion" hidden="false" id="f3f1-7739-135c-d22b">
+      <categoryLinks>
+        <categoryLink name="MURDERWING" hidden="false" id="840b-2118-8d60-9ab7" targetId="7dbe-0bf6-fe90-8b68" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="59cd-930a-6119-520f" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Heretic Astartes" hidden="false" id="7e9f-4c72-833a-f299" targetId="3873-6aee-38ef-34cd" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="f3c2-e812-a3ae-4a1a" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Champion" hidden="false" id="c75e-ca44-9692-801c" targetId="cb18-ed0c-8048-e694" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Champion" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2450-c97e-5e26-ccb7">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Path to Glory" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="9b41-1e85-43e3-4963">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative incapacitates an enemy operative that has your Challenge token, you gain 1CP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="a333-c848-45c1-02f2" shared="true" id="e98a-8e6b-b9c8-9d27"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee" id="4e7a-ef5b-248c-b6af" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dcfd-9d41-a075-0bdb-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcfd-9d41-a075-0bdb-max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Power weapon" hidden="false" id="baea-8e32-7708-d228" type="selectionEntry" targetId="f62d-fa52-2043-1edd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11e2-d40a-fa87-1426"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power fist" hidden="false" id="704d-ec24-0654-4fcf" type="selectionEntry" targetId="421e-4906-2f24-3c0b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63e6-974a-01f8-a218"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Ranged" id="c0ef-03bf-bff6-4d3f" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="472b-702c-3092-8d69-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="472b-702c-3092-8d69-max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Plasma pistol" hidden="false" id="957e-ad51-f0d8-117a" type="selectionEntry" targetId="555d-b822-a5b9-f5c9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6911-99da-76b6-f631"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="50e5-d3bf-883d-f418" type="selectionEntry" targetId="8268-61f7-7d6c-f7d0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ba8-0316-c72a-bbb7"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Chaos Champion" hidden="false" id="e404-ee10-ceda-0d29">
+          <profiles>
+            <profile name="Chaos Champion" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="cc82-dd5b-2323-5631">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">**STRATEGIC GAMBIT**. Remove your Challenge token from the enemy operative that has it (if any), then select one enemy operative to gain your Challenge token. Whenever this operative is fighting against or retaliating against an enemy operative that has your Challenge token, in the Select Weapons step, you can select one of the following weapon rules for this operative&apos;s melee weapons to have until the end of the sequence: Balanced, Brutal, Punishing, Severe, Shock.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="48a2-ab4b-9219-0135-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48a2-ab4b-9219-0135-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Balanced" id="ac38-e533-efe4-18ea" hidden="false" type="rule" targetId="28f7-0d96-d1fc-f75b"/>
+            <infoLink name="Brutal" id="5514-f28e-829a-4ed9" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+            <infoLink name="Punishing" id="93ab-1d56-3bd0-86b6" hidden="false" type="rule" targetId="4805-d37d-3ff2-5c9e"/>
+            <infoLink name="Severe" id="5244-fecf-21f1-0b68" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+            <infoLink name="Shock" id="aaa4-2651-c496-b8da" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Curseclaw" hidden="false" id="f1ca-abb5-7b70-4b7e">
+      <categoryLinks>
+        <categoryLink name="MURDERWING" hidden="false" id="d347-ec2b-7344-2be0" targetId="7dbe-0bf6-fe90-8b68" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="eb53-981c-9439-f022" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Heretic Astartes" hidden="false" id="80ce-f2f0-a5c2-828b" targetId="3873-6aee-38ef-34cd" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="a980-247e-7d96-bb65" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Curseclaw" hidden="false" id="a8be-b330-734d-713a" targetId="f716-d437-05ca-0e51" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Curseclaw" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1335-d06f-f485-2e7b">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Frenzied Attack" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="db71-ee14-bb03-3266">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">If this operative is incapacitated during the **Fight** action, you can strike the enemy operative in that sequence with one of your unresolved successes before this operative is removed from the killzone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Snatch (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="a5c8-de65-78a7-889b">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **BOOST** action. Select one enemy operative within this operative&apos;s **BOOST ZONE**. Both players roll one D6 and add their respective operative&apos;s Wounds stat to their result. If your result is higher, remove that enemy operative from the killzone and set it back up within this operative&apos;s **BOOST ZONE** or control range. It must be set up in a location it can be placed and cannot be set up further away from this operative than where it began. If that enemy operative is set up within this operative&apos;s control range, the **Fall Back** or **Reposition** action ends (allowing this operative to finish that action within control range of enemy operatives).
+
+
+◆ This operative cannot perform this action normally. Instead, it performs this action during the **Fall Back** or **Reposition** action after setting up from a **BOOST**.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="a333-c848-45c1-02f2" shared="true" id="a4d6-005b-040f-c86b"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="12c9-43b6-da90-1b63" type="selectionEntry" targetId="8268-61f7-7d6c-f7d0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c53-fe30-4eba-97a3-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c53-fe30-4eba-97a3-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mutated claws" hidden="false" id="87ab-4755-efff-f6e1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50c2-d5b9-9ed5-972d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50c2-d5b9-9ed5-972d-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Mutated claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="71b5-13b2-cb3c-4ff7">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Depredator" hidden="false" id="ff91-e0b4-4c32-a7ce">
+      <categoryLinks>
+        <categoryLink name="MURDERWING" hidden="false" id="4cda-29ec-522f-dae2" targetId="7dbe-0bf6-fe90-8b68" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="87ec-fdc4-18d4-7512" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Heretic Astartes" hidden="false" id="701e-9147-be84-1f06" targetId="3873-6aee-38ef-34cd" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="cda7-2a56-172d-ff47" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Depredator" hidden="false" id="dcb7-9e52-f6de-79d0" targetId="3987-6304-92af-36b4" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Depredator" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="1345-ab3f-c878-14ff">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Horrifying Dismemberment" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="67b1-4cf7-ac47-9813">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative incapacitates an enemy operative while fighting or retaliating, select one other enemy operative visible to and within 3&quot; of either this operative or the incapacitated operative. Subtract 1 from that enemy operative&apos;s APL stat until the end of its next activation.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Carving Blow (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="7baf-cfcf-c73a-a0f7">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">Inflict 2D3 damage on each other operative visible to and within 2&quot; of this operative in an order of your choice (roll separately for each).
+
+
+For the purposes of action restrictions and the Astartes faction rule, this action is treated as a **Fight** action. This operative cannot perform this action while it has a Conceal order, or during the same activation in which it performed the **Slice From Above** action (see faction equipment) or vice versa.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="a333-c848-45c1-02f2" shared="true" id="741f-5ec5-8ad6-4f5f"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="aa2c-dfe2-ec42-21e4" type="selectionEntry" targetId="8268-61f7-7d6c-f7d0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3125-20ad-f73b-9822-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3125-20ad-f73b-9822-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Great chainaxe" hidden="false" id="cd12-6468-cb44-a8cb">
+          <profiles>
+            <profile name="⚔ Great chainaxe" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e8fc-bd7a-a9d5-04f7">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/7</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c7d-04e0-6003-eea8-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c7d-04e0-6003-eea8-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Brutal" id="5b1c-75e1-76d3-be22" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Huntmaster" hidden="false" id="6d03-f8ae-f0e0-1426">
+      <categoryLinks>
+        <categoryLink name="MURDERWING" hidden="false" id="67c6-99af-09f8-fbc5" targetId="7dbe-0bf6-fe90-8b68" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="b9a7-bc3b-4f4d-d01b" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Heretic Astartes" hidden="false" id="33fd-b02e-6d61-b419" targetId="3873-6aee-38ef-34cd" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="0647-e2d8-5333-7a6e" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Huntmaster" hidden="false" id="a852-3b42-133f-a67a" targetId="d494-e199-752b-7cdf" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Huntmaster" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="e097-6158-9219-7c43">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pinned Prey" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="eef9-d9fe-0bf7-9d4f">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an enemy operative would perform the **Fall Back** action while within control range of this operative, if no other enemy operatives are within this operative&apos;s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than this operative. If any result is a 4+, that enemy operative cannot perform that action during that activation/counteration (no AP are spent on it).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Strike From Above (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="20b5-d5b5-223a-3b0a">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **BOOST** action. Inflict 2D3+1 damage on one enemy operative within this operative&apos;s **BOOST ZONE**.
+
+
+◆ This operative cannot perform this action normally. Instead, it performs this action during the **Fall Back** or **Reposition** action after setting up from a **BOOST**.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="a333-c848-45c1-02f2" shared="true" id="a9c6-48ba-0720-80b8"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="fcb4-db1f-6d1a-df3e" type="selectionEntry" targetId="8268-61f7-7d6c-f7d0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e4d-1fe2-ae6b-7c10-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e4d-1fe2-ae6b-7c10-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Power weapon" hidden="false" id="1cb8-d22a-87ee-6bd4" type="selectionEntry" targetId="f62d-fa52-2043-1edd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="368c-9ab0-5016-4da4-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="368c-9ab0-5016-4da4-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Raptor" hidden="false" id="47fc-d261-748e-3091">
+      <categoryLinks>
+        <categoryLink name="MURDERWING" hidden="false" id="0d90-6a85-e5b0-0631" targetId="7dbe-0bf6-fe90-8b68" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="1e07-3821-3a7f-a8a0" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Heretic Astartes" hidden="false" id="86fc-90a1-ecd1-027e" targetId="3873-6aee-38ef-34cd" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="3693-91d6-5d63-4808" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Raptor" hidden="false" id="da50-8385-1e92-a19b" targetId="109e-dd46-7e12-e485" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Raptor" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="a713-86c0-d3f4-9c05">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Thrill of Flight" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="351d-487b-fbf3-8f52">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative does a **BOOST** during its activation:
+- You can remove any changes to its APL stat.
+- You can ignore any changes to its stats from being injured (including its weapons&apos; stats) until the end of the activation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapon" id="0596-2100-2c91-6996" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cee-1d01-85a0-125c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cee-1d01-85a0-125c-max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Plasma pistol" hidden="false" id="b375-0208-0fcc-4f15" type="selectionEntry" targetId="555d-b822-a5b9-f5c9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2341-4ffc-5e75-5bd2"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="5fa2-9214-36d2-8a10" type="selectionEntry" targetId="8268-61f7-7d6c-f7d0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1725-268f-c321-0cce"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Chainsword" hidden="false" id="89be-0f52-42f9-5e96" type="selectionEntry" targetId="f056-579a-3051-2ca7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e5b-000b-4e3a-9d25-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e5b-000b-4e3a-9d25-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Shrieker" hidden="false" id="0e13-64ac-9f30-bfa0">
+      <categoryLinks>
+        <categoryLink name="MURDERWING" hidden="false" id="976b-adef-b017-2924" targetId="7dbe-0bf6-fe90-8b68" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="47d4-eca5-896c-edfe" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Heretic Astartes" hidden="false" id="8b03-1a17-8c0e-569f" targetId="3873-6aee-38ef-34cd" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="cdb1-dc05-75b8-d0e6" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Shrieker" hidden="false" id="52df-1f8f-8d9f-10a7" targetId="5276-e60d-f398-9e9f" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Shrieker" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="6b19-0e7f-3d39-124f">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Modified Vox-casters" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="22a9-5306-daef-0d6a">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever an enemy operative is within 3&quot; of this operative, your opponent must spend 1 additional AP for that enemy operative to perform the **Pick Up Marker** and mission actions.
+
+
+Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 3&quot; of this operative. Note this isn&apos;t a change to the APL stat, so any changes are cumulative with this.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shriek (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="11a9-cfdc-0e5a-1ec7">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative that&apos;s visible to and within 6&quot; of this operative. Alternatively, select one enemy operative within this operative&apos;s **BOOST ZONE** (at which point this becomes a **BOOST** action). If enemy operatives are within control range of this operative, you cannot select an enemy operative that isn&apos;t. Inflict D3 damage on the selected operative and subtract 1 from its APL stat until the end of its next activation.
+
+
+◆ This operative cannot perform this action while it has a Conceal order. If you&apos;re selecting an enemy operative within this operative&apos;s **BOOST ZONE**, this operative cannot perform this action normally. Instead, it performs this action during the **Fall Back** or **Reposition** action after setting up from a **BOOST**.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="a333-c848-45c1-02f2" shared="true" id="b7e0-3fa1-39ea-016d"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="f749-411c-1988-b46a" type="selectionEntry" targetId="8268-61f7-7d6c-f7d0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f0a-26c2-4d8e-d9c0-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f0a-26c2-4d8e-d9c0-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Chainsword" hidden="false" id="312f-d782-890b-d381" type="selectionEntry" targetId="f056-579a-3051-2ca7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df1a-d403-fb1a-5768-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df1a-d403-fb1a-5768-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Warp Talon" hidden="false" id="6db4-1e1a-cdd4-a682">
+      <categoryLinks>
+        <categoryLink name="MURDERWING" hidden="false" id="2ba1-e162-539c-cfc9" targetId="7dbe-0bf6-fe90-8b68" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="4a7c-f14b-b15c-f2d0" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Heretic Astartes" hidden="false" id="08a3-3426-e606-07e3" targetId="3873-6aee-38ef-34cd" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="06c0-f35d-be9a-303e" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Warp Talon" hidden="false" id="6c7e-955f-a223-f428" targetId="3d6f-24b2-38be-7318" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Warp Talon" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="0711-d0c5-ab1b-1da9">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Slice the Veil" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="70e6-83ef-1a98-8287">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">When setting up this operative before the battle, you can set it up in the warp instead: place it to one side instead of in the killzone. In the first Firefight phase, when this operative is activated, place one of your Warp markers wholly within your territory, then expend this operative.
+
+
+In the second Firefight phase, when this operative is activated, set it up with an order of your choice in a location it can be placed either wholly within your drop zone, or wholly within your territory contesting your Warp marker. Continue its activation as normal, but during that activation it cannot perform more than two actions and cannot use more than 4&quot; of move distance. Until the Ready step of the next Strategy phase, this operative is obscured to operatives more than 3&quot; from it.
+
+
+Whenever this operative is in the warp, it cannot be the ready friendly MURDERWING operative for the Malicious Narcissism firefight ploy.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="a333-c848-45c1-02f2" shared="true" id="ad57-be97-1c68-b6aa"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Lightning claws" hidden="false" id="3ee5-a10b-1206-aa23">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1dda-6080-7b25-a341-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dda-6080-7b25-a341-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Lightning claws" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8459-4d73-5a79-d792">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Lethal 5+, Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ceaseless" id="a589-6af9-3ace-4deb" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+            <infoLink name="Lethal x+" id="d22d-6b2c-63c4-5d59" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+            <infoLink name="Rending" id="3b1e-6c9c-b6f9-466a" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Skysear" hidden="false" id="0f20-7e51-c7cc-715d">
+      <categoryLinks>
+        <categoryLink name="MURDERWING" hidden="false" id="5158-8894-e572-542e" targetId="7dbe-0bf6-fe90-8b68" primary="false"/>
+        <categoryLink name="Operative" hidden="false" id="edbd-5ed1-aa5a-a579" targetId="cf83-4496-b58e-ac82" primary="true"/>
+        <categoryLink name="Heretic Astartes" hidden="false" id="c789-bdfd-ca65-f1d3" targetId="3873-6aee-38ef-34cd" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="f3b5-83ca-d8d8-2068" targetId="13fe-a54f-f2f2-f034" primary="false"/>
+        <categoryLink name="Skysear" hidden="false" id="ae82-dcf2-274c-cdf2" targetId="330f-a28c-074a-3810" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Skysear" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="27b7-9199-9252-6de4">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="a333-c848-45c1-02f2" shared="true" id="f865-6867-920b-fad0"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="4aeb-d79d-3dcd-2eea" type="selectionEntry" targetId="8268-61f7-7d6c-f7d0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6488-b248-f40d-5a01-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6488-b248-f40d-5a01-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="053a-25f4-6d18-8c08">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c054-ee31-cf22-89a3-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c054-ee31-cf22-89a3-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f970-41ed-dffd-bb06">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Primary Weapon" id="5993-d329-25d8-5362" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="bdf9-fc83-2383-4339">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6087-92ab-5827-349c"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Meltagun" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b40b-5c92-e89e-ba01">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">6/3</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Devastating 4, Piercing 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Range x" id="3e74-a655-faa5-0703" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                <infoLink name="Devastating x" id="41f7-f321-afef-0768" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+                <infoLink name="Piercing x" id="da75-7f0a-9dc7-66d3" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Max Two" hidden="false" id="ef7f-2781-1b46-a46e" targetId="cd9b-78e8-feb8-c3c7" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="718f-9b00-2faf-4269">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e296-6aa2-518a-ee5a"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Plasma gun (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="66b4-6588-8acc-c7a6">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Plasma gun (supercharge)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5751-969e-7321-0833">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Hot, Lethal 5+, Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Hot" id="d1fc-8f27-4db3-9233" hidden="false" type="rule" targetId="ec63-40e6-6282-8420"/>
+                <infoLink name="Lethal x+" id="0bb9-2906-73a7-eb0b" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                <infoLink name="Piercing x" id="2126-053f-96dc-de7d" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Max Two" hidden="false" id="a305-8780-4fab-b84d" targetId="cd9b-78e8-feb8-c3c7" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="016f-d5ec-aba9-1f56">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f0c-e16d-e3ba-0181"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Flamer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f943-ca97-8542-8b6e">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Saturate, Torrent 2&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Range x" id="9809-0ab0-eddb-c305" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                <infoLink name="Saturate" id="7594-1b2a-ea25-c0dd" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+                <infoLink name="Torrent x" id="e903-c3c5-7a44-1705" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30dd-d802-343a-6b00-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30dd-d802-343a-6b00-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <categoryEntries>
+    <categoryEntry name="MURDERWING" id="7dbe-0bf6-fe90-8b68" hidden="false"/>
+    <categoryEntry name="Lord" id="82a4-39a8-9930-9074" hidden="false"/>
+    <categoryEntry name="Champion" id="cb18-ed0c-8048-e694" hidden="false"/>
+    <categoryEntry name="Max Two" id="cd9b-78e8-feb8-c3c7" hidden="false"/>
+    <categoryEntry name="Curseclaw" id="f716-d437-05ca-0e51" hidden="false"/>
+    <categoryEntry name="Depredator" id="3987-6304-92af-36b4" hidden="false"/>
+    <categoryEntry name="Huntmaster" id="d494-e199-752b-7cdf" hidden="false"/>
+    <categoryEntry name="Raptor" id="109e-dd46-7e12-e485" hidden="false"/>
+    <categoryEntry name="Shrieker" id="5276-e60d-f398-9e9f" hidden="false"/>
+    <categoryEntry name="Warp Talon" id="3d6f-24b2-38be-7318" hidden="false"/>
+    <categoryEntry name="Skysear" id="330f-a28c-074a-3810" hidden="false"/>
+  </categoryEntries>
+  <rules>
+    <rule name="Jump Pack" id="bd54-78ff-5f51-63ad" hidden="false">
+      <description>Whenever a friendly MURDERWING operative is performing the **Charge**, **Fall Back**, or **Reposition** action during its activation, at the start of any straight-line increment, as long as no part of its base is underneath Vantage terrain, it can do a **BOOST** for that increment. If it does, don&apos;t move it for that increment. Instead, remove it from the killzone and set it back up wholly within x&quot; horizontally of its original location. X is a distance of your choice (rounded up to the nearest inch, as per the **Reposition** action), but it&apos;s added to the total move distance used for that action (in other words, move plus **BOOST** cannot exceed the action&apos;s move allowance).
+
+
+That operative must be set up in a location it can be placed and cannot be set up with any part of its base underneath Vantage terrain. In addition, unless it&apos;s the **Charge** action, it cannot be set up within control range of an enemy operative. It can continue moving after a **BOOST** if it has any more distance remaining and the action allows it.
+
+
+In a killzone that uses the close quarters rules, e.g. Killzone: Tomb World, the x&quot; cannot be measured over or through Wall terrain, and that operative cannot be set up on the other side of an access point - in other words, it cannot **BOOST** through an open hatchway.</description>
+    </rule>
+    <rule name="Boost Actions" id="f2e6-851f-e0b0-5659" hidden="false">
+      <description>Some actions are known as **BOOST** actions. These are actions performed during other actions when a **BOOST** is used. Each operative cannot perform more than one **BOOST** action per activation/counteraction.
+
+
+Most **BOOST** actions affect enemy operatives within a friendly MURDERWING operative&apos;s **BOOST ZONE**. This is the horizontal area between a friendly operative&apos;s current location and the location from which it used **BOOST**. A marker the same size as the operative&apos;s base can be temporarily placed to help determine this. Enemy operatives with any part of their base underneath Vantage terrain are not within friendly MURDERWING operatives&apos; **BOOST ZONE**s.</description>
+    </rule>
+    <rule name="Astartes" id="e45b-1b08-acd1-ac46" hidden="false">
+      <description>During each friendly MURDERWING operative&apos;s activation, it can perform either two **Shoot** actions or two **Fight** actions. if it&apos;s two **Shoot** actions, a bolt pistol must be selected for at least one of them.
+
+
+Each friendly MURDERWING operative can counteract regardless of its order.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="8268-61f7-7d6c-f7d0">
+      <profiles>
+        <profile name="⌖ Bolt pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="48a2-6bd6-eb77-0f11">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="d5d2-89b4-4c5e-5da5" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="555d-b822-a5b9-f5c9">
+      <profiles>
+        <profile name="⌖ Plasma pistol (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="79f3-5248-cc47-08bd">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Piercing 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="⌖ Plasma pistol (supercharge)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d987-4a7e-7325-73a6">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Hot, Lethal 5+ Piercing 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="448a-42fe-190e-6455" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+        <infoLink name="Piercing x" id="6257-be6b-8a20-d137" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+        <infoLink name="Hot" id="a947-cee7-52de-aea1" hidden="false" type="rule" targetId="ec63-40e6-6282-8420"/>
+        <infoLink name="Lethal x+" id="e55f-3a1d-2422-3ee7" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Max Two" hidden="false" id="3c37-bbc0-615b-cd7a" targetId="cd9b-78e8-feb8-c3c7" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="421e-4906-2f24-3c0b">
+      <profiles>
+        <profile name="⚔ Power fist" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5567-b3c9-540f-3f90">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/7</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Brutal, Shock</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Brutal" id="e839-d19b-846f-a400" hidden="false" type="rule" targetId="5151-5449-ca81-70ed"/>
+        <infoLink name="Shock" id="32d1-77ce-401f-7a82" hidden="false" type="rule" targetId="c544-8d4c-4109-4eec"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="f62d-fa52-2043-1edd">
+      <profiles>
+        <profile name="⚔ Power weapon" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="45a0-9c5f-4de4-9cad">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lethal x+" id="56eb-8e7b-62b3-71be" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="f056-579a-3051-2ca7">
+      <profiles>
+        <profile name="⚔ Chainsword" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="26b8-b026-ad80-2126">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lightning claw" hidden="false" id="38cc-328b-2861-725b">
+      <profiles>
+        <profile name="⚔ Lightning claw" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6d2e-920f-30bd-b79a">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Rending</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lethal x+" id="ebbb-854f-e0ba-9c18" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+        <infoLink name="Rending" id="9901-9aa6-4c1a-ad91" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Equipment Reference" hidden="false" id="b72f-292e-62bb-8cb6" type="selectionEntry" targetId="e004-a0c4-8a03-0b8b">
+      <entryLinks>
+        <entryLink import="true" name="Faction Equipment" hidden="false" id="f17e-de5f-ed33-94c6" type="selectionEntryGroup" targetId="84e0-eab5-b365-f4b7"/>
+      </entryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Faction Equipment" id="84e0-eab5-b365-f4b7" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bladefins" hidden="false" id="6438-c483-0cd7-e8e4">
+          <profiles>
+            <profile name="Bladefins (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="5fab-695d-343d-b395">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **BOOST** action. Inflict D3+1 damage on one enemy operative within this operative&apos;s **BOOST ZONE**.
+
+
+◆ An operative cannot perform this action normally. Instead, it performs this action during the **Fall Back** or **Reposition** action after setting up from a **BOOST**. A **Depredator** operative cannot perform this action during the same activation in which it performed the **Carving Blow** action (or vice versa).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01ca-1549-4766-c249"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Clawed Armour" hidden="false" id="4785-7259-221f-974f">
+          <profiles>
+            <profile name="Clawed Armour (0AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="5f6c-6c8c-f72f-5fda">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **BOOST** action. Inflict 1 damage on one enemy operative within this operative&apos;s control range, then the **Charge** action ends.
+
+
+◆ An operative cannot perform this action normally. Instead, it performs this action during the **Charge** action after setting up from a **BOOST**.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d8b-2fbd-d9fa-8bc6"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp Fuel" hidden="false" id="dac4-5dda-ccde-4b7a">
+          <profiles>
+            <profile name="Warp Fuel" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="3a08-fed5-203e-8da5">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, when an enemy operative ends the **Fall Back** action during its activation, if at least one friendly MURDERWING operative was within its control range at the start of that action, you can use this rule. One of those friendly operatives can immediately perform a free **Reposition** or **Charge** action, but cannot use more than 3&quot; of move distance. Note that if the enemy operative doesn&apos;t perform the **Fall Back** action during its own activation, this has no effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cb3-227e-39f7-f4fa"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Vox-casters" hidden="false" id="3286-7172-1507-5bb9">
+          <profiles>
+            <profile name="Vox-casters" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="8601-2ed9-1eac-980f">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per turning point, one friendly MURDERWING operative can perform the Vox-cry unique action.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Vox-cry (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="e0f4-4e94-c6b7-06a8">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Each enemy operative within 3&quot; of this operative takes a stun test. For an operative to take a stun test, roll one D6: on a 3+, subtract 1 from its APL stat until the end of its next activation.
+
+
+◆ An operative cannot perform this action while it has a Conceal order.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="988b-bbd0-9d91-7a9d"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile name="Shape Reference" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="6b72-2485-e901-bfa4">
+      <characteristics>
+        <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">⌖</characteristic>
+        <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">⚔</characteristic>
+        <characteristic name="Save" typeId="3241-5548-12d6-f103">▶</characteristic>
+        <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">◆</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
