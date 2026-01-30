@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0e19-7ab2-c4a6-76e7" name="Canoptek Circle" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="6" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0e19-7ab2-c4a6-76e7" name="Canoptek Circle" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="6" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Kill Team" id="51a4-6a68-395e-cffe" hidden="false">
       <categoryLinks>
@@ -27,7 +27,7 @@ Whenever one of your **OBELISK NODE** markers is within 6&quot; horizontally of 
 
 
 Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATRIX**:
-- Weapons on its datacard have the Accurate 2 weapon rule.
+- Weapons on its datacard have the Accurate 1 weapon rule.
 - Add 1 to its APL stat (to a maximum of 3).</description>
     </rule>
   </rules>
@@ -68,14 +68,6 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
         <constraint type="min" value="1" field="selections" scope="51a4-6a68-395e-cffe" shared="true" id="a4c0-f9ec-9a63-767c-min"/>
         <constraint type="max" value="1" field="selections" scope="51a4-6a68-395e-cffe" shared="true" id="a4c0-f9ec-9a63-767c-max"/>
       </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Claws &amp; tail" hidden="false" id="e864-2a8e-0a35-b1e4" type="selectionEntry" targetId="d552-856b-5e97-064d">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="881f-d35f-6b0a-e6ac-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="881f-d35f-6b0a-e6ac-max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Atomiser beam" hidden="false" id="c4df-a146-d2f3-7c0e">
           <profiles>
@@ -96,6 +88,22 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
             <infoLink name="Range x" id="1b1e-9254-e08d-47a0" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
             <infoLink name="Lethal x+" id="05c5-25ec-553e-31d3" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Claws &amp; tail" hidden="false" id="2cb5-ff97-991b-e9ed">
+          <profiles>
+            <profile name="⚔ Claws &amp; tail" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="495a-abcf-029f-98de">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ce0-12c9-0278-e4bd-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ce0-12c9-0278-e4bd-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -321,7 +329,7 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
         </profile>
         <profile name="Aggressive Defence" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="c880-8b64-d753-4c96">
           <characteristics>
-            <characteristic name="Ability" typeId="3467-0678-083e-eb50">If this operative is incapacitated by an enemy operative within 2&quot; of it, roll one D3; on a 2+, inflict damage on that enemy operative equal to the result.</characteristic>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">If this operative is incapacitated by an enemy operative within 2&quot; of it, roll one D3; on a 2+, inflict 1 damage on that enemy operative.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -345,7 +353,7 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
                   <characteristics>
                     <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
                     <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
-                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
                     <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
                   </characteristics>
                 </profile>
@@ -361,7 +369,7 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
               <profiles>
                 <profile name="⌖ Tesla caster (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d234-531e-621d-f29d">
                   <characteristics>
-                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
                     <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
                     <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
                     <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
@@ -369,7 +377,7 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
                 </profile>
                 <profile name="⌖ Tesla caster (living lightning)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5ba4-e440-a1ba-e5e4">
                   <characteristics>
-                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
                     <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
                     <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
                     <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;</characteristic>
@@ -383,14 +391,24 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Claws &amp; tail" hidden="false" id="ec94-7084-ee65-45e1" type="selectionEntry" targetId="d552-856b-5e97-064d">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Claws &amp; tail" hidden="false" id="43b9-cc53-be7c-3cb2">
+          <profiles>
+            <profile name="⚔ Claws &amp; tail" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="cb1a-58f2-8462-d945">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64d1-8bda-a6d7-7f7a-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d1-8bda-a6d7-7f7a-max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="936e-fe92-3d69-7121-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="936e-fe92-3d69-7121-max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Geomancer" hidden="false" id="2e62-6dac-0191-0b43">
       <categoryLinks>
@@ -427,10 +445,10 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
         </profile>
         <profile name="Canoptek Control (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="e615-5d09-f165-88d8">
           <characteristics>
-            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly CANOPTEK CIRCLE CANOPTEK operative visible to and within 6&quot; of this operative. Alternatively, you can select one friendly CANOPTEK CIRCLE CANOPTEK operative that&apos;s visible to this operative and within your **OBELISK NODE MATRIX** (**SUPPORT** doesn&apos;t apply to this selection). That selected operative can immediately perform a 1AP action for free; it cannot move more than 2&quot; during that action.
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one friendly CANOPTEK CIRCLE CANOPTEK operative visible to and within 6&quot; of this operative. Alternatively, you can select one friendly CANOPTEK CIRCLE CANOPTEK operative that&apos;s visible to this operative and within your **OBELISK NODE MATRIX** (**SUPPORT** doesn&apos;t apply to this selection). That selected operative can immediately perform a 1AP action for free; during that action, it cannot move more than 2&quot; or must be set up wholly within 2&quot; if it&apos;s removed and set up again.
 
 
-◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+◆ This operative cannot perform this action while within control range of an enemy operative, or while counteracting.</characteristic>
           </characteristics>
         </profile>
         <profile name="Geomantic Disturbance (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="f431-e73f-dbba-eff0">
@@ -511,20 +529,6 @@ Whenever a friendly CANOPTEK CIRCLE operative is within your **OBELISK NODE MATR
       </characteristics>
     </profile>
   </sharedProfiles>
-  <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Claws &amp; tail" hidden="false" id="d552-856b-5e97-064d">
-      <profiles>
-        <profile name="⚔ Claws &amp; tail" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5a2b-29f3-a65d-8818">
-          <characteristics>
-            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
-            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
-            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
-            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Faction Equipment" id="49d4-1642-6ac5-6e1f" hidden="false">
       <selectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4f46-f795-734e-6076" name="Angels of Death" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4f46-f795-734e-6076" name="Angels of Death" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Angels of Death Kill Team" id="29d1-6036-644f-488a" hidden="false">
       <categoryLinks>
@@ -697,16 +697,6 @@
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="0888-b41b-0259-5cdb">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b15-0824-ac8d-8144" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heavy Intercessor Gunner" hidden="false" id="7b15-0824-ac8d-8144">
@@ -755,6 +745,25 @@
             <infoLink name="Torrent x" id="0abb-911a-b032-db1f" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="c7eb-02b0-ee93-7afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c95d-3ea3-0707-5521-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c95d-3ea3-0707-5521-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖  Bolt pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f1a8-836b-9821-d580">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="7fb2-997d-4c29-6bca" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <profiles>
         <profile name="Heavy Intercessor Gunner" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="f0e6-6648-0433-66a7">
@@ -774,16 +783,6 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
           </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="82d1-1da6-1898-1a2c">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="cdfb-b861-3871-5e22" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="default-force" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>

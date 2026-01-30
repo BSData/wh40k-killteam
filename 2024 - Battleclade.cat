@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="67c0-a22d-585b-3425" name="Battleclade" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="67c0-a22d-585b-3425" name="Battleclade" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Kill Team" id="bf0e-f3bd-7407-1eca" hidden="false">
       <categoryLinks>
@@ -36,8 +36,8 @@
   </categoryEntries>
   <rules>
     <rule name="Noospheric Network" id="61ca-86f8-fa9c-a067" hidden="false">
-      <description>Whenever a friendly BATTLECLADE SERVITOR operative is activated, you can TRANSFER POWER. If you do, subtract 1 from its APL stat until the end of that activation.
-After that activation, you can NETWORK COUNTERACT with one other friendly BATTLECLADE SERVITOR operative before your opponent activates. Whenever you NETWORK COUNTERACT with a friendly operative, first select its order. It can then perform a 1AP action for free, but cannot move. Once it&apos;s done so, your opponent then activates as normal.
+      <description>Once during each friendly BATTLECLADE SERVITOR operative&apos;s activation, before or after it performs an action, you can spend 1AP to TRANSFER POWER. If you do, subtract 1 from its APL stat until the end of that activation.
+After that activation, you can NETWORK COUNTERACT with one other friendly BATTLECLADE SERVITOR operative before your opponent activates. Whenever you NETWORK COUNTERACT with a friendly operative, first select its order. It can then perform a 1AP action for free, but cannot move more than 2&quot; during that activation. Once it&apos;s done so, your opponent then activates as normal.
 An operative cannot TRANSFER POWER or NETWORK COUNTERACT if it has an APL stat of less than 2 (e.g. if the stat has been changed to less than 2 by a rule). NETWORK COUNTERACT is a counteraction, but the operative doesn&apos;t need to be expended with an Engage order to do it. That means if they&apos;re ready when they NETWORK COUNTERACT, they can still be activated as normal later in the turning point. An operative that does NETWORK COUNTERACT cannot do so again, or counteract, during the same turning point.</description>
     </rule>
   </rules>
@@ -389,12 +389,13 @@ An operative cannot TRANSFER POWER or NETWORK COUNTERACT if it has an APL stat o
                     <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
                     <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
                     <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
-                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Severe</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 1, Severe</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Severe" id="85c7-6b2e-bb7a-76a1" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+                <infoLink name="Blast x" id="c051-317e-7ba5-fe53" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -572,16 +573,16 @@ An operative cannot TRANSFER POWER or NETWORK COUNTERACT if it has an APL stat o
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
           </characteristics>
         </profile>
-        <profile name="Noospheric Spur (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="0272-b170-04bc-d5fa">
-          <characteristics>
-            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ SUPPORT. Select one friendly BATTLECLADE SERVITOR operative within 6&quot; of either this operative or a friendly BATTLECLADE AUTO-PROXY operative to immediately perform a free **Dash** action. You cannot select each friendly SERVITOR operative for this rule more than once per turning point. For the purposes of the Comms Device universal equipment, the operative the distance is being determined from must control that marker.
-◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Network Override (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="a71c-76a8-054c-b456">
           <characteristics>
             <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ SUPPORT. Select one friendly BATTLECLADE SERVITOR operative within 6&quot; of either this operative or a friendly BATTLECLADE AUTO-PROXY operative to immediately NETWORK COUNTERACT (you don&apos;t have to TRANSFER POWER to do so). Continue this operative&apos;s activation after doing so. For the purposes of the Comms Device universal equipment, the operative the distance is being determined from must control that marker.
 ◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Datacoronal Accumulator (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="2032-bc3f-cb52-9d74">
+          <characteristics>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Determine the friendly BATTLECLADE operatives within 6&quot; of this operative and/or a friendly BATTLECLADE AUTO-PROXY operative, then roll one D3. If the result is equal to or less than the number of objective markers those friendly operatives contest, you gain 1CP. For the purposes of the Comms Device universal equipment, the operative the distance is being determined from must control your Comms Device marker to add 3&quot; to its distance requirement for this rule.
+◆ This operative cannot perform this action while within control range of an enemy operative</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -667,7 +668,7 @@ An operative cannot TRANSFER POWER or NETWORK COUNTERACT if it has an APL stat o
           <profiles>
             <profile name="Electromantic Capacitors" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="3ebb-ac6e-15b1-8e17">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Friendly BATTLECLADE operatives&apos; melee weapons have the Shock weapon rule. Whenever a ready friendly BATTLECLADE operative is retaliating, its melee weapons also have the Severe weapon rule.</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Friendly BATTLECLADE operatives&apos; melee weapons have the Shock weapon rule. Whenever a friendly BATTLECLADE operative is retaliating, its melee weapons also have the Severe weapon rule.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -698,7 +699,7 @@ An operative cannot TRANSFER POWER or NETWORK COUNTERACT if it has an APL stat o
           <profiles>
             <profile name="Neurocyclic Reserve Cells" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="81ef-5d18-fb18-8e99">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">After revealing this equipment option, roll one D3. A number of times during the battle equal to the result, whenever you TRANSFER POWER, you can use this rule. If you do, don&apos;t subtract 1 from the operative&apos;s APL stat, but it cannot perform **Fight** or **Shoot** actions during that activation (this takes precedence over the normal Noospheric Network rules).</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">After revealing this equipment option, roll one D3. A number of times during the battle equal to the result, whenever you TRANSFER POWER, you can use this rule. If you do, you can TRANSFER POWER for 0AP (this takes precedence over the normal Noospheric Network rules).</characteristic>
               </characteristics>
             </profile>
           </profiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c521-ad27-44df-f959" name="Warhammer 40,000: Kill Team (2024)" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Operative" id="cf83-4496-b58e-ac82"/>
     <categoryEntry name="Configuration" id="874b-0390-e5e2-1daa" hidden="false"/>
@@ -407,6 +407,18 @@ Once per action, whenever an operative is climbing the terrain feature a ladder 
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="932d-19bb-8399-278d"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Breaching Charge" hidden="false" id="e2db-dc95-fe6b-f4ff">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be8e-55ab-b94c-2041"/>
+          </constraints>
+          <profiles>
+            <profile name="Breaching Charge" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="bee4-dcd3-62a0-f446">
+              <characteristics>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Once per battle, when a friendly operative performs the **Breach** action, you can use this rule. If you do, that operative can perform that action for 1 less AP (to a minimum of 1AP) as though it had the word ‘breach marker’ on its datacard.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

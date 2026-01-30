@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="58da-24b8-ca3c-2bf4" name="Hearthkyn Salvagers" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="58da-24b8-ca3c-2bf4" name="Hearthkyn Salvagers" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Hearthkyn Salvagers Kill Team" id="3b00-8c53-49bb-edf1" hidden="false">
       <categoryLinks>
@@ -641,11 +641,6 @@
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
           </characteristics>
         </profile>
-        <profile name="Tactician" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="e5e4-ea94-39bc-222b">
-          <characteristics>
-            <characteristic name="Ability" typeId="3467-0678-083e-eb50">**STRATEGIC GAMBIT**. Place either your Attack or Defence marker in the killzone. Whenever a friendly **HEARTHKYN SALVAGER** operative is shooting against, fighting against or retaliating against an enemy operative that’s within 3&quot; of your Attack marker, you can re-roll one of your attack dice. Whenever an enemy operative is shooting a friendly **HEARTHKYN SALVAGER** operative that’s within 3&quot; of your Defence marker, you can re-roll one of your defence dice. In the Ready step of the next Strategy phase, remove that marker.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Accelerated Appraisal (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="e4ce-8bd2-a094-30da">
           <characteristics>
             <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ If your Attack or Defence marker is in the killzone, remove it. 
@@ -674,6 +669,24 @@
         <categoryLink name="Kognitâar" hidden="false" id="a285-5edc-2802-3629" targetId="f0a3-995d-0420-8d3a" primary="false"/>
         <categoryLink name="Operative" hidden="false" id="2aa6-c509-6413-ef10" targetId="cf83-4496-b58e-ac82" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Tactician" hidden="false" id="d23a-7b3b-b445-a5ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66a9-a7c0-bebe-fe3c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66a9-a7c0-bebe-fe3c-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Tactician" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="e5e4-ea94-39bc-222b">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">**STRATEGIC GAMBIT**. Place either your Attack or Defence marker in the killzone. Whenever a friendly **HEARTHKYN SALVAGER** operative is shooting against, fighting against or retaliating against an enemy operative that’s within 3&quot; of your Attack marker, that friendly operative&apos;s weapons have the Balanced weapon rule. Whenever an enemy operative is shooting a friendly **HEARTHKYN SALVAGER** operative that’s within 3&quot; of your Defence marker, you can re-roll one of your defence dice. In the Ready step of the next Strategy phase, remove that marker.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Balanced" id="4e5b-9b9c-cd6e-5a10" hidden="false" type="rule" targetId="28f7-0d96-d1fc-f75b"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Locâtr" hidden="false" id="9c51-33c2-34f5-2ff4">
       <profiles>
@@ -975,7 +988,9 @@
               <profiles>
                 <profile name="Climbing Rigs" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="77e9-7360-2782-7c66">
                   <characteristics>
-                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever a friendly **HEARTHKYN SALVAGER** operative is climbing, treat the vertical distance as 1&quot; less (to a minimum of 2&quot;). Note this has no effect when using ladder equipment terrain, which treats the vertical distance as 1&quot; (but would have an effect if the operative then continued climbing another terrain feature).</characteristic>
+                    <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">During each friendly HEARTHKYN SALVAGER operative’s activation, you can do one of the following:
+- When that operative is climbing up, you can treat the vertical distance as 2&quot; (regardless of how far the operative actually moves vertically).
+- When that operative is dropping, ignore the vertical distance.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1026,5 +1041,5 @@
       <description>Whenever an enemy operative incapacitates a friendly **HEARTHKYN SALVAGER** operative, that enemy operative gains one of your Grudge tokens for the battle. Whenever a friendly **HEARTHKYN SALVAGER** operative is shooting against, fighting against or retaliating against an enemy operative, for each of your Grudge tokens that enemy operative has, you can retain one of your normal successes as a critical success instead (including any normal successes already retained as a result of the Accurate weapon rule). Note that Grudge tokens aren’t removed when you do this.</description>
     </rule>
   </rules>
-  <comment>Update 1.1</comment>
+  <comment>January &apos;26</comment>
 </catalogue>

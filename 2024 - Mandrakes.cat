@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d8d1-628b-09cd-d8a1" name="Mandrakes" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d8d1-628b-09cd-d8a1" name="Mandrakes" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Mandrakes Kill Team" id="17ea-f702-f043-880b" hidden="false">
       <categoryLinks>
@@ -33,7 +33,7 @@
           <profiles>
             <profile name="Chain Snare" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="6696-bf92-4928-86c1">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever an enemy operative would perform the **Fall Back** action while within control range of a friendly **MANDRAKE** operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation/counteraction (no AP are spent on it).</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever an enemy operative would perform the **Fall Back** action while within control range of a friendly **MANDRAKE** operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation/counteraction (no AP are spent on it), and you cannot use this rule again during this turning point.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -120,7 +120,7 @@
         </profile>
         <profile name="Harrowing Whispers" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="26ee-7fff-7d5d-de8b">
           <characteristics>
-            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever your opponent would activate an enemy operative within 6&quot; of this operative, you can roll one D6 (you cannot do so if you also interrupted that operative&apos;s activation with the DIRGEMAW operative&apos;s Haunting Focus additional rule during this turning point): if the result is higher than that enemy operative’s APL stat, they cannot activate it during this activation. If there are no other enemy operatives eligible to be activated, this rule has no effect.</characteristic>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever your opponent would activate an enemy operative within 6&quot; of this operative, you can roll one D6 (you cannot do so if you already also interrupted that operative&apos;s activation with this rule or with the DIRGEMAW operative&apos;s Haunting Focus additional rule during this turning point): if the result is higher than that enemy operative’s APL stat, they cannot activate it during this activation. If there are no other enemy operatives eligible to be activated, this rule has no effect.</characteristic>
           </characteristics>
         </profile>
         <profile name="Oubliex" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="2a99-4e4b-6bdd-bcd3">
@@ -240,15 +240,8 @@
         <categoryLink name="Drukhari" hidden="false" id="161e-9a44-3623-fb02" targetId="8d1d-7ab8-e1c9-6d51" primary="false"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="e2bb-5435-d8f8-5b58" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="17ea-f702-f043-880b" shared="true" id="72d0-ddb4-f1fd-b1d6" includeChildSelections="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="e2bb-5435-d8f8-5b58">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="17ea-f702-f043-880b" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Mandrake Chooser of the Flesh" hidden="false" id="0ef0-e701-4c07-362d">
       <categoryLinks>
@@ -259,15 +252,8 @@
         <categoryLink name="Drukhari" hidden="false" id="bb48-97f9-dd68-8e11" targetId="8d1d-7ab8-e1c9-6d51" primary="false"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="a785-e307-ba44-6e6d" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="17ea-f702-f043-880b" shared="true" id="57fa-be4c-b684-d516" includeChildSelections="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="a785-e307-ba44-6e6d">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="17ea-f702-f043-880b" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Mandrake Chooser of the Flesh" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="e378-c5b4-9180-7db1">
           <characteristics>
@@ -327,15 +313,8 @@
         <categoryLink name="Dirgemaw" hidden="false" id="a505-de4a-fe2d-ad90" targetId="3211-7529-e3f4-67c1" primary="false"/>
         <categoryLink name="Drukhari" hidden="false" id="c6f1-44bf-f8a0-d414" targetId="8d1d-7ab8-e1c9-6d51" primary="false"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="1" field="d3c6-7660-ee43-09cb">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="17ea-f702-f043-880b" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d3c6-7660-ee43-09cb"/>
+        <constraint type="max" value="1" field="selections" scope="17ea-f702-f043-880b" shared="true" id="d046-592d-347a-2aaf" includeChildSelections="true"/>
       </constraints>
       <profiles>
         <profile name="Mandrake Dirgemaw" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="df97-31fc-0fe0-368b">
@@ -353,7 +332,7 @@
         </profile>
         <profile name="Pareidolic Projection (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="1181-9785-c5ab-984e">
           <characteristics>
-            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative that’s a valid target for this operative or is **WITHIN SHADOW**. Until the start of this operative’s next activation, until it’s incapacitated or until it performs this action again (whichever comes first), worsen the Hit stat of that enemy operative’s weapons by 1 and subtract 2&quot; from its Move stat (these aren’t cumulative with being injured); in addition, that enemy operative’s APL stat cannot be added to (remove all positive APL stat changes it has).
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative that’s a valid target for this operative or is **WITHIN SHADOW**. Until the start of this operative’s next activation, until it’s incapacitated or until it performs this action again (whichever comes first), worsen the Hit stat of that enemy operative’s weapons by 1 and subtract 2&quot; from its Move stat (these aren’t cumulative with being injured).
 ◆ This operative cannot perform this action while within control range of an enemy operative, unless the only enemy operative it’s within control range of is selected for this action.</characteristic>
           </characteristics>
         </profile>
@@ -406,15 +385,8 @@
         <categoryLink name="Aeldari" hidden="false" id="bbb4-8ef7-b3e7-e591" targetId="25a4-f061-4504-4920" primary="false"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="39d1-b2ac-a771-387f"/>
+        <constraint type="max" value="1" field="selections" scope="17ea-f702-f043-880b" shared="true" id="39d1-b2ac-a771-387f" includeChildSelections="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="39d1-b2ac-a771-387f">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="17ea-f702-f043-880b" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Mandrake Shadeweaver" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="3cb1-7155-aae8-7e0f">
           <characteristics>

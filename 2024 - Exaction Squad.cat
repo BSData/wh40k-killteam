@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="14cd-959e-52b3-cb9b" name="Exaction Squad" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="14cd-959e-52b3-cb9b" name="Exaction Squad" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Exaction Squad Kill Team" id="9cde-12b6-9842-cfa8" hidden="false">
       <categoryLinks>
@@ -367,7 +367,7 @@
           <profiles>
             <profile name="Spot (1AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="5e76-9cad-ae8e-4f96">
               <characteristics>
-                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ **SUPPORT**. Select one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly **EXACTION SQUAD** operative within 3&quot; of this operative is shooting that enemy operative, you can use this effect. If you do:
+                <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one enemy operative visible to and within 8&quot; this operative. Until the end of the turning point, whenever a friendly **EXACTION SQUAD** operative is shooting that enemy operative, you can use this effect. If you do:
 - That friendly operative’s ranged weapons have the Seek Light weapon rule.
 - That enemy operative cannot be obscured.
 ◆ This operative cannot perform this action while within control range of an enemy operative.</characteristic>
@@ -667,14 +667,14 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Grenade launcher" hidden="false" id="326c-fc08-ef74-6517">
               <constraints>
-                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="8f3c-d38a-40af-cccf" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="9cde-12b6-9842-cfa8" shared="true" id="8f3c-d38a-40af-cccf" includeChildSelections="true"/>
               </constraints>
               <profiles>
                 <profile name="⌖ Grenade launcher" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a53e-d6aa-f8ea-eaf7">
                   <characteristics>
-                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
                     <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
-                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
                     <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
                   </characteristics>
                 </profile>
@@ -682,17 +682,10 @@
               <infoLinks>
                 <infoLink name="Piercing x" id="57fa-5c13-777c-3cce" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
               </infoLinks>
-              <modifiers>
-                <modifier type="set" value="1" field="8f3c-d38a-40af-cccf">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cde-12b6-9842-cfa8" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Heavy stubber" hidden="false" id="000a-75f2-e0c0-f8af">
               <constraints>
-                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="4a94-66eb-cc49-b1e3" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="9cde-12b6-9842-cfa8" shared="true" id="e202-709b-295f-1057" includeChildSelections="true"/>
               </constraints>
               <profiles>
                 <profile name="⌖ Heavy stubber (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ce87-ba74-156c-230e">
@@ -716,17 +709,10 @@
                 <infoLink name="Heavy" id="ad4c-4da8-8c87-1c60" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
                 <infoLink name="Torrent x" id="61a7-69ab-1aae-b041" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
               </infoLinks>
-              <modifiers>
-                <modifier type="set" value="1" field="4a94-66eb-cc49-b1e3">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cde-12b6-9842-cfa8" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Webber" hidden="false" id="eee0-28df-a98c-1f02">
               <constraints>
-                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="38d5-5c12-b54c-636d" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="9cde-12b6-9842-cfa8" shared="true" id="d1ad-6c79-8081-7a0c" includeChildSelections="true"/>
               </constraints>
               <profiles>
                 <profile name="⌖ Webber" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a15f-a27a-222f-5755">
@@ -743,13 +729,6 @@
                 <infoLink name="Severe" id="1f22-d4d3-e413-4748" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
                 <infoLink name="Stun" id="41c8-ac6b-17de-eae7" hidden="false" type="rule" targetId="5ae2-3f29-8635-fd02"/>
               </infoLinks>
-              <modifiers>
-                <modifier type="set" value="1" field="38d5-5c12-b54c-636d">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cde-12b6-9842-cfa8" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -782,7 +761,7 @@
         </profile>
         <profile name="R-VR Command (0AP)" typeId="8f2a-d3d6-1a0c-7fa3" typeName="Unique Actions" hidden="false" id="0322-ae82-6806-4f00">
           <characteristics>
-            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly **EXACTION SQUAD R-VR CYBER-MASTIFF** operative and change its attack pattern.</characteristic>
+            <characteristic name="Unique Action" typeId="ba93-e32d-f1ac-e188">▶ Select one friendly **EXACTION SQUAD R-VR CYBER-MASTIFF** operative and change one of its attack patterns.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -811,7 +790,7 @@
           <profiles>
             <profile name="Attack Pattern" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="259e-79a6-75f9-f804">
               <characteristics>
-                <characteristic name="Ability" typeId="3467-0678-083e-eb50">**STRATEGIC GAMBIT** in the first turning point. Select one of the following attack patterns for a friendly **EXACTION SQUAD R-VR CYBER-MASTIFF** operative to have for the battle:
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">**STRATEGIC GAMBIT** in the first turning point. Select two of the following attack patterns for a friendly **EXACTION SQUAD R-VR CYBER-MASTIFF** operative to have for the battle:
 - Aggressive: Its melee weapons have the Relentless weapon rule.
 - Swift: Add 2&quot; to its Move stat.
 - Defensive: Improve its Save stat by 1.</characteristic>
@@ -1058,7 +1037,7 @@
           <profiles>
             <profile name="Manacles" typeId="0d20-7175-9ecb-8bde" typeName="Equipment" hidden="false" id="e44e-101b-ad3a-0b2b">
               <characteristics>
-                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever an enemy operative would perform the **Fall Back** action while within control range of a friendly **EXACTION SQUAD** operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation or counteraction (no AP are spent on it).</characteristic>
+                <characteristic name="Equipment" typeId="0e12-ef21-83f3-9fc6">Whenever an enemy operative would perform the **Fall Back** action while within control range of a friendly **EXACTION SQUAD** operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation or counteraction (no AP are spent on it), and you cannot use this rule again during this turning point.</characteristic>
               </characteristics>
             </profile>
           </profiles>
