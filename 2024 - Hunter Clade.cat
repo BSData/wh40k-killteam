@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2a57-e709-8451-610a" name="Hunter Clade" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2a57-e709-8451-610a" name="Hunter Clade" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType name="Doctrina Imperatives" id="c7e7-80f7-a912-1eec" hidden="false">
       <characteristicTypes>
@@ -31,33 +31,34 @@
         <categoryLink name="Reference" hidden="false" id="78b6-7e4a-fbf0-6876" targetId="b318-a8d7-2d38-99a3" primary="false"/>
         <categoryLink name="Leader" hidden="false" id="7ce8-2a20-fbe4-6da3" targetId="d999-8cad-8145-4efe" primary="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5d69-06ce-9e74-1878" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d69-06ce-9e74-1878" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="866b-997a-3d74-602d" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Operative" hidden="false" id="4d05-68ab-9a1a-8e8f" targetId="cf83-4496-b58e-ac82" primary="false">
           <constraints>
             <constraint type="max" value="9" field="selections" scope="force" shared="true" id="a6eb-d72c-9d94-7c2b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="9" field="selections" scope="force" shared="true" id="b2d7-1584-e01a-afae" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="b2d7-1584-e01a-afae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Diktat" hidden="false" id="a9a1-4e1a-8096-8134" targetId="9fa7-f36f-0f97-216b" primary="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2cf9-7f23-0a61-b0b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cf9-7f23-0a61-b0b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Sicarian" hidden="false" id="a96e-1408-be44-2eb9" targetId="bf2c-0f37-ac1a-a88f" primary="false">
           <constraints>
-            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="e5c5-c5f7-f69b-3838" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="e5c5-c5f7-f69b-3838" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Surveyor" hidden="false" id="03d9-f4fb-901c-c0fb" targetId="bfc8-f580-1682-87cd" primary="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4dfb-b867-f257-0b14" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dfb-b867-f257-0b14" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Six of" hidden="false" id="7a7c-f914-b774-976d" targetId="164a-966e-3c09-149f">
+        <categoryLink name="Seven of" hidden="false" id="7a7c-f914-b774-976d" targetId="164a-966e-3c09-149f">
           <constraints>
-            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="67b6-09c8-0f0d-2b65" includeChildSelections="false"/>
+            <constraint type="max" value="7" field="selections" scope="force" shared="true" id="67b6-09c8-0f0d-2b65" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -109,16 +110,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arc rifle" hidden="false" id="38d7-d953-1ae8-76a3" collective="false">
-      <modifiers>
-        <modifier type="set" value="1" field="d5c7-ec39-434d-894d">
-          <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e83b-53d9-c0dd-524b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d5c7-ec39-434d-894d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="1cc2-61e8-74b6-4363" shared="true" id="d5c7-ec39-434d-894d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <profiles>
         <profile name="⌖ Arc rifle" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="8b41-33be-6d6c-5c88">
@@ -248,16 +242,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma caliver" hidden="false" id="d670-e96c-1afc-90da" collective="false">
-      <modifiers>
-        <modifier type="set" value="1" field="4ad2-9baf-9571-cba8">
-          <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efb5-8452-a7de-04df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="4ad2-9baf-9571-cba8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="1cc2-61e8-74b6-4363" shared="true" id="4ad2-9baf-9571-cba8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <profiles>
         <profile name="⌖ Plasma caliver - Supercharge" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e335-8329-d132-ac00">
@@ -372,15 +359,8 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Transuranic arquebus" hidden="false" id="39dc-53a3-f2eb-6924" collective="false">
-      <modifiers>
-        <modifier type="set" value="1" field="af80-80b9-4210-d1ea">
-          <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="af80-80b9-4210-d1ea" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="1cc2-61e8-74b6-4363" shared="true" id="af80-80b9-4210-d1ea" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <profiles>
         <profile name="⌖ Transuranic arquebus (mobile)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="697d-5380-d029-25b5">
@@ -470,15 +450,8 @@
         <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="f8b3-0cbd-aa35-04a4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="1cc2-61e8-74b6-4363" shared="true" id="f8b3-0cbd-aa35-04a4" includeChildSelections="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="f8b3-0cbd-aa35-04a4">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink name="Control Protocol" id="85e1-170f-b4ff-7f4f" hidden="false" type="profile" targetId="fc5b-7346-3242-f6d0"/>
       </infoLinks>
@@ -533,15 +506,8 @@
         <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="f777-9e5b-0894-e1f8" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="1cc2-61e8-74b6-4363" shared="true" id="f777-9e5b-0894-e1f8" includeChildSelections="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="f777-9e5b-0894-e1f8">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink name="Control Protocol" id="b6e9-bd1c-7771-48b8" hidden="false" type="profile" targetId="fc5b-7346-3242-f6d0"/>
       </infoLinks>
@@ -554,11 +520,6 @@
             <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
             <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Control Edict" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="f68c-7fc0-9543-a356">
-          <characteristics>
-            <characteristic name="Ability" typeId="3467-0678-083e-eb50"/>
           </characteristics>
         </profile>
       </profiles>
@@ -676,18 +637,45 @@
         <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="b9ef-42c7-795e-fe03" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="1cc2-61e8-74b6-4363" shared="true" id="b9ef-42c7-795e-fe03" includeChildSelections="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="b9ef-42c7-795e-fe03">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink name="Control Protocol" id="1114-57b7-1314-e9b6" hidden="false" type="profile" targetId="fc5b-7346-3242-f6d0"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Canticle of Elimination" hidden="false" id="bae6-d546-7ae2-5706">
+          <profiles>
+            <profile name="Canticle of Elimination" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="f68c-7fc0-9543-a356">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever a friendly HUNTER CLADE RANGER operative is within 3&quot; of this operative, that friendly operative&apos;s ranged weapons have the Punishing weapon rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1da0-d93f-0a5d-e13f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1da0-d93f-0a5d-e13f-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Punishing" id="9e65-a549-1e6d-f9d6" hidden="false" type="rule" targetId="4805-d37d-3ff2-5c9e"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Targeting Protocol" hidden="false" id="08d4-2e76-008e-9064">
+          <profiles>
+            <profile name="Targeting Protocol" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="c606-fa79-b6b7-b1fe">
+              <characteristics>
+                <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is shooting, if it hasn’t moved during the activation, or if it’s a counteraction, ranged weapons on its datacard have the Lethal 5+ weapon rule. Note this operative isn’t restricted from moving after shooting.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ea2-5150-fb71-5a07-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ea2-5150-fb71-5a07-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="24db-54f9-a6fb-6573" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Skitarii Vanguard Alpha" hidden="false" id="f8c0-100f-450a-ec6b" collective="false">
       <profiles>
@@ -822,15 +810,8 @@
       <costs>
         <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="1" field="2a61-b53b-729d-bc5c">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="2a61-b53b-729d-bc5c" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="1cc2-61e8-74b6-4363" shared="true" id="df41-26a0-7698-6eb3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Skitarii Vanguard Gunner" hidden="false" id="92cc-0a9c-eacd-4ba6" collective="false">
@@ -851,7 +832,7 @@
         <categoryLink name="HUNTER CLADE" hidden="false" id="dbdf-d878-f0ea-953a" targetId="606f-85a8-c32d-f5f3" primary="false"/>
         <categoryLink name="Adeptus Mechanicus" hidden="false" id="571f-9ce0-8305-7531" targetId="f282-583b-d61e-c0bc" primary="false"/>
         <categoryLink name="Operative" hidden="false" id="fc4b-a3f4-6a51-7293" targetId="cf83-4496-b58e-ac82" primary="true"/>
-        <categoryLink name="Six of" hidden="false" id="1dec-6b59-ed1e-0b45" targetId="164a-966e-3c09-149f" primary="false"/>
+        <categoryLink name="Seven of" hidden="false" id="1dec-6b59-ed1e-0b45" targetId="164a-966e-3c09-149f" primary="false"/>
         <categoryLink name="Skitarii" hidden="false" id="144d-21f1-876a-4234" targetId="df67-648b-b610-bc82" primary="false"/>
         <categoryLink name="Gunner" hidden="false" id="ceb3-753f-ace6-e84c" targetId="3033-7558-d28f-53cf" primary="false"/>
         <categoryLink name="Vanguard" hidden="false" id="6458-c88c-a3e3-151a" targetId="5fa9-04a0-895d-4576" primary="false"/>
@@ -879,16 +860,6 @@
       <costs>
         <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="6" field="c249-38d0-411d-44d5">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="c249-38d0-411d-44d5" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sicarian Infiltrator Warrior" hidden="false" id="1266-140a-962b-0053" collective="false">
       <profiles>
@@ -908,7 +879,7 @@
         <categoryLink name="Sicarian" hidden="false" id="583a-8582-3b82-cf8b" targetId="bf2c-0f37-ac1a-a88f" primary="false"/>
         <categoryLink name="Infiltrator" hidden="false" id="0aaa-9225-2b3f-4f4f" targetId="b4a9-81f3-3b48-b09d" primary="false"/>
         <categoryLink name="Warrior" hidden="false" id="1459-556e-e217-68c1" targetId="2b69-f2aa-bd5c-70b2" primary="false"/>
-        <categoryLink name="Six of" hidden="false" id="005b-f5ab-a5c7-46e8" targetId="164a-966e-3c09-149f" primary="false"/>
+        <categoryLink name="Seven of" hidden="false" id="005b-f5ab-a5c7-46e8" targetId="164a-966e-3c09-149f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Ranged weapon" id="68d2-939d-3ca7-3e96" hidden="false" collective="false" import="true" defaultSelectionEntryId="none" sortIndex="2">
@@ -935,28 +906,8 @@
       <costs>
         <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="6" field="72d3-752b-3a21-f516">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="72d3-752b-3a21-f516" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Skitarii Ranger Warrior" hidden="false" id="3643-747e-7759-a69a" collective="false">
-      <modifiers>
-        <modifier type="set" value="9" field="f390-e32a-5ed4-8a14">
-          <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="f390-e32a-5ed4-8a14" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
       <infoLinks>
         <infoLink name="Targeting Protocol" id="0544-3c32-95f2-51a9" hidden="false" type="profile" targetId="b052-232d-e8da-ae1a"/>
       </infoLinks>
@@ -1016,7 +967,7 @@
         <categoryLink name="Operative" hidden="false" id="7c35-2a98-c6f8-bf2b" targetId="cf83-4496-b58e-ac82" primary="true"/>
         <categoryLink name="Sicarian" hidden="false" id="67ee-50fb-30b6-94b3" targetId="bf2c-0f37-ac1a-a88f" primary="false"/>
         <categoryLink name="Warrior" hidden="false" id="482a-9412-f0c8-62a5" targetId="2b69-f2aa-bd5c-70b2" primary="false"/>
-        <categoryLink name="Six of" hidden="false" id="4d58-a601-021d-9d88" targetId="164a-966e-3c09-149f" primary="false"/>
+        <categoryLink name="Seven of" hidden="false" id="4d58-a601-021d-9d88" targetId="164a-966e-3c09-149f" primary="false"/>
         <categoryLink name="Ruststalker" hidden="false" id="b496-2ec7-ad8c-860f" targetId="54fd-2e51-0139-ad67" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -1062,27 +1013,10 @@
       <costs>
         <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="9" field="2061-255a-aaac-c317">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="2061-255a-aaac-c317" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Skitarii Vanguard Surveyor" hidden="false" id="42c9-606b-7f69-fc0d" collective="false">
-      <modifiers>
-        <modifier type="set" value="1" field="8491-846d-e214-0091">
-          <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="8491-846d-e214-0091" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="1cc2-61e8-74b6-4363" shared="true" id="e209-8c1b-17c0-6c8d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="Rad-Saturation" id="a009-eb45-b2ea-28dd" hidden="false" type="profile" targetId="056b-be63-a6c5-0113"/>
@@ -1123,15 +1057,8 @@
       </profiles>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Skitarii Vanguard Diktat" hidden="false" id="dfa1-40f5-b58f-5ac9" collective="false">
-      <modifiers>
-        <modifier type="set" value="1" field="4467-f423-04c3-878b">
-          <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="4467-f423-04c3-878b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="1cc2-61e8-74b6-4363" shared="true" id="a575-60b2-1b5d-2d2f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="Signal" id="6d00-ffd7-63bf-f6d8" hidden="false" type="profile" targetId="d95b-2a81-3f0c-06a5"/>
@@ -1189,7 +1116,7 @@
         <categoryLink name="HUNTER CLADE" hidden="false" id="de5b-5af3-9b5a-312a" targetId="606f-85a8-c32d-f5f3" primary="false"/>
         <categoryLink name="Adeptus Mechanicus" hidden="false" id="ccf6-9e3f-75ff-ef10" targetId="f282-583b-d61e-c0bc" primary="false"/>
         <categoryLink name="Operative" hidden="false" id="25cd-08fe-8ace-a828" targetId="cf83-4496-b58e-ac82" primary="true"/>
-        <categoryLink name="Six of" hidden="false" id="409f-3a27-214d-8740" targetId="164a-966e-3c09-149f" primary="false"/>
+        <categoryLink name="Seven of" hidden="false" id="409f-3a27-214d-8740" targetId="164a-966e-3c09-149f" primary="false"/>
         <categoryLink name="Skitarii" hidden="false" id="bcb9-1fb9-8004-b5fc" targetId="df67-648b-b610-bc82" primary="false"/>
         <categoryLink name="Ranger" hidden="false" id="dba9-a1e6-f814-9f29" targetId="4ead-29c6-f9b1-bdc8" primary="false"/>
         <categoryLink name="Gunner" hidden="false" id="9c1b-f419-c384-6416" targetId="3033-7558-d28f-53cf" primary="false"/>
@@ -1217,27 +1144,10 @@
       <costs>
         <cost name="EP" typeId="c61a-51a3-370d-bf55" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="6" field="09c3-416b-4957-0d72">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="09c3-416b-4957-0d72" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Skitarii Ranger Surveyor" hidden="false" id="176b-acfd-565c-3266" collective="false">
-      <modifiers>
-        <modifier type="set" value="1" field="5e71-5886-63f6-dc44">
-          <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5e71-5886-63f6-dc44" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="1cc2-61e8-74b6-4363" shared="true" id="a22e-7301-4c3f-859a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="Targeting Protocol" id="b9a8-b3b9-552f-f4f4" hidden="false" type="profile" targetId="b052-232d-e8da-ae1a"/>
@@ -1278,16 +1188,6 @@
       </profiles>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Skitarii Vanguard Warrior" hidden="false" id="7c83-f70d-3a33-c99c" collective="false">
-      <modifiers>
-        <modifier type="set" value="9" field="3976-024f-3df9-427b">
-          <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="3976-024f-3df9-427b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
       <infoLinks>
         <infoLink name="Rad-Saturation" id="4c7c-e65e-aaf7-3962" hidden="false" type="profile" targetId="056b-be63-a6c5-0113"/>
       </infoLinks>
@@ -1326,15 +1226,8 @@
       </profiles>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Skitarii Ranger Diktat" hidden="false" id="614b-b273-0f15-a123" collective="false">
-      <modifiers>
-        <modifier type="set" value="1" field="a1cc-a40d-a35f-71b1">
-          <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="force" childId="1cc2-61e8-74b6-4363" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="a1cc-a40d-a35f-71b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="1cc2-61e8-74b6-4363" shared="true" id="a1cc-a40d-a35f-71b1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="Targeting Protocol" id="25bc-e039-43bf-4002" hidden="false" type="profile" targetId="b052-232d-e8da-ae1a"/>
