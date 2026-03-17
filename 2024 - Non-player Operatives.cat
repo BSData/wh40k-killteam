@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ffd6-f3ca-defa-f836" name="Non-player Operatives" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ffd6-f3ca-defa-f836" name="Non-player Operatives" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Trooper (Brawler)" hidden="false" id="f599-6934-5d14-a8fa">
       <categoryLinks>
@@ -1172,7 +1172,7 @@
       <profiles>
         <profile name="Canoptek Macrocyte" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="363f-4432-ce71-e45d">
           <characteristics>
-            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO fight if necessary, but if it isn&apos;t within control range of an enemy operative it will move to an ideal position to shoot the enemy. When activated, if it will perform the **Fight** or **Shoot** action during that activation, give it an Engage order. If it cannot, give it a Conceal order. It will perform the **Operate Hatch** action where necessary to fulfil its behaviour. Finally, if it has a tesla caster, it will always use the sweeping profile if it would target more than one player operative.
+            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO will fight if necessary, but if it isn&apos;t within control range of an enemy operative it will move to an ideal position to shoot the enemy. When activated, if it will perform the **Fight** or **Shoot** action during that activation, give it an Engage order. If it cannot, give it a Conceal order. It will perform the **Operate Hatch** action where necessary to fulfil its behaviour. Finally, if it has a tesla caster, it will always use the sweeping profile if it would target more than one player operative.
 
 5. **Fight**.
 2. **Shoot**.
@@ -1210,6 +1210,98 @@
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="C&apos;tan Shard of the Nightbringer" hidden="false" id="1cc2-cd04-120a-f2f4">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="ac82-ae62-54a9-1308" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="C&apos;tan Shard of the Nightbringer" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="f77b-79d7-ff3b-a291">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">25</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="C&apos;tan Shard of the Nightbringer" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="773f-94c6-5728-5ace">
+          <characteristics>
+            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO will move towards the enemy to fight them, but will shoot if it can&apos;t.
+
+
+1. **Fight**.
+2. **Charge** the closest player operative via the shortest possible route.
+3. **Shoot**.
+4. **Reposition** towards the closest player operative.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mighty Foe" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="689f-4d93-5eb2-7242">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative cannot have a Conceal order and cannot be in cover, obscured, readied or expended (meaning it can activate multiple times per turning point and the turning point will end when all other operatives are expended). Whenever it&apos;s the NPO&apos;s turn to activate, roll one D6: on a 4+, activate this NPO (or skip the activation if it isn&apos;t in the killzone); on a 1-3, activate another ready NPO (or skip the activation if there aren&apos;t any in the killzone). This operative can perform two **Fight** actions during its activation, but cannot move more than 12&quot; per turning point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Necrodermis" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="fc92-23b1-a182-ea4f">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative cannot be injured and its stats cannot be changed. Whenever an operative is shooting this operative, worsen the x of the Piercing weapon rule by 1 (if any). Note that Piercing 1 would therefore be ignored.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Indomitable Reanimation" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="e725-ff32-4755-4712">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this operative is incapacitated, before it&apos;s removed from the killzone, place a Reanimation marker underneath the centre of its base. Then remove it as incapacitated, also removing any tokens and rules effects it had (e.g. Poison token). In the Ready step of the next Strategy phase, roll D3+1. After that many activations have been completed:
+- Set up this operative with an Engage order on the centre of that reanimation marker. If there are any operatives that prevent this, set them up as though this operative ended a move there, (see Domineering Presence below).
+- This operative regains all lost wounds.
+- Remove that Reanimation marker.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dominnering Presence" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="3add-abaa-7a3f-b888">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This operative can move through parts of terrain features (including Wall terrain features) as if they were not there (taking precedence over the terrain feature&apos;s rules) but must end those moves in a location it can be placed. When this operative moves through Light terrain, remove that terrain from the killzone unless it&apos;s attached to Heavy terrain. This operative can move through operatives, and can end its move and be set up over their bases. If it does, remove those operatives from the killzone and set them up in a location they can be placed within control range of this operative (if possible) and as close to their previous position as possible. Whenever another operative is on Vantage terrain, if it&apos;s visible to and within 2&quot; horizontally of this operative (or vice versa), it&apos;s within this operative&apos;s control range.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gaze of death" hidden="false" id="a295-fc85-58cf-81dd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b67-44d7-f6dd-e40e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b67-44d7-f6dd-e40e-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Gaze of death" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ed53-d4ab-c8bb-fe01">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/0</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Devastating 5, Severe</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Severe" id="28fb-feb2-22dd-0cb9" hidden="false" type="rule" targetId="721c-65bf-dfb7-8fa2"/>
+            <infoLink name="Devastating x" id="4447-cc93-fc88-fe9d" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+            <infoLink name="Range x" id="309c-8e6f-0dbd-1626" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scythe of the Nightbringer" hidden="false" id="58c9-437d-c932-84b0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d6e-a3f0-e59b-cb0c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d6e-a3f0-e59b-cb0c-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Scythe of the Nightbringer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2c7a-d618-5a6b-0fe0">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rending" id="b18a-1785-1785-d1b1" hidden="false" type="rule" targetId="b903-6f79-129d-4ec9"/>
+            <infoLink name="Lethal x+" id="0728-5f2f-20cc-788b" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
