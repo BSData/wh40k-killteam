@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ffd6-f3ca-defa-f836" name="Non-player Operatives" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ffd6-f3ca-defa-f836" name="Non-player Operatives" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="5" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Trooper (Brawler)" hidden="false" id="f599-6934-5d14-a8fa">
       <categoryLinks>
@@ -1304,6 +1304,97 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fire Warrior (Pts 1)" hidden="false" id="3ae3-a720-355d-86f7">
+      <categoryLinks>
+        <categoryLink targetId="cf83-4496-b58e-ac82" id="8a7c-60b3-f271-2e4f" primary="true" name="Operative"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gun butt" hidden="false" id="aa36-0639-436d-60d6">
+          <profiles>
+            <profile name="⚔ Gun butt" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="3630-14e0-6624-dc51">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c27e-4b6c-5912-a85e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a625-c6a5-30a3-10fc" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged weapon" id="fe28-0eed-0042-2f1b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pulse Blaster" hidden="false" id="3beb-34e3-54f9-751c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9259-1b44-7c65-b102" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Pulse Blaster" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e74f-c5ac-919a-d447">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Range x" id="2957-cbae-0280-d70d" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pulse Rifle" hidden="false" id="05ec-3847-72a2-397c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff41-aec0-2ea0-be94" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="⌖ Pulse Rifle (stationary)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="1c1b-beeb-3c29-798a">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Balanced, Heavy</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Pulse Rifle (mobile)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="dd48-bdc9-87a1-84dc">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Balanced" id="b241-d06c-4ebe-6461" hidden="false" type="rule" targetId="28f7-0d96-d1fc-f75b"/>
+                <infoLink name="Heavy" id="479f-3efe-87b5-0dd9" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c23e-3f8d-71a5-00a8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="177d-d48f-dfbd-581d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Marksman" id="8716-5b16-bfd9-ff5c" hidden="false" type="profile" targetId="a6db-a06f-71ee-1feb"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Fire Warrior (Pts 1)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="b863-fc04-8710-a648">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
