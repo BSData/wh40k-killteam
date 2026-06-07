@@ -157,45 +157,39 @@
         <infoLink name="Brawler" id="2433-e39c-aa0d-671b" hidden="false" type="profile" targetId="8119-7495-8063-6302"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Warrior (Marksman)" hidden="false" id="16a0-e2ba-d7f4-cbd9">
+    <selectionEntry type="model" import="true" name="Necron warrior (Pts 2)" hidden="false" id="16a0-e2ba-d7f4-cbd9">
       <profiles>
-        <profile name="Warrior (Marksman)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="ee13-2b46-158e-738c">
+        <profile name="Necron warrior (Pts 2)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="ee13-2b46-158e-738c">
           <characteristics>
             <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
-            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
             <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
-            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">9</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unrelenting" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="90cc-0221-ead2-6403">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this NPO is shooting against the closest valid target, its weapons have the Accurate 1 weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Options" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="0767-a7df-b796-dbc5">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This NPO has a combat attachment and either a gauss flayer or a gauss reaper.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Firearm" hidden="false" id="3f21-6f91-baf1-a59f" sortIndex="1">
-          <profiles>
-            <profile name="⌖ Firearm" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="dfec-b5d9-f9f7-61d8">
-              <characteristics>
-                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
-                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
-                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
-                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f558-cdf9-3e13-ed2a" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfaa-9936-a6df-eeef" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Knife" hidden="false" id="f55d-8cfb-e594-f973" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Combat attachment" hidden="false" id="f55d-8cfb-e594-f973" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="095d-4c81-076b-9b49" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f98-746b-1da9-c9c5" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="⚔ Knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="98c4-8a5a-2e18-9caf">
+            <profile name="⚔ Combat attachment" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="98c4-8a5a-2e18-9caf">
               <characteristics>
                 <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
                 <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
-                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
                 <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
               </characteristics>
             </profile>
@@ -209,6 +203,47 @@
       <infoLinks>
         <infoLink name="Marksman" id="08ab-832b-0284-de9f" hidden="false" type="profile" targetId="a6db-a06f-71ee-1feb"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged weapon" id="9cf3-987c-384f-ff62" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1160-31c6-6ad8-14a3" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="072c-238b-9a7a-3a9b" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gauss reaper" hidden="false" id="3f21-6f91-baf1-a59f">
+              <profiles>
+                <profile name="⌖ Gauss reaper" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="dfec-b5d9-f9f7-61d8">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Range x" id="11d3-9a45-a73b-3b5a" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                <infoLink name="Piercing x" id="29a1-4c2c-1f4d-b002" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gauss flayer" hidden="false" id="1c0c-b54c-3377-e6dd">
+              <profiles>
+                <profile name="⌖ Gauss flayer" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0a0b-5e38-1644-415f">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Piercing x" id="2cbc-dcae-6287-ed7e" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heavy (Brawler)" hidden="false" id="4673-fc17-efd9-fb10">
       <selectionEntries>
@@ -802,81 +837,78 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Lychguard" hidden="false" id="9cab-7121-b3e3-21aa">
+    <selectionEntry type="model" import="true" name="Lychguard (Pts 3)" hidden="false" id="9cab-7121-b3e3-21aa">
       <categoryLinks>
         <categoryLink name="Operative" hidden="false" id="34db-d4a5-6800-6128" targetId="cf83-4496-b58e-ac82" primary="true"/>
       </categoryLinks>
       <profiles>
-        <profile name="Lychguard" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="97f5-19ce-d3c9-8c69">
+        <profile name="Lychguard (Pts 3)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="119b-5ee2-16e6-d9d6">
           <characteristics>
-            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO will stay close to the Royal Warden unless the enemy is close enough to charge or fight. If it can perform either of its first two actions during that activation, or if it can end the activation with a Royal Warden that has an Engage order within its control range, give it an Engage order. If it cannot, give it a Conceal order. It will perform the **Operate Hatch** action where necessary to fulfil its behaviour.
-
-
-1. **Fight**.
-2. **Charge** the closest player operative via the shortest possible route.
-3. **Reposition** towards the Royal Warden NPO, to cover if possible (a subsequent Dash action can fulfil this, if able). If the Royal Warden NPO isn&apos;t in the killzone, **Reposition** towards the closest player operative (following the same conditions).
-4. **Dash** towards the Royal Warden NPO, to cover if possible. If the Royal Warden NPO isn&apos;t in the killzone, Dash towards the closest player operative (following the same conditions).</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Lychguard" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="119b-5ee2-16e6-d9d6">
-          <characteristics>
-            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
             <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
             <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
             <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">13</characteristic>
           </characteristics>
         </profile>
-        <profile name="Guardian Protocols" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="c9ea-bfae-d2f4-ddd9">
+        <profile name="Weapon Options" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="47df-e36c-8a30-0a90">
           <characteristics>
-            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever a player operative is performing a **Shoot** action, if this NPO has an Engage order, the player(s) cannot select a Royal Warden NPO within this NPO&apos;s control range as a valid target.</characteristic>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This NPO has a hyperphase sword &amp; dispersion shield or a warsythe.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lychguard" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="63ba-36c3-6270-e9db">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This NPO can perform two Fight actions during each of its activations</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Hyperphase sword" hidden="false" id="c572-f606-0255-190b">
+      <infoLinks>
+        <infoLink name="Brawler" id="3baa-c20a-ab3d-c1df" hidden="false" type="profile" targetId="8119-7495-8063-6302"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="6765-3600-f24d-b671" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Warscythe" hidden="false" id="4430-c9a4-a301-0030">
+              <profiles>
+                <profile name="⚔ Warscythe" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="bb7f-5218-0bf8-57b0">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/7</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Lethal x+" id="ebe3-24bd-1140-80a0" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hyperphase sword &amp; dispersion shield" hidden="false" id="c572-f606-0255-190b">
+              <profiles>
+                <profile name="⚔ Hyperphase sword &amp; dispersion shield" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ac56-a5a0-61ed-2132">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Shield*</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Lethal x+" id="d656-f379-690f-7043" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+              </infoLinks>
+              <rules>
+                <rule name="*Shield" id="dc63-dee0-2c84-b3ca" hidden="false">
+                  <description>Whenever this NPO is fighting or retaliating with this weapon, each of its blocks can be allocated to block two unresolved successes (instead of one). Whenever an operative is shooting this NPO, weapons that have the Piercing 1 weapon rule have the Piercing Crits 1 weapon rule instead.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0800-c442-d346-b9e9-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0800-c442-d346-b9e9-max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd81-ebe9-0697-41c8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f578-3fb4-bc76-6118" includeChildSelections="false"/>
           </constraints>
-          <profiles>
-            <profile name="⚔ Hyperphase sword" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="ac56-a5a0-61ed-2132">
-              <characteristics>
-                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
-                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
-                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
-                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Shield*</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Lethal x+" id="d656-f379-690f-7043" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
-          </infoLinks>
-          <rules>
-            <rule name="*Shield" id="dc63-dee0-2c84-b3ca" hidden="false">
-              <description>Whenever this operative is fighting or retaliating with this weapon, each of your blocks can be allocated to block two unresolved successes (instead of one).</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warscythe" hidden="false" id="4430-c9a4-a301-0030">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdde-935d-ba15-3de7-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdde-935d-ba15-3de7-max"/>
-          </constraints>
-          <profiles>
-            <profile name="⚔ Warscythe" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="bb7f-5218-0bf8-57b0">
-              <characteristics>
-                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
-                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
-                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/7</characteristic>
-                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Lethal x+" id="ebe3-24bd-1140-80a0" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Canoptek Scarab Swarm" hidden="false" id="8e39-f188-b121-1f36">
       <categoryLinks>
@@ -4461,6 +4493,474 @@ Whenever this operative would finish a move in a terrain feature less than 2&quo
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chaos cultist (Pts 1)" hidden="false" id="1732-2a55-539d-f5e3">
+      <categoryLinks>
+        <categoryLink targetId="cf83-4496-b58e-ac82" id="8763-a58d-9a92-81b1" primary="true" name="Operative"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Chaos cultist" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="e6b2-b4e3-f8dd-d240">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">5+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Battler" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="339d-c8f3-3ec4-71cc">
+          <characteristics>
+            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba"/>
+          </characteristics>
+        </profile>
+        <profile name="Mob" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="8e45-bdb0-8fd5-3f7a">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever this NPO is within 3&quot; of any other friendly CULTIST NPOs, add 1 to both Dmg stats of this NPO&apos;s weapons and they have Accurate 1 weapon rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="5cf3-5598-77ad-3296">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="041c-d5e2-2b4b-a035" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ca2-a470-d6d5-c1f8" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⌖ Pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="9e1b-66ca-9e9b-7329">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Range x" id="9c2c-72e1-99fa-67c5" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="9689-3718-e4ae-e520">
+          <profiles>
+            <profile name="⚔ Close combat weapon" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="eef6-b7d4-39e9-03e0">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="efb1-a0a8-f3cc-5205" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8e0-6918-6ec7-25a6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lesser daemon (Pts 2)" hidden="false" id="896f-0fde-dcd7-3b93">
+      <categoryLinks>
+        <categoryLink targetId="cf83-4496-b58e-ac82" id="98e5-341d-3a5f-2132" primary="true" name="Operative"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lesser daemon (Pts 2)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2c9e-714d-dcda-227c">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Brawler" id="ecf1-5349-ea51-a560" hidden="false" type="profile" targetId="8119-7495-8063-6302"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Daemonic weapon" hidden="false" id="929b-3343-4b46-6b24">
+          <profiles>
+            <profile name="⚔ Daemonic weapon" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="5446-5afd-c161-8248">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb94-98ca-915c-441e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ceb-b5d5-53af-8d02" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="c4a1-c4bb-a78b-2084" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Legionary (Pts 3)" hidden="false" id="36e3-58bd-982d-5323">
+      <categoryLinks>
+        <categoryLink targetId="cf83-4496-b58e-ac82" id="2f44-46ce-65fb-6db0" primary="true" name="Operative"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Legionary (Pts 3)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="3e30-575a-89b7-6cc9">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">3</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Behaviour" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="bc18-4180-2793-2329">
+          <characteristics>
+            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">Battler, or Guardian if this NPO has a weapon marked with an asterisk (*).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Astartes" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="ba7f-ca97-1a1c-f18a">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This NPO can perform two Fight or two Shoot actions during each of its activations. If it&apos;s two Shoot actions, a bolt pistol or boltgun must be selected for both of them.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon options" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="1cd4-5352-2317-e42c">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">This NPO has either a boltgun and fists or bolt pistol and chainsword. 1 in 5 can have a ranged weapon marked with and asterisk (*) instead of a boltgun. Note that if a weapon with an asterisk has multiple profiles, it&apos;s still the same ranged weapon.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="b582-ffe4-9f69-c973" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Special weapon &amp; Fists" id="b77b-6786-105c-2855" hidden="false">
+              <profiles>
+                <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7e66-674e-9847-4b0b">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Reaper chaincannon*" hidden="false" id="255c-56d9-29fa-fa21">
+                  <profiles>
+                    <profile name="⌖ Reaper chaincannon (sweeping)*" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="bdd5-5163-49ed-8747">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Heavy (Reposition only), Punishing, Torrent 2&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="⌖ Reaper chaincannon (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="290d-3c71-301a-095e">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Ceaseless, Heavy (Reposition only), Punishing</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Torrent x" id="a8ec-26a2-b472-4303" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+                    <infoLink name="Ceaseless" id="6b71-9d6c-3af2-2890" hidden="false" type="rule" targetId="752d-ce38-c325-4b8a"/>
+                    <infoLink name="Heavy" id="0202-c8ce-4a0c-289e" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+                    <infoLink name="Punishing" id="19fd-6e7a-d0e5-7b37" hidden="false" type="rule" targetId="4805-d37d-3ff2-5c9e"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Missile launcher*" hidden="false" id="b368-ea9f-90a5-d298">
+                  <profiles>
+                    <profile name="⌖ Missile launcher (krak)*" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="20bf-a043-315d-23f0">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/7</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Reposition), Piercing 1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="⌖ Missile launcher (frag)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b0ba-01e5-c4ec-b760">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Blast 2&quot;, Heavy (Reposition)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast x" id="fdc5-dc32-4c3b-c400" hidden="false" type="rule" targetId="0d74-0977-b481-bd13"/>
+                    <infoLink name="Heavy" id="585e-cafe-04a5-96e8" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+                    <infoLink name="Piercing x" id="7a5d-8c4b-b239-da7a" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Plasma gun*" hidden="false" id="6d85-2e18-f9aa-062e">
+                  <profiles>
+                    <profile name="⌖ Plasma gun (standard)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a36b-748b-cd11-6298">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Piercing 1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="⌖ Plasma gun (supercharge)*" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="16e7-885d-85bb-dd3f">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/6</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Hot, Lethal 5+, Piercing 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Lethal x+" id="084b-95c4-a584-93a9" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+                    <infoLink name="Piercing x" id="3263-c377-01e7-7801" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                    <infoLink name="Hot" id="c7ef-6374-5e37-542b" hidden="false" type="rule" targetId="ec63-40e6-6282-8420"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Flamer*" hidden="false" id="845e-4bbc-19a8-cea4">
+                  <profiles>
+                    <profile name="⌖ Flamer*" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="087c-7196-f4e8-77d6">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">2+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/3</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;, Saturate, Torrent 2&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Torrent x" id="08f3-5f42-f5e9-3343" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+                    <infoLink name="Range x" id="028b-dfb8-ab74-1c06" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                    <infoLink name="Saturate" id="b169-b969-8eae-d576" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy bolter*" hidden="false" id="498e-f3c4-b1c2-55b8">
+                  <profiles>
+                    <profile name="⌖ Heavy bolter (focused)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7ab1-3d43-85d0-e6e4">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Reposition only), Piercing Crists 1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="⌖ Heavy bolter (sweeping)" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a3ca-7ab1-040d-bd7f">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Heavy (Reposition only), Piercing Crists 1, Torrent 1&quot;</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Torrent x" id="c027-2adb-0712-366d" hidden="false" type="rule" targetId="ad45-b4bb-1345-e4f9"/>
+                    <infoLink name="Heavy" id="0206-362d-8ef9-d81b" hidden="false" type="rule" targetId="816e-44a2-6be4-6a9a"/>
+                    <infoLink name="Piercing x" id="6468-af6d-f0f2-26c6" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Meltagun*" hidden="false" id="e6e8-0248-8196-7865">
+                  <profiles>
+                    <profile name="⌖ Meltagun*" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a72f-0c18-aa80-cee0">
+                      <characteristics>
+                        <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                        <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                        <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">6/3</characteristic>
+                        <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 6&quot;, Devastating 4, Piercing 2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Piercing x" id="af41-f70b-62bb-35cc" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
+                    <infoLink name="Range x" id="6643-9edd-f856-4b7f" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+                    <infoLink name="Devastating x" id="16c2-5939-3a51-a5b2" hidden="false" type="rule" targetId="a8ba-6e3a-76b3-f05c"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8f13-cc78-6496-d400" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5971-6bf0-9048-2738" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d582-b7ca-a35b-9b9c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6636-33cb-4ece-5113" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Boltgun &amp; Fists" hidden="false" id="3962-9a3a-bcf4-274d">
+              <profiles>
+                <profile name="⌖ Boltgun" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="0a87-0bda-9398-98e5">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⚔ Fists" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="2410-8a42-1ae2-c22b">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolt pistol &amp; Chainsword" hidden="false" id="e57c-c253-9e38-9d71">
+              <infoLinks>
+                <infoLink name="Range x" id="b62c-c723-5587-aff5" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
+              </infoLinks>
+              <profiles>
+                <profile name="⚔ Chainsword" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="e8dd-61e8-0dc6-6ab9">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">5</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/5</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="⌖ Bolt pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="7966-4a41-aa34-6432">
+                  <characteristics>
+                    <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                    <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                    <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                    <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Warrior (Marksman)" hidden="false" id="9363-90e0-d781-8228">
+      <profiles>
+        <profile name="Warrior (Marksman)" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="2b38-8985-b1ef-b16a">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">6&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">4+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Firearm" hidden="false" id="090a-a7cb-22c6-5d62" sortIndex="1">
+          <profiles>
+            <profile name="⌖ Firearm" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="6f6e-62e0-063c-ca4d">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f5bd-adea-9dec-c6e7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2044-43a0-4cd0-8512" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Knife" hidden="false" id="a284-a829-ebf7-9891" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37d9-034d-50e8-26bd" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b784-57da-bd5a-7794" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Knife" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="90a4-81fd-d487-2d77">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">4+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">2/3</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="cf83-4496-b58e-ac82" id="9ba1-0c53-21e2-c61a" primary="true" name="Operative"/>
+        <categoryLink targetId="42ac-1bda-6ac1-8220" id="b251-d94d-e4ba-080a" primary="false" name="Marksman"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Marksman" id="cf20-0ad5-c45f-6847" hidden="false" type="profile" targetId="a6db-a06f-71ee-1feb"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lychguard" hidden="false" id="d15a-a553-1ff9-321c">
+      <categoryLinks>
+        <categoryLink name="Operative" hidden="false" id="1a5d-5e0f-0383-3208" targetId="cf83-4496-b58e-ac82" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lychguard" typeId="a8aa-8fdf-b828-ee91" typeName="Behaviour" hidden="false" id="5986-bf00-285a-0620">
+          <characteristics>
+            <characteristic name="Behaviour" typeId="9afc-d237-3382-7dba">This NPO will stay close to the Royal Warden unless the enemy is close enough to charge or fight. If it can perform either of its first two actions during that activation, or if it can end the activation with a Royal Warden that has an Engage order within its control range, give it an Engage order. If it cannot, give it a Conceal order. It will perform the **Operate Hatch** action where necessary to fulfil its behaviour.
+
+
+1. **Fight**.
+2. **Charge** the closest player operative via the shortest possible route.
+3. **Reposition** towards the Royal Warden NPO, to cover if possible (a subsequent Dash action can fulfil this, if able). If the Royal Warden NPO isn&apos;t in the killzone, **Reposition** towards the closest player operative (following the same conditions).
+4. **Dash** towards the Royal Warden NPO, to cover if possible. If the Royal Warden NPO isn&apos;t in the killzone, Dash towards the closest player operative (following the same conditions).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lychguard" typeId="5156-3fb9-39ce-7bdb" typeName="Operative" hidden="false" id="7c7c-24e9-38e7-c629">
+          <characteristics>
+            <characteristic name="APL" typeId="bc83-42aa-b7c1-f0b1">2</characteristic>
+            <characteristic name="Move" typeId="c996-ffb3-e0b4-ecfa">5&quot;</characteristic>
+            <characteristic name="Save" typeId="3241-5548-12d6-f103">3+</characteristic>
+            <characteristic name="Wounds" typeId="74f9-f91c-b8fd-89d9">13</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Guardian Protocols" typeId="f887-5881-0e6d-755c" typeName="Abilities" hidden="false" id="f0f1-e122-5f72-69cd">
+          <characteristics>
+            <characteristic name="Ability" typeId="3467-0678-083e-eb50">Whenever a player operative is performing a **Shoot** action, if this NPO has an Engage order, the player(s) cannot select a Royal Warden NPO within this NPO&apos;s control range as a valid target.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hyperphase sword" hidden="false" id="5140-66ba-b1e1-5f46">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b644-b9f0-a6a5-9f04"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26a0-3a7f-bda1-9256"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Hyperphase sword" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="d2eb-0fda-19f9-9bfb">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">4/6</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+, Shield*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="6502-2b36-b556-39ab" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+          <rules>
+            <rule name="*Shield" id="b1db-8973-6917-6704" hidden="false">
+              <description>Whenever this operative is fighting or retaliating with this weapon, each of your blocks can be allocated to block two unresolved successes (instead of one).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warscythe" hidden="false" id="a51e-c731-b0a9-684f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25a1-c61a-d4bc-180e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d683-9a64-45be-d0a6"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Warscythe" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="f553-0f64-26df-50d7">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">5/7</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Lethal 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal x+" id="6e4e-8d9a-471a-cce9" hidden="false" type="rule" targetId="8b97-e3e3-2857-817a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>
