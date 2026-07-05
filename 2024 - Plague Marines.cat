@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5907-ff9e-cba1-354b" name="Plague Marines" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5907-ff9e-cba1-354b" name="Plague Marines" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Plague Marines Kill Team" id="3e21-75a2-d221-36e3" hidden="false">
       <categoryLinks>
@@ -305,6 +305,14 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="e07f-9a04-ca82-1087" type="selectionEntry" targetId="9e27-8a81-f421-b75e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa29-fc4e-c466-670d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa29-fc4e-c466-670d-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Plague Marine Icon Bearer" hidden="false" id="c3fe-b40b-c529-cd2f">
       <constraints>
@@ -436,6 +444,12 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0510-ca04-9f27-6f1c-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="84c5-9e2d-8c61-91ce" type="selectionEntry" targetId="9e27-8a81-f421-b75e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c68-c3ba-c29e-f500-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c68-c3ba-c29e-f500-max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Plague spewer" hidden="false" id="245e-aa1d-2ddc-2829">
@@ -545,6 +559,21 @@ Each friendly PLAGUE MARINE operative can counteract regardless of its order.</
             </modifier>
           </modifiers>
         </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="9e27-8a81-f421-b75e">
+      <profiles>
+        <profile name="⌖ Bolt pistol" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="b2a9-582c-c4cc-6c94">
+          <characteristics>
+            <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">4</characteristic>
+            <characteristic name="HIT" typeId="8044-2517-4ef7-33de">3+</characteristic>
+            <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+            <characteristic name="WR" typeId="05b8-00a1-69af-14b6">Range 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Range x" id="b040-a9bb-af8c-ea6c" hidden="false" type="rule" targetId="a528-829e-8268-c005"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
