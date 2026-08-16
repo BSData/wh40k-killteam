@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e482-b469-a757-5368" name="Ratling" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e482-b469-a757-5368" name="Ratling" gameSystemId="c521-ad27-44df-f959" gameSystemRevision="2" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Ratling Kill Team" id="e64f-c6b9-3d26-4b7c" hidden="false">
       <categoryLinks>
@@ -474,6 +474,22 @@ Each friendly operative can only do this once per turning point, and cannot do s
             <infoLink name="Piercing x" id="d5b7-04e7-3732-2eba" hidden="false" type="rule" targetId="4c07-2cb3-1417-cbb7"/>
             <infoLink name="Saturate" id="ec78-3edf-334e-27de" hidden="false" type="rule" targetId="3c10-2d52-d1ac-b0f6"/>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bionic arm" hidden="false" id="c8ee-81c4-f01d-9bc6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40de-3a46-b87d-064e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40de-3a46-b87d-064e-max"/>
+          </constraints>
+          <profiles>
+            <profile name="⚔ Bionic arm" typeId="f25f-4b13-b724-d5a8" typeName="Weapons" hidden="false" id="a44d-066e-8df8-4e35">
+              <characteristics>
+                <characteristic name="ATK" typeId="6056-b741-7cf3-5b43">3</characteristic>
+                <characteristic name="HIT" typeId="8044-2517-4ef7-33de">5+</characteristic>
+                <characteristic name="DMG" typeId="dd3e-ef09-5d1a-37b4">3/4</characteristic>
+                <characteristic name="WR" typeId="05b8-00a1-69af-14b6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <constraints>
